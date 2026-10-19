@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "18",
+  "name": "System architecture and data-flow mapping",
+  "slug": "system-architecture-and-data-flow-mapping",
+  "family": "Engineering & Integration",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Requirements",
+    "throughput expectations",
+    "constraints",
+    "existing systems"
+  ],
+  "outputs": [
+    "Architecture decision record",
+    "data-flow diagram",
+    "interface map"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "integration-readiness",
+      "title": "Integration Readiness"
+    }
+  ]
+}

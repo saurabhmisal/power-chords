@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "12",
+  "name": "Outcome-oriented roadmapping",
+  "slug": "outcome-oriented-roadmapping",
+  "family": "Product & Strategy",
+  "implementation": "native_assistive",
+  "inputs": [
+    "North-star metric",
+    "strategies",
+    "initiatives",
+    "capacity constraints"
+  ],
+  "outputs": [
+    "Outcome roadmap",
+    "milestone hypotheses",
+    "dependency map"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "product-decision",
+      "title": "Product Decision Brief"
+    }
+  ]
+}

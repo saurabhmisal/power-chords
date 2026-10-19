@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "31",
+  "name": "Dashboards and visual reporting",
+  "slug": "dashboards-and-visual-reporting",
+  "family": "Data & Evaluation",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Approved dataset",
+    "metrics",
+    "audience",
+    "reporting cadence"
+  ],
+  "outputs": [
+    "Dashboard specification",
+    "charts where runtime exists"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

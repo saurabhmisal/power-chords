@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "11",
+  "name": "End-to-end journey and workflow mapping",
+  "slug": "end-to-end-journey-and-workflow-mapping",
+  "family": "Product & Strategy",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Personas",
+    "process notes",
+    "service states",
+    "support contacts"
+  ],
+  "outputs": [
+    "Journey map",
+    "swimlane",
+    "pain-point inventory"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "discovery-to-prd",
+      "title": "Customer Discovery → PRD"
+    }
+  ]
+}

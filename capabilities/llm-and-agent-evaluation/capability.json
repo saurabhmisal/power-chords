@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "33",
+  "name": "LLM and agent evaluation",
+  "slug": "llm-and-agent-evaluation",
+  "family": "Data & Evaluation",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Agent outputs",
+    "benchmark cases",
+    "rubrics",
+    "model settings"
+  ],
+  "outputs": [
+    "Evaluation plan",
+    "case set",
+    "scored report when tests run"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

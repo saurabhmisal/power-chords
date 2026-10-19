@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "37",
+  "name": "Operational command-center design",
+  "slug": "operational-command-center-design",
+  "family": "Business & Operations",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Objectives",
+    "team updates",
+    "incidents",
+    "service metrics"
+  ],
+  "outputs": [
+    "Operations cockpit specification",
+    "action register"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

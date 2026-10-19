@@ -1,0 +1,9 @@
+.local/
+node_modules/
+.power-chords/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+.env
+.DS_Store
+coverage/

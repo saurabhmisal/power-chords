@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "06",
+  "name": "Multi-format document ingestion",
+  "slug": "multi-format-document-ingestion",
+  "family": "Document Intelligence",
+  "implementation": "adapter_required",
+  "inputs": [
+    "PDFs",
+    "spreadsheets",
+    "text files",
+    "contracts",
+    "authorized document access"
+  ],
+  "outputs": [
+    "Normalized document index",
+    "section summaries",
+    "source map"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

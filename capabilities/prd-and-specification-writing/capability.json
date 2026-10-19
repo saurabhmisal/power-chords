@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "10",
+  "name": "PRD and specification writing",
+  "slug": "prd-and-specification-writing",
+  "family": "Product & Strategy",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Customer notes",
+    "constraints",
+    "desired outcome",
+    "baseline metrics"
+  ],
+  "outputs": [
+    "PRD",
+    "acceptance criteria",
+    "measurement plan"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "discovery-to-prd",
+      "title": "Customer Discovery → PRD"
+    }
+  ]
+}

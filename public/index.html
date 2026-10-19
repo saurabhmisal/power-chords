@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>Power Chords • Powers</title><link rel="stylesheet" href="/styles.css"></head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark" aria-hidden="true">🤘</div><div><strong>Power Chords</strong><small>PRODUCT WORKROOM</small></div></div>
+    <div class="nav-label">WORKSPACE</div>
+    <div class="nav"><a class="nav-item active" href="#workroom">⚡ <span>Workroom</span></a><div class="nav-item muted">◫ <span>Field Guide</span></div><a class="nav-item" href="#power-library">✦ <span>Powers</span></a><div class="nav-item muted">⌘ <span>Connections</span></div><div class="nav-item muted">≋ <span>Memory</span></div></div>
+    <div class="nav-label two">SYSTEM</div><div class="nav"><div class="nav-item muted">◷ <span>Activity</span></div><div class="nav-item muted">⊙ <span>Permissions</span></div></div>
+    <div class="sidebar-foot"><div class="pulse-dot"></div><div><strong>Local-first runtime</strong><small>Open-source power library</small></div></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div class="breadcrumbs">Power Chords <span>/</span> Workspace <span>/</span> <strong>Workroom</strong></div><div class="topright"><span class="privacy">◈ PRIVATE BY DEFAULT</span><div class="avatar">PC</div></div></header>
+    <div class="content">
+      <section class="hero"><div class="eyebrow">THE ROCKSTAR PM WORKROOM <span class="eyebrow-line"></span> v0.2</div><h1>52 capabilities.<br><em>Infinite combinations.</em></h1><p>Take a real customer problem from evidence to an actionable plan. Compose native product workflows in one local-first workspace; extend the 52-power roadmap as integrations are validated.</p><div class="hero-footer"><div class="metric"><span id="source-count">52</span><small>CAPABILITY SOURCES</small></div><div class="vline"></div><div class="metric"><span id="installed-count">0</span><small>INSTALLED SKILLS</small></div><div class="vline"></div><div class="metric"><span id="enabled-count">0</span><small>ACTIVE POWERS</small></div><div class="pill warm">● Local execution &amp; user control</div></div><div class="orb" aria-hidden="true"><span></span><span></span><span></span></div></section>
+      <section id="workroom" class="workroom">
+        <div class="workroom-head"><div><div class="section-eyebrow">FIRST-PARTY EXECUTION ENGINE</div><h2>From problem to progress. One workspace.</h2><p>Compose real, evidence-grounded documents across multiple power categories. Runs entirely on your machine—no automatic external actions.</p></div><span class="native-chip">● EXECUTABLE</span></div>
+        <div class="workroom-grid">
+          <form id="workroom-form" class="workroom-form">
+            <label for="workflow-select">Choose an outcome</label><select id="workflow-select" required></select>
+            <label for="workroom-title">Project / document title</label><input id="workroom-title" maxlength="160" placeholder="e.g. Customer onboarding redesign">
+            <label for="workroom-objective">What decision or outcome do you need?</label><input id="workroom-objective" maxlength="1000" placeholder="e.g. Reduce time to first successful integration">
+            <label for="workroom-context">Customer context, notes, evidence or requirements</label>
+            <textarea id="workroom-context" rows="7" maxlength="20000" minlength="30" required placeholder="Paste at least 30 characters of real context. For example: Customers manually reconcile order data from three APIs, operations reports 15-minute delays, and engineering is concerned about retrying failed requests."></textarea>
+            <button class="primary" type="submit" id="workroom-run">⚡ Generate work product</button>
+            <p class="microcopy">No claims are invented. Outputs flag unknowns, record supplied evidence and require human review.</p>
+          </form>
+          <div class="workroom-output"><h3>Work product</h3><p id="workroom-description">Select a workflow to see the stages that will be executed.</p><div id="workroom-stages" class="workroom-stages"></div><details class="workroom-power-settings"><summary>Manage native capabilities (advanced)</summary><p class="microcopy">Disabling a required capability disables dependent workflows immediately. External capabilities remain unavailable until an adapter is reviewed.</p><div id="native-power-list"></div></details>
+            <div id="workroom-result" class="workroom-result" hidden><p><strong id="workroom-result-title"></strong></p><p id="workroom-result-meta"></p><a id="workroom-download" href="#" class="primary link-primary" download>↓ Download Markdown</a><pre id="workroom-preview"></pre></div>
+            <div id="workroom-history" class="workroom-history"></div>
+          </div>
+        </div>
+      </section>
+      <div id="power-library" class="header-row"><div><div class="section-eyebrow">EXTEND YOUR WORKROOM</div><h2>Capability integrations</h2><p class="sub">Additional source projects can extend the Workroom as reviewed adapters. Sources are not automatically executable.</p></div><div class="header-actions"><button class="ghost" id="sync-button">↻ Refresh sources</button><button class="ghost" id="activity-toggle">View activity ↗</button></div></div>
+      <div class="toolbar"><label class="search"><span>⌕</span><input id="search" autocomplete="off" placeholder="Search powers, repositories, or capabilities"><kbd>⌘ K</kbd></label><div class="tabs" role="tablist"><button class="tab active" data-view="all">All sources</button><button class="tab" data-view="enabled">Enabled</button><button class="tab" data-view="review">Needs setup</button></div></div>
+      <div class="library"><aside class="groups"><div class="filter-heading">CAPABILITY GROUPS</div><button class="group selected" data-group="all"><span class="glyph">◈</span> All powers <b id="allcount">52</b></button><div id="group-list"></div><div class="helper">Enable reviewed capabilities for your own use. Permissions are always user-scoped.</div></aside><section class="catalog"><div class="catalog-meta"><div><strong id="results-label">52 sources</strong><span> · Each source starts disabled</span></div><span class="legend"><i></i> Inspected skills can be installed</span></div><div id="cards" class="cards"></div><div id="empty" class="empty" hidden>No powers match your filters.</div></section></div>
+      <section class="composer"><div class="composer-top"><div><div class="section-eyebrow">INTENT ROUTER</div><h3>Which capabilities fit this task?</h3><p>Preview which enabled powers would support an intent. Nothing executes automatically.</p></div><span>⌘ ↵</span></div><div class="composer-input"><textarea id="intent" rows="2" placeholder="e.g. Analyze this codebase and create an architecture diagram…"></textarea><button class="primary" id="route">Find powers <span>↗</span></button></div><div id="route-result" class="route-result" hidden></div></section>
+      <footer><span>Power Chords WORKROOM ENGINE 0.2</span><span>Local catalog • Permission-gated • Version-pinned</span></footer>
+    </div>
+  </main>
+</div>
+<div class="notice" id="notice" aria-live="polite"></div>
+<dialog id="activity-dialog"><header><h3>Activity timeline</h3><button id="activity-close" aria-label="Close">×</button></header><div id="activity-content"></div></dialog>
+<script type="module" src="/app.js"></script>
+</body></html>

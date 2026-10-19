@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "08",
+  "name": "Knowledge graph construction",
+  "slug": "knowledge-graph-construction",
+  "family": "Document Intelligence",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Documents",
+    "entities",
+    "identifiers",
+    "relationship definitions"
+  ],
+  "outputs": [
+    "Entity-relationship graph",
+    "provenance map",
+    "query examples"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "04",
+  "name": "Account and stakeholder intelligence",
+  "slug": "account-and-stakeholder-intelligence",
+  "family": "Research & Discovery",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Account notes",
+    "stakeholder list",
+    "CRM exports",
+    "meeting transcripts"
+  ],
+  "outputs": [
+    "Account brief",
+    "stakeholder map",
+    "open-items ledger"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "discovery-to-prd",
+      "title": "Customer Discovery → PRD"
+    }
+  ]
+}

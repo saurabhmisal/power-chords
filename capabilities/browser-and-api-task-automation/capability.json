@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "27",
+  "name": "Browser and API task automation",
+  "slug": "browser-and-api-task-automation",
+  "family": "Agentic Automation",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Authorized target",
+    "workflow steps",
+    "data schema",
+    "login constraints"
+  ],
+  "outputs": [
+    "Automation plan",
+    "tested script where supported",
+    "audit requirements"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

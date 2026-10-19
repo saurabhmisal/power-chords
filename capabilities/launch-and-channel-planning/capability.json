@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "44",
+  "name": "Launch and channel planning",
+  "slug": "launch-and-channel-planning",
+  "family": "Marketing & Go-to-Market",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Target segment",
+    "product promise",
+    "launch constraints",
+    "channels"
+  ],
+  "outputs": [
+    "Launch plan",
+    "messaging matrix",
+    "go/no-go checklist"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "launch-readiness",
+      "title": "Launch Readiness Plan"
+    }
+  ]
+}

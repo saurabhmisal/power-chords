@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "17",
+  "name": "Codebase navigation and explanation",
+  "slug": "codebase-navigation-and-explanation",
+  "family": "Engineering & Integration",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Repository access",
+    "entry points",
+    "user question",
+    "runtime stack"
+  ],
+  "outputs": [
+    "Codebase guide",
+    "key call graph",
+    "question-specific walkthrough"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

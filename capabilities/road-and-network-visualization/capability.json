@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "50",
+  "name": "Road and network visualization",
+  "slug": "road-and-network-visualization",
+  "family": "Spatial & Field Intelligence",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Road network data",
+    "target region",
+    "vehicle constraints"
+  ],
+  "outputs": [
+    "Network visualization plan",
+    "topology analysis",
+    "risk map"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

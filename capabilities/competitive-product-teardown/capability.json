@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "03",
+  "name": "Competitive product teardown",
+  "slug": "competitive-product-teardown",
+  "family": "Research & Discovery",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Competitor URLs or feature matrices",
+    "target use case",
+    "customer requirements"
+  ],
+  "outputs": [
+    "Competitive teardown matrix",
+    "evidence log",
+    "differentiation hypotheses"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

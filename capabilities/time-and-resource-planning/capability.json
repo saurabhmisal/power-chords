@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "38",
+  "name": "Time and resource planning",
+  "slug": "time-and-resource-planning",
+  "family": "Business & Operations",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Milestones",
+    "staffing",
+    "skill constraints",
+    "dependencies"
+  ],
+  "outputs": [
+    "Capacity plan",
+    "staffing scenarios",
+    "dependency chart"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "launch-readiness",
+      "title": "Launch Readiness Plan"
+    }
+  ]
+}

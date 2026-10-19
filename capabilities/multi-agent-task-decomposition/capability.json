@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "25",
+  "name": "Multi-agent task decomposition",
+  "slug": "multi-agent-task-decomposition",
+  "family": "Agentic Automation",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Goal",
+    "deliverable",
+    "available tools",
+    "permissions",
+    "deadlines"
+  ],
+  "outputs": [
+    "Task dependency graph",
+    "agent briefs",
+    "integration checklist"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "launch-readiness",
+      "title": "Launch Readiness Plan"
+    }
+  ]
+}

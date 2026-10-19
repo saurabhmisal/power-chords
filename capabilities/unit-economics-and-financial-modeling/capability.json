@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "36",
+  "name": "Unit economics and financial modeling",
+  "slug": "unit-economics-and-financial-modeling",
+  "family": "Business & Operations",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Revenue",
+    "direct costs",
+    "acquisition assumptions",
+    "cohort behavior"
+  ],
+  "outputs": [
+    "Unit economics model",
+    "sensitivity analysis",
+    "decision memo"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "product-decision",
+      "title": "Product Decision Brief"
+    }
+  ]
+}

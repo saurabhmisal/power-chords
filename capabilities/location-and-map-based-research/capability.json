@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "49",
+  "name": "Location and map-based research",
+  "slug": "location-and-map-based-research",
+  "family": "Spatial & Field Intelligence",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Target geography",
+    "local context",
+    "constraints",
+    "map data"
+  ],
+  "outputs": [
+    "Location research brief",
+    "candidate map references"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "15",
+  "name": "API design and integration planning",
+  "slug": "api-design-and-integration-planning",
+  "family": "Engineering & Integration",
+  "implementation": "native_assistive",
+  "inputs": [
+    "System context",
+    "API documentation",
+    "payloads",
+    "security requirements"
+  ],
+  "outputs": [
+    "Integration contract checklist",
+    "sequence flow",
+    "test matrix"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "integration-readiness",
+      "title": "Integration Readiness"
+    }
+  ]
+}

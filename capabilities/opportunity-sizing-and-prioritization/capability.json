@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "13",
+  "name": "Opportunity sizing and prioritization",
+  "slug": "opportunity-sizing-and-prioritization",
+  "family": "Product & Strategy",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Opportunity list",
+    "customer impact signals",
+    "implementation estimates"
+  ],
+  "outputs": [
+    "Priority matrix",
+    "decision rationale",
+    "assumption list"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "discovery-to-prd",
+      "title": "Customer Discovery → PRD"
+    },
+    {
+      "id": "product-decision",
+      "title": "Product Decision Brief"
+    }
+  ]
+}

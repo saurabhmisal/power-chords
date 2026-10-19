@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "48",
+  "name": "Interview preparation and learning plans",
+  "slug": "interview-preparation-and-learning-plans",
+  "family": "Professional Enablement",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Role description",
+    "company context",
+    "candidate achievements",
+    "interview round"
+  ],
+  "outputs": [
+    "Interview prep guide",
+    "STAR stories",
+    "practice plan"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

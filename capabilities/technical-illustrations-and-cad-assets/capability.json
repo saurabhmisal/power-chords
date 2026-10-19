@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "24",
+  "name": "Technical illustrations and CAD assets",
+  "slug": "technical-illustrations-and-cad-assets",
+  "family": "Design & Creation",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Target object",
+    "dimensions",
+    "geometry constraints",
+    "desired output format"
+  ],
+  "outputs": [
+    "CAD model or illustrated asset",
+    "design notes",
+    "verification checklist"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

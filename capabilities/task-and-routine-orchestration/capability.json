@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "26",
+  "name": "Task and routine orchestration",
+  "slug": "task-and-routine-orchestration",
+  "family": "Agentic Automation",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Trigger conditions",
+    "authorized systems",
+    "desired outcome",
+    "owner"
+  ],
+  "outputs": [
+    "Routine definition",
+    "execution plan",
+    "monitoring checklist"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "integration-readiness",
+      "title": "Integration Readiness"
+    },
+    {
+      "id": "launch-readiness",
+      "title": "Launch Readiness Plan"
+    }
+  ]
+}

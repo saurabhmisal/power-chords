@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "23",
+  "name": "Architecture and sequence diagrams",
+  "slug": "architecture-and-sequence-diagrams",
+  "family": "Design & Creation",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Components",
+    "actors",
+    "requests",
+    "system boundaries"
+  ],
+  "outputs": [
+    "Mermaid or SVG diagram",
+    "textual explanation"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

@@ -1,0 +1,27 @@
+name: Power Chords checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/upstreams.lock.json'
+      - 'data/updates.json'
+      - 'docs/SOURCE_UPDATES.md'
+      - 'site/index.html'
+      - '.github/last-active.txt'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm run validate:catalog
+      - run: npm run validate:capabilities
+      - run: npm test
+      - run: npm run build:site
+      - name: Confirm reproducible static output
+        run: git diff --exit-code -- site/index.html

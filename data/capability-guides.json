@@ -1,0 +1,1885 @@
+{
+  "version": "0.3.0",
+  "capabilities": [
+    {
+      "id": "01",
+      "name": "Customer problem discovery",
+      "slug": "customer-problem-discovery",
+      "family": "Research & Discovery",
+      "implementation": "native_assistive",
+      "outcome": "Frame the real customer problem",
+      "inputs": [
+        "Interview notes",
+        "current workflow",
+        "user complaints",
+        "observed failures"
+      ],
+      "steps": [
+        "Identify the affected persona and job-to-be-done",
+        "Separate observations from assumptions",
+        "Map the current workflow and top frictions",
+        "Write testable problem hypotheses",
+        "Define discovery questions and evidence gaps"
+      ],
+      "outputs": [
+        "Customer problem brief",
+        "prioritized pain points",
+        "interview questions"
+      ],
+      "validation": "Do not claim prevalence or severity without customer evidence",
+      "example": "Analyze these interview notes from a logistics client and identify the three most important workflow problems.",
+      "workflows": [
+        {
+          "id": "discovery-to-prd",
+          "title": "Customer Discovery → PRD"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "02",
+      "name": "Market landscape analysis",
+      "slug": "market-landscape-analysis",
+      "family": "Research & Discovery",
+      "implementation": "adapter_required",
+      "outcome": "Estimate the market opportunity",
+      "inputs": [
+        "Target customer segment",
+        "geography",
+        "competitors",
+        "pricing assumptions"
+      ],
+      "steps": [
+        "Define a precise addressable customer segment",
+        "Compare top-down and bottom-up sizing",
+        "Identify adoption and pricing assumptions",
+        "Run low-base-high scenarios",
+        "Flag where market estimates lack sources"
+      ],
+      "outputs": [
+        "Market sizing memo",
+        "TAM/SAM/SOM scenarios",
+        "assumption register"
+      ],
+      "validation": "Label invented figures as illustrative and cite every sourced fact",
+      "example": "Size the Indian mid-market opportunity for an API-based expense reconciliation tool.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "03",
+      "name": "Competitive product teardown",
+      "slug": "competitive-product-teardown",
+      "family": "Research & Discovery",
+      "implementation": "adapter_required",
+      "outcome": "Compare competing products",
+      "inputs": [
+        "Competitor URLs or feature matrices",
+        "target use case",
+        "customer requirements"
+      ],
+      "steps": [
+        "Choose the comparison dimensions",
+        "Gather feature and pricing evidence",
+        "Separate marketed claims from tested behaviors",
+        "Identify strengths and gaps",
+        "Recommend differentiated opportunities"
+      ],
+      "outputs": [
+        "Competitive teardown matrix",
+        "evidence log",
+        "differentiation hypotheses"
+      ],
+      "validation": "Do not infer undocumented features or current prices",
+      "example": "Compare three customer support platforms for a 50-person operations team.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "04",
+      "name": "Account and stakeholder intelligence",
+      "slug": "account-and-stakeholder-intelligence",
+      "family": "Research & Discovery",
+      "implementation": "native_assistive",
+      "outcome": "Build an account context map",
+      "inputs": [
+        "Account notes",
+        "stakeholder list",
+        "CRM exports",
+        "meeting transcripts"
+      ],
+      "steps": [
+        "Identify the account's objectives and constraints",
+        "Map roles and decision influence",
+        "Summarize commitments with owners",
+        "Mark unanswered questions and access boundaries",
+        "Prepare targeted follow-up questions"
+      ],
+      "outputs": [
+        "Account brief",
+        "stakeholder map",
+        "open-items ledger"
+      ],
+      "validation": "Avoid speculating about private motives or personal attributes",
+      "example": "Prepare a stakeholder map for a hospital CIO onboarding an analytics platform.",
+      "workflows": [
+        {
+          "id": "discovery-to-prd",
+          "title": "Customer Discovery → PRD"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "05",
+      "name": "Evidence triangulation and opportunity mapping",
+      "slug": "evidence-triangulation-and-opportunity-mapping",
+      "family": "Research & Discovery",
+      "implementation": "native_assistive",
+      "outcome": "Connect evidence to opportunity",
+      "inputs": [
+        "Research notes",
+        "metrics",
+        "support tickets",
+        "observations"
+      ],
+      "steps": [
+        "Group signals by customer job and friction",
+        "Link each claim to available evidence",
+        "Score confidence and business relevance",
+        "Surface contradictions",
+        "Form opportunity statements and next experiments"
+      ],
+      "outputs": [
+        "Opportunity solution tree",
+        "evidence-to-opportunity map"
+      ],
+      "validation": "Distinguish sourced facts from interpretations",
+      "example": "Synthesize support tickets and onboarding analytics into an opportunity map.",
+      "workflows": [
+        {
+          "id": "discovery-to-prd",
+          "title": "Customer Discovery → PRD"
+        },
+        {
+          "id": "product-decision",
+          "title": "Product Decision Brief"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "06",
+      "name": "Multi-format document ingestion",
+      "slug": "multi-format-document-ingestion",
+      "family": "Document Intelligence",
+      "implementation": "adapter_required",
+      "outcome": "Normalize mixed-format documents",
+      "inputs": [
+        "PDFs",
+        "spreadsheets",
+        "text files",
+        "contracts",
+        "authorized document access"
+      ],
+      "steps": [
+        "Inventory files and provenance",
+        "Extract accessible text and structure",
+        "Normalize sections and metadata",
+        "Preserve source references and version dates",
+        "Flag inaccessible scanned or password-protected files"
+      ],
+      "outputs": [
+        "Normalized document index",
+        "section summaries",
+        "source map"
+      ],
+      "validation": "Never imply unsupported files were read; verify extraction completeness",
+      "example": "Create a source-indexed digest of these SOP PDFs and a pricing spreadsheet.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "07",
+      "name": "OCR and structured extraction",
+      "slug": "ocr-and-structured-extraction",
+      "family": "Document Intelligence",
+      "implementation": "adapter_required",
+      "outcome": "Extract structured data from scans",
+      "inputs": [
+        "Scans",
+        "image files",
+        "expected fields",
+        "sample schema"
+      ],
+      "steps": [
+        "Check image quality and language support",
+        "Use available OCR tools only with permission",
+        "Extract target fields and coordinates when supported",
+        "Validate formats and low-confidence values",
+        "Route uncertain fields to manual review"
+      ],
+      "outputs": [
+        "Structured extraction JSON",
+        "field-confidence report"
+      ],
+      "validation": "Do not silently fabricate fields that OCR missed",
+      "example": "Extract invoice number, supplier, totals and tax from scanned invoices.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "08",
+      "name": "Knowledge graph construction",
+      "slug": "knowledge-graph-construction",
+      "family": "Document Intelligence",
+      "implementation": "adapter_required",
+      "outcome": "Build a relationship graph",
+      "inputs": [
+        "Documents",
+        "entities",
+        "identifiers",
+        "relationship definitions"
+      ],
+      "steps": [
+        "Define the graph schema",
+        "Extract entities and candidate links",
+        "Deduplicate identifiers",
+        "Attach source evidence to each edge",
+        "Identify central nodes and missing relationships"
+      ],
+      "outputs": [
+        "Entity-relationship graph",
+        "provenance map",
+        "query examples"
+      ],
+      "validation": "Every relationship must have evidence or an uncertainty label",
+      "example": "Build a graph connecting accounts, APIs, feature requests and blocked launches.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "09",
+      "name": "Semantic and context-aware retrieval",
+      "slug": "semantic-and-context-aware-retrieval",
+      "family": "Document Intelligence",
+      "implementation": "adapter_required",
+      "outcome": "Retrieve relevant context",
+      "inputs": [
+        "Authorized knowledge corpus",
+        "question",
+        "access policies",
+        "freshness requirements"
+      ],
+      "steps": [
+        "Interpret the information need",
+        "Apply source permissions before retrieval",
+        "Choose keyword or semantic strategy",
+        "Rank passages by relevance and recency",
+        "Synthesize with exact citations and unresolved gaps"
+      ],
+      "outputs": [
+        "Cited answer",
+        "retrieval trace",
+        "coverage assessment"
+      ],
+      "validation": "Do not answer as though missing or stale content is current",
+      "example": "Find every decision related to SSO migration and summarize unresolved blockers.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "10",
+      "name": "PRD and specification writing",
+      "slug": "prd-and-specification-writing",
+      "family": "Product & Strategy",
+      "implementation": "native_assistive",
+      "outcome": "Draft a product requirements document",
+      "inputs": [
+        "Customer notes",
+        "constraints",
+        "desired outcome",
+        "baseline metrics"
+      ],
+      "steps": [
+        "State problem and target users",
+        "Convert observations into evidence-backed requirements",
+        "Define non-goals and dependencies",
+        "Specify success metrics and acceptance criteria",
+        "List decisions and gaps for review"
+      ],
+      "outputs": [
+        "PRD",
+        "acceptance criteria",
+        "measurement plan"
+      ],
+      "validation": "No unverifiable metrics or fake stakeholder approvals",
+      "example": "Write a PRD for reducing duplicate order submissions from partner retries.",
+      "workflows": [
+        {
+          "id": "discovery-to-prd",
+          "title": "Customer Discovery → PRD"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "11",
+      "name": "End-to-end journey and workflow mapping",
+      "slug": "end-to-end-journey-and-workflow-mapping",
+      "family": "Product & Strategy",
+      "implementation": "native_assistive",
+      "outcome": "Map a complete user journey",
+      "inputs": [
+        "Personas",
+        "process notes",
+        "service states",
+        "support contacts"
+      ],
+      "steps": [
+        "Define start and end states",
+        "List actions, touchpoints and system transitions",
+        "Identify friction and failure paths",
+        "Show frontstage/backstage dependencies",
+        "Propose measurement points"
+      ],
+      "outputs": [
+        "Journey map",
+        "swimlane",
+        "pain-point inventory"
+      ],
+      "validation": "Validate journey details against actual customer sessions",
+      "example": "Map a courier's signup-to-first-delivery journey including failure states.",
+      "workflows": [
+        {
+          "id": "discovery-to-prd",
+          "title": "Customer Discovery → PRD"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "12",
+      "name": "Outcome-oriented roadmapping",
+      "slug": "outcome-oriented-roadmapping",
+      "family": "Product & Strategy",
+      "implementation": "native_assistive",
+      "outcome": "Build an outcome roadmap",
+      "inputs": [
+        "North-star metric",
+        "strategies",
+        "initiatives",
+        "capacity constraints"
+      ],
+      "steps": [
+        "Define measurable outcomes",
+        "Group opportunities into strategic bets",
+        "Assess dependencies and risk",
+        "Sequence learning and releases",
+        "Name decision checkpoints"
+      ],
+      "outputs": [
+        "Outcome roadmap",
+        "milestone hypotheses",
+        "dependency map"
+      ],
+      "validation": "Do not present dates or resources as committed without approval",
+      "example": "Create a two-quarter roadmap to improve partner onboarding activation.",
+      "workflows": [
+        {
+          "id": "product-decision",
+          "title": "Product Decision Brief"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "13",
+      "name": "Opportunity sizing and prioritization",
+      "slug": "opportunity-sizing-and-prioritization",
+      "family": "Product & Strategy",
+      "implementation": "native_assistive",
+      "outcome": "Prioritize product opportunities",
+      "inputs": [
+        "Opportunity list",
+        "customer impact signals",
+        "implementation estimates"
+      ],
+      "steps": [
+        "Choose scoring criteria and weights",
+        "Capture supporting evidence",
+        "Evaluate impact, confidence, effort and risk",
+        "Show sensitivity to uncertain scores",
+        "Recommend a decision and next validation step"
+      ],
+      "outputs": [
+        "Priority matrix",
+        "decision rationale",
+        "assumption list"
+      ],
+      "validation": "Use explicitly labeled assumptions rather than fake numerical certainty",
+      "example": "Rank six operations automation ideas using RICE with missing-data flags.",
+      "workflows": [
+        {
+          "id": "discovery-to-prd",
+          "title": "Customer Discovery → PRD"
+        },
+        {
+          "id": "product-decision",
+          "title": "Product Decision Brief"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "14",
+      "name": "Hypothesis and experiment design",
+      "slug": "hypothesis-and-experiment-design",
+      "family": "Product & Strategy",
+      "implementation": "native_assistive",
+      "outcome": "Design a measurable experiment",
+      "inputs": [
+        "Hypothesis",
+        "population",
+        "baseline",
+        "metric definition",
+        "guardrails"
+      ],
+      "steps": [
+        "Declare intervention and control",
+        "Define eligibility and assignment",
+        "Specify primary metric and guardrails",
+        "Plan exposure logging and sample-size review",
+        "Define stopping and decision rules"
+      ],
+      "outputs": [
+        "Experiment design brief",
+        "event instrumentation plan"
+      ],
+      "validation": "Account for novelty, seasonality and contamination risks",
+      "example": "Design an A/B test for a new self-serve API-key onboarding flow.",
+      "workflows": [
+        {
+          "id": "discovery-to-prd",
+          "title": "Customer Discovery → PRD"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "15",
+      "name": "API design and integration planning",
+      "slug": "api-design-and-integration-planning",
+      "family": "Engineering & Integration",
+      "implementation": "native_assistive",
+      "outcome": "Plan a robust API integration",
+      "inputs": [
+        "System context",
+        "API documentation",
+        "payloads",
+        "security requirements"
+      ],
+      "steps": [
+        "Define actors and trust boundary",
+        "List request and response contracts",
+        "Specify auth, retries, rate limits and idempotency",
+        "Plan error handling and observability",
+        "Define staged verification and rollback"
+      ],
+      "outputs": [
+        "Integration contract checklist",
+        "sequence flow",
+        "test matrix"
+      ],
+      "validation": "No production credentials in outputs; confirm contracts with system owners",
+      "example": "Plan integrating a partner order API with a dispatch service.",
+      "workflows": [
+        {
+          "id": "integration-readiness",
+          "title": "Integration Readiness"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "16",
+      "name": "Rapid application prototyping",
+      "slug": "rapid-application-prototyping",
+      "family": "Engineering & Integration",
+      "implementation": "adapter_required",
+      "outcome": "Prototype an application",
+      "inputs": [
+        "Problem statement",
+        "users",
+        "preferred stack",
+        "feature scope"
+      ],
+      "steps": [
+        "Constrain the smallest useful slice",
+        "Draft UI and data entities",
+        "Generate runnable scaffolding when coding tools are available",
+        "Implement representative happy and error paths",
+        "Explain setup, test and missing integrations"
+      ],
+      "outputs": [
+        "Prototype source",
+        "run instructions",
+        "known limitations"
+      ],
+      "validation": "Do not call mock data a production backend",
+      "example": "Create a minimal dashboard for viewing delivery exceptions by partner.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "17",
+      "name": "Codebase navigation and explanation",
+      "slug": "codebase-navigation-and-explanation",
+      "family": "Engineering & Integration",
+      "implementation": "adapter_required",
+      "outcome": "Explain an unfamiliar codebase",
+      "inputs": [
+        "Repository access",
+        "entry points",
+        "user question",
+        "runtime stack"
+      ],
+      "steps": [
+        "Map directories and dependencies",
+        "Identify entry points and request paths",
+        "Trace key data structures",
+        "Summarize architectural tradeoffs",
+        "Cite file paths and exact symbols"
+      ],
+      "outputs": [
+        "Codebase guide",
+        "key call graph",
+        "question-specific walkthrough"
+      ],
+      "validation": "Do not invent files or functions absent from supplied code",
+      "example": "Explain how authentication flows from the web route to the database layer.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "18",
+      "name": "System architecture and data-flow mapping",
+      "slug": "system-architecture-and-data-flow-mapping",
+      "family": "Engineering & Integration",
+      "implementation": "native_assistive",
+      "outcome": "Design system architecture",
+      "inputs": [
+        "Requirements",
+        "throughput expectations",
+        "constraints",
+        "existing systems"
+      ],
+      "steps": [
+        "Clarify functional and nonfunctional needs",
+        "Define components and data boundaries",
+        "Model synchronous and async flows",
+        "Identify failure modes and observability",
+        "Explain tradeoffs and open questions"
+      ],
+      "outputs": [
+        "Architecture decision record",
+        "data-flow diagram",
+        "interface map"
+      ],
+      "validation": "Distinguish proposed architecture from a verified deployed system",
+      "example": "Design a multi-tenant event ingestion system with replay safety.",
+      "workflows": [
+        {
+          "id": "integration-readiness",
+          "title": "Integration Readiness"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "19",
+      "name": "Debugging, testing and QA",
+      "slug": "debugging-testing-and-qa",
+      "family": "Engineering & Integration",
+      "implementation": "native_assistive",
+      "outcome": "Investigate defects systematically",
+      "inputs": [
+        "Bug report",
+        "logs",
+        "reproduction",
+        "code access",
+        "expected behavior"
+      ],
+      "steps": [
+        "Form a minimal reproduction",
+        "Compare observed and expected states",
+        "Narrow likely causes using evidence",
+        "Propose instrumentation and targeted fixes",
+        "Define regression tests and rollback"
+      ],
+      "outputs": [
+        "Bug triage report",
+        "reproduction steps",
+        "regression checklist"
+      ],
+      "validation": "Do not claim a fix is tested without running tests",
+      "example": "Diagnose why an idempotent webhook is still creating duplicate records.",
+      "workflows": [
+        {
+          "id": "integration-readiness",
+          "title": "Integration Readiness"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "20",
+      "name": "Deployment and release readiness",
+      "slug": "deployment-and-release-readiness",
+      "family": "Engineering & Integration",
+      "implementation": "native_assistive",
+      "outcome": "Prepare a safe release",
+      "inputs": [
+        "Release scope",
+        "changelog",
+        "test evidence",
+        "deployment steps"
+      ],
+      "steps": [
+        "Review prerequisites and risks",
+        "Verify QA, performance and security gates",
+        "Plan phased rollout and monitoring",
+        "Document rollback and customer communications",
+        "Record go/no-go ownership"
+      ],
+      "outputs": [
+        "Release readiness checklist",
+        "runbook",
+        "rollback plan"
+      ],
+      "validation": "Never claim a deployment happened unless deployment logs confirm it",
+      "example": "Prepare release gates for a payment-adjacent partner API migration.",
+      "workflows": [
+        {
+          "id": "integration-readiness",
+          "title": "Integration Readiness"
+        },
+        {
+          "id": "launch-readiness",
+          "title": "Launch Readiness Plan"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "21",
+      "name": "Wireframing and UX exploration",
+      "slug": "wireframing-and-ux-exploration",
+      "family": "Design & Creation",
+      "implementation": "adapter_required",
+      "outcome": "Explore user experience options",
+      "inputs": [
+        "Persona",
+        "task",
+        "accessibility needs",
+        "current screen behavior"
+      ],
+      "steps": [
+        "Map key user decisions",
+        "Sketch multiple interaction patterns",
+        "Critique information hierarchy",
+        "Check accessibility and edge cases",
+        "Select assumptions to validate in usability tests"
+      ],
+      "outputs": [
+        "UX exploration brief",
+        "annotated wireframe outline"
+      ],
+      "validation": "Clearly mark conceptual wireframes versus tested designs",
+      "example": "Explore a better experience for configuring integration error alerts.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "22",
+      "name": "Interactive prototype construction",
+      "slug": "interactive-prototype-construction",
+      "family": "Design & Creation",
+      "implementation": "adapter_required",
+      "outcome": "Build a clickable proof of concept",
+      "inputs": [
+        "Interaction spec",
+        "designs",
+        "component library",
+        "development environment"
+      ],
+      "steps": [
+        "Choose target flows",
+        "Create simple navigable screens using supported tools",
+        "Bind representative state changes",
+        "Show validation and error paths",
+        "Run a basic usability walkthrough"
+      ],
+      "outputs": [
+        "Prototype source or link",
+        "flow notes",
+        "test scenarios"
+      ],
+      "validation": "Never claim clicks work when only static mockups were produced",
+      "example": "Build a clickable onboarding wizard for a partner API integration.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "23",
+      "name": "Architecture and sequence diagrams",
+      "slug": "architecture-and-sequence-diagrams",
+      "family": "Design & Creation",
+      "implementation": "adapter_required",
+      "outcome": "Visualize architecture and sequences",
+      "inputs": [
+        "Components",
+        "actors",
+        "requests",
+        "system boundaries"
+      ],
+      "steps": [
+        "Pick diagram style appropriate to question",
+        "Define participant names",
+        "Draw happy path and exception path",
+        "Annotate trust and data boundaries",
+        "Cross-check diagrams against requirements"
+      ],
+      "outputs": [
+        "Mermaid or SVG diagram",
+        "textual explanation"
+      ],
+      "validation": "Do not invent system relationships as implemented facts",
+      "example": "Draw a sequence diagram for customer OAuth consent and token refresh.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "24",
+      "name": "Technical illustrations and CAD assets",
+      "slug": "technical-illustrations-and-cad-assets",
+      "family": "Design & Creation",
+      "implementation": "adapter_required",
+      "outcome": "Create technical illustrations",
+      "inputs": [
+        "Target object",
+        "dimensions",
+        "geometry constraints",
+        "desired output format"
+      ],
+      "steps": [
+        "Identify required views and scale",
+        "Define materials and spatial relationships",
+        "Generate geometry with an available CAD or illustration tool",
+        "Validate dimensions and exported formats",
+        "Document approximations"
+      ],
+      "outputs": [
+        "CAD model or illustrated asset",
+        "design notes",
+        "verification checklist"
+      ],
+      "validation": "Tool-produced geometry is required before claiming CAD output",
+      "example": "Visualize the exploded components of a warehouse conveyor sensor mount.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "25",
+      "name": "Multi-agent task decomposition",
+      "slug": "multi-agent-task-decomposition",
+      "family": "Agentic Automation",
+      "implementation": "native_assistive",
+      "outcome": "Break complex work into agent tasks",
+      "inputs": [
+        "Goal",
+        "deliverable",
+        "available tools",
+        "permissions",
+        "deadlines"
+      ],
+      "steps": [
+        "Define success criteria",
+        "Decompose independent and dependent tasks",
+        "Assign clear contracts to specialist agents",
+        "Establish checkpoints and escalation",
+        "Reconcile outputs into one decision"
+      ],
+      "outputs": [
+        "Task dependency graph",
+        "agent briefs",
+        "integration checklist"
+      ],
+      "validation": "Do not delegate access beyond the operator's permissions",
+      "example": "Plan research, design and prototype tasks across three specialist agents.",
+      "workflows": [
+        {
+          "id": "launch-readiness",
+          "title": "Launch Readiness Plan"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "26",
+      "name": "Task and routine orchestration",
+      "slug": "task-and-routine-orchestration",
+      "family": "Agentic Automation",
+      "implementation": "native_assistive",
+      "outcome": "Orchestrate scheduled tasks",
+      "inputs": [
+        "Trigger conditions",
+        "authorized systems",
+        "desired outcome",
+        "owner"
+      ],
+      "steps": [
+        "Define triggers and cadence",
+        "Enumerate actions and idempotency boundaries",
+        "Add human approvals for external writes",
+        "Configure failure and retry policy",
+        "Record run history and disable controls"
+      ],
+      "outputs": [
+        "Routine definition",
+        "execution plan",
+        "monitoring checklist"
+      ],
+      "validation": "Do not claim a routine is scheduled unless a scheduler was configured",
+      "example": "Specify a daily blocker digest from project updates without sending messages.",
+      "workflows": [
+        {
+          "id": "integration-readiness",
+          "title": "Integration Readiness"
+        },
+        {
+          "id": "launch-readiness",
+          "title": "Launch Readiness Plan"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "27",
+      "name": "Browser and API task automation",
+      "slug": "browser-and-api-task-automation",
+      "family": "Agentic Automation",
+      "implementation": "adapter_required",
+      "outcome": "Automate browser and API tasks",
+      "inputs": [
+        "Authorized target",
+        "workflow steps",
+        "data schema",
+        "login constraints"
+      ],
+      "steps": [
+        "Confirm access scope",
+        "Prefer stable APIs when available",
+        "Model browser steps and failure recovery",
+        "Restrict credentials and side effects",
+        "Add preview, approval and audit for writes"
+      ],
+      "outputs": [
+        "Automation plan",
+        "tested script where supported",
+        "audit requirements"
+      ],
+      "validation": "No bypass of MFA, CAPTCHA or access controls",
+      "example": "Automate exporting approved support tickets to a local CSV.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "28",
+      "name": "Composable tool and workflow chains",
+      "slug": "composable-tool-and-workflow-chains",
+      "family": "Agentic Automation",
+      "implementation": "native_assistive",
+      "outcome": "Compose a cross-tool workflow",
+      "inputs": [
+        "Outcome",
+        "available capabilities",
+        "input and output schemas"
+      ],
+      "steps": [
+        "Define task graph and contracts",
+        "Check tool availability",
+        "Pass typed outputs between steps",
+        "Validate intermediate results",
+        "Add retries and human review",
+        "Record provenance"
+      ],
+      "outputs": [
+        "Workflow DAG",
+        "capability bindings",
+        "final artifact"
+      ],
+      "validation": "Explicitly flag unimplemented connectors or steps",
+      "example": "Combine discovery notes, API planning and release checks into one implementation brief.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "29",
+      "name": "Permission-scoped execution and controls",
+      "slug": "permission-scoped-execution-and-controls",
+      "family": "Agentic Automation",
+      "implementation": "native_assistive",
+      "outcome": "Enforce access and approvals",
+      "inputs": [
+        "Actors",
+        "resource scope",
+        "data classification",
+        "action categories"
+      ],
+      "steps": [
+        "Inventory sensitive operations",
+        "Assign least-privilege scopes",
+        "Separate read from write actions",
+        "Add approval checkpoints and revocation",
+        "Design audit logging and retention"
+      ],
+      "outputs": [
+        "Permission matrix",
+        "action policy",
+        "audit checklist"
+      ],
+      "validation": "Never treat an instruction prompt as a security sandbox",
+      "example": "Define a permissions model for an agent reading tickets and drafting replies.",
+      "workflows": [
+        {
+          "id": "integration-readiness",
+          "title": "Integration Readiness"
+        },
+        {
+          "id": "launch-readiness",
+          "title": "Launch Readiness Plan"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "30",
+      "name": "SQL and structured-data analysis",
+      "slug": "sql-and-structured-data-analysis",
+      "family": "Data & Evaluation",
+      "implementation": "adapter_required",
+      "outcome": "Analyze structured datasets",
+      "inputs": [
+        "Schema",
+        "CSV or SQL source",
+        "business questions",
+        "metric definitions"
+      ],
+      "steps": [
+        "Validate schema and data access",
+        "Profile nulls and duplicates",
+        "Define trustworthy aggregates",
+        "Run queries when SQL tools are available",
+        "Analyze segments and uncertainty"
+      ],
+      "outputs": [
+        "SQL queries",
+        "analytic memo",
+        "reproducible tables"
+      ],
+      "validation": "Never invent query results without executing against data",
+      "example": "Analyze partner onboarding times segmented by integration type.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "31",
+      "name": "Dashboards and visual reporting",
+      "slug": "dashboards-and-visual-reporting",
+      "family": "Data & Evaluation",
+      "implementation": "adapter_required",
+      "outcome": "Explain metrics visually",
+      "inputs": [
+        "Approved dataset",
+        "metrics",
+        "audience",
+        "reporting cadence"
+      ],
+      "steps": [
+        "Clarify decisions the dashboard supports",
+        "Define KPIs and denominators",
+        "Choose useful chart types",
+        "Surface changes and data-quality caveats",
+        "Validate filters and refresh criteria"
+      ],
+      "outputs": [
+        "Dashboard specification",
+        "charts where runtime exists"
+      ],
+      "validation": "No made-up live dashboard data or screenshots",
+      "example": "Design a weekly onboarding dashboard for the customer success team.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "32",
+      "name": "Funnel, retention and operational diagnostics",
+      "slug": "funnel-retention-and-operational-diagnostics",
+      "family": "Data & Evaluation",
+      "implementation": "native_assistive",
+      "outcome": "Diagnose product funnels",
+      "inputs": [
+        "Event schema",
+        "exposure logs",
+        "time window",
+        "cohorts"
+      ],
+      "steps": [
+        "Define consistent funnel stages",
+        "Check instrumentation and identity stitching",
+        "Compare drop-offs and cohorts",
+        "Inspect retention and lag effects",
+        "Recommend focused interventions and experiments"
+      ],
+      "outputs": [
+        "Funnel analysis",
+        "retention hypotheses",
+        "instrumentation gaps"
+      ],
+      "validation": "State sampling, attribution and metric limitations",
+      "example": "Identify where users abandon a 4-step integration wizard.",
+      "workflows": [
+        {
+          "id": "product-decision",
+          "title": "Product Decision Brief"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "33",
+      "name": "LLM and agent evaluation",
+      "slug": "llm-and-agent-evaluation",
+      "family": "Data & Evaluation",
+      "implementation": "adapter_required",
+      "outcome": "Evaluate an AI workflow",
+      "inputs": [
+        "Agent outputs",
+        "benchmark cases",
+        "rubrics",
+        "model settings"
+      ],
+      "steps": [
+        "Define failure taxonomy",
+        "Build representative eval cases",
+        "Score correctness and safety",
+        "Compare revisions on holdouts",
+        "Review regressions with human oversight"
+      ],
+      "outputs": [
+        "Evaluation plan",
+        "case set",
+        "scored report when tests run"
+      ],
+      "validation": "Never claim benchmark scores without running evaluations",
+      "example": "Create an eval suite for an agent generating SQL queries from natural language.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "34",
+      "name": "Forecasting and scenario modeling",
+      "slug": "forecasting-and-scenario-modeling",
+      "family": "Data & Evaluation",
+      "implementation": "native_assistive",
+      "outcome": "Model uncertain futures",
+      "inputs": [
+        "Baseline dataset",
+        "assumptions",
+        "unit economics",
+        "time horizon"
+      ],
+      "steps": [
+        "Define drivers and units",
+        "Build best-base-worst cases",
+        "Stress-test sensitive inputs",
+        "Estimate confidence ranges where justified",
+        "Identify decisions triggered by thresholds"
+      ],
+      "outputs": [
+        "Scenario model",
+        "sensitivity table",
+        "assumptions log"
+      ],
+      "validation": "Clearly label projections as scenarios, not forecasts guaranteed to occur",
+      "example": "Model expected onboarding revenue at three adoption rates.",
+      "workflows": [
+        {
+          "id": "product-decision",
+          "title": "Product Decision Brief"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "35",
+      "name": "Billing and invoicing workflows",
+      "slug": "billing-and-invoicing-workflows",
+      "family": "Business & Operations",
+      "implementation": "adapter_required",
+      "outcome": "Design invoice and billing flows",
+      "inputs": [
+        "Customer plan",
+        "billing events",
+        "tax rules",
+        "payment provider contracts"
+      ],
+      "steps": [
+        "Map billable events and invoice states",
+        "Define tax and currency requirements",
+        "Specify retries and reconciliation",
+        "Add approvals and audit",
+        "Test exceptional conditions before deployment"
+      ],
+      "outputs": [
+        "Billing workflow design",
+        "state model",
+        "test matrix"
+      ],
+      "validation": "Do not send invoices or charge accounts without explicit authorization",
+      "example": "Design invoicing for usage-based API requests across two tiers.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "36",
+      "name": "Unit economics and financial modeling",
+      "slug": "unit-economics-and-financial-modeling",
+      "family": "Business & Operations",
+      "implementation": "native_assistive",
+      "outcome": "Analyze unit economics",
+      "inputs": [
+        "Revenue",
+        "direct costs",
+        "acquisition assumptions",
+        "cohort behavior"
+      ],
+      "steps": [
+        "Choose meaningful cost and revenue units",
+        "Calculate contribution margin when data supplied",
+        "Distinguish CAC, retention and gross margin",
+        "Stress-test assumptions",
+        "Propose commercial levers"
+      ],
+      "outputs": [
+        "Unit economics model",
+        "sensitivity analysis",
+        "decision memo"
+      ],
+      "validation": "Explain missing inputs before presenting profitability claims",
+      "example": "Compare enterprise and SMB margins for a workflow automation SaaS.",
+      "workflows": [
+        {
+          "id": "product-decision",
+          "title": "Product Decision Brief"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "37",
+      "name": "Operational command-center design",
+      "slug": "operational-command-center-design",
+      "family": "Business & Operations",
+      "implementation": "native_assistive",
+      "outcome": "Coordinate operational performance",
+      "inputs": [
+        "Objectives",
+        "team updates",
+        "incidents",
+        "service metrics"
+      ],
+      "steps": [
+        "Identify operating KPIs and thresholds",
+        "Map commitments and owners",
+        "Design a decision-first dashboard",
+        "Add alerting and escalation paths",
+        "Separate operational facts from recommendations"
+      ],
+      "outputs": [
+        "Operations cockpit specification",
+        "action register"
+      ],
+      "validation": "No live operational status without connected evidence",
+      "example": "Design a daily command center for delayed enterprise onboardings.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "38",
+      "name": "Time and resource planning",
+      "slug": "time-and-resource-planning",
+      "family": "Business & Operations",
+      "implementation": "native_assistive",
+      "outcome": "Allocate people and capacity",
+      "inputs": [
+        "Milestones",
+        "staffing",
+        "skill constraints",
+        "dependencies"
+      ],
+      "steps": [
+        "Estimate work items",
+        "Map available capacity",
+        "Identify critical dependencies",
+        "Plan sequencing and buffers",
+        "Define replanning triggers"
+      ],
+      "outputs": [
+        "Capacity plan",
+        "staffing scenarios",
+        "dependency chart"
+      ],
+      "validation": "Flag unverified time estimates and staffing commitments",
+      "example": "Plan a two-sprint rollout for three engineers and one designer.",
+      "workflows": [
+        {
+          "id": "launch-readiness",
+          "title": "Launch Readiness Plan"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "39",
+      "name": "Speech transcription and meeting notes",
+      "slug": "speech-transcription-and-meeting-notes",
+      "family": "Voice & Media",
+      "implementation": "adapter_required",
+      "outcome": "Produce accurate meeting transcripts",
+      "inputs": [
+        "Audio with authorized recording consent",
+        "languages",
+        "diarization needs"
+      ],
+      "steps": [
+        "Confirm consent and access",
+        "Use a speech-to-text engine if available",
+        "Preserve timestamps and speaker uncertainty",
+        "Extract decisions and action items",
+        "Verify names and consequential claims"
+      ],
+      "outputs": [
+        "Timestamped transcript",
+        "decision log",
+        "follow-up list"
+      ],
+      "validation": "Never present fabricated transcript text or guessed speakers as facts",
+      "example": "Transcribe a recorded customer integration workshop and list commitments.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "40",
+      "name": "Text-to-speech and voice interfaces",
+      "slug": "text-to-speech-and-voice-interfaces",
+      "family": "Voice & Media",
+      "implementation": "adapter_required",
+      "outcome": "Generate natural speech",
+      "inputs": [
+        "Approved text",
+        "voice selection",
+        "language",
+        "output format"
+      ],
+      "steps": [
+        "Check rights to use voice and content",
+        "Select a supported TTS runtime",
+        "Generate and inspect audio",
+        "Normalize pacing and pronunciation",
+        "Export the requested format"
+      ],
+      "outputs": [
+        "Audio file",
+        "pronunciation notes",
+        "generation metadata"
+      ],
+      "validation": "Voice cloning must have appropriate authorization and privacy controls",
+      "example": "Narrate a product onboarding guide in English with a neutral voice.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "41",
+      "name": "Audio separation and editing",
+      "slug": "audio-separation-and-editing",
+      "family": "Voice & Media",
+      "implementation": "adapter_required",
+      "outcome": "Separate audio sources",
+      "inputs": [
+        "Audio source",
+        "desired stems",
+        "quality and usage rights"
+      ],
+      "steps": [
+        "Verify permissions for audio use",
+        "Choose a compatible stem-separation runtime",
+        "Identify target stems",
+        "Render and compare audible artifacts",
+        "Export stems with quality caveats"
+      ],
+      "outputs": [
+        "Isolated stems",
+        "mix notes",
+        "processing metadata"
+      ],
+      "validation": "Do not claim isolated tracks exist without processing the audio",
+      "example": "Separate speech and background music in an authorized webinar recording.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "42",
+      "name": "Video demos and educational content",
+      "slug": "video-demos-and-educational-content",
+      "family": "Voice & Media",
+      "implementation": "adapter_required",
+      "outcome": "Create explainers and product demos",
+      "inputs": [
+        "Script",
+        "product access",
+        "assets",
+        "target channels"
+      ],
+      "steps": [
+        "Define audience and storyboard",
+        "Gather approved screenshots or recordings",
+        "Capture or generate media with available runtimes",
+        "Edit captions and sequencing",
+        "Verify claims, consent and licensing"
+      ],
+      "outputs": [
+        "Storyboard",
+        "render files when media tools are available",
+        "publishing checklist"
+      ],
+      "validation": "Publishing and external uploads require approval",
+      "example": "Create a 90-second walkthrough for an enterprise integration dashboard.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "43",
+      "name": "SEO and discoverability research",
+      "slug": "seo-and-discoverability-research",
+      "family": "Marketing & Go-to-Market",
+      "implementation": "adapter_required",
+      "outcome": "Audit discoverability and SEO",
+      "inputs": [
+        "Website",
+        "audience",
+        "target keywords",
+        "performance metrics"
+      ],
+      "steps": [
+        "Inspect available pages and technical signals",
+        "Map intent to keywords",
+        "Identify content and technical gaps",
+        "Prioritize recommendations",
+        "Define measurement and review cadence"
+      ],
+      "outputs": [
+        "SEO audit",
+        "content opportunity backlog"
+      ],
+      "validation": "Current ranking or traffic claims need fresh measurements",
+      "example": "Audit discoverability for a B2B developer tooling landing page.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "44",
+      "name": "Launch and channel planning",
+      "slug": "launch-and-channel-planning",
+      "family": "Marketing & Go-to-Market",
+      "implementation": "native_assistive",
+      "outcome": "Plan a measurable product launch",
+      "inputs": [
+        "Target segment",
+        "product promise",
+        "launch constraints",
+        "channels"
+      ],
+      "steps": [
+        "Define launch goals and offer",
+        "Map audiences and channels",
+        "Sequence rollout workstreams",
+        "Define go/no-go checklist and owner",
+        "Specify success and rollback metrics"
+      ],
+      "outputs": [
+        "Launch plan",
+        "messaging matrix",
+        "go/no-go checklist"
+      ],
+      "validation": "No externally committed dates without owner sign-off",
+      "example": "Plan a regional launch for a healthcare scheduling API.",
+      "workflows": [
+        {
+          "id": "launch-readiness",
+          "title": "Launch Readiness Plan"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "45",
+      "name": "Campaigns and content production",
+      "slug": "campaigns-and-content-production",
+      "family": "Marketing & Go-to-Market",
+      "implementation": "adapter_required",
+      "outcome": "Produce multi-channel campaigns",
+      "inputs": [
+        "Value proposition",
+        "brand guidance",
+        "customer evidence",
+        "audience"
+      ],
+      "steps": [
+        "Define campaign message hierarchy",
+        "Draft channel-specific copy",
+        "Create reusable assets with supported tools",
+        "Design approval and experimentation",
+        "Check claims against evidence"
+      ],
+      "outputs": [
+        "Campaign briefs",
+        "draft copy",
+        "creative asset specs"
+      ],
+      "validation": "Do not publish or impersonate people without authorization",
+      "example": "Draft a launch sequence for a new invoicing feature.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "46",
+      "name": "Conversion and growth experimentation",
+      "slug": "conversion-and-growth-experimentation",
+      "family": "Marketing & Go-to-Market",
+      "implementation": "native_assistive",
+      "outcome": "Optimize acquisition and conversion",
+      "inputs": [
+        "Channel and funnel data",
+        "segment mix",
+        "guardrail metrics"
+      ],
+      "steps": [
+        "Map the acquisition-to-activation funnel",
+        "Locate high-confidence friction",
+        "Prioritize growth hypotheses",
+        "Design a controlled test",
+        "Track incrementality and downstream retention"
+      ],
+      "outputs": [
+        "Growth experiment backlog",
+        "measurement plan"
+      ],
+      "validation": "Distinguish correlation from causal lift",
+      "example": "Design a test to raise demo-request conversion while protecting lead quality.",
+      "workflows": [
+        {
+          "id": "launch-readiness",
+          "title": "Launch Readiness Plan"
+        }
+      ],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "47",
+      "name": "Career and opportunity research",
+      "slug": "career-and-opportunity-research",
+      "family": "Professional Enablement",
+      "implementation": "adapter_required",
+      "outcome": "Research professional opportunities",
+      "inputs": [
+        "Candidate profile",
+        "job listings",
+        "location constraints",
+        "company data"
+      ],
+      "steps": [
+        "Define role and experience filters",
+        "Review current postings where access exists",
+        "Assess fit without inventing qualifications",
+        "Build an application prioritization matrix",
+        "Track deadlines and links"
+      ],
+      "outputs": [
+        "Opportunity shortlist",
+        "fit analysis",
+        "application tracker"
+      ],
+      "validation": "Never apply or contact recruiters without authorization",
+      "example": "Find senior technical product roles matching API platform leadership.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "48",
+      "name": "Interview preparation and learning plans",
+      "slug": "interview-preparation-and-learning-plans",
+      "family": "Professional Enablement",
+      "implementation": "adapter_required",
+      "outcome": "Prepare for interviews",
+      "inputs": [
+        "Role description",
+        "company context",
+        "candidate achievements",
+        "interview round"
+      ],
+      "steps": [
+        "Map competencies to evidence",
+        "Draft STAR stories using real metrics",
+        "Build question bank and case prompts",
+        "Run mock evaluation if supported",
+        "Identify weak spots to practice"
+      ],
+      "outputs": [
+        "Interview prep guide",
+        "STAR stories",
+        "practice plan"
+      ],
+      "validation": "Do not invent career achievements or interviewer details",
+      "example": "Prepare for a principal PM interview focused on enterprise integrations.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "49",
+      "name": "Location and map-based research",
+      "slug": "location-and-map-based-research",
+      "family": "Spatial & Field Intelligence",
+      "implementation": "adapter_required",
+      "outcome": "Research places and locations",
+      "inputs": [
+        "Target geography",
+        "local context",
+        "constraints",
+        "map data"
+      ],
+      "steps": [
+        "Clarify geographic scope",
+        "Retrieve authorized or public location data",
+        "Compare suitability and accessibility",
+        "Show sources and freshness",
+        "Identify decisions requiring field verification"
+      ],
+      "outputs": [
+        "Location research brief",
+        "candidate map references"
+      ],
+      "validation": "Do not invent exact coordinates or real-time availability",
+      "example": "Compare three candidate regions for deploying a delivery micro-hub.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "50",
+      "name": "Road and network visualization",
+      "slug": "road-and-network-visualization",
+      "family": "Spatial & Field Intelligence",
+      "implementation": "adapter_required",
+      "outcome": "Understand transport networks",
+      "inputs": [
+        "Road network data",
+        "target region",
+        "vehicle constraints"
+      ],
+      "steps": [
+        "Define network nodes and edges",
+        "Validate topology and data freshness",
+        "Identify chokepoints and coverage gaps",
+        "Compare routing or accessibility scenarios",
+        "Produce a readable network summary"
+      ],
+      "outputs": [
+        "Network visualization plan",
+        "topology analysis",
+        "risk map"
+      ],
+      "validation": "Network outputs require actual geodata to be called measured",
+      "example": "Study access-road coverage around a proposed distribution center.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "51",
+      "name": "Geospatial data visualization",
+      "slug": "geospatial-data-visualization",
+      "family": "Spatial & Field Intelligence",
+      "implementation": "adapter_required",
+      "outcome": "Visualize spatial patterns",
+      "inputs": [
+        "Geocoded data",
+        "boundaries",
+        "desired comparisons",
+        "coordinate systems"
+      ],
+      "steps": [
+        "Check CRS and geocode validity",
+        "Choose 2D or 3D projection",
+        "Represent density, time or categories accurately",
+        "Add legends and uncertainty",
+        "Validate sampled locations"
+      ],
+      "outputs": [
+        "Map/scene specification",
+        "visualization output when runtime available"
+      ],
+      "validation": "Never imply simulated map layers are live feeds",
+      "example": "Visualize regional delivery delays using customer-provided coordinates.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    },
+    {
+      "id": "52",
+      "name": "Location-driven field insights",
+      "slug": "location-driven-field-insights",
+      "family": "Spatial & Field Intelligence",
+      "implementation": "adapter_required",
+      "outcome": "Turn location signals into action",
+      "inputs": [
+        "Site visits",
+        "field notes",
+        "GPS with consent",
+        "performance data"
+      ],
+      "steps": [
+        "Join spatial observations to operational outcomes",
+        "Segment by site or region",
+        "Find potential spatial drivers",
+        "Propose targeted field experiments",
+        "Summarize privacy and data-quality concerns"
+      ],
+      "outputs": [
+        "Field-insights report",
+        "interventions",
+        "test plan"
+      ],
+      "validation": "Treat location data as sensitive and minimize precise personal tracking",
+      "example": "Prioritize on-site visits using anonymized service issues and travel time.",
+      "workflows": [],
+      "permissions": {
+        "read_local_files": "with_operator_authorization",
+        "network": "only_if_needed_and_authorized",
+        "external_writes": "approval_required"
+      }
+    }
+  ]
+}

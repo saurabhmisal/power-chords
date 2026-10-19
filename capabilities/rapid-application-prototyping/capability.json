@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "16",
+  "name": "Rapid application prototyping",
+  "slug": "rapid-application-prototyping",
+  "family": "Engineering & Integration",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Problem statement",
+    "users",
+    "preferred stack",
+    "feature scope"
+  ],
+  "outputs": [
+    "Prototype source",
+    "run instructions",
+    "known limitations"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

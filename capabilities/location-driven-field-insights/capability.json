@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "52",
+  "name": "Location-driven field insights",
+  "slug": "location-driven-field-insights",
+  "family": "Spatial & Field Intelligence",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Site visits",
+    "field notes",
+    "GPS with consent",
+    "performance data"
+  ],
+  "outputs": [
+    "Field-insights report",
+    "interventions",
+    "test plan"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

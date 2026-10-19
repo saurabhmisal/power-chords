@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "07",
+  "name": "OCR and structured extraction",
+  "slug": "ocr-and-structured-extraction",
+  "family": "Document Intelligence",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Scans",
+    "image files",
+    "expected fields",
+    "sample schema"
+  ],
+  "outputs": [
+    "Structured extraction JSON",
+    "field-confidence report"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

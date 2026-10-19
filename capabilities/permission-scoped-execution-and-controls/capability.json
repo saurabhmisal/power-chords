@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "29",
+  "name": "Permission-scoped execution and controls",
+  "slug": "permission-scoped-execution-and-controls",
+  "family": "Agentic Automation",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Actors",
+    "resource scope",
+    "data classification",
+    "action categories"
+  ],
+  "outputs": [
+    "Permission matrix",
+    "action policy",
+    "audit checklist"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "integration-readiness",
+      "title": "Integration Readiness"
+    },
+    {
+      "id": "launch-readiness",
+      "title": "Launch Readiness Plan"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "41",
+  "name": "Audio separation and editing",
+  "slug": "audio-separation-and-editing",
+  "family": "Voice & Media",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Audio source",
+    "desired stems",
+    "quality and usage rights"
+  ],
+  "outputs": [
+    "Isolated stems",
+    "mix notes",
+    "processing metadata"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

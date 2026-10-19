@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "51",
+  "name": "Geospatial data visualization",
+  "slug": "geospatial-data-visualization",
+  "family": "Spatial & Field Intelligence",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Geocoded data",
+    "boundaries",
+    "desired comparisons",
+    "coordinate systems"
+  ],
+  "outputs": [
+    "Map/scene specification",
+    "visualization output when runtime available"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

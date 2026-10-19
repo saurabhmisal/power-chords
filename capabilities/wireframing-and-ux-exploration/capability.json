@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "21",
+  "name": "Wireframing and UX exploration",
+  "slug": "wireframing-and-ux-exploration",
+  "family": "Design & Creation",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Persona",
+    "task",
+    "accessibility needs",
+    "current screen behavior"
+  ],
+  "outputs": [
+    "UX exploration brief",
+    "annotated wireframe outline"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

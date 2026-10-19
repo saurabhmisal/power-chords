@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "45",
+  "name": "Campaigns and content production",
+  "slug": "campaigns-and-content-production",
+  "family": "Marketing & Go-to-Market",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Value proposition",
+    "brand guidance",
+    "customer evidence",
+    "audience"
+  ],
+  "outputs": [
+    "Campaign briefs",
+    "draft copy",
+    "creative asset specs"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

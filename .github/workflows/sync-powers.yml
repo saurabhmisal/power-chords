@@ -1,0 +1,110 @@
+name: Sync and publish Power Chords
+
+on:
+  # Scheduled checks are near-hourly, not instantaneous GitHub webhooks.
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  # Optional push notifications through the GitHub repository_dispatch API.
+  repository_dispatch:
+    types: [powers-upstream-updated]
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/**'
+      - 'src/catalog.mjs'
+      - 'scripts/**'
+      - 'data/**'
+      - 'site/**'
+      - 'package.json'
+      - 'test/**'
+
+concurrency:
+  group: powers-sync-main
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.publish_state.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify baseline
+        run: |
+          npm run validate:catalog
+          npm test
+      - name: Query fork AND original upstream changes
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: npm run sync:upstreams
+      - name: Rebuild public catalog and changelog
+        run: |
+          npm run validate:catalog
+          npm run render:updates
+          npm run build:site
+          npm run keepalive
+          npm test
+      - name: Record sync state
+        id: publish_state
+        shell: bash
+        run: |
+          if git diff --quiet -- data/upstreams.lock.json data/updates.json; then
+            echo 'source_changed=false' >> "$GITHUB_OUTPUT"
+          else
+            echo 'source_changed=true' >> "$GITHUB_OUTPUT"
+          fi
+          if [ -n "$(git status --porcelain -- data/upstreams.lock.json data/updates.json docs/SOURCE_UPDATES.md site/index.html .github/last-active.txt)" ]; then
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Commit verified catalog changes
+        if: steps.publish_state.outputs.changed == 'true'
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/upstreams.lock.json data/updates.json docs/SOURCE_UPDATES.md site/index.html .github/last-active.txt
+          git commit -m 'chore(powers): sync 52 GitHub source revisions'
+          git push origin HEAD:main
+      - name: Publish GitHub release on source updates
+        if: steps.publish_state.outputs.source_changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          RELEASE_TAG="sources-$(date -u +%Y%m%d%H%M)-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          gh release create "$RELEASE_TAG" --target "$(git rev-parse HEAD)" \
+            --title "Power Chords source refresh $(date -u +%Y-%m-%d)" \
+            --notes-file docs/SOURCE_UPDATES.md
+
+  pages:
+    needs: sync
+    # Publish on a first push, an updated source, or a manual run.
+    if: ${{ needs.sync.result == 'success' && (needs.sync.outputs.changed == 'true' || github.event_name == 'push' || github.event_name == 'workflow_dispatch') }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4

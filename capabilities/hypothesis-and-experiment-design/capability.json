@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "14",
+  "name": "Hypothesis and experiment design",
+  "slug": "hypothesis-and-experiment-design",
+  "family": "Product & Strategy",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Hypothesis",
+    "population",
+    "baseline",
+    "metric definition",
+    "guardrails"
+  ],
+  "outputs": [
+    "Experiment design brief",
+    "event instrumentation plan"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "discovery-to-prd",
+      "title": "Customer Discovery → PRD"
+    }
+  ]
+}

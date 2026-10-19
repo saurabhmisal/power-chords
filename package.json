@@ -1,0 +1,33 @@
+{
+  "name": "@saurabhmisal/power-chords",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "smoke": "node src/smoke.mjs",
+    "inspect:all": "node src/inspect-all.mjs",
+    "install:reviewed": "node src/install-reviewed.mjs",
+    "sync:upstreams": "node scripts/sync-sources.mjs",
+    "validate:catalog": "node scripts/validate-catalog.mjs",
+    "build:site": "node scripts/build-site.mjs",
+    "render:updates": "node scripts/render-changelog.mjs",
+    "keepalive": "node scripts/keepalive.mjs",
+    "demo": "node src/demo.mjs",
+    "capabilities:list": "node scripts/capabilities-cli.mjs list",
+    "capabilities:install": "node scripts/capabilities-cli.mjs install",
+    "capabilities:docs": "node scripts/generate-capability-docs.mjs",
+    "validate:capabilities": "node scripts/validate-capabilities.mjs"
+  },
+  "author": "Saurabh Misal (https://github.com/saurabhmisal)",
+  "license": "MIT",
+  "description": "Power Chords: portable agent skills and a cohesive local Workroom for product builders",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saurabhmisal/power-chords.git"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "09",
+  "name": "Semantic and context-aware retrieval",
+  "slug": "semantic-and-context-aware-retrieval",
+  "family": "Document Intelligence",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Authorized knowledge corpus",
+    "question",
+    "access policies",
+    "freshness requirements"
+  ],
+  "outputs": [
+    "Cited answer",
+    "retrieval trace",
+    "coverage assessment"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

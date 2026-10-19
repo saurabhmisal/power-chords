@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "35",
+  "name": "Billing and invoicing workflows",
+  "slug": "billing-and-invoicing-workflows",
+  "family": "Business & Operations",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Customer plan",
+    "billing events",
+    "tax rules",
+    "payment provider contracts"
+  ],
+  "outputs": [
+    "Billing workflow design",
+    "state model",
+    "test matrix"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

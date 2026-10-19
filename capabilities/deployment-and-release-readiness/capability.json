@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "20",
+  "name": "Deployment and release readiness",
+  "slug": "deployment-and-release-readiness",
+  "family": "Engineering & Integration",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Release scope",
+    "changelog",
+    "test evidence",
+    "deployment steps"
+  ],
+  "outputs": [
+    "Release readiness checklist",
+    "runbook",
+    "rollback plan"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "integration-readiness",
+      "title": "Integration Readiness"
+    },
+    {
+      "id": "launch-readiness",
+      "title": "Launch Readiness Plan"
+    }
+  ]
+}

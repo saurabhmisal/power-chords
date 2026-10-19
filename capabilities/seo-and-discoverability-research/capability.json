@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "43",
+  "name": "SEO and discoverability research",
+  "slug": "seo-and-discoverability-research",
+  "family": "Marketing & Go-to-Market",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Website",
+    "audience",
+    "target keywords",
+    "performance metrics"
+  ],
+  "outputs": [
+    "SEO audit",
+    "content opportunity backlog"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

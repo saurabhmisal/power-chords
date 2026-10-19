@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "30",
+  "name": "SQL and structured-data analysis",
+  "slug": "sql-and-structured-data-analysis",
+  "family": "Data & Evaluation",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Schema",
+    "CSV or SQL source",
+    "business questions",
+    "metric definitions"
+  ],
+  "outputs": [
+    "SQL queries",
+    "analytic memo",
+    "reproducible tables"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "39",
+  "name": "Speech transcription and meeting notes",
+  "slug": "speech-transcription-and-meeting-notes",
+  "family": "Voice & Media",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Audio with authorized recording consent",
+    "languages",
+    "diarization needs"
+  ],
+  "outputs": [
+    "Timestamped transcript",
+    "decision log",
+    "follow-up list"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

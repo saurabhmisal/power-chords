@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "22",
+  "name": "Interactive prototype construction",
+  "slug": "interactive-prototype-construction",
+  "family": "Design & Creation",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Interaction spec",
+    "designs",
+    "component library",
+    "development environment"
+  ],
+  "outputs": [
+    "Prototype source or link",
+    "flow notes",
+    "test scenarios"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

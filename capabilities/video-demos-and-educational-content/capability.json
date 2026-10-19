@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "42",
+  "name": "Video demos and educational content",
+  "slug": "video-demos-and-educational-content",
+  "family": "Voice & Media",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Script",
+    "product access",
+    "assets",
+    "target channels"
+  ],
+  "outputs": [
+    "Storyboard",
+    "render files when media tools are available",
+    "publishing checklist"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

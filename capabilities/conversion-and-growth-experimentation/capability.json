@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "46",
+  "name": "Conversion and growth experimentation",
+  "slug": "conversion-and-growth-experimentation",
+  "family": "Marketing & Go-to-Market",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Channel and funnel data",
+    "segment mix",
+    "guardrail metrics"
+  ],
+  "outputs": [
+    "Growth experiment backlog",
+    "measurement plan"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "launch-readiness",
+      "title": "Launch Readiness Plan"
+    }
+  ]
+}

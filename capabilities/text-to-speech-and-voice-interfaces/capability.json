@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "40",
+  "name": "Text-to-speech and voice interfaces",
+  "slug": "text-to-speech-and-voice-interfaces",
+  "family": "Voice & Media",
+  "implementation": "adapter_required",
+  "inputs": [
+    "Approved text",
+    "voice selection",
+    "language",
+    "output format"
+  ],
+  "outputs": [
+    "Audio file",
+    "pronunciation notes",
+    "generation metadata"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}

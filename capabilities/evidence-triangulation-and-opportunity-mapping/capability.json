@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "05",
+  "name": "Evidence triangulation and opportunity mapping",
+  "slug": "evidence-triangulation-and-opportunity-mapping",
+  "family": "Research & Discovery",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Research notes",
+    "metrics",
+    "support tickets",
+    "observations"
+  ],
+  "outputs": [
+    "Opportunity solution tree",
+    "evidence-to-opportunity map"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "discovery-to-prd",
+      "title": "Customer Discovery → PRD"
+    },
+    {
+      "id": "product-decision",
+      "title": "Product Decision Brief"
+    }
+  ]
+}

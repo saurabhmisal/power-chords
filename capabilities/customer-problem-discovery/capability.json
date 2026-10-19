@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "01",
+  "name": "Customer problem discovery",
+  "slug": "customer-problem-discovery",
+  "family": "Research & Discovery",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Interview notes",
+    "current workflow",
+    "user complaints",
+    "observed failures"
+  ],
+  "outputs": [
+    "Customer problem brief",
+    "prioritized pain points",
+    "interview questions"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "discovery-to-prd",
+      "title": "Customer Discovery → PRD"
+    }
+  ]
+}

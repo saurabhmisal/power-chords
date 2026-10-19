@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "32",
+  "name": "Funnel, retention and operational diagnostics",
+  "slug": "funnel-retention-and-operational-diagnostics",
+  "family": "Data & Evaluation",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Event schema",
+    "exposure logs",
+    "time window",
+    "cohorts"
+  ],
+  "outputs": [
+    "Funnel analysis",
+    "retention hypotheses",
+    "instrumentation gaps"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": [
+    {
+      "id": "product-decision",
+      "title": "Product Decision Brief"
+    }
+  ]
+}

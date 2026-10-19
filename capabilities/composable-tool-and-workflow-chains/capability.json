@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "28",
+  "name": "Composable tool and workflow chains",
+  "slug": "composable-tool-and-workflow-chains",
+  "family": "Agentic Automation",
+  "implementation": "native_assistive",
+  "inputs": [
+    "Outcome",
+    "available capabilities",
+    "input and output schemas"
+  ],
+  "outputs": [
+    "Workflow DAG",
+    "capability bindings",
+    "final artifact"
+  ],
+  "permissions": {
+    "read_local_files": "with_operator_authorization",
+    "network": "only_if_needed_and_authorized",
+    "external_writes": "approval_required"
+  },
+  "workflows": []
+}
