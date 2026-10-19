@@ -1,8 +1,12 @@
+const hosted=document.querySelector('meta[name="power-chords-hosted"]')!==null;
+const hosting=hosted?await import('/hosted.js'):null;
+hosting?.configureHostedPage();
 let state=null,group='all',view='all',query='';
 const $=(s)=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const enc=encodeURIComponent;
 async function api(path,options={}){
+  if(hosted)return hosting.hostedApi(path,options);
   const res=await fetch('/api/'+path,{credentials:'same-origin',headers:{'Content-Type':'application/json'},...options});
   const data=await res.json();if(!res.ok)throw Error(data.error||res.statusText);return data;
 }
@@ -94,7 +98,7 @@ function displayWorkflow(){
 }
 function renderWorkroomHistory(){
   const rows=workroomState?.runs||[];
-  $('#workroom-history').innerHTML=rows.length?`<h4>Recent work</h4>${rows.slice(0,5).map(r=>`<p>⚡ ${esc(r.title)} · <a href="/api/workroom/artifacts/${enc(r.id)}" download>Download</a></p>`).join('')}`:'<p class="microcopy">Your completed work will appear here. Runs are saved locally.</p>';
+  $('#workroom-history').innerHTML=rows.length?`<h4>Recent work</h4>${rows.slice(0,5).map(r=>`<p>⚡ ${esc(r.title)} · <a href="${hosted?hosting.artifactUrl(r.id):'/api/workroom/artifacts/'+enc(r.id)}" download="power-chords-${enc(r.id)}.md">Download</a></p>`).join('')}`:'<p class="microcopy">Your completed work will appear here. Runs are saved locally.</p>';
 }
 $('#workroom-form').addEventListener('submit',async e=>{
   e.preventDefault();const button=$('#workroom-run');button.disabled=true;button.textContent='Generating…';
@@ -107,7 +111,7 @@ $('#workroom-form').addEventListener('submit',async e=>{
     $('#workroom-result-meta').textContent=`${result.evidenceCount} evidence items · ${result.capabilities.length} connected powers · no external writes`;
     $('#workroom-download').href=result.download;
     $('#workroom-preview').textContent=result.content.slice(0,3600)+(result.content.length>3600?'\n…more in downloadable file':'');
-    workroomState=await api('workroom');renderWorkroomHistory();toast('Work product generated locally. Review and download it.');
+    workroomState=await api('workroom');renderWorkroomHistory();toast(result.storageWarning?'Generated, but browser storage is full. Download your document now.':'Work product generated. Review and download it.');
   }catch(err){toast(err.message);}finally{button.disabled=false;button.textContent='⚡ Generate work product';}
 });
 initWorkroom().catch(e=>toast('Workroom: '+e.message));
