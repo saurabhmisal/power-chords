@@ -1,18 +1,18 @@
 <div align="center">
 
-<img src="assets/power-chords-rockstar-hero-green.png" alt="Power Chords — 52 capabilities, with a product builder in a green sweater raising the rock-horns hand sign at his workspace" width="100%" />
+<img src="assets/power-chords-rockstar-hero-green.png" alt="Power Chords — open-source capabilities for product builders, featuring a builder in a green sweater at his workspace" width="100%" />
 
 # 🤘 POWER CHORDS
 
-### One workspace. Connected powers. A seriously capable product builder.
+### Connected capabilities. One workspace. From customer evidence to product decisions.
 
-**Go from an ambiguous customer problem to an actionable, reviewable work product.**
+**Turn customer context into clear plans, specifications, and documents ready for review.**
 
 **Built by [Saurabh Misal](https://github.com/saurabhmisal)** · Original Power Chords Workroom & orchestration architecture
 
 [![Version](https://img.shields.io/badge/WORKROOM-0.2-f59e0b?style=for-the-badge)](#get-started)
 [![Automated tests](https://img.shields.io/badge/TESTED-NODE_22-22c55e?style=for-the-badge)](#test-it)
-[![Capability map](https://img.shields.io/badge/CAPABILITY_MAP-52-9c5cf0?style=for-the-badge)](docs/CAPABILITIES.md)
+[![Capabilities](https://img.shields.io/badge/EXPLORE-CAPABILITIES-9c5cf0?style=for-the-badge)](docs/CAPABILITIES.md)
 [![Privacy](https://img.shields.io/badge/LOCAL-FIRST-00b5ce?style=for-the-badge)](#security--control)
 
 [⚡ **Get started**](#get-started) · [🧠 **The Workroom**](#workroom) · [🎯 **Real examples**](#four-working-workflows) · [🏗️ **Architecture**](docs/ARCHITECTURE.md) · [🧩 **Extend it**](docs/ADAPTER_SDK.md)
@@ -31,7 +31,7 @@ Power Chords is an original **local-first product Workroom** with a shared execu
 
 It's designed to turn messy, incomplete inputs into something useful **today**, while providing a consistent architecture for richer AI and application integrations **tomorrow**.
 
-**This is not a page of links.** You can run native workflows, generate deliverables, inspect an audit trail and retrieve previous work. The 52-capability map is the broader technical roadmap—not a claim that 52 external systems already run inside this release.
+Run native workflows, generate deliverables, inspect an audit trail, and retrieve previous work. The capability map distinguishes working drafting tools from capabilities that need additional integrations.
 
 ### From the field to the product
 
@@ -46,14 +46,14 @@ flowchart LR
   D -. optional reviewed adapters .-> H[Additional runtimes]
 ```
 
-## ⚡ 52 portable skills. Your agent, your workflow.
+## Portable capabilities for your agent and workflow
 
-**Power Chords V0.3 ships an independent README, Agent Skill instruction file, capability manifest, and working example request for every one of its 52 function-named powers.** Nothing requires a specific model provider. Each package can be used on its own or alongside the local Workroom.
+**Each capability includes a usage guide, an Agent Skill instruction file, a manifest, and an example request.** The packages are independent of any model provider and can be used individually or alongside the local Workroom.
 
 **[Browse every capability and its usage guide →](docs/CAPABILITY_GUIDES.md)**
 
 ```bash
-# Discover all 52 functional capabilities
+# Browse available capabilities
 npm run capabilities:list
 
 # Install capability #10 as a local Codex Agent Skill in your project
@@ -70,7 +70,7 @@ node scripts/capabilities-cli.mjs install 10 --dest ./my-agent/skills
 
 After installation, open your agent and ask: **“Use the Power Chords PRD and specification writing skill to turn these notes into a reviewable PRD with acceptance criteria.”** If your agent doesn't discover project-local skills automatically, reference the generated `SKILL.md` directly.
 
-The installer copies first-party instructions and metadata only; it does not run foreign code, install models, silently grant permissions, or enable unsupported tools. The capability guides openly distinguish skills that contribute to four existing native Workroom drafting flows from others that need real execution adapters. **52 documented skills ≠ 52 independently runnable integrations.**
+The installer copies first-party instructions and metadata only; it does not run third-party code, install models, grant permissions, or enable unsupported tools. The guides explain which capabilities support native Workroom drafting workflows and which require additional runtime adapters. A documented capability does not imply an operational integration.
 
 For individual instructions, schemas, examples, and acceptance criteria, open any `capabilities/<functional-name>/README.md`. See [Agent compatibility and boundaries](docs/AGENT_COMPATIBILITY.md).
 
@@ -149,7 +149,7 @@ INTEGRATION READINESS PACK
 DOWNLOAD .MD  +  LOCAL AUDIT  +  REVIEW REQUIRED
 ```
 
-## One architecture, not 52 disconnected apps
+## A shared architecture for connected capabilities
 
 Power Chords has a single local runtime and contracts for the distinct kinds of capabilities it can host.
 
@@ -187,11 +187,11 @@ Power Chords has a single local runtime and contracts for the distinct kinds of 
 
 See [architecture](docs/ARCHITECTURE.md), [adapter design](docs/ADAPTER_SDK.md) and [status matrix](docs/CAPABILITIES.md).
 
-## 52 capabilities. Twelve connected disciplines.
+## Capabilities across product disciplines
 
 Power Chords organizes a forward-deployed builder's operating system around **twelve power families**: discovery, document intelligence, product strategy, engineering, design, agents, analytics, operations, voice/media, growth, professional enablement and spatial intelligence.
 
-The [52-capability matrix](docs/CAPABILITIES.md) distinguishes capabilities supported by native assistive workflows from those requiring reviewed adapters. This avoids confusing aspirational coverage with operational readiness.
+The [capability matrix](docs/CAPABILITIES.md) identifies capabilities supported by native drafting workflows and those requiring reviewed adapters, making their current execution scope clear.
 
 ### Architecture decisions that make the difference
 
@@ -217,7 +217,7 @@ The local HTTP service binds to `127.0.0.1`, uses a session cookie, validates re
 |---|---|---|
 | I | Cohesive Workroom with real artifact generation | ✅ Implemented |
 | II | Native power registry, per-user revocation and audit | ✅ Implemented |
-| III | 52 function-named capability packs, usage guides and manifests | ✅ Documented and packaged; runtime scope varies |
+| III | Capability packages with usage guides, manifests, and examples | ✅ Documented and packaged; runtime scope varies |
 | IV | Source package inspection and pinned instruction imports | ✅ Prototype; no arbitrary code execution |
 | V | More native operators and evidence-aware data connectors | ⏳ Planned |
 | VI | Production-reviewed adapters for external applications/services | ⏳ Planned |
