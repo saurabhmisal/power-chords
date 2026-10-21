@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/power-chords-rockstar-hero.webp" alt="Power Chords — a forward-deployed PM throwing the rock-horns hand sign over a high-voltage product workspace" width="100%" />
+<img src="assets/power-chords-rockstar-hero-green.png" alt="Power Chords — 52 capabilities, with a product builder in a green sweater raising the rock-horns hand sign at his workspace" width="100%" />
 
 # 🤘 POWER CHORDS
 
