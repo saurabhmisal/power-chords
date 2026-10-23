@@ -2,6 +2,8 @@
 
 Power Chords **instruction packs** are portable. Actual abilities depend on your agent's access to tools, authorized content, and any installed runtime adapter. An SKILL.md file alone cannot perform OCR, deploy code, generate audio or retrieve live information.
 
+The landing page provides a platform selector, capability search, install-command copying, and individual Markdown downloads. For chat-based products without project skill directories, follow the [portable agent guide](PORTABLE_AGENT_GUIDE.md). Claude Code installation is distinct from using instructions in Claude web; no automatic account integration is implied.
+
 ## Install into a repository
 
 ```bash

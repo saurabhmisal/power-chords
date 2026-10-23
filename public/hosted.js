@@ -62,6 +62,9 @@ export async function hostedApi(path,options={}){
   throw new Error('Skill installation requires the local Power Chords runtime. Native document workflows work online.');
 }
 export function configureHostedPage(){
+  const home=document.createElement('a');
+  home.href='/';home.textContent='← Power Chords home';
+  document.querySelector('.breadcrumbs').prepend(home,document.createTextNode(' / '));
   document.querySelector('.sidebar-foot strong').textContent='Online Workroom';
   document.querySelector('.privacy').textContent='◈ BROWSER-LOCAL HISTORY';
   document.querySelector('.hero p').textContent='Turn customer evidence into actionable documents with four native workflows and explore the 52-source power library.';

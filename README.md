@@ -27,6 +27,7 @@ Built and led by **[Saurabh Misal](https://github.com/saurabhmisal)**.
 
 - [What Power Chords does](#what-power-chords-does)
 - [Choose how to use it](#choose-how-to-use-it)
+- [Landing page and platform setup](#landing-page-and-platform-setup)
 - [Get started](#get-started)
 - [Your first Workroom run](#your-first-workroom-run)
 - [Native workflows](#native-workflows)
@@ -95,6 +96,17 @@ Native workflows do not browse the web, verify customer claims, run SQL against 
 | Static catalog | Browsing source metadata and update information | Generated static files | Build the catalog; optionally publish with GitHub Pages |
 
 The static catalog and the interactive Workroom are different outputs. Serving the catalog does not provide the Workroom API.
+
+## Landing page and platform setup
+
+The dedicated landing page introduces the product, explains native workflows, and provides a searchable capability library with scope and discipline filters. Select a capability and choose Claude Code, Codex, Cursor, Gemini CLI, or another host to get the appropriate setup instructions.
+
+- **Coding agents:** copy a project installation command and verify skill discovery in your host.
+- **Other compatible agents:** install into a custom skill directory with `--dest`.
+- **Chat-based platforms:** download the selected capability as Markdown, then attach or paste it where your platform supports manual instructions. Tool access and context limits still depend on that platform.
+- **Native drafting:** run the local Workroom, or open `/workroom.html` on a complete hosted deployment.
+
+Run `npm run build:site` to build the static landing page in `site/`. Run `node scripts/build-hosted.mjs` to build the Vercel landing page at `/` and hosted Workroom at `/workroom.html`. Portable capability downloads are included in both builds. See the [portable agent guide](docs/PORTABLE_AGENT_GUIDE.md) for platform boundaries and a reusable starter request.
 
 ## Get started
 
@@ -718,7 +730,7 @@ See [Vercel deployment details](docs/VERCEL.md). This README does not advertise 
 npm run build:site
 ```
 
-The static builder produces `site/index.html` and its assets. This output is for browsing source information; it does not host Node.js APIs or the interactive Workroom's execution engine.
+The static builder produces the dedicated landing page at `site/index.html`, with its searchable capability library, platform setup selector, portable downloads, documentation links, and assets. It does not host Node.js APIs or the interactive Workroom's execution engine.
 
 The repository includes a GitHub Actions Pages job. Publishing depends on the repository's Pages configuration, permissions, and successful workflow completion.
 
