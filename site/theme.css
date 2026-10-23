@@ -1,0 +1,128 @@
+:root {
+  --cyan: #77dded;
+  --violet: #c4a6ff;
+  --peach: #ffb38d;
+  --mint: #7de0bb;
+  --pink: #f1a4cd;
+}
+body {
+  background: radial-gradient(ellipse at 80% 10%, #1e353151, transparent 35%), var(--bg);
+}
+.site-nav .brand > span {
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  background: #e4f77816;
+  border: 1px solid #e4f77840;
+  border-radius: 10px;
+}
+.site-nav nav a:nth-child(1) .icon { color: var(--cyan); }
+.site-nav nav a:nth-child(2) .icon { color: var(--violet); }
+.site-nav nav a:nth-child(3) .icon { color: var(--peach); }
+.site-nav nav a:nth-child(4) .icon { color: var(--mint); }
+.nav-cta, .button, fieldset label { border-radius: 8px; }
+.primary { box-shadow: 0 5px 24px #d8f57e15; }
+.hero em {
+  color: #e4f778;
+  background: linear-gradient(105deg, #e4f778, #a6edbd);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.signal-card { border-radius: 16px; box-shadow: 12px 12px 0 #1c2c224d, 0 20px 70px #0003; }
+.signal-steps li > span {
+  width: 29px;
+  height: 29px;
+  display: grid;
+  place-items: center;
+  background: #77dded15;
+  border: 1px solid #77dded35;
+  color: var(--cyan);
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+.signal-steps li:nth-child(2) > span { color: var(--violet); border-color: #c4a6ff35; background: #c4a6ff15; }
+.signal-steps li:nth-child(3) > span { color: var(--mint); border-color: #7de0bb35; background: #7de0bb15; }
+.live-tag { border-radius: 5px; background: #e4f7780d; }
+.platform-names { gap: 10px; }
+.platform-names > span {
+  --tone: var(--peach);
+  background: color-mix(in srgb, var(--tone) 7%, #141a16);
+  border: 1px solid color-mix(in srgb, var(--tone) 22%, #25332a);
+  border-radius: 8px;
+  padding: 11px 14px;
+  font-size: 12px;
+}
+.platform-names > span:nth-child(2) { --tone: var(--mint); }
+.platform-names > span:nth-child(3) { --tone: var(--violet); }
+.platform-names > span:nth-child(4) { --tone: var(--cyan); }
+.platform-names > span:nth-child(5) { --tone: var(--pink); }
+.platform-names .icon { width: 21px; height: 21px; color: var(--tone); }
+.poster img { border-radius: 12px; }
+.path-card, .runtime-card, .workflow-card, .capability-card { border-radius: 12px; }
+.path-card { background: linear-gradient(150deg, #1c2924, #141b17); }
+.path-card:nth-child(2) { background: linear-gradient(150deg, #252335, #151a19); }
+.path-card .path-mark { color: var(--cyan); font: 10px ui-monospace,monospace; letter-spacing: 1.1px; }
+.path-card:nth-child(2) .path-mark { color: var(--violet); }
+.path-card .path-mark > .icon, .tile-icon, .doc-icon-label > .icon {
+  box-sizing: content-box;
+  padding: 12px;
+  border-radius: 12px;
+  background: #77dded13;
+  border: 1px solid #77dded28;
+}
+.path-card:nth-child(2) .path-mark > .icon { background: #c4a6ff13; border-color: #c4a6ff28; }
+.workflow-card { --tone: var(--cyan); border-top-color: var(--tone); background: linear-gradient(150deg, #1b2927, #151c18); }
+.workflow-card:nth-child(2) { --tone: var(--violet); }
+.workflow-card:nth-child(3) { --tone: var(--accent); }
+.workflow-card:nth-child(4) { --tone: var(--peach); }
+.workflow-label { align-items: center; flex-wrap: wrap; }
+.workflow-card .tile-icon { width: 25px; height: 25px; color: var(--tone); background: color-mix(in srgb, var(--tone) 9%, transparent); border-color: color-mix(in srgb, var(--tone) 22%, transparent); }
+.workflow-label .small-label { color: var(--tone); }
+.capability-card { --tone: var(--cyan); background: linear-gradient(140deg, color-mix(in srgb, var(--tone) 5%, #141b17), #121914); border-color: color-mix(in srgb, var(--tone) 16%, #26302a); }
+.capability-card[data-family="Document Intelligence"] { --tone: var(--violet); }
+.capability-card[data-family="Product & Strategy"] { --tone: var(--accent); }
+.capability-card[data-family="Engineering & Integration"] { --tone: var(--peach); }
+.capability-card[data-family="Design & Creation"] { --tone: var(--pink); }
+.capability-card[data-family="Agentic Automation"] { --tone: var(--mint); }
+.capability-card[data-family="Data & Evaluation"] { --tone: #9abbff; }
+.capability-card[data-family="Business & Operations"] { --tone: #edce91; }
+.capability-card[data-family="Voice & Media"] { --tone: #d6afff; }
+.capability-card[data-family="Marketing & Go-to-Market"] { --tone: #ffa7ac; }
+.capability-card[data-family="Professional Enablement"] { --tone: #a8dca0; }
+.capability-card[data-family="Spatial & Field Intelligence"] { --tone: #83dfd4; }
+.capability-card .family { color: var(--tone); font-size: 8px; }
+.capability-card .family .icon { width: 19px; height: 19px; padding: 8px; box-sizing: content-box; border-radius: 9px; color: var(--tone); background: color-mix(in srgb, var(--tone) 10%, transparent); }
+.scope { border-radius: 5px; color: #a6e9c3; background: #23412d; }
+.scope.adapter { color: #e4cd9c; background: #3c3321; }
+.capability-card .card-actions button { color: var(--tone); }
+.library-tools input, .library-tools select, .capability-picker select { border-radius: 8px; }
+fieldset label:nth-of-type(1) .icon { color: var(--peach); }
+fieldset label:nth-of-type(2) .icon { color: var(--mint); }
+fieldset label:nth-of-type(3) .icon { color: var(--violet); }
+fieldset label:nth-of-type(4) .icon { color: var(--cyan); }
+fieldset label:nth-of-type(5) .icon { color: var(--pink); }
+.terminal { border-radius: 12px; overflow: hidden; }
+.terminal-header { background: #203026; }
+.runtime-card { background: #161f19; }
+.runtime-card .icon-label { color: var(--cyan); }
+.runtime-card:nth-child(2) .icon-label { color: var(--violet); }
+.architecture-flow li:nth-child(1) { border-left-color: var(--cyan); }
+.architecture-flow li:nth-child(2) { border-left-color: var(--violet); }
+.architecture-flow li:nth-child(3) { border-left-color: var(--peach); }
+.architecture-flow li:nth-child(4) { border-left-color: var(--mint); }
+.docs-grid a { --tone: var(--cyan); padding: 24px; border: 1px solid var(--line); border-radius: 12px; background: #172019; }
+.docs-grid a:nth-child(2), .docs-grid a:nth-child(5) { --tone: var(--violet); }
+.docs-grid a:nth-child(3), .docs-grid a:nth-child(6) { --tone: var(--peach); }
+.doc-icon-label > .icon { color: var(--tone); background: color-mix(in srgb, var(--tone) 9%, transparent); border-color: color-mix(in srgb, var(--tone) 20%, transparent); }
+.faq details[open] summary { color: var(--accent); }
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+  .capability-card, .docs-grid a, .button, fieldset label { transition: border-color .18s, background .18s, transform .18s; }
+  .capability-card:hover, .docs-grid a:hover { border-color: var(--tone); transform: translateY(-3px); }
+  .button:hover { transform: translateY(-2px); }
+}
+@media (max-width:760px) {
+  .platform-names > span { font-size: 11px; padding: 9px 11px; }
+  .workflow-card .tile-icon { padding: 9px; }
+  .docs-grid a { padding: 20px; }
+}
