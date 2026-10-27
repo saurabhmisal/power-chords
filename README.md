@@ -734,6 +734,8 @@ The static builder produces the dedicated landing page at `site/index.html`, wit
 
 The repository includes a GitHub Actions Pages job. Publishing depends on the repository's Pages configuration, permissions, and successful workflow completion.
 
+The public landing page uses Google Analytics 4 in the existing **Lazo Website** property (measurement ID `G-B3WTD82CQ0`). Tracking loads only on `https://powerchords.lazo.tools`; local Workrooms, preview deployments, and forks do not send analytics. The tag is configured in `landing/analytics.js` and copied into the static build. In GA4, use the **Hostname** dimension to distinguish Power Chords traffic from `lazo.tools`.
+
 ## Source synchronization
 
 Power Chords tracks fork revisions and original upstream metadata separately.
