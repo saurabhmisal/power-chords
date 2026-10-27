@@ -19,6 +19,7 @@ export async function buildLanding(destination,{hosted=false}={}){
   await writeFile(join(directory,'index.html'),template.replace(/\{\{ICON:([a-z]+)\}\}/g,(_,name)=>icon(name)).replace(/\{\{([A-Z_]+)\}\}/g,(_,key)=>replacements[key]));
   for(const filename of ['landing.css','theme.css','landing.js'])await copyFile(join(root,'landing',filename),join(directory,filename));
   await copyFile(join(root,'assets/power-chords-rockstar-hero-green.png'),join(directory,'assets/power-chords-rockstar-hero-green.png'));
+  for(const filename of ['power-chords-loop-pc-icon.png','power-chords-loop-pc-logo.png','power-chords-favicon-32.png','power-chords-favicon-16.png','power-chords-apple-touch-icon.png'])await copyFile(join(root,'assets',filename),join(directory,'assets',filename));
   for(const item of capabilities)await copyFile(join(root,'capabilities',item.slug,'SKILL.md'),join(directory,'downloads',item.slug+'.md'));
   await copyFile(join(root,'docs/PORTABLE_AGENT_GUIDE.md'),join(directory,'downloads/power-chords-agent-guide.md'));
 }
