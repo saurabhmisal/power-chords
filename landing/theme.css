@@ -8,15 +8,7 @@
 body {
   background: radial-gradient(ellipse at 80% 10%, #1e353151, transparent 35%), var(--bg);
 }
-.site-nav .brand > span {
-  display: inline-grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  background: #e4f77816;
-  border: 1px solid #e4f77840;
-  border-radius: 10px;
-}
+
 .site-nav nav a:nth-child(1) .icon { color: var(--cyan); }
 .site-nav nav a:nth-child(2) .icon { color: var(--violet); }
 .site-nav nav a:nth-child(3) .icon { color: var(--peach); }
@@ -210,4 +202,15 @@ fieldset label:nth-of-type(5) .icon { color: var(--pink); }
   .platform-names > span { font-size: 11px; padding: 9px 11px; }
   .workflow-card .tile-icon { padding: 9px; }
   .docs-grid a { padding: 20px; }
+}
+
+/* Selected Loop PC identity */
+.site-nav .brand { display: inline-flex; align-items: center; gap: 10px; letter-spacing: -.6px; font-size: 22px; font-weight: 800; }
+.brand .brand-icon { display: block; flex: 0 0 48px; width: 48px; height: 48px; border-radius: 11px; object-fit: contain; }
+.brand .brand-name { margin: 0; }
+footer .brand-lockup { display: inline-flex; }
+.brand-lockup img { display: block; width: 160px; height: 160px; border-radius: 12px; object-fit: contain; }
+@media (max-width:760px) {
+  .site-nav .brand { font-size: 19px; gap: 8px; }
+  .brand .brand-icon { flex-basis: 42px; width: 42px; height: 42px; }
 }
