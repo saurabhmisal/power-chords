@@ -50,3 +50,27 @@ async function copyText(selector){
 document.querySelector('#copy-command').addEventListener('click',()=>copyText('#install-command'));
 document.querySelector('#copy-prompt').addEventListener('click',()=>copyText('#starter-prompt'));
 filterLibrary();configureInstall();
+
+// Animate the original README artwork without changing the image itself.
+// Motion stops outside the viewport and starts paused for reduced-motion users.
+const poster=document.querySelector('.animated-poster');
+if(poster){
+  const toggle=poster.querySelector('.motion-toggle');
+  const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+  let motionEnabled=!reducedMotion.matches;
+  let posterVisible=true;
+  function updatePosterMotion(){
+    poster.dataset.motion=motionEnabled&&posterVisible&&!document.hidden?'running':'paused';
+    toggle.querySelector('.motion-label').textContent=motionEnabled?'Pause animation':'Play animation';
+    toggle.querySelector('.motion-icon').textContent=motionEnabled?'Ⅱ':'▶';
+  }
+  toggle.hidden=false;
+  toggle.addEventListener('click',()=>{motionEnabled=!motionEnabled;updatePosterMotion();});
+  reducedMotion.addEventListener('change',()=>{motionEnabled=!reducedMotion.matches;updatePosterMotion();});
+  document.addEventListener('visibilitychange',updatePosterMotion);
+  if('IntersectionObserver' in window){
+    const observer=new IntersectionObserver(([entry])=>{posterVisible=entry.isIntersecting;updatePosterMotion();});
+    observer.observe(poster);
+  }
+  updatePosterMotion();
+}
