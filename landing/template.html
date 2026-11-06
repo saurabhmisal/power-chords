@@ -18,13 +18,14 @@
   <title>Power Chords — Your workflow. Amplified.</title>
   <link rel="stylesheet" href="landing.css">
   <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="sources.css">
   <script src="landing.js" defer></script>
 </head>
 
 <body id="pc-site">
 <header class="pc-nav pc-wrap">
   <a class="pc-brand" href="#"><img class="pc-brand-icon" src="assets/power-chords-loop-pc-icon.png" width="48" height="48" alt=""><span>Power Chords</span></a>
-  <nav aria-label="Main navigation"><a href="#pc-capabilities">Capabilities</a><a href="https://github.com/saurabhmisal/power-chords#readme" target="_blank" rel="noopener">Read more</a></nav>
+  <nav aria-label="Main navigation"><a href="#pc-capabilities">Capabilities</a><a href="#pc-sources">Source library</a><a href="https://github.com/saurabhmisal/power-chords#readme" target="_blank" rel="noopener">Read more</a></nav>
   <a class="pc-github" href="https://github.com/saurabhmisal/power-chords" target="_blank" rel="noopener">GitHub ↗</a>
 </header>
 <main>
@@ -42,6 +43,16 @@
     <div class="pc-grid">{{FEATURED}}</div>
     <details class="pc-more"><summary class="pc-button">Explore all capabilities</summary><div class="pc-grid">{{REMAINING}}</div></details>
     <p class="pc-guide"><a href="https://github.com/saurabhmisal/power-chords/blob/main/docs/CAPABILITY_GUIDES.md" target="_blank" rel="noopener">Read the capability guide ↗</a></p>
+  </section>
+  <section class="pc-sources pc-wrap" id="pc-sources" aria-labelledby="pc-sources-title">
+    <div class="pc-section-heading"><div><p class="pc-eyebrow">NEW IN THE SOURCE LIBRARY</p><h2 id="pc-sources-title">More ways to build your next power.</h2></div></div>
+    <p class="pc-sources-intro">Explore the latest repositories mapped to Power Chords capabilities—from security and SEO to analytics, video, voice, and document intelligence. These are reviewed source references, not preinstalled tools or verified runtime adapters.</p>
+    <p class="pc-source-summary">{{SOURCE_SUMMARY}}</p>
+    <div class="pc-source-filters"><label class="pc-field">Search repositories<input id="pc-source-search" type="search" placeholder="Try Umami, security, video, or OCR…"></label><label class="pc-field">Category<select id="pc-source-group"><option value="all">All categories</option>{{SOURCE_GROUPS}}</select></label><button id="pc-source-reset" class="pc-button" type="button">Reset filters</button></div>
+    <p id="pc-source-results" class="pc-note" role="status">Browse the new source references below.</p>
+    <div class="pc-source-grid">{{SOURCE_CARDS}}</div>
+    <p id="pc-source-empty" class="pc-note" hidden>No repositories match. Try another search or reset the filters.</p>
+    <div class="pc-source-footer"><p class="pc-note">A repository can support several capabilities. Installing Power Chords instructions does not install these repositories, models, plugins, or dependencies. Review licenses and obtain authorization before external actions.</p><a class="pc-text-link" href="https://github.com/saurabhmisal/power-chords/blob/main/docs/NEW_SOURCES.md" target="_blank" rel="noopener">Read the full source review and exclusions ↗</a></div>
   </section>
   <details class="pc-setup pc-wrap" id="pc-setup">
     <summary class="cursor-interaction"><span><strong>Use it with your agent.</strong><small>Claude Code · Codex · Cursor · Gemini CLI · Markdown</small></span><span class="pc-sign" aria-hidden="true">+</span></summary>

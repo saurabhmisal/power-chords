@@ -1,0 +1,34 @@
+#pc-site .pc-sources{padding-block:48px;border-top:1px solid var(--pc-line)}
+#pc-site .pc-sources-intro{max-width:800px;color:var(--pc-muted);font-size:15px}
+#pc-site .pc-source-summary{font-size:12px;color:var(--pc-green)}
+#pc-site .pc-source-filters{display:grid;grid-template-columns:2fr 1fr auto;gap:16px;align-items:end;margin:26px 0 18px}
+#pc-site .pc-source-filters input{width:100%;margin-top:8px;padding:13px 14px;background:#111912;border:1px solid var(--pc-line);border-radius:8px;color:var(--pc-text);min-width:0}
+#pc-site .pc-source-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:24px}
+#pc-site .pc-source-card{--source-color:#8ad8bd;display:flex;flex-direction:column;min-width:0;border:1px solid var(--pc-line);border-radius:12px;padding:23px;background:linear-gradient(135deg,#1d2a20,#151e19)}
+#pc-site .pc-source-card[data-source-group="media-production"]{--source-color:#d4b4fb}
+#pc-site .pc-source-card[data-source-group="software-engineering"]{--source-color:#83d8ed}
+#pc-site .pc-source-card[data-source-group="marketing-growth"]{--source-color:#f7c78c}
+#pc-site .pc-source-card[data-source-group="voice-audio"]{--source-color:#efabd4}
+#pc-site .pc-source-card[data-source-group="design-creation"]{--source-color:#c4b4ff}
+#pc-site .pc-source-heading{display:flex;align-items:center;gap:13px;margin-bottom:18px}
+#pc-site .pc-source-heading>div{min-width:0}
+#pc-site .pc-source-icon{display:inline-flex;flex-shrink:0;padding:10px;background:#ffffff08;border:1px solid #ffffff18;border-radius:10px;color:var(--source-color)}
+#pc-site .pc-source-icon svg{width:23px;height:23px}
+#pc-site .pc-source-category{font-size:10px;color:var(--source-color);letter-spacing:.5px}
+#pc-site .pc-source-heading h3{font-size:18px;overflow-wrap:anywhere;margin-top:4px}
+#pc-site .pc-source-card>p{font-size:13px;color:var(--pc-muted);overflow-wrap:anywhere}
+#pc-site .pc-source-badges{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 16px}
+#pc-site .pc-source-badges span{font-size:10px;padding:5px 8px;border:1px solid #46614b;background:#203526;color:#c4dfca;border-radius:5px}
+#pc-site .pc-source-badges .pc-license-review{background:#3a2b19;border-color:#695034;color:#f8d9a5}
+#pc-site .pc-source-card .pc-source-boundary{font-size:11px;padding-top:13px;border-top:1px solid var(--pc-line)}
+#pc-site .pc-source-capabilities{display:flex;flex-direction:column;gap:8px;margin-top:auto;padding-top:10px}
+#pc-site .pc-source-capabilities>span{font-size:9px;letter-spacing:1.3px;color:var(--pc-muted);margin-bottom:5px}
+#pc-site .pc-source-capabilities a{font-size:11px;color:var(--source-color)}
+#pc-site .pc-source-links{display:flex;gap:18px;margin-top:20px;padding-top:14px;border-top:1px solid var(--pc-line);font-size:11px}
+#pc-site .pc-source-footer{margin-top:28px;max-width:900px}
+#pc-site .pc-source-context{display:inline-flex;align-items:center;gap:7px;font-size:11px;color:var(--pc-green);margin:0 0 17px}
+#pc-site .pc-source-context svg{width:14px;height:14px;flex-shrink:0}
+#pc-site [hidden]{display:none!important}
+#pc-site .pc-source-filters :focus-visible{outline:2px solid var(--pc-accent);outline-offset:4px}
+@media(max-width:900px){#pc-site .pc-source-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#pc-site .pc-source-filters{grid-template-columns:1fr 1fr}#pc-site .pc-source-filters button{justify-self:start}}
+@media(max-width:580px){#pc-site .pc-source-grid,#pc-site .pc-source-filters{grid-template-columns:1fr}#pc-site .pc-source-card{padding:20px}#pc-site .pc-nav nav{gap:13px;flex-wrap:wrap;font-size:12px}}

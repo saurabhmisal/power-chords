@@ -14,6 +14,15 @@ test('landing builds include every capability with exact portable instructions a
     await buildLanding(destination);
     const html=await readFile(join(destination,'index.html'),'utf8');
     assert(!html.includes('{{'));
+    const additions=JSON.parse(await readFile(join(root,'data/source-additions.json'),'utf8'));
+    assert.equal((html.match(/class="pc-source-card"/g)||[]).length,additions.length);
+    for(const source of additions){
+      assert(html.includes(`https://github.com/${source.repository}`));
+      assert(html.includes(`/tree/${source.upstream_sha}`));
+      assert(html.includes(source.name));
+    }
+    assert(html.includes('Reference only'));
+    assert(html.includes('review required'));
     assert.equal((html.match(/class="capability-card"/g)||[]).length,capabilities.length);
     assert(!/52 capabilities|52 repos/i.test(html));
     assert(!html.includes('href="workroom.html"'));
