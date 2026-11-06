@@ -32,7 +32,8 @@ test('landing builds include complete standalone instructions and valid capabili
       assert(!page.includes('Play workflow GIF'));
       assert(page.includes(`src="../../assets/capability-demos/${item.slug}.gif"`));
       assert(page.includes('data-reduced-poster'));
-      assert(page.includes('analytics.js'));
+      assert.match(page, /src="\.\.\/\.\.\/analytics-[a-f0-9]{12}\.js"/);
+      assert.match(page, /href="\.\.\/\.\.\/brand-theme-[a-f0-9]{12}\.css"/);
       assert(!/pinned upstream|Your fork/.test(page));
       assert(page.includes('Codex workspace'));
       for(const ext of ['gif','png'])assert((await stat(join(destination,'assets/capability-demos',item.slug+'.'+ext))).size>1000);

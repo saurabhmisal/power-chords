@@ -66,4 +66,24 @@ export async function buildLanding(destination,{hosted=false}={}){
   }
   await copyFile(join(root,'docs/PORTABLE_AGENT_GUIDE.md'),join(directory,'downloads/power-chords-agent-guide.md'));
   await buildCapabilityPages(root,directory,capabilities,styles);
+  // Fingerprint consent assets so a cached pre-consent tag can never survive a new page release.
+  const familyAssets = {};
+  for (const filename of ['analytics.js', 'brand-theme.css']) {
+    const content = await readFile(join(root,'landing',filename),'utf8');
+    const versioned = filename.replace(/\.(js|css)$/,(_,ext)=>`-${createHash('sha256').update(content).digest('hex').slice(0,12)}.${ext}`);
+    familyAssets[filename] = versioned;
+    await writeFile(join(directory,versioned),content);
+  }
+  async function updatePages(folder) {
+    for (const entry of await readdir(folder,{withFileTypes:true})) {
+      const file = join(folder,entry.name);
+      if (entry.isDirectory()) await updatePages(file);
+      else if (entry.name.endsWith('.html')) {
+        let page = await readFile(file,'utf8');
+        for (const [filename,versioned] of Object.entries(familyAssets)) page = page.replaceAll(filename,versioned);
+        await writeFile(file,page);
+      }
+    }
+  }
+  await updatePages(directory);
 }
