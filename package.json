@@ -1,6 +1,6 @@
 {
   "name": "@saurabhmisal/power-chords",
-  "version": "0.3.0",
+  "version": "0.4.1",
   "private": true,
   "type": "module",
   "exports": {
@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "node src/server.mjs",
-    "test": "node --test test/*.test.mjs",
+    "test": "node --test test/*.test.mjs workflows/reel-to-knowledge/test.mjs",
     "test:judgement": "node --test test/judgement.test.mjs",
     "export:judgement": "node scripts/export-judgement.mjs",
     "smoke": "node src/smoke.mjs",
@@ -27,7 +27,14 @@
     "capabilities:list": "node scripts/capabilities-cli.mjs list",
     "capabilities:install": "node scripts/capabilities-cli.mjs install",
     "capabilities:docs": "node scripts/generate-capability-docs.mjs",
-    "validate:capabilities": "node scripts/validate-capabilities.mjs"
+    "validate:capabilities": "node scripts/validate-capabilities.mjs",
+    "knowledge:ingest": "node workflows/reel-to-knowledge/cli.mjs ingest",
+    "knowledge:search": "node workflows/reel-to-knowledge/cli.mjs search",
+    "knowledge:list": "node workflows/reel-to-knowledge/cli.mjs list",
+    "knowledge:note": "node workflows/reel-to-knowledge/cli.mjs note",
+    "knowledge:install": "node workflows/reel-to-knowledge/install.mjs",
+    "knowledge:mcp": "node workflows/reel-to-knowledge/mcp.mjs",
+    "test:reel-knowledge": "node --test workflows/reel-to-knowledge/test.mjs"
   },
   "author": "Saurabh Misal (https://github.com/saurabhmisal)",
   "license": "MIT",

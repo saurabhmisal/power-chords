@@ -23,6 +23,18 @@ Built and led by **[Saurabh Misal](https://github.com/saurabhmisal)**.
 
 ---
 
+## 🎬 Reel → Knowledge: install in your AI agent
+
+**Now available as a portable Power Chords workflow.** Convert a permitted local video, Instagram Reel or YouTube Short into timestamped Markdown knowledge, then search and retrieve it locally. No cloud-model API key is required; captions or optional local speech recognition are needed.
+
+- **[Full installation and usage guide](workflows/reel-to-knowledge/README.md)**
+- **[Portable Agent Skill](workflows/reel-to-knowledge/SKILL.md)** for Codex, Claude Code, Cursor, Gemini and compatible skill directories
+- **CLI:** `npm run knowledge:ingest -- --source ./reel.mp4 --transcript ./reel.srt`
+- **MCP:** `npm run knowledge:mcp` exposes ingest, search, list and read tools over local stdio
+- **Tests:** `npm run test:reel-knowledge`
+
+For local execution, install Node.js 22.13+ and ffmpeg/ffprobe. Optional: Tesseract for on-screen OCR, faster-whisper for speech without captions, and yt-dlp for accessible public URLs. This workflow is an additional composition of existing capabilities, **not a 53rd base capability**. A text-only LLM without file/tool execution cannot process media by installing instructions alone.
+
 ## Contents
 
 - [What Power Chords does](#what-power-chords-does)
