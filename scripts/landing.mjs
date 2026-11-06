@@ -42,7 +42,7 @@ export async function buildLanding(destination,{hosted=false}={}){
   let html=template.replace(/\{\{([A-Z_]+)\}\}/g,(_,key)=>replacements[key]).replace('src="landing.js"',`src="${scriptName}"`);
   for(const [filename,versioned] of Object.entries(styles))html=html.replace(`href="${filename}"`,`href="${versioned}"`);
   await writeFile(join(directory,'index.html'),html);
-  for(const filename of ['brand-type.css','landing.css','theme.css','capabilities.css','landing.js','analytics.js'])await copyFile(join(root,'landing',filename),join(directory,filename));
+  for(const filename of ['brand-theme.css','brand-type.css','landing.css','theme.css','capabilities.css','landing.js','analytics.js'])await copyFile(join(root,'landing',filename),join(directory,filename));
   let workspace=await readFile(join(root,'landing/workspace.html'),'utf8');
   const workspaceAssets={};
   for(const filename of ['workspace.css','workspace.js']){
