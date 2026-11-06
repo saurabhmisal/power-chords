@@ -22,6 +22,7 @@ test('landing builds include every capability with exact portable instructions a
       assert(html.includes(source.name));
     }
     assert(html.includes('Reference only'));
+    assert.match(html,/src="landing-[a-f0-9]{12}\.js"/);
     assert(html.includes('review required'));
     assert.equal((html.match(/class="capability-card"/g)||[]).length,capabilities.length);
     assert(!/52 capabilities|52 repos/i.test(html));

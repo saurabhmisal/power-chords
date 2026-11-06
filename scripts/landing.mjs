@@ -2,6 +2,7 @@ import {readFile,writeFile,mkdir,copyFile} from 'node:fs/promises';
 import {join,resolve} from 'node:path';
 import {icon,familyIcons} from './icons.mjs';
 import {sourceSections} from './source-cards.mjs';
+import {createHash} from 'node:crypto';
 
 const root=resolve(import.meta.dirname,'..');
 const escape=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -28,7 +29,10 @@ export async function buildLanding(destination,{hosted=false}={}){
     WORKROOM_LABEL:hosted?'Open the Workroom':'Read about the Workroom'
   };
   const template=await readFile(join(root,'landing/template.html'),'utf8');
-  await writeFile(join(directory,'index.html'),template.replace(/\{\{([A-Z_]+)\}\}/g,(_,key)=>replacements[key]));
+  const browserScript=await readFile(join(root,'landing/landing.js'),'utf8');
+  const scriptName=`landing-${createHash('sha256').update(browserScript).digest('hex').slice(0,12)}.js`;
+  await writeFile(join(directory,scriptName),browserScript);
+  await writeFile(join(directory,'index.html'),template.replace(/\{\{([A-Z_]+)\}\}/g,(_,key)=>replacements[key]).replace('src="landing.js"',`src="${scriptName}"`));
   for(const filename of ['landing.css','theme.css','sources.css','landing.js','analytics.js'])await copyFile(join(root,'landing',filename),join(directory,filename));
   for(const filename of ['power-chords-cover-clean.jpg','power-chords-loop-pc-icon.png','power-chords-loop-pc-logo.png','power-chords-favicon-32.png','power-chords-favicon-16.png','power-chords-apple-touch-icon.png'])await copyFile(join(root,'assets',filename),join(directory,'assets',filename));
   for(const item of capabilities)await copyFile(join(root,'capabilities',item.slug,'SKILL.md'),join(directory,'downloads',item.slug+'.md'));
