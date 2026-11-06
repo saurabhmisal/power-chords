@@ -31,7 +31,7 @@
       "title": "Launch Readiness Plan"
     }
   ],
-  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
   "upstream_sources": [
     {
       "repository": "affaan-m/ECC",
@@ -65,11 +65,35 @@
       "readme_sha256": "44fef59bc7d485ffd7ac73a5e3a359720077b3fda095c7a6d2fcb8aa10496d8e",
       "scope": "reference_only",
       "runtime_verified": false
+    },
+    {
+      "repository": "cloudflare/security-audit-skill",
+      "revision": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "fork_repository": "saurabhmisal/security-audit-skill",
+      "fork_revision": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "license": "MIT",
+      "reference_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md",
+      "readme_sha256": "55e793bbea3563f8246735997c07aaee360e043eeb626f0b56ea6161c8618ae7",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "vxcontrol/pentagi",
+      "revision": "cffed9485aa1cca70762cd08a57ac62a80406258",
+      "fork_repository": "saurabhmisal/pentagi",
+      "fork_revision": "843dfeb4bfc809c09d1bc5022e567c602d8fc9dd",
+      "license": "MIT",
+      "reference_url": "https://github.com/vxcontrol/pentagi/blob/cffed9485aa1cca70762cd08a57ac62a80406258/README.md",
+      "readme_sha256": "b184808b1e84df1dc806e3a4216f84f70dc0330a122d757bae342cde71268147",
+      "scope": "reference_only",
+      "runtime_verified": false
     }
   ],
   "source_guidance": [
     "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-    "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions."
+    "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions.",
+    "security-audit-skill: Independent finding verification and target-scoped security review; security testing requires explicit authorization.",
+    "pentagi: Security orchestration reference only; no scanning or exploitation without explicit authorized scope."
   ]
 }

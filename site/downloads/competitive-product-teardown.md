@@ -40,7 +40,7 @@ Read [README.md](README.md) for complete instructions, compatibility and a revie
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-06T15:17:09.240Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
 - [Jakeschincariol/replica-skill at 77c9436fb3d1](https://github.com/Jakeschincariol/replica-skill/blob/77c9436fb3d18c3d58169efb8caf4fe906b0dc51/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [morluto/rea at bacc1e38464c](https://github.com/morluto/rea/blob/bacc1e38464ce7eb87ce1fb6fb552c6b1854ac15/README.md) — catalog license: MIT; reference only, adapter execution not verified.

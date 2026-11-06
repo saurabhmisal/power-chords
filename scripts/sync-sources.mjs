@@ -90,10 +90,10 @@ export function compareSnapshots(previous,next){
 /** Pure reconciliation for deterministic tests; preserves existing catalog order. */
 export function reconcile(oldLock,oldUpdates,snapshots,now=new Date().toISOString()){
   if(oldLock.schema_version!==1||oldUpdates.schema_version!==1)throw new Error('Unsupported catalog version');
-  if(oldLock.sources.length!==52||snapshots.length!==52)throw new Error('Incomplete 52-source snapshot');
+  if(oldLock.sources.length!==FORKS.length||snapshots.length!==FORKS.length)throw new Error('Incomplete curated-source snapshot');
   const validSet=new Set(FORKS.map(s=>s.repository));
   const map=new Map(snapshots.map(s=>[s.repository,s]));
-  if(map.size!==52||![...map.keys()].every(x=>validSet.has(x)))throw new Error('Unrecognized or duplicate source');
+  if(map.size!==validSet.size||![...map.keys()].every(x=>validSet.has(x)))throw new Error('Unrecognized or duplicate source');
   const newly=[];
   const sources=oldLock.sources.map(old=>{
     const next=map.get(old.repository);
@@ -114,7 +114,7 @@ export async function synchronize({client=new GitHubSourceClient(), concurrency=
   const oldLock=JSON.parse(await readFile(lockFile,'utf8'));
   const oldUpdates=JSON.parse(await readFile(updatesFile,'utf8'));
   const sources=oldLock.sources;
-  if(sources.length!==52)throw new Error('Expected exactly 52 source entries');
+  if(sources.length!==FORKS.length)throw new Error('Source lock does not match curated inventory');
   const results=Array(sources.length);
   const errors=[];
   let next=0;

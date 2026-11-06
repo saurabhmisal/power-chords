@@ -2,6 +2,7 @@
  * Power Chords external integration source inventory verified 17 Oct 2026.
  * Classification is advisory until source inspection. Every repo is discovered, NOT installed.
  */
+import additions from '../data/source-additions.json' with {type:'json'};
 const raw = [
   // name | fork creation date | capability group | license | summary
   ['agent-skills','2026-10-08','software-engineering','MIT','Engineering skills for coding agents'],
@@ -73,7 +74,7 @@ export const GROUPS = [
  ['unclassified','Unclassified Imports']
 ].map(([id,label])=>({id,label}));
 
-export const FORKS = raw.map(([name,created_at,group_id,license,description], index)=>({
+export const FORKS = [...raw,...additions.map(source=>[source.name,source.created_at.slice(0,10),source.group_id,source.license,source.description])].map(([name,created_at,group_id,license,description], index)=>({
   id: `github:saurabhmisal/${name}`,
   name, created_at, group_id, license, description,
   url: `https://github.com/saurabhmisal/${name}`,
@@ -83,6 +84,6 @@ export const FORKS = raw.map(([name,created_at,group_id,license,description], in
   kind: 'unverified',
   status: 'discovered'
 }));
-if (FORKS.length !== 52 || new Set(FORKS.map(x=>x.id)).size !== FORKS.length) {
+if (!FORKS.length || new Set(FORKS.map(x=>x.id)).size !== FORKS.length) {
   throw new Error('Fork inventory integrity failure');
 }

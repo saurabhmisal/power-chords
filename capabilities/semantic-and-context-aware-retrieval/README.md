@@ -81,16 +81,18 @@ A first-party executable adapter must implement the stable input/output contract
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-06T15:17:09.240Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
 - [Graphify-Labs/graphify at 16218bfc80d4](https://github.com/Graphify-Labs/graphify/blob/16218bfc80d4ca2799734d045039f7ed1a5fa9fb/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 - [RyanCodrai/turbovec at c3b043b99229](https://github.com/RyanCodrai/turbovec/blob/c3b043b992290ff223b903046af7f6683768241c/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [Lethe044/hermes-life-os at 5a572ba5f24c](https://github.com/Lethe044/hermes-life-os/blob/5a572ba5f24c227b987c22e0b4fe06e2bdba6975/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [Shubhamsaboo/awesome-llm-apps at c129f31036f5](https://github.com/Shubhamsaboo/awesome-llm-apps/blob/c129f31036f5ba0bba42cbb63937a66946fdf2c0/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 
 - Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source.
+- awesome-llm-apps: Example-agent and RAG patterns; examples are not preconfigured or security-reviewed Power Chords integrations.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](../../docs/UPSTREAM_REFRESH.md) for scope and reproduction.

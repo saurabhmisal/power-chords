@@ -27,7 +27,7 @@
       "title": "Customer Discovery → PRD"
     }
   ],
-  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
   "upstream_sources": [
     {
       "repository": "anthropics/knowledge-work-plugins",
@@ -50,10 +50,22 @@
       "readme_sha256": "44fef59bc7d485ffd7ac73a5e3a359720077b3fda095c7a6d2fcb8aa10496d8e",
       "scope": "reference_only",
       "runtime_verified": false
+    },
+    {
+      "repository": "ethanplusai/harvey",
+      "revision": "6b6a23a789090e165802baef4104ee4618a3e169",
+      "fork_repository": "saurabhmisal/harvey",
+      "fork_revision": "55866a1830ea73b7d96127b10dc7ad38b838a663",
+      "license": "MIT",
+      "reference_url": "https://github.com/ethanplusai/harvey/blob/6b6a23a789090e165802baef4104ee4618a3e169/README.md",
+      "readme_sha256": "a1e2301c27613b1b6e72cf61af83fcad685bedabf3cc67185805dd54f84dc0e0",
+      "scope": "reference_only",
+      "runtime_verified": false
     }
   ],
   "source_guidance": [
     "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
-    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+    "harvey: Sales research and drafting reference; sending outreach or accessing mail requires explicit authorization."
   ]
 }

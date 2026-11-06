@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-06T15:17:09.240Z",
+  "checked_at": "2026-11-06T15:41:08.721Z",
   "snapshot_mode": "complete shallow Git object snapshot; no dependencies, LFS payloads, submodules, or external code executed",
   "sources": [
     {
@@ -107,6 +107,22 @@
       "status": "pulled"
     },
     {
+      "repository": "saurabhmisal/andrej-karpathy-skills",
+      "upstream_repository": "multica-ai/andrej-karpathy-skills",
+      "revision": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "fork_revision": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "fork_differs": false,
+      "license": "UNKNOWN",
+      "file_count": 9,
+      "skill_paths": [
+        "skills/karpathy-guidelines/SKILL.md"
+      ],
+      "manifest_paths": [],
+      "readme_path": "README.md",
+      "readme_sha256": "daf314efb31894b86d68b67786c820bd8470bb2126e578ba9cd0e3e2667883f8",
+      "status": "pulled"
+    },
+    {
       "repository": "saurabhmisal/api-anything",
       "upstream_repository": "goodnight000/api-anything",
       "revision": "d89f9c6637c16d3c389320f4241ea52082c35267",
@@ -160,6 +176,33 @@
       "manifest_paths": [],
       "readme_path": "readme.md",
       "readme_sha256": "465cd781335e44587d238f666800104b63d4fc8ba2395d6422974dcba421c616",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/awesome-llm-apps",
+      "upstream_repository": "Shubhamsaboo/awesome-llm-apps",
+      "revision": "c129f31036f5ba0bba42cbb63937a66946fdf2c0",
+      "fork_revision": "6c16b23f1bacd0fdf240bb5141ef45e59e82c306",
+      "fork_differs": true,
+      "license": "Apache-2.0",
+      "file_count": 1988,
+      "skill_paths": [
+        "agent_skills/advisor-orchestrator-worker/SKILL.md",
+        "agent_skills/commit-archaeologist/SKILL.md",
+        "agent_skills/dependency-doctor/SKILL.md",
+        "agent_skills/first-reader/SKILL.md",
+        "agent_skills/project-graveyard/SKILL.md",
+        "agent_skills/scope-creep-detector/SKILL.md",
+        "agent_skills/thinking-out-loud/SKILL.md",
+        "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/chatgpt-app-builder/SKILL.md",
+        "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-apps-builder/SKILL.md",
+        "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-builder/SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "91e321c262b6c6be2de89bb66d4d6f5874ea0010f4793a5bf9701982924ee6af",
       "status": "pulled"
     },
     {
@@ -243,6 +286,122 @@
       ],
       "readme_path": "README.md",
       "readme_sha256": "b4ec5d31f9811e155d1becd373e411197f60ba7b880882bce7e0d34e2da46a50",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/claude-seo",
+      "upstream_repository": "AgriciDaniel/claude-seo",
+      "revision": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+      "fork_revision": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+      "fork_differs": false,
+      "license": "MIT",
+      "file_count": 467,
+      "skill_paths": [
+        "extensions/ahrefs/skills/seo-ahrefs/SKILL.md",
+        "extensions/banana/skills/seo-image-gen/SKILL.md",
+        "extensions/bing-webmaster/skills/seo-bing/SKILL.md",
+        "extensions/dataforseo/skills/seo-dataforseo/SKILL.md",
+        "extensions/firecrawl/skills/seo-firecrawl/SKILL.md",
+        "extensions/matomo/skills/seo-matomo/SKILL.md",
+        "extensions/profound/skills/seo-profound/SKILL.md",
+        "extensions/seranking/skills/seo-seranking/SKILL.md",
+        "extensions/unlighthouse/skills/seo-unlighthouse/SKILL.md",
+        "skills/seo-agentic/SKILL.md",
+        "skills/seo-audit/SKILL.md",
+        "skills/seo-backlinks/SKILL.md",
+        "skills/seo-cluster/SKILL.md",
+        "skills/seo-competitor-pages/SKILL.md",
+        "skills/seo-content-brief/SKILL.md",
+        "skills/seo-content/SKILL.md",
+        "skills/seo-dataforseo/SKILL.md",
+        "skills/seo-drift/SKILL.md",
+        "skills/seo-ecommerce/SKILL.md",
+        "skills/seo-flow/SKILL.md",
+        "skills/seo-geo/SKILL.md",
+        "skills/seo-google/SKILL.md",
+        "skills/seo-hreflang/SKILL.md",
+        "skills/seo-image-gen/SKILL.md",
+        "skills/seo-images/SKILL.md",
+        "skills/seo-local/SKILL.md",
+        "skills/seo-maps/SKILL.md",
+        "skills/seo-page/SKILL.md",
+        "skills/seo-plan/SKILL.md",
+        "skills/seo-programmatic/SKILL.md",
+        "skills/seo-schema/SKILL.md",
+        "skills/seo-sitemap/SKILL.md",
+        "skills/seo-sxo/SKILL.md",
+        "skills/seo-technical/SKILL.md",
+        "skills/seo/SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE",
+        "pyproject.toml",
+        "requirements.txt"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "a6f11dbfee5b5ba787bdbb8536a46813c55fc770f875094714c4916178dc1238",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/compound-engineering-plugin",
+      "upstream_repository": "EveryInc/compound-engineering-plugin",
+      "revision": "173bd337fa639aac19ce7363d288836a074231a5",
+      "fork_revision": "738067a599c68f1f0f4a32273fa9d7d2476f0715",
+      "fork_differs": true,
+      "license": "MIT",
+      "file_count": 2042,
+      "skill_paths": [
+        ".agents/skills/ce-skill-work/SKILL.md",
+        "skills/ce-babysit-pr/SKILL.md",
+        "skills/ce-bakeoff/SKILL.md",
+        "skills/ce-brainstorm/SKILL.md",
+        "skills/ce-code-review/SKILL.md",
+        "skills/ce-commit-push-pr/SKILL.md",
+        "skills/ce-commit/SKILL.md",
+        "skills/ce-compound-refresh/SKILL.md",
+        "skills/ce-compound/SKILL.md",
+        "skills/ce-debug/SKILL.md",
+        "skills/ce-doc-review/SKILL.md",
+        "skills/ce-dogfood/SKILL.md",
+        "skills/ce-explain/SKILL.md",
+        "skills/ce-handoff/SKILL.md",
+        "skills/ce-help/SKILL.md",
+        "skills/ce-ideate/SKILL.md",
+        "skills/ce-noslop/SKILL.md",
+        "skills/ce-optimize/SKILL.md",
+        "skills/ce-plan/SKILL.md",
+        "skills/ce-polish/SKILL.md",
+        "skills/ce-pov/SKILL.md",
+        "skills/ce-product-pulse/SKILL.md",
+        "skills/ce-promote/SKILL.md",
+        "skills/ce-proof/SKILL.md",
+        "skills/ce-prototype/SKILL.md",
+        "skills/ce-resolve-pr-feedback/SKILL.md",
+        "skills/ce-retune/SKILL.md",
+        "skills/ce-riffrec-feedback-analysis/SKILL.md",
+        "skills/ce-setup/SKILL.md",
+        "skills/ce-simplify-code/SKILL.md",
+        "skills/ce-strategy/SKILL.md",
+        "skills/ce-sweep/SKILL.md",
+        "skills/ce-test-browser/SKILL.md",
+        "skills/ce-test-xcode/SKILL.md",
+        "skills/ce-work/SKILL.md",
+        "skills/ce-worktree/SKILL.md",
+        "skills/lfg/SKILL.md",
+        "skills/wtf/SKILL.md",
+        "tests/fixtures/custom-paths/custom-skills/custom-skill/SKILL.md",
+        "tests/fixtures/custom-paths/skills/default-skill/SKILL.md",
+        "tests/fixtures/sample-plugin/skills/agent-only-skill/SKILL.md",
+        "tests/fixtures/sample-plugin/skills/claude-only-skill/SKILL.md",
+        "tests/fixtures/sample-plugin/skills/disabled-skill/SKILL.md",
+        "tests/fixtures/sample-plugin/skills/skill-one/SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE",
+        "package.json"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "e9bf58531fc2830a22b22393462f9bb778e58a3ba077209d42b5df4de5d83f5b",
       "status": "pulled"
     },
     {
@@ -616,6 +775,40 @@
       "status": "pulled"
     },
     {
+      "repository": "saurabhmisal/geo-seo-claude",
+      "upstream_repository": "zubair-trabzada/geo-seo-claude",
+      "revision": "989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c",
+      "fork_revision": "989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c",
+      "fork_differs": false,
+      "license": "MIT",
+      "file_count": 71,
+      "skill_paths": [
+        "geo/SKILL.md",
+        "skills/geo-audit/SKILL.md",
+        "skills/geo-brand-mentions/SKILL.md",
+        "skills/geo-citability/SKILL.md",
+        "skills/geo-compare/SKILL.md",
+        "skills/geo-content/SKILL.md",
+        "skills/geo-crawlers/SKILL.md",
+        "skills/geo-llmstxt/SKILL.md",
+        "skills/geo-platform-optimizer/SKILL.md",
+        "skills/geo-proposal/SKILL.md",
+        "skills/geo-prospect/SKILL.md",
+        "skills/geo-report-pdf/SKILL.md",
+        "skills/geo-report/SKILL.md",
+        "skills/geo-schema/SKILL.md",
+        "skills/geo-technical/SKILL.md",
+        "skills/geo-update/SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE",
+        "requirements.txt"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "6ee85c5466a3c4d5b5573f5055de275e5a0a5ca6298332b393942cd60930f687",
+      "status": "pulled"
+    },
+    {
       "repository": "saurabhmisal/gods-eye-view",
       "upstream_repository": "bilawalsidhu/gods-eye-view",
       "revision": "3d6423c6f8ddb5061d80fba23a9c2da4fe5bc6ff",
@@ -747,6 +940,24 @@
       "status": "pulled"
     },
     {
+      "repository": "saurabhmisal/harvey",
+      "upstream_repository": "ethanplusai/harvey",
+      "revision": "6b6a23a789090e165802baef4104ee4618a3e169",
+      "fork_revision": "55866a1830ea73b7d96127b10dc7ad38b838a663",
+      "fork_differs": true,
+      "license": "MIT",
+      "file_count": 195,
+      "skill_paths": [],
+      "manifest_paths": [
+        "LICENSE",
+        "pyproject.toml",
+        "requirements.txt"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "a1e2301c27613b1b6e72cf61af83fcad685bedabf3cc67185805dd54f84dc0e0",
+      "status": "pulled"
+    },
+    {
       "repository": "saurabhmisal/hermes-life-os",
       "upstream_repository": "Lethe044/hermes-life-os",
       "revision": "5a572ba5f24c227b987c22e0b4fe06e2bdba6975",
@@ -764,6 +975,108 @@
       ],
       "readme_path": "README.md",
       "readme_sha256": "44fef59bc7d485ffd7ac73a5e3a359720077b3fda095c7a6d2fcb8aa10496d8e",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/huashu-art-motion",
+      "upstream_repository": "alchaincyf/huashu-art-motion",
+      "revision": "8a0d7d72ca65fcce6f8ba82c4a6c8dfe35b8422c",
+      "fork_revision": "8a0d7d72ca65fcce6f8ba82c4a6c8dfe35b8422c",
+      "fork_differs": false,
+      "license": "MIT",
+      "file_count": 509,
+      "skill_paths": [
+        "SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "c20ffc9dc918f3b565fe1fd22a806b0b75e3a38f366a86a33b3a75f3fe42cd1e",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/hyperframes",
+      "upstream_repository": "heygen-com/hyperframes",
+      "revision": "a874a6324a5e3dec18ebfea426071f87a7f21373",
+      "fork_revision": "4371981b740d92f70e520cfbec34db68a1c93434",
+      "fork_differs": true,
+      "license": "Apache-2.0",
+      "file_count": 9810,
+      "skill_paths": [
+        ".agents/skills/captions-overlay/SKILL.md",
+        ".agents/skills/changelog-video/SKILL.md",
+        ".agents/skills/cut-the-curve/SKILL.md",
+        ".agents/skills/motion-doctrine/SKILL.md",
+        ".agents/skills/oversized-cursor/SKILL.md",
+        ".agents/skills/seam-craft/SKILL.md",
+        ".claude/skills/captions-overlay/SKILL.md",
+        ".claude/skills/changelog-video/SKILL.md",
+        ".claude/skills/cut-the-curve/SKILL.md",
+        ".claude/skills/motion-doctrine/SKILL.md",
+        ".claude/skills/oversized-cursor/SKILL.md",
+        ".claude/skills/seam-craft/SKILL.md",
+        "registry/blocks/canopy-part-title/SKILL.md",
+        "registry/blocks/code-slice-hero/SKILL.md",
+        "registry/blocks/cuboid-carousel/SKILL.md",
+        "registry/blocks/frost-sequence-camera-orbit/SKILL.md",
+        "registry/blocks/glass-shard-title/SKILL.md",
+        "registry/blocks/orbit-card/SKILL.md",
+        "registry/blocks/wireframe-portal-title/SKILL.md",
+        "skills/figma/SKILL.md",
+        "skills/hyperframes-cli/SKILL.md",
+        "skills/hyperframes-registry/SKILL.md",
+        "skills/hyperframes/SKILL.md",
+        "skills/media-use/SKILL.md",
+        "skills/remotion-to-hyperframes/SKILL.md",
+        "skills/reverse-any-video/SKILL.md",
+        "skills/slideshow/SKILL.md",
+        "skills/style-sampling/SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE",
+        "package.json"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "608d7348c5c2abc4e72104bd538744c69ea9a5e3dce830d98f17ea97e6b488a1",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/hypit",
+      "upstream_repository": "hypit-ai/hypit",
+      "revision": "2d31e88765e297f0795348b460c77a6067f12261",
+      "fork_revision": "0d36de9a9d17562fca0e478969b80eb1c16a7693",
+      "fork_differs": true,
+      "license": "NOASSERTION",
+      "file_count": 1710,
+      "skill_paths": [
+        "docs/guide/skill.md",
+        "docs/zh/guide/skill.md",
+        "skills/hypit/SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE",
+        "package.json"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "4a58c61016561cef90afdb46bcc85a24dae0cd78bf2544d969369952ff956cef",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/indra",
+      "upstream_repository": "datalab-to/indra",
+      "revision": "ca81e18f7403435a3545c8c8ae9c4a1cecdd32a4",
+      "fork_revision": "3d773aeedc5d79d1d0a2a04007a9075cd71a59f4",
+      "fork_differs": true,
+      "license": "Apache-2.0",
+      "file_count": 58,
+      "skill_paths": [],
+      "manifest_paths": [
+        "LICENSE",
+        "pyproject.toml"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "62e612a68c375ed19a3d6a353414b31c4fe11220223f55eef0ec3851eb6611ad",
       "status": "pulled"
     },
     {
@@ -1099,6 +1412,62 @@
       "status": "pulled"
     },
     {
+      "repository": "saurabhmisal/lemo-opuscar",
+      "upstream_repository": "lemomo-ai/lemo-opuscar",
+      "revision": "bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00",
+      "fork_revision": "bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00",
+      "fork_differs": false,
+      "license": "MIT",
+      "file_count": 2478,
+      "skill_paths": [
+        "plugin/skills/lemo-opuscar/SKILL.md",
+        "tools/directory/SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE",
+        "package.json",
+        "requirements.txt"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "6515f3802c150122ba97a347503e8e4bee5681bbddb6a18b35371764422b60fb",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/LYNX-SHARE",
+      "upstream_repository": "Ka1-S/LYNX-SHARE",
+      "revision": "8056deac12b3834f984af09c5a12d9c2fd478c00",
+      "fork_revision": "efb8344d2ec6a190346e7b9ec9e97438748689fe",
+      "fork_differs": true,
+      "license": "AGPL-3.0",
+      "file_count": 2125,
+      "skill_paths": [],
+      "manifest_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "559c299853d60ba61150f97fc0ecd4061de31adfc47b473ac0069fe3ae883df9",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/magic-mcp",
+      "upstream_repository": "21st-dev/magic-mcp",
+      "revision": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
+      "fork_revision": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
+      "fork_differs": false,
+      "license": "ISC",
+      "file_count": 21,
+      "skill_paths": [
+        "skills/21st-ui/SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE",
+        "package.json"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "3525241fe094188862f3bea44471d1581813cbef2edccce4a1051c0fcf7bc76f",
+      "status": "pulled"
+    },
+    {
       "repository": "saurabhmisal/marketingskills",
       "upstream_repository": "coreyhaines31/marketingskills",
       "revision": "88c79f6528a9347420e57ceb1fff9a60de651768",
@@ -1200,6 +1569,24 @@
       ],
       "readme_path": "README.md",
       "readme_sha256": "5109feef87d494dd77c0eb225486d4278fe3eb61b303574600bcf8c3c339d034",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/moonshine",
+      "upstream_repository": "moonshine-ai/moonshine",
+      "revision": "d8d8fa29d05ca67441a7719e70099f9f48917a93",
+      "fork_revision": "234f60faa0eb388b01cdf7e60aca232af37aefda",
+      "fork_differs": true,
+      "license": "NOASSERTION",
+      "file_count": 2395,
+      "skill_paths": [
+        ".agents/skills/moonshine-voice/SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "d926d3014c16cef47ec002f40c61eac3a0b47e07e1dd72b2ceaeb5d75fa81b2d",
       "status": "pulled"
     },
     {
@@ -1327,6 +1714,24 @@
       "status": "pulled"
     },
     {
+      "repository": "saurabhmisal/onetake",
+      "upstream_repository": "feitangyuan/onetake",
+      "revision": "abb6d17279cdc749e27e99aa534a062d8fd01ced",
+      "fork_revision": "013a61ac8d98883c73733f59c06e49e9ba444f14",
+      "fork_differs": true,
+      "license": "NOASSERTION",
+      "file_count": 114,
+      "skill_paths": [
+        "SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "b1c4da4534269f169d11315a528ffde7b64029564a03239d5b5fb981972f23a5",
+      "status": "pulled"
+    },
+    {
       "repository": "saurabhmisal/open-seo",
       "upstream_repository": "every-app/open-seo",
       "revision": "78c5d850c2729e3fcf7edf33aafb66efe17453e0",
@@ -1385,6 +1790,164 @@
       "status": "pulled"
     },
     {
+      "repository": "saurabhmisal/OpenMontage",
+      "upstream_repository": "calesthio/OpenMontage",
+      "revision": "d21f5d4eaa08422b09c7091757a05affcbabb35b",
+      "fork_revision": "c8066452325cb57c8fc1ba8c2a71b6e8842e6b65",
+      "fork_differs": true,
+      "license": "AGPL-3.0",
+      "file_count": 2209,
+      "skill_paths": [
+        ".agents/skills/3d-asset-generation/SKILL.md",
+        ".agents/skills/acestep/SKILL.md",
+        ".agents/skills/agents/SKILL.md",
+        ".agents/skills/ai-video-gen/SKILL.md",
+        ".agents/skills/atlas-cloud/SKILL.md",
+        ".agents/skills/avatar-video/SKILL.md",
+        ".agents/skills/azure-speech-to-text/SKILL.md",
+        ".agents/skills/azure-text-to-speech/SKILL.md",
+        ".agents/skills/beautiful-mermaid/SKILL.md",
+        ".agents/skills/bfl-api/SKILL.md",
+        ".agents/skills/canvas-procedural-animation/SKILL.md",
+        ".agents/skills/character-animation-qa/SKILL.md",
+        ".agents/skills/character-rigging/SKILL.md",
+        ".agents/skills/comfyui/SKILL.md",
+        ".agents/skills/create-video/SKILL.md",
+        ".agents/skills/d3-viz/SKILL.md",
+        ".agents/skills/dashscope/SKILL.md",
+        ".agents/skills/doubao-tts/SKILL.md",
+        ".agents/skills/elevenlabs/SKILL.md",
+        ".agents/skills/faceswap/SKILL.md",
+        ".agents/skills/ffmpeg/SKILL.md",
+        ".agents/skills/fish-audio-tts/SKILL.md",
+        ".agents/skills/flux-best-practices/SKILL.md",
+        ".agents/skills/framer-motion/SKILL.md",
+        ".agents/skills/gemini-omni/SKILL.md",
+        ".agents/skills/grok-media/SKILL.md",
+        ".agents/skills/gsap-core/SKILL.md",
+        ".agents/skills/gsap-frameworks/SKILL.md",
+        ".agents/skills/gsap-performance/SKILL.md",
+        ".agents/skills/gsap-plugins/SKILL.md",
+        ".agents/skills/gsap-react/SKILL.md",
+        ".agents/skills/gsap-scrolltrigger/SKILL.md",
+        ".agents/skills/gsap-timeline/SKILL.md",
+        ".agents/skills/gsap-utils/SKILL.md",
+        ".agents/skills/heygen/SKILL.md",
+        ".agents/skills/hyperframes-animation/SKILL.md",
+        ".agents/skills/hyperframes-cli/SKILL.md",
+        ".agents/skills/hyperframes-core/SKILL.md",
+        ".agents/skills/hyperframes-creative/SKILL.md",
+        ".agents/skills/hyperframes-media/SKILL.md",
+        ".agents/skills/hyperframes-registry/SKILL.md",
+        ".agents/skills/hyperframes/SKILL.md",
+        ".agents/skills/kling-official/SKILL.md",
+        ".agents/skills/lottie-bodymovin/SKILL.md",
+        ".agents/skills/ltx2/SKILL.md",
+        ".agents/skills/lyria/SKILL.md",
+        ".agents/skills/manim-composer/SKILL.md",
+        ".agents/skills/manimce-best-practices/SKILL.md",
+        ".agents/skills/manimgl-best-practices/SKILL.md",
+        ".agents/skills/media-use/SKILL.md",
+        ".agents/skills/minimax-h3/SKILL.md",
+        ".agents/skills/motion-graphics/SKILL.md",
+        ".agents/skills/music-to-video/SKILL.md",
+        ".agents/skills/music/SKILL.md",
+        ".agents/skills/playwright-recording/SKILL.md",
+        ".agents/skills/pose-library-design/SKILL.md",
+        ".agents/skills/provider-model-refresh/SKILL.md",
+        ".agents/skills/provider-refresh-oct23/SKILL.md",
+        ".agents/skills/remotion-best-practices/SKILL.md",
+        ".agents/skills/remotion-to-hyperframes/SKILL.md",
+        ".agents/skills/remotion/SKILL.md",
+        ".agents/skills/seedance-2-0/SKILL.md",
+        ".agents/skills/seedance-2-5/SKILL.md",
+        ".agents/skills/setup-api-key/SKILL.md",
+        ".agents/skills/sound-effects/SKILL.md",
+        ".agents/skills/speech-to-text/SKILL.md",
+        ".agents/skills/svg-character-animation/SKILL.md",
+        ".agents/skills/synthetic-screen-recording/SKILL.md",
+        ".agents/skills/tailwind-design-system/SKILL.md",
+        ".agents/skills/text-to-speech/SKILL.md",
+        ".agents/skills/threejs-animation/SKILL.md",
+        ".agents/skills/threejs-fundamentals/SKILL.md",
+        ".agents/skills/threejs-geometry/SKILL.md",
+        ".agents/skills/threejs-interaction/SKILL.md",
+        ".agents/skills/threejs-lighting/SKILL.md",
+        ".agents/skills/threejs-loaders/SKILL.md",
+        ".agents/skills/threejs-materials/SKILL.md",
+        ".agents/skills/threejs-postprocessing/SKILL.md",
+        ".agents/skills/threejs-shaders/SKILL.md",
+        ".agents/skills/threejs-textures/SKILL.md",
+        ".agents/skills/threejs-world-generation/SKILL.md",
+        ".agents/skills/vercel-composition-patterns/SKILL.md",
+        ".agents/skills/vercel-react-best-practices/SKILL.md",
+        ".agents/skills/video-download/SKILL.md",
+        ".agents/skills/video-edit/SKILL.md",
+        ".agents/skills/video-toolkit/SKILL.md",
+        ".agents/skills/video-translate/SKILL.md",
+        ".agents/skills/video-understand/SKILL.md",
+        ".agents/skills/visual-style/SKILL.md",
+        ".agents/skills/web-design-guidelines/SKILL.md",
+        ".agents/skills/website-to-video/SKILL.md",
+        ".claude/skills/acestep/SKILL.md",
+        ".claude/skills/agents/SKILL.md",
+        ".claude/skills/ai-video-gen/SKILL.md",
+        ".claude/skills/avatar-video/SKILL.md",
+        ".claude/skills/azure-speech-to-text/SKILL.md",
+        ".claude/skills/azure-text-to-speech/SKILL.md",
+        ".claude/skills/beautiful-mermaid/SKILL.md",
+        ".claude/skills/bfl-api/SKILL.md",
+        ".claude/skills/create-video/SKILL.md",
+        ".claude/skills/d3-viz/SKILL.md",
+        ".claude/skills/elevenlabs/SKILL.md",
+        ".claude/skills/faceswap/SKILL.md",
+        ".claude/skills/ffmpeg/SKILL.md",
+        ".claude/skills/flux-best-practices/SKILL.md",
+        ".claude/skills/framer-motion/SKILL.md",
+        ".claude/skills/heygen/SKILL.md",
+        ".claude/skills/lottie-bodymovin/SKILL.md",
+        ".claude/skills/ltx2/SKILL.md",
+        ".claude/skills/manim-composer/SKILL.md",
+        ".claude/skills/manimce-best-practices/SKILL.md",
+        ".claude/skills/manimgl-best-practices/SKILL.md",
+        ".claude/skills/music/SKILL.md",
+        ".claude/skills/playwright-recording/SKILL.md",
+        ".claude/skills/remotion-best-practices/SKILL.md",
+        ".claude/skills/remotion/SKILL.md",
+        ".claude/skills/setup-api-key/SKILL.md",
+        ".claude/skills/sound-effects/SKILL.md",
+        ".claude/skills/speech-to-text/SKILL.md",
+        ".claude/skills/tailwind-design-system/SKILL.md",
+        ".claude/skills/text-to-speech/SKILL.md",
+        ".claude/skills/threejs-animation/SKILL.md",
+        ".claude/skills/threejs-fundamentals/SKILL.md",
+        ".claude/skills/threejs-geometry/SKILL.md",
+        ".claude/skills/threejs-interaction/SKILL.md",
+        ".claude/skills/threejs-lighting/SKILL.md",
+        ".claude/skills/threejs-loaders/SKILL.md",
+        ".claude/skills/threejs-materials/SKILL.md",
+        ".claude/skills/threejs-postprocessing/SKILL.md",
+        ".claude/skills/threejs-shaders/SKILL.md",
+        ".claude/skills/threejs-textures/SKILL.md",
+        ".claude/skills/vercel-composition-patterns/SKILL.md",
+        ".claude/skills/vercel-react-best-practices/SKILL.md",
+        ".claude/skills/video-download/SKILL.md",
+        ".claude/skills/video-edit/SKILL.md",
+        ".claude/skills/video-translate/SKILL.md",
+        ".claude/skills/video-understand/SKILL.md",
+        ".claude/skills/video_toolkit/SKILL.md",
+        ".claude/skills/visual-style/SKILL.md",
+        ".claude/skills/web-design-guidelines/SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE",
+        "requirements.txt"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "99258db9f4dcf23051a06426badcbf3c590b947625a65a8d1e239e270da09b12",
+      "status": "pulled"
+    },
+    {
       "repository": "saurabhmisal/openship",
       "upstream_repository": "oblien/openship",
       "revision": "b72c7922b9d0001d73755684c5fc0544c3b3b223",
@@ -1419,6 +1982,22 @@
       ],
       "readme_path": "README.md",
       "readme_sha256": "fbedcadaf56cfb7ba284ccdc76d906d6b3129b7af8e81584bfebc2bcafb9768e",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/pentagi",
+      "upstream_repository": "vxcontrol/pentagi",
+      "revision": "cffed9485aa1cca70762cd08a57ac62a80406258",
+      "fork_revision": "843dfeb4bfc809c09d1bc5022e567c602d8fc9dd",
+      "fork_differs": true,
+      "license": "MIT",
+      "file_count": 1728,
+      "skill_paths": [],
+      "manifest_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "b184808b1e84df1dc806e3a4216f84f70dc0330a122d757bae342cde71268147",
       "status": "pulled"
     },
     {
@@ -1508,6 +2087,23 @@
       "status": "pulled"
     },
     {
+      "repository": "saurabhmisal/reelkit",
+      "upstream_repository": "KonstantinKai/reelkit",
+      "revision": "0a9829aa4ad2eccaa006573085587b2c33f8afe3",
+      "fork_revision": "0a9829aa4ad2eccaa006573085587b2c33f8afe3",
+      "fork_differs": false,
+      "license": "MIT",
+      "file_count": 1649,
+      "skill_paths": [],
+      "manifest_paths": [
+        "LICENSE",
+        "package.json"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "a4c2fcbf1c968a88b31b32c0c0c363d6cbf430e96b75af1f6e82d1386dddd8f0",
+      "status": "pulled"
+    },
+    {
       "repository": "saurabhmisal/replica-skill",
       "upstream_repository": "Jakeschincariol/replica-skill",
       "revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
@@ -1533,6 +2129,60 @@
       ],
       "readme_path": "README.md",
       "readme_sha256": "69c129d1eae2d6171d6061325e5760e78e63879f4f50077b3d24ba87cee01405",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/roast-room",
+      "upstream_repository": "nateherkai/roast-room",
+      "revision": "e40f40652d5690c4d9f928c4794c673a99f2cd0e",
+      "fork_revision": "e40f40652d5690c4d9f928c4794c673a99f2cd0e",
+      "fork_differs": false,
+      "license": "NOASSERTION",
+      "file_count": 229,
+      "skill_paths": [
+        ".claude/skills/newroaster/SKILL.md",
+        ".claude/skills/roast-room/SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE",
+        "package.json"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "de3e127326de79494f1341fe734e3659ca52e8f5b158e94dcc97c014a9db9cc0",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/security-audit-skill",
+      "upstream_repository": "cloudflare/security-audit-skill",
+      "revision": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "fork_revision": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "fork_differs": false,
+      "license": "MIT",
+      "file_count": 22,
+      "skill_paths": [
+        "skills/security-audit/SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "55e793bbea3563f8246735997c07aaee360e043eeb626f0b56ea6161c8618ae7",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/sill",
+      "upstream_repository": "Saffsanity/sill",
+      "revision": "41e8cb8801f8e9d387e27a0d498dee193d17e9ec",
+      "fork_revision": "5c323e6965b5011809548e5067f9e8e6fa6adf54",
+      "fork_differs": true,
+      "license": "Apache-2.0",
+      "file_count": 543,
+      "skill_paths": [],
+      "manifest_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "46b1c49efa8a129754d0105894587b1b200dc5ceac6f1a79ad867505734e2dfb",
       "status": "pulled"
     },
     {
@@ -1570,6 +2220,37 @@
       ],
       "readme_path": "README.md",
       "readme_sha256": "f3bbfe8262a0b5066486104cfdb04bccadd2818a27b4e0a4474764e51402e8b4",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/superplane",
+      "upstream_repository": "superplanehq/superplane",
+      "revision": "37c6198b757bb09bc00b1955da4ae1f238a06e39",
+      "fork_revision": "8b5e567bf31ca6d449a39e725d5955c09d09c20f",
+      "fork_differs": true,
+      "license": "NOASSERTION",
+      "file_count": 10295,
+      "skill_paths": [
+        ".agents/skills/clean-code/SKILL.md",
+        ".agents/skills/commit-and-pr-messages/SKILL.md",
+        ".agents/skills/pre-pipeline-review/SKILL.md",
+        ".agents/skills/refine-task-plan-format/SKILL.md",
+        ".agents/skills/refine-task-scoring/SKILL.md",
+        ".agents/skills/refine-task-workflow/SKILL.md",
+        ".agents/skills/simplified-technical-english/SKILL.md",
+        ".agents/skills/test-audit/SKILL.md",
+        ".agents/skills/ui-copy/SKILL.md",
+        ".cursor/skills/superplane-changelog/SKILL.md",
+        ".cursor/skills/superplane-dashboard-and-widgets/SKILL.md",
+        ".cursor/skills/superplane-integration-research/SKILL.md",
+        ".cursor/skills/superplane-issue-logger/SKILL.md",
+        ".cursor/skills/superplane-new-intake/SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "939ff8964b14de9f695c59a8f188a096981e4543c66d2f74a6e46b119efabdba",
       "status": "pulled"
     },
     {
@@ -1619,6 +2300,23 @@
       ],
       "readme_path": "README.md",
       "readme_sha256": "40d5882026ebf71dd845ad41221f9265d7720ecb0a9fc5ffb0bcf80d4c3ed661",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/umami",
+      "upstream_repository": "umami-software/umami",
+      "revision": "559e3c607c23d2c72d9bd4f6481bda428255323c",
+      "fork_revision": "e92fdab99508a8ed05249f6c5f07e140deab79e1",
+      "fork_differs": true,
+      "license": "MIT",
+      "file_count": 2026,
+      "skill_paths": [],
+      "manifest_paths": [
+        "LICENSE",
+        "package.json"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "b992ed9a3196d612ef962bd2b5fefd3dcffa9aadf2c6accfd1eceeba8d80ac70",
       "status": "pulled"
     },
     {
@@ -1771,6 +2469,24 @@
       "status": "pulled"
     },
     {
+      "repository": "saurabhmisal/VOX-COLLAGE-BROLL",
+      "upstream_repository": "MegaTroll222/VOX-COLLAGE-BROLL",
+      "revision": "2e9b8a93a2834e4d670700ab9e4827a8baf3b668",
+      "fork_revision": "2e9b8a93a2834e4d670700ab9e4827a8baf3b668",
+      "fork_differs": false,
+      "license": "NOASSERTION",
+      "file_count": 9,
+      "skill_paths": [
+        "SKILL.md"
+      ],
+      "manifest_paths": [
+        "LICENSE"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "8749c660f25a892124049b3eb4c142b706004e1a9f899ca2564d32655ae828c7",
+      "status": "pulled"
+    },
+    {
       "repository": "saurabhmisal/VoxCPM",
       "upstream_repository": "OpenBMB/VoxCPM",
       "revision": "4b8dd4440d33396b3f429201f8af0529b4d2c601",
@@ -1785,6 +2501,24 @@
       ],
       "readme_path": "README.md",
       "readme_sha256": "61fea182876eaf6bef5af3c2770d5e4c05aeecdb105fb3affc2b580adfe912c3",
+      "status": "pulled"
+    },
+    {
+      "repository": "saurabhmisal/Wan2.2",
+      "upstream_repository": "Wan-Video/Wan2.2",
+      "revision": "1ea34ff48f87168174e12956e200b1d908b1c5ff",
+      "fork_revision": "1ea34ff48f87168174e12956e200b1d908b1c5ff",
+      "fork_differs": false,
+      "license": "Apache-2.0",
+      "file_count": 87,
+      "skill_paths": [],
+      "manifest_paths": [
+        "LICENSE.txt",
+        "pyproject.toml",
+        "requirements.txt"
+      ],
+      "readme_path": "README.md",
+      "readme_sha256": "40222cb3a66cc89aa1cd84589d1fa696806c93c09cf1c4383b3994139202dfa1",
       "status": "pulled"
     },
     {

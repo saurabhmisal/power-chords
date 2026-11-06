@@ -22,7 +22,7 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
   "upstream_sources": [
     {
       "repository": "Graphify-Labs/graphify",
@@ -67,11 +67,23 @@
       "readme_sha256": "27961ab0a2e6b4a81f9bb71c2cb1af4268defdd1351399965ac165cdb31fa81d",
       "scope": "reference_only",
       "runtime_verified": false
+    },
+    {
+      "repository": "EveryInc/compound-engineering-plugin",
+      "revision": "173bd337fa639aac19ce7363d288836a074231a5",
+      "fork_repository": "saurabhmisal/compound-engineering-plugin",
+      "fork_revision": "738067a599c68f1f0f4a32273fa9d7d2476f0715",
+      "license": "MIT",
+      "reference_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/173bd337fa639aac19ce7363d288836a074231a5/README.md",
+      "readme_sha256": "e9bf58531fc2830a22b22393462f9bb778e58a3ba077209d42b5df4de5d83f5b",
+      "scope": "reference_only",
+      "runtime_verified": false
     }
   ],
   "source_guidance": [
     "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-    "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source."
+    "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source.",
+    "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review."
   ]
 }

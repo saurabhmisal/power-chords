@@ -738,6 +738,14 @@ The public landing page uses Google Analytics 4 in the existing **Lazo Website**
 
 ## Source synchronization
 
+### Newly reviewed repositories
+
+The inventory now includes additional reviewed repositories for security audits, SEO and AI-search optimization, analytics, media production, voice, OCR, interface components, and agent orchestration. See the [new-source review](docs/NEW_SOURCES.md) for the included repositories, capability mappings, license boundaries, and excluded candidates.
+
+Source inventory size and capability coverage are separate concepts. A new source can support an existing capability without adding a new capability or an executable runtime. New references are not automatically installed or enabled.
+
+Use `node scripts/discover-sources.mjs` with authenticated GitHub access to discover candidates. Review each candidate before updating `scripts/apply-source-discovery.mjs` selections and running that script. Then pull new pinned code snapshots with `node scripts/pull-source-snapshots.mjs --new-only` and follow the capability refresh procedure below. Discovery records exclusions rather than silently treating every fork as an approved integration.
+
 ### Refresh code snapshots and portable capabilities
 
 The [upstream refresh report](docs/UPSTREAM_REFRESH.md) records the latest fetched original repositories, immutable revisions, fork differences, catalog licenses, and capability mappings. [Machine-readable source review](data/source-review.json) and [capability source mapping](data/capability-source-map.json) make the refresh auditable.

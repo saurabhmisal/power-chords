@@ -12,9 +12,9 @@ const sha=n=>n.toString(16).padStart(40,'0');
 const snapshot=(s,i)=>({...s,fork_sha:sha(i+1),upstream_sha:sha(i+101),fork_branch:'main',upstream_repo:`upstream/${s.name}`,upstream_branch:'main',upstream_release:'v1.0.0'});
 const seeds=async()=>JSON.parse(await readFile(path.join(root,'data/upstreams.lock.json'),'utf8'));
 
-test('catalog starts with all 52 verified forks and never imports unseen repositories',async()=>{
- const s=await seeds();assert.equal(s.sources.length,52);
- assert.equal(new Set(s.sources.map(x=>x.repository)).size,52);
+test('catalog matches the extensible curated inventory and never imports unseen repositories',async()=>{
+ const s=await seeds();assert.equal(s.sources.length,FORKS.length);
+ assert.equal(new Set(s.sources.map(x=>x.repository)).size,FORKS.length);
  assert.deepEqual(new Set(s.sources.map(x=>x.repository)),new Set(FORKS.map(x=>x.repository)));
  assert.ok(s.sources.every(x=>x.fork_sha===null||/^[a-f0-9]{40}$/.test(x.fork_sha)));
 });
@@ -31,8 +31,8 @@ test('reconcile preserves unchanged timestamps and refuses incomplete snapshots'
  const l=await seeds();const old={schema_version:1,changes:[]};
  const a=l.sources.map(snapshot);
  const first=reconcile(l,old,a,'2026-10-17T00:00:00Z');
- assert.equal(first.newly.length,52);
- assert.equal(first.updates.changes.length,52);
+ assert.equal(first.newly.length,FORKS.length);
+ assert.equal(first.updates.changes.length,FORKS.length);
  const second=reconcile(first.lock,first.updates,a,'2026-10-18T00:00:00Z');
  assert.equal(second.newly.length,0);
  assert.equal(second.lock.sources[0].updated_at,'2026-10-17T00:00:00Z');
@@ -49,7 +49,7 @@ test('sync writes only detected changes and fails atomically on bad upstream met
   const input=await seeds();const values=new Map(input.sources.map((s,i)=>[s.repository,snapshot(s,i)]));
   const client={snapshot:async s=>values.get(s.repository)};
   const first=await synchronize({client,lockFile,updatesFile,log:()=>{},now:'2026-10-17T00:00:00Z'});
-  assert.equal(first.newly.length,52);
+  assert.equal(first.newly.length,FORKS.length);
   const after=await readFile(lockFile,'utf8');
   const second=await synchronize({client,lockFile,updatesFile,log:()=>{},now:'2026-10-18T00:00:00Z'});
   assert.equal(second.newly.length,0);

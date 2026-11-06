@@ -20,15 +20,15 @@ function fixture(t,opts={}){
   const db=new PowersDB(':memory:');t.after(()=>db.close());
   return {db,engine:new PowersEngine({db,github:mockGithub(opts),storageDir:join(tmpdir(),'power-chords-tests-'+process.pid),userId:'alice'})};
 }
-test('curated verified inventory has 52 distinct fork sources and 12 power categories',()=>{
-  assert.equal(FORKS.length,52);
-  assert.equal(new Set(FORKS.map(x=>x.repository)).size,52);
+test('curated inventory has distinct source records and 12 power categories',()=>{
+  assert.ok(FORKS.length>=52);
+  assert.equal(new Set(FORKS.map(x=>x.repository)).size,FORKS.length);
   assert.equal(GROUPS.filter(g=>g.id!=='unclassified').length,12);
-  for(const f of FORKS){assert.match(f.url,/^https:\/\/github.com\/saurabhmisal\//);assert.ok(f.created_at>='2026-09-17'&&f.created_at<='2026-10-17');}
+  for(const f of FORKS){assert.match(f.url,/^https:\/\/github.com\/saurabhmisal\//);assert.match(f.created_at,/^\d{4}-\d{2}-\d{2}$/);assert.ok(Number.isFinite(Date.parse(f.created_at)));}
 });
-test('all 52 sources are imported idempotently and none is enabled by default',t=>{
+test('all curated sources are imported idempotently and none is enabled by default',t=>{
   const {db,engine}=fixture(t);
-  db.seed(); assert.equal(engine.summary().sources,52);
+  db.seed(); assert.equal(engine.summary().sources,FORKS.length);
   assert.equal(engine.summary().installed,0);assert.equal(engine.summary().enabled,0);
   assert.ok(engine.list().sources.every(x=>x.status==='discovered'&&x.package_count===0));
 });
@@ -82,7 +82,7 @@ test('unclear or copyleft licenses require review, even for SKILL.md',async t=>{
 test('GitHub source sync adds new forks but does not enable them',async t=>{
   const {engine}=fixture(t);
   const added=await engine.syncForks({since:'2026-10-01'});
-  assert.equal(added.total,53);assert.equal(engine.summary().enabled,0);
+  assert.equal(added.total,FORKS.length+1);assert.equal(engine.summary().enabled,0);
   const source=engine.list().sources.find(x=>x.name==='new-cool-fork');
   assert.equal(source.group_id,'unclassified');
 });

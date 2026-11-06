@@ -1,3 +1,4 @@
+import {FORKS} from '../src/catalog.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import handler from '../api/hosted.js';
@@ -10,7 +11,7 @@ async function call(body,origin='https://power-chords.example'){
 test('hosted catalog exposes all sources and four workflows without shared history',async()=>{
   const response=await call();
   assert.equal(response.statusCode,200);
-  assert.equal(response.body.state.sources.length,52);
+  assert.equal(response.body.state.sources.length,FORKS.length);
   assert.equal(response.body.workroom.workflows.length,4);
   assert.deepEqual(response.body.workroom.runs,[]);
 });

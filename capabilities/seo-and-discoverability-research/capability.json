@@ -21,7 +21,7 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
   "upstream_sources": [
     {
       "repository": "every-app/open-seo",
@@ -44,11 +44,35 @@
       "readme_sha256": "69c172878d7a66305ef57928d0fbb4056e379cb8a316e23fc1d6f9869519f798",
       "scope": "reference_only",
       "runtime_verified": false
+    },
+    {
+      "repository": "AgriciDaniel/claude-seo",
+      "revision": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+      "fork_repository": "saurabhmisal/claude-seo",
+      "fork_revision": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+      "license": "MIT",
+      "reference_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md",
+      "readme_sha256": "a6f11dbfee5b5ba787bdbb8536a46813c55fc770f875094714c4916178dc1238",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "zubair-trabzada/geo-seo-claude",
+      "revision": "989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c",
+      "fork_repository": "saurabhmisal/geo-seo-claude",
+      "fork_revision": "989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c",
+      "license": "MIT",
+      "reference_url": "https://github.com/zubair-trabzada/geo-seo-claude/blob/989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c/README.md",
+      "readme_sha256": "6ee85c5466a3c4d5b5573f5055de275e5a0a5ca6298332b393942cd60930f687",
+      "scope": "reference_only",
+      "runtime_verified": false
     }
   ],
   "source_guidance": [
     "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-    "Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations."
+    "Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations.",
+    "claude-seo: SEO audit instruction references; live connectors and specialist agents are not automatically enabled.",
+    "geo-seo-claude: AI-search optimization guidance; report observed crawl/citation evidence without guaranteeing rankings."
   ]
 }

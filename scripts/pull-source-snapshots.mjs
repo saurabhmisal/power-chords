@@ -9,11 +9,14 @@ const git=async(args)=> (await execute('git',args,{timeout:300000,maxBuffer:1600
 const lock=JSON.parse(await readFile(join(root,'data/upstreams.lock.json'),'utf8'));
 const cache=resolve(process.env.POWER_CHORDS_SOURCE_CACHE||join(root,'.local/upstream-cache'));
 await mkdir(cache,{recursive:true});
-const results=[];
+const previous=JSON.parse(await readFile(join(root,'data/source-review.json'),'utf8').catch(()=>'{}'));
+const retained=process.argv.includes('--new-only')?(previous.sources||[]).filter(source=>source.status==='pulled'&&lock.sources.some(item=>item.repository===source.repository&&item.upstream_sha===source.revision)):[];
+const sources=lock.sources.filter(source=>!retained.some(item=>item.repository===source.repository));
+const results=[...retained];
 let next=0;
 await Promise.all(Array.from({length:4},async()=>{
-  while(next<lock.sources.length){
-    const source=lock.sources[next++];
+  while(next<sources.length){
+    const source=sources[next++];
     const repository=source.upstream_repo;
     const revision=source.upstream_sha;
     if(!/^[\w.-]+\/[\w.-]+$/.test(repository||'')||!/^[a-f0-9]{40}$/.test(revision||''))throw new Error('Run source synchronization before pulling snapshots');

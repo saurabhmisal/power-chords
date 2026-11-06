@@ -22,7 +22,7 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
   "upstream_sources": [
     {
       "repository": "webadderallorg/Recordly",
@@ -56,10 +56,106 @@
       "readme_sha256": "32526f1a91b202e739fce1a6defa7fce4d871146fc692f74056708e9b84486c8",
       "scope": "reference_only",
       "runtime_verified": false
+    },
+    {
+      "repository": "lemomo-ai/lemo-opuscar",
+      "revision": "bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00",
+      "fork_repository": "saurabhmisal/lemo-opuscar",
+      "fork_revision": "bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00",
+      "license": "MIT",
+      "reference_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00/README.md",
+      "readme_sha256": "6515f3802c150122ba97a347503e8e4bee5681bbddb6a18b35371764422b60fb",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "calesthio/OpenMontage",
+      "revision": "d21f5d4eaa08422b09c7091757a05affcbabb35b",
+      "fork_repository": "saurabhmisal/OpenMontage",
+      "fork_revision": "c8066452325cb57c8fc1ba8c2a71b6e8842e6b65",
+      "license": "AGPL-3.0",
+      "reference_url": "https://github.com/calesthio/OpenMontage/blob/d21f5d4eaa08422b09c7091757a05affcbabb35b/README.md",
+      "readme_sha256": "99258db9f4dcf23051a06426badcbf3c590b947625a65a8d1e239e270da09b12",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "alchaincyf/huashu-art-motion",
+      "revision": "8a0d7d72ca65fcce6f8ba82c4a6c8dfe35b8422c",
+      "fork_repository": "saurabhmisal/huashu-art-motion",
+      "fork_revision": "8a0d7d72ca65fcce6f8ba82c4a6c8dfe35b8422c",
+      "license": "MIT",
+      "reference_url": "https://github.com/alchaincyf/huashu-art-motion/blob/8a0d7d72ca65fcce6f8ba82c4a6c8dfe35b8422c/README.md",
+      "readme_sha256": "c20ffc9dc918f3b565fe1fd22a806b0b75e3a38f366a86a33b3a75f3fe42cd1e",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "MegaTroll222/VOX-COLLAGE-BROLL",
+      "revision": "2e9b8a93a2834e4d670700ab9e4827a8baf3b668",
+      "fork_repository": "saurabhmisal/VOX-COLLAGE-BROLL",
+      "fork_revision": "2e9b8a93a2834e4d670700ab9e4827a8baf3b668",
+      "license": "NOASSERTION",
+      "reference_url": "https://github.com/MegaTroll222/VOX-COLLAGE-BROLL/blob/2e9b8a93a2834e4d670700ab9e4827a8baf3b668/README.md",
+      "readme_sha256": "8749c660f25a892124049b3eb4c142b706004e1a9f899ca2564d32655ae828c7",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "feitangyuan/onetake",
+      "revision": "abb6d17279cdc749e27e99aa534a062d8fd01ced",
+      "fork_repository": "saurabhmisal/onetake",
+      "fork_revision": "013a61ac8d98883c73733f59c06e49e9ba444f14",
+      "license": "NOASSERTION",
+      "reference_url": "https://github.com/feitangyuan/onetake/blob/abb6d17279cdc749e27e99aa534a062d8fd01ced/README.md",
+      "readme_sha256": "b1c4da4534269f169d11315a528ffde7b64029564a03239d5b5fb981972f23a5",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "heygen-com/hyperframes",
+      "revision": "a874a6324a5e3dec18ebfea426071f87a7f21373",
+      "fork_repository": "saurabhmisal/hyperframes",
+      "fork_revision": "4371981b740d92f70e520cfbec34db68a1c93434",
+      "license": "Apache-2.0",
+      "reference_url": "https://github.com/heygen-com/hyperframes/blob/a874a6324a5e3dec18ebfea426071f87a7f21373/README.md",
+      "readme_sha256": "608d7348c5c2abc4e72104bd538744c69ea9a5e3dce830d98f17ea97e6b488a1",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "hypit-ai/hypit",
+      "revision": "2d31e88765e297f0795348b460c77a6067f12261",
+      "fork_repository": "saurabhmisal/hypit",
+      "fork_revision": "0d36de9a9d17562fca0e478969b80eb1c16a7693",
+      "license": "NOASSERTION",
+      "reference_url": "https://github.com/hypit-ai/hypit/blob/2d31e88765e297f0795348b460c77a6067f12261/README.md",
+      "readme_sha256": "4a58c61016561cef90afdb46bcc85a24dae0cd78bf2544d969369952ff956cef",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "Wan-Video/Wan2.2",
+      "revision": "1ea34ff48f87168174e12956e200b1d908b1c5ff",
+      "fork_repository": "saurabhmisal/Wan2.2",
+      "fork_revision": "1ea34ff48f87168174e12956e200b1d908b1c5ff",
+      "license": "Apache-2.0",
+      "reference_url": "https://github.com/Wan-Video/Wan2.2/blob/1ea34ff48f87168174e12956e200b1d908b1c5ff/README.md",
+      "readme_sha256": "40222cb3a66cc89aa1cd84589d1fa696806c93c09cf1c4383b3994139202dfa1",
+      "scope": "reference_only",
+      "runtime_verified": false
     }
   ],
   "source_guidance": [
     "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
-    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+    "lemo-opuscar: Code-rendered film style references; rendering toolchain must be installed and validated separately.",
+    "OpenMontage: Agentic production reference; AGPL license and external media toolchain require review.",
+    "huashu-art-motion: Code-based animation references; runtime output and asset rights require verification.",
+    "VOX-COLLAGE-BROLL: Collage video instruction reference; license classification and MaxFusion access need review.",
+    "onetake: Continuous-camera launch film reference; review license and verify continuity/rendering claims.",
+    "hyperframes: HTML-to-video rendering adapter candidate; rendering and external tools remain separate dependencies.",
+    "hypit: Video variation reference; verify license, consent, likeness rights and source-asset permissions before reuse.",
+    "Wan2.2: Model-runtime candidate; model weights, hardware, dependency setup and asset rights are not bundled."
   ]
 }

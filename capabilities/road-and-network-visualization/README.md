@@ -80,7 +80,7 @@ A first-party executable adapter must implement the stable input/output contract
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-06T15:17:09.240Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
 - [anvaka/city-roads at 35d6497db70d](https://github.com/anvaka/city-roads/blob/35d6497db70debf4508b4d75f17d80c4367d66a6/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [wheresryan22/anatomy at 1482e8469b0a](https://github.com/wheresryan22/anatomy/blob/1482e8469b0a9e0d8cc18ea2740a01423d29ae80/README.md) — catalog license: MIT; reference only, adapter execution not verified.

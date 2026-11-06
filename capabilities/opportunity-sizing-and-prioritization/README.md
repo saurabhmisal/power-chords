@@ -80,14 +80,16 @@ A first-party executable adapter must implement the stable input/output contract
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-06T15:17:09.240Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
 - [666ghj/MiroFish at 7657031ac011](https://github.com/666ghj/MiroFish/blob/7657031ac01184afe2cb220f5ee3545573b5e843/README.md) — catalog license: AGPL-3.0; reference only, adapter execution not verified.
 - [Bennettxai/FounderOS at a0b5db7eb6dc](https://github.com/Bennettxai/FounderOS/blob/a0b5db7eb6dcb52bb148b452557f454a2bc76082/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [nateherkai/roast-room at e40f40652d56](https://github.com/nateherkai/roast-room/blob/e40f40652d5690c4d9f928c4794c673a99f2cd0e/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 
 - Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
+- roast-room: Simulated advisor perspectives are not endorsements, empirical research, or verified decision evidence.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](../../docs/UPSTREAM_REFRESH.md) for scope and reproduction.

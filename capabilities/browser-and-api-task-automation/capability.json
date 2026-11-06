@@ -22,7 +22,7 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
   "upstream_sources": [
     {
       "repository": "goodnight000/api-anything",
@@ -45,10 +45,22 @@
       "readme_sha256": "adb82caba1f6c000b502e08620b6b67a89e866eeab7538303e9847287f86c385",
       "scope": "reference_only",
       "runtime_verified": false
+    },
+    {
+      "repository": "Saffsanity/sill",
+      "revision": "41e8cb8801f8e9d387e27a0d498dee193d17e9ec",
+      "fork_repository": "saurabhmisal/sill",
+      "fork_revision": "5c323e6965b5011809548e5067f9e8e6fa6adf54",
+      "license": "Apache-2.0",
+      "reference_url": "https://github.com/Saffsanity/sill/blob/41e8cb8801f8e9d387e27a0d498dee193d17e9ec/README.md",
+      "readme_sha256": "46b1c49efa8a129754d0105894587b1b200dc5ceac6f1a79ad867505734e2dfb",
+      "scope": "reference_only",
+      "runtime_verified": false
     }
   ],
   "source_guidance": [
     "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
-    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+    "sill: Remote desktop reference; screen capture/input permissions and device access require explicit approval."
   ]
 }

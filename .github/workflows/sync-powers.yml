@@ -73,7 +73,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/upstreams.lock.json data/updates.json docs/SOURCE_UPDATES.md site/index.html .github/last-active.txt
-          git commit -m 'chore(powers): sync 52 GitHub source revisions'
+          git commit -m 'chore(powers): sync GitHub source revisions'
           git push origin HEAD:main
       - name: Publish GitHub release on source updates
         if: steps.publish_state.outputs.source_changed == 'true'

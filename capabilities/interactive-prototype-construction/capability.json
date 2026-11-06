@@ -22,7 +22,7 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
   "upstream_sources": [
     {
       "repository": "Jakeschincariol/replica-skill",
@@ -45,10 +45,46 @@
       "readme_sha256": "a1bc269d3d1b75a230a2ae54cb43c63c19a0a3a067f6a7bb0baf5a7785e3de16",
       "scope": "reference_only",
       "runtime_verified": false
+    },
+    {
+      "repository": "KonstantinKai/reelkit",
+      "revision": "0a9829aa4ad2eccaa006573085587b2c33f8afe3",
+      "fork_repository": "saurabhmisal/reelkit",
+      "fork_revision": "0a9829aa4ad2eccaa006573085587b2c33f8afe3",
+      "license": "MIT",
+      "reference_url": "https://github.com/KonstantinKai/reelkit/blob/0a9829aa4ad2eccaa006573085587b2c33f8afe3/README.md",
+      "readme_sha256": "a4c2fcbf1c968a88b31b32c0c0c363d6cbf430e96b75af1f6e82d1386dddd8f0",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "heygen-com/hyperframes",
+      "revision": "a874a6324a5e3dec18ebfea426071f87a7f21373",
+      "fork_repository": "saurabhmisal/hyperframes",
+      "fork_revision": "4371981b740d92f70e520cfbec34db68a1c93434",
+      "license": "Apache-2.0",
+      "reference_url": "https://github.com/heygen-com/hyperframes/blob/a874a6324a5e3dec18ebfea426071f87a7f21373/README.md",
+      "readme_sha256": "608d7348c5c2abc4e72104bd538744c69ea9a5e3dce830d98f17ea97e6b488a1",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "21st-dev/magic-mcp",
+      "revision": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
+      "fork_repository": "saurabhmisal/magic-mcp",
+      "fork_revision": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
+      "license": "ISC",
+      "reference_url": "https://github.com/21st-dev/magic-mcp/blob/6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55/README.md",
+      "readme_sha256": "3525241fe094188862f3bea44471d1581813cbef2edccce4a1051c0fcf7bc76f",
+      "scope": "reference_only",
+      "runtime_verified": false
     }
   ],
   "source_guidance": [
     "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
-    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+    "reelkit: Touch-first slider library reference; accessibility and input behavior need integration tests.",
+    "hyperframes: HTML-to-video rendering adapter candidate; rendering and external tools remain separate dependencies.",
+    "magic-mcp: Legacy compatibility proxy: upstream recommends the 21st MCP; verify current setup rather than copying obsolete commands."
   ]
 }

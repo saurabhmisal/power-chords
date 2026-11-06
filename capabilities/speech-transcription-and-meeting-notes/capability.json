@@ -21,7 +21,7 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
   "upstream_sources": [
     {
       "repository": "debpalash/VoiceStudio",
@@ -44,10 +44,22 @@
       "readme_sha256": "fbedcadaf56cfb7ba284ccdc76d906d6b3129b7af8e81584bfebc2bcafb9768e",
       "scope": "reference_only",
       "runtime_verified": false
+    },
+    {
+      "repository": "moonshine-ai/moonshine",
+      "revision": "d8d8fa29d05ca67441a7719e70099f9f48917a93",
+      "fork_repository": "saurabhmisal/moonshine",
+      "fork_revision": "234f60faa0eb388b01cdf7e60aca232af37aefda",
+      "license": "NOASSERTION",
+      "reference_url": "https://github.com/moonshine-ai/moonshine/blob/d8d8fa29d05ca67441a7719e70099f9f48917a93/README.md",
+      "readme_sha256": "d926d3014c16cef47ec002f40c61eac3a0b47e07e1dd72b2ceaeb5d75fa81b2d",
+      "scope": "reference_only",
+      "runtime_verified": false
     }
   ],
   "source_guidance": [
     "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
-    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+    "moonshine: Low-latency voice toolkit reference; model and code licenses may differ and require separate review."
   ]
 }

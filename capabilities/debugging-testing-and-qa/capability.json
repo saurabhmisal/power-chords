@@ -28,7 +28,7 @@
       "title": "Integration Readiness"
     }
   ],
-  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
   "upstream_sources": [
     {
       "repository": "garrytan/gstack",
@@ -73,11 +73,59 @@
       "readme_sha256": "6ad34ff24afcf376434405502038be46402fc431162ec441583a39254dd7f086",
       "scope": "reference_only",
       "runtime_verified": false
+    },
+    {
+      "repository": "cloudflare/security-audit-skill",
+      "revision": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "fork_repository": "saurabhmisal/security-audit-skill",
+      "fork_revision": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "license": "MIT",
+      "reference_url": "https://github.com/cloudflare/security-audit-skill/blob/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8/README.md",
+      "readme_sha256": "55e793bbea3563f8246735997c07aaee360e043eeb626f0b56ea6161c8618ae7",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "vxcontrol/pentagi",
+      "revision": "cffed9485aa1cca70762cd08a57ac62a80406258",
+      "fork_repository": "saurabhmisal/pentagi",
+      "fork_revision": "843dfeb4bfc809c09d1bc5022e567c602d8fc9dd",
+      "license": "MIT",
+      "reference_url": "https://github.com/vxcontrol/pentagi/blob/cffed9485aa1cca70762cd08a57ac62a80406258/README.md",
+      "readme_sha256": "b184808b1e84df1dc806e3a4216f84f70dc0330a122d757bae342cde71268147",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "EveryInc/compound-engineering-plugin",
+      "revision": "173bd337fa639aac19ce7363d288836a074231a5",
+      "fork_repository": "saurabhmisal/compound-engineering-plugin",
+      "fork_revision": "738067a599c68f1f0f4a32273fa9d7d2476f0715",
+      "license": "MIT",
+      "reference_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/173bd337fa639aac19ce7363d288836a074231a5/README.md",
+      "readme_sha256": "e9bf58531fc2830a22b22393462f9bb778e58a3ba077209d42b5df4de5d83f5b",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "multica-ai/andrej-karpathy-skills",
+      "revision": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "fork_repository": "saurabhmisal/andrej-karpathy-skills",
+      "fork_revision": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "license": "UNKNOWN",
+      "reference_url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md",
+      "readme_sha256": "daf314efb31894b86d68b67786c820bd8470bb2126e578ba9cd0e3e2667883f8",
+      "scope": "reference_only",
+      "runtime_verified": false
     }
   ],
   "source_guidance": [
     "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-    "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence."
+    "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence.",
+    "security-audit-skill: Independent finding verification and target-scoped security review; security testing requires explicit authorization.",
+    "pentagi: Security orchestration reference only; no scanning or exploitation without explicit authorized scope.",
+    "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review.",
+    "andrej-karpathy-skills: Coding behavior guidance; attribution and license require review before copying instruction text."
   ]
 }

@@ -1,3 +1,4 @@
+import {FORKS} from '../src/catalog.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {spawn} from 'node:child_process';
@@ -24,7 +25,7 @@ test('local UI and HTTP permission boundary: authenticated session, CSRF and per
   assert.match(await homepage.text(),/Rockstar PM Workroom/i);
   const cookie=homepage.headers.get('set-cookie').split(';')[0];
   const state=await fetch(base+'/api/state',{headers:{Cookie:cookie}});
-  const data=await state.json();assert.equal(data.summary.sources,52);
+  const data=await state.json();assert.equal(data.summary.sources,FORKS.length);
   const csrf=await fetch(base+'/api/groups/voice-audio/toggle',{method:'POST',headers:{Cookie:cookie,Origin:'https://evil.example','Content-Type':'application/json'},body:JSON.stringify({enabled:false})});
   assert.equal(csrf.status,403);
   const update=await fetch(base+'/api/groups/voice-audio/toggle',{method:'POST',headers:{Cookie:cookie,Origin:base,'Content-Type':'application/json'},body:JSON.stringify({enabled:false})});

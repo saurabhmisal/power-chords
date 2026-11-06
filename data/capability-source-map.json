@@ -1,54 +1,289 @@
 {
-  "01": ["knowledge-work-plugins", "gstack"],
-  "02": ["MiroFish", "awesome"],
-  "03": ["replica-skill", "rea"],
-  "04": ["knowledge-work-plugins", "hermes-life-os"],
-  "05": ["MiroFish", "graphify"],
-  "06": ["book-to-skill", "Papermorph", "spacedrive"],
-  "07": ["Unlimited-OCR"],
-  "08": ["graphify", "Understand-Anything"],
-  "09": ["graphify", "turbovec", "hermes-life-os"],
-  "10": ["gstack", "knowledge-work-plugins", "vibe-coding-blueprint"],
-  "11": ["archify", "gstack"],
-  "12": ["FounderOS-DEMO", "knowledge-work-plugins"],
-  "13": ["MiroFish", "FounderOS-DEMO"],
-  "14": ["marketingskills", "evals"],
-  "15": ["api-anything", "archify"],
-  "16": ["agent-skills", "vibe-coding", "vibe-coding-templates", "build-your-own-x"],
-  "17": ["graphify", "Understand-Anything", "rea", "vibe-code-docs-stack"],
-  "18": ["archify", "graphify"],
-  "19": ["gstack", "ECC", "ponytail", "vibe-coding-sops"],
-  "20": ["gstack", "openship", "vibe-coding-sops"],
-  "21": ["gstack", "agent-skills"],
-  "22": ["replica-skill", "anatomy"],
-  "23": ["archify", "graphify"],
-  "24": ["text-to-cad", "anatomy"],
-  "25": ["ECC", "munder-difflin", "langflow"],
-  "26": ["jarvis", "hermes-life-os", "langflow"],
-  "27": ["api-anything", "jarvis"],
-  "28": ["langflow", "OmniRoute", "airllm"],
-  "29": ["ECC", "api-anything", "hermes-life-os"],
-  "30": ["knowledge-work-plugins", "midday"],
-  "31": ["anatomy", "FounderOS-DEMO"],
-  "32": ["marketingskills", "knowledge-work-plugins"],
-  "33": ["evals", "ECC"],
-  "34": ["MiroFish", "knowledge-work-plugins"],
-  "35": ["midday", "legal-templates"],
-  "36": ["midday", "FounderOS-DEMO"],
-  "37": ["FounderOS-DEMO", "jarvis", "spacedrive"],
-  "38": ["knowledge-work-plugins", "hermes-life-os"],
-  "39": ["VoiceStudio", "Papermorph"],
-  "40": ["OmniVoice", "VoxCPM", "VoiceStudio"],
-  "41": ["demucs", "stemkit", "VoiceStudio"],
-  "42": ["Recordly", "youtube-agentic-ai-studio", "youtube-automation-agent"],
-  "43": ["open-seo", "marketingskills"],
-  "44": ["marketingskills", "PlacesToPostYourStartup"],
-  "45": ["marketingskills", "youtube-agentic-ai-studio"],
-  "46": ["marketingskills", "open-seo"],
-  "47": ["ai-job-search", "career-ops"],
-  "48": ["career-ops", "ai-job-search", "book-to-skill"],
-  "49": ["gods-eye-view", "city-roads"],
-  "50": ["city-roads", "anatomy"],
-  "51": ["gods-eye-view", "anatomy"],
-  "52": ["gods-eye-view", "city-roads"]
+  "10": [
+    "gstack",
+    "knowledge-work-plugins",
+    "vibe-coding-blueprint"
+  ],
+  "11": [
+    "archify",
+    "gstack"
+  ],
+  "12": [
+    "FounderOS-DEMO",
+    "knowledge-work-plugins",
+    "roast-room"
+  ],
+  "13": [
+    "MiroFish",
+    "FounderOS-DEMO",
+    "roast-room"
+  ],
+  "14": [
+    "marketingskills",
+    "evals"
+  ],
+  "15": [
+    "api-anything",
+    "archify"
+  ],
+  "16": [
+    "agent-skills",
+    "vibe-coding",
+    "vibe-coding-templates",
+    "build-your-own-x",
+    "reelkit",
+    "compound-engineering-plugin",
+    "magic-mcp",
+    "andrej-karpathy-skills"
+  ],
+  "17": [
+    "graphify",
+    "Understand-Anything",
+    "rea",
+    "vibe-code-docs-stack",
+    "compound-engineering-plugin"
+  ],
+  "18": [
+    "archify",
+    "graphify"
+  ],
+  "19": [
+    "gstack",
+    "ECC",
+    "ponytail",
+    "vibe-coding-sops",
+    "security-audit-skill",
+    "pentagi",
+    "compound-engineering-plugin",
+    "andrej-karpathy-skills"
+  ],
+  "20": [
+    "gstack",
+    "openship",
+    "vibe-coding-sops",
+    "superplane"
+  ],
+  "21": [
+    "gstack",
+    "agent-skills",
+    "reelkit",
+    "magic-mcp"
+  ],
+  "22": [
+    "replica-skill",
+    "anatomy",
+    "reelkit",
+    "hyperframes",
+    "magic-mcp"
+  ],
+  "23": [
+    "archify",
+    "graphify"
+  ],
+  "24": [
+    "text-to-cad",
+    "anatomy",
+    "lemo-opuscar",
+    "huashu-art-motion"
+  ],
+  "25": [
+    "ECC",
+    "munder-difflin",
+    "langflow",
+    "compound-engineering-plugin",
+    "awesome-llm-apps",
+    "superplane"
+  ],
+  "26": [
+    "jarvis",
+    "hermes-life-os",
+    "langflow",
+    "superplane"
+  ],
+  "27": [
+    "api-anything",
+    "jarvis",
+    "sill"
+  ],
+  "28": [
+    "langflow",
+    "OmniRoute",
+    "airllm",
+    "compound-engineering-plugin",
+    "awesome-llm-apps",
+    "superplane"
+  ],
+  "29": [
+    "ECC",
+    "api-anything",
+    "hermes-life-os",
+    "security-audit-skill",
+    "pentagi"
+  ],
+  "30": [
+    "knowledge-work-plugins",
+    "midday",
+    "umami"
+  ],
+  "31": [
+    "anatomy",
+    "FounderOS-DEMO",
+    "umami"
+  ],
+  "32": [
+    "marketingskills",
+    "knowledge-work-plugins",
+    "umami"
+  ],
+  "33": [
+    "evals",
+    "ECC",
+    "awesome-llm-apps"
+  ],
+  "34": [
+    "MiroFish",
+    "knowledge-work-plugins",
+    "roast-room"
+  ],
+  "35": [
+    "midday",
+    "legal-templates"
+  ],
+  "36": [
+    "midday",
+    "FounderOS-DEMO"
+  ],
+  "37": [
+    "FounderOS-DEMO",
+    "jarvis",
+    "spacedrive"
+  ],
+  "38": [
+    "knowledge-work-plugins",
+    "hermes-life-os"
+  ],
+  "39": [
+    "VoiceStudio",
+    "Papermorph",
+    "moonshine"
+  ],
+  "40": [
+    "OmniVoice",
+    "VoxCPM",
+    "VoiceStudio",
+    "moonshine"
+  ],
+  "41": [
+    "demucs",
+    "stemkit",
+    "VoiceStudio",
+    "LYNX-SHARE"
+  ],
+  "42": [
+    "Recordly",
+    "youtube-agentic-ai-studio",
+    "youtube-automation-agent",
+    "lemo-opuscar",
+    "OpenMontage",
+    "huashu-art-motion",
+    "VOX-COLLAGE-BROLL",
+    "onetake",
+    "hyperframes",
+    "hypit",
+    "Wan2.2"
+  ],
+  "43": [
+    "open-seo",
+    "marketingskills",
+    "claude-seo",
+    "geo-seo-claude"
+  ],
+  "44": [
+    "marketingskills",
+    "PlacesToPostYourStartup",
+    "onetake",
+    "harvey"
+  ],
+  "45": [
+    "marketingskills",
+    "youtube-agentic-ai-studio",
+    "lemo-opuscar",
+    "OpenMontage",
+    "VOX-COLLAGE-BROLL",
+    "hypit",
+    "harvey"
+  ],
+  "46": [
+    "marketingskills",
+    "open-seo",
+    "claude-seo",
+    "umami",
+    "geo-seo-claude"
+  ],
+  "47": [
+    "ai-job-search",
+    "career-ops"
+  ],
+  "48": [
+    "career-ops",
+    "ai-job-search",
+    "book-to-skill"
+  ],
+  "49": [
+    "gods-eye-view",
+    "city-roads"
+  ],
+  "50": [
+    "city-roads",
+    "anatomy"
+  ],
+  "51": [
+    "gods-eye-view",
+    "anatomy"
+  ],
+  "52": [
+    "gods-eye-view",
+    "city-roads"
+  ],
+  "01": [
+    "knowledge-work-plugins",
+    "gstack"
+  ],
+  "02": [
+    "MiroFish",
+    "awesome"
+  ],
+  "03": [
+    "replica-skill",
+    "rea"
+  ],
+  "04": [
+    "knowledge-work-plugins",
+    "hermes-life-os",
+    "harvey"
+  ],
+  "05": [
+    "MiroFish",
+    "graphify"
+  ],
+  "06": [
+    "book-to-skill",
+    "Papermorph",
+    "spacedrive",
+    "indra"
+  ],
+  "07": [
+    "Unlimited-OCR",
+    "indra"
+  ],
+  "08": [
+    "graphify",
+    "Understand-Anything"
+  ],
+  "09": [
+    "graphify",
+    "turbovec",
+    "hermes-life-os",
+    "awesome-llm-apps"
+  ]
 }
