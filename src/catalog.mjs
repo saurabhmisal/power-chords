@@ -3,6 +3,7 @@
  * Classification is advisory until source inspection. Every repo is discovered, NOT installed.
  */
 import additions from '../data/source-additions.json' with {type:'json'};
+import {sourceAllowed} from './source-policy.mjs';
 const raw = [
   // name | fork creation date | capability group | license | summary
   ['agent-skills','2026-10-08','software-engineering','MIT','Engineering skills for coding agents'],
@@ -83,7 +84,7 @@ export const FORKS = [...raw,...additions.map(source=>[source.name,source.create
   origin: 'connected-github-metadata',
   kind: 'unverified',
   status: 'discovered'
-}));
+})).filter(source=>sourceAllowed(source.repository));
 if (!FORKS.length || new Set(FORKS.map(x=>x.id)).size !== FORKS.length) {
   throw new Error('Fork inventory integrity failure');
 }

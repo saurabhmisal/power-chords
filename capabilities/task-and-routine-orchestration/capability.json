@@ -1,10 +1,19 @@
 {
   "schema_version": 1,
   "id": "26",
-  "name": "Task and routine orchestration",
+  "name": "Task Orchestration Tempo",
+  "function_name": "Task and routine orchestration",
+  "core_name": "Task Orchestration",
+  "brand_word": "Tempo",
+  "publisher": "Power Chords",
   "slug": "task-and-routine-orchestration",
   "family": "Agentic Automation",
   "implementation": "native_assistive",
+  "execution": {
+    "local_runtime": "codex-workspace",
+    "portable_instructions": true,
+    "runtime_guide": "../../docs/CODEX_RUNTIME.md"
+  },
   "inputs": [
     "Trigger conditions",
     "authorized systems",
@@ -79,7 +88,7 @@
     }
   ],
   "source_guidance": [
-    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions.",
     "superplane: Engineering orchestration candidate; service credentials, production writes and license need review."

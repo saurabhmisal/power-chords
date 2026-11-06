@@ -1,10 +1,19 @@
 {
   "schema_version": 1,
   "id": "42",
-  "name": "Video demos and educational content",
+  "name": "Video Creation Storyboard",
+  "function_name": "Video demos and educational content",
+  "core_name": "Video Creation",
+  "brand_word": "Storyboard",
+  "publisher": "Power Chords",
   "slug": "video-demos-and-educational-content",
   "family": "Voice & Media",
   "implementation": "adapter_required",
+  "execution": {
+    "local_runtime": "codex-workspace",
+    "portable_instructions": true,
+    "runtime_guide": "../../docs/CODEX_RUNTIME.md"
+  },
   "inputs": [
     "Script",
     "product access",
@@ -91,17 +100,6 @@
       "runtime_verified": false
     },
     {
-      "repository": "MegaTroll222/VOX-COLLAGE-BROLL",
-      "revision": "2e9b8a93a2834e4d670700ab9e4827a8baf3b668",
-      "fork_repository": "saurabhmisal/VOX-COLLAGE-BROLL",
-      "fork_revision": "2e9b8a93a2834e4d670700ab9e4827a8baf3b668",
-      "license": "NOASSERTION",
-      "reference_url": "https://github.com/MegaTroll222/VOX-COLLAGE-BROLL/blob/2e9b8a93a2834e4d670700ab9e4827a8baf3b668/README.md",
-      "readme_sha256": "8749c660f25a892124049b3eb4c142b706004e1a9f899ca2564d32655ae828c7",
-      "scope": "reference_only",
-      "runtime_verified": false
-    },
-    {
       "repository": "feitangyuan/onetake",
       "revision": "abb6d17279cdc749e27e99aa534a062d8fd01ced",
       "fork_repository": "saurabhmisal/onetake",
@@ -147,12 +145,11 @@
     }
   ],
   "source_guidance": [
-    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "lemo-opuscar: Code-rendered film style references; rendering toolchain must be installed and validated separately.",
     "OpenMontage: Agentic production reference; AGPL license and external media toolchain require review.",
     "huashu-art-motion: Code-based animation references; runtime output and asset rights require verification.",
-    "VOX-COLLAGE-BROLL: Collage video instruction reference; license classification and MaxFusion access need review.",
     "onetake: Continuous-camera launch film reference; review license and verify continuity/rendering claims.",
     "hyperframes: HTML-to-video rendering adapter candidate; rendering and external tools remain separate dependencies.",
     "hypit: Video variation reference; verify license, consent, likeness rights and source-asset permissions before reuse.",

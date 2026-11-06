@@ -1,10 +1,19 @@
 {
   "schema_version": 1,
   "id": "40",
-  "name": "Text-to-speech and voice interfaces",
+  "name": "Voice Generation Chorus",
+  "function_name": "Text-to-speech and voice interfaces",
+  "core_name": "Voice Generation",
+  "brand_word": "Chorus",
+  "publisher": "Power Chords",
   "slug": "text-to-speech-and-voice-interfaces",
   "family": "Voice & Media",
   "implementation": "adapter_required",
+  "execution": {
+    "local_runtime": "codex-workspace",
+    "portable_instructions": true,
+    "runtime_guide": "../../docs/CODEX_RUNTIME.md"
+  },
   "inputs": [
     "Approved text",
     "voice selection",
@@ -70,7 +79,7 @@
     }
   ],
   "source_guidance": [
-    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "moonshine: Low-latency voice toolkit reference; model and code licenses may differ and require separate review."
   ]

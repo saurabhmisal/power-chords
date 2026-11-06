@@ -1,0 +1,12 @@
+import {spawn} from 'node:child_process';
+import {mkdir} from 'node:fs/promises';
+import {resolve,join} from 'node:path';
+const root=resolve(import.meta.dirname,'..');
+const run=(command,args)=>new Promise((resolve,reject)=>{const p=spawn(command,args,{cwd:root,stdio:'inherit',env:{...process.env,HOMEBREW_NO_AUTO_UPDATE:'1',HOMEBREW_NO_INSTALL_CLEANUP:'1'}});p.on('error',reject);p.on('close',code=>code?reject(Error(command+' failed.')):resolve());});
+if(process.platform!=='darwin')throw Error('The full preview currently requires macOS for system speech. Other tools are portable; do not report system speech as available on an unsupported host.');
+await mkdir(join(root,'.local/runtime-tools'),{recursive:true});
+await run('uv',['venv','--python','3.11','.local/runtime-python']);
+await run('uv',['pip','install','--python','.local/runtime-python/bin/python','-r','scripts/runtime/requirements.txt']);
+await run('brew',['install','tesseract','ffmpeg']);
+await run('.local/runtime-python/bin/python',['scripts/runtime/fixtures.py']);
+console.log('Runtime installed. Sign in with codex login, then run npm run preview:runtime. No API key is copied or created.');

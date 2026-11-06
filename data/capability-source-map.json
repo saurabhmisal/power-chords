@@ -1,8 +1,7 @@
 {
   "10": [
     "gstack",
-    "knowledge-work-plugins",
-    "vibe-coding-blueprint"
+    "knowledge-work-plugins"
   ],
   "11": [
     "archify",
@@ -28,19 +27,13 @@
   ],
   "16": [
     "agent-skills",
-    "vibe-coding",
-    "vibe-coding-templates",
-    "build-your-own-x",
     "reelkit",
-    "compound-engineering-plugin",
-    "magic-mcp",
-    "andrej-karpathy-skills"
+    "compound-engineering-plugin"
   ],
   "17": [
     "graphify",
     "Understand-Anything",
     "rea",
-    "vibe-code-docs-stack",
     "compound-engineering-plugin"
   ],
   "18": [
@@ -51,30 +44,25 @@
     "gstack",
     "ECC",
     "ponytail",
-    "vibe-coding-sops",
     "security-audit-skill",
     "pentagi",
-    "compound-engineering-plugin",
-    "andrej-karpathy-skills"
+    "compound-engineering-plugin"
   ],
   "20": [
     "gstack",
     "openship",
-    "vibe-coding-sops",
     "superplane"
   ],
   "21": [
     "gstack",
     "agent-skills",
-    "reelkit",
-    "magic-mcp"
+    "reelkit"
   ],
   "22": [
     "replica-skill",
     "anatomy",
     "reelkit",
-    "hyperframes",
-    "magic-mcp"
+    "hyperframes"
   ],
   "23": [
     "archify",
@@ -91,7 +79,6 @@
     "munder-difflin",
     "langflow",
     "compound-engineering-plugin",
-    "awesome-llm-apps",
     "superplane"
   ],
   "26": [
@@ -110,7 +97,6 @@
     "OmniRoute",
     "airllm",
     "compound-engineering-plugin",
-    "awesome-llm-apps",
     "superplane"
   ],
   "29": [
@@ -137,8 +123,7 @@
   ],
   "33": [
     "evals",
-    "ECC",
-    "awesome-llm-apps"
+    "ECC"
   ],
   "34": [
     "MiroFish",
@@ -146,8 +131,7 @@
     "roast-room"
   ],
   "35": [
-    "midday",
-    "legal-templates"
+    "midday"
   ],
   "36": [
     "midday",
@@ -186,7 +170,6 @@
     "lemo-opuscar",
     "OpenMontage",
     "huashu-art-motion",
-    "VOX-COLLAGE-BROLL",
     "onetake",
     "hyperframes",
     "hypit",
@@ -200,7 +183,6 @@
   ],
   "44": [
     "marketingskills",
-    "PlacesToPostYourStartup",
     "onetake",
     "harvey"
   ],
@@ -209,7 +191,6 @@
     "youtube-agentic-ai-studio",
     "lemo-opuscar",
     "OpenMontage",
-    "VOX-COLLAGE-BROLL",
     "hypit",
     "harvey"
   ],
@@ -250,8 +231,7 @@
     "gstack"
   ],
   "02": [
-    "MiroFish",
-    "awesome"
+    "MiroFish"
   ],
   "03": [
     "replica-skill",
@@ -283,7 +263,6 @@
   "09": [
     "graphify",
     "turbovec",
-    "hermes-life-os",
-    "awesome-llm-apps"
+    "hermes-life-os"
   ]
 }

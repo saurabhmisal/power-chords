@@ -1,6 +1,6 @@
-# Interactive prototype construction
+# Interactive Prototyping Playground
 
-> **Power Chords 22** · Design & Creation · **Instruction pack; adapter required** — portable procedure provided, but automatic external execution is not bundled.
+> **Power Chords 22** · Design & Creation · **Codex workspace** — first-party local input-to-artifact execution with Codex reasoning and specialist processing where needed. Portable instructions require the host agent’s own tools.
 
 Build a clickable proof of concept. This guide is a standalone, function-named skill with a repeatable operating procedure.
 
@@ -39,7 +39,7 @@ This copies portable instructions into the selected project's agent skill direct
 
 ### Example request
 
-> Use the Power Chords **Interactive prototype construction** skill. Build a clickable onboarding wizard for a partner API integration. Show your evidence, assumptions, next actions and clearly distinguish verified output from proposals.
+> Use the Power Chords **Interactive Prototyping Playground** skill. Build a clickable onboarding wizard for a partner API integration. Show your evidence, assumptions, next actions and clearly distinguish verified output from proposals.
 
 ### Operating procedure
 
@@ -65,9 +65,9 @@ This copies portable instructions into the selected project's agent skill direct
 
 ## Current implementation
 
-No native runtime adapter currently executes this capability independently. The skill supplies instructions and output rules to a host AI agent; operations requiring specialized tools must be carried out by tools that your agent actually supports.
+Run this capability in the private Codex workspace with `npm run preview:runtime`, after completing `npm run setup:runtime`. Select **Interactive Prototyping Playground**, load its synthetic working example or supply your own evidence, and inspect files and execution receipts. See [runtime guide](../../docs/CODEX_RUNTIME.md) for inputs, limits and verification. The optional older Workroom drafting flows remain separate.
 
-**Implementation status:** `adapter_required`. The agent-portable SKILL.md is immediately usable as an instruction pack. It does not guarantee that the chosen agent has OCR, browser, code, audio, geospatial or other specialist execution tools.
+**Legacy Workroom classification:** `adapter_required`. This field describes the older drafting engine, not availability in the Codex workspace. The agent-portable SKILL.md is immediately usable as an instruction pack. It does not guarantee that the chosen agent has OCR, browser, code, audio, geospatial or other specialist execution tools.
 
 ## Permissions and safety
 
@@ -79,6 +79,36 @@ A first-party executable adapter must implement the stable input/output contract
 
 [← All capabilities](../../docs/CAPABILITY_GUIDES.md) · [Main README](../../README.md)
 
+## Visual walkthrough
+
+![Interactive Prototyping Playground illustrative workflow](../../assets/capability-demos/interactive-prototype-construction.gif)
+
+Illustrative process animation, not recorded runtime execution. [Open the Power Chords capability page](https://powerchords.lazo.tools/capabilities/interactive-prototype-construction/) for motion controls and the complete workflow diagram.
+
+## Workflow diagram
+
+```mermaid
+flowchart TD
+  input["Your context and required inputs"]
+  step0["Choose target flows"]
+  step1["Create simple navigable screens using supported tools"]
+  step2["Bind representative state changes"]
+  step3["Show validation and error paths"]
+  step4["Run a basic usability walkthrough"]
+  review["Review evidence and validate deliverables"]
+  approval{"External action approved?"}
+  finish["Deliver or publish approved result"]
+  input --> step0
+  step0 --> step1
+  step1 --> step2
+  step2 --> step3
+  step3 --> step4
+  step4 --> review
+  review --> approval
+  approval -- Yes --> finish
+  approval -- Revise --> step0
+```
+
 ## Reviewed upstream references
 
 Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
@@ -87,14 +117,12 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 - [wheresryan22/anatomy at 1482e8469b0a](https://github.com/wheresryan22/anatomy/blob/1482e8469b0a9e0d8cc18ea2740a01423d29ae80/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [KonstantinKai/reelkit at 0a9829aa4ad2](https://github.com/KonstantinKai/reelkit/blob/0a9829aa4ad2eccaa006573085587b2c33f8afe3/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [heygen-com/hyperframes at a874a6324a5e](https://github.com/heygen-com/hyperframes/blob/a874a6324a5e3dec18ebfea426071f87a7f21373/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
-- [21st-dev/magic-mcp at 6b5299e8a83c](https://github.com/21st-dev/magic-mcp/blob/6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55/README.md) — catalog license: ISC; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 
-- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - reelkit: Touch-first slider library reference; accessibility and input behavior need integration tests.
 - hyperframes: HTML-to-video rendering adapter candidate; rendering and external tools remain separate dependencies.
-- magic-mcp: Legacy compatibility proxy: upstream recommends the 21st MCP; verify current setup rather than copying obsolete commands.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](../../docs/UPSTREAM_REFRESH.md) for scope and reproduction.

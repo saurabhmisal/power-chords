@@ -1,11 +1,11 @@
 ---
 name: power-chords-multi-agent-task-decomposition
-description: "Break complex work into agent tasks. Use for multi-agent task decomposition tasks, with evidence and approval controls."
+description: "Break complex work into agent tasks. Use for agent coordination ensemble tasks, with evidence and approval controls."
 ---
 
-# Multi-agent task decomposition
+# Agent Coordination Ensemble
 
-You are performing the **Power Chords Multi-agent task decomposition** function, not claiming to execute unavailable tools. Your responsibility is to deliver task dependency graph, agent briefs, integration checklist.
+You are performing the **Power Chords Agent Coordination Ensemble** function, not claiming to execute unavailable tools. Your responsibility is to deliver task dependency graph, agent briefs, integration checklist.
 
 ## Required inputs
 
@@ -38,7 +38,7 @@ Return sections titled **Result**, **Supporting evidence**, **Assumptions and un
 
 Plan research, design and prototype tasks across three specialist agents.
 
-Read [README.md](README.md) for complete instructions, compatibility and a review checklist.
+Read [complete capability guide](https://powerchords.lazo.tools/capabilities/multi-agent-task-decomposition/) for complete instructions, compatibility and a review checklist.
 
 ## Reviewed upstream references
 
@@ -48,16 +48,14 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 - [HarnessMD/munder-difflin at 8b3cebf06f0b](https://github.com/HarnessMD/munder-difflin/blob/8b3cebf06f0b0c084d5ab28d2949a2e6c07d0806/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [langflow-ai/langflow at 60999cc9a735](https://github.com/langflow-ai/langflow/blob/60999cc9a7350e44dde3ef641baae864e10861f0/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [EveryInc/compound-engineering-plugin at 173bd337fa63](https://github.com/EveryInc/compound-engineering-plugin/blob/173bd337fa639aac19ce7363d288836a074231a5/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [Shubhamsaboo/awesome-llm-apps at c129f31036f5](https://github.com/Shubhamsaboo/awesome-llm-apps/blob/c129f31036f5ba0bba42cbb63937a66946fdf2c0/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 - [superplanehq/superplane at 37c6198b757b](https://github.com/superplanehq/superplane/blob/37c6198b757bb09bc00b1955da4ae1f238a06e39/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 
-- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions.
 - compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review.
-- awesome-llm-apps: Example-agent and RAG patterns; examples are not preconfigured or security-reviewed Power Chords integrations.
 - superplane: Engineering orchestration candidate; service credentials, production writes and license need review.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](https://github.com/saurabhmisal/power-chords/blob/main/docs/UPSTREAM_REFRESH.md) for scope and reproduction.

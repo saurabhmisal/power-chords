@@ -1,4 +1,4 @@
-# OCR and structured extraction: Example request
+# OCR Extraction Lens: Example request
 
 > Extract invoice number, supplier, totals and tax from scanned invoices.
 

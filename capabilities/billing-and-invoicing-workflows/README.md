@@ -1,6 +1,6 @@
-# Billing and invoicing workflows
+# Billing Workflows Ledger
 
-> **Power Chords 35** · Business & Operations · **Instruction pack; adapter required** — portable procedure provided, but automatic external execution is not bundled.
+> **Power Chords 35** · Business & Operations · **Codex workspace** — first-party local input-to-artifact execution with Codex reasoning and specialist processing where needed. Portable instructions require the host agent’s own tools.
 
 Design invoice and billing flows. This guide is a standalone, function-named skill with a repeatable operating procedure.
 
@@ -39,7 +39,7 @@ This copies portable instructions into the selected project's agent skill direct
 
 ### Example request
 
-> Use the Power Chords **Billing and invoicing workflows** skill. Design invoicing for usage-based API requests across two tiers. Show your evidence, assumptions, next actions and clearly distinguish verified output from proposals.
+> Use the Power Chords **Billing Workflows Ledger** skill. Design invoicing for usage-based API requests across two tiers. Show your evidence, assumptions, next actions and clearly distinguish verified output from proposals.
 
 ### Operating procedure
 
@@ -65,9 +65,9 @@ This copies portable instructions into the selected project's agent skill direct
 
 ## Current implementation
 
-No native runtime adapter currently executes this capability independently. The skill supplies instructions and output rules to a host AI agent; operations requiring specialized tools must be carried out by tools that your agent actually supports.
+Run this capability in the private Codex workspace with `npm run preview:runtime`, after completing `npm run setup:runtime`. Select **Billing Workflows Ledger**, load its synthetic working example or supply your own evidence, and inspect files and execution receipts. See [runtime guide](../../docs/CODEX_RUNTIME.md) for inputs, limits and verification. The optional older Workroom drafting flows remain separate.
 
-**Implementation status:** `adapter_required`. The agent-portable SKILL.md is immediately usable as an instruction pack. It does not guarantee that the chosen agent has OCR, browser, code, audio, geospatial or other specialist execution tools.
+**Legacy Workroom classification:** `adapter_required`. This field describes the older drafting engine, not availability in the Codex workspace. The agent-portable SKILL.md is immediately usable as an instruction pack. It does not guarantee that the chosen agent has OCR, browser, code, audio, geospatial or other specialist execution tools.
 
 ## Permissions and safety
 
@@ -79,16 +79,45 @@ A first-party executable adapter must implement the stable input/output contract
 
 [← All capabilities](../../docs/CAPABILITY_GUIDES.md) · [Main README](../../README.md)
 
+## Visual walkthrough
+
+![Billing Workflows Ledger illustrative workflow](../../assets/capability-demos/billing-and-invoicing-workflows.gif)
+
+Illustrative process animation, not recorded runtime execution. [Open the Power Chords capability page](https://powerchords.lazo.tools/capabilities/billing-and-invoicing-workflows/) for motion controls and the complete workflow diagram.
+
+## Workflow diagram
+
+```mermaid
+flowchart TD
+  input["Your context and required inputs"]
+  step0["Map billable events and invoice states"]
+  step1["Define tax and currency requirements"]
+  step2["Specify retries and reconciliation"]
+  step3["Add approvals and audit"]
+  step4["Test exceptional conditions before deployment"]
+  review["Review evidence and validate deliverables"]
+  approval{"External action approved?"}
+  finish["Deliver or publish approved result"]
+  input --> step0
+  step0 --> step1
+  step1 --> step2
+  step2 --> step3
+  step3 --> step4
+  step4 --> review
+  review --> approval
+  approval -- Yes --> finish
+  approval -- Revise --> step0
+```
+
 ## Reviewed upstream references
 
 Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
 - [midday-ai/midday at 51587319f26a](https://github.com/midday-ai/midday/blob/51587319f26a0ffaa9dfccab1920373cb65689b7/README.md) — catalog license: AGPL-3.0; reference only, adapter execution not verified.
-- [General-Legal/legal-templates at 6d6805425eab](https://github.com/General-Legal/legal-templates/blob/6d6805425eabd41bed86fc1e2ec51612760f716c/README.md) — catalog license: CC0-1.0; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 
-- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](../../docs/UPSTREAM_REFRESH.md) for scope and reproduction.

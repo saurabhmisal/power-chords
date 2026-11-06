@@ -1,4 +1,4 @@
-# Dashboards and visual reporting: Example request
+# Dashboard Reporting Panorama: Example request
 
 > Design a weekly onboarding dashboard for the customer success team.
 

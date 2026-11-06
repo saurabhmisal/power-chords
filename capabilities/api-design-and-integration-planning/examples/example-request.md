@@ -1,4 +1,4 @@
-# API design and integration planning: Example request
+# API Planning Bridge: Example request
 
 > Plan integrating a partner order API with a dispatch service.
 

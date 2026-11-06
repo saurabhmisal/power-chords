@@ -3,7 +3,7 @@
   "capabilities": [
     {
       "id": "01",
-      "name": "Customer problem discovery",
+      "name": "Customer Discovery Compass",
       "slug": "customer-problem-discovery",
       "family": "Research & Discovery",
       "implementation": "native_assistive",
@@ -41,7 +41,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -67,11 +67,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Customer problem discovery",
+      "core_name": "Customer Discovery",
+      "brand_word": "Compass",
+      "publisher": "Power Chords"
     },
     {
       "id": "02",
-      "name": "Market landscape analysis",
+      "name": "Market Research Atlas",
       "slug": "market-landscape-analysis",
       "family": "Research & Discovery",
       "implementation": "adapter_required",
@@ -104,7 +108,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -118,23 +122,16 @@
           "readme_sha256": "5109feef87d494dd77c0eb225486d4278fe3eb61b303574600bcf8c3c339d034",
           "scope": "reference_only",
           "runtime_verified": false
-        },
-        {
-          "repository": "sindresorhus/awesome",
-          "revision": "bc98e517ddca672f55f9857d714fc3ea3c3540b2",
-          "fork_repository": "saurabhmisal/awesome",
-          "fork_revision": "bc98e517ddca672f55f9857d714fc3ea3c3540b2",
-          "license": "CC0-1.0",
-          "reference_url": "https://github.com/sindresorhus/awesome/blob/bc98e517ddca672f55f9857d714fc3ea3c3540b2/readme.md",
-          "readme_sha256": "465cd781335e44587d238f666800104b63d4fc8ba2395d6422974dcba421c616",
-          "scope": "reference_only",
-          "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Market landscape analysis",
+      "core_name": "Market Research",
+      "brand_word": "Atlas",
+      "publisher": "Power Chords"
     },
     {
       "id": "03",
-      "name": "Competitive product teardown",
+      "name": "Competitive Research Prism",
       "slug": "competitive-product-teardown",
       "family": "Research & Discovery",
       "implementation": "adapter_required",
@@ -166,7 +163,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -192,11 +189,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Competitive product teardown",
+      "core_name": "Competitive Research",
+      "brand_word": "Prism",
+      "publisher": "Power Chords"
     },
     {
       "id": "04",
-      "name": "Account and stakeholder intelligence",
+      "name": "Sales Research Beacon",
       "slug": "account-and-stakeholder-intelligence",
       "family": "Research & Discovery",
       "implementation": "native_assistive",
@@ -234,7 +235,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "harvey: Sales research and drafting reference; sending outreach or accessing mail requires explicit authorization."
       ],
@@ -272,11 +273,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Account and stakeholder intelligence",
+      "core_name": "Sales Research",
+      "brand_word": "Beacon",
+      "publisher": "Power Chords"
     },
     {
       "id": "05",
-      "name": "Evidence triangulation and opportunity mapping",
+      "name": "Evidence Mapping Mosaic",
       "slug": "evidence-triangulation-and-opportunity-mapping",
       "family": "Research & Discovery",
       "implementation": "native_assistive",
@@ -317,7 +322,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -343,11 +348,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Evidence triangulation and opportunity mapping",
+      "core_name": "Evidence Mapping",
+      "brand_word": "Mosaic",
+      "publisher": "Power Chords"
     },
     {
       "id": "06",
-      "name": "Multi-format document ingestion",
+      "name": "Document Ingestion Intake",
       "slug": "multi-format-document-ingestion",
       "family": "Document Intelligence",
       "implementation": "adapter_required",
@@ -381,7 +390,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "indra: Document intelligence adapter candidate; code license does not establish rights to all model weights."
       ],
@@ -430,11 +439,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Multi-format document ingestion",
+      "core_name": "Document Ingestion",
+      "brand_word": "Intake",
+      "publisher": "Power Chords"
     },
     {
       "id": "07",
-      "name": "OCR and structured extraction",
+      "name": "OCR Extraction Lens",
       "slug": "ocr-and-structured-extraction",
       "family": "Document Intelligence",
       "implementation": "adapter_required",
@@ -466,7 +479,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "indra: Document intelligence adapter candidate; code license does not establish rights to all model weights."
       ],
@@ -493,11 +506,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "OCR and structured extraction",
+      "core_name": "OCR Extraction",
+      "brand_word": "Lens",
+      "publisher": "Power Chords"
     },
     {
       "id": "08",
-      "name": "Knowledge graph construction",
+      "name": "Knowledge Graph Constellation",
       "slug": "knowledge-graph-construction",
       "family": "Document Intelligence",
       "implementation": "adapter_required",
@@ -530,7 +547,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source."
       ],
@@ -557,11 +574,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Knowledge graph construction",
+      "core_name": "Knowledge Graph",
+      "brand_word": "Constellation",
+      "publisher": "Power Chords"
     },
     {
       "id": "09",
-      "name": "Semantic and context-aware retrieval",
+      "name": "Semantic Search Pathfinder",
       "slug": "semantic-and-context-aware-retrieval",
       "family": "Document Intelligence",
       "implementation": "adapter_required",
@@ -594,10 +615,9 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-        "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source.",
-        "awesome-llm-apps: Example-agent and RAG patterns; examples are not preconfigured or security-reviewed Power Chords integrations."
+        "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source."
       ],
       "upstream_sources": [
         {
@@ -632,23 +652,16 @@
           "readme_sha256": "44fef59bc7d485ffd7ac73a5e3a359720077b3fda095c7a6d2fcb8aa10496d8e",
           "scope": "reference_only",
           "runtime_verified": false
-        },
-        {
-          "repository": "Shubhamsaboo/awesome-llm-apps",
-          "revision": "c129f31036f5ba0bba42cbb63937a66946fdf2c0",
-          "fork_repository": "saurabhmisal/awesome-llm-apps",
-          "fork_revision": "6c16b23f1bacd0fdf240bb5141ef45e59e82c306",
-          "license": "Apache-2.0",
-          "reference_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/c129f31036f5ba0bba42cbb63937a66946fdf2c0/README.md",
-          "readme_sha256": "91e321c262b6c6be2de89bb66d4d6f5874ea0010f4793a5bf9701982924ee6af",
-          "scope": "reference_only",
-          "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Semantic and context-aware retrieval",
+      "core_name": "Semantic Search",
+      "brand_word": "Pathfinder",
+      "publisher": "Power Chords"
     },
     {
       "id": "10",
-      "name": "PRD and specification writing",
+      "name": "PRD Blueprint",
       "slug": "prd-and-specification-writing",
       "family": "Product & Strategy",
       "implementation": "native_assistive",
@@ -686,7 +699,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -711,23 +724,16 @@
           "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
           "scope": "reference_only",
           "runtime_verified": false
-        },
-        {
-          "repository": "nisargpatel1906/vibe-coding-blueprint",
-          "revision": "faf47911db82d85a1b0185957babca9cd89cda3b",
-          "fork_repository": "saurabhmisal/vibe-coding-blueprint",
-          "fork_revision": "faf47911db82d85a1b0185957babca9cd89cda3b",
-          "license": "MIT",
-          "reference_url": "https://github.com/nisargpatel1906/vibe-coding-blueprint/blob/faf47911db82d85a1b0185957babca9cd89cda3b/README.md",
-          "readme_sha256": "8a4d052ca5e54d30773351e787033d7e62a71f4d199e4eb70c802b53c18d1fb4",
-          "scope": "reference_only",
-          "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "PRD and specification writing",
+      "core_name": "PRD",
+      "brand_word": "Blueprint",
+      "publisher": "Power Chords"
     },
     {
       "id": "11",
-      "name": "End-to-end journey and workflow mapping",
+      "name": "Journey Mapping Trail",
       "slug": "end-to-end-journey-and-workflow-mapping",
       "family": "Product & Strategy",
       "implementation": "native_assistive",
@@ -765,7 +771,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -791,11 +797,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "End-to-end journey and workflow mapping",
+      "core_name": "Journey Mapping",
+      "brand_word": "Trail",
+      "publisher": "Power Chords"
     },
     {
       "id": "12",
-      "name": "Outcome-oriented roadmapping",
+      "name": "Product Roadmap Horizon",
       "slug": "outcome-oriented-roadmapping",
       "family": "Product & Strategy",
       "implementation": "native_assistive",
@@ -833,7 +843,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "roast-room: Simulated advisor perspectives are not endorsements, empirical research, or verified decision evidence."
       ],
@@ -871,11 +881,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Outcome-oriented roadmapping",
+      "core_name": "Product Roadmap",
+      "brand_word": "Horizon",
+      "publisher": "Power Chords"
     },
     {
       "id": "13",
-      "name": "Opportunity sizing and prioritization",
+      "name": "Prioritization Summit",
       "slug": "opportunity-sizing-and-prioritization",
       "family": "Product & Strategy",
       "implementation": "native_assistive",
@@ -916,7 +930,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "roast-room: Simulated advisor perspectives are not endorsements, empirical research, or verified decision evidence."
       ],
@@ -954,11 +968,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Opportunity sizing and prioritization",
+      "core_name": "Prioritization",
+      "brand_word": "Summit",
+      "publisher": "Power Chords"
     },
     {
       "id": "14",
-      "name": "Hypothesis and experiment design",
+      "name": "Experiment Design Catalyst",
       "slug": "hypothesis-and-experiment-design",
       "family": "Product & Strategy",
       "implementation": "native_assistive",
@@ -996,7 +1014,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence."
       ],
@@ -1023,11 +1041,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Hypothesis and experiment design",
+      "core_name": "Experiment Design",
+      "brand_word": "Catalyst",
+      "publisher": "Power Chords"
     },
     {
       "id": "15",
-      "name": "API design and integration planning",
+      "name": "API Planning Bridge",
       "slug": "api-design-and-integration-planning",
       "family": "Engineering & Integration",
       "implementation": "native_assistive",
@@ -1065,7 +1087,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -1091,11 +1113,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "API design and integration planning",
+      "core_name": "API Planning",
+      "brand_word": "Bridge",
+      "publisher": "Power Chords"
     },
     {
       "id": "16",
-      "name": "Rapid application prototyping",
+      "name": "App Prototyping Foundry",
       "slug": "rapid-application-prototyping",
       "family": "Engineering & Integration",
       "implementation": "adapter_required",
@@ -1128,12 +1154,10 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "reelkit: Touch-first slider library reference; accessibility and input behavior need integration tests.",
-        "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review.",
-        "magic-mcp: Legacy compatibility proxy: upstream recommends the 21st MCP; verify current setup rather than copying obsolete commands.",
-        "andrej-karpathy-skills: Coding behavior guidance; attribution and license require review before copying instruction text."
+        "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review."
       ],
       "upstream_sources": [
         {
@@ -1144,39 +1168,6 @@
           "license": "MIT",
           "reference_url": "https://github.com/addyosmani/agent-skills/blob/301b02b12bff98e4688e6984af6556802322bbde/README.md",
           "readme_sha256": "b74ab722eeee706ff1c5c3ee55f5f2328368ec28c6368900bc80b857b5bc6b72",
-          "scope": "reference_only",
-          "runtime_verified": false
-        },
-        {
-          "repository": "EnzeD/vibe-coding",
-          "revision": "8b650568ea41515950f75bee255d03ac96db8e62",
-          "fork_repository": "saurabhmisal/vibe-coding",
-          "fork_revision": "8b650568ea41515950f75bee255d03ac96db8e62",
-          "license": "UNKNOWN",
-          "reference_url": "https://github.com/EnzeD/vibe-coding/blob/8b650568ea41515950f75bee255d03ac96db8e62/README.md",
-          "readme_sha256": "472c90091ec3ca43c2724ef7cd5ff4ccaf5b81735601316b069d105a62a8be66",
-          "scope": "reference_only",
-          "runtime_verified": false
-        },
-        {
-          "repository": "chrishayuk/vibe-coding-templates",
-          "revision": "a58fadee8027cfa620cad79c714fbd7132432d90",
-          "fork_repository": "saurabhmisal/vibe-coding-templates",
-          "fork_revision": "a58fadee8027cfa620cad79c714fbd7132432d90",
-          "license": "UNKNOWN",
-          "reference_url": "https://github.com/chrishayuk/vibe-coding-templates/blob/a58fadee8027cfa620cad79c714fbd7132432d90/README.md",
-          "readme_sha256": "62bba24f642f977a7e9724bd5c08fe04949c12321f1e0b66d43af1c6fa2e198b",
-          "scope": "reference_only",
-          "runtime_verified": false
-        },
-        {
-          "repository": "codecrafters-io/build-your-own-x",
-          "revision": "aa17439b62f384511a5561ce308e9598b94d8989",
-          "fork_repository": "saurabhmisal/build-your-own-x",
-          "fork_revision": "aa17439b62f384511a5561ce308e9598b94d8989",
-          "license": "UNKNOWN",
-          "reference_url": "https://github.com/codecrafters-io/build-your-own-x/blob/aa17439b62f384511a5561ce308e9598b94d8989/README.md",
-          "readme_sha256": "895a9e99d3964faf6d5992cedce69790b46cbadd59c0fc10dd3d520284aba6f6",
           "scope": "reference_only",
           "runtime_verified": false
         },
@@ -1201,34 +1192,16 @@
           "readme_sha256": "e9bf58531fc2830a22b22393462f9bb778e58a3ba077209d42b5df4de5d83f5b",
           "scope": "reference_only",
           "runtime_verified": false
-        },
-        {
-          "repository": "21st-dev/magic-mcp",
-          "revision": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
-          "fork_repository": "saurabhmisal/magic-mcp",
-          "fork_revision": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
-          "license": "ISC",
-          "reference_url": "https://github.com/21st-dev/magic-mcp/blob/6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55/README.md",
-          "readme_sha256": "3525241fe094188862f3bea44471d1581813cbef2edccce4a1051c0fcf7bc76f",
-          "scope": "reference_only",
-          "runtime_verified": false
-        },
-        {
-          "repository": "multica-ai/andrej-karpathy-skills",
-          "revision": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-          "fork_repository": "saurabhmisal/andrej-karpathy-skills",
-          "fork_revision": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-          "license": "UNKNOWN",
-          "reference_url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md",
-          "readme_sha256": "daf314efb31894b86d68b67786c820bd8470bb2126e578ba9cd0e3e2667883f8",
-          "scope": "reference_only",
-          "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Rapid application prototyping",
+      "core_name": "App Prototyping",
+      "brand_word": "Foundry",
+      "publisher": "Power Chords"
     },
     {
       "id": "17",
-      "name": "Codebase navigation and explanation",
+      "name": "Codebase Exploration Lantern",
       "slug": "codebase-navigation-and-explanation",
       "family": "Engineering & Integration",
       "implementation": "adapter_required",
@@ -1261,7 +1234,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source.",
         "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review."
@@ -1301,17 +1274,6 @@
           "runtime_verified": false
         },
         {
-          "repository": "abhishekcheriangeorge-ops/vibe-code-docs-stack",
-          "revision": "2a8b2b1923d668db996f65434f5cecb5b9475849",
-          "fork_repository": "saurabhmisal/vibe-code-docs-stack",
-          "fork_revision": "2a8b2b1923d668db996f65434f5cecb5b9475849",
-          "license": "MIT",
-          "reference_url": "https://github.com/abhishekcheriangeorge-ops/vibe-code-docs-stack/blob/2a8b2b1923d668db996f65434f5cecb5b9475849/README.md",
-          "readme_sha256": "27961ab0a2e6b4a81f9bb71c2cb1af4268defdd1351399965ac165cdb31fa81d",
-          "scope": "reference_only",
-          "runtime_verified": false
-        },
-        {
           "repository": "EveryInc/compound-engineering-plugin",
           "revision": "173bd337fa639aac19ce7363d288836a074231a5",
           "fork_repository": "saurabhmisal/compound-engineering-plugin",
@@ -1322,11 +1284,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Codebase navigation and explanation",
+      "core_name": "Codebase Exploration",
+      "brand_word": "Lantern",
+      "publisher": "Power Chords"
     },
     {
       "id": "18",
-      "name": "System architecture and data-flow mapping",
+      "name": "System Architecture Keystone",
       "slug": "system-architecture-and-data-flow-mapping",
       "family": "Engineering & Integration",
       "implementation": "native_assistive",
@@ -1364,7 +1330,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source."
       ],
@@ -1391,11 +1357,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "System architecture and data-flow mapping",
+      "core_name": "System Architecture",
+      "brand_word": "Keystone",
+      "publisher": "Power Chords"
     },
     {
       "id": "19",
-      "name": "Debugging, testing and QA",
+      "name": "Debugging & QA Sentinel",
       "slug": "debugging-testing-and-qa",
       "family": "Engineering & Integration",
       "implementation": "native_assistive",
@@ -1434,13 +1404,12 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence.",
         "security-audit-skill: Independent finding verification and target-scoped security review; security testing requires explicit authorization.",
         "pentagi: Security orchestration reference only; no scanning or exploitation without explicit authorized scope.",
-        "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review.",
-        "andrej-karpathy-skills: Coding behavior guidance; attribution and license require review before copying instruction text."
+        "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review."
       ],
       "upstream_sources": [
         {
@@ -1477,17 +1446,6 @@
           "runtime_verified": false
         },
         {
-          "repository": "Siborne/vibe-coding-sops",
-          "revision": "823c75661195ae56d32d5a66021b2b7fd63415e8",
-          "fork_repository": "saurabhmisal/vibe-coding-sops",
-          "fork_revision": "823c75661195ae56d32d5a66021b2b7fd63415e8",
-          "license": "MIT",
-          "reference_url": "https://github.com/Siborne/vibe-coding-sops/blob/823c75661195ae56d32d5a66021b2b7fd63415e8/README.md",
-          "readme_sha256": "6ad34ff24afcf376434405502038be46402fc431162ec441583a39254dd7f086",
-          "scope": "reference_only",
-          "runtime_verified": false
-        },
-        {
           "repository": "cloudflare/security-audit-skill",
           "revision": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
           "fork_repository": "saurabhmisal/security-audit-skill",
@@ -1519,23 +1477,16 @@
           "readme_sha256": "e9bf58531fc2830a22b22393462f9bb778e58a3ba077209d42b5df4de5d83f5b",
           "scope": "reference_only",
           "runtime_verified": false
-        },
-        {
-          "repository": "multica-ai/andrej-karpathy-skills",
-          "revision": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-          "fork_repository": "saurabhmisal/andrej-karpathy-skills",
-          "fork_revision": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-          "license": "UNKNOWN",
-          "reference_url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md",
-          "readme_sha256": "daf314efb31894b86d68b67786c820bd8470bb2126e578ba9cd0e3e2667883f8",
-          "scope": "reference_only",
-          "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Debugging, testing and QA",
+      "core_name": "Debugging & QA",
+      "brand_word": "Sentinel",
+      "publisher": "Power Chords"
     },
     {
       "id": "20",
-      "name": "Deployment and release readiness",
+      "name": "Release Readiness Runway",
       "slug": "deployment-and-release-readiness",
       "family": "Engineering & Integration",
       "implementation": "native_assistive",
@@ -1577,7 +1528,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence.",
         "superplane: Engineering orchestration candidate; service credentials, production writes and license need review."
@@ -1606,17 +1557,6 @@
           "runtime_verified": false
         },
         {
-          "repository": "Siborne/vibe-coding-sops",
-          "revision": "823c75661195ae56d32d5a66021b2b7fd63415e8",
-          "fork_repository": "saurabhmisal/vibe-coding-sops",
-          "fork_revision": "823c75661195ae56d32d5a66021b2b7fd63415e8",
-          "license": "MIT",
-          "reference_url": "https://github.com/Siborne/vibe-coding-sops/blob/823c75661195ae56d32d5a66021b2b7fd63415e8/README.md",
-          "readme_sha256": "6ad34ff24afcf376434405502038be46402fc431162ec441583a39254dd7f086",
-          "scope": "reference_only",
-          "runtime_verified": false
-        },
-        {
           "repository": "superplanehq/superplane",
           "revision": "37c6198b757bb09bc00b1955da4ae1f238a06e39",
           "fork_repository": "saurabhmisal/superplane",
@@ -1627,11 +1567,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Deployment and release readiness",
+      "core_name": "Release Readiness",
+      "brand_word": "Runway",
+      "publisher": "Power Chords"
     },
     {
       "id": "21",
-      "name": "Wireframing and UX exploration",
+      "name": "UX Wireframing Canvas",
       "slug": "wireframing-and-ux-exploration",
       "family": "Design & Creation",
       "implementation": "adapter_required",
@@ -1663,10 +1607,9 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-        "reelkit: Touch-first slider library reference; accessibility and input behavior need integration tests.",
-        "magic-mcp: Legacy compatibility proxy: upstream recommends the 21st MCP; verify current setup rather than copying obsolete commands."
+        "reelkit: Touch-first slider library reference; accessibility and input behavior need integration tests."
       ],
       "upstream_sources": [
         {
@@ -1701,23 +1644,16 @@
           "readme_sha256": "a4c2fcbf1c968a88b31b32c0c0c363d6cbf430e96b75af1f6e82d1386dddd8f0",
           "scope": "reference_only",
           "runtime_verified": false
-        },
-        {
-          "repository": "21st-dev/magic-mcp",
-          "revision": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
-          "fork_repository": "saurabhmisal/magic-mcp",
-          "fork_revision": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
-          "license": "ISC",
-          "reference_url": "https://github.com/21st-dev/magic-mcp/blob/6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55/README.md",
-          "readme_sha256": "3525241fe094188862f3bea44471d1581813cbef2edccce4a1051c0fcf7bc76f",
-          "scope": "reference_only",
-          "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Wireframing and UX exploration",
+      "core_name": "UX Wireframing",
+      "brand_word": "Canvas",
+      "publisher": "Power Chords"
     },
     {
       "id": "22",
-      "name": "Interactive prototype construction",
+      "name": "Interactive Prototyping Playground",
       "slug": "interactive-prototype-construction",
       "family": "Design & Creation",
       "implementation": "adapter_required",
@@ -1750,11 +1686,10 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "reelkit: Touch-first slider library reference; accessibility and input behavior need integration tests.",
-        "hyperframes: HTML-to-video rendering adapter candidate; rendering and external tools remain separate dependencies.",
-        "magic-mcp: Legacy compatibility proxy: upstream recommends the 21st MCP; verify current setup rather than copying obsolete commands."
+        "hyperframes: HTML-to-video rendering adapter candidate; rendering and external tools remain separate dependencies."
       ],
       "upstream_sources": [
         {
@@ -1800,23 +1735,16 @@
           "readme_sha256": "608d7348c5c2abc4e72104bd538744c69ea9a5e3dce830d98f17ea97e6b488a1",
           "scope": "reference_only",
           "runtime_verified": false
-        },
-        {
-          "repository": "21st-dev/magic-mcp",
-          "revision": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
-          "fork_repository": "saurabhmisal/magic-mcp",
-          "fork_revision": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
-          "license": "ISC",
-          "reference_url": "https://github.com/21st-dev/magic-mcp/blob/6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55/README.md",
-          "readme_sha256": "3525241fe094188862f3bea44471d1581813cbef2edccce4a1051c0fcf7bc76f",
-          "scope": "reference_only",
-          "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Interactive prototype construction",
+      "core_name": "Interactive Prototyping",
+      "brand_word": "Playground",
+      "publisher": "Power Chords"
     },
     {
       "id": "23",
-      "name": "Architecture and sequence diagrams",
+      "name": "Architecture Diagrams Schematic",
       "slug": "architecture-and-sequence-diagrams",
       "family": "Design & Creation",
       "implementation": "adapter_required",
@@ -1848,7 +1776,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source."
       ],
@@ -1875,11 +1803,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Architecture and sequence diagrams",
+      "core_name": "Architecture Diagrams",
+      "brand_word": "Schematic",
+      "publisher": "Power Chords"
     },
     {
       "id": "24",
-      "name": "Technical illustrations and CAD assets",
+      "name": "Technical Illustration Sculpt",
       "slug": "technical-illustrations-and-cad-assets",
       "family": "Design & Creation",
       "implementation": "adapter_required",
@@ -1912,7 +1844,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "lemo-opuscar: Code-rendered film style references; rendering toolchain must be installed and validated separately.",
         "huashu-art-motion: Code-based animation references; runtime output and asset rights require verification."
@@ -1962,11 +1894,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Technical illustrations and CAD assets",
+      "core_name": "Technical Illustration",
+      "brand_word": "Sculpt",
+      "publisher": "Power Chords"
     },
     {
       "id": "25",
-      "name": "Multi-agent task decomposition",
+      "name": "Agent Coordination Ensemble",
       "slug": "multi-agent-task-decomposition",
       "family": "Agentic Automation",
       "implementation": "native_assistive",
@@ -2005,11 +1941,10 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions.",
         "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review.",
-        "awesome-llm-apps: Example-agent and RAG patterns; examples are not preconfigured or security-reviewed Power Chords integrations.",
         "superplane: Engineering orchestration candidate; service credentials, production writes and license need review."
       ],
       "upstream_sources": [
@@ -2058,17 +1993,6 @@
           "runtime_verified": false
         },
         {
-          "repository": "Shubhamsaboo/awesome-llm-apps",
-          "revision": "c129f31036f5ba0bba42cbb63937a66946fdf2c0",
-          "fork_repository": "saurabhmisal/awesome-llm-apps",
-          "fork_revision": "6c16b23f1bacd0fdf240bb5141ef45e59e82c306",
-          "license": "Apache-2.0",
-          "reference_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/c129f31036f5ba0bba42cbb63937a66946fdf2c0/README.md",
-          "readme_sha256": "91e321c262b6c6be2de89bb66d4d6f5874ea0010f4793a5bf9701982924ee6af",
-          "scope": "reference_only",
-          "runtime_verified": false
-        },
-        {
           "repository": "superplanehq/superplane",
           "revision": "37c6198b757bb09bc00b1955da4ae1f238a06e39",
           "fork_repository": "saurabhmisal/superplane",
@@ -2079,11 +2003,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Multi-agent task decomposition",
+      "core_name": "Agent Coordination",
+      "brand_word": "Ensemble",
+      "publisher": "Power Chords"
     },
     {
       "id": "26",
-      "name": "Task and routine orchestration",
+      "name": "Task Orchestration Tempo",
       "slug": "task-and-routine-orchestration",
       "family": "Agentic Automation",
       "implementation": "native_assistive",
@@ -2125,7 +2053,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions.",
         "superplane: Engineering orchestration candidate; service credentials, production writes and license need review."
@@ -2175,11 +2103,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Task and routine orchestration",
+      "core_name": "Task Orchestration",
+      "brand_word": "Tempo",
+      "publisher": "Power Chords"
     },
     {
       "id": "27",
-      "name": "Browser and API task automation",
+      "name": "Browser Automation Pilot",
       "slug": "browser-and-api-task-automation",
       "family": "Agentic Automation",
       "implementation": "adapter_required",
@@ -2212,7 +2144,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "sill: Remote desktop reference; screen capture/input permissions and device access require explicit approval."
       ],
@@ -2250,11 +2182,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Browser and API task automation",
+      "core_name": "Browser Automation",
+      "brand_word": "Pilot",
+      "publisher": "Power Chords"
     },
     {
       "id": "28",
-      "name": "Composable tool and workflow chains",
+      "name": "Workflow Chaining Relay",
       "slug": "composable-tool-and-workflow-chains",
       "family": "Agentic Automation",
       "implementation": "native_assistive",
@@ -2287,11 +2223,10 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions.",
         "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review.",
-        "awesome-llm-apps: Example-agent and RAG patterns; examples are not preconfigured or security-reviewed Power Chords integrations.",
         "superplane: Engineering orchestration candidate; service credentials, production writes and license need review."
       ],
       "upstream_sources": [
@@ -2340,17 +2275,6 @@
           "runtime_verified": false
         },
         {
-          "repository": "Shubhamsaboo/awesome-llm-apps",
-          "revision": "c129f31036f5ba0bba42cbb63937a66946fdf2c0",
-          "fork_repository": "saurabhmisal/awesome-llm-apps",
-          "fork_revision": "6c16b23f1bacd0fdf240bb5141ef45e59e82c306",
-          "license": "Apache-2.0",
-          "reference_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/c129f31036f5ba0bba42cbb63937a66946fdf2c0/README.md",
-          "readme_sha256": "91e321c262b6c6be2de89bb66d4d6f5874ea0010f4793a5bf9701982924ee6af",
-          "scope": "reference_only",
-          "runtime_verified": false
-        },
-        {
           "repository": "superplanehq/superplane",
           "revision": "37c6198b757bb09bc00b1955da4ae1f238a06e39",
           "fork_repository": "saurabhmisal/superplane",
@@ -2361,11 +2285,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Composable tool and workflow chains",
+      "core_name": "Workflow Chaining",
+      "brand_word": "Relay",
+      "publisher": "Power Chords"
     },
     {
       "id": "29",
-      "name": "Permission-scoped execution and controls",
+      "name": "Permission Controls Vault",
       "slug": "permission-scoped-execution-and-controls",
       "family": "Agentic Automation",
       "implementation": "native_assistive",
@@ -2407,7 +2335,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions.",
         "security-audit-skill: Independent finding verification and target-scoped security review; security testing requires explicit authorization.",
@@ -2469,11 +2397,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Permission-scoped execution and controls",
+      "core_name": "Permission Controls",
+      "brand_word": "Vault",
+      "publisher": "Power Chords"
     },
     {
       "id": "30",
-      "name": "SQL and structured-data analysis",
+      "name": "SQL Analysis Quarry",
       "slug": "sql-and-structured-data-analysis",
       "family": "Data & Evaluation",
       "implementation": "adapter_required",
@@ -2506,7 +2438,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "umami: Analytics adapter candidate; collect events only after reviewing consent, retention, and deployment configuration."
       ],
@@ -2544,11 +2476,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "SQL and structured-data analysis",
+      "core_name": "SQL Analysis",
+      "brand_word": "Quarry",
+      "publisher": "Power Chords"
     },
     {
       "id": "31",
-      "name": "Dashboards and visual reporting",
+      "name": "Dashboard Reporting Panorama",
       "slug": "dashboards-and-visual-reporting",
       "family": "Data & Evaluation",
       "implementation": "adapter_required",
@@ -2580,7 +2516,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "umami: Analytics adapter candidate; collect events only after reviewing consent, retention, and deployment configuration."
       ],
@@ -2618,11 +2554,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Dashboards and visual reporting",
+      "core_name": "Dashboard Reporting",
+      "brand_word": "Panorama",
+      "publisher": "Power Chords"
     },
     {
       "id": "32",
-      "name": "Funnel, retention and operational diagnostics",
+      "name": "Funnel Diagnostics Pulse",
       "slug": "funnel-retention-and-operational-diagnostics",
       "family": "Data & Evaluation",
       "implementation": "native_assistive",
@@ -2660,7 +2600,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "umami: Analytics adapter candidate; collect events only after reviewing consent, retention, and deployment configuration."
       ],
@@ -2698,11 +2638,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Funnel, retention and operational diagnostics",
+      "core_name": "Funnel Diagnostics",
+      "brand_word": "Pulse",
+      "publisher": "Power Chords"
     },
     {
       "id": "33",
-      "name": "LLM and agent evaluation",
+      "name": "Agent Evaluation Benchmark",
       "slug": "llm-and-agent-evaluation",
       "family": "Data & Evaluation",
       "implementation": "adapter_required",
@@ -2735,10 +2679,9 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-        "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence.",
-        "awesome-llm-apps: Example-agent and RAG patterns; examples are not preconfigured or security-reviewed Power Chords integrations."
+        "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence."
       ],
       "upstream_sources": [
         {
@@ -2762,23 +2705,16 @@
           "readme_sha256": "bce393127a2e15211583d0f4998599b9771cc30b1189e7c42a26d86b86386d13",
           "scope": "reference_only",
           "runtime_verified": false
-        },
-        {
-          "repository": "Shubhamsaboo/awesome-llm-apps",
-          "revision": "c129f31036f5ba0bba42cbb63937a66946fdf2c0",
-          "fork_repository": "saurabhmisal/awesome-llm-apps",
-          "fork_revision": "6c16b23f1bacd0fdf240bb5141ef45e59e82c306",
-          "license": "Apache-2.0",
-          "reference_url": "https://github.com/Shubhamsaboo/awesome-llm-apps/blob/c129f31036f5ba0bba42cbb63937a66946fdf2c0/README.md",
-          "readme_sha256": "91e321c262b6c6be2de89bb66d4d6f5874ea0010f4793a5bf9701982924ee6af",
-          "scope": "reference_only",
-          "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "LLM and agent evaluation",
+      "core_name": "Agent Evaluation",
+      "brand_word": "Benchmark",
+      "publisher": "Power Chords"
     },
     {
       "id": "34",
-      "name": "Forecasting and scenario modeling",
+      "name": "Forecast Modeling Outlook",
       "slug": "forecasting-and-scenario-modeling",
       "family": "Data & Evaluation",
       "implementation": "native_assistive",
@@ -2816,7 +2752,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "roast-room: Simulated advisor perspectives are not endorsements, empirical research, or verified decision evidence."
       ],
@@ -2854,11 +2790,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Forecasting and scenario modeling",
+      "core_name": "Forecast Modeling",
+      "brand_word": "Outlook",
+      "publisher": "Power Chords"
     },
     {
       "id": "35",
-      "name": "Billing and invoicing workflows",
+      "name": "Billing Workflows Ledger",
       "slug": "billing-and-invoicing-workflows",
       "family": "Business & Operations",
       "implementation": "adapter_required",
@@ -2891,7 +2831,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -2905,23 +2845,16 @@
           "readme_sha256": "9569c294fad00c6a907dc31f054f3809f5b6062f7741a8330694b6ec032352e3",
           "scope": "reference_only",
           "runtime_verified": false
-        },
-        {
-          "repository": "General-Legal/legal-templates",
-          "revision": "6d6805425eabd41bed86fc1e2ec51612760f716c",
-          "fork_repository": "saurabhmisal/legal-templates",
-          "fork_revision": "6d6805425eabd41bed86fc1e2ec51612760f716c",
-          "license": "CC0-1.0",
-          "reference_url": "https://github.com/General-Legal/legal-templates/blob/6d6805425eabd41bed86fc1e2ec51612760f716c/README.md",
-          "readme_sha256": "e662893c54ba3f5f7f63b911d892c476763dc21480e09bbf93dbb70324551cba",
-          "scope": "reference_only",
-          "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Billing and invoicing workflows",
+      "core_name": "Billing Workflows",
+      "brand_word": "Ledger",
+      "publisher": "Power Chords"
     },
     {
       "id": "36",
-      "name": "Unit economics and financial modeling",
+      "name": "Unit Economics Balance",
       "slug": "unit-economics-and-financial-modeling",
       "family": "Business & Operations",
       "implementation": "native_assistive",
@@ -2959,7 +2892,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -2985,11 +2918,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Unit economics and financial modeling",
+      "core_name": "Unit Economics",
+      "brand_word": "Balance",
+      "publisher": "Power Chords"
     },
     {
       "id": "37",
-      "name": "Operational command-center design",
+      "name": "Operations Planning Cockpit",
       "slug": "operational-command-center-design",
       "family": "Business & Operations",
       "implementation": "native_assistive",
@@ -3021,7 +2958,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -3058,11 +2995,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Operational command-center design",
+      "core_name": "Operations Planning",
+      "brand_word": "Cockpit",
+      "publisher": "Power Chords"
     },
     {
       "id": "38",
-      "name": "Time and resource planning",
+      "name": "Resource Planning Cadence",
       "slug": "time-and-resource-planning",
       "family": "Business & Operations",
       "implementation": "native_assistive",
@@ -3100,7 +3041,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -3126,11 +3067,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Time and resource planning",
+      "core_name": "Resource Planning",
+      "brand_word": "Cadence",
+      "publisher": "Power Chords"
     },
     {
       "id": "39",
-      "name": "Speech transcription and meeting notes",
+      "name": "Speech Transcription Scribe",
       "slug": "speech-transcription-and-meeting-notes",
       "family": "Voice & Media",
       "implementation": "adapter_required",
@@ -3162,7 +3107,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "moonshine: Low-latency voice toolkit reference; model and code licenses may differ and require separate review."
       ],
@@ -3200,11 +3145,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Speech transcription and meeting notes",
+      "core_name": "Speech Transcription",
+      "brand_word": "Scribe",
+      "publisher": "Power Chords"
     },
     {
       "id": "40",
-      "name": "Text-to-speech and voice interfaces",
+      "name": "Voice Generation Chorus",
       "slug": "text-to-speech-and-voice-interfaces",
       "family": "Voice & Media",
       "implementation": "adapter_required",
@@ -3237,7 +3186,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "moonshine: Low-latency voice toolkit reference; model and code licenses may differ and require separate review."
       ],
@@ -3286,11 +3235,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Text-to-speech and voice interfaces",
+      "core_name": "Voice Generation",
+      "brand_word": "Chorus",
+      "publisher": "Power Chords"
     },
     {
       "id": "41",
-      "name": "Audio separation and editing",
+      "name": "Audio Separation Studio",
       "slug": "audio-separation-and-editing",
       "family": "Voice & Media",
       "implementation": "adapter_required",
@@ -3322,7 +3275,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "LYNX-SHARE: Desktop DAW adapter candidate; AGPL obligations and native build dependencies require review."
       ],
@@ -3371,11 +3324,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Audio separation and editing",
+      "core_name": "Audio Separation",
+      "brand_word": "Studio",
+      "publisher": "Power Chords"
     },
     {
       "id": "42",
-      "name": "Video demos and educational content",
+      "name": "Video Creation Storyboard",
       "slug": "video-demos-and-educational-content",
       "family": "Voice & Media",
       "implementation": "adapter_required",
@@ -3408,12 +3365,11 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "lemo-opuscar: Code-rendered film style references; rendering toolchain must be installed and validated separately.",
         "OpenMontage: Agentic production reference; AGPL license and external media toolchain require review.",
         "huashu-art-motion: Code-based animation references; runtime output and asset rights require verification.",
-        "VOX-COLLAGE-BROLL: Collage video instruction reference; license classification and MaxFusion access need review.",
         "onetake: Continuous-camera launch film reference; review license and verify continuity/rendering claims.",
         "hyperframes: HTML-to-video rendering adapter candidate; rendering and external tools remain separate dependencies.",
         "hypit: Video variation reference; verify license, consent, likeness rights and source-asset permissions before reuse.",
@@ -3487,17 +3443,6 @@
           "runtime_verified": false
         },
         {
-          "repository": "MegaTroll222/VOX-COLLAGE-BROLL",
-          "revision": "2e9b8a93a2834e4d670700ab9e4827a8baf3b668",
-          "fork_repository": "saurabhmisal/VOX-COLLAGE-BROLL",
-          "fork_revision": "2e9b8a93a2834e4d670700ab9e4827a8baf3b668",
-          "license": "NOASSERTION",
-          "reference_url": "https://github.com/MegaTroll222/VOX-COLLAGE-BROLL/blob/2e9b8a93a2834e4d670700ab9e4827a8baf3b668/README.md",
-          "readme_sha256": "8749c660f25a892124049b3eb4c142b706004e1a9f899ca2564d32655ae828c7",
-          "scope": "reference_only",
-          "runtime_verified": false
-        },
-        {
           "repository": "feitangyuan/onetake",
           "revision": "abb6d17279cdc749e27e99aa534a062d8fd01ced",
           "fork_repository": "saurabhmisal/onetake",
@@ -3541,11 +3486,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Video demos and educational content",
+      "core_name": "Video Creation",
+      "brand_word": "Storyboard",
+      "publisher": "Power Chords"
     },
     {
       "id": "43",
-      "name": "SEO and discoverability research",
+      "name": "SEO Research Radar",
       "slug": "seo-and-discoverability-research",
       "family": "Marketing & Go-to-Market",
       "implementation": "adapter_required",
@@ -3577,7 +3526,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations.",
         "claude-seo: SEO audit instruction references; live connectors and specialist agents are not automatically enabled.",
@@ -3628,11 +3577,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "SEO and discoverability research",
+      "core_name": "SEO Research",
+      "brand_word": "Radar",
+      "publisher": "Power Chords"
     },
     {
       "id": "44",
-      "name": "Launch and channel planning",
+      "name": "Launch Planning Launchpad",
       "slug": "launch-and-channel-planning",
       "family": "Marketing & Go-to-Market",
       "implementation": "native_assistive",
@@ -3670,7 +3623,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations.",
         "onetake: Continuous-camera launch film reference; review license and verify continuity/rendering claims.",
@@ -3685,17 +3638,6 @@
           "license": "MIT",
           "reference_url": "https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/README.md",
           "readme_sha256": "69c172878d7a66305ef57928d0fbb4056e379cb8a316e23fc1d6f9869519f798",
-          "scope": "reference_only",
-          "runtime_verified": false
-        },
-        {
-          "repository": "mmccaff/PlacesToPostYourStartup",
-          "revision": "1941a95f344d90ea5ffe2e0b4c25ffa92dfd3d73",
-          "fork_repository": "saurabhmisal/PlacesToPostYourStartup",
-          "fork_revision": "1941a95f344d90ea5ffe2e0b4c25ffa92dfd3d73",
-          "license": "CC0-1.0",
-          "reference_url": "https://github.com/mmccaff/PlacesToPostYourStartup/blob/1941a95f344d90ea5ffe2e0b4c25ffa92dfd3d73/README.md",
-          "readme_sha256": "44215385902e0cce8edd4fd10094335a5d6f628e0b2a9629773284511e10b017",
           "scope": "reference_only",
           "runtime_verified": false
         },
@@ -3721,11 +3663,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Launch and channel planning",
+      "core_name": "Launch Planning",
+      "brand_word": "Launchpad",
+      "publisher": "Power Chords"
     },
     {
       "id": "45",
-      "name": "Campaigns and content production",
+      "name": "Campaign Content Amplifier",
       "slug": "campaigns-and-content-production",
       "family": "Marketing & Go-to-Market",
       "implementation": "adapter_required",
@@ -3758,12 +3704,11 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations.",
         "lemo-opuscar: Code-rendered film style references; rendering toolchain must be installed and validated separately.",
         "OpenMontage: Agentic production reference; AGPL license and external media toolchain require review.",
-        "VOX-COLLAGE-BROLL: Collage video instruction reference; license classification and MaxFusion access need review.",
         "hypit: Video variation reference; verify license, consent, likeness rights and source-asset permissions before reuse.",
         "harvey: Sales research and drafting reference; sending outreach or accessing mail requires explicit authorization."
       ],
@@ -3813,17 +3758,6 @@
           "runtime_verified": false
         },
         {
-          "repository": "MegaTroll222/VOX-COLLAGE-BROLL",
-          "revision": "2e9b8a93a2834e4d670700ab9e4827a8baf3b668",
-          "fork_repository": "saurabhmisal/VOX-COLLAGE-BROLL",
-          "fork_revision": "2e9b8a93a2834e4d670700ab9e4827a8baf3b668",
-          "license": "NOASSERTION",
-          "reference_url": "https://github.com/MegaTroll222/VOX-COLLAGE-BROLL/blob/2e9b8a93a2834e4d670700ab9e4827a8baf3b668/README.md",
-          "readme_sha256": "8749c660f25a892124049b3eb4c142b706004e1a9f899ca2564d32655ae828c7",
-          "scope": "reference_only",
-          "runtime_verified": false
-        },
-        {
           "repository": "hypit-ai/hypit",
           "revision": "2d31e88765e297f0795348b460c77a6067f12261",
           "fork_repository": "saurabhmisal/hypit",
@@ -3845,11 +3779,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Campaigns and content production",
+      "core_name": "Campaign Content",
+      "brand_word": "Amplifier",
+      "publisher": "Power Chords"
     },
     {
       "id": "46",
-      "name": "Conversion and growth experimentation",
+      "name": "Growth Experiments Momentum",
       "slug": "conversion-and-growth-experimentation",
       "family": "Marketing & Go-to-Market",
       "implementation": "native_assistive",
@@ -3885,7 +3823,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations.",
         "claude-seo: SEO audit instruction references; live connectors and specialist agents are not automatically enabled.",
@@ -3948,11 +3886,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Conversion and growth experimentation",
+      "core_name": "Growth Experiments",
+      "brand_word": "Momentum",
+      "publisher": "Power Chords"
     },
     {
       "id": "47",
-      "name": "Career and opportunity research",
+      "name": "Career Research Scout",
       "slug": "career-and-opportunity-research",
       "family": "Professional Enablement",
       "implementation": "adapter_required",
@@ -3985,7 +3927,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -4011,11 +3953,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Career and opportunity research",
+      "core_name": "Career Research",
+      "brand_word": "Scout",
+      "publisher": "Power Chords"
     },
     {
       "id": "48",
-      "name": "Interview preparation and learning plans",
+      "name": "Interview Preparation Rehearsal",
       "slug": "interview-preparation-and-learning-plans",
       "family": "Professional Enablement",
       "implementation": "adapter_required",
@@ -4048,7 +3994,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -4085,11 +4031,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Interview preparation and learning plans",
+      "core_name": "Interview Preparation",
+      "brand_word": "Rehearsal",
+      "publisher": "Power Chords"
     },
     {
       "id": "49",
-      "name": "Location and map-based research",
+      "name": "Location Research Waypoint",
       "slug": "location-and-map-based-research",
       "family": "Spatial & Field Intelligence",
       "implementation": "adapter_required",
@@ -4121,7 +4071,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -4147,11 +4097,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Location and map-based research",
+      "core_name": "Location Research",
+      "brand_word": "Waypoint",
+      "publisher": "Power Chords"
     },
     {
       "id": "50",
-      "name": "Road and network visualization",
+      "name": "Road Networks Gridline",
       "slug": "road-and-network-visualization",
       "family": "Spatial & Field Intelligence",
       "implementation": "adapter_required",
@@ -4183,7 +4137,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -4209,11 +4163,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Road and network visualization",
+      "core_name": "Road Networks",
+      "brand_word": "Gridline",
+      "publisher": "Power Chords"
     },
     {
       "id": "51",
-      "name": "Geospatial data visualization",
+      "name": "Geospatial Visualization Terra",
       "slug": "geospatial-data-visualization",
       "family": "Spatial & Field Intelligence",
       "implementation": "adapter_required",
@@ -4245,7 +4203,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -4271,11 +4229,15 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Geospatial data visualization",
+      "core_name": "Geospatial Visualization",
+      "brand_word": "Terra",
+      "publisher": "Power Chords"
     },
     {
       "id": "52",
-      "name": "Location-driven field insights",
+      "name": "Field Insights Meridian",
       "slug": "location-driven-field-insights",
       "family": "Spatial & Field Intelligence",
       "implementation": "adapter_required",
@@ -4308,7 +4270,7 @@
       },
       "source_reviewed_at": "2026-11-06T15:41:08.721Z",
       "source_guidance": [
-        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
       ],
       "upstream_sources": [
@@ -4334,7 +4296,11 @@
           "scope": "reference_only",
           "runtime_verified": false
         }
-      ]
+      ],
+      "function_name": "Location-driven field insights",
+      "core_name": "Field Insights",
+      "brand_word": "Meridian",
+      "publisher": "Power Chords"
     }
   ]
 }

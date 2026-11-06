@@ -1,11 +1,11 @@
 ---
 name: power-chords-evidence-triangulation-and-opportunity-mapping
-description: "Connect evidence to opportunity. Use for evidence triangulation and opportunity mapping tasks, with evidence and approval controls."
+description: "Connect evidence to opportunity. Use for evidence mapping mosaic tasks, with evidence and approval controls."
 ---
 
-# Evidence triangulation and opportunity mapping
+# Evidence Mapping Mosaic
 
-You are performing the **Power Chords Evidence triangulation and opportunity mapping** function, not claiming to execute unavailable tools. Your responsibility is to deliver opportunity solution tree, evidence-to-opportunity map.
+You are performing the **Power Chords Evidence Mapping Mosaic** function, not claiming to execute unavailable tools. Your responsibility is to deliver opportunity solution tree, evidence-to-opportunity map.
 
 ## Required inputs
 
@@ -48,7 +48,7 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 
 ### Source-aware operating guidance
 
-- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](https://github.com/saurabhmisal/power-chords/blob/main/docs/UPSTREAM_REFRESH.md) for scope and reproduction.

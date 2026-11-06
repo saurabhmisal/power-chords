@@ -1,4 +1,4 @@
-# System architecture and data-flow mapping: Example request
+# System Architecture Keystone: Example request
 
 > Design a multi-tenant event ingestion system with replay safety.
 

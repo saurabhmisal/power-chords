@@ -1,6 +1,6 @@
-# Time and resource planning
+# Resource Planning Cadence
 
-> **Power Chords 38** · Business & Operations · **Native assistive** — used by the first-party Workroom as part of supported structured workflows; not a full standalone engine.
+> **Power Chords 38** · Business & Operations · **Codex workspace** — first-party local input-to-artifact execution with Codex reasoning and specialist processing where needed. Portable instructions require the host agent’s own tools.
 
 Allocate people and capacity. This guide is a standalone, function-named skill with a repeatable operating procedure.
 
@@ -39,7 +39,7 @@ This copies portable instructions into the selected project's agent skill direct
 
 ### Example request
 
-> Use the Power Chords **Time and resource planning** skill. Plan a two-sprint rollout for three engineers and one designer. Show your evidence, assumptions, next actions and clearly distinguish verified output from proposals.
+> Use the Power Chords **Resource Planning Cadence** skill. Plan a two-sprint rollout for three engineers and one designer. Show your evidence, assumptions, next actions and clearly distinguish verified output from proposals.
 
 ### Operating procedure
 
@@ -65,9 +65,9 @@ This copies portable instructions into the selected project's agent skill direct
 
 ## Current implementation
 
-The local Workroom uses this capability within: Launch Readiness Plan. To try a complete workflow run `npm start` and choose the named workflow. This is *structured drafting*, not independent runtime execution of the full domain capability.
+Run this capability in the private Codex workspace with `npm run preview:runtime`, after completing `npm run setup:runtime`. Select **Resource Planning Cadence**, load its synthetic working example or supply your own evidence, and inspect files and execution receipts. See [runtime guide](../../docs/CODEX_RUNTIME.md) for inputs, limits and verification. The optional older Workroom drafting flows remain separate.
 
-**Implementation status:** `native_assistive`. The agent-portable SKILL.md is immediately usable as an instruction pack. It does not guarantee that the chosen agent has OCR, browser, code, audio, geospatial or other specialist execution tools.
+**Legacy Workroom classification:** `native_assistive`. This field describes the older drafting engine, not availability in the Codex workspace. The agent-portable SKILL.md is immediately usable as an instruction pack. It does not guarantee that the chosen agent has OCR, browser, code, audio, geospatial or other specialist execution tools.
 
 ## Permissions and safety
 
@@ -79,6 +79,36 @@ A first-party executable adapter must implement the stable input/output contract
 
 [← All capabilities](../../docs/CAPABILITY_GUIDES.md) · [Main README](../../README.md)
 
+## Visual walkthrough
+
+![Resource Planning Cadence illustrative workflow](../../assets/capability-demos/time-and-resource-planning.gif)
+
+Illustrative process animation, not recorded runtime execution. [Open the Power Chords capability page](https://powerchords.lazo.tools/capabilities/time-and-resource-planning/) for motion controls and the complete workflow diagram.
+
+## Workflow diagram
+
+```mermaid
+flowchart TD
+  input["Your context and required inputs"]
+  step0["Estimate work items"]
+  step1["Map available capacity"]
+  step2["Identify critical dependencies"]
+  step3["Plan sequencing and buffers"]
+  step4["Define replanning triggers"]
+  review["Review evidence and validate deliverables"]
+  approval{"External action approved?"}
+  finish["Deliver or publish approved result"]
+  input --> step0
+  step0 --> step1
+  step1 --> step2
+  step2 --> step3
+  step3 --> step4
+  step4 --> review
+  review --> approval
+  approval -- Yes --> finish
+  approval -- Revise --> step0
+```
+
 ## Reviewed upstream references
 
 Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
@@ -88,7 +118,7 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 
 ### Source-aware operating guidance
 
-- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](../../docs/UPSTREAM_REFRESH.md) for scope and reproduction.

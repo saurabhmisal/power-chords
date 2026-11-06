@@ -1,4 +1,4 @@
-# Browser and API task automation: Example request
+# Browser Automation Pilot: Example request
 
 > Automate exporting approved support tickets to a local CSV.
 

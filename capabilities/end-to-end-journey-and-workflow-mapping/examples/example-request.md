@@ -1,4 +1,4 @@
-# End-to-end journey and workflow mapping: Example request
+# Journey Mapping Trail: Example request
 
 > Map a courier's signup-to-first-delivery journey including failure states.
 

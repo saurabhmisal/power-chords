@@ -1,4 +1,4 @@
-# SQL and structured-data analysis: Example request
+# SQL Analysis Quarry: Example request
 
 > Analyze partner onboarding times segmented by integration type.
 

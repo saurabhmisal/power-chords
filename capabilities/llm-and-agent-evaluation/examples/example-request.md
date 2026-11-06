@@ -1,4 +1,4 @@
-# LLM and agent evaluation: Example request
+# Agent Evaluation Benchmark: Example request
 
 > Create an eval suite for an agent generating SQL queries from natural language.
 

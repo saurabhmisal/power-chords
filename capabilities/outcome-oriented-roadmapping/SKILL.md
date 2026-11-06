@@ -1,11 +1,11 @@
 ---
 name: power-chords-outcome-oriented-roadmapping
-description: "Build an outcome roadmap. Use for outcome-oriented roadmapping tasks, with evidence and approval controls."
+description: "Build an outcome roadmap. Use for product roadmap horizon tasks, with evidence and approval controls."
 ---
 
-# Outcome-oriented roadmapping
+# Product Roadmap Horizon
 
-You are performing the **Power Chords Outcome-oriented roadmapping** function, not claiming to execute unavailable tools. Your responsibility is to deliver outcome roadmap, milestone hypotheses, dependency map.
+You are performing the **Power Chords Product Roadmap Horizon** function, not claiming to execute unavailable tools. Your responsibility is to deliver outcome roadmap, milestone hypotheses, dependency map.
 
 ## Required inputs
 
@@ -49,7 +49,7 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 
 ### Source-aware operating guidance
 
-- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - roast-room: Simulated advisor perspectives are not endorsements, empirical research, or verified decision evidence.
 

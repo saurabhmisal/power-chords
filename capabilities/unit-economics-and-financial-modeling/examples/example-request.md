@@ -1,4 +1,4 @@
-# Unit economics and financial modeling: Example request
+# Unit Economics Balance: Example request
 
 > Compare enterprise and SMB margins for a workflow automation SaaS.
 

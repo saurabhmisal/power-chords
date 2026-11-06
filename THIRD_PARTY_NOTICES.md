@@ -18,11 +18,11 @@ When integrating code from any project, maintain the original copyright notices,
 | anatomy | MIT | [source](https://github.com/saurabhmisal/anatomy) | Reference only; reviewed adapter not verified |
 | Papermorph | MIT | [source](https://github.com/saurabhmisal/Papermorph) | Reference only; reviewed adapter not verified |
 | ponytail | MIT | [source](https://github.com/saurabhmisal/ponytail) | Reference only; reviewed adapter not verified |
-| vibe-coding-sops | MIT | [source](https://github.com/saurabhmisal/vibe-coding-sops) | Reference only; reviewed adapter not verified |
-| vibe-coding | UNKNOWN | [source](https://github.com/saurabhmisal/vibe-coding) | Reference only; reviewed adapter not verified |
-| vibe-coding-templates | UNKNOWN | [source](https://github.com/saurabhmisal/vibe-coding-templates) | Reference only; reviewed adapter not verified |
-| vibe-coding-blueprint | MIT | [source](https://github.com/saurabhmisal/vibe-coding-blueprint) | Reference only; reviewed adapter not verified |
-| vibe-code-docs-stack | MIT | [source](https://github.com/saurabhmisal/vibe-code-docs-stack) | Reference only; reviewed adapter not verified |
+| vibe-coding-sops | MIT | [source](https://github.com/saurabhmisal/vibe-coding-sops) | Historical attribution; excluded from active inventory |
+| vibe-coding | UNKNOWN | [source](https://github.com/saurabhmisal/vibe-coding) | Historical attribution; excluded from active inventory |
+| vibe-coding-templates | UNKNOWN | [source](https://github.com/saurabhmisal/vibe-coding-templates) | Historical attribution; excluded from active inventory |
+| vibe-coding-blueprint | MIT | [source](https://github.com/saurabhmisal/vibe-coding-blueprint) | Historical attribution; excluded from active inventory |
+| vibe-code-docs-stack | MIT | [source](https://github.com/saurabhmisal/vibe-code-docs-stack) | Historical attribution; excluded from active inventory |
 | book-to-skill | MIT | [source](https://github.com/saurabhmisal/book-to-skill) | Reference only; reviewed adapter not verified |
 | text-to-cad | MIT | [source](https://github.com/saurabhmisal/text-to-cad) | Reference only; reviewed adapter not verified |
 | jarvis | MIT | [source](https://github.com/saurabhmisal/jarvis) | Reference only; reviewed adapter not verified |
@@ -56,7 +56,58 @@ When integrating code from any project, maintain the original copyright notices,
 | city-roads | MIT | [source](https://github.com/saurabhmisal/city-roads) | Reference only; reviewed adapter not verified |
 | gods-eye-view | NOASSERTION | [source](https://github.com/saurabhmisal/gods-eye-view) | Reference only; reviewed adapter not verified |
 | rea | MIT | [source](https://github.com/saurabhmisal/rea) | Reference only; reviewed adapter not verified |
-| legal-templates | CC0-1.0 | [source](https://github.com/saurabhmisal/legal-templates) | Reference only; reviewed adapter not verified |
-| PlacesToPostYourStartup | CC0-1.0 | [source](https://github.com/saurabhmisal/PlacesToPostYourStartup) | Reference only; reviewed adapter not verified |
-| awesome | CC0-1.0 | [source](https://github.com/saurabhmisal/awesome) | Reference only; reviewed adapter not verified |
-| build-your-own-x | UNKNOWN | [source](https://github.com/saurabhmisal/build-your-own-x) | Reference only; reviewed adapter not verified |
+| legal-templates | CC0-1.0 | [source](https://github.com/saurabhmisal/legal-templates) | Historical attribution; excluded from active inventory |
+| PlacesToPostYourStartup | CC0-1.0 | [source](https://github.com/saurabhmisal/PlacesToPostYourStartup) | Historical attribution; excluded from active inventory |
+| awesome | CC0-1.0 | [source](https://github.com/saurabhmisal/awesome) | Historical attribution; excluded from active inventory |
+| build-your-own-x | UNKNOWN | [source](https://github.com/saurabhmisal/build-your-own-x) | Historical attribution; excluded from active inventory |
+
+## Source delivery review
+
+The active inventory follows data/source-policy.json. Historical entries are retained here so removal from the product does not erase original attribution. Power Chords owns its original names, documentation, diagrams and illustrated workflow animations; independent projects retain their copyright and licenses. No third-party code or assets are included in the new schematic GIFs.
+
+- **security-audit-skill** — MIT; original project: https://github.com/cloudflare/security-audit-skill. Design reference only; runtime adapter unverified.
+- **lemo-opuscar** — MIT; original project: https://github.com/lemomo-ai/lemo-opuscar. Design reference only; runtime adapter unverified.
+- **LYNX-SHARE** — AGPL-3.0; original project: https://github.com/Ka1-S/LYNX-SHARE. Design reference only; runtime adapter unverified.
+- **claude-seo** — MIT; original project: https://github.com/AgriciDaniel/claude-seo. Design reference only; runtime adapter unverified.
+- **reelkit** — MIT; original project: https://github.com/KonstantinKai/reelkit. Design reference only; runtime adapter unverified.
+- **roast-room** — NOASSERTION; original project: https://github.com/nateherkai/roast-room. Design reference only; runtime adapter unverified.
+- **OpenMontage** — AGPL-3.0; original project: https://github.com/calesthio/OpenMontage. Design reference only; runtime adapter unverified.
+- **umami** — MIT; original project: https://github.com/umami-software/umami. Design reference only; runtime adapter unverified.
+- **huashu-art-motion** — MIT; original project: https://github.com/alchaincyf/huashu-art-motion. Design reference only; runtime adapter unverified.
+- **onetake** — NOASSERTION; original project: https://github.com/feitangyuan/onetake. Design reference only; runtime adapter unverified.
+- **hyperframes** — Apache-2.0; original project: https://github.com/heygen-com/hyperframes. Design reference only; runtime adapter unverified.
+- **geo-seo-claude** — MIT; original project: https://github.com/zubair-trabzada/geo-seo-claude. Design reference only; runtime adapter unverified.
+- **hypit** — NOASSERTION; original project: https://github.com/hypit-ai/hypit. Design reference only; runtime adapter unverified.
+- **pentagi** — MIT; original project: https://github.com/vxcontrol/pentagi. Design reference only; runtime adapter unverified.
+- **Wan2.2** — Apache-2.0; original project: https://github.com/Wan-Video/Wan2.2. Design reference only; runtime adapter unverified.
+- **harvey** — MIT; original project: https://github.com/ethanplusai/harvey. Design reference only; runtime adapter unverified.
+- **compound-engineering-plugin** — MIT; original project: https://github.com/EveryInc/compound-engineering-plugin. Design reference only; runtime adapter unverified.
+- **moonshine** — NOASSERTION; original project: https://github.com/moonshine-ai/moonshine. Design reference only; runtime adapter unverified.
+- **superplane** — NOASSERTION; original project: https://github.com/superplanehq/superplane. Design reference only; runtime adapter unverified.
+- **indra** — Apache-2.0; original project: https://github.com/datalab-to/indra. Design reference only; runtime adapter unverified.
+- **sill** — Apache-2.0; original project: https://github.com/Saffsanity/sill. Design reference only; runtime adapter unverified.
+
+
+## Local Codex workspace dependencies
+
+Original Power Chords runtime code uses the project license. Separately installed packages retain their own notices. Exact direct versions are in `scripts/runtime/requirements.txt`; package binaries, model weights, credentials and generated private runs are not committed. The source inventory above remains design-reference attribution, separate from the following operational dependencies.
+
+| Component | Installed package notice / original project |
+|---|---|
+| Pillow | MIT-CMU; https://github.com/python-pillow/Pillow |
+| pypdf | BSD-3-Clause; https://github.com/py-pdf/pypdf |
+| python-docx, python-pptx | MIT; https://github.com/python-openxml |
+| NumPy | BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0; https://github.com/numpy/numpy |
+| imageio-ffmpeg | BSD-2-Clause wrapper; https://github.com/imageio/imageio-ffmpeg. Downloaded FFmpeg executable has separate build-dependent licensing and notices. |
+| FastEmbed | Apache-2.0; https://github.com/qdrant/fastembed |
+| faster-whisper | MIT; https://github.com/SYSTRAN/faster-whisper |
+| PyTorch / torchaudio | BSD-style distribution notices; https://github.com/pytorch |
+| Demucs | MIT; https://github.com/facebookresearch/demucs |
+| SoundFile | BSD-3-Clause wrapper; libsndfile has separate notices; https://github.com/bastibe/python-soundfile |
+| QuickJS binding / engine | Preserve binding and engine distribution notices; https://github.com/PetterS/quickjs and https://bellard.org/quickjs/ |
+| pypdfium2 | BSD-3-Clause / Apache-2.0 plus PDFium and dependency notices; https://github.com/pypdfium2-team/pypdfium2 |
+| ReportLab | BSD-style installed license; https://www.reportlab.com/ |
+| openpyxl | MIT; https://openpyxl.readthedocs.io/ |
+| Tesseract | Apache-2.0 engine, separately installed through Homebrew; https://github.com/tesseract-ocr/tesseract |
+
+Local model downloads use [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2), [Whisper tiny.en](https://huggingface.co/Systran/faster-whisper-tiny.en) and Demucs `htdemucs`. Their model cards and downloaded license records remain with those distributions. macOS system speech and the signed-in Codex CLI are separately supplied platform software; no voices, credentials or platform binaries are redistributed here. Synthetic fixtures and rendered diagrams/title cards are generated by Power Chords.

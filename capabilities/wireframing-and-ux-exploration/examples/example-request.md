@@ -1,4 +1,4 @@
-# Wireframing and UX exploration: Example request
+# UX Wireframing Canvas: Example request
 
 > Explore a better experience for configuring integration error alerts.
 

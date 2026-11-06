@@ -1,6 +1,6 @@
-# Task and routine orchestration
+# Task Orchestration Tempo
 
-> **Power Chords 26** · Agentic Automation · **Native assistive** — used by the first-party Workroom as part of supported structured workflows; not a full standalone engine.
+> **Power Chords 26** · Agentic Automation · **Codex workspace** — first-party local input-to-artifact execution with Codex reasoning and specialist processing where needed. Portable instructions require the host agent’s own tools.
 
 Orchestrate scheduled tasks. This guide is a standalone, function-named skill with a repeatable operating procedure.
 
@@ -39,7 +39,7 @@ This copies portable instructions into the selected project's agent skill direct
 
 ### Example request
 
-> Use the Power Chords **Task and routine orchestration** skill. Specify a daily blocker digest from project updates without sending messages. Show your evidence, assumptions, next actions and clearly distinguish verified output from proposals.
+> Use the Power Chords **Task Orchestration Tempo** skill. Specify a daily blocker digest from project updates without sending messages. Show your evidence, assumptions, next actions and clearly distinguish verified output from proposals.
 
 ### Operating procedure
 
@@ -65,9 +65,9 @@ This copies portable instructions into the selected project's agent skill direct
 
 ## Current implementation
 
-The local Workroom uses this capability within: Integration Readiness, Launch Readiness Plan. To try a complete workflow run `npm start` and choose the named workflow. This is *structured drafting*, not independent runtime execution of the full domain capability.
+Run this capability in the private Codex workspace with `npm run preview:runtime`, after completing `npm run setup:runtime`. Select **Task Orchestration Tempo**, load its synthetic working example or supply your own evidence, and inspect files and execution receipts. See [runtime guide](../../docs/CODEX_RUNTIME.md) for inputs, limits and verification. The optional older Workroom drafting flows remain separate.
 
-**Implementation status:** `native_assistive`. The agent-portable SKILL.md is immediately usable as an instruction pack. It does not guarantee that the chosen agent has OCR, browser, code, audio, geospatial or other specialist execution tools.
+**Legacy Workroom classification:** `native_assistive`. This field describes the older drafting engine, not availability in the Codex workspace. The agent-portable SKILL.md is immediately usable as an instruction pack. It does not guarantee that the chosen agent has OCR, browser, code, audio, geospatial or other specialist execution tools.
 
 ## Permissions and safety
 
@@ -78,6 +78,36 @@ Read only files and services authorized by the operator; request confirmation fo
 A first-party executable adapter must implement the stable input/output contract, dependency checks, permission enforcement, and positive/negative evaluation cases before the capability can be marked operational. See [adapter SDK](../../docs/ADAPTER_SDK.md).
 
 [← All capabilities](../../docs/CAPABILITY_GUIDES.md) · [Main README](../../README.md)
+
+## Visual walkthrough
+
+![Task Orchestration Tempo illustrative workflow](../../assets/capability-demos/task-and-routine-orchestration.gif)
+
+Illustrative process animation, not recorded runtime execution. [Open the Power Chords capability page](https://powerchords.lazo.tools/capabilities/task-and-routine-orchestration/) for motion controls and the complete workflow diagram.
+
+## Workflow diagram
+
+```mermaid
+flowchart TD
+  input["Your context and required inputs"]
+  step0["Define triggers and cadence"]
+  step1["Enumerate actions and idempotency boundaries"]
+  step2["Add human approvals for external writes"]
+  step3["Configure failure and retry policy"]
+  step4["Record run history and disable controls"]
+  review["Review evidence and validate deliverables"]
+  approval{"External action approved?"}
+  finish["Deliver or publish approved result"]
+  input --> step0
+  step0 --> step1
+  step1 --> step2
+  step2 --> step3
+  step3 --> step4
+  step4 --> review
+  review --> approval
+  approval -- Yes --> finish
+  approval -- Revise --> step0
+```
 
 ## Reviewed upstream references
 
@@ -90,7 +120,7 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 
 ### Source-aware operating guidance
 
-- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions.
 - superplane: Engineering orchestration candidate; service credentials, production writes and license need review.

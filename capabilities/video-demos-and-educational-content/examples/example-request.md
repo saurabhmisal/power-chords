@@ -1,4 +1,4 @@
-# Video demos and educational content: Example request
+# Video Creation Storyboard: Example request
 
 > Create a 90-second walkthrough for an enterprise integration dashboard.
 

@@ -452,37 +452,6 @@
     "runtime_verified": false
   },
   {
-    "repository": "saurabhmisal/VOX-COLLAGE-BROLL",
-    "name": "VOX-COLLAGE-BROLL",
-    "created_at": "2026-10-22T06:37:35Z",
-    "fork": true,
-    "description": "Turn one spoken line into a paper-collage explainer video — Claude Code skill + MaxFusion MCP. English adaptation of gbro-collage-broll by pyang5166.",
-    "group_id": "media-production",
-    "license": "NOASSERTION",
-    "fork_sha": "2e9b8a93a2834e4d670700ab9e4827a8baf3b668",
-    "fork_branch": "main",
-    "upstream_repo": "MegaTroll222/VOX-COLLAGE-BROLL",
-    "upstream_sha": "2e9b8a93a2834e4d670700ab9e4827a8baf3b668",
-    "upstream_branch": "main",
-    "upstream_release": null,
-    "size_kb": 8021,
-    "file_count": 9,
-    "tree_truncated": false,
-    "readme_path": "README.md",
-    "skill_paths": [
-      "SKILL.md"
-    ],
-    "decision": "included",
-    "reason": "Collage video instruction reference; license classification and MaxFusion access need review.",
-    "capability_ids": [
-      "42",
-      "45"
-    ],
-    "review_notes": "Collage video instruction reference; license classification and MaxFusion access need review.",
-    "integration_status": "reference_only",
-    "runtime_verified": false
-  },
-  {
     "repository": "saurabhmisal/onetake",
     "name": "onetake",
     "created_at": "2026-10-22T06:36:46Z",
@@ -815,38 +784,6 @@
     "runtime_verified": false
   },
   {
-    "repository": "saurabhmisal/magic-mcp",
-    "name": "magic-mcp",
-    "created_at": "2026-10-22T06:13:05Z",
-    "fork": true,
-    "description": "It's like v0, but in your Cursor / Claude Code / Windsurf: search 10,000+ React/Tailwind components, generate new UI with AI, and publish your own — right from your editor. Magic MCP is now the 21st MCP; this package keeps old configs working. Setup: 21st.dev/mcp",
-    "group_id": "design-creation",
-    "license": "ISC",
-    "fork_sha": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
-    "fork_branch": "main",
-    "upstream_repo": "21st-dev/magic-mcp",
-    "upstream_sha": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
-    "upstream_branch": "main",
-    "upstream_release": null,
-    "size_kb": 1548,
-    "file_count": 21,
-    "tree_truncated": false,
-    "readme_path": "README.md",
-    "skill_paths": [
-      "skills/21st-ui/SKILL.md"
-    ],
-    "decision": "included",
-    "reason": "Legacy compatibility proxy: upstream recommends the 21st MCP; verify current setup rather than copying obsolete commands.",
-    "capability_ids": [
-      "16",
-      "21",
-      "22"
-    ],
-    "review_notes": "Legacy compatibility proxy: upstream recommends the 21st MCP; verify current setup rather than copying obsolete commands.",
-    "integration_status": "reference_only",
-    "runtime_verified": false
-  },
-  {
     "repository": "saurabhmisal/moonshine",
     "name": "moonshine",
     "created_at": "2026-10-22T05:58:53Z",
@@ -874,79 +811,6 @@
       "40"
     ],
     "review_notes": "Low-latency voice toolkit reference; model and code licenses may differ and require separate review.",
-    "integration_status": "reference_only",
-    "runtime_verified": false
-  },
-  {
-    "repository": "saurabhmisal/awesome-llm-apps",
-    "name": "awesome-llm-apps",
-    "created_at": "2026-10-22T05:58:37Z",
-    "fork": true,
-    "description": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
-    "group_id": "agents-automation",
-    "license": "Apache-2.0",
-    "fork_sha": "6c16b23f1bacd0fdf240bb5141ef45e59e82c306",
-    "fork_branch": "main",
-    "upstream_repo": "Shubhamsaboo/awesome-llm-apps",
-    "upstream_sha": "c129f31036f5ba0bba42cbb63937a66946fdf2c0",
-    "upstream_branch": "main",
-    "upstream_release": null,
-    "size_kb": 222314,
-    "file_count": 1988,
-    "tree_truncated": false,
-    "readme_path": "README.md",
-    "skill_paths": [
-      "agent_skills/advisor-orchestrator-worker/SKILL.md",
-      "agent_skills/commit-archaeologist/SKILL.md",
-      "agent_skills/dependency-doctor/SKILL.md",
-      "agent_skills/first-reader/SKILL.md",
-      "agent_skills/project-graveyard/SKILL.md",
-      "agent_skills/scope-creep-detector/SKILL.md",
-      "agent_skills/thinking-out-loud/SKILL.md",
-      "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/chatgpt-app-builder/SKILL.md",
-      "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-apps-builder/SKILL.md",
-      "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-builder/SKILL.md"
-    ],
-    "decision": "included",
-    "reason": "Example-agent and RAG patterns; examples are not preconfigured or security-reviewed Power Chords integrations.",
-    "capability_ids": [
-      "09",
-      "25",
-      "28",
-      "33"
-    ],
-    "review_notes": "Example-agent and RAG patterns; examples are not preconfigured or security-reviewed Power Chords integrations.",
-    "integration_status": "reference_only",
-    "runtime_verified": false
-  },
-  {
-    "repository": "saurabhmisal/andrej-karpathy-skills",
-    "name": "andrej-karpathy-skills",
-    "created_at": "2026-10-22T05:39:45Z",
-    "fork": true,
-    "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-    "group_id": "software-engineering",
-    "license": "UNKNOWN",
-    "fork_sha": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-    "fork_branch": "main",
-    "upstream_repo": "multica-ai/andrej-karpathy-skills",
-    "upstream_sha": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-    "upstream_branch": "main",
-    "upstream_release": null,
-    "size_kb": 20,
-    "file_count": 9,
-    "tree_truncated": false,
-    "readme_path": "README.md",
-    "skill_paths": [
-      "skills/karpathy-guidelines/SKILL.md"
-    ],
-    "decision": "included",
-    "reason": "Coding behavior guidance; attribution and license require review before copying instruction text.",
-    "capability_ids": [
-      "16",
-      "19"
-    ],
-    "review_notes": "Coding behavior guidance; attribution and license require review before copying instruction text.",
     "integration_status": "reference_only",
     "runtime_verified": false
   },

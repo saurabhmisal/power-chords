@@ -1,4 +1,4 @@
-# Conversion and growth experimentation: Example request
+# Growth Experiments Momentum: Example request
 
 > Design a test to raise demo-request conversion while protecting lead quality.
 

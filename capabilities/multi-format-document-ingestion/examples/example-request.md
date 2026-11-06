@@ -1,4 +1,4 @@
-# Multi-format document ingestion: Example request
+# Document Ingestion Intake: Example request
 
 > Create a source-indexed digest of these SOP PDFs and a pricing spreadsheet.
 

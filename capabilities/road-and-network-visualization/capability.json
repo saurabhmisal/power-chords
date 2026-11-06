@@ -1,10 +1,19 @@
 {
   "schema_version": 1,
   "id": "50",
-  "name": "Road and network visualization",
+  "name": "Road Networks Gridline",
+  "function_name": "Road and network visualization",
+  "core_name": "Road Networks",
+  "brand_word": "Gridline",
+  "publisher": "Power Chords",
   "slug": "road-and-network-visualization",
   "family": "Spatial & Field Intelligence",
   "implementation": "adapter_required",
+  "execution": {
+    "local_runtime": "codex-workspace",
+    "portable_instructions": true,
+    "runtime_guide": "../../docs/CODEX_RUNTIME.md"
+  },
   "inputs": [
     "Road network data",
     "target region",
@@ -47,7 +56,7 @@
     }
   ],
   "source_guidance": [
-    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
   ]
 }

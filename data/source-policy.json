@@ -1,0 +1,2084 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-06",
+  "publication_status": "draft_awaiting_user_approval",
+  "criteria": [
+    "A documented input, executable or complete host-agent procedure, and a concrete output.",
+    "Advice-only repositories, link lists, templates without delivery, isolated example collections and obsolete proxies are excluded.",
+    "A documented source workflow is not proof of an installed or tested Power Chords adapter.",
+    "New sources require an explicit included decision before discovery can activate them."
+  ],
+  "sources": [
+    {
+      "repository": "saurabhmisal/agent-skills",
+      "original_repository": "addyosmani/agent-skills",
+      "revision": "301b02b12bff98e4688e6984af6556802322bbde",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "b74ab722eeee706ff1c5c3ee55f5f2328368ec28c6368900bc80b857b5bc6b72",
+        "file_count": 240,
+        "implementation_paths": [
+          "scripts/floor-guard-reference-test.js",
+          "scripts/lib/execution-status.js",
+          "scripts/lib/skill-lint-test.js",
+          "scripts/lib/skill-lint.js",
+          "scripts/quality-gate-test.js",
+          "scripts/run-evals-test.js",
+          "scripts/run-evals.js",
+          "scripts/staged-secret-scan-test.js"
+        ],
+        "host_workflow_paths": [
+          ".claude/commands/build.md",
+          ".claude/commands/code-simplify.md",
+          ".claude/commands/constraints.md",
+          ".claude/commands/plan.md",
+          ".claude/commands/review.md",
+          ".claude/commands/ship.md",
+          ".claude/commands/spec.md",
+          ".claude/commands/test.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/gstack",
+      "original_repository": "garrytan/gstack",
+      "revision": "10770954f01c72cb59a1c5aa0dd38ab9a2a77001",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "1d811b9a341913cebf59f33e73012594c95c0961114e2d89967779d74a0688c2",
+        "file_count": 4953,
+        "implementation_paths": [
+          "autoplan/bin/guard-journal.ts",
+          "autoplan/bin/guard-log.ts",
+          "autoplan/bin/guard-reasons.ts",
+          "autoplan/bin/owned-read.ts",
+          "autoplan/bin/phase-publication-hook.ts",
+          "bin/gstack-autoplan-snapshot.ts",
+          "bin/gstack-brain-context-load.ts",
+          "bin/gstack-brain-sync-index.py"
+        ],
+        "host_workflow_paths": [
+          "SKILL.md",
+          "autoplan/SKILL.md",
+          "benchmark-models/SKILL.md",
+          "benchmark/SKILL.md",
+          "browse/SKILL.md",
+          "browser-skills/hackernews-frontpage/SKILL.md",
+          "canary/SKILL.md",
+          "captain/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/ECC",
+      "original_repository": "affaan-m/ECC",
+      "revision": "b38be6a7f6350964d59328b52f0624e1d1d552d1",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "bce393127a2e15211583d0f4998599b9771cc30b1189e7c42a26d86b86386d13",
+        "file_count": 4701,
+        "implementation_paths": [
+          ".agents/skills/docs-governance/scripts/audit-docs.py",
+          ".agents/skills/docs-governance/scripts/markdown_links.py",
+          ".agents/skills/docs-governance/scripts/module_audit.py",
+          ".claude/workflows/ecc-pro-security-roadmap.js",
+          ".codebuddy/install.js",
+          ".codebuddy/uninstall.js",
+          ".cursor/hooks/adapter.js",
+          ".cursor/hooks/after-file-edit.js"
+        ],
+        "host_workflow_paths": [
+          ".agents/skills/agent-introspection-debugging/SKILL.md",
+          ".agents/skills/agent-sort/SKILL.md",
+          ".agents/skills/api-design/SKILL.md",
+          ".agents/skills/article-writing/SKILL.md",
+          ".agents/skills/backend-patterns/SKILL.md",
+          ".agents/skills/benchmark-methodology/SKILL.md",
+          ".agents/skills/brand-discovery/SKILL.md",
+          ".agents/skills/brand-voice/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/marketingskills",
+      "original_repository": "coreyhaines31/marketingskills",
+      "revision": "88c79f6528a9347420e57ceb1fff9a60de651768",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "69c172878d7a66305ef57928d0fbb4056e379cb8a316e23fc1d6f9869519f798",
+        "file_count": 817,
+        "implementation_paths": [
+          "scripts/check-versions.mjs",
+          "scripts/package_skills.py",
+          "scripts/sync-partners.mjs",
+          "skills/conversion-tracking/assets/snippets/acuity-scheduling.js",
+          "skills/conversion-tracking/assets/snippets/cal-com.js",
+          "skills/conversion-tracking/assets/snippets/calendly.js",
+          "skills/conversion-tracking/assets/snippets/contact-form-7.js",
+          "skills/conversion-tracking/assets/snippets/divi-forms.js"
+        ],
+        "host_workflow_paths": [
+          "skills/ab-testing/SKILL.md",
+          "skills/ad-creative/SKILL.md",
+          "skills/ads/SKILL.md",
+          "skills/ai-seo/SKILL.md",
+          "skills/analytics/SKILL.md",
+          "skills/aso/SKILL.md",
+          "skills/attribution/SKILL.md",
+          "skills/churn-prevention/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/knowledge-work-plugins",
+      "original_repository": "anthropics/knowledge-work-plugins",
+      "revision": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
+        "file_count": 1285,
+        "implementation_paths": [
+          "bio-research/skills/instrument-data-to-allotrope/scripts/convert_to_asm.py",
+          "bio-research/skills/instrument-data-to-allotrope/scripts/export_parser.py",
+          "bio-research/skills/instrument-data-to-allotrope/scripts/flatten_asm.py",
+          "bio-research/skills/instrument-data-to-allotrope/scripts/validate_asm.py",
+          "bio-research/skills/nextflow-development/scripts/check_environment.py",
+          "bio-research/skills/nextflow-development/scripts/detect_data_type.py",
+          "bio-research/skills/nextflow-development/scripts/generate_samplesheet.py",
+          "bio-research/skills/nextflow-development/scripts/manage_genomes.py"
+        ],
+        "host_workflow_paths": [
+          "bio-research/skills/instrument-data-to-allotrope/SKILL.md",
+          "bio-research/skills/nextflow-development/SKILL.md",
+          "bio-research/skills/scientific-problem-selection/SKILL.md",
+          "bio-research/skills/scvi-tools/SKILL.md",
+          "bio-research/skills/single-cell-rna-qc/SKILL.md",
+          "bio-research/skills/start/SKILL.md",
+          "cowork-plugin-management/skills/cowork-plugin-customizer/SKILL.md",
+          "cowork-plugin-management/skills/create-cowork-plugin/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/replica-skill",
+      "original_repository": "Jakeschincariol/replica-skill",
+      "revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "69c129d1eae2d6171d6061325e5760e78e63879f4f50077b3d24ba87cee01405",
+        "file_count": 39,
+        "implementation_paths": [
+          "replica-brand/sweep.py",
+          "replica-design/contrast.py",
+          "replica-diff/imgdiff.py",
+          "replica-diff/parity.py",
+          "replica-entrepreneur/reviews.py",
+          "replica-launch/listing.py",
+          "replica-test/e2e.example.spec.ts"
+        ],
+        "host_workflow_paths": [
+          "replica-architect/SKILL.md",
+          "replica-backend/SKILL.md",
+          "replica-brand/SKILL.md",
+          "replica-build/SKILL.md",
+          "replica-deploy/SKILL.md",
+          "replica-design/SKILL.md",
+          "replica-diff/SKILL.md",
+          "replica-entrepreneur/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/archify",
+      "original_repository": "tt-a1i/archify",
+      "revision": "a4065941f12be7967436261d9934784e381d423c",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "f92e849fc17a8b84d0dce093905a44c014ed099df8aee810db38af5c2ccdf978",
+        "file_count": 1189,
+        "implementation_paths": [
+          ".agents/skills/archify-tuning/scripts/collect.mjs",
+          ".agents/skills/archify-tuning/scripts/lib.mjs",
+          ".agents/skills/archify-tuning/scripts/replay.mjs",
+          ".agents/skills/archify-tuning/scripts/round.mjs",
+          ".agents/skills/archify-tuning/scripts/shots.mjs",
+          "archify/bin/archify.mjs",
+          "archify/bin/delivery-update.mjs",
+          "archify/bin/finalize.mjs"
+        ],
+        "host_workflow_paths": [
+          ".agents/skills/archify-review/SKILL.md",
+          ".agents/skills/archify-tuning/SKILL.md",
+          ".agents/skills/simplify-codebase/SKILL.md",
+          ".agents/skills/test-value/SKILL.md",
+          "archify/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/anatomy",
+      "original_repository": "wheresryan22/anatomy",
+      "revision": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "a1bc269d3d1b75a230a2ae54cb43c63c19a0a3a067f6a7bb0baf5a7785e3de16",
+        "file_count": 173,
+        "implementation_paths": [
+          "kit/audit.mjs",
+          "kit/canvas-painter.mjs",
+          "kit/gl-shared.mjs",
+          "kit/gl.mjs",
+          "kit/iso-kit.mjs",
+          "kit/iso-kit.ts",
+          "kit/lathe.mjs",
+          "kit/pdf-button.mjs"
+        ],
+        "host_workflow_paths": [
+          "SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/Papermorph",
+      "original_repository": "DozenTwelve/Papermorph",
+      "revision": "342e272648e06a6163224a6177bccc83517d7fea",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "fbedcadaf56cfb7ba284ccdc76d906d6b3129b7af8e81584bfebc2bcafb9768e",
+        "file_count": 7259,
+        "implementation_paths": [
+          ".claude/skills/papermorph/assets/scorm/scorm-bridge.js",
+          ".claude/skills/papermorph/assets/scorm/scorm-host.js",
+          ".claude/skills/papermorph/assets/templates/documentary/lib/film.js",
+          ".claude/skills/papermorph/assets/templates/e2e.py",
+          ".claude/skills/papermorph/assets/templates/maps/lib/globe.js",
+          ".claude/skills/papermorph/assets/templates/maps/lib/map.js",
+          ".claude/skills/papermorph/assets/templates/picture-book/lib/cast.js",
+          ".claude/skills/papermorph/assets/templates/picture-book/lib/cut.js"
+        ],
+        "host_workflow_paths": [
+          ".claude/skills/papermorph/SKILL.md",
+          ".opencode/commands/papermorph.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/ponytail",
+      "original_repository": "DietrichGebert/ponytail",
+      "revision": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "9608191c42ef942138857c44b54037fff7606cfda205d7320f4a3c82a7d8d41e",
+        "file_count": 216,
+        "implementation_paths": [
+          ".opencode/plugins/index.js",
+          ".opencode/plugins/ponytail-frontmatter.cjs",
+          ".opencode/plugins/ponytail.mjs",
+          "__init__.py",
+          "hooks/band/board.ts",
+          "hooks/band/logo.ts",
+          "hooks/band/metrics.ts",
+          "hooks/band/register.tsx"
+        ],
+        "host_workflow_paths": [
+          ".openclaw/skills/ponytail-audit/SKILL.md",
+          ".openclaw/skills/ponytail-debt/SKILL.md",
+          ".openclaw/skills/ponytail-gain/SKILL.md",
+          ".openclaw/skills/ponytail-help/SKILL.md",
+          ".openclaw/skills/ponytail-review/SKILL.md",
+          ".openclaw/skills/ponytail/SKILL.md",
+          "skills/ponytail-audit/SKILL.md",
+          "skills/ponytail-debt/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/vibe-coding-sops",
+      "original_repository": "Siborne/vibe-coding-sops",
+      "revision": "823c75661195ae56d32d5a66021b2b7fd63415e8",
+      "decision": "excluded",
+      "reason": "Rules and SOP collection; the statistics script does not implement the advertised development workflow.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "6ad34ff24afcf376434405502038be46402fc431162ec441583a39254dd7f086",
+        "file_count": 95,
+        "implementation_paths": [],
+        "host_workflow_paths": [
+          "skills/atomic/agent-prompt-engineering/SKILL.md",
+          "skills/conversational/interview/resume-builder/SKILL.md",
+          "skills/conversational/requirement/prompt-composer/SKILL.md",
+          "skills/engineering/git-collaboration/github-pr-workflow/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/vibe-coding",
+      "original_repository": "EnzeD/vibe-coding",
+      "revision": "8b650568ea41515950f75bee255d03ac96db8e62",
+      "decision": "excluded",
+      "reason": "README-only development guide; no executable delivery path.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "472c90091ec3ca43c2724ef7cd5ff4ccaf5b81735601316b069d105a62a8be66",
+        "file_count": 1,
+        "implementation_paths": [],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/vibe-coding-templates",
+      "original_repository": "chrishayuk/vibe-coding-templates",
+      "revision": "a58fadee8027cfa620cad79c714fbd7132432d90",
+      "decision": "excluded",
+      "reason": "Agent instruction templates, not an implemented application or complete execution workflow.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "62bba24f642f977a7e9724bd5c08fe04949c12321f1e0b66d43af1c6fa2e198b",
+        "file_count": 37,
+        "implementation_paths": [],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/vibe-coding-blueprint",
+      "original_repository": "nisargpatel1906/vibe-coding-blueprint",
+      "revision": "faf47911db82d85a1b0185957babca9cd89cda3b",
+      "decision": "excluded",
+      "reason": "Planning framework and packaged instructions; no implemented build-to-output pipeline.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "8a4d052ca5e54d30773351e787033d7e62a71f4d199e4eb70c802b53c18d1fb4",
+        "file_count": 4,
+        "implementation_paths": [],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/vibe-code-docs-stack",
+      "original_repository": "abhishekcheriangeorge-ops/vibe-code-docs-stack",
+      "revision": "2a8b2b1923d668db996f65434f5cecb5b9475849",
+      "decision": "excluded",
+      "reason": "Documentation scaffolding and packaging/check scripts; no standalone capability execution path.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "27961ab0a2e6b4a81f9bb71c2cb1af4268defdd1351399965ac165cdb31fa81d",
+        "file_count": 60,
+        "implementation_paths": [
+          "scripts/build_skill_assets.py",
+          "scripts/check_docs.py"
+        ],
+        "host_workflow_paths": [
+          "skills/vibe-code-docs-stack/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/book-to-skill",
+      "original_repository": "virgiliojr94/book-to-skill",
+      "revision": "e7bb659d3261491c8b28793dcb9102fa64a46c22",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "43c403269fed5a7032e5fa429607a2e326019945b41a64588f38396dc3343402",
+        "file_count": 142,
+        "implementation_paths": [
+          "book_to_skill/__init__.py",
+          "book_to_skill/__main__.py",
+          "book_to_skill/cli.py",
+          "book_to_skill/config.py",
+          "book_to_skill/dependencies.py",
+          "book_to_skill/exceptions.py",
+          "book_to_skill/parsers/__init__.py",
+          "book_to_skill/parsers/calibre.py"
+        ],
+        "host_workflow_paths": [
+          "SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/text-to-cad",
+      "original_repository": "earthtojake/text-to-cad",
+      "revision": "4099cac3ddc56a5e696138c53fd7bee685e8ad9d",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "865a4ee737fc3248c38ec106a6056069775984b76a5f7423241926f42b610cc0",
+        "file_count": 2088,
+        "implementation_paths": [
+          "apps/api/api/v1.js",
+          "apps/api/src/events.mjs",
+          "apps/api/src/handler.mjs",
+          "apps/api/src/handler.test.mjs",
+          "apps/api/src/limit.mjs",
+          "apps/api/src/limit.test.mjs",
+          "apps/api/src/noise.mjs",
+          "apps/api/src/noise.test.mjs"
+        ],
+        "host_workflow_paths": [
+          "skills/bambu-labs/SKILL.md",
+          "skills/cad/SKILL.md",
+          "skills/dfam-check/SKILL.md",
+          "skills/dfm/SKILL.md",
+          "skills/dxf/SKILL.md",
+          "skills/engineering-drawing/SKILL.md",
+          "skills/gcode/SKILL.md",
+          "skills/sdf/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/jarvis",
+      "original_repository": "adewaskar/jarvis",
+      "revision": "1c4016afdf86f7043efc6882ceffef84ad0d8783",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "adb82caba1f6c000b502e08620b6b67a89e866eeab7538303e9847287f86c385",
+        "file_count": 64,
+        "implementation_paths": [
+          "bridge/chrome.mjs",
+          "bridge/net.mjs",
+          "bridge/page.mjs",
+          "bridge/panels.mjs",
+          "bridge/server.mjs",
+          "bridge/ui.mjs",
+          "bridge/vision.mjs",
+          "scripts/setup.mjs"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/hermes-life-os",
+      "original_repository": "Lethe044/hermes-life-os",
+      "revision": "5a572ba5f24c227b987c22e0b4fe06e2bdba6975",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "44fef59bc7d485ffd7ac73a5e3a359720077b3fda095c7a6d2fcb8aa10496d8e",
+        "file_count": 278,
+        "implementation_paths": [
+          "demo/__init__.py",
+          "demo/achievements.py",
+          "demo/agenda.py",
+          "demo/analytics.py",
+          "demo/backup.py",
+          "demo/body.py",
+          "demo/budgets.py",
+          "demo/calendar_export.py"
+        ],
+        "host_workflow_paths": [
+          "skills/life-os/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/ai-job-search",
+      "original_repository": "ai-job-search-dev/ai-job-search",
+      "revision": "256237903e115f47501e7774fff9004e80c32311",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "4c66bb1d8f5c9e2affd6a495ed658b25c0d7ecfc746507816490d5f94353154e",
+        "file_count": 315,
+        "implementation_paths": [
+          ".agents/skills/freehire-search/cli/src/cli.ts",
+          ".agents/skills/freehire-search/cli/src/commands/detail.ts",
+          ".agents/skills/freehire-search/cli/src/commands/search.ts",
+          ".agents/skills/freehire-search/cli/src/helpers.ts",
+          ".agents/skills/jobbank-search/cli/src/cli.ts",
+          ".agents/skills/jobbank-search/cli/src/commands/detail.ts",
+          ".agents/skills/jobbank-search/cli/src/commands/search.ts",
+          ".agents/skills/jobbank-search/cli/src/helpers.ts"
+        ],
+        "host_workflow_paths": [
+          ".agents/skills/freehire-search/SKILL.md",
+          ".agents/skills/jobbank-search/SKILL.md",
+          ".agents/skills/jobdanmark-search/SKILL.md",
+          ".agents/skills/jobindex-search/SKILL.md",
+          ".agents/skills/jobnet-search/SKILL.md",
+          ".agents/skills/linkedin-search/SKILL.md",
+          ".claude/commands/add-portal.md",
+          ".claude/commands/add-template.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/career-ops",
+      "original_repository": "career-ops-hq/career-ops",
+      "revision": "5625d811b821a45b2bc0ca85533dff3a19713ce1",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "abafd4ca4d18928dcedb0a3d3b80745dfb9d35455f61da1a0c8826c2834aa69d",
+        "file_count": 3191,
+        "implementation_paths": [
+          "add-entry.mjs",
+          "agent-inbox.mjs",
+          "analyze-patterns.mjs",
+          "application-answers.mjs",
+          "application-artifacts.mjs",
+          "apply-scope.mjs",
+          "archive-posting.mjs",
+          "assessment-log.mjs"
+        ],
+        "host_workflow_paths": [
+          ".agents/skills/career-ops/SKILL.md",
+          ".antigravitycli/skills/career-ops/SKILL.md",
+          ".claude/skills/career-ops/SKILL.md",
+          ".grok/skills/career-ops/SKILL.md",
+          ".kimi/skills/career-ops/SKILL.md",
+          ".opencode/commands/career-ops-interview-intel.md",
+          ".opencode/commands/career-ops-interview-prep.md",
+          ".opencode/commands/career-ops.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/graphify",
+      "original_repository": "Graphify-Labs/graphify",
+      "revision": "16218bfc80d4ca2799734d045039f7ed1a5fa9fb",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "f6d12f50ecd8f0c873af88ea8ef84a989101919ae531dd3cf404273d288d0562",
+        "file_count": 1179,
+        "implementation_paths": [
+          "graphify/__init__.py",
+          "graphify/__main__.py",
+          "graphify/_minhash.py",
+          "graphify/affected.py",
+          "graphify/analyze.py",
+          "graphify/benchmark.py",
+          "graphify/build.py",
+          "graphify/cache.py"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/api-anything",
+      "original_repository": "goodnight000/api-anything",
+      "revision": "d89f9c6637c16d3c389320f4241ea52082c35267",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "1f6308d896f40c75f8c1f7efc41d5cab84ae280d8312bc396dda8a63f2de3d25",
+        "file_count": 735,
+        "implementation_paths": [
+          "bench/charts.mjs",
+          "bench/engine.mjs",
+          "bench/explore/reliability.mjs",
+          "bench/explore/run-explore.mjs",
+          "bench/explore/truth.mjs",
+          "bench/ground-truth.mjs",
+          "bench/import.mjs",
+          "bench/popular.mjs"
+        ],
+        "host_workflow_paths": [
+          "skills/api-anything/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/youtube-automation-agent",
+      "original_repository": "darkzOGx/youtube-automation-agent",
+      "revision": "e973d515aef90c467da2289144df737a3bd03859",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "32526f1a91b202e739fce1a6defa7fce4d871146fc692f74056708e9b84486c8",
+        "file_count": 76,
+        "implementation_paths": [
+          "agents/analytics-optimization-agent.js",
+          "agents/content-strategy-agent.js",
+          "agents/production-management-agent.js",
+          "agents/publishing-scheduling-agent.js",
+          "agents/script-writer-agent.js",
+          "agents/seo-optimizer-agent.js",
+          "agents/thumbnail-designer-agent.js",
+          "dashboard/app.js"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/youtube-agentic-ai-studio",
+      "original_repository": "raunakpatil/youtube-agentic-ai-studio",
+      "revision": "22be5d044138def44e96f0b26a2f1be66f491452",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "d4625463d7f7e9ebfc31ac9a5f7b1469ffff9812c53cc3d2853354fa618c4f01",
+        "file_count": 71,
+        "implementation_paths": [
+          "agents/__init__.py",
+          "agents/gemini_client.py",
+          "agents/json_utils.py",
+          "agents/researcher.py",
+          "agents/scriptwriter.py",
+          "apis/__init__.py",
+          "apis/http.py",
+          "apis/images.py"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/stemkit",
+      "original_repository": "danielravina/stemkit",
+      "revision": "24c2dde8e2e9f4a129d03c83ddf752e20acab34d",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "f3bbfe8262a0b5066486104cfdb04bccadd2818a27b4e0a4474764e51402e8b4",
+        "file_count": 89,
+        "implementation_paths": [
+          "electron.vite.config.ts",
+          "embed-test/main.js",
+          "python/roformer.py",
+          "python/separate.py",
+          "python/vendor/models/bs_roformer/__init__.py",
+          "python/vendor/models/bs_roformer/attend.py",
+          "python/vendor/models/bs_roformer/mel_band_roformer.py",
+          "scripts/after-pack.cjs"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/OmniRoute",
+      "original_repository": "cheaper-inference/OmniRoute",
+      "revision": "aef364319c6ad29ec3b143fa5e672a0ad4fe731e",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "e57152441aa1386b5739eede8fdea6faced84c06e318690e487f298af93a108c",
+        "file_count": 27699,
+        "implementation_paths": [
+          "@omniroute/opencode-plugin-v2/server.js",
+          "@omniroute/opencode-plugin-v2/src/cache.ts",
+          "@omniroute/opencode-plugin-v2/src/capability-presets.ts",
+          "@omniroute/opencode-plugin-v2/src/catalog-freshness.ts",
+          "@omniroute/opencode-plugin-v2/src/catalog.ts",
+          "@omniroute/opencode-plugin-v2/src/combos-source.ts",
+          "@omniroute/opencode-plugin-v2/src/compat.ts",
+          "@omniroute/opencode-plugin-v2/src/credentials.ts"
+        ],
+        "host_workflow_paths": [
+          "config/quality/skill-templates/green-prs/SKILL.md",
+          "config/quality/skill-templates/merge-batch/SKILL.md",
+          "config/quality/skill-templates/merge-prs/SKILL.md",
+          "config/quality/skill-templates/quality-scan/SKILL.md",
+          "config/quality/skill-templates/sweep-reds/SKILL.md",
+          "config/quality/skill-templates/validate-release-green/SKILL.md",
+          "skills/cli-a2a/SKILL.md",
+          "skills/cli-backup-sync/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/langflow",
+      "original_repository": "langflow-ai/langflow",
+      "revision": "60999cc9a7350e44dde3ef641baae864e10861f0",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "0c91b63e58aeac3846fad7d1e6ec7729fc23975fdb0d59def51e97627fdb5e36",
+        "file_count": 11878,
+        "implementation_paths": [
+          ".agents/skills/frontend-testing/assets/component-test.template.tsx",
+          ".agents/skills/frontend-testing/assets/hook-test.template.ts",
+          ".agents/skills/frontend-testing/assets/utility-test.template.ts",
+          "scripts/__init__.py",
+          "scripts/a11y/a11y_scan.py",
+          "scripts/benchmark/sqlite_kb.py",
+          "scripts/build_component_index.py",
+          "scripts/check_changes_filter.py"
+        ],
+        "host_workflow_paths": [
+          ".agents/skills/backend-code-review/SKILL.md",
+          ".agents/skills/component-refactoring/SKILL.md",
+          ".agents/skills/e2e-testing/SKILL.md",
+          ".agents/skills/frontend-code-review/SKILL.md",
+          ".agents/skills/frontend-i18n/SKILL.md",
+          ".agents/skills/frontend-query-mutation/SKILL.md",
+          ".agents/skills/frontend-testing/SKILL.md",
+          ".agents/skills/ibm-a11y-level1-audit/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/airllm",
+      "original_repository": "lyogavin/airllm",
+      "revision": "0f824d93bff5df03b80a58563ba24f09f67b409d",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "1ee1ea96cfb4301a56f14f410d3383c0c24a469108d23ad03a8a5f24a6b04343",
+        "file_count": 107,
+        "implementation_paths": [
+          "air_llm/__init__.py",
+          "air_llm/airllm/__init__.py",
+          "air_llm/airllm/airllm.py",
+          "air_llm/airllm/airllm_baichuan.py",
+          "air_llm/airllm/airllm_base.py",
+          "air_llm/airllm/airllm_chatglm.py",
+          "air_llm/airllm/airllm_internlm.py",
+          "air_llm/airllm/airllm_kimi_k3.py"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/turbovec",
+      "original_repository": "RyanCodrai/turbovec",
+      "revision": "c3b043b992290ff223b903046af7f6683768241c",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "40d5882026ebf71dd845ad41221f9265d7720ecb0a9fc5ffb0bcf80d4c3ed661",
+        "file_count": 884,
+        "implementation_paths": [
+          "turbovec-python/build.rs",
+          "turbovec-python/python/turbovec/__init__.py",
+          "turbovec-python/python/turbovec/_dedup.py",
+          "turbovec-python/python/turbovec/_interruptible.py",
+          "turbovec-python/python/turbovec/_persist.py",
+          "turbovec-python/python/turbovec/_similarity.py",
+          "turbovec-python/python/turbovec/agno.py",
+          "turbovec-python/python/turbovec/haystack.py"
+        ],
+        "host_workflow_paths": [
+          ".claude/skills/s/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/OmniVoice",
+      "original_repository": "k2-fsa/OmniVoice",
+      "revision": "08be0b4ccbac3e13e374e86fbfead4b4cac343e2",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "13bf6dbac41b732873de6f8aad68b0ffbc8836773d86f9aec0e31977992af4c6",
+        "file_count": 89,
+        "implementation_paths": [
+          "omnivoice/__init__.py",
+          "omnivoice/cli/__init__.py",
+          "omnivoice/cli/demo.py",
+          "omnivoice/cli/infer.py",
+          "omnivoice/cli/infer_batch.py",
+          "omnivoice/cli/merge_lora.py",
+          "omnivoice/cli/train.py",
+          "omnivoice/data/__init__.py"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/VoxCPM",
+      "original_repository": "OpenBMB/VoxCPM",
+      "revision": "4b8dd4440d33396b3f429201f8af0529b4d2c601",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "61fea182876eaf6bef5af3c2770d5e4c05aeecdb105fb3affc2b580adfe912c3",
+        "file_count": 82,
+        "implementation_paths": [
+          "app.py",
+          "app_old.py",
+          "i18n.py",
+          "lora_ft_webui.py",
+          "scripts/test_pick_runtime_dtype.py",
+          "scripts/test_voxcpm_ft_infer.py",
+          "scripts/test_voxcpm_lora_infer.py",
+          "scripts/train_voxcpm_finetune.py"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/VoiceStudio",
+      "original_repository": "debpalash/VoiceStudio",
+      "revision": "5e0502d1bbbcab9fe264788233d2c0237fcb440e",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "e63edca0bbafc6bdec9873719c5533435b460a70b94b4f8a5b636afedb9166c0",
+        "file_count": 4895,
+        "implementation_paths": [
+          ".dagger/src/voicestudio/__init__.py",
+          ".dagger/src/voicestudio/main.py",
+          "backend/api/__init__.py",
+          "backend/api/dependencies.py",
+          "backend/api/http_client.py",
+          "backend/api/public_engine_metadata.py",
+          "backend/api/routers/__init__.py",
+          "backend/api/routers/archetypes.py"
+        ],
+        "host_workflow_paths": [
+          ".agents/skills/fastapi-python/SKILL.md",
+          ".agents/skills/vite/SKILL.md",
+          "skills/voicestudio-maintainer/SKILL.md",
+          "skills/voicestudio/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/demucs",
+      "original_repository": "adefossez/demucs",
+      "revision": "829d21890023800713e5dd231c67e43ecc06069b",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "2abed9c9af52efd786e5f1f04f50e60b7f0dd754eb773df24ef7ebd045706324",
+        "file_count": 100,
+        "implementation_paths": [
+          "demucs/__init__.py",
+          "demucs/__main__.py",
+          "demucs/api.py",
+          "demucs/apply.py",
+          "demucs/audio.py",
+          "demucs/augment.py",
+          "demucs/demucs.py",
+          "demucs/distrib.py"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/evals",
+      "original_repository": "openai/evals",
+      "revision": "8eac7a7de5215c907fbddc30efdaf316913eccdd",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "f0b50bd53e2fbc81be774a6bfb0cf20997aa7509bd22925ae779a87d57c7c914",
+        "file_count": 1728,
+        "implementation_paths": [
+          "scripts/battle_generator.py",
+          "scripts/modelgraded_generator.py",
+          "scripts/pattern_identification_generator.py"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/Unlimited-OCR",
+      "original_repository": "baidu/Unlimited-OCR",
+      "revision": "ea42e6d15ff93fdd0e8041fc0ac70880513453d3",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "8005a8771db63fee678b647d4dff0b930db7f9379c5eb311e62808983f9ce02f",
+        "file_count": 14,
+        "implementation_paths": [
+          "infer.py",
+          "utils/process_unlimitedOCR2.py"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/MiroFish",
+      "original_repository": "666ghj/MiroFish",
+      "revision": "7657031ac01184afe2cb220f5ee3545573b5e843",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "5109feef87d494dd77c0eb225486d4278fe3eb61b303574600bcf8c3c339d034",
+        "file_count": 128,
+        "implementation_paths": [
+          "backend/app/__init__.py",
+          "backend/app/api/__init__.py",
+          "backend/app/api/graph.py",
+          "backend/app/api/report.py",
+          "backend/app/api/simulation.py",
+          "backend/app/config.py",
+          "backend/app/models/__init__.py",
+          "backend/app/models/project.py"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/munder-difflin",
+      "original_repository": "HarnessMD/munder-difflin",
+      "revision": "8b3cebf06f0b0c084d5ab28d2949a2e6c07d0806",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "ba22b71d62a9951b38ef516f32c2cb8a8a2c6674980bc22f33de22c782dcdb74",
+        "file_count": 3993,
+        "implementation_paths": [
+          "blog/eleventy.config.js",
+          "blog/media-src/scene-lib.js",
+          "blog/media-src/spec.js",
+          "blog/scripts/add-inline-notes.mjs",
+          "blog/scripts/build-media-manifest.mjs",
+          "blog/scripts/build-mg-cast.mjs",
+          "blog/scripts/generate-images.mjs",
+          "blog/scripts/postbuild.mjs"
+        ],
+        "host_workflow_paths": [
+          ".claude/skills/ian-xiaohei-illustrations/SKILL.md",
+          "resources/skills/capabilities/SKILL.md",
+          "resources/skills/last30Days/SKILL.md",
+          "resources/skills/last7Days/SKILL.md",
+          "resources/skills/lastMonth/SKILL.md",
+          "resources/skills/lastQuarter/SKILL.md",
+          "resources/skills/lastWeek/SKILL.md",
+          "resources/skills/lastYear/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/FounderOS-DEMO",
+      "original_repository": "Bennettxai/FounderOS",
+      "revision": "a0b5db7eb6dcb52bb148b452557f454a2bc76082",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "4b53d8b56179bd728eaf5828d9936b5e6a813dce2c531b629f4abc3692281bcc",
+        "file_count": 1689,
+        "implementation_paths": [
+          "app/adpilot/page.tsx",
+          "app/agents/AgentRoster.tsx",
+          "app/agents/loading.tsx",
+          "app/agents/page.tsx",
+          "app/agents/panel-data.ts",
+          "app/agents/setup/[id]/page.tsx",
+          "app/analytics/page.tsx",
+          "app/api/adscout/ask/route.ts"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/Understand-Anything",
+      "original_repository": "Egonex-AI/Understand-Anything",
+      "revision": "98d6dca712407b8cbf0bca21b539c197e5a7825c",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "9171c186e7ca43f03dad82966edb35227c3960f62bb4091e22f7dbc45af4cda8",
+        "file_count": 521,
+        "implementation_paths": [
+          "eslint.config.mjs",
+          "homepage/astro.config.mjs",
+          "scripts/benchmark-large-repo.mjs",
+          "scripts/generate-large-graph.mjs",
+          "scripts/lib/benchmark-stage-worker.mjs",
+          "scripts/lib/large-repo-benchmark.mjs",
+          "understand-anything-plugin/hooks/post-tool-use-auto-update.mjs",
+          "understand-anything-plugin/packages/core/src/__tests__/change-classifier.test.ts"
+        ],
+        "host_workflow_paths": [
+          "understand-anything-plugin/skills/understand-chat/SKILL.md",
+          "understand-anything-plugin/skills/understand-dashboard/SKILL.md",
+          "understand-anything-plugin/skills/understand-diff/SKILL.md",
+          "understand-anything-plugin/skills/understand-domain/SKILL.md",
+          "understand-anything-plugin/skills/understand-explain/SKILL.md",
+          "understand-anything-plugin/skills/understand-figma/SKILL.md",
+          "understand-anything-plugin/skills/understand-knowledge/SKILL.md",
+          "understand-anything-plugin/skills/understand-onboard/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/open-seo",
+      "original_repository": "every-app/open-seo",
+      "revision": "78c5d850c2729e3fcf7edf33aafb66efe17453e0",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "06cf02cb5c794e649a443b95d5d337a0dc62a1b90b7544c1981083b282ae9a0e",
+        "file_count": 2269,
+        "implementation_paths": [
+          ".agents/skills/evaluate-skill/scripts/report-text.mjs",
+          ".agents/skills/evaluate-skill/scripts/run.mjs",
+          ".agents/skills/observability-triage/scripts/pprof-top.mjs",
+          "cloudflare.config.ts",
+          "deploy/alchemy/alchemy.access.ts",
+          "deploy/alchemy/alchemy.preview-access.run.ts",
+          "deploy/alchemy/alchemy.run.ts",
+          "drizzle/pg.config.ts"
+        ],
+        "host_workflow_paths": [
+          ".agents/skills/ai-prompt-research/SKILL.md",
+          ".agents/skills/ai-visibility-audit/SKILL.md",
+          ".agents/skills/competitive-landscape/SKILL.md",
+          ".agents/skills/competitor-analysis/SKILL.md",
+          ".agents/skills/create-repo-skill/SKILL.md",
+          ".agents/skills/deslop/SKILL.md",
+          ".agents/skills/evaluate-skill/SKILL.md",
+          ".agents/skills/keyword-clustering/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/Recordly",
+      "original_repository": "webadderallorg/Recordly",
+      "revision": "109ca3a13c362e969d9add25d1f93406c36dba2a",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "caec4da6db132fd9048bb12bf738d2e47780579343b99a5c947135f8a251532c",
+        "file_count": 1208,
+        "implementation_paths": [
+          "electron/appPaths.ts",
+          "electron/appSettingsStore.ts",
+          "electron/authCallback.ts",
+          "electron/countdownController.test.ts",
+          "electron/countdownController.ts",
+          "electron/cursorHider.ts",
+          "electron/editorStartupView.test.ts",
+          "electron/editorStartupView.ts"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/spacedrive",
+      "original_repository": "spacedriveapp/spacedrive",
+      "revision": "11523b224d1422d98def9a1c0f99e89fafada00d",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "a82f4be1afc06dce8b5173e217aba3c109049bd4b83783b7e53f356864d40901",
+        "file_count": 3120,
+        "implementation_paths": [
+          "adapters/apple-notes/sync.py",
+          "adapters/chrome-bookmarks/sync.py",
+          "adapters/chrome-history/sync.py",
+          "adapters/github/sync.py",
+          "adapters/gmail/sync.py",
+          "adapters/macos-calendar/sync.py",
+          "adapters/macos-contacts/sync.py",
+          "adapters/obsidian/sync.py"
+        ],
+        "host_workflow_paths": [
+          ".agents/skills/spacedrive-cli/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/openship",
+      "original_repository": "oblien/openship",
+      "revision": "b72c7922b9d0001d73755684c5fc0544c3b3b223",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "8d760fd2b660dfd49c713a601ba235ee3b87410293c8f39ca4bdc5045b66e1dc",
+        "file_count": 7800,
+        "implementation_paths": [
+          "apps/api/scripts/affiliate-accounts.ts",
+          "apps/api/scripts/affiliate.ts",
+          "apps/api/scripts/build-release.ts",
+          "apps/api/scripts/cloud-readiness.ts",
+          "apps/api/scripts/copy-assets.mjs",
+          "apps/api/scripts/import-instance.ts",
+          "apps/api/scripts/plan-grant.ts",
+          "apps/api/scripts/promo-code.ts"
+        ],
+        "host_workflow_paths": [
+          ".claude/skills/openship-config/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/midday",
+      "original_repository": "midday-ai/midday",
+      "revision": "51587319f26a0ffaa9dfccab1920373cb65689b7",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "9569c294fad00c6a907dc31f054f3809f5b6062f7741a8330694b6ec032352e3",
+        "file_count": 2508,
+        "implementation_paths": [
+          "apps/api/scripts/cancel-all-polar-subscriptions.ts",
+          "apps/api/src/__tests__/e2e/rest-api.e2e.test.ts",
+          "apps/api/src/__tests__/factories/bank-account.ts",
+          "apps/api/src/__tests__/factories/customer.ts",
+          "apps/api/src/__tests__/factories/inbox.ts",
+          "apps/api/src/__tests__/factories/index.ts",
+          "apps/api/src/__tests__/factories/invoice.ts",
+          "apps/api/src/__tests__/factories/transaction.ts"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/city-roads",
+      "original_repository": "anvaka/city-roads",
+      "revision": "35d6497db70debf4508b4d75f17d80c4367d66a6",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "b4ec5d31f9811e155d1becd373e411197f60ba7b880882bce7e0d34e2da46a50",
+        "file_count": 56,
+        "implementation_paths": [
+          ".eslintrc.cjs",
+          "babel.config.js",
+          "src/components/clickOutside.js",
+          "src/components/vue3-color/mixin/color.js",
+          "src/config.js",
+          "src/createOverlayManager.js",
+          "src/lib/BoundingBox.js",
+          "src/lib/Grid.js"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/gods-eye-view",
+      "original_repository": "bilawalsidhu/gods-eye-view",
+      "revision": "3d6423c6f8ddb5061d80fba23a9c2da4fe5bc6ff",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "fd14aab43adb1514999bed28b791da019e402f4e2f8d761d980db31835797d54",
+        "file_count": 2991,
+        "implementation_paths": [
+          "build/allowedHosts.js",
+          "build/embed-framing.js",
+          "build/panel.js",
+          "build/registerVue.js",
+          "build/vite.js",
+          "build/vueLoader.js",
+          "build/vueOptions.js",
+          "pinokio/install.js"
+        ],
+        "host_workflow_paths": [
+          ".agents/skills/community-pr/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/rea",
+      "original_repository": "morluto/rea",
+      "revision": "bacc1e38464ce7eb87ce1fb6fb552c6b1854ac15",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "26ab8638e6ebc45bc3f39fd37af2bdfb68845d7f310b3873dd4ba13ae6eb8db5",
+        "file_count": 7505,
+        "implementation_paths": [
+          "bridge/agentenv/computer.py",
+          "bridge/cutter/rea_bridge.py",
+          "bridge/hopper_bridge.py",
+          "bridge/mitmproxy/capture.py",
+          "bridge/mitmproxy/test_capture.py",
+          "bridge/native/NativeUIChildren.swift",
+          "bridge/native/NativeUIValues.swift",
+          "bridge/native/ReaNativeUI.swift"
+        ],
+        "host_workflow_paths": [
+          ".agents/skills/rea-analysis-optimization/SKILL.md",
+          ".agents/skills/rea-changelog-update/SKILL.md",
+          ".agents/skills/rea-ci-tests-audit/SKILL.md",
+          ".agents/skills/rea-tool-design/SKILL.md",
+          ".agents/skills/reverse-engineer-anything/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/legal-templates",
+      "original_repository": "General-Legal/legal-templates",
+      "revision": "6d6805425eabd41bed86fc1e2ec51612760f716c",
+      "decision": "excluded",
+      "reason": "Document templates and conversion utilities; no implemented billing or invoice-state workflow for the capability it was mapped to.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "e662893c54ba3f5f7f63b911d892c476763dc21480e09bbf93dbb70324551cba",
+        "file_count": 37,
+        "implementation_paths": [
+          "scripts/convert_docx.py",
+          "scripts/fetch_templates.py"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/PlacesToPostYourStartup",
+      "original_repository": "mmccaff/PlacesToPostYourStartup",
+      "revision": "1941a95f344d90ea5ffe2e0b4c25ffa92dfd3d73",
+      "decision": "excluded",
+      "reason": "Startup directory list; no implemented launch or publishing workflow.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "44215385902e0cce8edd4fd10094335a5d6f628e0b2a9629773284511e10b017",
+        "file_count": 5,
+        "implementation_paths": [],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/awesome",
+      "original_repository": "sindresorhus/awesome",
+      "revision": "bc98e517ddca672f55f9857d714fc3ea3c3540b2",
+      "decision": "excluded",
+      "reason": "Directory of external resources; repository linting is not a user capability.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "465cd781335e44587d238f666800104b63d4fc8ba2395d6422974dcba421c616",
+        "file_count": 23,
+        "implementation_paths": [],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/build-your-own-x",
+      "original_repository": "codecrafters-io/build-your-own-x",
+      "revision": "aa17439b62f384511a5561ce308e9598b94d8989",
+      "decision": "excluded",
+      "reason": "Index of external tutorials; no integrated implementation to deliver a capability.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "895a9e99d3964faf6d5992cedce69790b46cbadd59c0fc10dd3d520284aba6f6",
+        "file_count": 4,
+        "implementation_paths": [],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/security-audit-skill",
+      "original_repository": "cloudflare/security-audit-skill",
+      "revision": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "55e793bbea3563f8246735997c07aaee360e043eeb626f0b56ea6161c8618ae7",
+        "file_count": 22,
+        "implementation_paths": [
+          "skills/security-audit/validate-coverage-ledger.cjs",
+          "skills/security-audit/validate-coverage-ledger.test.cjs",
+          "skills/security-audit/validate-findings.cjs",
+          "skills/security-audit/validate-findings.test.cjs"
+        ],
+        "host_workflow_paths": [
+          "skills/security-audit/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/lemo-opuscar",
+      "original_repository": "lemomo-ai/lemo-opuscar",
+      "revision": "bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "6515f3802c150122ba97a347503e8e4bee5681bbddb6a18b35371764422b60fb",
+        "file_count": 2478,
+        "implementation_paths": [
+          "core/audio/pluck.py",
+          "core/audio/sampler.py",
+          "core/audio/sfx.py",
+          "core/lib.js",
+          "core/post/crt.js",
+          "core/render/browser.mjs",
+          "core/render/events.mjs",
+          "core/render/page.mjs"
+        ],
+        "host_workflow_paths": [
+          "plugin/skills/lemo-opuscar/SKILL.md",
+          "tools/directory/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/LYNX-SHARE",
+      "original_repository": "Ka1-S/LYNX-SHARE",
+      "revision": "8056deac12b3834f984af09c5a12d9c2fd478c00",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "559c299853d60ba61150f97fc0ecd4061de31adfc47b473ac0069fe3ae883df9",
+        "file_count": 2125,
+        "implementation_paths": [
+          "asio/LynxAsio.cpp",
+          "scripts/check-site-i18n.py",
+          "scripts/flref_compare.py",
+          "scripts/fxaudit-known.py",
+          "scripts/fxparity.py",
+          "scripts/gen-inspired.py",
+          "scripts/make-msix-assets.py",
+          "scripts/make-msix-layout.py"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/claude-seo",
+      "original_repository": "AgriciDaniel/claude-seo",
+      "revision": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "a6f11dbfee5b5ba787bdbb8536a46813c55fc770f875094714c4916178dc1238",
+        "file_count": 467,
+        "implementation_paths": [
+          "extensions/banana/scripts/batch.py",
+          "extensions/banana/scripts/cost_tracker.py",
+          "extensions/banana/scripts/edit.py",
+          "extensions/banana/scripts/generate.py",
+          "extensions/banana/scripts/presets.py",
+          "extensions/banana/scripts/setup_mcp.py",
+          "extensions/banana/scripts/validate_setup.py",
+          "hooks/run-python-hook.js"
+        ],
+        "host_workflow_paths": [
+          "extensions/ahrefs/skills/seo-ahrefs/SKILL.md",
+          "extensions/banana/skills/seo-image-gen/SKILL.md",
+          "extensions/bing-webmaster/skills/seo-bing/SKILL.md",
+          "extensions/dataforseo/skills/seo-dataforseo/SKILL.md",
+          "extensions/firecrawl/skills/seo-firecrawl/SKILL.md",
+          "extensions/matomo/skills/seo-matomo/SKILL.md",
+          "extensions/profound/skills/seo-profound/SKILL.md",
+          "extensions/seranking/skills/seo-seranking/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/reelkit",
+      "original_repository": "KonstantinKai/reelkit",
+      "revision": "0a9829aa4ad2eccaa006573085587b2c33f8afe3",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "a4c2fcbf1c968a88b31b32c0c0c363d6cbf430e96b75af1f6e82d1386dddd8f0",
+        "file_count": 1649,
+        "implementation_paths": [
+          "apps/cdn-guard/src/index.ts",
+          "apps/example-angular-e2e/eslint.config.mjs",
+          "apps/example-angular-e2e/playwright.config.ts",
+          "apps/example-angular-e2e/src/slider.spec.ts",
+          "apps/example-angular/eslint.config.mjs",
+          "apps/example-angular/proxy.conf.mjs",
+          "apps/example-angular/src/app/app.config.ts",
+          "apps/example-angular/src/app/app.routes.ts"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/roast-room",
+      "original_repository": "nateherkai/roast-room",
+      "revision": "e40f40652d5690c4d9f928c4794c673a99f2cd0e",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "de3e127326de79494f1341fe734e3659ca52e8f5b158e94dcc97c014a9db9cc0",
+        "file_count": 229,
+        "implementation_paths": [
+          ".claude/skills/newroaster/scripts/add_seat.mjs",
+          ".claude/skills/newroaster/scripts/build_portraits.py",
+          ".claude/skills/newroaster/scripts/check_quotes.mjs",
+          ".claude/skills/newroaster/scripts/fetch.mjs",
+          ".claude/skills/newroaster/scripts/portrait.mjs",
+          ".claude/skills/roast-room/scripts/check_quotes.py",
+          "app/lib/anthropic.mjs",
+          "app/lib/council.mjs"
+        ],
+        "host_workflow_paths": [
+          ".claude/skills/newroaster/SKILL.md",
+          ".claude/skills/roast-room/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/OpenMontage",
+      "original_repository": "calesthio/OpenMontage",
+      "revision": "d21f5d4eaa08422b09c7091757a05affcbabb35b",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "99258db9f4dcf23051a06426badcbf3c590b947625a65a8d1e239e270da09b12",
+        "file_count": 2209,
+        "implementation_paths": [
+          ".agents/skills/beautiful-mermaid/scripts/create-html.ts",
+          ".agents/skills/beautiful-mermaid/scripts/render.ts",
+          ".agents/skills/bfl-api/references/code-examples/python-client.py",
+          ".agents/skills/bfl-api/references/code-examples/typescript-client.ts",
+          ".agents/skills/hyperframes-animation/scripts/animation-map.mjs",
+          ".agents/skills/hyperframes-animation/scripts/package-loader.mjs",
+          ".agents/skills/hyperframes-creative/scripts/contrast-report.mjs",
+          ".agents/skills/hyperframes-creative/scripts/extract-audio-data.py"
+        ],
+        "host_workflow_paths": [
+          ".agents/skills/3d-asset-generation/SKILL.md",
+          ".agents/skills/acestep/SKILL.md",
+          ".agents/skills/agents/SKILL.md",
+          ".agents/skills/ai-video-gen/SKILL.md",
+          ".agents/skills/atlas-cloud/SKILL.md",
+          ".agents/skills/avatar-video/SKILL.md",
+          ".agents/skills/azure-speech-to-text/SKILL.md",
+          ".agents/skills/azure-text-to-speech/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/umami",
+      "original_repository": "umami-software/umami",
+      "revision": "559e3c607c23d2c72d9bd4f6481bda428255323c",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "b992ed9a3196d612ef962bd2b5fefd3dcffa9aadf2c6accfd1eceeba8d80ac70",
+        "file_count": 2026,
+        "implementation_paths": [
+          "docker/proxy.ts",
+          "next.config.ts",
+          "packages/api-client/src/client.test.ts",
+          "packages/api-client/src/client.ts",
+          "packages/api-client/src/errors.ts",
+          "packages/api-client/src/generated/operations.ts",
+          "packages/api-client/src/generated/types.ts",
+          "packages/api-client/src/http.test.ts"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/huashu-art-motion",
+      "original_repository": "alchaincyf/huashu-art-motion",
+      "revision": "8a0d7d72ca65fcce6f8ba82c4a6c8dfe35b8422c",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "c20ffc9dc918f3b565fe1fd22a806b0b75e3a38f366a86a33b3a75f3fe42cd1e",
+        "file_count": 509,
+        "implementation_paths": [
+          "scripts/analyze/breakdown.py",
+          "scripts/analyze/fetch_reference.py",
+          "scripts/analyze/regress_clips.py",
+          "scripts/analyze/side_by_side.py",
+          "scripts/analyze/stress_clip.py",
+          "scripts/capabilities.py",
+          "scripts/check_release.py",
+          "scripts/clip_lint.py"
+        ],
+        "host_workflow_paths": [
+          "SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/VOX-COLLAGE-BROLL",
+      "original_repository": "MegaTroll222/VOX-COLLAGE-BROLL",
+      "revision": "2e9b8a93a2834e4d670700ab9e4827a8baf3b668",
+      "decision": "excluded",
+      "reason": "Instruction-only video recipe; requires a separately obtained MaxFusion integration or user-written replacement scripts.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "8749c660f25a892124049b3eb4c142b706004e1a9f899ca2564d32655ae828c7",
+        "file_count": 9,
+        "implementation_paths": [],
+        "host_workflow_paths": [
+          "SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/onetake",
+      "original_repository": "feitangyuan/onetake",
+      "revision": "abb6d17279cdc749e27e99aa534a062d8fd01ced",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "b1c4da4534269f169d11315a528ffde7b64029564a03239d5b5fb981972f23a5",
+        "file_count": 114,
+        "implementation_paths": [
+          "lib/motion.js",
+          "lib/ui_kit.js",
+          "scripts/analyze_ref.py",
+          "scripts/frame_diff.py",
+          "scripts/gallery.py",
+          "scripts/look.py",
+          "scripts/probe.py",
+          "scripts/record_footage.py"
+        ],
+        "host_workflow_paths": [
+          "SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/hyperframes",
+      "original_repository": "heygen-com/hyperframes",
+      "revision": "a874a6324a5e3dec18ebfea426071f87a7f21373",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "608d7348c5c2abc4e72104bd538744c69ea9a5e3dce830d98f17ea97e6b488a1",
+        "file_count": 9810,
+        "implementation_paths": [
+          ".agents/skills/changelog-video/scripts/align-captions.mjs",
+          ".agents/skills/motion-doctrine/scripts/seam-gate.mjs",
+          ".agents/skills/motion-doctrine/scripts/seam-stamp.mjs",
+          ".claude/skills/changelog-video/scripts/align-captions.mjs",
+          ".claude/skills/motion-doctrine/scripts/seam-gate.mjs",
+          ".claude/skills/motion-doctrine/scripts/seam-stamp.mjs",
+          "commitlint.config.js",
+          "knip.config.ts"
+        ],
+        "host_workflow_paths": [
+          ".agents/skills/captions-overlay/SKILL.md",
+          ".agents/skills/changelog-video/SKILL.md",
+          ".agents/skills/cut-the-curve/SKILL.md",
+          ".agents/skills/motion-doctrine/SKILL.md",
+          ".agents/skills/oversized-cursor/SKILL.md",
+          ".agents/skills/seam-craft/SKILL.md",
+          ".claude/skills/captions-overlay/SKILL.md",
+          ".claude/skills/changelog-video/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/geo-seo-claude",
+      "original_repository": "zubair-trabzada/geo-seo-claude",
+      "revision": "989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "6ee85c5466a3c4d5b5573f5055de275e5a0a5ca6298332b393942cd60930f687",
+        "file_count": 71,
+        "implementation_paths": [
+          "scripts/brand_scanner.py",
+          "scripts/citability_scorer.py",
+          "scripts/crm_dashboard.py",
+          "scripts/fetch_page.py",
+          "scripts/llmstxt_generator.py",
+          "scripts/webapp/app.py",
+          "white-label/brand_config.py"
+        ],
+        "host_workflow_paths": [
+          "geo/SKILL.md",
+          "skills/geo-audit/SKILL.md",
+          "skills/geo-brand-mentions/SKILL.md",
+          "skills/geo-citability/SKILL.md",
+          "skills/geo-compare/SKILL.md",
+          "skills/geo-content/SKILL.md",
+          "skills/geo-crawlers/SKILL.md",
+          "skills/geo-llmstxt/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/hypit",
+      "original_repository": "hypit-ai/hypit",
+      "revision": "2d31e88765e297f0795348b460c77a6067f12261",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "4a58c61016561cef90afdb46bcc85a24dae0cd78bf2544d969369952ff956cef",
+        "file_count": 1710,
+        "implementation_paths": [
+          ".puppeteerrc.cjs",
+          "bin/hypit.mjs",
+          "packages/admission/src/index.ts",
+          "packages/atomic-file/src/index.ts",
+          "packages/atomic-file/src/replace-file-windows.ts",
+          "packages/atomic-file/src/replace-file.ts",
+          "packages/audio-track/src/activation.ts",
+          "packages/audio-track/src/component.ts"
+        ],
+        "host_workflow_paths": [
+          "skills/hypit/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/pentagi",
+      "original_repository": "vxcontrol/pentagi",
+      "revision": "cffed9485aa1cca70762cd08a57ac62a80406258",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "b184808b1e84df1dc806e3a4216f84f70dc0330a122d757bae342cde71268147",
+        "file_count": 1728,
+        "implementation_paths": [
+          "backend/cmd/ctester/main.go",
+          "backend/cmd/ctester/main_test.go",
+          "backend/cmd/ctester/models.go",
+          "backend/cmd/ctester/report.go",
+          "backend/cmd/ctester/report_test.go",
+          "backend/cmd/ctester/utils.go",
+          "backend/cmd/ctester/utils_test.go",
+          "backend/cmd/etester/flush.go"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/Wan2.2",
+      "original_repository": "Wan-Video/Wan2.2",
+      "revision": "1ea34ff48f87168174e12956e200b1d908b1c5ff",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "40222cb3a66cc89aa1cd84589d1fa696806c93c09cf1c4383b3994139202dfa1",
+        "file_count": 87,
+        "implementation_paths": [
+          "generate.py",
+          "wan/__init__.py",
+          "wan/animate.py",
+          "wan/configs/__init__.py",
+          "wan/configs/shared_config.py",
+          "wan/configs/wan_animate_14B.py",
+          "wan/configs/wan_i2v_A14B.py",
+          "wan/configs/wan_s2v_14B.py"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/harvey",
+      "original_repository": "ethanplusai/harvey",
+      "revision": "6b6a23a789090e165802baef4104ee4618a3e169",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "a1e2301c27613b1b6e72cf61af83fcad685bedabf3cc67185805dd54f84dc0e0",
+        "file_count": 195,
+        "implementation_paths": [
+          "harvey/__init__.py",
+          "harvey/__main__.py",
+          "harvey/agents/__init__.py",
+          "harvey/agents/analyst.py",
+          "harvey/agents/handler.py",
+          "harvey/agents/scout.py",
+          "harvey/agents/sender.py",
+          "harvey/agents/writer.py"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/compound-engineering-plugin",
+      "original_repository": "EveryInc/compound-engineering-plugin",
+      "revision": "173bd337fa639aac19ce7363d288836a074231a5",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "e9bf58531fc2830a22b22393462f9bb778e58a3ba077209d42b5df4de5d83f5b",
+        "file_count": 2042,
+        "implementation_paths": [
+          ".opencode/plugins/compound-engineering.js",
+          ".pi/extensions/compound-engineering.ts",
+          "assets/explainer/ce-explainer.js",
+          "index.js",
+          "scripts/bump-acpx-pin.ts",
+          "scripts/ci-scope.ts",
+          "scripts/codex-dev.ts",
+          "scripts/release/preview.ts"
+        ],
+        "host_workflow_paths": [
+          ".agents/skills/ce-skill-work/SKILL.md",
+          ".claude/commands/triage-prs.md",
+          "skills/ce-babysit-pr/SKILL.md",
+          "skills/ce-bakeoff/SKILL.md",
+          "skills/ce-brainstorm/SKILL.md",
+          "skills/ce-code-review/SKILL.md",
+          "skills/ce-commit-push-pr/SKILL.md",
+          "skills/ce-commit/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/magic-mcp",
+      "original_repository": "21st-dev/magic-mcp",
+      "revision": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
+      "decision": "excluded",
+      "reason": "Legacy compatibility proxy replaced by a separately hosted 21st MCP; not a self-contained capability implementation in this repository.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "3525241fe094188862f3bea44471d1581813cbef2edccce4a1051c0fcf7bc76f",
+        "file_count": 21,
+        "implementation_paths": [
+          "src/index.ts"
+        ],
+        "host_workflow_paths": [
+          "skills/21st-ui/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/moonshine",
+      "original_repository": "moonshine-ai/moonshine",
+      "revision": "d8d8fa29d05ca67441a7719e70099f9f48917a93",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "d926d3014c16cef47ec002f40c61eac3a0b47e07e1dd72b2ceaeb5d75fa81b2d",
+        "file_count": 2395,
+        "implementation_paths": [
+          "core/benchmark.cpp",
+          "core/bin-tokenizer/bin-tokenizer-test.cpp",
+          "core/bin-tokenizer/bin-tokenizer.cpp",
+          "core/clone-clip-eval.cpp",
+          "core/clone-clip-test.cpp",
+          "core/clone-clip.cpp",
+          "core/context-biaser-test.cpp",
+          "core/context-biaser.cpp"
+        ],
+        "host_workflow_paths": [
+          ".agents/skills/moonshine-voice/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/awesome-llm-apps",
+      "original_repository": "Shubhamsaboo/awesome-llm-apps",
+      "revision": "c129f31036f5ba0bba42cbb63937a66946fdf2c0",
+      "decision": "excluded",
+      "reason": "Collection of separate examples and templates rather than one integrated maintained delivery path; individual apps can be reviewed as separate candidates.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "91e321c262b6c6be2de89bb66d4d6f5874ea0010f4793a5bf9701982924ee6af",
+        "file_count": 1988,
+        "implementation_paths": [
+          "advanced_ai_agents/autonomous_game_playing_agent_apps/ai_3dpygame_r1/ai_3dpygame_r1.py",
+          "advanced_ai_agents/autonomous_game_playing_agent_apps/ai_chess_agent/ai_chess_agent.py",
+          "advanced_ai_agents/autonomous_game_playing_agent_apps/ai_tic_tac_toe_agent/agents.py",
+          "advanced_ai_agents/autonomous_game_playing_agent_apps/ai_tic_tac_toe_agent/app.py",
+          "advanced_ai_agents/autonomous_game_playing_agent_apps/ai_tic_tac_toe_agent/test_app.py",
+          "advanced_ai_agents/autonomous_game_playing_agent_apps/ai_tic_tac_toe_agent/utils.py",
+          "advanced_ai_agents/multi_agent_apps/agent_teams/ag2_adaptive_research_team/agents.py",
+          "advanced_ai_agents/multi_agent_apps/agent_teams/ag2_adaptive_research_team/app.py"
+        ],
+        "host_workflow_paths": [
+          "agent_skills/advisor-orchestrator-worker/SKILL.md",
+          "agent_skills/commit-archaeologist/SKILL.md",
+          "agent_skills/dependency-doctor/SKILL.md",
+          "agent_skills/first-reader/SKILL.md",
+          "agent_skills/project-graveyard/SKILL.md",
+          "agent_skills/scope-creep-detector/SKILL.md",
+          "agent_skills/thinking-out-loud/SKILL.md",
+          "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/chatgpt-app-builder/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/andrej-karpathy-skills",
+      "original_repository": "multica-ai/andrej-karpathy-skills",
+      "revision": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "decision": "excluded",
+      "reason": "Coding-behavior advice in a single CLAUDE.md; no implemented input-to-output tool or complete executable workflow.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "daf314efb31894b86d68b67786c820bd8470bb2126e578ba9cd0e3e2667883f8",
+        "file_count": 9,
+        "implementation_paths": [],
+        "host_workflow_paths": [
+          "skills/karpathy-guidelines/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/superplane",
+      "original_repository": "superplanehq/superplane",
+      "revision": "37c6198b757bb09bc00b1955da4ae1f238a06e39",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "939ff8964b14de9f695c59a8f188a096981e4543c66d2f74a6e46b119efabdba",
+        "file_count": 10295,
+        "implementation_paths": [
+          "cmd/cli/main.go",
+          "cmd/fleetmanager/main.go",
+          "cmd/fleetmanager/main_test.go",
+          "cmd/fleetmanager/sync_fleets.go",
+          "cmd/runner/main.go",
+          "cmd/runner/main_test.go",
+          "cmd/server/main.go",
+          "ee/billing/development/reset.go"
+        ],
+        "host_workflow_paths": [
+          ".agents/skills/clean-code/SKILL.md",
+          ".agents/skills/commit-and-pr-messages/SKILL.md",
+          ".agents/skills/pre-pipeline-review/SKILL.md",
+          ".agents/skills/refine-task-plan-format/SKILL.md",
+          ".agents/skills/refine-task-scoring/SKILL.md",
+          ".agents/skills/refine-task-workflow/SKILL.md",
+          ".agents/skills/simplified-technical-english/SKILL.md",
+          ".agents/skills/test-audit/SKILL.md"
+        ],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/indra",
+      "original_repository": "datalab-to/indra",
+      "revision": "ca81e18f7403435a3545c8c8ae9c4a1cecdd32a4",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "62e612a68c375ed19a3d6a353414b31c4fe11220223f55eef0ec3851eb6611ad",
+        "file_count": 58,
+        "implementation_paths": [
+          "bench/opb_indra.py",
+          "indra_ocr/__init__.py",
+          "indra_ocr/__main__.py",
+          "indra_ocr/cli.py",
+          "indra_ocr/det_post.py",
+          "indra_ocr/document.py",
+          "indra_ocr/layout_post.py",
+          "indra_ocr/line_mask.py"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    },
+    {
+      "repository": "saurabhmisal/sill",
+      "original_repository": "Saffsanity/sill",
+      "revision": "41e8cb8801f8e9d387e27a0d498dee193d17e9ec",
+      "decision": "included",
+      "reason": "Reviewed source tree and README document an input-to-output application, library/CLI or complete host-agent workflow. Retained as an attributed design reference; a Power Chords execution adapter is not verified.",
+      "runtime_verified": false,
+      "evidence": {
+        "review_type": "static_documentation_and_source_tree",
+        "readme_sha256": "46b1c49efa8a129754d0105894587b1b200dc5ceac6f1a79ad867505734e2dfb",
+        "file_count": 543,
+        "implementation_paths": [
+          "Package.swift",
+          "Scripts/asc.swift",
+          "Scripts/audio/main.swift",
+          "Scripts/audio/run.py",
+          "Scripts/audio/summarize.py",
+          "Scripts/audiocheck.swift",
+          "Scripts/dmg-layout/DMGLayout.swift",
+          "Scripts/dmg-layout/DSStore.swift"
+        ],
+        "host_workflow_paths": [],
+        "runtime_executed": false
+      }
+    }
+  ]
+}

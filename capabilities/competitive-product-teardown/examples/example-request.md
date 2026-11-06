@@ -1,4 +1,4 @@
-# Competitive product teardown: Example request
+# Competitive Research Prism: Example request
 
 > Compare three customer support platforms for a 50-person operations team.
 

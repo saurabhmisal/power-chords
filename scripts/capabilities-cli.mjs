@@ -12,8 +12,8 @@ const args=process.argv.slice(2);
 const command=args.shift()||'help';
 const value=(flag)=>{const idx=args.indexOf(flag);if(idx<0)return null;const v=args[idx+1];if(!v||v.startsWith('--'))throw new Error(`${flag} needs a value`);return v;};
 const has=(flag)=>args.includes(flag);
-const find=(term)=>capabilities.find(c=>c.id===String(term).padStart(2,'0')||c.slug===term||('power-chords-'+c.slug)===term);
-const help=`Power Chords — 52 portable capability instruction packs
+const find=(term)=>capabilities.find(c=>c.id===String(term).padStart(2,'0')||c.slug===term||('power-chords-'+c.slug)===term||c.name.toLowerCase()===String(term).toLowerCase());
+const help=`Power Chords — portable capability instruction packs
 Usage:
   node scripts/capabilities-cli.mjs list
   node scripts/capabilities-cli.mjs show 10
@@ -27,7 +27,7 @@ async function isPresent(path){try{return await lstat(path)}catch(e){if(e.code==
 try {
   if(command==='help'||has('--help')){process.stdout.write(help);process.exit(0)}
   if(command==='list'){
-    for(const c of capabilities)console.log(`${c.id}  ${c.slug.padEnd(48)}  ${c.implementation}`);
+    for(const c of capabilities)console.log(`${c.id}  ${c.name.padEnd(40)}  ${c.slug}  ${c.implementation}`);
     process.exit(0);
   }
   if(command==='show'){

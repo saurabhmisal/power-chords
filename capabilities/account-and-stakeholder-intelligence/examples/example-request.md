@@ -1,4 +1,4 @@
-# Account and stakeholder intelligence: Example request
+# Sales Research Beacon: Example request
 
 > Prepare a stakeholder map for a hospital CIO onboarding an analytics platform.
 

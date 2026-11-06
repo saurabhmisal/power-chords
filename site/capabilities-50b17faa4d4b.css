@@ -1,0 +1,50 @@
+#pc-site [hidden]{display:none!important}
+#pc-site .pc-library-filters{display:grid;grid-template-columns:2fr 1fr auto;gap:16px;align-items:end;margin:28px 0 14px}
+#pc-site .pc-library-filters input,#pc-site .pc-library-filters select{width:100%;max-width:100%;padding:12px;border:1px solid var(--pc-line);border-radius:8px;background:#141d16;color:var(--pc-text)}
+#pc-site .pc-library-status{color:var(--pc-muted);font-size:13px;margin-bottom:24px}
+#pc-site .capability-card{position:relative;min-width:0;display:flex;flex-direction:column}
+#pc-site .capability-card .pc-core{font-size:11px;letter-spacing:.06em;color:var(--pc-green);text-transform:uppercase;margin:0 0 12px}
+#pc-site .capability-card h3{font-size:22px;line-height:1.25;overflow-wrap:anywhere}
+#pc-site .capability-card>p{flex:0}
+#pc-site .capability-card .pc-card-actions{margin-top:auto;padding-top:20px;display:flex;gap:16px;flex-wrap:wrap}
+#pc-site .pc-badge{display:inline-flex;width:fit-content;font-size:11px;padding:5px 9px;border:1px solid #607b6255;color:#bfd9c4;border-radius:6px;background:#233b2755;margin:8px 0}
+#pc-site .pc-badge-tool{background:#3d322655;color:#e9c997;border-color:#886d4544}
+#pc-site .pc-how{padding-block:50px;border-top:1px solid var(--pc-line)}
+#pc-site .pc-how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+#pc-site .pc-how-grid h3{font-size:19px}
+#pc-site .pc-how-grid p{color:var(--pc-muted);font-size:14px}
+#pc-site .pc-detail{padding-block:28px 50px}
+#pc-site .pc-breadcrumb{display:flex;gap:10px;flex-wrap:wrap;color:var(--pc-muted);font-size:13px;margin-bottom:38px}
+#pc-site .pc-detail-hero{display:grid;grid-template-columns:1.5fr 1fr;gap:50px;align-items:start;margin-bottom:48px}
+#pc-site .pc-detail h1{font-size:clamp(34px,5vw,64px);line-height:1.05;letter-spacing:-.04em;margin:14px 0 22px;max-width:800px}
+#pc-site .pc-detail .pc-lead{font-size:21px;max-width:740px}
+#pc-site .pc-facts{border:1px solid var(--pc-line);border-radius:16px;padding:22px;background:var(--pc-panel);font-size:14px}
+#pc-site .pc-facts dt{font-size:11px;letter-spacing:.06em;color:var(--pc-green);text-transform:uppercase;margin-bottom:6px}
+#pc-site .pc-facts dd{margin:0 0 20px;overflow-wrap:anywhere}
+#pc-site .pc-facts dd:last-child{margin:0}
+#pc-site .pc-detail-section{padding-block:32px;border-top:1px solid var(--pc-line);scroll-margin-top:24px}
+#pc-site .pc-detail-section h2{font-size:clamp(25px,3vw,36px);letter-spacing:-.025em;margin:6px 0 14px}
+#pc-site .pc-detail-section>p{color:var(--pc-muted);max-width:840px}
+#pc-site .pc-demo{margin:22px 0 14px;border:1px solid var(--pc-line);border-radius:16px;overflow:hidden;background:#121b16}
+#pc-site .pc-demo img{display:block;width:100%;height:auto;aspect-ratio:800/450}
+#pc-site .pc-demo figcaption{padding:14px 20px;font-size:12px;color:var(--pc-muted);border-top:1px solid var(--pc-line)}
+#pc-site .pc-demo-controls{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+#pc-site .pc-io-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin:24px 0}
+#pc-site .pc-io-card{padding:24px;background:var(--pc-panel);border:1px solid var(--pc-line);border-radius:12px;min-width:0}
+#pc-site .pc-io-card h3{margin-top:0;font-size:17px}
+#pc-site .pc-io-card li{margin:8px 0;color:var(--pc-muted);font-size:14px}
+#pc-site .pc-flow{list-style:none;margin:24px 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 26px;counter-reset:flow}
+#pc-site .pc-flow li{position:relative;border:1px solid var(--pc-line);border-radius:12px;padding:20px;background:#18241c;min-width:0;min-height:145px}
+#pc-site .pc-flow li:not(:last-child)::after{content:'↓';position:absolute;left:50%;bottom:-29px;font-size:21px;color:#a5c9aa}
+#pc-site .pc-flow span{display:block;font:11px ui-monospace,monospace;letter-spacing:.04em;color:var(--pc-green);margin-bottom:12px}
+#pc-site .pc-flow p{font-size:14px;line-height:1.5;margin:0}
+#pc-site .pc-flow .pc-flow-input{border-color:#57775f;background:#1c3324}
+#pc-site .pc-flow .pc-flow-output{border-color:#c2d87077;background:#28331a}
+#pc-site .pc-review-gate{padding:20px 24px;border-left:3px solid var(--pc-accent);background:#25311e;border-radius:0 9px 9px 0;font-size:14px;margin-top:26px}
+#pc-site .pc-prompt{white-space:pre-wrap;overflow-wrap:anywhere;background:#0c120e;border:1px solid var(--pc-line);border-radius:12px;padding:24px;font:14px/1.7 ui-monospace,monospace;margin:18px 0}
+#pc-site .pc-related{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+#pc-site .pc-related a{padding:12px 16px;border:1px solid var(--pc-line);border-radius:8px;font-size:13px}
+#pc-site .pc-notices{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.7 ui-monospace,monospace}
+#pc-site a:focus-visible,#pc-site button:focus-visible,#pc-site input:focus-visible,#pc-site select:focus-visible{outline:2px solid var(--pc-accent);outline-offset:4px}
+@media(min-width:761px){#pc-site .pc-flow li:not(:last-child)::after{content:'→';left:auto;right:-23px;top:50%;bottom:auto}#pc-site .pc-flow li:nth-child(4){grid-row:2;grid-column:3}#pc-site .pc-flow li:nth-child(5){grid-row:2;grid-column:2}#pc-site .pc-flow li:nth-child(6){grid-row:2;grid-column:1}#pc-site .pc-flow li:nth-child(7){grid-row:3;grid-column:1}#pc-site .pc-flow li:nth-child(8){grid-row:3;grid-column:2}#pc-site .pc-flow li:nth-child(9){grid-row:3;grid-column:3}#pc-site .pc-flow li:nth-child(3)::after,#pc-site .pc-flow li:nth-child(6)::after{content:'↓';top:auto;bottom:-29px;right:50%}#pc-site .pc-flow li:nth-child(4):not(:last-child)::after,#pc-site .pc-flow li:nth-child(5):not(:last-child)::after{content:'←';left:-23px;right:auto}}
+@media(max-width:760px){#pc-site .pc-library-filters{grid-template-columns:1fr}#pc-site .pc-detail-hero,#pc-site .pc-io-grid,#pc-site .pc-how-grid{grid-template-columns:1fr;gap:20px}#pc-site .pc-flow{grid-template-columns:1fr}#pc-site .pc-detail h1{font-size:42px}#pc-site .pc-flow li{min-height:0}#pc-site .pc-breadcrumb{margin-bottom:22px}#pc-site .pc-demo figcaption{padding:12px}#pc-site .pc-detail-hero{margin-bottom:28px}#pc-site .pc-detail .pc-lead{font-size:18px}}

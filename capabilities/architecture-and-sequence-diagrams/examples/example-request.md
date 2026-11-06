@@ -1,4 +1,4 @@
-# Architecture and sequence diagrams: Example request
+# Architecture Diagrams Schematic: Example request
 
 > Draw a sequence diagram for customer OAuth consent and token refresh.
 

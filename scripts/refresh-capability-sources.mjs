@@ -15,7 +15,7 @@ for(const capability of data.capabilities){
   if(!names?.length)throw new Error('Missing capability source map: '+capability.id);
   capability.source_reviewed_at=review.checked_at;
   capability.source_guidance=[
-    'Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.',
+    'Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.',
     'Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.'
   ];
   if(['08','09','17','18','23'].includes(capability.id))capability.source_guidance.push('Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source.');

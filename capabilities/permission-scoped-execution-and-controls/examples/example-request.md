@@ -1,4 +1,4 @@
-# Permission-scoped execution and controls: Example request
+# Permission Controls Vault: Example request
 
 > Define a permissions model for an agent reading tickets and drafting replies.
 

@@ -1,6 +1,6 @@
-# Video demos and educational content
+# Video Creation Storyboard
 
-> **Power Chords 42** · Voice & Media · **Instruction pack; adapter required** — portable procedure provided, but automatic external execution is not bundled.
+> **Power Chords 42** · Voice & Media · **Codex workspace** — first-party local input-to-artifact execution with Codex reasoning and specialist processing where needed. Portable instructions require the host agent’s own tools.
 
 Create explainers and product demos. This guide is a standalone, function-named skill with a repeatable operating procedure.
 
@@ -39,7 +39,7 @@ This copies portable instructions into the selected project's agent skill direct
 
 ### Example request
 
-> Use the Power Chords **Video demos and educational content** skill. Create a 90-second walkthrough for an enterprise integration dashboard. Show your evidence, assumptions, next actions and clearly distinguish verified output from proposals.
+> Use the Power Chords **Video Creation Storyboard** skill. Create a 90-second walkthrough for an enterprise integration dashboard. Show your evidence, assumptions, next actions and clearly distinguish verified output from proposals.
 
 ### Operating procedure
 
@@ -65,9 +65,9 @@ This copies portable instructions into the selected project's agent skill direct
 
 ## Current implementation
 
-No native runtime adapter currently executes this capability independently. The skill supplies instructions and output rules to a host AI agent; operations requiring specialized tools must be carried out by tools that your agent actually supports.
+Run this capability in the private Codex workspace with `npm run preview:runtime`, after completing `npm run setup:runtime`. Select **Video Creation Storyboard**, load its synthetic working example or supply your own evidence, and inspect files and execution receipts. See [runtime guide](../../docs/CODEX_RUNTIME.md) for inputs, limits and verification. The optional older Workroom drafting flows remain separate.
 
-**Implementation status:** `adapter_required`. The agent-portable SKILL.md is immediately usable as an instruction pack. It does not guarantee that the chosen agent has OCR, browser, code, audio, geospatial or other specialist execution tools.
+**Legacy Workroom classification:** `adapter_required`. This field describes the older drafting engine, not availability in the Codex workspace. The agent-portable SKILL.md is immediately usable as an instruction pack. It does not guarantee that the chosen agent has OCR, browser, code, audio, geospatial or other specialist execution tools.
 
 ## Permissions and safety
 
@@ -79,6 +79,36 @@ A first-party executable adapter must implement the stable input/output contract
 
 [← All capabilities](../../docs/CAPABILITY_GUIDES.md) · [Main README](../../README.md)
 
+## Visual walkthrough
+
+![Video Creation Storyboard illustrative workflow](../../assets/capability-demos/video-demos-and-educational-content.gif)
+
+Illustrative process animation, not recorded runtime execution. [Open the Power Chords capability page](https://powerchords.lazo.tools/capabilities/video-demos-and-educational-content/) for motion controls and the complete workflow diagram.
+
+## Workflow diagram
+
+```mermaid
+flowchart TD
+  input["Your context and required inputs"]
+  step0["Define audience and storyboard"]
+  step1["Gather approved screenshots or recordings"]
+  step2["Capture or generate media with available runtimes"]
+  step3["Edit captions and sequencing"]
+  step4["Verify claims, consent and licensing"]
+  review["Review evidence and validate deliverables"]
+  approval{"External action approved?"}
+  finish["Deliver or publish approved result"]
+  input --> step0
+  step0 --> step1
+  step1 --> step2
+  step2 --> step3
+  step3 --> step4
+  step4 --> review
+  review --> approval
+  approval -- Yes --> finish
+  approval -- Revise --> step0
+```
+
 ## Reviewed upstream references
 
 Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
@@ -89,7 +119,6 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 - [lemomo-ai/lemo-opuscar at bebbbe1aa92a](https://github.com/lemomo-ai/lemo-opuscar/blob/bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [calesthio/OpenMontage at d21f5d4eaa08](https://github.com/calesthio/OpenMontage/blob/d21f5d4eaa08422b09c7091757a05affcbabb35b/README.md) — catalog license: AGPL-3.0; reference only, adapter execution not verified.
 - [alchaincyf/huashu-art-motion at 8a0d7d72ca65](https://github.com/alchaincyf/huashu-art-motion/blob/8a0d7d72ca65fcce6f8ba82c4a6c8dfe35b8422c/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [MegaTroll222/VOX-COLLAGE-BROLL at 2e9b8a93a283](https://github.com/MegaTroll222/VOX-COLLAGE-BROLL/blob/2e9b8a93a2834e4d670700ab9e4827a8baf3b668/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
 - [feitangyuan/onetake at abb6d17279cd](https://github.com/feitangyuan/onetake/blob/abb6d17279cdc749e27e99aa534a062d8fd01ced/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
 - [heygen-com/hyperframes at a874a6324a5e](https://github.com/heygen-com/hyperframes/blob/a874a6324a5e3dec18ebfea426071f87a7f21373/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 - [hypit-ai/hypit at 2d31e88765e2](https://github.com/hypit-ai/hypit/blob/2d31e88765e297f0795348b460c77a6067f12261/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
@@ -97,12 +126,11 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 
 ### Source-aware operating guidance
 
-- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - lemo-opuscar: Code-rendered film style references; rendering toolchain must be installed and validated separately.
 - OpenMontage: Agentic production reference; AGPL license and external media toolchain require review.
 - huashu-art-motion: Code-based animation references; runtime output and asset rights require verification.
-- VOX-COLLAGE-BROLL: Collage video instruction reference; license classification and MaxFusion access need review.
 - onetake: Continuous-camera launch film reference; review license and verify continuity/rendering claims.
 - hyperframes: HTML-to-video rendering adapter candidate; rendering and external tools remain separate dependencies.
 - hypit: Video variation reference; verify license, consent, likeness rights and source-asset permissions before reuse.

@@ -2,6 +2,8 @@
 
 Power Chords does not automatically execute GitHub repository content. Adding a truly operational external capability requires a reviewed integration, not merely a repository URL.
 
+The implemented first-party Codex workspace is documented in [CODEX_RUNTIME.md](CODEX_RUNTIME.md). Its concrete integrations are not an arbitrary executable-plugin host; the interface below remains a proposed extension contract.
+
 ## Runtime lifecycle
 
 1. **Discover** — identify version, upstream owner, license, dependencies and code signatures.

@@ -1,4 +1,4 @@
-# Speech transcription and meeting notes: Example request
+# Speech Transcription Scribe: Example request
 
 > Transcribe a recorded customer integration workshop and list commitments.
 

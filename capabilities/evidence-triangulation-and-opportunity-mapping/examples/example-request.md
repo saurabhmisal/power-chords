@@ -1,4 +1,4 @@
-# Evidence triangulation and opportunity mapping: Example request
+# Evidence Mapping Mosaic: Example request
 
 > Synthesize support tickets and onboarding analytics into an opportunity map.
 

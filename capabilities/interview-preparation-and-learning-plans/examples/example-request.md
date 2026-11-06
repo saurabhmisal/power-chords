@@ -1,4 +1,4 @@
-# Interview preparation and learning plans: Example request
+# Interview Preparation Rehearsal: Example request
 
 > Prepare for a principal PM interview focused on enterprise integrations.
 

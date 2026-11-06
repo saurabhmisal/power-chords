@@ -1,4 +1,4 @@
-# Funnel, retention and operational diagnostics: Example request
+# Funnel Diagnostics Pulse: Example request
 
 > Identify where users abandon a 4-step integration wizard.
 

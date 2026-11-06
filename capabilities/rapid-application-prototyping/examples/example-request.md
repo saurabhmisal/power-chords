@@ -1,4 +1,4 @@
-# Rapid application prototyping: Example request
+# App Prototyping Foundry: Example request
 
 > Create a minimal dashboard for viewing delivery exceptions by partner.
 

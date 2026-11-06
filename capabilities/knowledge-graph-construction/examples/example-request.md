@@ -1,4 +1,4 @@
-# Knowledge graph construction: Example request
+# Knowledge Graph Constellation: Example request
 
 > Build a graph connecting accounts, APIs, feature requests and blocked launches.
 

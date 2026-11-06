@@ -1,4 +1,4 @@
-# Codebase navigation and explanation: Example request
+# Codebase Exploration Lantern: Example request
 
 > Explain how authentication flows from the web route to the database layer.
 

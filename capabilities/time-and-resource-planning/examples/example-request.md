@@ -1,4 +1,4 @@
-# Time and resource planning: Example request
+# Resource Planning Cadence: Example request
 
 > Plan a two-sprint rollout for three engineers and one designer.
 

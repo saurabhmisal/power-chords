@@ -1,0 +1,16 @@
+Pillow==13.0.0
+pypdf==7.0.0
+python-docx==1.2.0
+numpy==2.4.6
+imageio-ffmpeg==0.8.1
+fastembed==0.9.1
+faster-whisper==1.2.1
+torch==2.8.0
+torchaudio==2.8.0
+demucs==4.1.0
+soundfile==0.14.0
+quickjs==1.19.4
+pypdfium2==5.15.0
+reportlab==5.1.0
+openpyxl==3.1.5
+python-pptx==1.0.2

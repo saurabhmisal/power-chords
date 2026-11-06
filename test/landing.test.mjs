@@ -8,31 +8,46 @@ import {buildLanding} from '../scripts/landing.mjs';
 
 const root=resolve(import.meta.dirname,'..');
 const {capabilities}=JSON.parse(await readFile(join(root,'data/capability-guides.json'),'utf8'));
-test('landing builds include every capability with exact portable instructions and valid local assets',async()=>{
+test('landing builds include complete standalone instructions and valid capability pages and assets',async()=>{
   const destination=await mkdtemp(join(tmpdir(),'power-chords-landing-'));
   try{
     await buildLanding(destination);
     const html=await readFile(join(destination,'index.html'),'utf8');
     assert(!html.includes('{{'));
-    const additions=JSON.parse(await readFile(join(root,'data/source-additions.json'),'utf8'));
-    assert.equal((html.match(/class="pc-source-card"/g)||[]).length,additions.length);
-    for(const source of additions){
-      assert(html.includes(`https://github.com/${source.repository}`));
-      assert(html.includes(`/tree/${source.upstream_sha}`));
-      assert(html.includes(source.name));
-    }
-    assert(html.includes('Reference only'));
+    assert(!html.includes('pc-source-card'));
+    assert(!/pinned upstream/i.test(html));
     assert.match(html,/src="landing-[a-f0-9]{12}\.js"/);
-    assert(html.includes('review required'));
     assert.equal((html.match(/class="capability-card"/g)||[]).length,capabilities.length);
     assert(!/52 capabilities|52 repos/i.test(html));
     assert(!html.includes('href="workroom.html"'));
     for(const item of capabilities){
       assert(html.includes(`data-install="${item.slug}"`));
-      assert.equal(await readFile(join(destination,'downloads',item.slug+'.md'),'utf8'),await readFile(join(root,'capabilities',item.slug,'SKILL.md'),'utf8'));
+      assert(html.includes(`href="capabilities/${item.slug}/index.html"`));
+      const page=await readFile(join(destination,'capabilities',item.slug,'index.html'),'utf8');
+      assert(page.includes(item.name.replaceAll('&','&amp;')));
+      assert(page.includes('workflow diagram'));
+      assert(page.includes('not a recording of live execution'));
+      assert(page.includes('data-demo-toggle'));
+      assert(!page.includes('Download GIF'));
+      assert(!page.includes('Play workflow GIF'));
+      assert(page.includes(`src="../../assets/capability-demos/${item.slug}.gif"`));
+      assert(page.includes('data-reduced-poster'));
+      assert(page.includes('analytics.js'));
+      assert(!/pinned upstream|Your fork/.test(page));
+      assert(page.includes('Codex workspace'));
+      for(const ext of ['gif','png'])assert((await stat(join(destination,'assets/capability-demos',item.slug+'.'+ext))).size>1000);
+      const gif=await readFile(join(destination,'assets/capability-demos',item.slug+'.gif'));
+      assert.equal(gif.toString('ascii',0,6),'GIF89a');
+      for(const match of page.matchAll(/(?:href|src|data-gif|data-poster)="([^"#]+)"/g)){
+        if(!match[1].startsWith('https://'))await stat(resolve(destination,'capabilities',item.slug,match[1].split(/[?#]/)[0]));
+      }
+      const instructions=await readFile(join(root,'capabilities',item.slug,'SKILL.md'),'utf8');
+      const download=await readFile(join(destination,'downloads',item.slug+'.md'),'utf8');
+      assert.equal(download,instructions.replace('[README.md](README.md)',`[complete capability guide](https://powerchords.lazo.tools/capabilities/${item.slug}/)`));
+      assert(!download.includes('](README.md)'));
     }
     for(const match of html.matchAll(/(?:href|src)="([^"#]+)"/g)){
-      if(!match[1].startsWith('https://'))await stat(join(destination,match[1]));
+      if(!match[1].startsWith('https://'))await stat(join(destination,match[1].split(/[?#]/)[0]));
     }
     await buildLanding(destination,{hosted:true});
     assert((await readFile(join(destination,'index.html'),'utf8')).includes('href="workroom.html"'));

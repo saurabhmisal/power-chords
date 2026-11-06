@@ -28,6 +28,9 @@
     "capabilities:install": "node scripts/capabilities-cli.mjs install",
     "capabilities:docs": "node scripts/generate-capability-docs.mjs",
     "validate:capabilities": "node scripts/validate-capabilities.mjs",
+    "setup:runtime": "node scripts/setup-runtime.mjs",
+    "preview:runtime": "node src/runtime/server.mjs",
+    "verify:runtime": "node scripts/verify-runtime.mjs",
     "knowledge:ingest": "node workflows/reel-to-knowledge/cli.mjs ingest",
     "knowledge:search": "node workflows/reel-to-knowledge/cli.mjs search",
     "knowledge:list": "node workflows/reel-to-knowledge/cli.mjs list",
@@ -38,7 +41,7 @@
   },
   "author": "Saurabh Misal (https://github.com/saurabhmisal)",
   "license": "MIT",
-  "description": "Power Chords: portable agent skills and a cohesive local Workroom for product builders",
+  "description": "Power Chords: portable agent skills and a private Codex workspace for product builders",
   "repository": {
     "type": "git",
     "url": "https://github.com/saurabhmisal/power-chords.git"

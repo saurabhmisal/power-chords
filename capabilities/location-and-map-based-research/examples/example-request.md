@@ -1,4 +1,4 @@
-# Location and map-based research: Example request
+# Location Research Waypoint: Example request
 
 > Compare three candidate regions for deploying a delivery micro-hub.
 

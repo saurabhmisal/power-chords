@@ -1,4 +1,4 @@
-# Career and opportunity research: Example request
+# Career Research Scout: Example request
 
 > Find senior technical product roles matching API platform leadership.
 

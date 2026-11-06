@@ -1,4 +1,4 @@
-# Outcome-oriented roadmapping: Example request
+# Product Roadmap Horizon: Example request
 
 > Create a two-quarter roadmap to improve partner onboarding activation.
 

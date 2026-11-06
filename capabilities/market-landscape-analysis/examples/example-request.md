@@ -1,4 +1,4 @@
-# Market landscape analysis: Example request
+# Market Research Atlas: Example request
 
 > Size the Indian mid-market opportunity for an API-based expense reconciliation tool.
 

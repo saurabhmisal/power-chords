@@ -1,4 +1,4 @@
-# Customer problem discovery: Example request
+# Customer Discovery Compass: Example request
 
 > Analyze these interview notes from a logistics client and identify the three most important workflow problems.
 

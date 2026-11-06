@@ -18,7 +18,7 @@
   <title>Power Chords — Your workflow. Amplified.</title>
   <link rel="stylesheet" href="landing.css">
   <link rel="stylesheet" href="theme.css">
-  <link rel="stylesheet" href="sources.css">
+  <link rel="stylesheet" href="capabilities.css">
   <script src="landing.js" defer></script>
 <link rel="stylesheet" href="brand-type.css">
 </head>
@@ -26,7 +26,7 @@
 <body id="pc-site">
 <header class="pc-nav pc-wrap">
   <a class="pc-brand" href="#"><img class="pc-brand-icon" src="assets/power-chords-loop-pc-icon.png" width="48" height="48" alt=""><span>Power Chords</span></a>
-  <nav aria-label="Main navigation"><a href="#pc-capabilities">Capabilities</a><a href="#pc-sources">Source library</a><a href="https://github.com/saurabhmisal/power-chords#readme" target="_blank" rel="noopener">Read more</a></nav>
+  <nav aria-label="Main navigation"><a href="#pc-capabilities">Capabilities</a><a href="#pc-how">How it works</a><a href="#pc-setup" data-open-setup>Get started</a></nav>
   <a class="pc-github" href="https://github.com/saurabhmisal/power-chords" target="_blank" rel="noopener">GitHub ↗</a>
 </header>
 <main>
@@ -41,26 +41,23 @@
   <div class="pc-steps pc-wrap" aria-label="How it works"><p><b>01</b> Pick a capability</p><span aria-hidden="true">→</span><p><b>02</b> Add your context</p><span aria-hidden="true">→</span><p><b>03</b> Review the result</p></div>
   <section class="pc-library pc-wrap" id="pc-capabilities" aria-labelledby="pc-library-title">
     <div class="pc-section-heading"><div><p class="pc-eyebrow">WHAT YOU CAN DO</p><h2 id="pc-library-title">Find your next power.</h2></div><p>Start with the work in front of you.</p></div>
-    <div class="pc-grid">{{FEATURED}}</div>
-    <details class="pc-more"><summary class="pc-button">Explore all capabilities</summary><div class="pc-grid">{{REMAINING}}</div></details>
-    <p class="pc-guide"><a href="https://github.com/saurabhmisal/power-chords/blob/main/docs/CAPABILITY_GUIDES.md" target="_blank" rel="noopener">Read the capability guide ↗</a></p>
+    <span id="pc-sources" aria-hidden="true"></span>
+    <p class="pc-description">Purposeful workflows, unmistakably Power Chords. Find the core function you need, then explore its process, example and deliverables.</p>
+    <div class="pc-library-filters"><label class="pc-field">Search capabilities<input id="pc-library-search" type="search" placeholder="Try sales research, PRD, OCR, or video…"></label><label class="pc-field">Category<select id="pc-library-family" aria-label="Category"><option value="all">All categories</option>{{FAMILY_OPTIONS}}</select></label><button id="pc-library-reset" class="pc-button" type="button">Reset filters</button></div>
+    <p id="pc-library-results" class="pc-library-status" role="status">Explore the Power Chords capability library.</p>
+    <div class="pc-grid">{{CAPABILITY_CARDS}}</div>
+    <p id="pc-library-empty" hidden>No capabilities match. Try another search or reset the filters.</p>
   </section>
-  <section class="pc-sources pc-wrap" id="pc-sources" aria-labelledby="pc-sources-title">
-    <div class="pc-section-heading"><div><p class="pc-eyebrow">NEW IN THE SOURCE LIBRARY</p><h2 id="pc-sources-title">More ways to build your next power.</h2></div></div>
-    <p class="pc-sources-intro">Explore the latest repositories mapped to Power Chords capabilities—from security and SEO to analytics, video, voice, and document intelligence. These are reviewed source references, not preinstalled tools or verified runtime adapters.</p>
-    <p class="pc-source-summary">{{SOURCE_SUMMARY}}</p>
-    <div class="pc-source-filters"><label class="pc-field">Search repositories<input id="pc-source-search" type="search" placeholder="Try Umami, security, video, or OCR…"></label><label class="pc-field">Category<select id="pc-source-group"><option value="all">All categories</option>{{SOURCE_GROUPS}}</select></label><button id="pc-source-reset" class="pc-button" type="button">Reset filters</button></div>
-    <p id="pc-source-results" class="pc-note" role="status">Browse the new source references below.</p>
-    <div class="pc-source-grid">{{SOURCE_CARDS}}</div>
-    <p id="pc-source-empty" class="pc-note" hidden>No repositories match. Try another search or reset the filters.</p>
-    <div class="pc-source-footer"><p class="pc-note">A repository can support several capabilities. Installing Power Chords instructions does not install these repositories, models, plugins, or dependencies. Review licenses and obtain authorization before external actions.</p><a class="pc-text-link" href="https://github.com/saurabhmisal/power-chords/blob/main/docs/NEW_SOURCES.md" target="_blank" rel="noopener">Read the full source review and exclusions ↗</a></div>
+  <section class="pc-how pc-wrap" id="pc-how" aria-labelledby="pc-how-title">
+    <p class="pc-eyebrow">ONE COHERENT EXPERIENCE</p><h2 id="pc-how-title">A workflow you can understand and own.</h2>
+    <div class="pc-how-grid"><div><span class="pc-icon">{{HOW_CONTEXT_ICON}}</span><h3>Start with your context</h3><p>Choose a Power Chords capability. Its page tells you what to bring and shows the process in an animated walkthrough and workflow diagram.</p></div><div><span class="pc-icon">{{HOW_WORK_ICON}}</span><h3>Work with your agent</h3><p>Use the same instructions in Claude Code, Codex, Cursor or Gemini CLI. Your agent supplies the model, tools and authorized access.</p></div><div><span class="pc-icon">{{HOW_REVIEW_ICON}}</span><h3>Review before you act</h3><p>Check evidence and deliverables against the acceptance criteria. You approve any publication, deployment or external action.</p></div></div>
   </section>
   <details class="pc-setup pc-wrap" id="pc-setup">
     <summary class="cursor-interaction"><span><strong>Use it with your agent.</strong><small>Claude Code · Codex · Cursor · Gemini CLI · Markdown</small></span><span class="pc-sign" aria-hidden="true">+</span></summary>
     <div class="pc-setup-body">
       <p>Choose a capability and install its instructions in your project, or download the Markdown for manual use.</p>
       <div class="pc-setup-grid">
-        <div><label class="pc-field">Your platform<select id="pc-platform" class="cursor-interaction"><option value="claude">Claude Code</option><option value="codex">Codex</option><option value="cursor">Cursor</option><option value="gemini">Gemini CLI</option><option value="other">Other / chat tools</option></select></label><label class="pc-field">Your capability<select id="pc-capability" class="cursor-interaction">{{INSTALL_OPTIONS}}</select></label></div>
+        <div><label class="pc-field">Your platform<select id="pc-platform" aria-label="Your platform" class="cursor-interaction"><option value="claude">Claude Code</option><option value="codex">Codex</option><option value="cursor">Cursor</option><option value="gemini">Gemini CLI</option><option value="other">Other / chat tools</option></select></label><label class="pc-field">Your capability<select id="pc-capability" aria-label="Your capability" class="cursor-interaction">{{INSTALL_OPTIONS}}</select></label></div>
         <div class="pc-terminal"><p>INSTALL</p><pre id="pc-command">git clone https://github.com/saurabhmisal/power-chords.git
 cd power-chords
 node scripts/capabilities-cli.mjs install prd-and-specification-writing --agent claude --project ../my-project</pre><a id="pc-download" class="pc-text-link" href="downloads/prd-and-specification-writing.md" download>Download Markdown ↓</a></div>
@@ -70,6 +67,6 @@ node scripts/capabilities-cli.mjs install prd-and-specification-writing --agent 
     </div>
   </details>
 </main>
-<footer class="pc-wrap"><p><img class="pc-footer-icon" src="assets/power-chords-loop-pc-icon.png" width="28" height="28" alt="Power Chords"> Built by <a href="https://github.com/saurabhmisal" target="_blank" rel="noopener">Saurabh Misal</a> · Part of <a href="https://lazo.tools/" target="_blank" rel="noopener">Lazo</a></p><div><a href="https://github.com/saurabhmisal/power-chords" target="_blank" rel="noopener">GitHub ↗</a><a href="https://github.com/saurabhmisal/power-chords#readme" target="_blank" rel="noopener">Read more</a><a href="https://github.com/saurabhmisal/power-chords/blob/main/LICENSE" target="_blank" rel="noopener">MIT license</a></div></footer>
+<footer class="pc-wrap"><p><img class="pc-footer-icon" src="assets/power-chords-loop-pc-icon.png" width="28" height="28" alt="Power Chords"> Published by Power Chords · Built by <a href="https://github.com/saurabhmisal" target="_blank" rel="noopener">Saurabh Misal</a> · Part of <a href="https://lazo.tools/" target="_blank" rel="noopener">Lazo</a></p><div><a href="https://github.com/saurabhmisal/power-chords" target="_blank" rel="noopener">GitHub ↗</a><a href="third-party-notices.html">Licenses & attribution</a><a href="https://github.com/saurabhmisal/power-chords/blob/main/LICENSE" target="_blank" rel="noopener">MIT license</a></div></footer>
 </body>
 </html>

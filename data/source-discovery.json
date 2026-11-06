@@ -475,8 +475,8 @@
       "skill_paths": [
         "SKILL.md"
       ],
-      "decision": "included",
-      "reason": "Collage video instruction reference; license classification and MaxFusion access need review."
+      "decision": "excluded",
+      "reason": "Instruction-only video recipe; requires a separately obtained MaxFusion integration or user-written replacement scripts."
     },
     {
       "repository": "saurabhmisal/onetake",
@@ -794,8 +794,8 @@
       "skill_paths": [
         "skills/21st-ui/SKILL.md"
       ],
-      "decision": "included",
-      "reason": "Legacy compatibility proxy: upstream recommends the 21st MCP; verify current setup rather than copying obsolete commands."
+      "decision": "excluded",
+      "reason": "Legacy compatibility proxy replaced by a separately hosted 21st MCP; not a self-contained capability implementation in this repository."
     },
     {
       "repository": "saurabhmisal/moonshine",
@@ -851,8 +851,8 @@
         "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-apps-builder/SKILL.md",
         "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-builder/SKILL.md"
       ],
-      "decision": "included",
-      "reason": "Example-agent and RAG patterns; examples are not preconfigured or security-reviewed Power Chords integrations."
+      "decision": "excluded",
+      "reason": "Collection of separate examples and templates rather than one integrated maintained delivery path; individual apps can be reviewed as separate candidates."
     },
     {
       "repository": "saurabhmisal/andrej-karpathy-skills",
@@ -875,8 +875,8 @@
       "skill_paths": [
         "skills/karpathy-guidelines/SKILL.md"
       ],
-      "decision": "included",
-      "reason": "Coding behavior guidance; attribution and license require review before copying instruction text."
+      "decision": "excluded",
+      "reason": "Coding-behavior advice in a single CLAUDE.md; no implemented input-to-output tool or complete executable workflow."
     },
     {
       "repository": "saurabhmisal/superplane",

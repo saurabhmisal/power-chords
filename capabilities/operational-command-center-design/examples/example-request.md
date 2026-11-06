@@ -1,4 +1,4 @@
-# Operational command-center design: Example request
+# Operations Planning Cockpit: Example request
 
 > Design a daily command center for delayed enterprise onboardings.
 

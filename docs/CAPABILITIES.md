@@ -1,8 +1,8 @@
-# 52 capabilities: the Forward-Deployed PM field guide
+# Power Chords capability field guide
 
-**[Individual installation and usage guides for all 52 →](CAPABILITY_GUIDES.md)**
+**[Individual installation and usage guides for every capability →](CAPABILITY_GUIDES.md)**
 
-**52 practical capability targets in 12 power families, supporting a unified Power Chords Workroom.** Use these as a checklist of what a builder working directly with customers needs across discovery, design, delivery, deployment, and adoption. They are **not** a claim that 52 executable integrations already exist.
+**Purposeful capabilities for the Power Chords Workroom and your AI agent.** Use these as a checklist of what a builder working directly with customers needs across discovery, design, delivery, deployment, and adoption. They are **not** a claim that 52 executable integrations already exist.
 
 These capabilities are equally useful to founders, engineers, designers, researchers, operators, consultants, and independent builders.
 
@@ -11,153 +11,153 @@ The native Workroom currently executes four document workflows using 23 assistiv
 
 ## Research & Discovery
 
-01. **Customer problem discovery**
+01. **Customer Discovery Compass**
 
-02. **Market landscape analysis**
+02. **Market Research Atlas**
 
-03. **Competitive product teardown**
+03. **Competitive Research Prism**
 
-04. **Account and stakeholder intelligence**
+04. **Sales Research Beacon**
 
-05. **Evidence triangulation and opportunity mapping**
+05. **Evidence Mapping Mosaic**
 
 
 
 ## Document Intelligence
 
-06. **Multi-format document ingestion**
+06. **Document Ingestion Intake**
 
-07. **OCR and structured extraction**
+07. **OCR Extraction Lens**
 
-08. **Knowledge graph construction**
+08. **Knowledge Graph Constellation**
 
-09. **Semantic and context-aware retrieval**
+09. **Semantic Search Pathfinder**
 
 
 
 ## Product & Strategy
 
-10. **PRD and specification writing**
+10. **PRD Blueprint**
 
-11. **End-to-end journey and workflow mapping**
+11. **Journey Mapping Trail**
 
-12. **Outcome-oriented roadmapping**
+12. **Product Roadmap Horizon**
 
-13. **Opportunity sizing and prioritization**
+13. **Prioritization Summit**
 
-14. **Hypothesis and experiment design**
+14. **Experiment Design Catalyst**
 
 
 
 ## Engineering & Integration
 
-15. **API design and integration planning**
+15. **API Planning Bridge**
 
-16. **Rapid application prototyping**
+16. **App Prototyping Foundry**
 
-17. **Codebase navigation and explanation**
+17. **Codebase Exploration Lantern**
 
-18. **System architecture and data-flow mapping**
+18. **System Architecture Keystone**
 
-19. **Debugging, testing and QA**
+19. **Debugging & QA Sentinel**
 
-20. **Deployment and release readiness**
+20. **Release Readiness Runway**
 
 
 
 ## Design & Creation
 
-21. **Wireframing and UX exploration**
+21. **UX Wireframing Canvas**
 
-22. **Interactive prototype construction**
+22. **Interactive Prototyping Playground**
 
-23. **Architecture and sequence diagrams**
+23. **Architecture Diagrams Schematic**
 
-24. **Technical illustrations and CAD assets**
+24. **Technical Illustration Sculpt**
 
 
 
 ## Agentic Automation
 
-25. **Multi-agent task decomposition**
+25. **Agent Coordination Ensemble**
 
-26. **Task and routine orchestration**
+26. **Task Orchestration Tempo**
 
-27. **Browser and API task automation**
+27. **Browser Automation Pilot**
 
-28. **Composable tool and workflow chains**
+28. **Workflow Chaining Relay**
 
-29. **Permission-scoped execution and controls**
+29. **Permission Controls Vault**
 
 
 
 ## Data & Evaluation
 
-30. **SQL and structured-data analysis**
+30. **SQL Analysis Quarry**
 
-31. **Dashboards and visual reporting**
+31. **Dashboard Reporting Panorama**
 
-32. **Funnel, retention and operational diagnostics**
+32. **Funnel Diagnostics Pulse**
 
-33. **LLM and agent evaluation**
+33. **Agent Evaluation Benchmark**
 
-34. **Forecasting and scenario modeling**
+34. **Forecast Modeling Outlook**
 
 
 
 ## Business & Operations
 
-35. **Billing and invoicing workflows**
+35. **Billing Workflows Ledger**
 
-36. **Unit economics and financial modeling**
+36. **Unit Economics Balance**
 
-37. **Operational command-center design**
+37. **Operations Planning Cockpit**
 
-38. **Time and resource planning**
+38. **Resource Planning Cadence**
 
 
 
 ## Voice & Media
 
-39. **Speech transcription and meeting notes**
+39. **Speech Transcription Scribe**
 
-40. **Text-to-speech and voice interfaces**
+40. **Voice Generation Chorus**
 
-41. **Audio separation and editing**
+41. **Audio Separation Studio**
 
-42. **Video demos and educational content**
+42. **Video Creation Storyboard**
 
 
 
 ## Marketing & Go-to-Market
 
-43. **SEO and discoverability research**
+43. **SEO Research Radar**
 
-44. **Launch and channel planning**
+44. **Launch Planning Launchpad**
 
-45. **Campaigns and content production**
+45. **Campaign Content Amplifier**
 
-46. **Conversion and growth experimentation**
+46. **Growth Experiments Momentum**
 
 
 
 ## Professional Enablement
 
-47. **Career and opportunity research**
+47. **Career Research Scout**
 
-48. **Interview preparation and learning plans**
+48. **Interview Preparation Rehearsal**
 
 
 
 ## Spatial & Field Intelligence
 
-49. **Location and map-based research**
+49. **Location Research Waypoint**
 
-50. **Road and network visualization**
+50. **Road Networks Gridline**
 
-51. **Geospatial data visualization**
+51. **Geospatial Visualization Terra**
 
-52. **Location-driven field insights**
+52. **Field Insights Meridian**
 
 
 
@@ -167,55 +167,55 @@ Native assistive = this Workroom can support evidence-driven drafting / analysis
 
 | # | Capability | Family | Status |
 |---:|---|---|---|
-| 01 | [Customer problem discovery](../capabilities/customer-problem-discovery/README.md) | Research & Discovery | Native assistive |
-| 02 | [Market landscape analysis](../capabilities/market-landscape-analysis/README.md) | Research & Discovery | Adapter required |
-| 03 | [Competitive product teardown](../capabilities/competitive-product-teardown/README.md) | Research & Discovery | Adapter required |
-| 04 | [Account and stakeholder intelligence](../capabilities/account-and-stakeholder-intelligence/README.md) | Research & Discovery | Native assistive |
-| 05 | [Evidence triangulation and opportunity mapping](../capabilities/evidence-triangulation-and-opportunity-mapping/README.md) | Research & Discovery | Native assistive |
-| 06 | [Multi-format document ingestion](../capabilities/multi-format-document-ingestion/README.md) | Document Intelligence | Adapter required |
-| 07 | [OCR and structured extraction](../capabilities/ocr-and-structured-extraction/README.md) | Document Intelligence | Adapter required |
-| 08 | [Knowledge graph construction](../capabilities/knowledge-graph-construction/README.md) | Document Intelligence | Adapter required |
-| 09 | [Semantic and context-aware retrieval](../capabilities/semantic-and-context-aware-retrieval/README.md) | Document Intelligence | Adapter required |
-| 10 | [PRD and specification writing](../capabilities/prd-and-specification-writing/README.md) | Product & Strategy | Native assistive |
-| 11 | [End-to-end journey and workflow mapping](../capabilities/end-to-end-journey-and-workflow-mapping/README.md) | Product & Strategy | Native assistive |
-| 12 | [Outcome-oriented roadmapping](../capabilities/outcome-oriented-roadmapping/README.md) | Product & Strategy | Native assistive |
-| 13 | [Opportunity sizing and prioritization](../capabilities/opportunity-sizing-and-prioritization/README.md) | Product & Strategy | Native assistive |
-| 14 | [Hypothesis and experiment design](../capabilities/hypothesis-and-experiment-design/README.md) | Product & Strategy | Native assistive |
-| 15 | [API design and integration planning](../capabilities/api-design-and-integration-planning/README.md) | Engineering & Integration | Native assistive |
-| 16 | [Rapid application prototyping](../capabilities/rapid-application-prototyping/README.md) | Engineering & Integration | Adapter required |
-| 17 | [Codebase navigation and explanation](../capabilities/codebase-navigation-and-explanation/README.md) | Engineering & Integration | Adapter required |
-| 18 | [System architecture and data-flow mapping](../capabilities/system-architecture-and-data-flow-mapping/README.md) | Engineering & Integration | Native assistive |
-| 19 | [Debugging, testing and QA](../capabilities/debugging-testing-and-qa/README.md) | Engineering & Integration | Native assistive |
-| 20 | [Deployment and release readiness](../capabilities/deployment-and-release-readiness/README.md) | Engineering & Integration | Native assistive |
-| 21 | [Wireframing and UX exploration](../capabilities/wireframing-and-ux-exploration/README.md) | Design & Creation | Adapter required |
-| 22 | [Interactive prototype construction](../capabilities/interactive-prototype-construction/README.md) | Design & Creation | Adapter required |
-| 23 | [Architecture and sequence diagrams](../capabilities/architecture-and-sequence-diagrams/README.md) | Design & Creation | Adapter required |
-| 24 | [Technical illustrations and CAD assets](../capabilities/technical-illustrations-and-cad-assets/README.md) | Design & Creation | Adapter required |
-| 25 | [Multi-agent task decomposition](../capabilities/multi-agent-task-decomposition/README.md) | Agentic Automation | Native assistive |
-| 26 | [Task and routine orchestration](../capabilities/task-and-routine-orchestration/README.md) | Agentic Automation | Native assistive |
-| 27 | [Browser and API task automation](../capabilities/browser-and-api-task-automation/README.md) | Agentic Automation | Adapter required |
-| 28 | [Composable tool and workflow chains](../capabilities/composable-tool-and-workflow-chains/README.md) | Agentic Automation | Native assistive |
-| 29 | [Permission-scoped execution and controls](../capabilities/permission-scoped-execution-and-controls/README.md) | Agentic Automation | Native assistive |
-| 30 | [SQL and structured-data analysis](../capabilities/sql-and-structured-data-analysis/README.md) | Data & Evaluation | Adapter required |
-| 31 | [Dashboards and visual reporting](../capabilities/dashboards-and-visual-reporting/README.md) | Data & Evaluation | Adapter required |
-| 32 | [Funnel, retention and operational diagnostics](../capabilities/funnel-retention-and-operational-diagnostics/README.md) | Data & Evaluation | Native assistive |
-| 33 | [LLM and agent evaluation](../capabilities/llm-and-agent-evaluation/README.md) | Data & Evaluation | Adapter required |
-| 34 | [Forecasting and scenario modeling](../capabilities/forecasting-and-scenario-modeling/README.md) | Data & Evaluation | Native assistive |
-| 35 | [Billing and invoicing workflows](../capabilities/billing-and-invoicing-workflows/README.md) | Business & Operations | Adapter required |
-| 36 | [Unit economics and financial modeling](../capabilities/unit-economics-and-financial-modeling/README.md) | Business & Operations | Native assistive |
-| 37 | [Operational command-center design](../capabilities/operational-command-center-design/README.md) | Business & Operations | Native assistive |
-| 38 | [Time and resource planning](../capabilities/time-and-resource-planning/README.md) | Business & Operations | Native assistive |
-| 39 | [Speech transcription and meeting notes](../capabilities/speech-transcription-and-meeting-notes/README.md) | Voice & Media | Adapter required |
-| 40 | [Text-to-speech and voice interfaces](../capabilities/text-to-speech-and-voice-interfaces/README.md) | Voice & Media | Adapter required |
-| 41 | [Audio separation and editing](../capabilities/audio-separation-and-editing/README.md) | Voice & Media | Adapter required |
-| 42 | [Video demos and educational content](../capabilities/video-demos-and-educational-content/README.md) | Voice & Media | Adapter required |
-| 43 | [SEO and discoverability research](../capabilities/seo-and-discoverability-research/README.md) | Marketing & Go-to-Market | Adapter required |
-| 44 | [Launch and channel planning](../capabilities/launch-and-channel-planning/README.md) | Marketing & Go-to-Market | Native assistive |
-| 45 | [Campaigns and content production](../capabilities/campaigns-and-content-production/README.md) | Marketing & Go-to-Market | Adapter required |
-| 46 | [Conversion and growth experimentation](../capabilities/conversion-and-growth-experimentation/README.md) | Marketing & Go-to-Market | Native assistive |
-| 47 | [Career and opportunity research](../capabilities/career-and-opportunity-research/README.md) | Professional Enablement | Adapter required |
-| 48 | [Interview preparation and learning plans](../capabilities/interview-preparation-and-learning-plans/README.md) | Professional Enablement | Adapter required |
-| 49 | [Location and map-based research](../capabilities/location-and-map-based-research/README.md) | Spatial & Field Intelligence | Adapter required |
-| 50 | [Road and network visualization](../capabilities/road-and-network-visualization/README.md) | Spatial & Field Intelligence | Adapter required |
-| 51 | [Geospatial data visualization](../capabilities/geospatial-data-visualization/README.md) | Spatial & Field Intelligence | Adapter required |
-| 52 | [Location-driven field insights](../capabilities/location-driven-field-insights/README.md) | Spatial & Field Intelligence | Adapter required |
+| 01 | [Customer Discovery Compass](../capabilities/customer-problem-discovery/README.md) | Research & Discovery | Native assistive |
+| 02 | [Market Research Atlas](../capabilities/market-landscape-analysis/README.md) | Research & Discovery | Adapter required |
+| 03 | [Competitive Research Prism](../capabilities/competitive-product-teardown/README.md) | Research & Discovery | Adapter required |
+| 04 | [Sales Research Beacon](../capabilities/account-and-stakeholder-intelligence/README.md) | Research & Discovery | Native assistive |
+| 05 | [Evidence Mapping Mosaic](../capabilities/evidence-triangulation-and-opportunity-mapping/README.md) | Research & Discovery | Native assistive |
+| 06 | [Document Ingestion Intake](../capabilities/multi-format-document-ingestion/README.md) | Document Intelligence | Adapter required |
+| 07 | [OCR Extraction Lens](../capabilities/ocr-and-structured-extraction/README.md) | Document Intelligence | Adapter required |
+| 08 | [Knowledge Graph Constellation](../capabilities/knowledge-graph-construction/README.md) | Document Intelligence | Adapter required |
+| 09 | [Semantic Search Pathfinder](../capabilities/semantic-and-context-aware-retrieval/README.md) | Document Intelligence | Adapter required |
+| 10 | [PRD Blueprint](../capabilities/prd-and-specification-writing/README.md) | Product & Strategy | Native assistive |
+| 11 | [Journey Mapping Trail](../capabilities/end-to-end-journey-and-workflow-mapping/README.md) | Product & Strategy | Native assistive |
+| 12 | [Product Roadmap Horizon](../capabilities/outcome-oriented-roadmapping/README.md) | Product & Strategy | Native assistive |
+| 13 | [Prioritization Summit](../capabilities/opportunity-sizing-and-prioritization/README.md) | Product & Strategy | Native assistive |
+| 14 | [Experiment Design Catalyst](../capabilities/hypothesis-and-experiment-design/README.md) | Product & Strategy | Native assistive |
+| 15 | [API Planning Bridge](../capabilities/api-design-and-integration-planning/README.md) | Engineering & Integration | Native assistive |
+| 16 | [App Prototyping Foundry](../capabilities/rapid-application-prototyping/README.md) | Engineering & Integration | Adapter required |
+| 17 | [Codebase Exploration Lantern](../capabilities/codebase-navigation-and-explanation/README.md) | Engineering & Integration | Adapter required |
+| 18 | [System Architecture Keystone](../capabilities/system-architecture-and-data-flow-mapping/README.md) | Engineering & Integration | Native assistive |
+| 19 | [Debugging & QA Sentinel](../capabilities/debugging-testing-and-qa/README.md) | Engineering & Integration | Native assistive |
+| 20 | [Release Readiness Runway](../capabilities/deployment-and-release-readiness/README.md) | Engineering & Integration | Native assistive |
+| 21 | [UX Wireframing Canvas](../capabilities/wireframing-and-ux-exploration/README.md) | Design & Creation | Adapter required |
+| 22 | [Interactive Prototyping Playground](../capabilities/interactive-prototype-construction/README.md) | Design & Creation | Adapter required |
+| 23 | [Architecture Diagrams Schematic](../capabilities/architecture-and-sequence-diagrams/README.md) | Design & Creation | Adapter required |
+| 24 | [Technical Illustration Sculpt](../capabilities/technical-illustrations-and-cad-assets/README.md) | Design & Creation | Adapter required |
+| 25 | [Agent Coordination Ensemble](../capabilities/multi-agent-task-decomposition/README.md) | Agentic Automation | Native assistive |
+| 26 | [Task Orchestration Tempo](../capabilities/task-and-routine-orchestration/README.md) | Agentic Automation | Native assistive |
+| 27 | [Browser Automation Pilot](../capabilities/browser-and-api-task-automation/README.md) | Agentic Automation | Adapter required |
+| 28 | [Workflow Chaining Relay](../capabilities/composable-tool-and-workflow-chains/README.md) | Agentic Automation | Native assistive |
+| 29 | [Permission Controls Vault](../capabilities/permission-scoped-execution-and-controls/README.md) | Agentic Automation | Native assistive |
+| 30 | [SQL Analysis Quarry](../capabilities/sql-and-structured-data-analysis/README.md) | Data & Evaluation | Adapter required |
+| 31 | [Dashboard Reporting Panorama](../capabilities/dashboards-and-visual-reporting/README.md) | Data & Evaluation | Adapter required |
+| 32 | [Funnel Diagnostics Pulse](../capabilities/funnel-retention-and-operational-diagnostics/README.md) | Data & Evaluation | Native assistive |
+| 33 | [Agent Evaluation Benchmark](../capabilities/llm-and-agent-evaluation/README.md) | Data & Evaluation | Adapter required |
+| 34 | [Forecast Modeling Outlook](../capabilities/forecasting-and-scenario-modeling/README.md) | Data & Evaluation | Native assistive |
+| 35 | [Billing Workflows Ledger](../capabilities/billing-and-invoicing-workflows/README.md) | Business & Operations | Adapter required |
+| 36 | [Unit Economics Balance](../capabilities/unit-economics-and-financial-modeling/README.md) | Business & Operations | Native assistive |
+| 37 | [Operations Planning Cockpit](../capabilities/operational-command-center-design/README.md) | Business & Operations | Native assistive |
+| 38 | [Resource Planning Cadence](../capabilities/time-and-resource-planning/README.md) | Business & Operations | Native assistive |
+| 39 | [Speech Transcription Scribe](../capabilities/speech-transcription-and-meeting-notes/README.md) | Voice & Media | Adapter required |
+| 40 | [Voice Generation Chorus](../capabilities/text-to-speech-and-voice-interfaces/README.md) | Voice & Media | Adapter required |
+| 41 | [Audio Separation Studio](../capabilities/audio-separation-and-editing/README.md) | Voice & Media | Adapter required |
+| 42 | [Video Creation Storyboard](../capabilities/video-demos-and-educational-content/README.md) | Voice & Media | Adapter required |
+| 43 | [SEO Research Radar](../capabilities/seo-and-discoverability-research/README.md) | Marketing & Go-to-Market | Adapter required |
+| 44 | [Launch Planning Launchpad](../capabilities/launch-and-channel-planning/README.md) | Marketing & Go-to-Market | Native assistive |
+| 45 | [Campaign Content Amplifier](../capabilities/campaigns-and-content-production/README.md) | Marketing & Go-to-Market | Adapter required |
+| 46 | [Growth Experiments Momentum](../capabilities/conversion-and-growth-experimentation/README.md) | Marketing & Go-to-Market | Native assistive |
+| 47 | [Career Research Scout](../capabilities/career-and-opportunity-research/README.md) | Professional Enablement | Adapter required |
+| 48 | [Interview Preparation Rehearsal](../capabilities/interview-preparation-and-learning-plans/README.md) | Professional Enablement | Adapter required |
+| 49 | [Location Research Waypoint](../capabilities/location-and-map-based-research/README.md) | Spatial & Field Intelligence | Adapter required |
+| 50 | [Road Networks Gridline](../capabilities/road-and-network-visualization/README.md) | Spatial & Field Intelligence | Adapter required |
+| 51 | [Geospatial Visualization Terra](../capabilities/geospatial-data-visualization/README.md) | Spatial & Field Intelligence | Adapter required |
+| 52 | [Field Insights Meridian](../capabilities/location-driven-field-insights/README.md) | Spatial & Field Intelligence | Adapter required |

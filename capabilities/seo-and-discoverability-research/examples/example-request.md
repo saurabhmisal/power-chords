@@ -1,4 +1,4 @@
-# SEO and discoverability research: Example request
+# SEO Research Radar: Example request
 
 > Audit discoverability for a B2B developer tooling landing page.
 

@@ -1,10 +1,19 @@
 {
   "schema_version": 1,
   "id": "14",
-  "name": "Hypothesis and experiment design",
+  "name": "Experiment Design Catalyst",
+  "function_name": "Hypothesis and experiment design",
+  "core_name": "Experiment Design",
+  "brand_word": "Catalyst",
+  "publisher": "Power Chords",
   "slug": "hypothesis-and-experiment-design",
   "family": "Product & Strategy",
   "implementation": "native_assistive",
+  "execution": {
+    "local_runtime": "codex-workspace",
+    "portable_instructions": true,
+    "runtime_guide": "../../docs/CODEX_RUNTIME.md"
+  },
   "inputs": [
     "Hypothesis",
     "population",
@@ -53,7 +62,7 @@
     }
   ],
   "source_guidance": [
-    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence."
   ]

@@ -1,4 +1,4 @@
-# Deployment and release readiness: Example request
+# Release Readiness Runway: Example request
 
 > Prepare release gates for a payment-adjacent partner API migration.
 

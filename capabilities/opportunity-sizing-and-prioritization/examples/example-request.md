@@ -1,4 +1,4 @@
-# Opportunity sizing and prioritization: Example request
+# Prioritization Summit: Example request
 
 > Rank six operations automation ideas using RICE with missing-data flags.
 

@@ -1,10 +1,19 @@
 {
   "schema_version": 1,
   "id": "39",
-  "name": "Speech transcription and meeting notes",
+  "name": "Speech Transcription Scribe",
+  "function_name": "Speech transcription and meeting notes",
+  "core_name": "Speech Transcription",
+  "brand_word": "Scribe",
+  "publisher": "Power Chords",
   "slug": "speech-transcription-and-meeting-notes",
   "family": "Voice & Media",
   "implementation": "adapter_required",
+  "execution": {
+    "local_runtime": "codex-workspace",
+    "portable_instructions": true,
+    "runtime_guide": "../../docs/CODEX_RUNTIME.md"
+  },
   "inputs": [
     "Audio with authorized recording consent",
     "languages",
@@ -58,7 +67,7 @@
     }
   ],
   "source_guidance": [
-    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "moonshine: Low-latency voice toolkit reference; model and code licenses may differ and require separate review."
   ]

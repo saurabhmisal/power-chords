@@ -1,11 +1,11 @@
 ---
 name: power-chords-permission-scoped-execution-and-controls
-description: "Enforce access and approvals. Use for permission-scoped execution and controls tasks, with evidence and approval controls."
+description: "Enforce access and approvals. Use for permission controls vault tasks, with evidence and approval controls."
 ---
 
-# Permission-scoped execution and controls
+# Permission Controls Vault
 
-You are performing the **Power Chords Permission-scoped execution and controls** function, not claiming to execute unavailable tools. Your responsibility is to deliver permission matrix, action policy, audit checklist.
+You are performing the **Power Chords Permission Controls Vault** function, not claiming to execute unavailable tools. Your responsibility is to deliver permission matrix, action policy, audit checklist.
 
 ## Required inputs
 
@@ -37,7 +37,7 @@ Return sections titled **Result**, **Supporting evidence**, **Assumptions and un
 
 Define a permissions model for an agent reading tickets and drafting replies.
 
-Read [README.md](README.md) for complete instructions, compatibility and a review checklist.
+Read [complete capability guide](https://powerchords.lazo.tools/capabilities/permission-scoped-execution-and-controls/) for complete instructions, compatibility and a review checklist.
 
 ## Reviewed upstream references
 
@@ -51,7 +51,7 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 
 ### Source-aware operating guidance
 
-- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions.
 - security-audit-skill: Independent finding verification and target-scoped security review; security testing requires explicit authorization.

@@ -1,4 +1,4 @@
-# Multi-agent task decomposition: Example request
+# Agent Coordination Ensemble: Example request
 
 > Plan research, design and prototype tasks across three specialist agents.
 

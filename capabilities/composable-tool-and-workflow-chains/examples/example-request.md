@@ -1,4 +1,4 @@
-# Composable tool and workflow chains: Example request
+# Workflow Chaining Relay: Example request
 
 > Combine discovery notes, API planning and release checks into one implementation brief.
 

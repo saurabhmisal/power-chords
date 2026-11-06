@@ -1,10 +1,19 @@
 {
   "schema_version": 1,
   "id": "29",
-  "name": "Permission-scoped execution and controls",
+  "name": "Permission Controls Vault",
+  "function_name": "Permission-scoped execution and controls",
+  "core_name": "Permission Controls",
+  "brand_word": "Vault",
+  "publisher": "Power Chords",
   "slug": "permission-scoped-execution-and-controls",
   "family": "Agentic Automation",
   "implementation": "native_assistive",
+  "execution": {
+    "local_runtime": "codex-workspace",
+    "portable_instructions": true,
+    "runtime_guide": "../../docs/CODEX_RUNTIME.md"
+  },
   "inputs": [
     "Actors",
     "resource scope",
@@ -90,7 +99,7 @@
     }
   ],
   "source_guidance": [
-    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions.",
     "security-audit-skill: Independent finding verification and target-scoped security review; security testing requires explicit authorization.",

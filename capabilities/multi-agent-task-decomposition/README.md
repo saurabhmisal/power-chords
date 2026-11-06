@@ -1,6 +1,6 @@
-# Multi-agent task decomposition
+# Agent Coordination Ensemble
 
-> **Power Chords 25** · Agentic Automation · **Native assistive** — used by the first-party Workroom as part of supported structured workflows; not a full standalone engine.
+> **Power Chords 25** · Agentic Automation · **Codex workspace** — first-party local input-to-artifact execution with Codex reasoning and specialist processing where needed. Portable instructions require the host agent’s own tools.
 
 Break complex work into agent tasks. This guide is a standalone, function-named skill with a repeatable operating procedure.
 
@@ -40,7 +40,7 @@ This copies portable instructions into the selected project's agent skill direct
 
 ### Example request
 
-> Use the Power Chords **Multi-agent task decomposition** skill. Plan research, design and prototype tasks across three specialist agents. Show your evidence, assumptions, next actions and clearly distinguish verified output from proposals.
+> Use the Power Chords **Agent Coordination Ensemble** skill. Plan research, design and prototype tasks across three specialist agents. Show your evidence, assumptions, next actions and clearly distinguish verified output from proposals.
 
 ### Operating procedure
 
@@ -66,9 +66,9 @@ This copies portable instructions into the selected project's agent skill direct
 
 ## Current implementation
 
-The local Workroom uses this capability within: Launch Readiness Plan. To try a complete workflow run `npm start` and choose the named workflow. This is *structured drafting*, not independent runtime execution of the full domain capability.
+Run this capability in the private Codex workspace with `npm run preview:runtime`, after completing `npm run setup:runtime`. Select **Agent Coordination Ensemble**, load its synthetic working example or supply your own evidence, and inspect files and execution receipts. See [runtime guide](../../docs/CODEX_RUNTIME.md) for inputs, limits and verification. The optional older Workroom drafting flows remain separate.
 
-**Implementation status:** `native_assistive`. The agent-portable SKILL.md is immediately usable as an instruction pack. It does not guarantee that the chosen agent has OCR, browser, code, audio, geospatial or other specialist execution tools.
+**Legacy Workroom classification:** `native_assistive`. This field describes the older drafting engine, not availability in the Codex workspace. The agent-portable SKILL.md is immediately usable as an instruction pack. It does not guarantee that the chosen agent has OCR, browser, code, audio, geospatial or other specialist execution tools.
 
 ## Permissions and safety
 
@@ -80,6 +80,36 @@ A first-party executable adapter must implement the stable input/output contract
 
 [← All capabilities](../../docs/CAPABILITY_GUIDES.md) · [Main README](../../README.md)
 
+## Visual walkthrough
+
+![Agent Coordination Ensemble illustrative workflow](../../assets/capability-demos/multi-agent-task-decomposition.gif)
+
+Illustrative process animation, not recorded runtime execution. [Open the Power Chords capability page](https://powerchords.lazo.tools/capabilities/multi-agent-task-decomposition/) for motion controls and the complete workflow diagram.
+
+## Workflow diagram
+
+```mermaid
+flowchart TD
+  input["Your context and required inputs"]
+  step0["Define success criteria"]
+  step1["Decompose independent and dependent tasks"]
+  step2["Assign clear contracts to specialist agents"]
+  step3["Establish checkpoints and escalation"]
+  step4["Reconcile outputs into one decision"]
+  review["Review evidence and validate deliverables"]
+  approval{"External action approved?"}
+  finish["Deliver or publish approved result"]
+  input --> step0
+  step0 --> step1
+  step1 --> step2
+  step2 --> step3
+  step3 --> step4
+  step4 --> review
+  review --> approval
+  approval -- Yes --> finish
+  approval -- Revise --> step0
+```
+
 ## Reviewed upstream references
 
 Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
@@ -88,16 +118,14 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 - [HarnessMD/munder-difflin at 8b3cebf06f0b](https://github.com/HarnessMD/munder-difflin/blob/8b3cebf06f0b0c084d5ab28d2949a2e6c07d0806/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [langflow-ai/langflow at 60999cc9a735](https://github.com/langflow-ai/langflow/blob/60999cc9a7350e44dde3ef641baae864e10861f0/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [EveryInc/compound-engineering-plugin at 173bd337fa63](https://github.com/EveryInc/compound-engineering-plugin/blob/173bd337fa639aac19ce7363d288836a074231a5/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [Shubhamsaboo/awesome-llm-apps at c129f31036f5](https://github.com/Shubhamsaboo/awesome-llm-apps/blob/c129f31036f5ba0bba42cbb63937a66946fdf2c0/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 - [superplanehq/superplane at 37c6198b757b](https://github.com/superplanehq/superplane/blob/37c6198b757bb09bc00b1955da4ae1f238a06e39/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 
-- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions.
 - compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review.
-- awesome-llm-apps: Example-agent and RAG patterns; examples are not preconfigured or security-reviewed Power Chords integrations.
 - superplane: Engineering orchestration candidate; service credentials, production writes and license need review.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](../../docs/UPSTREAM_REFRESH.md) for scope and reproduction.

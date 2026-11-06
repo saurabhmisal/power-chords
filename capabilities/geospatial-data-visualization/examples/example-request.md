@@ -1,4 +1,4 @@
-# Geospatial data visualization: Example request
+# Geospatial Visualization Terra: Example request
 
 > Visualize regional delivery delays using customer-provided coordinates.
 

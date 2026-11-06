@@ -1,4 +1,4 @@
-# Semantic and context-aware retrieval: Example request
+# Semantic Search Pathfinder: Example request
 
 > Find every decision related to SSO migration and summarize unresolved blockers.
 

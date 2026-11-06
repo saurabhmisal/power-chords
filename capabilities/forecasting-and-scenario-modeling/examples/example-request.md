@@ -1,4 +1,4 @@
-# Forecasting and scenario modeling: Example request
+# Forecast Modeling Outlook: Example request
 
 > Model expected onboarding revenue at three adoption rates.
 

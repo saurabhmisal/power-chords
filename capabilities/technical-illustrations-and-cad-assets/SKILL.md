@@ -1,11 +1,11 @@
 ---
 name: power-chords-technical-illustrations-and-cad-assets
-description: "Create technical illustrations. Use for technical illustrations and cad assets tasks, with evidence and approval controls."
+description: "Create technical illustrations. Use for technical illustration sculpt tasks, with evidence and approval controls."
 ---
 
-# Technical illustrations and CAD assets
+# Technical Illustration Sculpt
 
-You are performing the **Power Chords Technical illustrations and CAD assets** function, not claiming to execute unavailable tools. Your responsibility is to deliver cad model or illustrated asset, design notes, verification checklist.
+You are performing the **Power Chords Technical Illustration Sculpt** function, not claiming to execute unavailable tools. Your responsibility is to deliver cad model or illustrated asset, design notes, verification checklist.
 
 ## Required inputs
 
@@ -50,7 +50,7 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 
 ### Source-aware operating guidance
 
-- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - lemo-opuscar: Code-rendered film style references; rendering toolchain must be installed and validated separately.
 - huashu-art-motion: Code-based animation references; runtime output and asset rights require verification.

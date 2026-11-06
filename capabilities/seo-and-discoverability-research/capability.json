@@ -1,10 +1,19 @@
 {
   "schema_version": 1,
   "id": "43",
-  "name": "SEO and discoverability research",
+  "name": "SEO Research Radar",
+  "function_name": "SEO and discoverability research",
+  "core_name": "SEO Research",
+  "brand_word": "Radar",
+  "publisher": "Power Chords",
   "slug": "seo-and-discoverability-research",
   "family": "Marketing & Go-to-Market",
   "implementation": "adapter_required",
+  "execution": {
+    "local_runtime": "codex-workspace",
+    "portable_instructions": true,
+    "runtime_guide": "../../docs/CODEX_RUNTIME.md"
+  },
   "inputs": [
     "Website",
     "audience",
@@ -69,7 +78,7 @@
     }
   ],
   "source_guidance": [
-    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations.",
     "claude-seo: SEO audit instruction references; live connectors and specialist agents are not automatically enabled.",

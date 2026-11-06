@@ -1,4 +1,4 @@
-# Interactive prototype construction: Example request
+# Interactive Prototyping Playground: Example request
 
 > Build a clickable onboarding wizard for a partner API integration.
 

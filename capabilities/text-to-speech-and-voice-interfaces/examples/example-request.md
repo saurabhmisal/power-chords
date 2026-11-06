@@ -1,4 +1,4 @@
-# Text-to-speech and voice interfaces: Example request
+# Voice Generation Chorus: Example request
 
 > Narrate a product onboarding guide in English with a neutral voice.
 

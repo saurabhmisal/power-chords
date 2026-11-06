@@ -1,10 +1,19 @@
 {
   "schema_version": 1,
   "id": "16",
-  "name": "Rapid application prototyping",
+  "name": "App Prototyping Foundry",
+  "function_name": "Rapid application prototyping",
+  "core_name": "App Prototyping",
+  "brand_word": "Foundry",
+  "publisher": "Power Chords",
   "slug": "rapid-application-prototyping",
   "family": "Engineering & Integration",
   "implementation": "adapter_required",
+  "execution": {
+    "local_runtime": "codex-workspace",
+    "portable_instructions": true,
+    "runtime_guide": "../../docs/CODEX_RUNTIME.md"
+  },
   "inputs": [
     "Problem statement",
     "users",
@@ -36,39 +45,6 @@
       "runtime_verified": false
     },
     {
-      "repository": "EnzeD/vibe-coding",
-      "revision": "8b650568ea41515950f75bee255d03ac96db8e62",
-      "fork_repository": "saurabhmisal/vibe-coding",
-      "fork_revision": "8b650568ea41515950f75bee255d03ac96db8e62",
-      "license": "UNKNOWN",
-      "reference_url": "https://github.com/EnzeD/vibe-coding/blob/8b650568ea41515950f75bee255d03ac96db8e62/README.md",
-      "readme_sha256": "472c90091ec3ca43c2724ef7cd5ff4ccaf5b81735601316b069d105a62a8be66",
-      "scope": "reference_only",
-      "runtime_verified": false
-    },
-    {
-      "repository": "chrishayuk/vibe-coding-templates",
-      "revision": "a58fadee8027cfa620cad79c714fbd7132432d90",
-      "fork_repository": "saurabhmisal/vibe-coding-templates",
-      "fork_revision": "a58fadee8027cfa620cad79c714fbd7132432d90",
-      "license": "UNKNOWN",
-      "reference_url": "https://github.com/chrishayuk/vibe-coding-templates/blob/a58fadee8027cfa620cad79c714fbd7132432d90/README.md",
-      "readme_sha256": "62bba24f642f977a7e9724bd5c08fe04949c12321f1e0b66d43af1c6fa2e198b",
-      "scope": "reference_only",
-      "runtime_verified": false
-    },
-    {
-      "repository": "codecrafters-io/build-your-own-x",
-      "revision": "aa17439b62f384511a5561ce308e9598b94d8989",
-      "fork_repository": "saurabhmisal/build-your-own-x",
-      "fork_revision": "aa17439b62f384511a5561ce308e9598b94d8989",
-      "license": "UNKNOWN",
-      "reference_url": "https://github.com/codecrafters-io/build-your-own-x/blob/aa17439b62f384511a5561ce308e9598b94d8989/README.md",
-      "readme_sha256": "895a9e99d3964faf6d5992cedce69790b46cbadd59c0fc10dd3d520284aba6f6",
-      "scope": "reference_only",
-      "runtime_verified": false
-    },
-    {
       "repository": "KonstantinKai/reelkit",
       "revision": "0a9829aa4ad2eccaa006573085587b2c33f8afe3",
       "fork_repository": "saurabhmisal/reelkit",
@@ -89,36 +65,12 @@
       "readme_sha256": "e9bf58531fc2830a22b22393462f9bb778e58a3ba077209d42b5df4de5d83f5b",
       "scope": "reference_only",
       "runtime_verified": false
-    },
-    {
-      "repository": "21st-dev/magic-mcp",
-      "revision": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
-      "fork_repository": "saurabhmisal/magic-mcp",
-      "fork_revision": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
-      "license": "ISC",
-      "reference_url": "https://github.com/21st-dev/magic-mcp/blob/6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55/README.md",
-      "readme_sha256": "3525241fe094188862f3bea44471d1581813cbef2edccce4a1051c0fcf7bc76f",
-      "scope": "reference_only",
-      "runtime_verified": false
-    },
-    {
-      "repository": "multica-ai/andrej-karpathy-skills",
-      "revision": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-      "fork_repository": "saurabhmisal/andrej-karpathy-skills",
-      "fork_revision": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-      "license": "UNKNOWN",
-      "reference_url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md",
-      "readme_sha256": "daf314efb31894b86d68b67786c820bd8470bb2126e578ba9cd0e3e2667883f8",
-      "scope": "reference_only",
-      "runtime_verified": false
     }
   ],
   "source_guidance": [
-    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "reelkit: Touch-first slider library reference; accessibility and input behavior need integration tests.",
-    "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review.",
-    "magic-mcp: Legacy compatibility proxy: upstream recommends the 21st MCP; verify current setup rather than copying obsolete commands.",
-    "andrej-karpathy-skills: Coding behavior guidance; attribution and license require review before copying instruction text."
+    "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review."
   ]
 }

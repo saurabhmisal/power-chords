@@ -10,7 +10,7 @@
 
 Built and led by **[Saurabh Misal](https://github.com/saurabhmisal)**.
 
-[![Version](https://img.shields.io/badge/VERSION-0.3.0-f59e0b?style=for-the-badge)](package.json)
+[![Version](https://img.shields.io/badge/VERSION-0.4.1-f59e0b?style=for-the-badge)](package.json)
 [![Runtime](https://img.shields.io/badge/NODE-24.x-22c55e?style=for-the-badge)](package.json)
 [![Capabilities](https://img.shields.io/badge/EXPLORE-CAPABILITIES-9c5cf0?style=for-the-badge)](docs/CAPABILITIES.md)
 [![License](https://img.shields.io/badge/LICENSE-MIT-00b5ce?style=for-the-badge)](LICENSE)
@@ -66,6 +66,21 @@ For local execution, install Node.js 22.13+ and ffmpeg/ffprobe. Optional: Tesser
 - [Frequently asked questions](#frequently-asked-questions)
 - [Authorship, provenance, and licenses](#authorship-provenance-and-licenses)
 - [Documentation index](#documentation-index)
+
+## Private Codex workspace — approval draft
+
+Run capabilities with your existing Codex sign-in, inspect real output files and execution receipts, and approve external actions explicitly. The workspace includes local document/OCR, semantic retrieval, SQL and dashboards, JavaScript regression checks, invoice calculations, speech/audio/video processing and maps alongside capability-specific Codex reasoning.
+
+```bash
+npm run setup:runtime
+npm run build:site
+node scripts/prepare-publication-review.mjs
+npm run preview:runtime
+```
+
+Open http://127.0.0.1:4333/workspace.html and choose **Load a working example**. The [runtime guide](docs/CODEX_RUNTIME.md) documents supported inputs, engine details, setup, evidence and practical limits. The verification gallery links actual private runs and artifacts. This is a local macOS preview; static hosting does not expose your Codex account or run specialist tools. Portable instruction packs continue to support other equipped agents.
+
+This revision remains unpublished until you approve its [concrete publication proposal](docs/PUBLICATION_PROPOSAL.md). The weekly refresh prepares drafts and waits for fresh approval.
 
 ## What Power Chords does
 
@@ -344,7 +359,9 @@ capabilities/<functional-name>/
 
 These families describe coverage. Refer to the implementation status before assuming a capability can perform a task.
 
-### Implementation status
+### Legacy Workroom implementation status
+
+These classifications describe the older offline Workroom. All capabilities have a separate private Codex workspace path described above.
 
 | Status | Meaning |
 |---|---|
@@ -418,7 +435,7 @@ The force option permits copying over existing files; it is not a clean uninstal
 
 Ask your agent:
 
-> Use the Power Chords PRD and specification writing capability. Turn these authorized customer notes into a PRD with acceptance criteria. Identify missing evidence and keep estimates distinct from measured facts.
+> Use the Power Chords PRD Blueprint capability. Turn these authorized customer notes into a PRD with acceptance criteria. Identify missing evidence and keep estimates distinct from measured facts.
 
 If discovery fails, point the agent to the installed `SKILL.md`. Actual tool use remains subject to the host agent's configuration, permissions, and capabilities.
 
@@ -742,9 +759,9 @@ See [Vercel deployment details](docs/VERCEL.md). This README does not advertise 
 npm run build:site
 ```
 
-The static builder produces the dedicated landing page at `site/index.html`, with its searchable capability library, platform setup selector, portable downloads, documentation links, and assets. It does not host Node.js APIs or the interactive Workroom's execution engine.
+The static builder produces the dedicated landing page at `site/index.html`, with a searchable Power Chords capability library, a page for every capability, original illustrative GIFs, workflow diagrams, platform setup, portable downloads, and license notices. Public names retain the core function plus one distinctive word; existing IDs and install slugs remain compatible. See [the complete naming table](docs/CAPABILITY_NAMES.md) and [the source delivery review](docs/SOURCE_DELIVERY_REVIEW.md). It does not host Node.js APIs or the interactive Workroom's execution engine.
 
-The repository includes a GitHub Actions Pages job. Publishing depends on the repository's Pages configuration, permissions, and successful workflow completion.
+The repository includes an approval-gated GitHub Pages job. Publication is a separate step after the user approves a concrete preview; ordinary pushes and scheduled refreshes do not deploy.
 
 The public landing page uses Google Analytics 4 in the existing **Lazo Website** property (measurement ID `G-B3WTD82CQ0`). Tracking loads only on `https://powerchords.lazo.tools`; local Workrooms, preview deployments, and forks do not send analytics. The tag is configured in `landing/analytics.js` and copied into the static build. In GA4, use the **Hostname** dimension to distinguish Power Chords traffic from `lazo.tools`.
 
@@ -756,7 +773,7 @@ The inventory now includes additional reviewed repositories for security audits,
 
 Source inventory size and capability coverage are separate concepts. A new source can support an existing capability without adding a new capability or an executable runtime. New references are not automatically installed or enabled.
 
-Use `node scripts/discover-sources.mjs` with authenticated GitHub access to discover candidates. Review each candidate before updating `scripts/apply-source-discovery.mjs` selections and running that script. Then pull new pinned code snapshots with `node scripts/pull-source-snapshots.mjs --new-only` and follow the capability refresh procedure below. Discovery records exclusions rather than silently treating every fork as an approved integration.
+Use `node scripts/discover-sources.mjs` with authenticated GitHub access to discover candidates. Review each candidate and record an included delivery-path decision in `data/source-policy.json` before updating `scripts/apply-source-discovery.mjs` selections and running that script. Then pull new pinned code snapshots with `node scripts/pull-source-snapshots.mjs --new-only` and follow the capability refresh procedure below. Discovery records exclusions rather than silently treating every fork as an approved integration.
 
 ### Refresh code snapshots and portable capabilities
 
@@ -796,9 +813,9 @@ npm run build:site
 
 Synchronization reads GitHub metadata. It does not pull and execute upstream repositories, install dependencies, or automatically enable new instructions.
 
-The source workflow supports a scheduled check at minute 17 of each hour, manual dispatch, a repository-dispatch event, and selected pushes. Scheduled execution depends on GitHub Actions availability and repository settings; it is not an instantaneous update guarantee.
+Every Saturday at 08:00 Asia/Kolkata, the Codex automation prepares a local refresh proposal, including capability and website updates. It does not publish. Review the preview, exact names, additions/removals, checks and remaining gaps before giving explicit approval. Silence and earlier approvals do not authorize a future release.
 
-The workflow can commit verified metadata changes and publish the static catalog. An upstream change does not imply that a new version has been reviewed for execution.
+The legacy hourly auto-publisher is disabled. The draft-check workflow has read-only permissions. Website publication is manual and requires an explicitly approved main-branch commit and an approval acknowledgement. After approval, verify the exact published commit and the public website. Source discovery cannot reactivate excluded or unreviewed sources under `data/source-policy.json`.
 
 ## Command reference
 

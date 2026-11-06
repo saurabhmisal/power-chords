@@ -1,5 +1,6 @@
 import {readFile,writeFile} from 'node:fs/promises';
 import {resolve,join} from 'node:path';
+import {sourceAllowed} from '../src/source-policy.mjs';
 const root=resolve(import.meta.dirname,'..');
 const read=async path=>JSON.parse(await readFile(join(root,path),'utf8'));
 const selections={
@@ -34,10 +35,13 @@ const additions=await read('data/source-additions.json');
 const lock=await read('data/upstreams.lock.json');
 const mapping=await read('data/capability-source-map.json');
 for(const candidate of discovery.candidates){
-  const selected=selections[candidate.name];
+  const selected=sourceAllowed(candidate.repository)?selections[candidate.name]:null;
   candidate.decision=selected?'included':'excluded';
   candidate.reason=selected?selected[2]:candidate.name==='chatterbox'?'Upstream README declares retired, unmaintained research; retain as a historical candidate rather than a recommended integration.':candidate.name==='aleph'?'Upstream README declares sunsetting; avoid adding a newly recommended adapter for a discontinued project.':'Owned product/marketing distribution, not a newly forked reusable capability source; no new app implementation imported.';
-  if(!selected)continue;
+  if(!selected){
+    candidate.reason=candidate.reason||'Excluded or awaiting delivery-path review under data/source-policy.json; no automatic activation.';
+    continue;
+  }
   const source={...candidate,group_id:selected[0],capability_ids:selected[1],review_notes:selected[2],integration_status:'reference_only',runtime_verified:false};
   if(!additions.some(item=>item.repository===candidate.repository))additions.push(source);
   if(!lock.sources.some(item=>item.repository===candidate.repository))lock.sources.push({repository:candidate.repository,source_id:'github:'+candidate.repository,group_id:selected[0],first_discovered:candidate.created_at.slice(0,10),license:candidate.license,description:candidate.description,fork_sha:candidate.fork_sha,fork_branch:candidate.fork_branch,upstream_repo:candidate.upstream_repo,upstream_sha:candidate.upstream_sha,upstream_branch:candidate.upstream_branch,upstream_release:candidate.upstream_release,updated_at:discovery.checked_at});

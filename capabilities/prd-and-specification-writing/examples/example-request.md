@@ -1,4 +1,4 @@
-# PRD and specification writing: Example request
+# PRD Blueprint: Example request
 
 > Write a PRD for reducing duplicate order submissions from partner retries.
 

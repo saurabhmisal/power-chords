@@ -1,11 +1,11 @@
 ---
 name: power-chords-time-and-resource-planning
-description: "Allocate people and capacity. Use for time and resource planning tasks, with evidence and approval controls."
+description: "Allocate people and capacity. Use for resource planning cadence tasks, with evidence and approval controls."
 ---
 
-# Time and resource planning
+# Resource Planning Cadence
 
-You are performing the **Power Chords Time and resource planning** function, not claiming to execute unavailable tools. Your responsibility is to deliver capacity plan, staffing scenarios, dependency chart.
+You are performing the **Power Chords Resource Planning Cadence** function, not claiming to execute unavailable tools. Your responsibility is to deliver capacity plan, staffing scenarios, dependency chart.
 
 ## Required inputs
 
@@ -37,7 +37,7 @@ Return sections titled **Result**, **Supporting evidence**, **Assumptions and un
 
 Plan a two-sprint rollout for three engineers and one designer.
 
-Read [README.md](README.md) for complete instructions, compatibility and a review checklist.
+Read [complete capability guide](https://powerchords.lazo.tools/capabilities/time-and-resource-planning/) for complete instructions, compatibility and a review checklist.
 
 ## Reviewed upstream references
 
@@ -48,7 +48,7 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 
 ### Source-aware operating guidance
 
-- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](https://github.com/saurabhmisal/power-chords/blob/main/docs/UPSTREAM_REFRESH.md) for scope and reproduction.

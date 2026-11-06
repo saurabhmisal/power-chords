@@ -1,4 +1,4 @@
-# Billing and invoicing workflows: Example request
+# Billing Workflows Ledger: Example request
 
 > Design invoicing for usage-based API requests across two tiers.
 

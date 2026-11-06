@@ -1,4 +1,4 @@
-# Launch and channel planning: Example request
+# Launch Planning Launchpad: Example request
 
 > Plan a regional launch for a healthcare scheduling API.
 

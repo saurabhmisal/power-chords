@@ -1,4 +1,4 @@
-# Audio separation and editing: Example request
+# Audio Separation Studio: Example request
 
 > Separate speech and background music in an authorized webinar recording.
 

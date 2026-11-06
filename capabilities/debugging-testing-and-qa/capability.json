@@ -1,10 +1,19 @@
 {
   "schema_version": 1,
   "id": "19",
-  "name": "Debugging, testing and QA",
+  "name": "Debugging & QA Sentinel",
+  "function_name": "Debugging, testing and QA",
+  "core_name": "Debugging & QA",
+  "brand_word": "Sentinel",
+  "publisher": "Power Chords",
   "slug": "debugging-testing-and-qa",
   "family": "Engineering & Integration",
   "implementation": "native_assistive",
+  "execution": {
+    "local_runtime": "codex-workspace",
+    "portable_instructions": true,
+    "runtime_guide": "../../docs/CODEX_RUNTIME.md"
+  },
   "inputs": [
     "Bug report",
     "logs",
@@ -64,17 +73,6 @@
       "runtime_verified": false
     },
     {
-      "repository": "Siborne/vibe-coding-sops",
-      "revision": "823c75661195ae56d32d5a66021b2b7fd63415e8",
-      "fork_repository": "saurabhmisal/vibe-coding-sops",
-      "fork_revision": "823c75661195ae56d32d5a66021b2b7fd63415e8",
-      "license": "MIT",
-      "reference_url": "https://github.com/Siborne/vibe-coding-sops/blob/823c75661195ae56d32d5a66021b2b7fd63415e8/README.md",
-      "readme_sha256": "6ad34ff24afcf376434405502038be46402fc431162ec441583a39254dd7f086",
-      "scope": "reference_only",
-      "runtime_verified": false
-    },
-    {
       "repository": "cloudflare/security-audit-skill",
       "revision": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
       "fork_repository": "saurabhmisal/security-audit-skill",
@@ -106,26 +104,14 @@
       "readme_sha256": "e9bf58531fc2830a22b22393462f9bb778e58a3ba077209d42b5df4de5d83f5b",
       "scope": "reference_only",
       "runtime_verified": false
-    },
-    {
-      "repository": "multica-ai/andrej-karpathy-skills",
-      "revision": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-      "fork_repository": "saurabhmisal/andrej-karpathy-skills",
-      "fork_revision": "2c606141936f1eeef17fa3043a72095b4765b9c2",
-      "license": "UNKNOWN",
-      "reference_url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md",
-      "readme_sha256": "daf314efb31894b86d68b67786c820bd8470bb2126e578ba9cd0e3e2667883f8",
-      "scope": "reference_only",
-      "runtime_verified": false
     }
   ],
   "source_guidance": [
-    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence.",
     "security-audit-skill: Independent finding verification and target-scoped security review; security testing requires explicit authorization.",
     "pentagi: Security orchestration reference only; no scanning or exploitation without explicit authorized scope.",
-    "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review.",
-    "andrej-karpathy-skills: Coding behavior guidance; attribution and license require review before copying instruction text."
+    "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review."
   ]
 }

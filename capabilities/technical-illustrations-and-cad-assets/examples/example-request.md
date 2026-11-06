@@ -1,4 +1,4 @@
-# Technical illustrations and CAD assets: Example request
+# Technical Illustration Sculpt: Example request
 
 > Visualize the exploded components of a warehouse conveyor sensor mount.
 

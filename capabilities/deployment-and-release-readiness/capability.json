@@ -1,10 +1,19 @@
 {
   "schema_version": 1,
   "id": "20",
-  "name": "Deployment and release readiness",
+  "name": "Release Readiness Runway",
+  "function_name": "Deployment and release readiness",
+  "core_name": "Release Readiness",
+  "brand_word": "Runway",
+  "publisher": "Power Chords",
   "slug": "deployment-and-release-readiness",
   "family": "Engineering & Integration",
   "implementation": "native_assistive",
+  "execution": {
+    "local_runtime": "codex-workspace",
+    "portable_instructions": true,
+    "runtime_guide": "../../docs/CODEX_RUNTIME.md"
+  },
   "inputs": [
     "Release scope",
     "changelog",
@@ -56,17 +65,6 @@
       "runtime_verified": false
     },
     {
-      "repository": "Siborne/vibe-coding-sops",
-      "revision": "823c75661195ae56d32d5a66021b2b7fd63415e8",
-      "fork_repository": "saurabhmisal/vibe-coding-sops",
-      "fork_revision": "823c75661195ae56d32d5a66021b2b7fd63415e8",
-      "license": "MIT",
-      "reference_url": "https://github.com/Siborne/vibe-coding-sops/blob/823c75661195ae56d32d5a66021b2b7fd63415e8/README.md",
-      "readme_sha256": "6ad34ff24afcf376434405502038be46402fc431162ec441583a39254dd7f086",
-      "scope": "reference_only",
-      "runtime_verified": false
-    },
-    {
       "repository": "superplanehq/superplane",
       "revision": "37c6198b757bb09bc00b1955da4ae1f238a06e39",
       "fork_repository": "saurabhmisal/superplane",
@@ -79,7 +77,7 @@
     }
   ],
   "source_guidance": [
-    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence.",
     "superplane: Engineering orchestration candidate; service credentials, production writes and license need review."

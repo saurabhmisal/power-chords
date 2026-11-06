@@ -1,4 +1,4 @@
-# Campaigns and content production: Example request
+# Campaign Content Amplifier: Example request
 
 > Draft a launch sequence for a new invoicing feature.
 

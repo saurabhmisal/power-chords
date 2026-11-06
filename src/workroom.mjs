@@ -8,31 +8,13 @@ import {resolve,join} from 'node:path';
 import {randomUUID,createHash} from 'node:crypto';
 import judgement from '../knowledge/product-judgement/index.cjs';
 
-const capNames = [
- 'Customer problem discovery','Market landscape analysis','Competitive product teardown','Account and stakeholder intelligence','Evidence triangulation and opportunity mapping',
- 'Multi-format document ingestion','OCR and structured extraction','Knowledge graph construction','Semantic and context-aware retrieval',
- 'PRD and specification writing','End-to-end journey and workflow mapping','Outcome-oriented roadmapping','Opportunity sizing and prioritization','Hypothesis and experiment design',
- 'API design and integration planning','Rapid application prototyping','Codebase navigation and explanation','System architecture and data-flow mapping','Debugging, testing and QA','Deployment and release readiness',
- 'Wireframing and UX exploration','Interactive prototype construction','Architecture and sequence diagrams','Technical illustrations and CAD assets',
- 'Multi-agent task decomposition','Task and routine orchestration','Browser and API task automation','Composable tool and workflow chains','Permission-scoped execution and controls',
- 'SQL and structured-data analysis','Dashboards and visual reporting','Funnel, retention and operational diagnostics','LLM and agent evaluation','Forecasting and scenario modeling',
- 'Billing and invoicing workflows','Unit economics and financial modeling','Operational command-center design','Time and resource planning',
- 'Speech transcription and meeting notes','Text-to-speech and voice interfaces','Audio separation and editing','Video demos and educational content',
- 'SEO and discoverability research','Launch and channel planning','Campaigns and content production','Conversion and growth experimentation',
- 'Career and opportunity research','Interview preparation and learning plans',
- 'Location and map-based research','Road and network visualization','Geospatial data visualization','Location-driven field insights'];
-if(capNames.length!==52)throw new Error(`Expected 52 capabilities, received ${capNames.length}`);
-const familyRanges=[
- ['Research & Discovery',1,5],['Document Intelligence',6,9],['Product & Strategy',10,14],
- ['Engineering & Integration',15,20],['Design & Creation',21,24],['Agentic Automation',25,29],
- ['Data & Evaluation',30,34],['Business & Operations',35,38],['Voice & Media',39,42],
- ['Marketing & Go-to-Market',43,46],['Professional Enablement',47,48],['Spatial & Field Intelligence',49,52]
-];
+import capabilityGuides from '../data/capability-guides.json' with {type:'json'};
+const capNames=capabilityGuides.capabilities.map(capability=>capability.name);
 // Honest maturity: native support means a local document/analysis operator exists, not
 // that an external model, production API, browser, deployment or GPU runtime exists.
 const supportedIds=new Set([1,4,5,10,11,12,13,14,15,18,19,20,25,26,28,29,32,34,36,37,38,44,46]);
 export const CAPABILITIES=capNames.map((name,index)=>{
-  const number=index+1;const family=familyRanges.find(([,a,b])=>number>=a&&number<=b)?.[0];
+  const number=index+1;const family=capabilityGuides.capabilities[index].family;
   return {id:String(number).padStart(2,'0'),number,name,family,
     status:supportedIds.has(number)?'native_assistive':'adapter_required',
     detail:supportedIds.has(number)?'Evidence-grounded planning, drafting or analysis support; not a fully autonomous implementation.':'An adapter or specialized runtime is needed for execution.'};

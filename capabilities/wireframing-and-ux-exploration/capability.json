@@ -1,10 +1,19 @@
 {
   "schema_version": 1,
   "id": "21",
-  "name": "Wireframing and UX exploration",
+  "name": "UX Wireframing Canvas",
+  "function_name": "Wireframing and UX exploration",
+  "core_name": "UX Wireframing",
+  "brand_word": "Canvas",
+  "publisher": "Power Chords",
   "slug": "wireframing-and-ux-exploration",
   "family": "Design & Creation",
   "implementation": "adapter_required",
+  "execution": {
+    "local_runtime": "codex-workspace",
+    "portable_instructions": true,
+    "runtime_guide": "../../docs/CODEX_RUNTIME.md"
+  },
   "inputs": [
     "Persona",
     "task",
@@ -55,23 +64,11 @@
       "readme_sha256": "a4c2fcbf1c968a88b31b32c0c0c363d6cbf430e96b75af1f6e82d1386dddd8f0",
       "scope": "reference_only",
       "runtime_verified": false
-    },
-    {
-      "repository": "21st-dev/magic-mcp",
-      "revision": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
-      "fork_repository": "saurabhmisal/magic-mcp",
-      "fork_revision": "6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55",
-      "license": "ISC",
-      "reference_url": "https://github.com/21st-dev/magic-mcp/blob/6b5299e8a83ceffa73d4fc4e148905bb3eeeeb55/README.md",
-      "readme_sha256": "3525241fe094188862f3bea44471d1581813cbef2edccce4a1051c0fcf7bc76f",
-      "scope": "reference_only",
-      "runtime_verified": false
     }
   ],
   "source_guidance": [
-    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-    "reelkit: Touch-first slider library reference; accessibility and input behavior need integration tests.",
-    "magic-mcp: Legacy compatibility proxy: upstream recommends the 21st MCP; verify current setup rather than copying obsolete commands."
+    "reelkit: Touch-first slider library reference; accessibility and input behavior need integration tests."
   ]
 }

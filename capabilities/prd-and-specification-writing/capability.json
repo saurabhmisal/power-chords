@@ -1,10 +1,19 @@
 {
   "schema_version": 1,
   "id": "10",
-  "name": "PRD and specification writing",
+  "name": "PRD Blueprint",
+  "function_name": "PRD and specification writing",
+  "core_name": "PRD",
+  "brand_word": "Blueprint",
+  "publisher": "Power Chords",
   "slug": "prd-and-specification-writing",
   "family": "Product & Strategy",
   "implementation": "native_assistive",
+  "execution": {
+    "local_runtime": "codex-workspace",
+    "portable_instructions": true,
+    "runtime_guide": "../../docs/CODEX_RUNTIME.md"
+  },
   "inputs": [
     "Customer notes",
     "constraints",
@@ -50,21 +59,10 @@
       "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
       "scope": "reference_only",
       "runtime_verified": false
-    },
-    {
-      "repository": "nisargpatel1906/vibe-coding-blueprint",
-      "revision": "faf47911db82d85a1b0185957babca9cd89cda3b",
-      "fork_repository": "saurabhmisal/vibe-coding-blueprint",
-      "fork_revision": "faf47911db82d85a1b0185957babca9cd89cda3b",
-      "license": "MIT",
-      "reference_url": "https://github.com/nisargpatel1906/vibe-coding-blueprint/blob/faf47911db82d85a1b0185957babca9cd89cda3b/README.md",
-      "readme_sha256": "8a4d052ca5e54d30773351e787033d7e62a71f4d199e4eb70c802b53c18d1fb4",
-      "scope": "reference_only",
-      "runtime_verified": false
     }
   ],
   "source_guidance": [
-    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
   ]
 }

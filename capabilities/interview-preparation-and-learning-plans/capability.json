@@ -1,10 +1,19 @@
 {
   "schema_version": 1,
   "id": "48",
-  "name": "Interview preparation and learning plans",
+  "name": "Interview Preparation Rehearsal",
+  "function_name": "Interview preparation and learning plans",
+  "core_name": "Interview Preparation",
+  "brand_word": "Rehearsal",
+  "publisher": "Power Chords",
   "slug": "interview-preparation-and-learning-plans",
   "family": "Professional Enablement",
   "implementation": "adapter_required",
+  "execution": {
+    "local_runtime": "codex-workspace",
+    "portable_instructions": true,
+    "runtime_guide": "../../docs/CODEX_RUNTIME.md"
+  },
   "inputs": [
     "Role description",
     "company context",
@@ -59,7 +68,7 @@
     }
   ],
   "source_guidance": [
-    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
   ]
 }

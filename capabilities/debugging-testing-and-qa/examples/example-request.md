@@ -1,4 +1,4 @@
-# Debugging, testing and QA: Example request
+# Debugging & QA Sentinel: Example request
 
 > Diagnose why an idempotent webhook is still creating duplicate records.
 

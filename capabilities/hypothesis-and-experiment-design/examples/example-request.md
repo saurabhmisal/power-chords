@@ -1,4 +1,4 @@
-# Hypothesis and experiment design: Example request
+# Experiment Design Catalyst: Example request
 
 > Design an A/B test for a new self-serve API-key onboarding flow.
 
