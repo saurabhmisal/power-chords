@@ -16,6 +16,8 @@ export async function buildLanding(destination,{hosted=false}={}){
   const directory=resolve(destination);
   await mkdir(join(directory,'assets'),{recursive:true});
   await mkdir(join(directory,'downloads'),{recursive:true});
+  await mkdir(join(directory,'assets/fonts'),{recursive:true});
+  for(const font of ['source-sans-3.woff2','OFL.txt']) await copyFile(join(root,'assets/fonts',font),join(directory,'assets/fonts',font));
   function card(item){
     const index=featured.indexOf(item.slug);
     return `<article class="capability-card"><span class="pc-icon">${icon(index>=0?featuredIcons[index]:familyIcons[item.family]||'grid')}</span><h3>${escape(item.name)}</h3><p>${escape(item.outcome)}.</p>${additions.some(source=>source.capability_ids.includes(item.id))?`<a class="pc-source-context" href="#pc-sources" data-source-capability="${escape(item.id)}">${icon('branch')} Explore related sources</a>`:''}<div class="pc-card-actions"><a href="#pc-setup" data-install="${escape(item.slug)}" aria-label="Use ${escape(item.name)}">Use capability ↗</a><a href="https://github.com/saurabhmisal/power-chords/blob/main/capabilities/${item.slug}/README.md" aria-label="Read more about ${escape(item.name)}">Read more →</a></div></article>`;
@@ -33,7 +35,7 @@ export async function buildLanding(destination,{hosted=false}={}){
   const scriptName=`landing-${createHash('sha256').update(browserScript).digest('hex').slice(0,12)}.js`;
   await writeFile(join(directory,scriptName),browserScript);
   await writeFile(join(directory,'index.html'),template.replace(/\{\{([A-Z_]+)\}\}/g,(_,key)=>replacements[key]).replace('src="landing.js"',`src="${scriptName}"`));
-  for(const filename of ['landing.css','theme.css','sources.css','landing.js','analytics.js'])await copyFile(join(root,'landing',filename),join(directory,filename));
+  for(const filename of ['brand-type.css','landing.css','theme.css','sources.css','landing.js','analytics.js'])await copyFile(join(root,'landing',filename),join(directory,filename));
   for(const filename of ['power-chords-cover-clean.jpg','power-chords-loop-pc-icon.png','power-chords-loop-pc-logo.png','power-chords-favicon-32.png','power-chords-favicon-16.png','power-chords-apple-touch-icon.png'])await copyFile(join(root,'assets',filename),join(directory,'assets',filename));
   for(const item of capabilities)await copyFile(join(root,'capabilities',item.slug,'SKILL.md'),join(directory,'downloads',item.slug+'.md'));
   await copyFile(join(root,'docs/PORTABLE_AGENT_GUIDE.md'),join(directory,'downloads/power-chords-agent-guide.md'));
