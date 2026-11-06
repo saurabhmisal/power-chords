@@ -6,6 +6,7 @@
 import {mkdir,writeFile,readFile} from 'node:fs/promises';
 import {resolve,join} from 'node:path';
 import {randomUUID,createHash} from 'node:crypto';
+import judgement from '../knowledge/product-judgement/index.cjs';
 
 const capNames = [
  'Customer problem discovery','Market landscape analysis','Competitive product teardown','Account and stakeholder intelligence','Evidence triangulation and opportunity mapping',
@@ -55,7 +56,7 @@ const evidenceTable=ev=>`| Reference | Evidence supplied | Classification |\n|--
 const checklist=(rows)=>rows.map(x=>`- [ ] ${x}`).join('\n');
 const section=(title,body)=>`\n## ${title}\n\n${body}\n`;
 function common({workflow,title,context,evidence}){
-  return `# ${title}\n\n> **Power Chords Workroom** · ${workflow.title} · Evidence-grounded first draft\n> **Important:** This document uses only submitted context, fixed review templates and explicitly labeled assumptions. It is not external research, fact verification, system integration, or customer validation.\n\n`+
+  return `# ${title}\n\n> **Power Chords Workroom** · ${workflow.title} · Evidence-grounded first draft\n> **Important:** This document uses submitted context, fixed review templates, attributed research summaries and explicitly labeled assumptions. It is not external research, fact verification, system integration, or customer validation.\n\n`+
   section('Mission',markdown(context.objective||'Turn the submitted context into a practical, reviewable next decision.'))+
   section('Source context',markdown(context.raw))+
   section('Evidence ledger',evidenceTable(evidence))+
@@ -112,6 +113,13 @@ export class Workroom {
     if(objective!==undefined&&(!ok(objective,1000)))throw new Error('Objective must be 1–1000 characters');
     if(!this.workflows().find(x=>x.id===workflowId)?.available)throw new Error('Required native power is disabled for this user');
     const chosenTitle=clean(title||w.title);const ev=evidenceIndex(context);
+    const knowledge=judgement.prepareQuestion([objective||'',chosenTitle,context].join('\n'));
+    const knowledgeSection=knowledge.reference_context ? section('Relevant product judgement — research, not validated rules',
+      `Pack version: ${knowledge.trace.version}; content SHA-256: ${knowledge.trace.content_hash}.\n\n`+
+      (knowledge.trace.status === 'source_coverage_gap' ? knowledge.reference_context : '')+
+      knowledge.cards.map(card=>`### ${card.id}: ${card.title}\n\n${card.lesson}\n\n**Source:** [${card.author}](${card.source_url}) — ${card.locator}\n\n**Read scope:** ${card.read_scope}\n\n**Evidence:** ${card.evidence}\n\n**Limits:** ${card.limits}`).join('\n\n')+
+      (knowledge.competencies.length ? '\n\n### Original Lazo practice prompts\n\n'+knowledge.competencies.map(item=>`- **${item.name}:** ${item.practice}`).join('\n') : '')+
+      (knowledge.research_pointers.length ? '\n\n### Author research pointers — methods not fully analysed\n\n'+knowledge.research_pointers.map(person=>`- [${person.name}](${person.source_url}) — reading scope ${person.read_scope}: ${judgement.catalogue().read_scope_legend[person.read_scope]}`).join('\n') : '')) : '';
     // Optional inspected sources are visible in the SAME Workroom output. These are pointers
     // only: no third-party instruction is elevated to policy, and no external code is executed.
     const installed=this.db.packages(this.userId).filter(p=>p.effective_enabled && p.installed_path).slice(0,8);
@@ -119,7 +127,7 @@ export class Workroom {
       installed.map(p=>`- **${inline(p.title)}** — ${p.url} (pinned revision: \`${p.pinned_sha}\`; instruction/reference package only).`).join('\n')+
       '\n\nThese sources were available to the operator but were **not** interpreted, run, or used to substantiate claims in this draft. Review them separately if needed.'):'';
     const content=common({workflow:w,title:chosenTitle,context:{raw:context,objective},evidence:ev})+
-      packs[workflowId]({objective},ev)+imported+
+      packs[workflowId]({objective},ev)+knowledgeSection+imported+
       section('Review and sign-off','**Draft status:** Review required. Human verification is needed before external use, publication, or customer commitments.\n\n**Production actions performed:** None.\n');
     const id=randomUUID();const directory=join(this.storageDir,'workroom',this.userId.replace(/[^a-zA-Z0-9_-]/g,'_'));
     await mkdir(directory,{recursive:true,mode:0o700});const file=resolve(directory,id+'.md');
@@ -128,7 +136,7 @@ export class Workroom {
     const sha256=createHash('sha256').update(content).digest('hex');
     this.db.db.prepare('INSERT INTO workroom_runs VALUES(?,?,?,?,?,?,?,?)').run(id,this.userId,workflowId,new Date().toISOString(),chosenTitle,file,sha256,ev.length);
     this.db.audit(this.userId,'workroom.run',workflowId,{id,sha256,evidence_count:ev.length});
-    return {id,title:chosenTitle,workflowId,sha256,evidenceCount:ev.length,capabilities:w.capabilities,content,download:`/api/workroom/artifacts/${id}`,executed:true,external_actions:false};
+    return {id,title:chosenTitle,workflowId,sha256,evidenceCount:ev.length,capabilities:w.capabilities,product_judgement:knowledge.trace,knowledge_citations:knowledge.citations,content,download:`/api/workroom/artifacts/${id}`,executed:true,external_actions:false};
   }
   runs(limit=30){return this.db.db.prepare('SELECT id,title,workflow_id,created_at,sha256,evidence_count FROM workroom_runs WHERE user_id=? ORDER BY created_at DESC LIMIT ?').all(this.userId,Math.max(1,Math.min(limit,100)));}
   async artifact(id){if(!/^[a-f0-9-]{36}$/.test(id))throw new Error('Invalid artifact id');const row=this.db.db.prepare('SELECT * FROM workroom_runs WHERE id=? AND user_id=?').get(id,this.userId);if(!row)throw new Error('Artifact not found');const content=await readFile(row.file_path,'utf8');if(createHash('sha256').update(content).digest('hex')!==row.sha256)throw new Error('Artifact integrity failure');return {id,title:row.title,content};}

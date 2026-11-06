@@ -1,0 +1,1996 @@
+{
+  "schema_version": 1,
+  "id": "product_judgement",
+  "version": "2026.10.26.2",
+  "reviewed_at": "2026-10-24",
+  "rights": "Original attributed research summaries and original Lazo synthesis. Linked third-party works retain their own rights; no full books, source articles, transcripts or private inbox messages are bundled.",
+  "limitations": [
+    "120 research entries are not 120 completed dossiers.",
+    "Read scope is explicit: selected passages, email, show notes, abstract or destination only.",
+    "These are candidate methods; software tests do not establish product judgement quality.",
+    "No full-book review is added by this pack."
+  ],
+  "leaders": [
+    {
+      "id": "L001",
+      "name": "Shreyas Doshi",
+      "experience_context": "Product leadership",
+      "research_focus": "Premortems; opportunity cost; scope of product work",
+      "source_url": "https://www.lennysnewsletter.com/p/episode-3-shreyas-doshi",
+      "read_scope": "T"
+    },
+    {
+      "id": "L002",
+      "name": "Anshumani Ruddra",
+      "experience_context": "Product and AI builder education",
+      "research_focus": "Expert procedures; AI evaluation; product fluency",
+      "source_url": "https://maven.com/anshumani/levelup-to-super-ic",
+      "read_scope": "E"
+    },
+    {
+      "id": "L003",
+      "name": "Teresa Torres",
+      "experience_context": "Discovery practitioner",
+      "research_focus": "Opportunity trees; customer learning",
+      "source_url": "https://www.producttalk.org/opportunity-solution-trees/",
+      "read_scope": "M"
+    },
+    {
+      "id": "L004",
+      "name": "Marty Cagan",
+      "experience_context": "Product leadership adviser",
+      "research_focus": "Strategic context; coaching; empowered teams",
+      "source_url": "https://www.svpg.com/product-leadership-is-hard/",
+      "read_scope": "M"
+    },
+    {
+      "id": "L005",
+      "name": "Melissa Perri",
+      "experience_context": "Product strategy and leadership",
+      "research_focus": "Strategy; product operating model",
+      "source_url": "https://www.lennysnewsletter.com/p/how-to-create-a-winning-product-strategy",
+      "read_scope": "T"
+    },
+    {
+      "id": "L006",
+      "name": "Gibson Biddle",
+      "experience_context": "Netflix and Chegg product experience",
+      "research_focus": "DHM; strategy hypotheses",
+      "source_url": "https://gibsonbiddle.medium.com/intro-to-product-strategy-60bdf72b17e3",
+      "read_scope": "M"
+    },
+    {
+      "id": "L007",
+      "name": "Julie Zhuo",
+      "experience_context": "Design and management",
+      "research_focus": "Team management; craft; feedback",
+      "source_url": "https://www.lennysnewsletter.com/p/episode-2-julie-zhuo",
+      "read_scope": "T"
+    },
+    {
+      "id": "L008",
+      "name": "Ken Norton",
+      "experience_context": "Product leadership coaching",
+      "research_focus": "Leadership growth; coaching",
+      "source_url": "https://www.bringthedonuts.com/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L009",
+      "name": "Ravi Mehta",
+      "experience_context": "Product leadership",
+      "research_focus": "Product definition; competencies; team systems",
+      "source_url": "https://blog.ravi-mehta.com/p/product-definition",
+      "read_scope": "E"
+    },
+    {
+      "id": "L010",
+      "name": "John Cutler",
+      "experience_context": "Product organisation analysis",
+      "research_focus": "Team effectiveness; systems thinking",
+      "source_url": "https://www.lennysnewsletter.com/p/what-differentiates-the-highest-performing",
+      "read_scope": "T"
+    },
+    {
+      "id": "L011",
+      "name": "Christian Idiodi",
+      "experience_context": "Product leadership adviser",
+      "research_focus": "Four product risks; reference customers",
+      "source_url": "https://www.lennysnewsletter.com/p/the-essence-of-product-management",
+      "read_scope": "T"
+    },
+    {
+      "id": "L012",
+      "name": "Sachin Rekhi",
+      "experience_context": "Product builder and adviser",
+      "research_focus": "AI transformation; shared context",
+      "source_url": "https://www.sachinrekhi.com/p/the-ai-transformation-playbook",
+      "read_scope": "E-part"
+    },
+    {
+      "id": "L013",
+      "name": "Lenny Rachitsky",
+      "experience_context": "Product practitioner and interviewer",
+      "research_focus": "Cross-company interviews; product and growth",
+      "source_url": "https://www.lennysnewsletter.com/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L014",
+      "name": "Itamar Gilad",
+      "experience_context": "Evidence-guided product management",
+      "research_focus": "Confidence; GIST; metric trees",
+      "source_url": "https://www.lennysnewsletter.com/p/becoming-evidence-guided-itamar-gilad",
+      "read_scope": "T"
+    },
+    {
+      "id": "L015",
+      "name": "Bob Moesta",
+      "experience_context": "Demand research practitioner",
+      "research_focus": "Buying context; struggling moments; JTBD",
+      "source_url": "https://www.lennysnewsletter.com/p/the-ultimate-guide-to-jtbd-bob-moesta",
+      "read_scope": "T"
+    },
+    {
+      "id": "L016",
+      "name": "Janna Bastow",
+      "experience_context": "Product planning practitioner",
+      "research_focus": "Now Next Later; roadmap communication",
+      "source_url": "https://www.lennysnewsletter.com/p/building-better-roadmaps-janna-bastow",
+      "read_scope": "T"
+    },
+    {
+      "id": "L017",
+      "name": "Petra Wille",
+      "experience_context": "Product leadership coaching",
+      "research_focus": "Coaching; communities of practice",
+      "source_url": "https://www.lennysnewsletter.com/p/how-to-be-the-best-coach-to-product",
+      "read_scope": "T"
+    },
+    {
+      "id": "L018",
+      "name": "Maggie Crowley",
+      "experience_context": "Product leadership",
+      "research_focus": "Strategy; professional development",
+      "source_url": "https://www.lennysnewsletter.com/p/mastering-product-strategy-and-growing",
+      "read_scope": "T"
+    },
+    {
+      "id": "L019",
+      "name": "Ebi Atawodi",
+      "experience_context": "Product leadership",
+      "research_focus": "Vision; team alignment",
+      "source_url": "https://www.lennysnewsletter.com/p/crafting-a-compelling-product-vision",
+      "read_scope": "T"
+    },
+    {
+      "id": "L020",
+      "name": "Nikhyl Singhal",
+      "experience_context": "Product executive and mentor",
+      "research_focus": "Career growth; leadership transitions",
+      "source_url": "https://www.lennysnewsletter.com/p/building-a-long-and-meaningful-career",
+      "read_scope": "T"
+    },
+    {
+      "id": "L021",
+      "name": "Elena Verna",
+      "experience_context": "Growth operator and adviser",
+      "research_focus": "Monetisation; growth; author incentives",
+      "source_url": "https://www.elenaverna.com/",
+      "read_scope": "E"
+    },
+    {
+      "id": "L022",
+      "name": "Brian Balfour",
+      "experience_context": "Growth practitioner and educator",
+      "research_focus": "Growth systems; loops",
+      "source_url": "https://www.reforge.com/blog/growth-loops",
+      "read_scope": "M"
+    },
+    {
+      "id": "L023",
+      "name": "Casey Winters",
+      "experience_context": "Growth and product leadership",
+      "research_focus": "Growth systems; influence",
+      "source_url": "https://www.reforge.com/blog/growth-loops",
+      "read_scope": "M"
+    },
+    {
+      "id": "L024",
+      "name": "Andrew Chen",
+      "experience_context": "Growth practitioner and investor",
+      "research_focus": "Network effects; growth loops",
+      "source_url": "https://andrewchen.com/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L025",
+      "name": "Sean Ellis",
+      "experience_context": "Growth practitioner",
+      "research_focus": "Product market fit; experimentation",
+      "source_url": "https://www.lennysnewsletter.com/p/the-original-growth-hacker-sean-ellis",
+      "read_scope": "T"
+    },
+    {
+      "id": "L026",
+      "name": "Adam Fishman",
+      "experience_context": "Growth leadership",
+      "research_focus": "Growth teams; capability development",
+      "source_url": "https://www.lennysnewsletter.com/p/how-to-build-a-high-performing-growth",
+      "read_scope": "T"
+    },
+    {
+      "id": "L027",
+      "name": "Bangaly Kaba",
+      "experience_context": "Growth leadership",
+      "research_focus": "Adjacent users; impact; environment",
+      "source_url": "https://www.lennysnewsletter.com/p/frameworks-for-growing-your-career-bangaly-kaba",
+      "read_scope": "T"
+    },
+    {
+      "id": "L028",
+      "name": "Hila Qu",
+      "experience_context": "Product-led growth adviser",
+      "research_focus": "Adding PLG to existing businesses",
+      "source_url": "https://www.lennysnewsletter.com/p/the-ultimate-guide-to-adding-a-plg",
+      "read_scope": "T"
+    },
+    {
+      "id": "L029",
+      "name": "Dan Hockenmaier",
+      "experience_context": "Growth and marketplaces",
+      "research_focus": "Growth models; marketplace economics",
+      "source_url": "https://www.lennysnewsletter.com/p/developing-a-growth-model-marketplace",
+      "read_scope": "T"
+    },
+    {
+      "id": "L030",
+      "name": "Crystal Widjaja",
+      "experience_context": "Growth and data leadership",
+      "research_focus": "Growth hiring; measurement",
+      "source_url": "https://www.lennysnewsletter.com/p/how-to-hire-for-measure-and-unlock",
+      "read_scope": "T"
+    },
+    {
+      "id": "L031",
+      "name": "Naomi Ionita",
+      "experience_context": "Growth and monetisation investor",
+      "research_focus": "Pricing; packaging",
+      "source_url": "https://www.lennysnewsletter.com/p/how-to-price-your-product-naomi-ionita",
+      "read_scope": "T"
+    },
+    {
+      "id": "L032",
+      "name": "Yuriy Timen",
+      "experience_context": "Subscription growth",
+      "research_focus": "Subscription acquisition and retention",
+      "source_url": "https://www.lennysnewsletter.com/p/transform-your-subscription-growth",
+      "read_scope": "T"
+    },
+    {
+      "id": "L033",
+      "name": "Gina Gotthilf",
+      "experience_context": "Consumer growth",
+      "research_focus": "Duolingo growth; failure and learning",
+      "source_url": "https://www.lennysnewsletter.com/p/scaling-duolingo-embracing-failure",
+      "read_scope": "T"
+    },
+    {
+      "id": "L034",
+      "name": "Ben Williams",
+      "experience_context": "Developer product growth",
+      "research_focus": "Snyk; developer adoption; PLG",
+      "source_url": "https://www.lennysnewsletter.com/p/how-snyk-built-a-product-led-growth",
+      "read_scope": "T"
+    },
+    {
+      "id": "L035",
+      "name": "Archie Abrams",
+      "experience_context": "Commerce growth",
+      "research_focus": "Growth organisation; Shopify",
+      "source_url": "https://www.lennysnewsletter.com/p/shopifys-growth-archie-abrams",
+      "read_scope": "T"
+    },
+    {
+      "id": "L036",
+      "name": "Shishir Mehrotra",
+      "experience_context": "Product founder",
+      "research_focus": "Team rituals; collaboration",
+      "source_url": "https://www.lennysnewsletter.com/p/the-rituals-of-great-teams-shishir",
+      "read_scope": "T"
+    },
+    {
+      "id": "L037",
+      "name": "April Dunford",
+      "experience_context": "Positioning specialist",
+      "research_focus": "Positioning; sales narrative",
+      "source_url": "https://www.lennysnewsletter.com/p/a-step-by-step-guide-to-crafting",
+      "read_scope": "T"
+    },
+    {
+      "id": "L038",
+      "name": "Rahul Vohra",
+      "experience_context": "Product founder",
+      "research_focus": "Onboarding; product focus",
+      "source_url": "https://www.lennysnewsletter.com/p/superhumans-secret-to-success-rahul-vohra",
+      "read_scope": "T"
+    },
+    {
+      "id": "L039",
+      "name": "Des Traynor",
+      "experience_context": "Intercom founder and product writer",
+      "research_focus": "SaaS product building; AI transition",
+      "source_url": "https://www.intercom.com/blog/author/des",
+      "read_scope": "D"
+    },
+    {
+      "id": "L040",
+      "name": "Paul Adams",
+      "experience_context": "Product and design leadership",
+      "research_focus": "AI product strategy; SaaS",
+      "source_url": "https://www.lennysnewsletter.com/p/what-ai-means-for-your-product-strategy",
+      "read_scope": "T"
+    },
+    {
+      "id": "L041",
+      "name": "Jason Fried",
+      "experience_context": "Software founder",
+      "research_focus": "Scope; pace; organisational choices",
+      "source_url": "https://www.lennysnewsletter.com/p/jason-fried-challenges-your-thinking",
+      "read_scope": "T"
+    },
+    {
+      "id": "L042",
+      "name": "Claire Hughes Johnson",
+      "experience_context": "Business operations leadership",
+      "research_focus": "Scaling; operating systems; management",
+      "source_url": "https://www.lennysnewsletter.com/p/lessons-from-scaling-stripe-tactics",
+      "read_scope": "T"
+    },
+    {
+      "id": "L043",
+      "name": "Geoff Charles",
+      "experience_context": "Fintech product leadership",
+      "research_focus": "Velocity; decision processes",
+      "source_url": "https://www.lennysnewsletter.com/p/velocity-over-everything-how-ramp",
+      "read_scope": "T"
+    },
+    {
+      "id": "L044",
+      "name": "Oji Udezue",
+      "experience_context": "Product leadership",
+      "research_focus": "Problem selection; sharp problems",
+      "source_url": "https://www.lennysnewsletter.com/p/picking-sharp-problems-increasing",
+      "read_scope": "T"
+    },
+    {
+      "id": "L045",
+      "name": "Noah Weiss",
+      "experience_context": "Product leadership",
+      "research_focus": "PM capabilities; collaboration; AI",
+      "source_url": "https://www.lennysnewsletter.com/p/the-10-traits-of-great-pms-how-ai",
+      "read_scope": "T"
+    },
+    {
+      "id": "L046",
+      "name": "Karri Saarinen",
+      "experience_context": "Design founder",
+      "research_focus": "Taste; design-led product organisation",
+      "source_url": "https://www.lennysnewsletter.com/p/inside-linear-building-with-taste",
+      "read_scope": "T"
+    },
+    {
+      "id": "L047",
+      "name": "Nan Yu",
+      "experience_context": "B2B product leadership",
+      "research_focus": "User workflow; speed and craft",
+      "source_url": "https://www.lennysnewsletter.com/p/linears-secret-to-building-beloved-b2b-products-nan-yu",
+      "read_scope": "T"
+    },
+    {
+      "id": "L048",
+      "name": "Dylan Field",
+      "experience_context": "Design platform founder",
+      "research_focus": "Product lines; taste; time to value",
+      "source_url": "https://www.lennysnewsletter.com/p/why-ai-makes-design-craft-and-quality-the-new-moat",
+      "read_scope": "P"
+    },
+    {
+      "id": "L049",
+      "name": "Katie Dill",
+      "experience_context": "Design leadership",
+      "research_focus": "Product quality; design systems",
+      "source_url": "https://www.lennysnewsletter.com/p/building-beautiful-products-with",
+      "read_scope": "T"
+    },
+    {
+      "id": "L050",
+      "name": "Yuhki Yamashita",
+      "experience_context": "Design platform product leadership",
+      "research_focus": "Figma product building",
+      "source_url": "https://www.lennysnewsletter.com/p/an-inside-look-at-how-figma-builds",
+      "read_scope": "T"
+    },
+    {
+      "id": "L051",
+      "name": "Brian Chesky",
+      "experience_context": "Marketplace founder",
+      "research_focus": "Founder involvement; product organisation",
+      "source_url": "https://www.lennysnewsletter.com/p/brian-cheskys-contrarian-approach",
+      "read_scope": "T"
+    },
+    {
+      "id": "L052",
+      "name": "Deb Liu",
+      "experience_context": "Product and executive leadership",
+      "research_focus": "Career agency; leadership",
+      "source_url": "https://www.lennysnewsletter.com/p/how-to-own-your-career-growth-and",
+      "read_scope": "T"
+    },
+    {
+      "id": "L053",
+      "name": "Anuj Rathi",
+      "experience_context": "India consumer product leadership",
+      "research_focus": "Full-stack PM; working backwards",
+      "source_url": "https://www.lennysnewsletter.com/p/the-full-stack-pm-anuj-rathi-swiggy",
+      "read_scope": "T"
+    },
+    {
+      "id": "L054",
+      "name": "Manik Gupta",
+      "experience_context": "Mobility and maps product leadership",
+      "research_focus": "Consumer platforms; marketplace complexity",
+      "source_url": "https://www.lennysnewsletter.com/p/manik-gupta-ex-cpo-uber-google-maps",
+      "read_scope": "T"
+    },
+    {
+      "id": "L055",
+      "name": "Vlad Loktev",
+      "experience_context": "Marketplace product leadership",
+      "research_focus": "Impact; organisational execution",
+      "source_url": "https://www.lennysnewsletter.com/p/impact-impact-impact-vlad-loktev",
+      "read_scope": "T"
+    },
+    {
+      "id": "L056",
+      "name": "Nilan Peiris",
+      "experience_context": "Fintech product leadership",
+      "research_focus": "Word of mouth; customer experience",
+      "source_url": "https://www.lennysnewsletter.com/p/how-to-drive-word-of-mouth-nilan",
+      "read_scope": "T"
+    },
+    {
+      "id": "L057",
+      "name": "Tim Holley",
+      "experience_context": "Marketplace product leadership",
+      "research_focus": "Etsy; two-sided growth",
+      "source_url": "https://www.lennysnewsletter.com/p/inside-etsys-product-growth-and-marketplace",
+      "read_scope": "T"
+    },
+    {
+      "id": "L058",
+      "name": "Maya Prohovnik",
+      "experience_context": "Audio product leadership",
+      "research_focus": "Anchor; creator tools; integration",
+      "source_url": "https://www.lennysnewsletter.com/p/building-anchor-selling-to-spotify",
+      "read_scope": "T"
+    },
+    {
+      "id": "L059",
+      "name": "Camille Hearst",
+      "experience_context": "Creator and marketplace products",
+      "research_focus": "Creator monetisation; marketplaces",
+      "source_url": "https://www.lennysnewsletter.com/p/monetizing-passions-scaling-marketplaces",
+      "read_scope": "T"
+    },
+    {
+      "id": "L060",
+      "name": "Alex Hardiman",
+      "experience_context": "News and subscription products",
+      "research_focus": "New York Times product portfolio",
+      "source_url": "https://www.lennysnewsletter.com/p/an-inside-look-at-how-the-new-york",
+      "read_scope": "T"
+    },
+    {
+      "id": "L061",
+      "name": "Kabeer Biswas",
+      "experience_context": "Dunzo founder",
+      "research_focus": "Local delivery; operations; failure analysis",
+      "source_url": "https://www.forbesindia.com/article/one-ceo-club/we-are-building-a-postal-service-for-indian-cities-dunzos-kabeer-biswas/60451/1",
+      "read_scope": "X"
+    },
+    {
+      "id": "L062",
+      "name": "Tomer Cohen",
+      "experience_context": "Professional network product leadership",
+      "research_focus": "LinkedIn; relevance; product organisation",
+      "source_url": "https://www.lennysnewsletter.com/p/how-linkedin-became-interesting-tomer-cohen",
+      "read_scope": "T"
+    },
+    {
+      "id": "L063",
+      "name": "David Vélez",
+      "experience_context": "Nubank founder",
+      "research_focus": "Latin American financial products",
+      "source_url": "https://www.gsb.stanford.edu/insights/david-velez-position-yourself-scarcity-not-oversupply",
+      "read_scope": "X"
+    },
+    {
+      "id": "L064",
+      "name": "Melanie Perkins",
+      "experience_context": "Design software founder",
+      "research_focus": "Canva; accessible creation; company building",
+      "source_url": "https://www.lennysnewsletter.com/p/the-making-of-canva",
+      "read_scope": "P"
+    },
+    {
+      "id": "L089",
+      "name": "Kevin Aluwi",
+      "experience_context": "Gojek founder",
+      "research_focus": "Local market constraints; operations; brand",
+      "source_url": "https://www.lennysnewsletter.com/p/taxi-mafias-cash-vaults-and-100-mom",
+      "read_scope": "T"
+    },
+    {
+      "id": "L116",
+      "name": "Gustav Söderström",
+      "experience_context": "Audio product and technology leadership",
+      "research_focus": "Spotify; product and technology strategy",
+      "source_url": "https://www.lennysnewsletter.com/p/lessons-from-scaling-spotify-the",
+      "read_scope": "T"
+    },
+    {
+      "id": "L065",
+      "name": "Jiaona Zhang",
+      "experience_context": "Product leadership",
+      "research_focus": "Minimum lovable products; scope",
+      "source_url": "https://www.lennysnewsletter.com/p/building-minimum-lovable-products",
+      "read_scope": "T"
+    },
+    {
+      "id": "L066",
+      "name": "Gokul Rajaram",
+      "experience_context": "Product operator and adviser",
+      "research_focus": "Product organisation; decisions",
+      "source_url": "https://www.lennysnewsletter.com/p/gokul-rajaram-on-designing-your-product",
+      "read_scope": "T"
+    },
+    {
+      "id": "L067",
+      "name": "Kevin Yien",
+      "experience_context": "Product leadership",
+      "research_focus": "PM judgement; unconventional practices",
+      "source_url": "https://www.lennysnewsletter.com/p/unorthodox-pm-wisdom-kevin-yien",
+      "read_scope": "T"
+    },
+    {
+      "id": "L068",
+      "name": "Paige Costello",
+      "experience_context": "Product leadership",
+      "research_focus": "Questions; project and team decisions",
+      "source_url": "https://www.lennysnewsletter.com/p/how-to-ask-the-right-questions-project",
+      "read_scope": "T"
+    },
+    {
+      "id": "L069",
+      "name": "Anneka Gupta",
+      "experience_context": "Enterprise product leadership",
+      "research_focus": "Strategic thinking; stakeholders",
+      "source_url": "https://www.lennysnewsletter.com/p/becoming-more-strategic-anneka-gupta",
+      "read_scope": "T"
+    },
+    {
+      "id": "L070",
+      "name": "Farhan Thawar",
+      "experience_context": "Engineering leadership",
+      "research_focus": "Engineering culture; shipping",
+      "source_url": "https://www.lennysnewsletter.com/p/how-shopify-builds-a-high-intensity-culture-farhan-thawar",
+      "read_scope": "T"
+    },
+    {
+      "id": "L071",
+      "name": "Camille Fournier",
+      "experience_context": "Engineering executive and writer",
+      "research_focus": "Team productivity; responsible AI use",
+      "source_url": "https://www.elidedbranches.com/2026/05/guidelines-for-respectful-use-of-ai.html",
+      "read_scope": "M"
+    },
+    {
+      "id": "L072",
+      "name": "Will Larson",
+      "experience_context": "Engineering executive and writer",
+      "research_focus": "Engineering strategy; resourcing; alignment",
+      "source_url": "https://lethain.com/eng-strategies/",
+      "read_scope": "M"
+    },
+    {
+      "id": "L073",
+      "name": "Charity Majors",
+      "experience_context": "Engineering and observability leader",
+      "research_focus": "Reliability; production feedback; engineering partnership",
+      "source_url": "https://newsletter.pragmaticengineer.com/p/stop-being-skeptical-about-ai-for",
+      "read_scope": "T-email"
+    },
+    {
+      "id": "L074",
+      "name": "Ronny Kohavi",
+      "experience_context": "Experimentation leader",
+      "research_focus": "Trustworthy A/B tests; measurement",
+      "source_url": "https://www.lennysnewsletter.com/p/the-ultimate-guide-to-ab-testing",
+      "read_scope": "T"
+    },
+    {
+      "id": "L075",
+      "name": "Nicole Forsgren",
+      "experience_context": "Software delivery researcher",
+      "research_focus": "Developer productivity; multi-dimensional measurement",
+      "source_url": "https://www.microsoft.com/en-us/research/publication/the-space-of-developer-productivity-theres-more-to-it-than-you-think/",
+      "read_scope": "A"
+    },
+    {
+      "id": "L115",
+      "name": "Vikrama Dhiman",
+      "experience_context": "Product leadership",
+      "research_focus": "Execution; decision facilitation; PM growth",
+      "source_url": "https://www.lennysnewsletter.com/p/a-framework-for-pm-skill-development",
+      "read_scope": "T"
+    },
+    {
+      "id": "L076",
+      "name": "Andrej Karpathy",
+      "experience_context": "AI researcher and builder",
+      "research_focus": "Model intuition; AI education; engineering",
+      "source_url": "https://karpathy.ai/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L077",
+      "name": "Chip Huyen",
+      "experience_context": "AI systems practitioner and writer",
+      "research_focus": "AI engineering; production systems",
+      "source_url": "https://huyenchip.com/blog/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L078",
+      "name": "Hamel Husain",
+      "experience_context": "AI engineering and evaluation practitioner",
+      "research_focus": "Task-specific evals; error analysis",
+      "source_url": "https://hamel.dev/blog/posts/evals/index.html",
+      "read_scope": "M"
+    },
+    {
+      "id": "L079",
+      "name": "Shreya Shankar",
+      "experience_context": "AI systems researcher",
+      "research_focus": "Data workflows; evaluations",
+      "source_url": "https://www.sh-reya.com/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L080",
+      "name": "Simon Willison",
+      "experience_context": "Software and AI tool builder",
+      "research_focus": "Prototypes; model behaviour; practical limitations",
+      "source_url": "https://simonwillison.net/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L081",
+      "name": "Harrison Chase",
+      "experience_context": "AI application platform founder",
+      "research_focus": "Agent systems; developer products",
+      "source_url": "https://sequoiacap.com/podcast/training-data-harrison-chase",
+      "read_scope": "D"
+    },
+    {
+      "id": "L082",
+      "name": "Guillermo Rauch",
+      "experience_context": "Developer platform founder",
+      "research_focus": "Developer experience; AI product creation",
+      "source_url": "https://rauchg.com/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L083",
+      "name": "Amjad Masad",
+      "experience_context": "Developer platform founder",
+      "research_focus": "AI building workflows; Replit",
+      "source_url": "https://www.lennysnewsletter.com/p/behind-the-product-replit-amjad-masad",
+      "read_scope": "T"
+    },
+    {
+      "id": "L084",
+      "name": "Marily Nika",
+      "experience_context": "AI product educator",
+      "research_focus": "AI PM capabilities",
+      "source_url": "https://www.lennysnewsletter.com/p/ai-and-product-management-marily",
+      "read_scope": "T"
+    },
+    {
+      "id": "L085",
+      "name": "Aman Khan",
+      "experience_context": "AI product practitioner",
+      "research_focus": "AI PM work; evaluations",
+      "source_url": "https://www.lennysnewsletter.com/p/becoming-an-ai-pm-aman-khan",
+      "read_scope": "T"
+    },
+    {
+      "id": "L086",
+      "name": "Raiza Martin",
+      "experience_context": "AI product leadership",
+      "research_focus": "NotebookLM; product discovery",
+      "source_url": "https://www.lennysnewsletter.com/p/googles-notebooklm-raiza-martin",
+      "read_scope": "T"
+    },
+    {
+      "id": "L087",
+      "name": "Tamar Yehoshua",
+      "experience_context": "Product and technology leadership",
+      "research_focus": "Organisational effectiveness; AI",
+      "source_url": "https://www.lennysnewsletter.com/p/you-dont-need-to-be-a-well-run-company-to-win-tamar-yehoshua",
+      "read_scope": "T"
+    },
+    {
+      "id": "L088",
+      "name": "Inbal Shani",
+      "experience_context": "Developer and AI product leadership",
+      "research_focus": "AI software development; platforms",
+      "source_url": "https://www.lennysnewsletter.com/p/the-future-of-ai-in-software-development",
+      "read_scope": "T"
+    },
+    {
+      "id": "L090",
+      "name": "Boris Cherny",
+      "experience_context": "Software builder and writer",
+      "research_focus": "Programming; AI engineering workflows",
+      "source_url": "https://borischerny.com/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L091",
+      "name": "Tony Fadell",
+      "experience_context": "Hardware and connected product builder",
+      "research_focus": "Hardware; product development; physical systems",
+      "source_url": "https://www.buildc.com/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L092",
+      "name": "Ken Kocienda",
+      "experience_context": "Software craft and interaction design",
+      "research_focus": "Prototyping; Apple development",
+      "source_url": "https://a16z.com/inside-the-apple-factory-software-design-in-the-age-of-steve-jobs/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L093",
+      "name": "Steve Jobs",
+      "experience_context": "Historical product and company leader",
+      "research_focus": "Historical primary talks and correspondence",
+      "source_url": "https://stevejobsarchive.com/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L094",
+      "name": "Jony Ive",
+      "experience_context": "Industrial and interaction design",
+      "research_focus": "Integrated hardware and software craft",
+      "source_url": "https://www.lovefrom.com/jony",
+      "read_scope": "D"
+    },
+    {
+      "id": "L095",
+      "name": "Matt Rogers",
+      "experience_context": "Connected hardware founder",
+      "research_focus": "Nest and Mill; physical product systems",
+      "source_url": "https://www.mill.com/blog/mill-on-netflix",
+      "read_scope": "D"
+    },
+    {
+      "id": "L096",
+      "name": "Eric Migicovsky",
+      "experience_context": "Hardware and software founder",
+      "research_focus": "Pebble failure; inventory; segment expansion",
+      "source_url": "https://ericmigi.com/blog/success-and-failure-at-pebble/",
+      "read_scope": "M"
+    },
+    {
+      "id": "L097",
+      "name": "Eben Upton",
+      "experience_context": "Computing hardware founder",
+      "research_focus": "Raspberry Pi; affordability; ecosystem",
+      "source_url": "https://www.raspberrypi.com/news/story-raspberry-pi/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L098",
+      "name": "Limor Fried",
+      "experience_context": "Hardware engineering and founder",
+      "research_focus": "Maker ecosystem; hardware education",
+      "source_url": "https://www.adafruit.com/about",
+      "read_scope": "D"
+    },
+    {
+      "id": "L099",
+      "name": "James Dyson",
+      "experience_context": "Physical product inventor and founder",
+      "research_focus": "Iteration; physical design",
+      "source_url": "https://www.dyson.com/james-dyson",
+      "read_scope": "D"
+    },
+    {
+      "id": "L100",
+      "name": "Tom Conrad",
+      "experience_context": "Consumer product and engineering leadership",
+      "research_focus": "Product failures; consumer experiences",
+      "source_url": "https://www.lennysnewsletter.com/p/billion-dollar-failures-and-billion",
+      "read_scope": "T"
+    },
+    {
+      "id": "L101",
+      "name": "Gergely Orosz",
+      "experience_context": "Engineering practitioner and interviewer",
+      "research_focus": "Product-minded engineering; trade-offs",
+      "source_url": "https://blog.pragmaticengineer.com/the-product-minded-engineer/",
+      "read_scope": "M"
+    },
+    {
+      "id": "L102",
+      "name": "Lara Hogan",
+      "experience_context": "Engineering leadership coach",
+      "research_focus": "Explicit trade-offs; conflict; coaching",
+      "source_url": "https://larahogan.me/blog/even-over-statements/",
+      "read_scope": "M"
+    },
+    {
+      "id": "L103",
+      "name": "Pat Kua",
+      "experience_context": "Engineering leadership educator",
+      "research_focus": "Tech leads; managers; organisational systems",
+      "source_url": "https://www.patkua.com/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L104",
+      "name": "Tanya Reilly",
+      "experience_context": "Engineering leadership practitioner",
+      "research_focus": "Glue work; invisible coordination",
+      "source_url": "https://www.noidea.dog/glue",
+      "read_scope": "M"
+    },
+    {
+      "id": "L105",
+      "name": "Michael Lopp",
+      "experience_context": "Engineering management writer",
+      "research_focus": "Escalation; management; system knowledge",
+      "source_url": "https://randsinrepose.com/archives/the-insider/",
+      "read_scope": "M"
+    },
+    {
+      "id": "L106",
+      "name": "Bryan Cantrill",
+      "experience_context": "Systems engineering and company builder",
+      "research_focus": "Values; principles; product decisions",
+      "source_url": "https://rfd.shared.oxide.computer/rfd/0002",
+      "read_scope": "M"
+    },
+    {
+      "id": "L107",
+      "name": "Sherif Mansour",
+      "experience_context": "Product and engineering partnership",
+      "research_focus": "Product engineers",
+      "source_url": "https://medium.com/@sherifmansour/product-engineers-f424da766871",
+      "read_scope": "D"
+    },
+    {
+      "id": "L108",
+      "name": "Addy Osmani",
+      "experience_context": "Engineering leadership writer",
+      "research_focus": "Communication; conflict; complexity",
+      "source_url": "https://addyosmani.com/topics/engineering-leadership/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L109",
+      "name": "Julia Evans",
+      "experience_context": "Software educator",
+      "research_focus": "Debugging; technical mental models",
+      "source_url": "https://jvns.ca/",
+      "read_scope": "D"
+    },
+    {
+      "id": "L110",
+      "name": "Matthew Skelton",
+      "experience_context": "Organisation and software delivery adviser",
+      "research_focus": "Team boundaries; cognitive load; flow",
+      "source_url": "https://teamtopologies.com/key-concepts",
+      "read_scope": "M"
+    },
+    {
+      "id": "L111",
+      "name": "Manuel Pais",
+      "experience_context": "Organisation and software delivery adviser",
+      "research_focus": "Team interactions; platform operating model",
+      "source_url": "https://teamtopologies.com/key-concepts",
+      "read_scope": "M"
+    },
+    {
+      "id": "L112",
+      "name": "Sriram Narayan",
+      "experience_context": "Technology and organisation practitioner",
+      "research_focus": "Durable product teams; ownership",
+      "source_url": "https://martinfowler.com/articles/products-over-projects.html",
+      "read_scope": "M"
+    },
+    {
+      "id": "L113",
+      "name": "Erika Hall",
+      "experience_context": "Design research practitioner",
+      "research_focus": "Decision-relevant research questions",
+      "source_url": "https://www.muledesign.com/blog/research-questions-are-not-interview-questions",
+      "read_scope": "M"
+    },
+    {
+      "id": "L114",
+      "name": "Roger Martin",
+      "experience_context": "Strategy thinker and adviser",
+      "research_focus": "Strategic choices; business design",
+      "source_url": "https://www.lennysnewsletter.com/p/the-ultimate-guide-to-strategy-roger-martin",
+      "read_scope": "D"
+    },
+    {
+      "id": "L120",
+      "name": "Margaret-Anne Storey",
+      "experience_context": "Software engineering researcher",
+      "research_focus": "Developer experience; productivity measurement",
+      "source_url": "https://www.microsoft.com/en-us/research/publication/the-space-of-developer-productivity-theres-more-to-it-than-you-think/",
+      "read_scope": "A"
+    },
+    {
+      "id": "L117",
+      "name": "Thejasvi Bhat",
+      "experience_context": "Swiggy engineering case author",
+      "research_focus": "POP serviceability; operations; experiments",
+      "source_url": "https://medium.com/swiggy-bytes/pop-faster-how-automated-ops-improved-ux-led-to-17-more-orders-c155af3a169b",
+      "read_scope": "M"
+    },
+    {
+      "id": "L118",
+      "name": "Riteek Srivastav",
+      "experience_context": "Gojek experimentation case author",
+      "research_focus": "Litmus; experiment infrastructure; rollout",
+      "source_url": "https://medium.com/gojekengineering/introducing-litmus-gojeks-own-experimentation-platform-3803467b6a53",
+      "read_scope": "M"
+    },
+    {
+      "id": "L119",
+      "name": "Jan Overgoor",
+      "experience_context": "Airbnb experimentation case author",
+      "research_focus": "Experiment interpretation; stopping rules",
+      "source_url": "https://medium.com/airbnb-engineering/experiments-at-airbnb-e2db3abf39e7",
+      "read_scope": "M"
+    }
+  ],
+  "competencies": [
+    {
+      "id": "K01",
+      "name": "Customer exploration",
+      "practice": "Observe real workflows; interview for specific past events; include lost and non-users.",
+      "observable_work": "Research plan, observation notes and disconfirming evidence.",
+      "leadership_progression": "Build a repeatable customer-learning system; challenge biased recruitment.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "customer research",
+        "discovery",
+        "interview",
+        "research question",
+        "customer learning"
+      ]
+    },
+    {
+      "id": "K02",
+      "name": "Problem framing and segmentation",
+      "practice": "Separate users, buyers and beneficiaries; identify the job, alternatives and constraints.",
+      "observable_work": "Problem brief and segment comparison.",
+      "leadership_progression": "Choose which problems and segments the organisation will deliberately leave aside.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "segmentation",
+        "jobs to be done",
+        "jtbd",
+        "problem framing",
+        "buyer",
+        "user segment"
+      ]
+    },
+    {
+      "id": "K03",
+      "name": "Hypotheses and causal reasoning",
+      "practice": "State the mechanism, prediction and competing explanation.",
+      "observable_work": "Falsifiable hypothesis with an evidence threshold.",
+      "leadership_progression": "Teach teams to distinguish association, mechanism and causal evidence.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "hypothesis",
+        "causal",
+        "assumption",
+        "falsifiable",
+        "causality"
+      ]
+    },
+    {
+      "id": "K04",
+      "name": "Strategy and differentiation",
+      "practice": "Make choices about where to compete, what advantage to build and what to decline.",
+      "observable_work": "Strategy diagnosis, choices and assumptions.",
+      "leadership_progression": "Connect several teams' investments into a coherent direction.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "strategy",
+        "strategic",
+        "moat",
+        "differentiation",
+        "positioning"
+      ]
+    },
+    {
+      "id": "K05",
+      "name": "Decisions under uncertainty",
+      "practice": "Consider reversibility, cost of delay, information value and downside.",
+      "observable_work": "Decision record with options and a revisit trigger.",
+      "leadership_progression": "Set clear decision rights and make timely decisions with incomplete evidence.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "decision",
+        "uncertainty",
+        "reversibility",
+        "opportunity cost",
+        "trade off"
+      ]
+    },
+    {
+      "id": "K06",
+      "name": "Prioritisation and portfolios",
+      "practice": "Compare opportunities, dependencies and opportunity costs; include maintenance and risk.",
+      "observable_work": "Portfolio allocation with explicit trade-offs.",
+      "leadership_progression": "Reallocate resources and stop weak investments without protecting sunk costs.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "prioritization",
+        "prioritisation",
+        "roadmap",
+        "portfolio",
+        "resource allocation"
+      ]
+    },
+    {
+      "id": "K07",
+      "name": "Business models and unit economics",
+      "practice": "Understand revenue drivers, cost to serve, margins and cash timing.",
+      "observable_work": "Simple economic model with sensitivity analysis.",
+      "leadership_progression": "Connect product decisions to sustainable company economics.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "unit economics",
+        "margin",
+        "cost to serve",
+        "business model",
+        "cash flow"
+      ]
+    },
+    {
+      "id": "K08",
+      "name": "Pricing and packaging",
+      "practice": "Understand willingness to pay, value metrics, buyer constraints and renewal behaviour.",
+      "observable_work": "Packaging hypothesis and monetisation test.",
+      "leadership_progression": "Coordinate product, finance, sales and customer success around economic value.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "pricing",
+        "packaging",
+        "monetization",
+        "monetisation",
+        "willingness to pay",
+        "price our"
+      ]
+    },
+    {
+      "id": "K09",
+      "name": "Distribution and go to market",
+      "practice": "Understand positioning, channels, sales cycles, procurement and adoption barriers.",
+      "observable_work": "Target customer narrative and distribution plan.",
+      "leadership_progression": "Align product investments with a feasible route to market.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "go to market",
+        "gtm",
+        "distribution",
+        "sales cycle",
+        "procurement"
+      ]
+    },
+    {
+      "id": "K10",
+      "name": "Activation retention and growth",
+      "practice": "Find time to value, recurring value, churn mechanisms and constraints on growth.",
+      "observable_work": "Cohort analysis and a testable growth model.",
+      "leadership_progression": "Balance acquisition with retention, economics and customer trust.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "retention",
+        "activation",
+        "churn",
+        "growth",
+        "onboarding"
+      ]
+    },
+    {
+      "id": "K11",
+      "name": "Product sense and design craft",
+      "practice": "Understand usability, interaction quality, accessibility and coherent user journeys.",
+      "observable_work": "Prototype, critique and observed task completion.",
+      "leadership_progression": "Set a quality standard while allowing teams to explore different solutions.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "usability",
+        "product sense",
+        "design craft",
+        "user journey",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "K12",
+      "name": "Technical judgement",
+      "practice": "Discuss architecture, data flows, build-versus-buy, dependencies and maintenance.",
+      "observable_work": "Trade-off memo written with engineering.",
+      "leadership_progression": "Make technical investment legible in business and customer terms.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "architecture",
+        "technical debt",
+        "build versus buy",
+        "build vs buy",
+        "engineering strategy"
+      ]
+    },
+    {
+      "id": "K13",
+      "name": "AI and data judgement",
+      "practice": "Understand model limits, data quality, evaluation, latency, costs and failure recovery.",
+      "observable_work": "Task-specific evaluation set and error taxonomy.",
+      "leadership_progression": "Establish joint product, engineering and domain accountability for AI quality.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "ai",
+        "llm",
+        "evals",
+        "evaluation",
+        "model",
+        "hallucination",
+        "agent"
+      ]
+    },
+    {
+      "id": "K14",
+      "name": "Measurement and experimentation",
+      "practice": "Define outcomes, guardrails, instrumentation and inference limits.",
+      "observable_work": "Metric tree, experiment plan and result interpretation.",
+      "leadership_progression": "Prevent metric gaming and institutionalise trustworthy learning.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "experiment",
+        "a b test",
+        "ab test",
+        "a/b",
+        "metrics",
+        "measurement",
+        "metric"
+      ]
+    },
+    {
+      "id": "K15",
+      "name": "Delivery and scope",
+      "practice": "Break work into useful increments; manage dependencies and uncertainty.",
+      "observable_work": "Thin end-to-end slice with acceptance and rollback criteria.",
+      "leadership_progression": "Improve flow and decision speed without rewarding output volume alone.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "delivery",
+        "scope",
+        "shipping",
+        "release",
+        "rollout"
+      ]
+    },
+    {
+      "id": "K16",
+      "name": "Platforms APIs and ecosystems",
+      "practice": "Serve internal or external developers; understand adoption, compatibility and migration.",
+      "observable_work": "Platform user journey, service contract and migration plan.",
+      "leadership_progression": "Balance platform investment with demonstrable downstream value.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "platform",
+        "api",
+        "ecosystem",
+        "migration",
+        "developer experience"
+      ]
+    },
+    {
+      "id": "K17",
+      "name": "Reliability support and operations",
+      "practice": "Understand failure modes, support burden, incident response and recovery.",
+      "observable_work": "Operational readiness review and support feedback loop.",
+      "leadership_progression": "Allocate reliability investment based on customer harm and business exposure.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "reliability",
+        "incident",
+        "support",
+        "outage",
+        "operational",
+        "serviceability"
+      ]
+    },
+    {
+      "id": "K18",
+      "name": "Physical products hardware and IoT",
+      "practice": "Account for manufacturing, inventory, field updates, repair, supply chains and end of life.",
+      "observable_work": "Lifecycle and cash-risk map, including device–cloud dependencies.",
+      "leadership_progression": "Integrate software, hardware and service decisions across long lead times.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "hardware",
+        "iot",
+        "inventory",
+        "manufacturing",
+        "supply chain",
+        "physical product"
+      ]
+    },
+    {
+      "id": "K19",
+      "name": "Trust responsibility and inclusion",
+      "practice": "Consider privacy, security, accessibility, misuse, local context and sector obligations.",
+      "observable_work": "Impact assessment and explicit non-negotiable constraints.",
+      "leadership_progression": "Bring specialist partners into decisions and fund necessary safeguards.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "privacy",
+        "security",
+        "trust",
+        "inclusion",
+        "misuse"
+      ]
+    },
+    {
+      "id": "K20",
+      "name": "Writing narrative and executive communication",
+      "practice": "Make the problem, evidence, choice and ask clear for the audience.",
+      "observable_work": "Concise decision memo and product narrative.",
+      "leadership_progression": "Create shared understanding across teams, executives and external partners.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "prd",
+        "product definition",
+        "communication",
+        "writing",
+        "executive",
+        "narrative"
+      ]
+    },
+    {
+      "id": "K21",
+      "name": "Influence conflict and negotiation",
+      "practice": "Understand incentives, separate interests from positions and surface disagreement.",
+      "observable_work": "Stakeholder map, disputed assumptions and resolution record.",
+      "leadership_progression": "Resolve substantive conflicts fairly; escalate with options and clear ownership.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "conflict",
+        "stakeholder",
+        "negotiation",
+        "influence",
+        "disagreement"
+      ]
+    },
+    {
+      "id": "K22",
+      "name": "Organisation and decision rights",
+      "practice": "Understand team boundaries, incentives, dependencies and cognitive load.",
+      "observable_work": "Ownership map and explicit decision process.",
+      "leadership_progression": "Design an organisation that can deliver outcomes without constant executive rescue.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "team topology",
+        "team topologies",
+        "organisation",
+        "organization",
+        "decision rights",
+        "cognitive load"
+      ]
+    },
+    {
+      "id": "K23",
+      "name": "Hiring coaching and delegation",
+      "practice": "Give useful feedback, define expectations and delegate with context.",
+      "observable_work": "Coaching plan, role rubric and scoped delegation.",
+      "leadership_progression": "Develop people who can make better decisions independently.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "coaching",
+        "delegation",
+        "hiring",
+        "performance",
+        "team leadership"
+      ]
+    },
+    {
+      "id": "K24",
+      "name": "Impediments crisis and change",
+      "practice": "Diagnose blockers at the appropriate level; manage incidents and transitions.",
+      "observable_work": "Blocker diagnosis, escalation path and change plan.",
+      "leadership_progression": "Remove systemic obstacles and communicate clearly under pressure.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "blocker",
+        "impediment",
+        "crisis",
+        "escalation",
+        "change management"
+      ]
+    },
+    {
+      "id": "K25",
+      "name": "Self leadership and professional judgement",
+      "practice": "Seek feedback, regulate reactions, manage attention and acknowledge uncertainty.",
+      "observable_work": "Reflection log and specific behaviour change.",
+      "leadership_progression": "Model accountability, integrity and a sustainable pace; avoid treating personal style as universal.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "self leadership",
+        "accountability",
+        "integrity",
+        "feedback",
+        "pressure"
+      ]
+    },
+    {
+      "id": "K26",
+      "name": "Learning calibration and stopping",
+      "practice": "Compare predictions with outcomes; examine failures and changed assumptions.",
+      "observable_work": "Decision retrospective and updated belief or stop decision.",
+      "leadership_progression": "Build organisational memory and reward justified changes of mind.",
+      "attribution": "Original Lazo synthesis; not an externally validated competency scale",
+      "retrieval_terms": [
+        "postmortem",
+        "post mortem",
+        "failure",
+        "retrospective",
+        "calibration",
+        "changed belief",
+        "learning"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "C01",
+      "title": "Research starts with a decision",
+      "author": "Erika Hall",
+      "source_url": "https://www.muledesign.com/blog/research-questions-are-not-interview-questions",
+      "read_scope": "Relevant article passages reviewed; practitioner method.",
+      "locator": "Opening discussion of research questions and organisational decisions.",
+      "lesson": "Specify what the team needs to learn before choosing interviews, surveys or another method. A question that the organisation must answer is different from a question asked directly to a participant.",
+      "evidence": "Original practitioner explanation; no causal outcome study assessed.",
+      "limits": "Useful for discovery and stakeholder alignment. It does not determine sample size or make self-reported customer intentions reliable.",
+      "exercise": "For Lazo's next feature, write the decision, three uncertainties and the evidence that could change the decision. Reject any interview question that cannot inform one of those uncertainties.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K01",
+        "K02"
+      ],
+      "retrieval_terms": [
+        "research",
+        "interview",
+        "discovery",
+        "research question"
+      ]
+    },
+    {
+      "id": "C02",
+      "title": "Connect opportunities to an outcome",
+      "author": "Teresa Torres",
+      "source_url": "https://www.producttalk.org/opportunity-solution-trees/",
+      "read_scope": "Introductory structure reviewed; not the full archive or book.",
+      "locator": "Opening explanation of the opportunity solution tree.",
+      "lesson": "Connect a desired outcome to customer opportunities, possible solutions and assumption tests. Keep the problem space visible while considering multiple solutions.",
+      "evidence": "Author's framework description; broad adoption and outcome claims not independently assessed here.",
+      "limits": "The tree organises reasoning; it does not establish that a chosen outcome or customer need is correct. Avoid making one preferred feature look inevitable.",
+      "exercise": "Map one retention problem with competing explanations and two solution options per promising opportunity. Mark observations separately from assumptions.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K01",
+        "K02",
+        "K03"
+      ],
+      "retrieval_terms": [
+        "opportunity tree",
+        "opportunity solution",
+        "discovery",
+        "assumption"
+      ]
+    },
+    {
+      "id": "C03",
+      "title": "Make strategy hypotheses commercially explicit",
+      "author": "Gibson Biddle",
+      "source_url": "https://gibsonbiddle.medium.com/intro-to-product-strategy-60bdf72b17e3",
+      "read_scope": "Article introduction and framework description reviewed.",
+      "locator": "Introduction to delight, hard-to-copy advantage and margin.",
+      "lesson": "Consider customer delight, defensibility and economics together when forming product strategy hypotheses.",
+      "evidence": "Operator framework and historical experience; not proof that all three dimensions can be improved simultaneously.",
+      "limits": "Early products may temporarily prioritise learning over margin. Historical company valuations and forecasts are not reusable evidence.",
+      "exercise": "For each Lazo strategic bet, explain the user benefit, why it might remain distinctive, its cost to serve and the assumption most likely to invalidate it.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K04",
+        "K07"
+      ],
+      "retrieval_terms": [
+        "strategy",
+        "dhm",
+        "moat",
+        "margin",
+        "differentiation"
+      ]
+    },
+    {
+      "id": "C04",
+      "title": "Give teams strategic context",
+      "author": "Marty Cagan",
+      "source_url": "https://www.svpg.com/product-leadership-is-hard/",
+      "read_scope": "Substantive article reviewed.",
+      "locator": "Responsibilities for staffing, coaching, vision, strategy and team objectives.",
+      "lesson": "Product leadership spans product management, design and engineering. Empowerment requires capable people and clear strategic context, alongside coaching and team design.",
+      "evidence": "Practitioner leadership guidance; no controlled comparison assessed.",
+      "limits": "Delegation should match capability and risk. Lack of context can make nominal autonomy ineffective.",
+      "exercise": "Replace one feature assignment with a problem brief containing the intended outcome, constraints, decision owner and escalation conditions. Ask the team to explain the choices in its own words.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K22",
+        "K23",
+        "K04"
+      ],
+      "retrieval_terms": [
+        "empowerment",
+        "empowered team",
+        "coaching",
+        "product leadership"
+      ]
+    },
+    {
+      "id": "C05",
+      "title": "Use a shared product definition",
+      "author": "Ravi Mehta",
+      "source_url": "https://blog.ravi-mehta.com/p/product-definition",
+      "read_scope": "Full substantive email body reviewed, 7 October 2026.",
+      "locator": "Product Definition email; discussion of people, agents and shared context.",
+      "lesson": "Keep requirements and context coherent, concise and evolving. Make clear what is included, excluded and undecided; documentation volume alone does not demonstrate clarity.",
+      "evidence": "Author's competency and practice guidance. Claimed reach is not evidence of business impact.",
+      "limits": "A document can become stale. Prototypes and conversations remain important where behaviour is difficult to express in prose.",
+      "exercise": "Give two collaborators the same Lazo brief independently. Compare their understanding of the problem, constraints and non-goals; fix discrepancies before adding more detail.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K20",
+        "K15"
+      ],
+      "retrieval_terms": [
+        "prd",
+        "product definition",
+        "requirements",
+        "documentation",
+        "shared context"
+      ]
+    },
+    {
+      "id": "C06",
+      "title": "Make real trade-offs discussable",
+      "author": "Lara Hogan",
+      "source_url": "https://larahogan.me/blog/even-over-statements/",
+      "read_scope": "Full short article reviewed.",
+      "locator": "Even/over statements and review interval.",
+      "lesson": "Express a temporary preference between two things the team genuinely values. Tie it to a goal and revisit the trade-off rather than pretending both priorities can always win.",
+      "evidence": "Coaching technique; no measured causal effect assessed.",
+      "limits": "Some obligations are constraints, not negotiable values. A leader's statement does not resolve who has decision authority.",
+      "exercise": "For a contested launch, write a specific preference, its cost, the accountable decision maker and a review date. Record dissent and what evidence would reverse the choice.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K21",
+        "K05"
+      ],
+      "retrieval_terms": [
+        "conflict",
+        "trade off",
+        "tradeoff",
+        "disagreement",
+        "negotiation",
+        "even over"
+      ]
+    },
+    {
+      "id": "C07",
+      "title": "Coauthor engineering strategy with product",
+      "author": "Will Larson",
+      "source_url": "https://lethain.com/eng-strategies/",
+      "read_scope": "Substantive strategy article reviewed, including the Calm example.",
+      "locator": "Diagnosis, policies, actions; strategy working group; Calm example.",
+      "lesson": "Build engineering strategy from a diagnosis, guiding policies and coherent actions. Include product partners and use concrete feedback to make decisions and resource implications understandable.",
+      "evidence": "Practitioner process and a self-reported company example. The article also contains illustrative scenarios that must not be mistaken for actual company results.",
+      "limits": "Do not copy staffing ratios or technology choices without matching organisational constraints.",
+      "exercise": "For Lazo, jointly write one architecture policy and the customer or business reason behind it. List the projects it changes, including an option deliberately declined.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K12",
+        "K22"
+      ],
+      "retrieval_terms": [
+        "engineering strategy",
+        "architecture policy",
+        "resourcing",
+        "technical debt"
+      ]
+    },
+    {
+      "id": "C08",
+      "title": "Bring engineering into problem solving",
+      "author": "Gergely Orosz",
+      "source_url": "https://blog.pragmaticengineer.com/the-product-minded-engineer/",
+      "read_scope": "Substantive method passages reviewed.",
+      "locator": "Characteristics of product-minded engineers.",
+      "lesson": "Engineers can understand users, business goals and metrics, propose alternatives and participate in validating product choices. Their contribution extends beyond implementing a fixed specification.",
+      "evidence": "Operator observations; not an independently measured intervention.",
+      "limits": "Shared discovery does not mean every engineer needs the same role, nor that product responsibility disappears.",
+      "exercise": "Before committing a Lazo feature, have an engineer offer a cheaper or simpler alternative that serves the same user need. Compare user benefit, complexity and operational cost.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K12",
+        "K11"
+      ],
+      "retrieval_terms": [
+        "product minded",
+        "engineering partner",
+        "engineer",
+        "product engineer"
+      ]
+    },
+    {
+      "id": "C09",
+      "title": "Recognise coordination work",
+      "author": "Tanya Reilly",
+      "source_url": "https://www.noidea.dog/glue",
+      "read_scope": "Opening argument and selected presentation passages reviewed.",
+      "locator": "Introduction to glue work and career consequences.",
+      "lesson": "Necessary coordination and enabling work can be poorly recognised. Its allocation and rewards require deliberate attention, particularly where it crowds out an engineer's expected development.",
+      "evidence": "Practitioner account; full presentation and independent outcomes not reviewed.",
+      "limits": "Do not conclude that PMs should absorb all coordination or that juniors should never help others.",
+      "exercise": "Map the last month's undocumented coordination work. Identify recurring owners, recognition gaps and work that should become a team responsibility or a simpler process.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K23",
+        "K22"
+      ],
+      "retrieval_terms": [
+        "glue work",
+        "coordination",
+        "invisible work",
+        "recognition"
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Measure the team's AI burden",
+      "author": "Camille Fournier",
+      "source_url": "https://www.elidedbranches.com/2026/05/guidelines-for-respectful-use-of-ai.html",
+      "read_scope": "Article body reviewed on the author's homepage, 31 May 2026; canonical URL temporarily failed.",
+      "locator": "Elements of Respectful AI Use.",
+      "lesson": "An increase in generated output can impose review costs on colleagues. Authors should review and understand the work they pass along and make it concise enough to use.",
+      "evidence": "Leadership guidance based on observed frustrations; no productivity experiment assessed.",
+      "limits": "This is guidance for accountable collaboration, not evidence that every generated line always requires identical review.",
+      "exercise": "Measure Lazo task completion, correction effort and downstream reviewer time together. Do not count generated documents or code volume as success.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K13",
+        "K20"
+      ],
+      "retrieval_terms": [
+        "ai output",
+        "review burden",
+        "review cost",
+        "generated code",
+        "ai productivity"
+      ]
+    },
+    {
+      "id": "C11",
+      "title": "Build evaluations around user tasks",
+      "author": "Hamel Husain",
+      "source_url": "https://hamel.dev/blog/posts/evals/index.html",
+      "read_scope": "Motivation, Lucy case and initial testing sections reviewed; later sections not fully reviewed.",
+      "locator": "Case Study: Lucy; Types of Evaluation; Write Scoped Tests.",
+      "lesson": "The Rechat Lucy account describes quality plateauing as capabilities expanded. The proposed improvement loop combines task-specific tests, human/model evaluation and product experiments.",
+      "evidence": "First-hand implementation account; no independent business-outcome attribution assessed.",
+      "limits": "General model benchmarks cannot establish quality on Lazo tasks. Synthetic cases alone can miss real user failures.",
+      "exercise": "Create a small expert-labelled set of actual product decisions, error categories and abstention cases. Compare versions on factual support, contextual relevance and harmful omissions before testing with users.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K13",
+        "K14"
+      ],
+      "retrieval_terms": [
+        "eval",
+        "evals",
+        "evaluation",
+        "llm",
+        "ai",
+        "hallucination",
+        "rechat"
+      ],
+      "retrieval_intents": [
+        [
+          [
+            "assistant",
+            "ai",
+            "llm"
+          ],
+          [
+            "wrong answers",
+            "incorrect answers",
+            "hallucinations"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "C12",
+      "title": "Extract expert procedure from actual work",
+      "author": "Anshumani Ruddra",
+      "source_url": "https://maven.com/anshumani/levelup-to-super-ic",
+      "read_scope": "Two substantive author emails reviewed: 10 September and 3 October 2026. URL is the public channel, not the email text.",
+      "locator": "Why product builders own AI evals; Never ask the model to invent your procedure.",
+      "lesson": "Use expert work, corrections and established procedures to construct reusable AI workflows. Evaluate against realistic failures rather than accepting a model's plausible procedure.",
+      "evidence": "Author instruction and personal examples, mixed with course promotion; scale claims not independently verified.",
+      "limits": "Evaluation ownership should include engineering and domain experts as appropriate; PM-only ownership is not a universal rule.",
+      "exercise": "Capture one experienced PM's decision, alternatives and corrections. Turn it into a candidate Lazo procedure, then test on a different case the expert has not demonstrated.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K13",
+        "K26"
+      ],
+      "retrieval_terms": [
+        "expert procedure",
+        "agent skill",
+        "ai workflow",
+        "expert work",
+        "eval"
+      ]
+    },
+    {
+      "id": "C13",
+      "title": "Operations can change product outcomes",
+      "author": "Thejasvi Bhat — Swiggy",
+      "source_url": "https://medium.com/swiggy-bytes/pop-faster-how-automated-ops-improved-ux-led-to-17-more-orders-c155af3a169b",
+      "read_scope": "Implementation and results passages reviewed; 4 May 2020.",
+      "locator": "POP serviceability and curation changes; experimentation, rollout and results.",
+      "lesson": "The POP case links serviceability, curation and ordering-system changes to a better ordering experience, with experiments and staged rollout.",
+      "evidence": "Swiggy reports 17% more POP orders. The reviewed account does not supply enough detail to independently isolate each change's causal contribution or assess uncertainty.",
+      "limits": "This is a company-reported outcome, not a universal automation uplift or proof about all Swiggy practices.",
+      "exercise": "When Lazo users fail a workflow, inspect eligibility, data freshness and operational handoffs before redesigning the interface. Measure end-to-end completion and support cost together.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K17",
+        "K14"
+      ],
+      "retrieval_terms": [
+        "swiggy",
+        "serviceability",
+        "food delivery",
+        "ordering",
+        "operational friction"
+      ]
+    },
+    {
+      "id": "C14",
+      "title": "Treat experimentation as a product",
+      "author": "Riteek Srivastav — Gojek",
+      "source_url": "https://medium.com/gojekengineering/introducing-litmus-gojeks-own-experimentation-platform-3803467b6a53",
+      "read_scope": "Substantive implementation passages reviewed; 27 June 2019.",
+      "locator": "Litmus experiment/release entities, targeting and rollout phases.",
+      "lesson": "Gojek describes replacing limited manual segmentation with an experimentation platform supporting targeting, traffic allocation and gradual release.",
+      "evidence": "Documented implementation. No quantified business uplift was established in the reviewed material.",
+      "limits": "Building a platform has maintenance costs; an early team may need a simpler mechanism. Release controls do not guarantee sound experiment design.",
+      "exercise": "Give every Lazo experiment an owner, eligible population, allocation rule, exposure record, guardrails and rollback plan before adding elaborate tooling.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K14",
+        "K16"
+      ],
+      "retrieval_terms": [
+        "gojek",
+        "litmus",
+        "experimentation platform",
+        "feature flag",
+        "gradual rollout"
+      ]
+    },
+    {
+      "id": "C15",
+      "title": "Separate a product decision from a significant metric",
+      "author": "Jan Overgoor — Airbnb",
+      "source_url": "https://medium.com/airbnb-engineering/experiments-at-airbnb-e2db3abf39e7",
+      "read_scope": "Experiment interpretation and example passages reviewed; 27 May 2014.",
+      "locator": "Sample size and stopping discussion; maximum-price filter example.",
+      "lesson": "The account discusses experiment pitfalls and a higher maximum-price filter shipped despite a neutral metric result because it provided user utility without an observed decline.",
+      "evidence": "Historical company practice and one decision account; neutrality does not prove absence of harm.",
+      "limits": "Do not copy historical stopping methods without statistical review. Product judgement must remain explicit about measurement limits.",
+      "exercise": "Predefine what an inconclusive Lazo result means. If shipping for qualitative value, record that rationale and monitor guardrails instead of relabelling the result an experimental win.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K14",
+        "K05"
+      ],
+      "retrieval_terms": [
+        "airbnb",
+        "experiment",
+        "ab test",
+        "a b test",
+        "neutral result",
+        "stopping rule"
+      ]
+    },
+    {
+      "id": "C16",
+      "title": "Distinguish product love from a viable business",
+      "author": "Eric Migicovsky — Pebble",
+      "source_url": "https://ericmigi.com/blog/success-and-failure-at-pebble/",
+      "read_scope": "Summary and opening failure analysis reviewed; published 11 April 2022.",
+      "locator": "Why we failed; production lead-time discussion.",
+      "lesson": "Migicovsky attributes Pebble's failure to factors including unproven segment expansion, inventory commitments, increased operating expenses and lower margins despite a loved product.",
+      "evidence": "Founder retrospective. Useful failure evidence, but affected by hindsight and not an independently reconstructed causal history.",
+      "limits": "Do not infer that market expansion always fails or that staying in a niche guarantees survival.",
+      "exercise": "For a hardware or capacity-heavy Lazo customer, stress-test demand, inventory or compute commitments, margin and cash timing before recommending aggressive expansion.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K18",
+        "K07",
+        "K26"
+      ],
+      "retrieval_terms": [
+        "pebble",
+        "inventory",
+        "hardware",
+        "forecast",
+        "cash",
+        "market expansion"
+      ],
+      "retrieval_intents": [
+        [
+          [
+            "factory",
+            "manufacturing",
+            "hardware"
+          ],
+          [
+            "payment",
+            "demand",
+            "order",
+            "lead time"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "C17",
+      "title": "Use multiple dimensions of developer productivity",
+      "author": "Nicole Forsgren, Margaret-Anne Storey and coauthors",
+      "source_url": "https://www.microsoft.com/en-us/research/publication/the-space-of-developer-productivity-theres-more-to-it-than-you-think/",
+      "read_scope": "Abstract and publication metadata reviewed; full paper methods not assessed.",
+      "locator": "Abstract.",
+      "lesson": "The SPACE abstract argues that developer productivity cannot be captured by activity or a single metric.",
+      "evidence": "Research publication; this pass supports that framing, not a complete appraisal of the paper or a validated Lazo score.",
+      "limits": "Do not convert a multidimensional model into another opaque individual ranking.",
+      "exercise": "Pair delivery and quality measures with collaboration and reported friction. Use aggregate signals to improve the system, with qualitative context rather than individual output quotas.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K14",
+        "K12"
+      ],
+      "retrieval_terms": [
+        "developer productivity",
+        "engineering throughput",
+        "space framework",
+        "productivity metric"
+      ]
+    },
+    {
+      "id": "C18",
+      "title": "Design team interactions around flow",
+      "author": "Matthew Skelton and Manuel Pais — Team Topologies",
+      "source_url": "https://teamtopologies.com/key-concepts",
+      "read_scope": "Core team types, interaction modes and cautions reviewed.",
+      "locator": "Four fundamental topologies; three interaction modes; words of caution.",
+      "lesson": "Distinguish stream-aligned, enabling, specialist subsystem and platform teams. Make collaboration, service provision and facilitation explicit while considering cognitive load.",
+      "evidence": "Authors' organisational framework; no independent causal evaluation assessed here.",
+      "limits": "The source warns against reducing the approach to an org chart or isolated team labels.",
+      "exercise": "Map one delayed Lazo initiative's waiting time and dependencies. Propose a time-bounded change to a handoff or service contract and compare delay and rework.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K22",
+        "K16"
+      ],
+      "retrieval_terms": [
+        "team topologies",
+        "cognitive load",
+        "team dependencies",
+        "team boundary",
+        "platform team"
+      ]
+    },
+    {
+      "id": "C19",
+      "title": "Connect growth to the product and business model",
+      "author": "Brian Balfour, Casey Winters, Kevin Kwok and Andrew Chen",
+      "source_url": "https://www.reforge.com/blog/growth-loops",
+      "read_scope": "Opening framework and organisational discussion reviewed; 31 July 2018.",
+      "locator": "Growth systems and functional silos.",
+      "lesson": "The article connects product, distribution and monetisation, using loops to reason about growth and the costs of fragmented functional goals.",
+      "evidence": "Practitioner framework; named coauthors form one source family, not four independent validations.",
+      "limits": "A loop diagram does not prove compounding, positive unit economics or durability. Funnels can still describe conversion steps.",
+      "exercise": "Map the proposed Lazo loop, then identify its weakest measured conversion, recurring input cost and saturation condition. Compare against a simpler acquisition model.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K10",
+        "K09",
+        "K07"
+      ],
+      "retrieval_terms": [
+        "growth loop",
+        "growth",
+        "distribution",
+        "funnel",
+        "monetization",
+        "monetisation"
+      ]
+    },
+    {
+      "id": "C20",
+      "title": "Make values usable in decisions",
+      "author": "Bryan Cantrill — Oxide",
+      "source_url": "https://rfd.shared.oxide.computer/rfd/0002",
+      "read_scope": "Substantive operating document reviewed.",
+      "locator": "Mission, principles and values.",
+      "lesson": "An explicit operating document can distinguish mission, principles and values and clarify how a company expects people to make trade-offs.",
+      "evidence": "A first-party organisational artifact, not evidence that these values caused company success.",
+      "limits": "Values become useful through decisions and accountability; copying the wording does not reproduce the organisation.",
+      "exercise": "Write two Lazo decision examples where a proposed value has a real cost. If it never changes an action, refine it or remove it.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K22",
+        "K25"
+      ],
+      "retrieval_terms": [
+        "values",
+        "mission",
+        "principles",
+        "culture",
+        "oxide"
+      ]
+    },
+    {
+      "id": "C21",
+      "title": "Preserve expert knowledge of exceptions",
+      "author": "Michael Lopp",
+      "source_url": "https://randsinrepose.com/archives/the-insider/",
+      "read_scope": "Full essay body reviewed; 20 October 2026.",
+      "locator": "The Insider; The Process Inflection Point.",
+      "lesson": "Lopp's anecdote describes how deep system knowledge helps resolve cases outside standard workflows.",
+      "evidence": "Personal anecdote and management interpretation. Claims about other actors' incentives are the author's interpretation, not independently verified facts.",
+      "limits": "A story about an expert resolver is not a reason to depend permanently on heroics or bypass controls.",
+      "exercise": "After the next exceptional customer failure, record the diagnosis and escalation path. Check whether another teammate can handle a similar case without the original expert.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K24",
+        "K17"
+      ],
+      "retrieval_terms": [
+        "escalation",
+        "exception",
+        "blocker",
+        "support",
+        "impediment"
+      ]
+    },
+    {
+      "id": "C22",
+      "title": "Record changed beliefs and genuine disagreement",
+      "author": "Charity Majors, interviewed by Gergely Orosz",
+      "source_url": "https://newsletter.pragmaticengineer.com/p/stop-being-skeptical-about-ai-for",
+      "read_scope": "Substantive emailed interview takeaways reviewed; 12 August 2026. Audio and full transcript not reviewed.",
+      "locator": "Publisher takeaways on changed AI views, validation and review.",
+      "lesson": "The takeaways report a shift in Majors' view of AI and an emphasis on stronger validation as generated code becomes cheaper. Her views on code review create a useful tension with other engineering guidance.",
+      "evidence": "Attributed interview summary and predictions, not established industry consensus or a measured result.",
+      "limits": "Do not transform a prediction about future verification into permission to ship unvalidated work.",
+      "exercise": "Keep both positions in Lazo. Ask what verification system, failure cost and reversibility would justify a different review policy; evaluate those conditions instead of voting by author popularity.",
+      "validation_status": "research_candidate",
+      "independent_validation": false,
+      "lazo_validated": false,
+      "competency_ids": [
+        "K13",
+        "K26"
+      ],
+      "retrieval_terms": [
+        "ai skepticism",
+        "changed belief",
+        "code review",
+        "generated code",
+        "verification"
+      ]
+    }
+  ],
+  "read_scope_legend": {
+    "M": "Substantive method or case passages reviewed; sometimes only the relevant section.",
+    "T": "Publisher introduction, show notes or explicit takeaways reviewed; audio/full transcript not analysed.",
+    "T-email": "Interview publisher's emailed takeaways reviewed; full interview/transcript not analysed.",
+    "E": "Substantive author email reviewed; not the entire archive or independent validation.",
+    "E-part": "Part of a substantive author email reviewed; not a complete article review.",
+    "A": "Research abstract and metadata reviewed; full paper methods not appraised.",
+    "D": "Author destination, article metadata, bio or source pointer located; no method evaluated.",
+    "P": "Public preview or paid-content boundary reviewed; paid section not reviewed.",
+    "X": "Source located but access blocked; article body not read."
+  }
+}

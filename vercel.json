@@ -3,7 +3,7 @@
   "framework": null,
   "buildCommand": "node scripts/build-hosted.mjs",
   "outputDirectory": "dist",
-  "functions": {"api/hosted.js": {"maxDuration": 60}},
+  "functions": {"api/hosted.js": {"maxDuration": 60, "includeFiles": "knowledge/product-judgement/**"}},
   "headers": [{"source": "/(.*)", "headers": [
     {"key": "X-Content-Type-Options", "value": "nosniff"},
     {"key": "Referrer-Policy", "value": "same-origin"},

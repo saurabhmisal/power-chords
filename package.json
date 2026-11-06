@@ -3,12 +3,18 @@
   "version": "0.3.0",
   "private": true,
   "type": "module",
+  "exports": {
+    "./judgement": "./knowledge/product-judgement/index.cjs",
+    "./*": "./*"
+  },
   "engines": {
     "node": "24.x"
   },
   "scripts": {
     "start": "node src/server.mjs",
     "test": "node --test test/*.test.mjs",
+    "test:judgement": "node --test test/judgement.test.mjs",
+    "export:judgement": "node scripts/export-judgement.mjs",
     "smoke": "node src/smoke.mjs",
     "inspect:all": "node src/inspect-all.mjs",
     "install:reviewed": "node src/install-reviewed.mjs",

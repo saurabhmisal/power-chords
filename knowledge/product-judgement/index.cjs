@@ -1,0 +1,12 @@
+'use strict';
+const fs = require('node:fs');
+const path = require('node:path');
+const crypto = require('node:crypto');
+const { createJudgementEngine } = require('./core.cjs');
+const raw = fs.readFileSync(path.join(__dirname, 'pack.json'), 'utf8');
+const content_hash = crypto.createHash('sha256').update(raw).digest('hex');
+const routes = fs.readFileSync(path.join(__dirname, 'decision-routes.json'), 'utf8');
+const fingerprint = crypto.createHash('sha256');
+for (const file of ['index.cjs', 'core.cjs', 'graph.cjs']) fingerprint.update(fs.readFileSync(path.join(__dirname, file))).update('\0');
+const graph_hash = fingerprint.update(routes).update('\0').update(raw).digest('hex');
+module.exports = createJudgementEngine(JSON.parse(raw), { content_hash, graph_hash }, JSON.parse(routes));

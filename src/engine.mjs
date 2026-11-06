@@ -2,6 +2,7 @@ import { mkdir,writeFile,readFile } from 'node:fs/promises';
 import { resolve,join } from 'node:path';
 import { GitHubClient, isLicenseReviewed,safeSlug,validatePermissions } from './github.mjs';
 import { GROUPS } from './catalog.mjs';
+import judgement from '../knowledge/product-judgement/index.cjs';
 
 export class PowersEngine {
   constructor({db,github=new GitHubClient(),storageDir='./.power-chords',userId='local'}={}){
@@ -13,7 +14,7 @@ export class PowersEngine {
     return {sources:sources.length,inspected:sources.filter(s=>s.inspected_at).length,
       installed:packs.filter(p=>p.state==='installed').length,
       enabled:packs.filter(p=>p.effective_enabled).length,
-      groups:GROUPS.length,mode:'local-first',remote_execution:false};
+      groups:GROUPS.length,mode:'local-first',remote_execution:false,product_judgement:judgement.metadata()};
   }
   list(){return {summary:this.summary(),groups:GROUPS.map(g=>({...g,enabled:this.db.groupState(this.userId)[g.id]!==false})),
     sources:this.db.allSources(this.userId).map(({inspection_json,...source})=>({
@@ -85,7 +86,8 @@ export class PowersEngine {
   }
   toggleGroup(groupId,enabled){this.db.setGroup(this.userId,groupId,Boolean(enabled));return this.db.groupState(this.userId);}
   async resolveIntent(intent,{max=4}={}){
-    if(typeof intent!=='string'||intent.length<3||intent.length>4000)throw new Error('Intent length must be 3–4000 characters');
+    if(typeof intent!=='string'||!intent.trim()||intent.length>4000)throw new Error('Intent length must be 1–4000 characters');
+    const knowledge=judgement.prepareQuestion(intent);
     const words=new Set(intent.toLowerCase().match(/[a-z0-9]{3,}/g)||[]);
     const candidates=this.db.packages(this.userId).filter(p=>p.effective_enabled).map(pkg=>{
       const hay=[pkg.title,pkg.description,pkg.source_name,pkg.group_id].join(' ').toLowerCase();
@@ -102,8 +104,8 @@ export class PowersEngine {
         instructions:text.slice(0,15000),trust:'untrusted_external_skill_instructions',
         permissions:p.granted});
     }
-    this.db.audit(this.userId,'intent.resolve',null,{matched:matches.map(x=>x.id),intent_length:intent.length});
-    return {matches,executed:false,requires_model_broker:true,requires_policy_review:true,
+    this.db.audit(this.userId,'intent.resolve',null,{matched:matches.map(x=>x.id),intent_length:intent.length,judgement_version:knowledge.trace.version,judgement_cards:knowledge.trace.selected_card_ids});
+    return {matches,product_judgement:knowledge.trace,knowledge_context:knowledge.reference_context,knowledge_citations:knowledge.citations,executed:false,requires_model_broker:true,requires_policy_review:true,
       note:'Composition requires a host application with context and permission-policy validation. No tools or external actions were executed.'};
   }
   audit(limit=50){return this.db.history(this.userId,limit);}

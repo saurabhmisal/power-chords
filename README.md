@@ -982,6 +982,7 @@ See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the original source lic
 | [Capability matrix](docs/CAPABILITIES.md) | Scope and implementation status |
 | [Agent compatibility](docs/AGENT_COMPATIBILITY.md) | Installer destinations and execution boundaries |
 | [Architecture](docs/ARCHITECTURE.md) | Runtime organization and contracts |
+| [Product judgement graph](docs/PRODUCT-JUDGEMENT.md) | Question routing, evidence cards, reading limits and host export |
 | [Adapter SDK](docs/ADAPTER_SDK.md) | Proposed external runtime lifecycle |
 | [Vercel deployment](docs/VERCEL.md) | Hosted setup and persistence limits |
 | [Project overview](docs/PROJECT.md) | Project framing |
