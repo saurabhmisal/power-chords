@@ -1,6 +1,6 @@
 # Operational command-center design
 
-> **Power Chords 37/52** · Business & Operations · **Native assistive** — used by the first-party Workroom as part of supported structured workflows; not a full standalone engine.
+> **Power Chords 37** · Business & Operations · **Native assistive** — used by the first-party Workroom as part of supported structured workflows; not a full standalone engine.
 
 Coordinate operational performance. This guide is a standalone, function-named skill with a repeatable operating procedure.
 
@@ -76,4 +76,19 @@ Read only files and services authorized by the operator; request confirmation fo
 
 A first-party executable adapter must implement the stable input/output contract, dependency checks, permission enforcement, and positive/negative evaluation cases before the capability can be marked operational. See [adapter SDK](../../docs/ADAPTER_SDK.md).
 
-[← All 52 capabilities](../../docs/CAPABILITY_GUIDES.md) · [Main README](../../README.md)
+[← All capabilities](../../docs/CAPABILITY_GUIDES.md) · [Main README](../../README.md)
+
+## Reviewed upstream references
+
+Reviewed: 2026-11-06T15:17:09.240Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+
+- [Bennettxai/FounderOS at a0b5db7eb6dc](https://github.com/Bennettxai/FounderOS/blob/a0b5db7eb6dcb52bb148b452557f454a2bc76082/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [adewaskar/jarvis at 1c4016afdf86](https://github.com/adewaskar/jarvis/blob/1c4016afdf86f7043efc6882ceffef84ad0d8783/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [spacedriveapp/spacedrive at 11523b224d14](https://github.com/spacedriveapp/spacedrive/blob/11523b224d1422d98def9a1c0f99e89fafada00d/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
+
+### Source-aware operating guidance
+
+- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
+
+Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](../../docs/UPSTREAM_REFRESH.md) for scope and reproduction.

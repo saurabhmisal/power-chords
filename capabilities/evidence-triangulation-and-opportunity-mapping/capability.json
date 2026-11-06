@@ -29,5 +29,34 @@
       "id": "product-decision",
       "title": "Product Decision Brief"
     }
+  ],
+  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "upstream_sources": [
+    {
+      "repository": "666ghj/MiroFish",
+      "revision": "7657031ac01184afe2cb220f5ee3545573b5e843",
+      "fork_repository": "saurabhmisal/MiroFish",
+      "fork_revision": "7657031ac01184afe2cb220f5ee3545573b5e843",
+      "license": "AGPL-3.0",
+      "reference_url": "https://github.com/666ghj/MiroFish/blob/7657031ac01184afe2cb220f5ee3545573b5e843/README.md",
+      "readme_sha256": "5109feef87d494dd77c0eb225486d4278fe3eb61b303574600bcf8c3c339d034",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "Graphify-Labs/graphify",
+      "revision": "16218bfc80d4ca2799734d045039f7ed1a5fa9fb",
+      "fork_repository": "saurabhmisal/graphify",
+      "fork_revision": "6478eb71237c86ee5fb6a35c702835e987ca445d",
+      "license": "Apache-2.0",
+      "reference_url": "https://github.com/Graphify-Labs/graphify/blob/16218bfc80d4ca2799734d045039f7ed1a5fa9fb/README.md",
+      "readme_sha256": "f6d12f50ecd8f0c873af88ea8ef84a989101919ae531dd3cf404273d288d0562",
+      "scope": "reference_only",
+      "runtime_verified": false
+    }
+  ],
+  "source_guidance": [
+    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
   ]
 }

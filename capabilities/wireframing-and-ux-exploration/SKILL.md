@@ -38,3 +38,17 @@ Return sections titled **Result**, **Supporting evidence**, **Assumptions and un
 Explore a better experience for configuring integration error alerts.
 
 Read [README.md](README.md) for complete instructions, compatibility and a review checklist.
+
+## Reviewed upstream references
+
+Reviewed: 2026-11-06T15:17:09.240Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+
+- [garrytan/gstack at 10770954f01c](https://github.com/garrytan/gstack/blob/10770954f01c72cb59a1c5aa0dd38ab9a2a77001/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [addyosmani/agent-skills at 301b02b12bff](https://github.com/addyosmani/agent-skills/blob/301b02b12bff98e4688e6984af6556802322bbde/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+
+### Source-aware operating guidance
+
+- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
+
+Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](https://github.com/saurabhmisal/power-chords/blob/main/docs/UPSTREAM_REFRESH.md) for scope and reproduction.

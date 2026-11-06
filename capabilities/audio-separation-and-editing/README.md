@@ -1,6 +1,6 @@
 # Audio separation and editing
 
-> **Power Chords 41/52** · Voice & Media · **Instruction pack; adapter required** — portable procedure provided, but automatic external execution is not bundled.
+> **Power Chords 41** · Voice & Media · **Instruction pack; adapter required** — portable procedure provided, but automatic external execution is not bundled.
 
 Separate audio sources. This guide is a standalone, function-named skill with a repeatable operating procedure.
 
@@ -76,4 +76,19 @@ Read only files and services authorized by the operator; request confirmation fo
 
 A first-party executable adapter must implement the stable input/output contract, dependency checks, permission enforcement, and positive/negative evaluation cases before the capability can be marked operational. See [adapter SDK](../../docs/ADAPTER_SDK.md).
 
-[← All 52 capabilities](../../docs/CAPABILITY_GUIDES.md) · [Main README](../../README.md)
+[← All capabilities](../../docs/CAPABILITY_GUIDES.md) · [Main README](../../README.md)
+
+## Reviewed upstream references
+
+Reviewed: 2026-11-06T15:17:09.240Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+
+- [adefossez/demucs at 829d21890023](https://github.com/adefossez/demucs/blob/829d21890023800713e5dd231c67e43ecc06069b/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [danielravina/stemkit at 24c2dde8e2e9](https://github.com/danielravina/stemkit/blob/24c2dde8e2e9f4a129d03c83ddf752e20acab34d/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [debpalash/VoiceStudio at 5e0502d1bbbc](https://github.com/debpalash/VoiceStudio/blob/5e0502d1bbbcab9fe264788233d2c0237fcb440e/README.md) — catalog license: AGPL-3.0; reference only, adapter execution not verified.
+
+### Source-aware operating guidance
+
+- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
+
+Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](../../docs/UPSTREAM_REFRESH.md) for scope and reproduction.

@@ -27,5 +27,46 @@
       "id": "launch-readiness",
       "title": "Launch Readiness Plan"
     }
+  ],
+  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "upstream_sources": [
+    {
+      "repository": "affaan-m/ECC",
+      "revision": "b38be6a7f6350964d59328b52f0624e1d1d552d1",
+      "fork_repository": "saurabhmisal/ECC",
+      "fork_revision": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+      "license": "MIT",
+      "reference_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md",
+      "readme_sha256": "bce393127a2e15211583d0f4998599b9771cc30b1189e7c42a26d86b86386d13",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "HarnessMD/munder-difflin",
+      "revision": "8b3cebf06f0b0c084d5ab28d2949a2e6c07d0806",
+      "fork_repository": "saurabhmisal/munder-difflin",
+      "fork_revision": "70202a217f4843884b0c229ed3c6daae897316da",
+      "license": "MIT",
+      "reference_url": "https://github.com/HarnessMD/munder-difflin/blob/8b3cebf06f0b0c084d5ab28d2949a2e6c07d0806/README.md",
+      "readme_sha256": "ba22b71d62a9951b38ef516f32c2cb8a8a2c6674980bc22f33de22c782dcdb74",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "langflow-ai/langflow",
+      "revision": "60999cc9a7350e44dde3ef641baae864e10861f0",
+      "fork_repository": "saurabhmisal/langflow",
+      "fork_revision": "504c02fc47e76087b82b0e7cbe4186e9cdd916d4",
+      "license": "MIT",
+      "reference_url": "https://github.com/langflow-ai/langflow/blob/60999cc9a7350e44dde3ef641baae864e10861f0/README.md",
+      "readme_sha256": "0c91b63e58aeac3846fad7d1e6ec7729fc23975fdb0d59def51e97627fdb5e36",
+      "scope": "reference_only",
+      "runtime_verified": false
+    }
+  ],
+  "source_guidance": [
+    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+    "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions."
   ]
 }

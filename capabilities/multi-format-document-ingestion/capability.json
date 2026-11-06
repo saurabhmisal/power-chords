@@ -22,5 +22,45 @@
     "network": "only_if_needed_and_authorized",
     "external_writes": "approval_required"
   },
-  "workflows": []
+  "workflows": [],
+  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "upstream_sources": [
+    {
+      "repository": "virgiliojr94/book-to-skill",
+      "revision": "e7bb659d3261491c8b28793dcb9102fa64a46c22",
+      "fork_repository": "saurabhmisal/book-to-skill",
+      "fork_revision": "a24e62f4d8caf2ee433f6e48d9073800f56f906e",
+      "license": "MIT",
+      "reference_url": "https://github.com/virgiliojr94/book-to-skill/blob/e7bb659d3261491c8b28793dcb9102fa64a46c22/README.md",
+      "readme_sha256": "43c403269fed5a7032e5fa429607a2e326019945b41a64588f38396dc3343402",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "DozenTwelve/Papermorph",
+      "revision": "342e272648e06a6163224a6177bccc83517d7fea",
+      "fork_repository": "saurabhmisal/Papermorph",
+      "fork_revision": "c8d058f1871d7cc8ab0d6f29940b506538f10af5",
+      "license": "MIT",
+      "reference_url": "https://github.com/DozenTwelve/Papermorph/blob/342e272648e06a6163224a6177bccc83517d7fea/README.md",
+      "readme_sha256": "fbedcadaf56cfb7ba284ccdc76d906d6b3129b7af8e81584bfebc2bcafb9768e",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "spacedriveapp/spacedrive",
+      "revision": "11523b224d1422d98def9a1c0f99e89fafada00d",
+      "fork_repository": "saurabhmisal/spacedrive",
+      "fork_revision": "4d41a379f612e23ac43a66ffd67df52ca77f57d4",
+      "license": "Apache-2.0",
+      "reference_url": "https://github.com/spacedriveapp/spacedrive/blob/11523b224d1422d98def9a1c0f99e89fafada00d/README.md",
+      "readme_sha256": "a82f4be1afc06dce8b5173e217aba3c109049bd4b83783b7e53f356864d40901",
+      "scope": "reference_only",
+      "runtime_verified": false
+    }
+  ],
+  "source_guidance": [
+    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+  ]
 }

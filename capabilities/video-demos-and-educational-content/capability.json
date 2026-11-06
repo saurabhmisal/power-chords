@@ -21,5 +21,45 @@
     "network": "only_if_needed_and_authorized",
     "external_writes": "approval_required"
   },
-  "workflows": []
+  "workflows": [],
+  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "upstream_sources": [
+    {
+      "repository": "webadderallorg/Recordly",
+      "revision": "109ca3a13c362e969d9add25d1f93406c36dba2a",
+      "fork_repository": "saurabhmisal/Recordly",
+      "fork_revision": "535d1cfafa87cc318db6f2b57b70b6c1c1079862",
+      "license": "NOASSERTION",
+      "reference_url": "https://github.com/webadderallorg/Recordly/blob/109ca3a13c362e969d9add25d1f93406c36dba2a/README.md",
+      "readme_sha256": "caec4da6db132fd9048bb12bf738d2e47780579343b99a5c947135f8a251532c",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "raunakpatil/youtube-agentic-ai-studio",
+      "revision": "22be5d044138def44e96f0b26a2f1be66f491452",
+      "fork_repository": "saurabhmisal/youtube-agentic-ai-studio",
+      "fork_revision": "d1a0214ff3738edc6262fb2df2d3341c494ddd5d",
+      "license": "MIT",
+      "reference_url": "https://github.com/raunakpatil/youtube-agentic-ai-studio/blob/22be5d044138def44e96f0b26a2f1be66f491452/README.md",
+      "readme_sha256": "d4625463d7f7e9ebfc31ac9a5f7b1469ffff9812c53cc3d2853354fa618c4f01",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "darkzOGx/youtube-automation-agent",
+      "revision": "e973d515aef90c467da2289144df737a3bd03859",
+      "fork_repository": "saurabhmisal/youtube-automation-agent",
+      "fork_revision": "e26792ae00dc1ec2434faf32632896609396dfad",
+      "license": "MIT",
+      "reference_url": "https://github.com/darkzOGx/youtube-automation-agent/blob/e973d515aef90c467da2289144df737a3bd03859/README.md",
+      "readme_sha256": "32526f1a91b202e739fce1a6defa7fce4d871146fc692f74056708e9b84486c8",
+      "scope": "reference_only",
+      "runtime_verified": false
+    }
+  ],
+  "source_guidance": [
+    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+  ]
 }

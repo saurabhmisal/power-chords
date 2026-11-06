@@ -38,3 +38,19 @@ Return sections titled **Result**, **Supporting evidence**, **Assumptions and un
 Prepare release gates for a payment-adjacent partner API migration.
 
 Read [README.md](README.md) for complete instructions, compatibility and a review checklist.
+
+## Reviewed upstream references
+
+Reviewed: 2026-11-06T15:17:09.240Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+
+- [garrytan/gstack at 10770954f01c](https://github.com/garrytan/gstack/blob/10770954f01c72cb59a1c5aa0dd38ab9a2a77001/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [oblien/openship at b72c7922b9d0](https://github.com/oblien/openship/blob/b72c7922b9d0001d73755684c5fc0544c3b3b223/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
+- [Siborne/vibe-coding-sops at 823c75661195](https://github.com/Siborne/vibe-coding-sops/blob/823c75661195ae56d32d5a66021b2b7fd63415e8/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+
+### Source-aware operating guidance
+
+- Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
+- Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
+- Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence.
+
+Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](https://github.com/saurabhmisal/power-chords/blob/main/docs/UPSTREAM_REFRESH.md) for scope and reproduction.

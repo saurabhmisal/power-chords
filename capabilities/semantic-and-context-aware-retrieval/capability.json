@@ -21,5 +21,46 @@
     "network": "only_if_needed_and_authorized",
     "external_writes": "approval_required"
   },
-  "workflows": []
+  "workflows": [],
+  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "upstream_sources": [
+    {
+      "repository": "Graphify-Labs/graphify",
+      "revision": "16218bfc80d4ca2799734d045039f7ed1a5fa9fb",
+      "fork_repository": "saurabhmisal/graphify",
+      "fork_revision": "6478eb71237c86ee5fb6a35c702835e987ca445d",
+      "license": "Apache-2.0",
+      "reference_url": "https://github.com/Graphify-Labs/graphify/blob/16218bfc80d4ca2799734d045039f7ed1a5fa9fb/README.md",
+      "readme_sha256": "f6d12f50ecd8f0c873af88ea8ef84a989101919ae531dd3cf404273d288d0562",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "RyanCodrai/turbovec",
+      "revision": "c3b043b992290ff223b903046af7f6683768241c",
+      "fork_repository": "saurabhmisal/turbovec",
+      "fork_revision": "c3b043b992290ff223b903046af7f6683768241c",
+      "license": "MIT",
+      "reference_url": "https://github.com/RyanCodrai/turbovec/blob/c3b043b992290ff223b903046af7f6683768241c/README.md",
+      "readme_sha256": "40d5882026ebf71dd845ad41221f9265d7720ecb0a9fc5ffb0bcf80d4c3ed661",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "Lethe044/hermes-life-os",
+      "revision": "5a572ba5f24c227b987c22e0b4fe06e2bdba6975",
+      "fork_repository": "saurabhmisal/hermes-life-os",
+      "fork_revision": "1ca98479c787086cb8f6a9d62606ee988b7b8e37",
+      "license": "MIT",
+      "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/5a572ba5f24c227b987c22e0b4fe06e2bdba6975/README.md",
+      "readme_sha256": "44fef59bc7d485ffd7ac73a5e3a359720077b3fda095c7a6d2fcb8aa10496d8e",
+      "scope": "reference_only",
+      "runtime_verified": false
+    }
+  ],
+  "source_guidance": [
+    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+    "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source."
+  ]
 }

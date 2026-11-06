@@ -21,5 +21,34 @@
     "network": "only_if_needed_and_authorized",
     "external_writes": "approval_required"
   },
-  "workflows": []
+  "workflows": [],
+  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "upstream_sources": [
+    {
+      "repository": "ai-job-search-dev/ai-job-search",
+      "revision": "256237903e115f47501e7774fff9004e80c32311",
+      "fork_repository": "saurabhmisal/ai-job-search",
+      "fork_revision": "895c02191d28c8d88b8381ea68797ff6db599728",
+      "license": "MIT",
+      "reference_url": "https://github.com/ai-job-search-dev/ai-job-search/blob/256237903e115f47501e7774fff9004e80c32311/README.md",
+      "readme_sha256": "4c66bb1d8f5c9e2affd6a495ed658b25c0d7ecfc746507816490d5f94353154e",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "career-ops-hq/career-ops",
+      "revision": "5625d811b821a45b2bc0ca85533dff3a19713ce1",
+      "fork_repository": "saurabhmisal/career-ops",
+      "fork_revision": "4164109d85218b27719081c5cc8b7254886b90af",
+      "license": "MIT",
+      "reference_url": "https://github.com/career-ops-hq/career-ops/blob/5625d811b821a45b2bc0ca85533dff3a19713ce1/README.md",
+      "readme_sha256": "abafd4ca4d18928dcedb0a3d3b80745dfb9d35455f61da1a0c8826c2834aa69d",
+      "scope": "reference_only",
+      "runtime_verified": false
+    }
+  ],
+  "source_guidance": [
+    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+  ]
 }

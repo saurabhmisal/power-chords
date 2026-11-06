@@ -738,6 +738,25 @@ The public landing page uses Google Analytics 4 in the existing **Lazo Website**
 
 ## Source synchronization
 
+### Refresh code snapshots and portable capabilities
+
+The [upstream refresh report](docs/UPSTREAM_REFRESH.md) records the latest fetched original repositories, immutable revisions, fork differences, catalog licenses, and capability mappings. [Machine-readable source review](data/source-review.json) and [capability source mapping](data/capability-source-map.json) make the refresh auditable.
+
+```bash
+npm run sync:upstreams
+node scripts/pull-source-snapshots.mjs
+node scripts/refresh-capability-sources.mjs
+npm run capabilities:docs
+npm run validate:catalog
+npm run validate:capabilities
+npm test
+npm run build:site
+```
+
+The snapshot pull downloads complete shallow Git objects into ignored `.local/upstream-cache/`. It excludes LFS payloads, submodule contents and dependencies, and does not execute source code. `POWER_CHORDS_SOURCE_CACHE` can select a different cache directory. A failed pull prevents the subsequent capability refresh. Existing forks, agent installations, credentials and capability implementation statuses are not automatically changed.
+
+The refresh applies pinned references and source-aware operating guidance to the portable packs and their website downloads. It does not automatically merge arbitrary upstream applications into the first-party runtime. Adapter implementation and execution review remain separate work. Source review is a revision, tree and documentation inventory; it is not an exhaustive security audit of every source file.
+
 Power Chords tracks fork revisions and original upstream metadata separately.
 
 ```bash

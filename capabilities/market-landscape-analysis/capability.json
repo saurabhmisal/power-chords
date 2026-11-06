@@ -21,5 +21,34 @@
     "network": "only_if_needed_and_authorized",
     "external_writes": "approval_required"
   },
-  "workflows": []
+  "workflows": [],
+  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "upstream_sources": [
+    {
+      "repository": "666ghj/MiroFish",
+      "revision": "7657031ac01184afe2cb220f5ee3545573b5e843",
+      "fork_repository": "saurabhmisal/MiroFish",
+      "fork_revision": "7657031ac01184afe2cb220f5ee3545573b5e843",
+      "license": "AGPL-3.0",
+      "reference_url": "https://github.com/666ghj/MiroFish/blob/7657031ac01184afe2cb220f5ee3545573b5e843/README.md",
+      "readme_sha256": "5109feef87d494dd77c0eb225486d4278fe3eb61b303574600bcf8c3c339d034",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "sindresorhus/awesome",
+      "revision": "bc98e517ddca672f55f9857d714fc3ea3c3540b2",
+      "fork_repository": "saurabhmisal/awesome",
+      "fork_revision": "bc98e517ddca672f55f9857d714fc3ea3c3540b2",
+      "license": "CC0-1.0",
+      "reference_url": "https://github.com/sindresorhus/awesome/blob/bc98e517ddca672f55f9857d714fc3ea3c3540b2/readme.md",
+      "readme_sha256": "465cd781335e44587d238f666800104b63d4fc8ba2395d6422974dcba421c616",
+      "scope": "reference_only",
+      "runtime_verified": false
+    }
+  ],
+  "source_guidance": [
+    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+  ]
 }

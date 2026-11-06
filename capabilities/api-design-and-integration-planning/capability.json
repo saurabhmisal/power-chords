@@ -26,5 +26,34 @@
       "id": "integration-readiness",
       "title": "Integration Readiness"
     }
+  ],
+  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "upstream_sources": [
+    {
+      "repository": "goodnight000/api-anything",
+      "revision": "d89f9c6637c16d3c389320f4241ea52082c35267",
+      "fork_repository": "saurabhmisal/api-anything",
+      "fork_revision": "0b556c36932b111ee8840c412008261abe717725",
+      "license": "MIT",
+      "reference_url": "https://github.com/goodnight000/api-anything/blob/d89f9c6637c16d3c389320f4241ea52082c35267/README.md",
+      "readme_sha256": "1f6308d896f40c75f8c1f7efc41d5cab84ae280d8312bc396dda8a63f2de3d25",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "tt-a1i/archify",
+      "revision": "a4065941f12be7967436261d9934784e381d423c",
+      "fork_repository": "saurabhmisal/archify",
+      "fork_revision": "9e35d2b0b39b155553ba9fcfe0b4f2a5198dd993",
+      "license": "MIT",
+      "reference_url": "https://github.com/tt-a1i/archify/blob/a4065941f12be7967436261d9934784e381d423c/README.md",
+      "readme_sha256": "f92e849fc17a8b84d0dce093905a44c014ed099df8aee810db38af5c2ccdf978",
+      "scope": "reference_only",
+      "runtime_verified": false
+    }
+  ],
+  "source_guidance": [
+    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
   ]
 }

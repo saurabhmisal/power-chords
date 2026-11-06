@@ -30,5 +30,46 @@
       "id": "launch-readiness",
       "title": "Launch Readiness Plan"
     }
+  ],
+  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "upstream_sources": [
+    {
+      "repository": "adewaskar/jarvis",
+      "revision": "1c4016afdf86f7043efc6882ceffef84ad0d8783",
+      "fork_repository": "saurabhmisal/jarvis",
+      "fork_revision": "1c4016afdf86f7043efc6882ceffef84ad0d8783",
+      "license": "MIT",
+      "reference_url": "https://github.com/adewaskar/jarvis/blob/1c4016afdf86f7043efc6882ceffef84ad0d8783/README.md",
+      "readme_sha256": "adb82caba1f6c000b502e08620b6b67a89e866eeab7538303e9847287f86c385",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "Lethe044/hermes-life-os",
+      "revision": "5a572ba5f24c227b987c22e0b4fe06e2bdba6975",
+      "fork_repository": "saurabhmisal/hermes-life-os",
+      "fork_revision": "1ca98479c787086cb8f6a9d62606ee988b7b8e37",
+      "license": "MIT",
+      "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/5a572ba5f24c227b987c22e0b4fe06e2bdba6975/README.md",
+      "readme_sha256": "44fef59bc7d485ffd7ac73a5e3a359720077b3fda095c7a6d2fcb8aa10496d8e",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "langflow-ai/langflow",
+      "revision": "60999cc9a7350e44dde3ef641baae864e10861f0",
+      "fork_repository": "saurabhmisal/langflow",
+      "fork_revision": "504c02fc47e76087b82b0e7cbe4186e9cdd916d4",
+      "license": "MIT",
+      "reference_url": "https://github.com/langflow-ai/langflow/blob/60999cc9a7350e44dde3ef641baae864e10861f0/README.md",
+      "readme_sha256": "0c91b63e58aeac3846fad7d1e6ec7729fc23975fdb0d59def51e97627fdb5e36",
+      "scope": "reference_only",
+      "runtime_verified": false
+    }
+  ],
+  "source_guidance": [
+    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+    "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions."
   ]
 }

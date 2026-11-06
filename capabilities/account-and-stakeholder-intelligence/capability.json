@@ -26,5 +26,34 @@
       "id": "discovery-to-prd",
       "title": "Customer Discovery → PRD"
     }
+  ],
+  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "upstream_sources": [
+    {
+      "repository": "anthropics/knowledge-work-plugins",
+      "revision": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d",
+      "fork_repository": "saurabhmisal/knowledge-work-plugins",
+      "fork_revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
+      "license": "Apache-2.0",
+      "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d/README.md",
+      "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "Lethe044/hermes-life-os",
+      "revision": "5a572ba5f24c227b987c22e0b4fe06e2bdba6975",
+      "fork_repository": "saurabhmisal/hermes-life-os",
+      "fork_revision": "1ca98479c787086cb8f6a9d62606ee988b7b8e37",
+      "license": "MIT",
+      "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/5a572ba5f24c227b987c22e0b4fe06e2bdba6975/README.md",
+      "readme_sha256": "44fef59bc7d485ffd7ac73a5e3a359720077b3fda095c7a6d2fcb8aa10496d8e",
+      "scope": "reference_only",
+      "runtime_verified": false
+    }
+  ],
+  "source_guidance": [
+    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
   ]
 }

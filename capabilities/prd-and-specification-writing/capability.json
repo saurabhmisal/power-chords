@@ -26,5 +26,45 @@
       "id": "discovery-to-prd",
       "title": "Customer Discovery → PRD"
     }
+  ],
+  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "upstream_sources": [
+    {
+      "repository": "garrytan/gstack",
+      "revision": "10770954f01c72cb59a1c5aa0dd38ab9a2a77001",
+      "fork_repository": "saurabhmisal/gstack",
+      "fork_revision": "c7edf46bcf6e8d1ccd2f58ffb0800a4e8119e805",
+      "license": "MIT",
+      "reference_url": "https://github.com/garrytan/gstack/blob/10770954f01c72cb59a1c5aa0dd38ab9a2a77001/README.md",
+      "readme_sha256": "1d811b9a341913cebf59f33e73012594c95c0961114e2d89967779d74a0688c2",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "anthropics/knowledge-work-plugins",
+      "revision": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d",
+      "fork_repository": "saurabhmisal/knowledge-work-plugins",
+      "fork_revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
+      "license": "Apache-2.0",
+      "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d/README.md",
+      "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "nisargpatel1906/vibe-coding-blueprint",
+      "revision": "faf47911db82d85a1b0185957babca9cd89cda3b",
+      "fork_repository": "saurabhmisal/vibe-coding-blueprint",
+      "fork_revision": "faf47911db82d85a1b0185957babca9cd89cda3b",
+      "license": "MIT",
+      "reference_url": "https://github.com/nisargpatel1906/vibe-coding-blueprint/blob/faf47911db82d85a1b0185957babca9cd89cda3b/README.md",
+      "readme_sha256": "8a4d052ca5e54d30773351e787033d7e62a71f4d199e4eb70c802b53c18d1fb4",
+      "scope": "reference_only",
+      "runtime_verified": false
+    }
+  ],
+  "source_guidance": [
+    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
   ]
 }

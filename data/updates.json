@@ -1,4 +1,1891 @@
 {
   "schema_version": 1,
-  "changes": []
+  "changes": [
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/agent-skills",
+      "upstream_repository": "addyosmani/agent-skills",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "1401c8b8030e023baeebb31781a6653fe8e93026"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "addyosmani/agent-skills"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "301b02b12bff98e4688e6984af6556802322bbde"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "0.6.15"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/gstack",
+      "upstream_repository": "garrytan/gstack",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "c7edf46bcf6e8d1ccd2f58ffb0800a4e8119e805"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "garrytan/gstack"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "10770954f01c72cb59a1c5aa0dd38ab9a2a77001"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v1.96.0.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/ECC",
+      "upstream_repository": "affaan-m/ECC",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "ef648e01899ba3e8dc6371642deaaf64b4477775"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "affaan-m/ECC"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "b38be6a7f6350964d59328b52f0624e1d1d552d1"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v2.2.3"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/marketingskills",
+      "upstream_repository": "coreyhaines31/marketingskills",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "coreyhaines31/marketingskills"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "88c79f6528a9347420e57ceb1fff9a60de651768"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v2.14.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/knowledge-work-plugins",
+      "upstream_repository": "anthropics/knowledge-work-plugins",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "anthropics/knowledge-work-plugins"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/replica-skill",
+      "upstream_repository": "Jakeschincariol/replica-skill",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "Jakeschincariol/replica-skill"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/archify",
+      "upstream_repository": "tt-a1i/archify",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "9e35d2b0b39b155553ba9fcfe0b4f2a5198dd993"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "tt-a1i/archify"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "a4065941f12be7967436261d9934784e381d423c"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v3.2.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/anatomy",
+      "upstream_repository": "wheresryan22/anatomy",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "689dcf966e63d92be10a5d593c6e19e10acd4422"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "wheresryan22/anatomy"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v1.1.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/Papermorph",
+      "upstream_repository": "DozenTwelve/Papermorph",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "c8d058f1871d7cc8ab0d6f29940b506538f10af5"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "DozenTwelve/Papermorph"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "342e272648e06a6163224a6177bccc83517d7fea"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "engine-v2.9"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/ponytail",
+      "upstream_repository": "DietrichGebert/ponytail",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "b088b2df6e08d4306c6a3c3d575fe38c2d2d2989"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "DietrichGebert/ponytail"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v5.3.3"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/vibe-coding-sops",
+      "upstream_repository": "Siborne/vibe-coding-sops",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "823c75661195ae56d32d5a66021b2b7fd63415e8"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "Siborne/vibe-coding-sops"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "823c75661195ae56d32d5a66021b2b7fd63415e8"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/vibe-coding",
+      "upstream_repository": "EnzeD/vibe-coding",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "8b650568ea41515950f75bee255d03ac96db8e62"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "EnzeD/vibe-coding"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "8b650568ea41515950f75bee255d03ac96db8e62"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "1.2.2"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/vibe-coding-templates",
+      "upstream_repository": "chrishayuk/vibe-coding-templates",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "a58fadee8027cfa620cad79c714fbd7132432d90"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "chrishayuk/vibe-coding-templates"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "a58fadee8027cfa620cad79c714fbd7132432d90"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/vibe-coding-blueprint",
+      "upstream_repository": "nisargpatel1906/vibe-coding-blueprint",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "faf47911db82d85a1b0185957babca9cd89cda3b"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "nisargpatel1906/vibe-coding-blueprint"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "faf47911db82d85a1b0185957babca9cd89cda3b"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/vibe-code-docs-stack",
+      "upstream_repository": "abhishekcheriangeorge-ops/vibe-code-docs-stack",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "2a8b2b1923d668db996f65434f5cecb5b9475849"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "abhishekcheriangeorge-ops/vibe-code-docs-stack"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "2a8b2b1923d668db996f65434f5cecb5b9475849"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v0.2.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/book-to-skill",
+      "upstream_repository": "virgiliojr94/book-to-skill",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "a24e62f4d8caf2ee433f6e48d9073800f56f906e"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "master"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "virgiliojr94/book-to-skill"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "e7bb659d3261491c8b28793dcb9102fa64a46c22"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "master"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v1.4.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/text-to-cad",
+      "upstream_repository": "earthtojake/text-to-cad",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "24573128ceaab564f497d7c12f995c41784c9539"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "earthtojake/text-to-cad"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "4099cac3ddc56a5e696138c53fd7bee685e8ad9d"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v0.10.4"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/jarvis",
+      "upstream_repository": "adewaskar/jarvis",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "1c4016afdf86f7043efc6882ceffef84ad0d8783"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "adewaskar/jarvis"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "1c4016afdf86f7043efc6882ceffef84ad0d8783"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/hermes-life-os",
+      "upstream_repository": "Lethe044/hermes-life-os",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "1ca98479c787086cb8f6a9d62606ee988b7b8e37"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "Lethe044/hermes-life-os"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "5a572ba5f24c227b987c22e0b4fe06e2bdba6975"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v1.48.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/ai-job-search",
+      "upstream_repository": "ai-job-search-dev/ai-job-search",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "895c02191d28c8d88b8381ea68797ff6db599728"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "master"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "ai-job-search-dev/ai-job-search"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "256237903e115f47501e7774fff9004e80c32311"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "master"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v1.7.4"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/career-ops",
+      "upstream_repository": "career-ops-hq/career-ops",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "4164109d85218b27719081c5cc8b7254886b90af"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "career-ops-hq/career-ops"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "5625d811b821a45b2bc0ca85533dff3a19713ce1"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "career-ops-v1.39.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/graphify",
+      "upstream_repository": "Graphify-Labs/graphify",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "6478eb71237c86ee5fb6a35c702835e987ca445d"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "v8"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "Graphify-Labs/graphify"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "16218bfc80d4ca2799734d045039f7ed1a5fa9fb"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "v8"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v0.9.103"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/api-anything",
+      "upstream_repository": "goodnight000/api-anything",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "0b556c36932b111ee8840c412008261abe717725"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "goodnight000/api-anything"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "d89f9c6637c16d3c389320f4241ea52082c35267"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/youtube-automation-agent",
+      "upstream_repository": "darkzOGx/youtube-automation-agent",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "e26792ae00dc1ec2434faf32632896609396dfad"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "master"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "darkzOGx/youtube-automation-agent"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "e973d515aef90c467da2289144df737a3bd03859"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "master"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v2.11.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/youtube-agentic-ai-studio",
+      "upstream_repository": "raunakpatil/youtube-agentic-ai-studio",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "d1a0214ff3738edc6262fb2df2d3341c494ddd5d"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "raunakpatil/youtube-agentic-ai-studio"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "22be5d044138def44e96f0b26a2f1be66f491452"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/stemkit",
+      "upstream_repository": "danielravina/stemkit",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "7163fbc3aadaa3741e357f226f42d4b206a23877"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "danielravina/stemkit"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "24c2dde8e2e9f4a129d03c83ddf752e20acab34d"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v0.2.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/OmniRoute",
+      "upstream_repository": "cheaper-inference/OmniRoute",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "ae2ba35852d4e5a55486a1c0e6a779105564fd6d"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "release/v3.8.51"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "cheaper-inference/OmniRoute"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "aef364319c6ad29ec3b143fa5e672a0ad4fe731e"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "release/v3.8.54"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v3.8.53"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/langflow",
+      "upstream_repository": "langflow-ai/langflow",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "504c02fc47e76087b82b0e7cbe4186e9cdd916d4"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "langflow-ai/langflow"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "60999cc9a7350e44dde3ef641baae864e10861f0"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v1.13.1"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/airllm",
+      "upstream_repository": "lyogavin/airllm",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "8df7eebe974a2c7cd120b334cd211cd25624cfdc"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "lyogavin/airllm"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "0f824d93bff5df03b80a58563ba24f09f67b409d"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v4.0.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/turbovec",
+      "upstream_repository": "RyanCodrai/turbovec",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "c3b043b992290ff223b903046af7f6683768241c"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "RyanCodrai/turbovec"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "c3b043b992290ff223b903046af7f6683768241c"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/OmniVoice",
+      "upstream_repository": "k2-fsa/OmniVoice",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "08be0b4ccbac3e13e374e86fbfead4b4cac343e2"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "master"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "k2-fsa/OmniVoice"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "08be0b4ccbac3e13e374e86fbfead4b4cac343e2"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "master"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "0.2.1"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/VoxCPM",
+      "upstream_repository": "OpenBMB/VoxCPM",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "cce58a5b59303c9bd63d12f23afe6a49a4a80c59"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "OpenBMB/VoxCPM"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "4b8dd4440d33396b3f429201f8af0529b4d2c601"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "2.0.3"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/VoiceStudio",
+      "upstream_repository": "debpalash/VoiceStudio",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "2def2f9560d393ac90946c5b7ce428e99088836d"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "debpalash/VoiceStudio"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "5e0502d1bbbcab9fe264788233d2c0237fcb440e"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v0.5.7"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/demucs",
+      "upstream_repository": "adefossez/demucs",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "2883f3db65617d6d178c6ed10d869dc14e44e59b"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "adefossez/demucs"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "829d21890023800713e5dd231c67e43ecc06069b"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/evals",
+      "upstream_repository": "openai/evals",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "8eac7a7de5215c907fbddc30efdaf316913eccdd"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "openai/evals"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "8eac7a7de5215c907fbddc30efdaf316913eccdd"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/Unlimited-OCR",
+      "upstream_repository": "baidu/Unlimited-OCR",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "92ad94b53a51950fea0416aced42331dfb4dd59e"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "baidu/Unlimited-OCR"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "ea42e6d15ff93fdd0e8041fc0ac70880513453d3"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/MiroFish",
+      "upstream_repository": "666ghj/MiroFish",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "7657031ac01184afe2cb220f5ee3545573b5e843"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "666ghj/MiroFish"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "7657031ac01184afe2cb220f5ee3545573b5e843"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v0.1.2"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/munder-difflin",
+      "upstream_repository": "HarnessMD/munder-difflin",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "70202a217f4843884b0c229ed3c6daae897316da"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "HarnessMD/munder-difflin"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "8b3cebf06f0b0c084d5ab28d2949a2e6c07d0806"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v0.5.5"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/FounderOS-DEMO",
+      "upstream_repository": "Bennettxai/FounderOS",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "ef75fe898702bb803455937fcd145404ef0c8a4d"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "Bennettxai/FounderOS"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "a0b5db7eb6dcb52bb148b452557f454a2bc76082"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/Understand-Anything",
+      "upstream_repository": "Egonex-AI/Understand-Anything",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "f2d0164f72fe678805c34245a6df36acededfebd"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "Egonex-AI/Understand-Anything"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "98d6dca712407b8cbf0bca21b539c197e5a7825c"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v2.9.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/open-seo",
+      "upstream_repository": "every-app/open-seo",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "89e5a00717cdf049b7c2b4e29646edb3a7d4995b"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "every-app/open-seo"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "78c5d850c2729e3fcf7edf33aafb66efe17453e0"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v0.1.25"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/Recordly",
+      "upstream_repository": "webadderallorg/Recordly",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "535d1cfafa87cc318db6f2b57b70b6c1c1079862"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "webadderallorg/Recordly"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "109ca3a13c362e969d9add25d1f93406c36dba2a"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v1.4.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/spacedrive",
+      "upstream_repository": "spacedriveapp/spacedrive",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "4d41a379f612e23ac43a66ffd67df52ca77f57d4"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "spacedriveapp/spacedrive"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "11523b224d1422d98def9a1c0f99e89fafada00d"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "0.4.3"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/openship",
+      "upstream_repository": "oblien/openship",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "4e67e3c9a1d7e33e52fb2a611d8df1f361c4b76d"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "oblien/openship"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "b72c7922b9d0001d73755684c5fc0544c3b3b223"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v0.9.10"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/midday",
+      "upstream_repository": "midday-ai/midday",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "51587319f26a0ffaa9dfccab1920373cb65689b7"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "midday-ai/midday"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "51587319f26a0ffaa9dfccab1920373cb65689b7"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "midday-v0.5.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/city-roads",
+      "upstream_repository": "anvaka/city-roads",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "0d89417bb942b34fa87775897cc8cf8437d17b79"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "anvaka/city-roads"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "35d6497db70debf4508b4d75f17d80c4367d66a6"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/gods-eye-view",
+      "upstream_repository": "bilawalsidhu/gods-eye-view",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "591f299d11f38a612629a274463196d57ae3862e"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "bilawalsidhu/gods-eye-view"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "3d6423c6f8ddb5061d80fba23a9c2da4fe5bc6ff"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "v0.3.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/rea",
+      "upstream_repository": "morluto/rea",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "5a67c7fc540c494371de76dcdf353923656993d3"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "morluto/rea"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "bacc1e38464ce7eb87ce1fb6fb552c6b1854ac15"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_release",
+          "from": null,
+          "to": "rea-agents-6.8.0"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/legal-templates",
+      "upstream_repository": "General-Legal/legal-templates",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "6d6805425eabd41bed86fc1e2ec51612760f716c"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "General-Legal/legal-templates"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "6d6805425eabd41bed86fc1e2ec51612760f716c"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/PlacesToPostYourStartup",
+      "upstream_repository": "mmccaff/PlacesToPostYourStartup",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "1941a95f344d90ea5ffe2e0b4c25ffa92dfd3d73"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "master"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "mmccaff/PlacesToPostYourStartup"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "1941a95f344d90ea5ffe2e0b4c25ffa92dfd3d73"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "master"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/awesome",
+      "upstream_repository": "sindresorhus/awesome",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "bc98e517ddca672f55f9857d714fc3ea3c3540b2"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "main"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "sindresorhus/awesome"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "bc98e517ddca672f55f9857d714fc3ea3c3540b2"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "main"
+        }
+      ]
+    },
+    {
+      "at": "2026-11-06T15:12:36.952Z",
+      "repository": "saurabhmisal/build-your-own-x",
+      "upstream_repository": "codecrafters-io/build-your-own-x",
+      "kind": "initial_inventory",
+      "changes": [
+        {
+          "field": "fork_sha",
+          "from": null,
+          "to": "aa17439b62f384511a5561ce308e9598b94d8989"
+        },
+        {
+          "field": "fork_branch",
+          "from": null,
+          "to": "master"
+        },
+        {
+          "field": "upstream_repo",
+          "from": null,
+          "to": "codecrafters-io/build-your-own-x"
+        },
+        {
+          "field": "upstream_sha",
+          "from": null,
+          "to": "aa17439b62f384511a5561ce308e9598b94d8989"
+        },
+        {
+          "field": "upstream_branch",
+          "from": null,
+          "to": "master"
+        }
+      ]
+    }
+  ]
 }

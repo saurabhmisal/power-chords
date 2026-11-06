@@ -16,7 +16,7 @@ test('catalog starts with all 52 verified forks and never imports unseen reposit
  const s=await seeds();assert.equal(s.sources.length,52);
  assert.equal(new Set(s.sources.map(x=>x.repository)).size,52);
  assert.deepEqual(new Set(s.sources.map(x=>x.repository)),new Set(FORKS.map(x=>x.repository)));
- assert.ok(s.sources.every(x=>x.fork_sha===null));
+ assert.ok(s.sources.every(x=>x.fork_sha===null||/^[a-f0-9]{40}$/.test(x.fork_sha)));
 });
 
 test('snapshot comparison differentiates initial inventory from actual upstream changes',()=>{

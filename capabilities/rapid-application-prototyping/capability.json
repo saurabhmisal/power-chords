@@ -21,5 +21,56 @@
     "network": "only_if_needed_and_authorized",
     "external_writes": "approval_required"
   },
-  "workflows": []
+  "workflows": [],
+  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "upstream_sources": [
+    {
+      "repository": "addyosmani/agent-skills",
+      "revision": "301b02b12bff98e4688e6984af6556802322bbde",
+      "fork_repository": "saurabhmisal/agent-skills",
+      "fork_revision": "1401c8b8030e023baeebb31781a6653fe8e93026",
+      "license": "MIT",
+      "reference_url": "https://github.com/addyosmani/agent-skills/blob/301b02b12bff98e4688e6984af6556802322bbde/README.md",
+      "readme_sha256": "b74ab722eeee706ff1c5c3ee55f5f2328368ec28c6368900bc80b857b5bc6b72",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "EnzeD/vibe-coding",
+      "revision": "8b650568ea41515950f75bee255d03ac96db8e62",
+      "fork_repository": "saurabhmisal/vibe-coding",
+      "fork_revision": "8b650568ea41515950f75bee255d03ac96db8e62",
+      "license": "UNKNOWN",
+      "reference_url": "https://github.com/EnzeD/vibe-coding/blob/8b650568ea41515950f75bee255d03ac96db8e62/README.md",
+      "readme_sha256": "472c90091ec3ca43c2724ef7cd5ff4ccaf5b81735601316b069d105a62a8be66",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "chrishayuk/vibe-coding-templates",
+      "revision": "a58fadee8027cfa620cad79c714fbd7132432d90",
+      "fork_repository": "saurabhmisal/vibe-coding-templates",
+      "fork_revision": "a58fadee8027cfa620cad79c714fbd7132432d90",
+      "license": "UNKNOWN",
+      "reference_url": "https://github.com/chrishayuk/vibe-coding-templates/blob/a58fadee8027cfa620cad79c714fbd7132432d90/README.md",
+      "readme_sha256": "62bba24f642f977a7e9724bd5c08fe04949c12321f1e0b66d43af1c6fa2e198b",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "codecrafters-io/build-your-own-x",
+      "revision": "aa17439b62f384511a5561ce308e9598b94d8989",
+      "fork_repository": "saurabhmisal/build-your-own-x",
+      "fork_revision": "aa17439b62f384511a5561ce308e9598b94d8989",
+      "license": "UNKNOWN",
+      "reference_url": "https://github.com/codecrafters-io/build-your-own-x/blob/aa17439b62f384511a5561ce308e9598b94d8989/README.md",
+      "readme_sha256": "895a9e99d3964faf6d5992cedce69790b46cbadd59c0fc10dd3d520284aba6f6",
+      "scope": "reference_only",
+      "runtime_verified": false
+    }
+  ],
+  "source_guidance": [
+    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+  ]
 }

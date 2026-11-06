@@ -20,5 +20,46 @@
     "network": "only_if_needed_and_authorized",
     "external_writes": "approval_required"
   },
-  "workflows": []
+  "workflows": [],
+  "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+  "upstream_sources": [
+    {
+      "repository": "langflow-ai/langflow",
+      "revision": "60999cc9a7350e44dde3ef641baae864e10861f0",
+      "fork_repository": "saurabhmisal/langflow",
+      "fork_revision": "504c02fc47e76087b82b0e7cbe4186e9cdd916d4",
+      "license": "MIT",
+      "reference_url": "https://github.com/langflow-ai/langflow/blob/60999cc9a7350e44dde3ef641baae864e10861f0/README.md",
+      "readme_sha256": "0c91b63e58aeac3846fad7d1e6ec7729fc23975fdb0d59def51e97627fdb5e36",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "cheaper-inference/OmniRoute",
+      "revision": "aef364319c6ad29ec3b143fa5e672a0ad4fe731e",
+      "fork_repository": "saurabhmisal/OmniRoute",
+      "fork_revision": "ae2ba35852d4e5a55486a1c0e6a779105564fd6d",
+      "license": "MIT",
+      "reference_url": "https://github.com/cheaper-inference/OmniRoute/blob/aef364319c6ad29ec3b143fa5e672a0ad4fe731e/README.md",
+      "readme_sha256": "e57152441aa1386b5739eede8fdea6faced84c06e318690e487f298af93a108c",
+      "scope": "reference_only",
+      "runtime_verified": false
+    },
+    {
+      "repository": "lyogavin/airllm",
+      "revision": "0f824d93bff5df03b80a58563ba24f09f67b409d",
+      "fork_repository": "saurabhmisal/airllm",
+      "fork_revision": "8df7eebe974a2c7cd120b334cd211cd25624cfdc",
+      "license": "Apache-2.0",
+      "reference_url": "https://github.com/lyogavin/airllm/blob/0f824d93bff5df03b80a58563ba24f09f67b409d/README.md",
+      "readme_sha256": "1ee1ea96cfb4301a56f14f410d3383c0c24a469108d23ad03a8a5f24a6b04343",
+      "scope": "reference_only",
+      "runtime_verified": false
+    }
+  ],
+  "source_guidance": [
+    "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+    "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions."
+  ]
 }

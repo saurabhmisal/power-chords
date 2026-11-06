@@ -38,7 +38,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "anthropics/knowledge-work-plugins",
+          "revision": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d",
+          "fork_repository": "saurabhmisal/knowledge-work-plugins",
+          "fork_revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d/README.md",
+          "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "garrytan/gstack",
+          "revision": "10770954f01c72cb59a1c5aa0dd38ab9a2a77001",
+          "fork_repository": "saurabhmisal/gstack",
+          "fork_revision": "c7edf46bcf6e8d1ccd2f58ffb0800a4e8119e805",
+          "license": "MIT",
+          "reference_url": "https://github.com/garrytan/gstack/blob/10770954f01c72cb59a1c5aa0dd38ab9a2a77001/README.md",
+          "readme_sha256": "1d811b9a341913cebf59f33e73012594c95c0961114e2d89967779d74a0688c2",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "02",
@@ -72,7 +101,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "666ghj/MiroFish",
+          "revision": "7657031ac01184afe2cb220f5ee3545573b5e843",
+          "fork_repository": "saurabhmisal/MiroFish",
+          "fork_revision": "7657031ac01184afe2cb220f5ee3545573b5e843",
+          "license": "AGPL-3.0",
+          "reference_url": "https://github.com/666ghj/MiroFish/blob/7657031ac01184afe2cb220f5ee3545573b5e843/README.md",
+          "readme_sha256": "5109feef87d494dd77c0eb225486d4278fe3eb61b303574600bcf8c3c339d034",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "sindresorhus/awesome",
+          "revision": "bc98e517ddca672f55f9857d714fc3ea3c3540b2",
+          "fork_repository": "saurabhmisal/awesome",
+          "fork_revision": "bc98e517ddca672f55f9857d714fc3ea3c3540b2",
+          "license": "CC0-1.0",
+          "reference_url": "https://github.com/sindresorhus/awesome/blob/bc98e517ddca672f55f9857d714fc3ea3c3540b2/readme.md",
+          "readme_sha256": "465cd781335e44587d238f666800104b63d4fc8ba2395d6422974dcba421c616",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "03",
@@ -105,7 +163,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "Jakeschincariol/replica-skill",
+          "revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+          "fork_repository": "saurabhmisal/replica-skill",
+          "fork_revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+          "license": "MIT",
+          "reference_url": "https://github.com/Jakeschincariol/replica-skill/blob/77c9436fb3d18c3d58169efb8caf4fe906b0dc51/README.md",
+          "readme_sha256": "69c129d1eae2d6171d6061325e5760e78e63879f4f50077b3d24ba87cee01405",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "morluto/rea",
+          "revision": "bacc1e38464ce7eb87ce1fb6fb552c6b1854ac15",
+          "fork_repository": "saurabhmisal/rea",
+          "fork_revision": "5a67c7fc540c494371de76dcdf353923656993d3",
+          "license": "MIT",
+          "reference_url": "https://github.com/morluto/rea/blob/bacc1e38464ce7eb87ce1fb6fb552c6b1854ac15/README.md",
+          "readme_sha256": "26ab8638e6ebc45bc3f39fd37af2bdfb68845d7f310b3873dd4ba13ae6eb8db5",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "04",
@@ -144,7 +231,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "anthropics/knowledge-work-plugins",
+          "revision": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d",
+          "fork_repository": "saurabhmisal/knowledge-work-plugins",
+          "fork_revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d/README.md",
+          "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "Lethe044/hermes-life-os",
+          "revision": "5a572ba5f24c227b987c22e0b4fe06e2bdba6975",
+          "fork_repository": "saurabhmisal/hermes-life-os",
+          "fork_revision": "1ca98479c787086cb8f6a9d62606ee988b7b8e37",
+          "license": "MIT",
+          "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/5a572ba5f24c227b987c22e0b4fe06e2bdba6975/README.md",
+          "readme_sha256": "44fef59bc7d485ffd7ac73a5e3a359720077b3fda095c7a6d2fcb8aa10496d8e",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "05",
@@ -186,7 +302,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "666ghj/MiroFish",
+          "revision": "7657031ac01184afe2cb220f5ee3545573b5e843",
+          "fork_repository": "saurabhmisal/MiroFish",
+          "fork_revision": "7657031ac01184afe2cb220f5ee3545573b5e843",
+          "license": "AGPL-3.0",
+          "reference_url": "https://github.com/666ghj/MiroFish/blob/7657031ac01184afe2cb220f5ee3545573b5e843/README.md",
+          "readme_sha256": "5109feef87d494dd77c0eb225486d4278fe3eb61b303574600bcf8c3c339d034",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "Graphify-Labs/graphify",
+          "revision": "16218bfc80d4ca2799734d045039f7ed1a5fa9fb",
+          "fork_repository": "saurabhmisal/graphify",
+          "fork_revision": "6478eb71237c86ee5fb6a35c702835e987ca445d",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/Graphify-Labs/graphify/blob/16218bfc80d4ca2799734d045039f7ed1a5fa9fb/README.md",
+          "readme_sha256": "f6d12f50ecd8f0c873af88ea8ef84a989101919ae531dd3cf404273d288d0562",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "06",
@@ -221,7 +366,47 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "virgiliojr94/book-to-skill",
+          "revision": "e7bb659d3261491c8b28793dcb9102fa64a46c22",
+          "fork_repository": "saurabhmisal/book-to-skill",
+          "fork_revision": "a24e62f4d8caf2ee433f6e48d9073800f56f906e",
+          "license": "MIT",
+          "reference_url": "https://github.com/virgiliojr94/book-to-skill/blob/e7bb659d3261491c8b28793dcb9102fa64a46c22/README.md",
+          "readme_sha256": "43c403269fed5a7032e5fa429607a2e326019945b41a64588f38396dc3343402",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "DozenTwelve/Papermorph",
+          "revision": "342e272648e06a6163224a6177bccc83517d7fea",
+          "fork_repository": "saurabhmisal/Papermorph",
+          "fork_revision": "c8d058f1871d7cc8ab0d6f29940b506538f10af5",
+          "license": "MIT",
+          "reference_url": "https://github.com/DozenTwelve/Papermorph/blob/342e272648e06a6163224a6177bccc83517d7fea/README.md",
+          "readme_sha256": "fbedcadaf56cfb7ba284ccdc76d906d6b3129b7af8e81584bfebc2bcafb9768e",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "spacedriveapp/spacedrive",
+          "revision": "11523b224d1422d98def9a1c0f99e89fafada00d",
+          "fork_repository": "saurabhmisal/spacedrive",
+          "fork_revision": "4d41a379f612e23ac43a66ffd67df52ca77f57d4",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/spacedriveapp/spacedrive/blob/11523b224d1422d98def9a1c0f99e89fafada00d/README.md",
+          "readme_sha256": "a82f4be1afc06dce8b5173e217aba3c109049bd4b83783b7e53f356864d40901",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "07",
@@ -254,7 +439,25 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "baidu/Unlimited-OCR",
+          "revision": "ea42e6d15ff93fdd0e8041fc0ac70880513453d3",
+          "fork_repository": "saurabhmisal/Unlimited-OCR",
+          "fork_revision": "92ad94b53a51950fea0416aced42331dfb4dd59e",
+          "license": "MIT",
+          "reference_url": "https://github.com/baidu/Unlimited-OCR/blob/ea42e6d15ff93fdd0e8041fc0ac70880513453d3/README.md",
+          "readme_sha256": "8005a8771db63fee678b647d4dff0b930db7f9379c5eb311e62808983f9ce02f",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "08",
@@ -288,7 +491,37 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "Graphify-Labs/graphify",
+          "revision": "16218bfc80d4ca2799734d045039f7ed1a5fa9fb",
+          "fork_repository": "saurabhmisal/graphify",
+          "fork_revision": "6478eb71237c86ee5fb6a35c702835e987ca445d",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/Graphify-Labs/graphify/blob/16218bfc80d4ca2799734d045039f7ed1a5fa9fb/README.md",
+          "readme_sha256": "f6d12f50ecd8f0c873af88ea8ef84a989101919ae531dd3cf404273d288d0562",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "Egonex-AI/Understand-Anything",
+          "revision": "98d6dca712407b8cbf0bca21b539c197e5a7825c",
+          "fork_repository": "saurabhmisal/Understand-Anything",
+          "fork_revision": "f2d0164f72fe678805c34245a6df36acededfebd",
+          "license": "MIT",
+          "reference_url": "https://github.com/Egonex-AI/Understand-Anything/blob/98d6dca712407b8cbf0bca21b539c197e5a7825c/README.md",
+          "readme_sha256": "9171c186e7ca43f03dad82966edb35227c3960f62bb4091e22f7dbc45af4cda8",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "09",
@@ -322,7 +555,48 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "Graphify-Labs/graphify",
+          "revision": "16218bfc80d4ca2799734d045039f7ed1a5fa9fb",
+          "fork_repository": "saurabhmisal/graphify",
+          "fork_revision": "6478eb71237c86ee5fb6a35c702835e987ca445d",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/Graphify-Labs/graphify/blob/16218bfc80d4ca2799734d045039f7ed1a5fa9fb/README.md",
+          "readme_sha256": "f6d12f50ecd8f0c873af88ea8ef84a989101919ae531dd3cf404273d288d0562",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "RyanCodrai/turbovec",
+          "revision": "c3b043b992290ff223b903046af7f6683768241c",
+          "fork_repository": "saurabhmisal/turbovec",
+          "fork_revision": "c3b043b992290ff223b903046af7f6683768241c",
+          "license": "MIT",
+          "reference_url": "https://github.com/RyanCodrai/turbovec/blob/c3b043b992290ff223b903046af7f6683768241c/README.md",
+          "readme_sha256": "40d5882026ebf71dd845ad41221f9265d7720ecb0a9fc5ffb0bcf80d4c3ed661",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "Lethe044/hermes-life-os",
+          "revision": "5a572ba5f24c227b987c22e0b4fe06e2bdba6975",
+          "fork_repository": "saurabhmisal/hermes-life-os",
+          "fork_revision": "1ca98479c787086cb8f6a9d62606ee988b7b8e37",
+          "license": "MIT",
+          "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/5a572ba5f24c227b987c22e0b4fe06e2bdba6975/README.md",
+          "readme_sha256": "44fef59bc7d485ffd7ac73a5e3a359720077b3fda095c7a6d2fcb8aa10496d8e",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "10",
@@ -361,7 +635,47 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "garrytan/gstack",
+          "revision": "10770954f01c72cb59a1c5aa0dd38ab9a2a77001",
+          "fork_repository": "saurabhmisal/gstack",
+          "fork_revision": "c7edf46bcf6e8d1ccd2f58ffb0800a4e8119e805",
+          "license": "MIT",
+          "reference_url": "https://github.com/garrytan/gstack/blob/10770954f01c72cb59a1c5aa0dd38ab9a2a77001/README.md",
+          "readme_sha256": "1d811b9a341913cebf59f33e73012594c95c0961114e2d89967779d74a0688c2",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "anthropics/knowledge-work-plugins",
+          "revision": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d",
+          "fork_repository": "saurabhmisal/knowledge-work-plugins",
+          "fork_revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d/README.md",
+          "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "nisargpatel1906/vibe-coding-blueprint",
+          "revision": "faf47911db82d85a1b0185957babca9cd89cda3b",
+          "fork_repository": "saurabhmisal/vibe-coding-blueprint",
+          "fork_revision": "faf47911db82d85a1b0185957babca9cd89cda3b",
+          "license": "MIT",
+          "reference_url": "https://github.com/nisargpatel1906/vibe-coding-blueprint/blob/faf47911db82d85a1b0185957babca9cd89cda3b/README.md",
+          "readme_sha256": "8a4d052ca5e54d30773351e787033d7e62a71f4d199e4eb70c802b53c18d1fb4",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "11",
@@ -400,7 +714,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "tt-a1i/archify",
+          "revision": "a4065941f12be7967436261d9934784e381d423c",
+          "fork_repository": "saurabhmisal/archify",
+          "fork_revision": "9e35d2b0b39b155553ba9fcfe0b4f2a5198dd993",
+          "license": "MIT",
+          "reference_url": "https://github.com/tt-a1i/archify/blob/a4065941f12be7967436261d9934784e381d423c/README.md",
+          "readme_sha256": "f92e849fc17a8b84d0dce093905a44c014ed099df8aee810db38af5c2ccdf978",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "garrytan/gstack",
+          "revision": "10770954f01c72cb59a1c5aa0dd38ab9a2a77001",
+          "fork_repository": "saurabhmisal/gstack",
+          "fork_revision": "c7edf46bcf6e8d1ccd2f58ffb0800a4e8119e805",
+          "license": "MIT",
+          "reference_url": "https://github.com/garrytan/gstack/blob/10770954f01c72cb59a1c5aa0dd38ab9a2a77001/README.md",
+          "readme_sha256": "1d811b9a341913cebf59f33e73012594c95c0961114e2d89967779d74a0688c2",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "12",
@@ -439,7 +782,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "Bennettxai/FounderOS",
+          "revision": "a0b5db7eb6dcb52bb148b452557f454a2bc76082",
+          "fork_repository": "saurabhmisal/FounderOS-DEMO",
+          "fork_revision": "ef75fe898702bb803455937fcd145404ef0c8a4d",
+          "license": "MIT",
+          "reference_url": "https://github.com/Bennettxai/FounderOS/blob/a0b5db7eb6dcb52bb148b452557f454a2bc76082/README.md",
+          "readme_sha256": "4b53d8b56179bd728eaf5828d9936b5e6a813dce2c531b629f4abc3692281bcc",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "anthropics/knowledge-work-plugins",
+          "revision": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d",
+          "fork_repository": "saurabhmisal/knowledge-work-plugins",
+          "fork_revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d/README.md",
+          "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "13",
@@ -481,7 +853,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "666ghj/MiroFish",
+          "revision": "7657031ac01184afe2cb220f5ee3545573b5e843",
+          "fork_repository": "saurabhmisal/MiroFish",
+          "fork_revision": "7657031ac01184afe2cb220f5ee3545573b5e843",
+          "license": "AGPL-3.0",
+          "reference_url": "https://github.com/666ghj/MiroFish/blob/7657031ac01184afe2cb220f5ee3545573b5e843/README.md",
+          "readme_sha256": "5109feef87d494dd77c0eb225486d4278fe3eb61b303574600bcf8c3c339d034",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "Bennettxai/FounderOS",
+          "revision": "a0b5db7eb6dcb52bb148b452557f454a2bc76082",
+          "fork_repository": "saurabhmisal/FounderOS-DEMO",
+          "fork_revision": "ef75fe898702bb803455937fcd145404ef0c8a4d",
+          "license": "MIT",
+          "reference_url": "https://github.com/Bennettxai/FounderOS/blob/a0b5db7eb6dcb52bb148b452557f454a2bc76082/README.md",
+          "readme_sha256": "4b53d8b56179bd728eaf5828d9936b5e6a813dce2c531b629f4abc3692281bcc",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "14",
@@ -520,7 +921,37 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "coreyhaines31/marketingskills",
+          "revision": "88c79f6528a9347420e57ceb1fff9a60de651768",
+          "fork_repository": "saurabhmisal/marketingskills",
+          "fork_revision": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
+          "license": "MIT",
+          "reference_url": "https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/README.md",
+          "readme_sha256": "69c172878d7a66305ef57928d0fbb4056e379cb8a316e23fc1d6f9869519f798",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "openai/evals",
+          "revision": "8eac7a7de5215c907fbddc30efdaf316913eccdd",
+          "fork_repository": "saurabhmisal/evals",
+          "fork_revision": "8eac7a7de5215c907fbddc30efdaf316913eccdd",
+          "license": "NOASSERTION",
+          "reference_url": "https://github.com/openai/evals/blob/8eac7a7de5215c907fbddc30efdaf316913eccdd/README.md",
+          "readme_sha256": "f0b50bd53e2fbc81be774a6bfb0cf20997aa7509bd22925ae779a87d57c7c914",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "15",
@@ -559,7 +990,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "goodnight000/api-anything",
+          "revision": "d89f9c6637c16d3c389320f4241ea52082c35267",
+          "fork_repository": "saurabhmisal/api-anything",
+          "fork_revision": "0b556c36932b111ee8840c412008261abe717725",
+          "license": "MIT",
+          "reference_url": "https://github.com/goodnight000/api-anything/blob/d89f9c6637c16d3c389320f4241ea52082c35267/README.md",
+          "readme_sha256": "1f6308d896f40c75f8c1f7efc41d5cab84ae280d8312bc396dda8a63f2de3d25",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "tt-a1i/archify",
+          "revision": "a4065941f12be7967436261d9934784e381d423c",
+          "fork_repository": "saurabhmisal/archify",
+          "fork_revision": "9e35d2b0b39b155553ba9fcfe0b4f2a5198dd993",
+          "license": "MIT",
+          "reference_url": "https://github.com/tt-a1i/archify/blob/a4065941f12be7967436261d9934784e381d423c/README.md",
+          "readme_sha256": "f92e849fc17a8b84d0dce093905a44c014ed099df8aee810db38af5c2ccdf978",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "16",
@@ -593,7 +1053,58 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "addyosmani/agent-skills",
+          "revision": "301b02b12bff98e4688e6984af6556802322bbde",
+          "fork_repository": "saurabhmisal/agent-skills",
+          "fork_revision": "1401c8b8030e023baeebb31781a6653fe8e93026",
+          "license": "MIT",
+          "reference_url": "https://github.com/addyosmani/agent-skills/blob/301b02b12bff98e4688e6984af6556802322bbde/README.md",
+          "readme_sha256": "b74ab722eeee706ff1c5c3ee55f5f2328368ec28c6368900bc80b857b5bc6b72",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "EnzeD/vibe-coding",
+          "revision": "8b650568ea41515950f75bee255d03ac96db8e62",
+          "fork_repository": "saurabhmisal/vibe-coding",
+          "fork_revision": "8b650568ea41515950f75bee255d03ac96db8e62",
+          "license": "UNKNOWN",
+          "reference_url": "https://github.com/EnzeD/vibe-coding/blob/8b650568ea41515950f75bee255d03ac96db8e62/README.md",
+          "readme_sha256": "472c90091ec3ca43c2724ef7cd5ff4ccaf5b81735601316b069d105a62a8be66",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "chrishayuk/vibe-coding-templates",
+          "revision": "a58fadee8027cfa620cad79c714fbd7132432d90",
+          "fork_repository": "saurabhmisal/vibe-coding-templates",
+          "fork_revision": "a58fadee8027cfa620cad79c714fbd7132432d90",
+          "license": "UNKNOWN",
+          "reference_url": "https://github.com/chrishayuk/vibe-coding-templates/blob/a58fadee8027cfa620cad79c714fbd7132432d90/README.md",
+          "readme_sha256": "62bba24f642f977a7e9724bd5c08fe04949c12321f1e0b66d43af1c6fa2e198b",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "codecrafters-io/build-your-own-x",
+          "revision": "aa17439b62f384511a5561ce308e9598b94d8989",
+          "fork_repository": "saurabhmisal/build-your-own-x",
+          "fork_revision": "aa17439b62f384511a5561ce308e9598b94d8989",
+          "license": "UNKNOWN",
+          "reference_url": "https://github.com/codecrafters-io/build-your-own-x/blob/aa17439b62f384511a5561ce308e9598b94d8989/README.md",
+          "readme_sha256": "895a9e99d3964faf6d5992cedce69790b46cbadd59c0fc10dd3d520284aba6f6",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "17",
@@ -627,7 +1138,59 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "Graphify-Labs/graphify",
+          "revision": "16218bfc80d4ca2799734d045039f7ed1a5fa9fb",
+          "fork_repository": "saurabhmisal/graphify",
+          "fork_revision": "6478eb71237c86ee5fb6a35c702835e987ca445d",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/Graphify-Labs/graphify/blob/16218bfc80d4ca2799734d045039f7ed1a5fa9fb/README.md",
+          "readme_sha256": "f6d12f50ecd8f0c873af88ea8ef84a989101919ae531dd3cf404273d288d0562",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "Egonex-AI/Understand-Anything",
+          "revision": "98d6dca712407b8cbf0bca21b539c197e5a7825c",
+          "fork_repository": "saurabhmisal/Understand-Anything",
+          "fork_revision": "f2d0164f72fe678805c34245a6df36acededfebd",
+          "license": "MIT",
+          "reference_url": "https://github.com/Egonex-AI/Understand-Anything/blob/98d6dca712407b8cbf0bca21b539c197e5a7825c/README.md",
+          "readme_sha256": "9171c186e7ca43f03dad82966edb35227c3960f62bb4091e22f7dbc45af4cda8",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "morluto/rea",
+          "revision": "bacc1e38464ce7eb87ce1fb6fb552c6b1854ac15",
+          "fork_repository": "saurabhmisal/rea",
+          "fork_revision": "5a67c7fc540c494371de76dcdf353923656993d3",
+          "license": "MIT",
+          "reference_url": "https://github.com/morluto/rea/blob/bacc1e38464ce7eb87ce1fb6fb552c6b1854ac15/README.md",
+          "readme_sha256": "26ab8638e6ebc45bc3f39fd37af2bdfb68845d7f310b3873dd4ba13ae6eb8db5",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "abhishekcheriangeorge-ops/vibe-code-docs-stack",
+          "revision": "2a8b2b1923d668db996f65434f5cecb5b9475849",
+          "fork_repository": "saurabhmisal/vibe-code-docs-stack",
+          "fork_revision": "2a8b2b1923d668db996f65434f5cecb5b9475849",
+          "license": "MIT",
+          "reference_url": "https://github.com/abhishekcheriangeorge-ops/vibe-code-docs-stack/blob/2a8b2b1923d668db996f65434f5cecb5b9475849/README.md",
+          "readme_sha256": "27961ab0a2e6b4a81f9bb71c2cb1af4268defdd1351399965ac165cdb31fa81d",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "18",
@@ -666,7 +1229,37 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "tt-a1i/archify",
+          "revision": "a4065941f12be7967436261d9934784e381d423c",
+          "fork_repository": "saurabhmisal/archify",
+          "fork_revision": "9e35d2b0b39b155553ba9fcfe0b4f2a5198dd993",
+          "license": "MIT",
+          "reference_url": "https://github.com/tt-a1i/archify/blob/a4065941f12be7967436261d9934784e381d423c/README.md",
+          "readme_sha256": "f92e849fc17a8b84d0dce093905a44c014ed099df8aee810db38af5c2ccdf978",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "Graphify-Labs/graphify",
+          "revision": "16218bfc80d4ca2799734d045039f7ed1a5fa9fb",
+          "fork_repository": "saurabhmisal/graphify",
+          "fork_revision": "6478eb71237c86ee5fb6a35c702835e987ca445d",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/Graphify-Labs/graphify/blob/16218bfc80d4ca2799734d045039f7ed1a5fa9fb/README.md",
+          "readme_sha256": "f6d12f50ecd8f0c873af88ea8ef84a989101919ae531dd3cf404273d288d0562",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "19",
@@ -706,7 +1299,59 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "garrytan/gstack",
+          "revision": "10770954f01c72cb59a1c5aa0dd38ab9a2a77001",
+          "fork_repository": "saurabhmisal/gstack",
+          "fork_revision": "c7edf46bcf6e8d1ccd2f58ffb0800a4e8119e805",
+          "license": "MIT",
+          "reference_url": "https://github.com/garrytan/gstack/blob/10770954f01c72cb59a1c5aa0dd38ab9a2a77001/README.md",
+          "readme_sha256": "1d811b9a341913cebf59f33e73012594c95c0961114e2d89967779d74a0688c2",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "affaan-m/ECC",
+          "revision": "b38be6a7f6350964d59328b52f0624e1d1d552d1",
+          "fork_repository": "saurabhmisal/ECC",
+          "fork_revision": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "license": "MIT",
+          "reference_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md",
+          "readme_sha256": "bce393127a2e15211583d0f4998599b9771cc30b1189e7c42a26d86b86386d13",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "DietrichGebert/ponytail",
+          "revision": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+          "fork_repository": "saurabhmisal/ponytail",
+          "fork_revision": "b088b2df6e08d4306c6a3c3d575fe38c2d2d2989",
+          "license": "MIT",
+          "reference_url": "https://github.com/DietrichGebert/ponytail/blob/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846/README.md",
+          "readme_sha256": "9608191c42ef942138857c44b54037fff7606cfda205d7320f4a3c82a7d8d41e",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "Siborne/vibe-coding-sops",
+          "revision": "823c75661195ae56d32d5a66021b2b7fd63415e8",
+          "fork_repository": "saurabhmisal/vibe-coding-sops",
+          "fork_revision": "823c75661195ae56d32d5a66021b2b7fd63415e8",
+          "license": "MIT",
+          "reference_url": "https://github.com/Siborne/vibe-coding-sops/blob/823c75661195ae56d32d5a66021b2b7fd63415e8/README.md",
+          "readme_sha256": "6ad34ff24afcf376434405502038be46402fc431162ec441583a39254dd7f086",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "20",
@@ -749,7 +1394,48 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "garrytan/gstack",
+          "revision": "10770954f01c72cb59a1c5aa0dd38ab9a2a77001",
+          "fork_repository": "saurabhmisal/gstack",
+          "fork_revision": "c7edf46bcf6e8d1ccd2f58ffb0800a4e8119e805",
+          "license": "MIT",
+          "reference_url": "https://github.com/garrytan/gstack/blob/10770954f01c72cb59a1c5aa0dd38ab9a2a77001/README.md",
+          "readme_sha256": "1d811b9a341913cebf59f33e73012594c95c0961114e2d89967779d74a0688c2",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "oblien/openship",
+          "revision": "b72c7922b9d0001d73755684c5fc0544c3b3b223",
+          "fork_repository": "saurabhmisal/openship",
+          "fork_revision": "4e67e3c9a1d7e33e52fb2a611d8df1f361c4b76d",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/oblien/openship/blob/b72c7922b9d0001d73755684c5fc0544c3b3b223/README.md",
+          "readme_sha256": "8d760fd2b660dfd49c713a601ba235ee3b87410293c8f39ca4bdc5045b66e1dc",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "Siborne/vibe-coding-sops",
+          "revision": "823c75661195ae56d32d5a66021b2b7fd63415e8",
+          "fork_repository": "saurabhmisal/vibe-coding-sops",
+          "fork_revision": "823c75661195ae56d32d5a66021b2b7fd63415e8",
+          "license": "MIT",
+          "reference_url": "https://github.com/Siborne/vibe-coding-sops/blob/823c75661195ae56d32d5a66021b2b7fd63415e8/README.md",
+          "readme_sha256": "6ad34ff24afcf376434405502038be46402fc431162ec441583a39254dd7f086",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "21",
@@ -782,7 +1468,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "garrytan/gstack",
+          "revision": "10770954f01c72cb59a1c5aa0dd38ab9a2a77001",
+          "fork_repository": "saurabhmisal/gstack",
+          "fork_revision": "c7edf46bcf6e8d1ccd2f58ffb0800a4e8119e805",
+          "license": "MIT",
+          "reference_url": "https://github.com/garrytan/gstack/blob/10770954f01c72cb59a1c5aa0dd38ab9a2a77001/README.md",
+          "readme_sha256": "1d811b9a341913cebf59f33e73012594c95c0961114e2d89967779d74a0688c2",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "addyosmani/agent-skills",
+          "revision": "301b02b12bff98e4688e6984af6556802322bbde",
+          "fork_repository": "saurabhmisal/agent-skills",
+          "fork_revision": "1401c8b8030e023baeebb31781a6653fe8e93026",
+          "license": "MIT",
+          "reference_url": "https://github.com/addyosmani/agent-skills/blob/301b02b12bff98e4688e6984af6556802322bbde/README.md",
+          "readme_sha256": "b74ab722eeee706ff1c5c3ee55f5f2328368ec28c6368900bc80b857b5bc6b72",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "22",
@@ -816,7 +1531,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "Jakeschincariol/replica-skill",
+          "revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+          "fork_repository": "saurabhmisal/replica-skill",
+          "fork_revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+          "license": "MIT",
+          "reference_url": "https://github.com/Jakeschincariol/replica-skill/blob/77c9436fb3d18c3d58169efb8caf4fe906b0dc51/README.md",
+          "readme_sha256": "69c129d1eae2d6171d6061325e5760e78e63879f4f50077b3d24ba87cee01405",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "wheresryan22/anatomy",
+          "revision": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80",
+          "fork_repository": "saurabhmisal/anatomy",
+          "fork_revision": "689dcf966e63d92be10a5d593c6e19e10acd4422",
+          "license": "MIT",
+          "reference_url": "https://github.com/wheresryan22/anatomy/blob/1482e8469b0a9e0d8cc18ea2740a01423d29ae80/README.md",
+          "readme_sha256": "a1bc269d3d1b75a230a2ae54cb43c63c19a0a3a067f6a7bb0baf5a7785e3de16",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "23",
@@ -849,7 +1593,37 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "tt-a1i/archify",
+          "revision": "a4065941f12be7967436261d9934784e381d423c",
+          "fork_repository": "saurabhmisal/archify",
+          "fork_revision": "9e35d2b0b39b155553ba9fcfe0b4f2a5198dd993",
+          "license": "MIT",
+          "reference_url": "https://github.com/tt-a1i/archify/blob/a4065941f12be7967436261d9934784e381d423c/README.md",
+          "readme_sha256": "f92e849fc17a8b84d0dce093905a44c014ed099df8aee810db38af5c2ccdf978",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "Graphify-Labs/graphify",
+          "revision": "16218bfc80d4ca2799734d045039f7ed1a5fa9fb",
+          "fork_repository": "saurabhmisal/graphify",
+          "fork_revision": "6478eb71237c86ee5fb6a35c702835e987ca445d",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/Graphify-Labs/graphify/blob/16218bfc80d4ca2799734d045039f7ed1a5fa9fb/README.md",
+          "readme_sha256": "f6d12f50ecd8f0c873af88ea8ef84a989101919ae531dd3cf404273d288d0562",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "24",
@@ -883,7 +1657,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "earthtojake/text-to-cad",
+          "revision": "4099cac3ddc56a5e696138c53fd7bee685e8ad9d",
+          "fork_repository": "saurabhmisal/text-to-cad",
+          "fork_revision": "24573128ceaab564f497d7c12f995c41784c9539",
+          "license": "MIT",
+          "reference_url": "https://github.com/earthtojake/text-to-cad/blob/4099cac3ddc56a5e696138c53fd7bee685e8ad9d/README.md",
+          "readme_sha256": "865a4ee737fc3248c38ec106a6056069775984b76a5f7423241926f42b610cc0",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "wheresryan22/anatomy",
+          "revision": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80",
+          "fork_repository": "saurabhmisal/anatomy",
+          "fork_revision": "689dcf966e63d92be10a5d593c6e19e10acd4422",
+          "license": "MIT",
+          "reference_url": "https://github.com/wheresryan22/anatomy/blob/1482e8469b0a9e0d8cc18ea2740a01423d29ae80/README.md",
+          "readme_sha256": "a1bc269d3d1b75a230a2ae54cb43c63c19a0a3a067f6a7bb0baf5a7785e3de16",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "25",
@@ -923,7 +1726,48 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "affaan-m/ECC",
+          "revision": "b38be6a7f6350964d59328b52f0624e1d1d552d1",
+          "fork_repository": "saurabhmisal/ECC",
+          "fork_revision": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "license": "MIT",
+          "reference_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md",
+          "readme_sha256": "bce393127a2e15211583d0f4998599b9771cc30b1189e7c42a26d86b86386d13",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "HarnessMD/munder-difflin",
+          "revision": "8b3cebf06f0b0c084d5ab28d2949a2e6c07d0806",
+          "fork_repository": "saurabhmisal/munder-difflin",
+          "fork_revision": "70202a217f4843884b0c229ed3c6daae897316da",
+          "license": "MIT",
+          "reference_url": "https://github.com/HarnessMD/munder-difflin/blob/8b3cebf06f0b0c084d5ab28d2949a2e6c07d0806/README.md",
+          "readme_sha256": "ba22b71d62a9951b38ef516f32c2cb8a8a2c6674980bc22f33de22c782dcdb74",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "langflow-ai/langflow",
+          "revision": "60999cc9a7350e44dde3ef641baae864e10861f0",
+          "fork_repository": "saurabhmisal/langflow",
+          "fork_revision": "504c02fc47e76087b82b0e7cbe4186e9cdd916d4",
+          "license": "MIT",
+          "reference_url": "https://github.com/langflow-ai/langflow/blob/60999cc9a7350e44dde3ef641baae864e10861f0/README.md",
+          "readme_sha256": "0c91b63e58aeac3846fad7d1e6ec7729fc23975fdb0d59def51e97627fdb5e36",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "26",
@@ -966,7 +1810,48 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "adewaskar/jarvis",
+          "revision": "1c4016afdf86f7043efc6882ceffef84ad0d8783",
+          "fork_repository": "saurabhmisal/jarvis",
+          "fork_revision": "1c4016afdf86f7043efc6882ceffef84ad0d8783",
+          "license": "MIT",
+          "reference_url": "https://github.com/adewaskar/jarvis/blob/1c4016afdf86f7043efc6882ceffef84ad0d8783/README.md",
+          "readme_sha256": "adb82caba1f6c000b502e08620b6b67a89e866eeab7538303e9847287f86c385",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "Lethe044/hermes-life-os",
+          "revision": "5a572ba5f24c227b987c22e0b4fe06e2bdba6975",
+          "fork_repository": "saurabhmisal/hermes-life-os",
+          "fork_revision": "1ca98479c787086cb8f6a9d62606ee988b7b8e37",
+          "license": "MIT",
+          "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/5a572ba5f24c227b987c22e0b4fe06e2bdba6975/README.md",
+          "readme_sha256": "44fef59bc7d485ffd7ac73a5e3a359720077b3fda095c7a6d2fcb8aa10496d8e",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "langflow-ai/langflow",
+          "revision": "60999cc9a7350e44dde3ef641baae864e10861f0",
+          "fork_repository": "saurabhmisal/langflow",
+          "fork_revision": "504c02fc47e76087b82b0e7cbe4186e9cdd916d4",
+          "license": "MIT",
+          "reference_url": "https://github.com/langflow-ai/langflow/blob/60999cc9a7350e44dde3ef641baae864e10861f0/README.md",
+          "readme_sha256": "0c91b63e58aeac3846fad7d1e6ec7729fc23975fdb0d59def51e97627fdb5e36",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "27",
@@ -1000,7 +1885,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "goodnight000/api-anything",
+          "revision": "d89f9c6637c16d3c389320f4241ea52082c35267",
+          "fork_repository": "saurabhmisal/api-anything",
+          "fork_revision": "0b556c36932b111ee8840c412008261abe717725",
+          "license": "MIT",
+          "reference_url": "https://github.com/goodnight000/api-anything/blob/d89f9c6637c16d3c389320f4241ea52082c35267/README.md",
+          "readme_sha256": "1f6308d896f40c75f8c1f7efc41d5cab84ae280d8312bc396dda8a63f2de3d25",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "adewaskar/jarvis",
+          "revision": "1c4016afdf86f7043efc6882ceffef84ad0d8783",
+          "fork_repository": "saurabhmisal/jarvis",
+          "fork_revision": "1c4016afdf86f7043efc6882ceffef84ad0d8783",
+          "license": "MIT",
+          "reference_url": "https://github.com/adewaskar/jarvis/blob/1c4016afdf86f7043efc6882ceffef84ad0d8783/README.md",
+          "readme_sha256": "adb82caba1f6c000b502e08620b6b67a89e866eeab7538303e9847287f86c385",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "28",
@@ -1034,7 +1948,48 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "langflow-ai/langflow",
+          "revision": "60999cc9a7350e44dde3ef641baae864e10861f0",
+          "fork_repository": "saurabhmisal/langflow",
+          "fork_revision": "504c02fc47e76087b82b0e7cbe4186e9cdd916d4",
+          "license": "MIT",
+          "reference_url": "https://github.com/langflow-ai/langflow/blob/60999cc9a7350e44dde3ef641baae864e10861f0/README.md",
+          "readme_sha256": "0c91b63e58aeac3846fad7d1e6ec7729fc23975fdb0d59def51e97627fdb5e36",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "cheaper-inference/OmniRoute",
+          "revision": "aef364319c6ad29ec3b143fa5e672a0ad4fe731e",
+          "fork_repository": "saurabhmisal/OmniRoute",
+          "fork_revision": "ae2ba35852d4e5a55486a1c0e6a779105564fd6d",
+          "license": "MIT",
+          "reference_url": "https://github.com/cheaper-inference/OmniRoute/blob/aef364319c6ad29ec3b143fa5e672a0ad4fe731e/README.md",
+          "readme_sha256": "e57152441aa1386b5739eede8fdea6faced84c06e318690e487f298af93a108c",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "lyogavin/airllm",
+          "revision": "0f824d93bff5df03b80a58563ba24f09f67b409d",
+          "fork_repository": "saurabhmisal/airllm",
+          "fork_revision": "8df7eebe974a2c7cd120b334cd211cd25624cfdc",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/lyogavin/airllm/blob/0f824d93bff5df03b80a58563ba24f09f67b409d/README.md",
+          "readme_sha256": "1ee1ea96cfb4301a56f14f410d3383c0c24a469108d23ad03a8a5f24a6b04343",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "29",
@@ -1077,7 +2032,48 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "affaan-m/ECC",
+          "revision": "b38be6a7f6350964d59328b52f0624e1d1d552d1",
+          "fork_repository": "saurabhmisal/ECC",
+          "fork_revision": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "license": "MIT",
+          "reference_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md",
+          "readme_sha256": "bce393127a2e15211583d0f4998599b9771cc30b1189e7c42a26d86b86386d13",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "goodnight000/api-anything",
+          "revision": "d89f9c6637c16d3c389320f4241ea52082c35267",
+          "fork_repository": "saurabhmisal/api-anything",
+          "fork_revision": "0b556c36932b111ee8840c412008261abe717725",
+          "license": "MIT",
+          "reference_url": "https://github.com/goodnight000/api-anything/blob/d89f9c6637c16d3c389320f4241ea52082c35267/README.md",
+          "readme_sha256": "1f6308d896f40c75f8c1f7efc41d5cab84ae280d8312bc396dda8a63f2de3d25",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "Lethe044/hermes-life-os",
+          "revision": "5a572ba5f24c227b987c22e0b4fe06e2bdba6975",
+          "fork_repository": "saurabhmisal/hermes-life-os",
+          "fork_revision": "1ca98479c787086cb8f6a9d62606ee988b7b8e37",
+          "license": "MIT",
+          "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/5a572ba5f24c227b987c22e0b4fe06e2bdba6975/README.md",
+          "readme_sha256": "44fef59bc7d485ffd7ac73a5e3a359720077b3fda095c7a6d2fcb8aa10496d8e",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "30",
@@ -1111,7 +2107,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "anthropics/knowledge-work-plugins",
+          "revision": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d",
+          "fork_repository": "saurabhmisal/knowledge-work-plugins",
+          "fork_revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d/README.md",
+          "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "midday-ai/midday",
+          "revision": "51587319f26a0ffaa9dfccab1920373cb65689b7",
+          "fork_repository": "saurabhmisal/midday",
+          "fork_revision": "51587319f26a0ffaa9dfccab1920373cb65689b7",
+          "license": "AGPL-3.0",
+          "reference_url": "https://github.com/midday-ai/midday/blob/51587319f26a0ffaa9dfccab1920373cb65689b7/README.md",
+          "readme_sha256": "9569c294fad00c6a907dc31f054f3809f5b6062f7741a8330694b6ec032352e3",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "31",
@@ -1144,7 +2169,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "wheresryan22/anatomy",
+          "revision": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80",
+          "fork_repository": "saurabhmisal/anatomy",
+          "fork_revision": "689dcf966e63d92be10a5d593c6e19e10acd4422",
+          "license": "MIT",
+          "reference_url": "https://github.com/wheresryan22/anatomy/blob/1482e8469b0a9e0d8cc18ea2740a01423d29ae80/README.md",
+          "readme_sha256": "a1bc269d3d1b75a230a2ae54cb43c63c19a0a3a067f6a7bb0baf5a7785e3de16",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "Bennettxai/FounderOS",
+          "revision": "a0b5db7eb6dcb52bb148b452557f454a2bc76082",
+          "fork_repository": "saurabhmisal/FounderOS-DEMO",
+          "fork_revision": "ef75fe898702bb803455937fcd145404ef0c8a4d",
+          "license": "MIT",
+          "reference_url": "https://github.com/Bennettxai/FounderOS/blob/a0b5db7eb6dcb52bb148b452557f454a2bc76082/README.md",
+          "readme_sha256": "4b53d8b56179bd728eaf5828d9936b5e6a813dce2c531b629f4abc3692281bcc",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "32",
@@ -1183,7 +2237,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "coreyhaines31/marketingskills",
+          "revision": "88c79f6528a9347420e57ceb1fff9a60de651768",
+          "fork_repository": "saurabhmisal/marketingskills",
+          "fork_revision": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
+          "license": "MIT",
+          "reference_url": "https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/README.md",
+          "readme_sha256": "69c172878d7a66305ef57928d0fbb4056e379cb8a316e23fc1d6f9869519f798",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "anthropics/knowledge-work-plugins",
+          "revision": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d",
+          "fork_repository": "saurabhmisal/knowledge-work-plugins",
+          "fork_revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d/README.md",
+          "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "33",
@@ -1217,7 +2300,37 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "openai/evals",
+          "revision": "8eac7a7de5215c907fbddc30efdaf316913eccdd",
+          "fork_repository": "saurabhmisal/evals",
+          "fork_revision": "8eac7a7de5215c907fbddc30efdaf316913eccdd",
+          "license": "NOASSERTION",
+          "reference_url": "https://github.com/openai/evals/blob/8eac7a7de5215c907fbddc30efdaf316913eccdd/README.md",
+          "readme_sha256": "f0b50bd53e2fbc81be774a6bfb0cf20997aa7509bd22925ae779a87d57c7c914",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "affaan-m/ECC",
+          "revision": "b38be6a7f6350964d59328b52f0624e1d1d552d1",
+          "fork_repository": "saurabhmisal/ECC",
+          "fork_revision": "ef648e01899ba3e8dc6371642deaaf64b4477775",
+          "license": "MIT",
+          "reference_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md",
+          "readme_sha256": "bce393127a2e15211583d0f4998599b9771cc30b1189e7c42a26d86b86386d13",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "34",
@@ -1256,7 +2369,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "666ghj/MiroFish",
+          "revision": "7657031ac01184afe2cb220f5ee3545573b5e843",
+          "fork_repository": "saurabhmisal/MiroFish",
+          "fork_revision": "7657031ac01184afe2cb220f5ee3545573b5e843",
+          "license": "AGPL-3.0",
+          "reference_url": "https://github.com/666ghj/MiroFish/blob/7657031ac01184afe2cb220f5ee3545573b5e843/README.md",
+          "readme_sha256": "5109feef87d494dd77c0eb225486d4278fe3eb61b303574600bcf8c3c339d034",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "anthropics/knowledge-work-plugins",
+          "revision": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d",
+          "fork_repository": "saurabhmisal/knowledge-work-plugins",
+          "fork_revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d/README.md",
+          "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "35",
@@ -1290,7 +2432,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "midday-ai/midday",
+          "revision": "51587319f26a0ffaa9dfccab1920373cb65689b7",
+          "fork_repository": "saurabhmisal/midday",
+          "fork_revision": "51587319f26a0ffaa9dfccab1920373cb65689b7",
+          "license": "AGPL-3.0",
+          "reference_url": "https://github.com/midday-ai/midday/blob/51587319f26a0ffaa9dfccab1920373cb65689b7/README.md",
+          "readme_sha256": "9569c294fad00c6a907dc31f054f3809f5b6062f7741a8330694b6ec032352e3",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "General-Legal/legal-templates",
+          "revision": "6d6805425eabd41bed86fc1e2ec51612760f716c",
+          "fork_repository": "saurabhmisal/legal-templates",
+          "fork_revision": "6d6805425eabd41bed86fc1e2ec51612760f716c",
+          "license": "CC0-1.0",
+          "reference_url": "https://github.com/General-Legal/legal-templates/blob/6d6805425eabd41bed86fc1e2ec51612760f716c/README.md",
+          "readme_sha256": "e662893c54ba3f5f7f63b911d892c476763dc21480e09bbf93dbb70324551cba",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "36",
@@ -1329,7 +2500,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "midday-ai/midday",
+          "revision": "51587319f26a0ffaa9dfccab1920373cb65689b7",
+          "fork_repository": "saurabhmisal/midday",
+          "fork_revision": "51587319f26a0ffaa9dfccab1920373cb65689b7",
+          "license": "AGPL-3.0",
+          "reference_url": "https://github.com/midday-ai/midday/blob/51587319f26a0ffaa9dfccab1920373cb65689b7/README.md",
+          "readme_sha256": "9569c294fad00c6a907dc31f054f3809f5b6062f7741a8330694b6ec032352e3",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "Bennettxai/FounderOS",
+          "revision": "a0b5db7eb6dcb52bb148b452557f454a2bc76082",
+          "fork_repository": "saurabhmisal/FounderOS-DEMO",
+          "fork_revision": "ef75fe898702bb803455937fcd145404ef0c8a4d",
+          "license": "MIT",
+          "reference_url": "https://github.com/Bennettxai/FounderOS/blob/a0b5db7eb6dcb52bb148b452557f454a2bc76082/README.md",
+          "readme_sha256": "4b53d8b56179bd728eaf5828d9936b5e6a813dce2c531b629f4abc3692281bcc",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "37",
@@ -1362,7 +2562,47 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "Bennettxai/FounderOS",
+          "revision": "a0b5db7eb6dcb52bb148b452557f454a2bc76082",
+          "fork_repository": "saurabhmisal/FounderOS-DEMO",
+          "fork_revision": "ef75fe898702bb803455937fcd145404ef0c8a4d",
+          "license": "MIT",
+          "reference_url": "https://github.com/Bennettxai/FounderOS/blob/a0b5db7eb6dcb52bb148b452557f454a2bc76082/README.md",
+          "readme_sha256": "4b53d8b56179bd728eaf5828d9936b5e6a813dce2c531b629f4abc3692281bcc",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "adewaskar/jarvis",
+          "revision": "1c4016afdf86f7043efc6882ceffef84ad0d8783",
+          "fork_repository": "saurabhmisal/jarvis",
+          "fork_revision": "1c4016afdf86f7043efc6882ceffef84ad0d8783",
+          "license": "MIT",
+          "reference_url": "https://github.com/adewaskar/jarvis/blob/1c4016afdf86f7043efc6882ceffef84ad0d8783/README.md",
+          "readme_sha256": "adb82caba1f6c000b502e08620b6b67a89e866eeab7538303e9847287f86c385",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "spacedriveapp/spacedrive",
+          "revision": "11523b224d1422d98def9a1c0f99e89fafada00d",
+          "fork_repository": "saurabhmisal/spacedrive",
+          "fork_revision": "4d41a379f612e23ac43a66ffd67df52ca77f57d4",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/spacedriveapp/spacedrive/blob/11523b224d1422d98def9a1c0f99e89fafada00d/README.md",
+          "readme_sha256": "a82f4be1afc06dce8b5173e217aba3c109049bd4b83783b7e53f356864d40901",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "38",
@@ -1401,7 +2641,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "anthropics/knowledge-work-plugins",
+          "revision": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d",
+          "fork_repository": "saurabhmisal/knowledge-work-plugins",
+          "fork_revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d/README.md",
+          "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "Lethe044/hermes-life-os",
+          "revision": "5a572ba5f24c227b987c22e0b4fe06e2bdba6975",
+          "fork_repository": "saurabhmisal/hermes-life-os",
+          "fork_revision": "1ca98479c787086cb8f6a9d62606ee988b7b8e37",
+          "license": "MIT",
+          "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/5a572ba5f24c227b987c22e0b4fe06e2bdba6975/README.md",
+          "readme_sha256": "44fef59bc7d485ffd7ac73a5e3a359720077b3fda095c7a6d2fcb8aa10496d8e",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "39",
@@ -1434,7 +2703,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "debpalash/VoiceStudio",
+          "revision": "5e0502d1bbbcab9fe264788233d2c0237fcb440e",
+          "fork_repository": "saurabhmisal/VoiceStudio",
+          "fork_revision": "2def2f9560d393ac90946c5b7ce428e99088836d",
+          "license": "AGPL-3.0",
+          "reference_url": "https://github.com/debpalash/VoiceStudio/blob/5e0502d1bbbcab9fe264788233d2c0237fcb440e/README.md",
+          "readme_sha256": "e63edca0bbafc6bdec9873719c5533435b460a70b94b4f8a5b636afedb9166c0",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "DozenTwelve/Papermorph",
+          "revision": "342e272648e06a6163224a6177bccc83517d7fea",
+          "fork_repository": "saurabhmisal/Papermorph",
+          "fork_revision": "c8d058f1871d7cc8ab0d6f29940b506538f10af5",
+          "license": "MIT",
+          "reference_url": "https://github.com/DozenTwelve/Papermorph/blob/342e272648e06a6163224a6177bccc83517d7fea/README.md",
+          "readme_sha256": "fbedcadaf56cfb7ba284ccdc76d906d6b3129b7af8e81584bfebc2bcafb9768e",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "40",
@@ -1468,7 +2766,47 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "k2-fsa/OmniVoice",
+          "revision": "08be0b4ccbac3e13e374e86fbfead4b4cac343e2",
+          "fork_repository": "saurabhmisal/OmniVoice",
+          "fork_revision": "08be0b4ccbac3e13e374e86fbfead4b4cac343e2",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/k2-fsa/OmniVoice/blob/08be0b4ccbac3e13e374e86fbfead4b4cac343e2/README.md",
+          "readme_sha256": "13bf6dbac41b732873de6f8aad68b0ffbc8836773d86f9aec0e31977992af4c6",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "OpenBMB/VoxCPM",
+          "revision": "4b8dd4440d33396b3f429201f8af0529b4d2c601",
+          "fork_repository": "saurabhmisal/VoxCPM",
+          "fork_revision": "cce58a5b59303c9bd63d12f23afe6a49a4a80c59",
+          "license": "Apache-2.0",
+          "reference_url": "https://github.com/OpenBMB/VoxCPM/blob/4b8dd4440d33396b3f429201f8af0529b4d2c601/README.md",
+          "readme_sha256": "61fea182876eaf6bef5af3c2770d5e4c05aeecdb105fb3affc2b580adfe912c3",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "debpalash/VoiceStudio",
+          "revision": "5e0502d1bbbcab9fe264788233d2c0237fcb440e",
+          "fork_repository": "saurabhmisal/VoiceStudio",
+          "fork_revision": "2def2f9560d393ac90946c5b7ce428e99088836d",
+          "license": "AGPL-3.0",
+          "reference_url": "https://github.com/debpalash/VoiceStudio/blob/5e0502d1bbbcab9fe264788233d2c0237fcb440e/README.md",
+          "readme_sha256": "e63edca0bbafc6bdec9873719c5533435b460a70b94b4f8a5b636afedb9166c0",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "41",
@@ -1501,7 +2839,47 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "adefossez/demucs",
+          "revision": "829d21890023800713e5dd231c67e43ecc06069b",
+          "fork_repository": "saurabhmisal/demucs",
+          "fork_revision": "2883f3db65617d6d178c6ed10d869dc14e44e59b",
+          "license": "MIT",
+          "reference_url": "https://github.com/adefossez/demucs/blob/829d21890023800713e5dd231c67e43ecc06069b/README.md",
+          "readme_sha256": "2abed9c9af52efd786e5f1f04f50e60b7f0dd754eb773df24ef7ebd045706324",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "danielravina/stemkit",
+          "revision": "24c2dde8e2e9f4a129d03c83ddf752e20acab34d",
+          "fork_repository": "saurabhmisal/stemkit",
+          "fork_revision": "7163fbc3aadaa3741e357f226f42d4b206a23877",
+          "license": "MIT",
+          "reference_url": "https://github.com/danielravina/stemkit/blob/24c2dde8e2e9f4a129d03c83ddf752e20acab34d/README.md",
+          "readme_sha256": "f3bbfe8262a0b5066486104cfdb04bccadd2818a27b4e0a4474764e51402e8b4",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "debpalash/VoiceStudio",
+          "revision": "5e0502d1bbbcab9fe264788233d2c0237fcb440e",
+          "fork_repository": "saurabhmisal/VoiceStudio",
+          "fork_revision": "2def2f9560d393ac90946c5b7ce428e99088836d",
+          "license": "AGPL-3.0",
+          "reference_url": "https://github.com/debpalash/VoiceStudio/blob/5e0502d1bbbcab9fe264788233d2c0237fcb440e/README.md",
+          "readme_sha256": "e63edca0bbafc6bdec9873719c5533435b460a70b94b4f8a5b636afedb9166c0",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "42",
@@ -1535,7 +2913,47 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "webadderallorg/Recordly",
+          "revision": "109ca3a13c362e969d9add25d1f93406c36dba2a",
+          "fork_repository": "saurabhmisal/Recordly",
+          "fork_revision": "535d1cfafa87cc318db6f2b57b70b6c1c1079862",
+          "license": "NOASSERTION",
+          "reference_url": "https://github.com/webadderallorg/Recordly/blob/109ca3a13c362e969d9add25d1f93406c36dba2a/README.md",
+          "readme_sha256": "caec4da6db132fd9048bb12bf738d2e47780579343b99a5c947135f8a251532c",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "raunakpatil/youtube-agentic-ai-studio",
+          "revision": "22be5d044138def44e96f0b26a2f1be66f491452",
+          "fork_repository": "saurabhmisal/youtube-agentic-ai-studio",
+          "fork_revision": "d1a0214ff3738edc6262fb2df2d3341c494ddd5d",
+          "license": "MIT",
+          "reference_url": "https://github.com/raunakpatil/youtube-agentic-ai-studio/blob/22be5d044138def44e96f0b26a2f1be66f491452/README.md",
+          "readme_sha256": "d4625463d7f7e9ebfc31ac9a5f7b1469ffff9812c53cc3d2853354fa618c4f01",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "darkzOGx/youtube-automation-agent",
+          "revision": "e973d515aef90c467da2289144df737a3bd03859",
+          "fork_repository": "saurabhmisal/youtube-automation-agent",
+          "fork_revision": "e26792ae00dc1ec2434faf32632896609396dfad",
+          "license": "MIT",
+          "reference_url": "https://github.com/darkzOGx/youtube-automation-agent/blob/e973d515aef90c467da2289144df737a3bd03859/README.md",
+          "readme_sha256": "32526f1a91b202e739fce1a6defa7fce4d871146fc692f74056708e9b84486c8",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "43",
@@ -1568,7 +2986,37 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "every-app/open-seo",
+          "revision": "78c5d850c2729e3fcf7edf33aafb66efe17453e0",
+          "fork_repository": "saurabhmisal/open-seo",
+          "fork_revision": "89e5a00717cdf049b7c2b4e29646edb3a7d4995b",
+          "license": "MIT",
+          "reference_url": "https://github.com/every-app/open-seo/blob/78c5d850c2729e3fcf7edf33aafb66efe17453e0/README.md",
+          "readme_sha256": "06cf02cb5c794e649a443b95d5d337a0dc62a1b90b7544c1981083b282ae9a0e",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "coreyhaines31/marketingskills",
+          "revision": "88c79f6528a9347420e57ceb1fff9a60de651768",
+          "fork_repository": "saurabhmisal/marketingskills",
+          "fork_revision": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
+          "license": "MIT",
+          "reference_url": "https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/README.md",
+          "readme_sha256": "69c172878d7a66305ef57928d0fbb4056e379cb8a316e23fc1d6f9869519f798",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "44",
@@ -1607,7 +3055,37 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "coreyhaines31/marketingskills",
+          "revision": "88c79f6528a9347420e57ceb1fff9a60de651768",
+          "fork_repository": "saurabhmisal/marketingskills",
+          "fork_revision": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
+          "license": "MIT",
+          "reference_url": "https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/README.md",
+          "readme_sha256": "69c172878d7a66305ef57928d0fbb4056e379cb8a316e23fc1d6f9869519f798",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "mmccaff/PlacesToPostYourStartup",
+          "revision": "1941a95f344d90ea5ffe2e0b4c25ffa92dfd3d73",
+          "fork_repository": "saurabhmisal/PlacesToPostYourStartup",
+          "fork_revision": "1941a95f344d90ea5ffe2e0b4c25ffa92dfd3d73",
+          "license": "CC0-1.0",
+          "reference_url": "https://github.com/mmccaff/PlacesToPostYourStartup/blob/1941a95f344d90ea5ffe2e0b4c25ffa92dfd3d73/README.md",
+          "readme_sha256": "44215385902e0cce8edd4fd10094335a5d6f628e0b2a9629773284511e10b017",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "45",
@@ -1641,7 +3119,37 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "coreyhaines31/marketingskills",
+          "revision": "88c79f6528a9347420e57ceb1fff9a60de651768",
+          "fork_repository": "saurabhmisal/marketingskills",
+          "fork_revision": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
+          "license": "MIT",
+          "reference_url": "https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/README.md",
+          "readme_sha256": "69c172878d7a66305ef57928d0fbb4056e379cb8a316e23fc1d6f9869519f798",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "raunakpatil/youtube-agentic-ai-studio",
+          "revision": "22be5d044138def44e96f0b26a2f1be66f491452",
+          "fork_repository": "saurabhmisal/youtube-agentic-ai-studio",
+          "fork_revision": "d1a0214ff3738edc6262fb2df2d3341c494ddd5d",
+          "license": "MIT",
+          "reference_url": "https://github.com/raunakpatil/youtube-agentic-ai-studio/blob/22be5d044138def44e96f0b26a2f1be66f491452/README.md",
+          "readme_sha256": "d4625463d7f7e9ebfc31ac9a5f7b1469ffff9812c53cc3d2853354fa618c4f01",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "46",
@@ -1678,7 +3186,37 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+        "Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "coreyhaines31/marketingskills",
+          "revision": "88c79f6528a9347420e57ceb1fff9a60de651768",
+          "fork_repository": "saurabhmisal/marketingskills",
+          "fork_revision": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
+          "license": "MIT",
+          "reference_url": "https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/README.md",
+          "readme_sha256": "69c172878d7a66305ef57928d0fbb4056e379cb8a316e23fc1d6f9869519f798",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "every-app/open-seo",
+          "revision": "78c5d850c2729e3fcf7edf33aafb66efe17453e0",
+          "fork_repository": "saurabhmisal/open-seo",
+          "fork_revision": "89e5a00717cdf049b7c2b4e29646edb3a7d4995b",
+          "license": "MIT",
+          "reference_url": "https://github.com/every-app/open-seo/blob/78c5d850c2729e3fcf7edf33aafb66efe17453e0/README.md",
+          "readme_sha256": "06cf02cb5c794e649a443b95d5d337a0dc62a1b90b7544c1981083b282ae9a0e",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "47",
@@ -1712,7 +3250,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "ai-job-search-dev/ai-job-search",
+          "revision": "256237903e115f47501e7774fff9004e80c32311",
+          "fork_repository": "saurabhmisal/ai-job-search",
+          "fork_revision": "895c02191d28c8d88b8381ea68797ff6db599728",
+          "license": "MIT",
+          "reference_url": "https://github.com/ai-job-search-dev/ai-job-search/blob/256237903e115f47501e7774fff9004e80c32311/README.md",
+          "readme_sha256": "4c66bb1d8f5c9e2affd6a495ed658b25c0d7ecfc746507816490d5f94353154e",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "career-ops-hq/career-ops",
+          "revision": "5625d811b821a45b2bc0ca85533dff3a19713ce1",
+          "fork_repository": "saurabhmisal/career-ops",
+          "fork_revision": "4164109d85218b27719081c5cc8b7254886b90af",
+          "license": "MIT",
+          "reference_url": "https://github.com/career-ops-hq/career-ops/blob/5625d811b821a45b2bc0ca85533dff3a19713ce1/README.md",
+          "readme_sha256": "abafd4ca4d18928dcedb0a3d3b80745dfb9d35455f61da1a0c8826c2834aa69d",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "48",
@@ -1746,7 +3313,47 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "career-ops-hq/career-ops",
+          "revision": "5625d811b821a45b2bc0ca85533dff3a19713ce1",
+          "fork_repository": "saurabhmisal/career-ops",
+          "fork_revision": "4164109d85218b27719081c5cc8b7254886b90af",
+          "license": "MIT",
+          "reference_url": "https://github.com/career-ops-hq/career-ops/blob/5625d811b821a45b2bc0ca85533dff3a19713ce1/README.md",
+          "readme_sha256": "abafd4ca4d18928dcedb0a3d3b80745dfb9d35455f61da1a0c8826c2834aa69d",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "ai-job-search-dev/ai-job-search",
+          "revision": "256237903e115f47501e7774fff9004e80c32311",
+          "fork_repository": "saurabhmisal/ai-job-search",
+          "fork_revision": "895c02191d28c8d88b8381ea68797ff6db599728",
+          "license": "MIT",
+          "reference_url": "https://github.com/ai-job-search-dev/ai-job-search/blob/256237903e115f47501e7774fff9004e80c32311/README.md",
+          "readme_sha256": "4c66bb1d8f5c9e2affd6a495ed658b25c0d7ecfc746507816490d5f94353154e",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "virgiliojr94/book-to-skill",
+          "revision": "e7bb659d3261491c8b28793dcb9102fa64a46c22",
+          "fork_repository": "saurabhmisal/book-to-skill",
+          "fork_revision": "a24e62f4d8caf2ee433f6e48d9073800f56f906e",
+          "license": "MIT",
+          "reference_url": "https://github.com/virgiliojr94/book-to-skill/blob/e7bb659d3261491c8b28793dcb9102fa64a46c22/README.md",
+          "readme_sha256": "43c403269fed5a7032e5fa429607a2e326019945b41a64588f38396dc3343402",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "49",
@@ -1779,7 +3386,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "bilawalsidhu/gods-eye-view",
+          "revision": "3d6423c6f8ddb5061d80fba23a9c2da4fe5bc6ff",
+          "fork_repository": "saurabhmisal/gods-eye-view",
+          "fork_revision": "591f299d11f38a612629a274463196d57ae3862e",
+          "license": "NOASSERTION",
+          "reference_url": "https://github.com/bilawalsidhu/gods-eye-view/blob/3d6423c6f8ddb5061d80fba23a9c2da4fe5bc6ff/README.md",
+          "readme_sha256": "fd14aab43adb1514999bed28b791da019e402f4e2f8d761d980db31835797d54",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "anvaka/city-roads",
+          "revision": "35d6497db70debf4508b4d75f17d80c4367d66a6",
+          "fork_repository": "saurabhmisal/city-roads",
+          "fork_revision": "0d89417bb942b34fa87775897cc8cf8437d17b79",
+          "license": "MIT",
+          "reference_url": "https://github.com/anvaka/city-roads/blob/35d6497db70debf4508b4d75f17d80c4367d66a6/README.md",
+          "readme_sha256": "b4ec5d31f9811e155d1becd373e411197f60ba7b880882bce7e0d34e2da46a50",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "50",
@@ -1812,7 +3448,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "anvaka/city-roads",
+          "revision": "35d6497db70debf4508b4d75f17d80c4367d66a6",
+          "fork_repository": "saurabhmisal/city-roads",
+          "fork_revision": "0d89417bb942b34fa87775897cc8cf8437d17b79",
+          "license": "MIT",
+          "reference_url": "https://github.com/anvaka/city-roads/blob/35d6497db70debf4508b4d75f17d80c4367d66a6/README.md",
+          "readme_sha256": "b4ec5d31f9811e155d1becd373e411197f60ba7b880882bce7e0d34e2da46a50",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "wheresryan22/anatomy",
+          "revision": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80",
+          "fork_repository": "saurabhmisal/anatomy",
+          "fork_revision": "689dcf966e63d92be10a5d593c6e19e10acd4422",
+          "license": "MIT",
+          "reference_url": "https://github.com/wheresryan22/anatomy/blob/1482e8469b0a9e0d8cc18ea2740a01423d29ae80/README.md",
+          "readme_sha256": "a1bc269d3d1b75a230a2ae54cb43c63c19a0a3a067f6a7bb0baf5a7785e3de16",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "51",
@@ -1845,7 +3510,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "bilawalsidhu/gods-eye-view",
+          "revision": "3d6423c6f8ddb5061d80fba23a9c2da4fe5bc6ff",
+          "fork_repository": "saurabhmisal/gods-eye-view",
+          "fork_revision": "591f299d11f38a612629a274463196d57ae3862e",
+          "license": "NOASSERTION",
+          "reference_url": "https://github.com/bilawalsidhu/gods-eye-view/blob/3d6423c6f8ddb5061d80fba23a9c2da4fe5bc6ff/README.md",
+          "readme_sha256": "fd14aab43adb1514999bed28b791da019e402f4e2f8d761d980db31835797d54",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "wheresryan22/anatomy",
+          "revision": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80",
+          "fork_repository": "saurabhmisal/anatomy",
+          "fork_revision": "689dcf966e63d92be10a5d593c6e19e10acd4422",
+          "license": "MIT",
+          "reference_url": "https://github.com/wheresryan22/anatomy/blob/1482e8469b0a9e0d8cc18ea2740a01423d29ae80/README.md",
+          "readme_sha256": "a1bc269d3d1b75a230a2ae54cb43c63c19a0a3a067f6a7bb0baf5a7785e3de16",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     },
     {
       "id": "52",
@@ -1879,7 +3573,36 @@
         "read_local_files": "with_operator_authorization",
         "network": "only_if_needed_and_authorized",
         "external_writes": "approval_required"
-      }
+      },
+      "source_reviewed_at": "2026-11-06T15:17:09.240Z",
+      "source_guidance": [
+        "Check the pinned upstream documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
+        "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+      ],
+      "upstream_sources": [
+        {
+          "repository": "bilawalsidhu/gods-eye-view",
+          "revision": "3d6423c6f8ddb5061d80fba23a9c2da4fe5bc6ff",
+          "fork_repository": "saurabhmisal/gods-eye-view",
+          "fork_revision": "591f299d11f38a612629a274463196d57ae3862e",
+          "license": "NOASSERTION",
+          "reference_url": "https://github.com/bilawalsidhu/gods-eye-view/blob/3d6423c6f8ddb5061d80fba23a9c2da4fe5bc6ff/README.md",
+          "readme_sha256": "fd14aab43adb1514999bed28b791da019e402f4e2f8d761d980db31835797d54",
+          "scope": "reference_only",
+          "runtime_verified": false
+        },
+        {
+          "repository": "anvaka/city-roads",
+          "revision": "35d6497db70debf4508b4d75f17d80c4367d66a6",
+          "fork_repository": "saurabhmisal/city-roads",
+          "fork_revision": "0d89417bb942b34fa87775897cc8cf8437d17b79",
+          "license": "MIT",
+          "reference_url": "https://github.com/anvaka/city-roads/blob/35d6497db70debf4508b4d75f17d80c4367d66a6/README.md",
+          "readme_sha256": "b4ec5d31f9811e155d1becd373e411197f60ba7b880882bce7e0d34e2da46a50",
+          "scope": "reference_only",
+          "runtime_verified": false
+        }
+      ]
     }
   ]
 }
