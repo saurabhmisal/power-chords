@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "node src/server.mjs",
-    "test": "node --test test/*.test.mjs workflows/reel-to-knowledge/test.mjs",
+    "test": "node --test test/*.test.mjs workflows/reel-to-knowledge/test.mjs workflows/reel-to-knowledge/*.test.mjs",
     "test:judgement": "node --test test/judgement.test.mjs",
     "export:judgement": "node scripts/export-judgement.mjs",
     "smoke": "node src/smoke.mjs",
@@ -37,7 +37,13 @@
     "knowledge:note": "node workflows/reel-to-knowledge/cli.mjs note",
     "knowledge:install": "node workflows/reel-to-knowledge/install.mjs",
     "knowledge:mcp": "node workflows/reel-to-knowledge/mcp.mjs",
-    "test:reel-knowledge": "node --test workflows/reel-to-knowledge/test.mjs"
+    "test:reel-knowledge": "node --test workflows/reel-to-knowledge/test.mjs",
+    "reversereel:ingest": "node workflows/reel-to-knowledge/cli.mjs ingest",
+    "reversereel:search": "node workflows/reel-to-knowledge/cli.mjs search",
+    "reversereel:list": "node workflows/reel-to-knowledge/cli.mjs list",
+    "reversereel:note": "node workflows/reel-to-knowledge/cli.mjs note",
+    "reversereel:install": "node workflows/reel-to-knowledge/install.mjs",
+    "reversereel:mcp": "node workflows/reel-to-knowledge/mcp.mjs"
   },
   "author": "Saurabh Misal (https://github.com/saurabhmisal)",
   "license": "MIT",

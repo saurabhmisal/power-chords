@@ -21,6 +21,8 @@ jobs:
           node-version: '24'
       - run: npm run validate:catalog
       - run: npm run validate:capabilities
+      - name: Install media test dependencies
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - run: npm test
       - run: npm run build:site
       - name: Confirm reproducible static output

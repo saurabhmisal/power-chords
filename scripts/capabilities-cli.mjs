@@ -3,6 +3,7 @@
 // it does not execute or vendor any optional third-party runtime.
 import {readFile, mkdir, cp, lstat} from 'node:fs/promises';
 import {join, resolve} from 'node:path';
+import {spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 
 const root=resolve(fileURLToPath(new URL('..', import.meta.url)));
@@ -28,8 +29,12 @@ try {
   if(command==='help'||has('--help')){process.stdout.write(help);process.exit(0)}
   if(command==='list'){
     for(const c of capabilities)console.log(`${c.id}  ${c.name.padEnd(40)}  ${c.slug}  ${c.implementation}`);
+    console.log('Composite: ReverseReel — Turn short videos into searchable knowledge (reel-to-knowledge; part of the existing 52 capabilities).');
     process.exit(0);
   }
+  const reverseReel=['reversereel','reverse-reel','reel-to-knowledge','power-chords-reel-to-knowledge','reel → knowledge'].includes(String(args[0]).toLowerCase());
+  if(reverseReel&&command==='install'){const result=spawnSync(process.execPath,[join(root,'workflows/reel-to-knowledge/install.mjs'),...args.slice(1)],{stdio:'inherit'});process.exit(result.status??1);}
+  if(reverseReel&&command==='show'){console.log(JSON.stringify({name:'ReverseReel',tagline:'Turn short videos into searchable knowledge',slug:'reel-to-knowledge',type:'composite',guide:'workflows/reel-to-knowledge/README.md'},null,2));process.exit(0);}
   if(command==='show'){
     const c=find(args[0]);if(!c)throw new Error('Unknown capability identifier');
     console.log(JSON.stringify(c,null,2));process.exit(0);

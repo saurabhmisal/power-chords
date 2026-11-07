@@ -27,7 +27,7 @@
 <body id="pc-site">
 <header class="pc-nav pc-wrap">
   <a class="pc-brand" href="#"><img class="pc-brand-icon" src="assets/power-chords-loop-pc-icon.png" width="48" height="48" alt=""><span>Power Chords</span></a>
-  <nav aria-label="Main navigation"><a href="#pc-capabilities">Capabilities</a><a href="#pc-how">How it works</a><a href="#pc-setup" data-open-setup>Get started</a></nav>
+  <nav aria-label="Main navigation"><a href="#pc-capabilities">Capabilities</a><a href="#pc-reversereel">ReverseReel</a><a href="#pc-how">How it works</a><a href="#pc-setup" data-open-setup>Get started</a></nav>
   <a class="pc-github" href="https://github.com/saurabhmisal/power-chords" target="_blank" rel="noopener">GitHub ↗</a>
 </header>
 <main>
@@ -99,6 +99,23 @@
 <article class="capability-card" data-family="Spatial &amp; Field Intelligence" data-keywords="Geospatial data visualization Geocoded data boundaries desired comparisons coordinate systems Map/scene specification visualization output when runtime available"><span class="pc-icon"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m2 5 7-3 6 3 7-3v17l-7 3-6-3-7 3V5Zm7-3v17m6-14v17"/></svg></span><p class="pc-core">Spatial &amp; Field Intelligence</p><h3>Geospatial Visualization Terra</h3><p>Visualize spatial patterns.</p><span class="pc-badge pc-badge-tool">Codex workspace</span><div class="pc-card-actions"><a href="capabilities/geospatial-data-visualization/index.html" aria-label="Explore Geospatial Visualization Terra">See workflow →</a><a href="workspace.html?capability=geospatial-data-visualization" aria-label="Run Geospatial Visualization Terra">Run with Codex ↗</a><a class="pc-portable-link" href="#pc-setup" data-install="geospatial-data-visualization" aria-label="Install Geospatial Visualization Terra">Agent setup</a></div></article>
 <article class="capability-card" data-family="Spatial &amp; Field Intelligence" data-keywords="Location-driven field insights Site visits field notes GPS with consent performance data Field-insights report interventions test plan"><span class="pc-icon"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m2 5 7-3 6 3 7-3v17l-7 3-6-3-7 3V5Zm7-3v17m6-14v17"/></svg></span><p class="pc-core">Spatial &amp; Field Intelligence</p><h3>Field Insights Meridian</h3><p>Turn location signals into action.</p><span class="pc-badge pc-badge-tool">Codex workspace</span><div class="pc-card-actions"><a href="capabilities/location-driven-field-insights/index.html" aria-label="Explore Field Insights Meridian">See workflow →</a><a href="workspace.html?capability=location-driven-field-insights" aria-label="Run Field Insights Meridian">Run with Codex ↗</a><a class="pc-portable-link" href="#pc-setup" data-install="location-driven-field-insights" aria-label="Install Field Insights Meridian">Agent setup</a></div></article></div>
     <p id="pc-library-empty" hidden>No capabilities match. Try another search or reset the filters.</p>
+  </section>
+  <section class="pc-library pc-wrap" id="pc-reversereel" aria-labelledby="pc-reversereel-title">
+    <p class="pc-eyebrow">COMPOSITE WORKFLOW · PART OF THE EXISTING 52-CAPABILITY LIBRARY</p>
+    <h2 id="pc-reversereel-title">ReverseReel</h2>
+    <p class="pc-lead">Turn short videos into searchable knowledge</p>
+    <p>Bring a permitted Reel, Short or local video. Keep timestamped Markdown notes and search them on your computer.</p>
+    <details><summary>Install and use ReverseReel</summary>
+      <pre>git clone https://github.com/saurabhmisal/power-chords.git
+cd power-chords
+npm run reversereel:install -- --agent codex --project ../my-project
+npm run reversereel:ingest -- --source ./reel.mp4 --transcript ./reel.srt
+npm run reversereel:search -- --query onboarding</pre>
+      <p>Use codex, claude, cursor or gemini, or pass --dest /path/to/skills for other agents. Requires Node.js 24.x and ffmpeg/ffprobe. Supply captions or install local faster-whisper. Public URLs also need yt-dlp; optional OCR needs Tesseract.</p>
+      <p>Ask your agent: “Use ReverseReel on this video and find related notes.” Local terminal or stdio MCP access is required; browser-only chats need a connected runtime.</p>
+      <p>Previously Reel → Knowledge. Existing installs, knowledge:* commands and MCP tools continue to work. Your local knowledge base stays in place.</p>
+      <a class="pc-text-link" href="https://github.com/saurabhmisal/power-chords/tree/main/workflows/reel-to-knowledge">Full guide, MCP setup and limitations ↗</a>
+    </details>
   </section>
   <section class="pc-how pc-wrap" id="pc-how" aria-labelledby="pc-how-title">
     <p class="pc-eyebrow">HOW IT WORKS</p><h2 id="pc-how-title">Your brief. Your agent. Your call.</h2>

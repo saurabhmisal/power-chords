@@ -1,5 +1,7 @@
 # Use Power Chords with your AI agent
 
+ReverseReel: **Turn short videos into searchable knowledge**. Install with `npm run reversereel:install -- --agent codex --project /path/to/project` (also claude, cursor, gemini; other hosts use `--dest /path/to/skills`). Requires local terminal access or local stdio MCP, Node.js 24.x, ffmpeg/ffprobe, and captions or optional local speech recognition. Browser-only chats need a connected runtime. [Full guide and MCP setup](../workflows/reel-to-knowledge/README.md). Existing Reel → Knowledge installs, skill identifiers, `knowledge:*` commands, MCP tools and storage remain supported.
+
 Power Chords **instruction packs** are portable. Actual abilities depend on your agent's access to tools, authorized content, and any installed runtime adapter. An SKILL.md file alone cannot perform OCR, deploy code, generate audio or retrieve live information.
 
 The landing page provides a platform selector, capability search, install-command copying, and individual Markdown downloads. For chat-based products without project skill directories, follow the [portable agent guide](PORTABLE_AGENT_GUIDE.md). Claude Code installation is distinct from using instructions in Claude web; no automatic account integration is implied.

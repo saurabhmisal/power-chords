@@ -11,5 +11,5 @@ try{let exists=false;try{const x=await lstat(target);if(x.isSymbolicLink()||!x.i
  if(exists&&!args.includes('--force'))throw Error('Skill already installed; use --force to replace');
  await mkdir(dest,{recursive:true});if(exists)await rm(target,{recursive:true});
  await cp(source,target,{recursive:true,filter:x=>!x.endsWith('/test.mjs')});
- console.log(`Installed ${target}\nNo external code executes during installation. For local processing, install ffmpeg/ffprobe and optional STT/OCR tools.`);
+ console.log(`Installed ReverseReel (Reel → Knowledge): ${target}\nNo external code executes during installation. For local processing, install ffmpeg/ffprobe and optional STT/OCR tools.`);
 }catch(e){console.error(e.message);process.exitCode=1;}

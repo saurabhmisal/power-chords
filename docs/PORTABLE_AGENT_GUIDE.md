@@ -1,5 +1,7 @@
 # Use Power Chords across platforms
 
+ReverseReel: **Turn short videos into searchable knowledge**. Install with `npm run reversereel:install -- --agent codex --project /path/to/project` (also claude, cursor, gemini; other hosts use `--dest /path/to/skills`). Requires local terminal access or local stdio MCP, Node.js 24.x, ffmpeg/ffprobe, and captions or optional local speech recognition. Browser-only chats need a connected runtime. [Full guide and MCP setup](../workflows/reel-to-knowledge/README.md). Existing Reel → Knowledge installs, skill identifiers, `knowledge:*` commands, MCP tools and storage remain supported.
+
 Power Chords capability packs are portable Markdown instructions. They describe inputs, steps, output contracts, and review expectations. They do not contain credentials, grant permissions, or install specialized execution tools.
 
 ## Coding agents

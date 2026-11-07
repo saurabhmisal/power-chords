@@ -10,7 +10,9 @@ const tools=[
  {name:'list_reel_knowledge',description:'List locally stored knowledge notes.',inputSchema:schema},
  {name:'read_reel_knowledge',description:'Read one knowledge note by its identifier.',inputSchema:{type:'object',properties:{id:{type:'string'}},required:['id']}}
 ];
-async function execute(name,a){if(name==='reel_to_knowledge')return kb.ingest(a);if(name==='search_reel_knowledge')return kb.search(a.query,a.limit);if(name==='list_reel_knowledge')return kb.list();if(name==='read_reel_knowledge')return kb.get(a.id);throw Error(`Unknown tool: ${name}`);}
+const aliases={reversereel_ingest:"reel_to_knowledge",reversereel_search:"search_reel_knowledge",reversereel_list:"list_reel_knowledge",reversereel_read:"read_reel_knowledge"};
+for(const [name,legacy] of Object.entries(aliases)){const tool=tools.find(item=>item.name===legacy);tools.push({...tool,name,description:"ReverseReel — Turn short videos into searchable knowledge. "+tool.description});tool.description="ReverseReel legacy alias. "+tool.description;}
+async function execute(name,a){name=aliases[name]||name;if(name==='reel_to_knowledge')return kb.ingest(a);if(name==='search_reel_knowledge')return kb.search(a.query,a.limit);if(name==='list_reel_knowledge')return kb.list();if(name==='read_reel_knowledge')return kb.get(a.id);throw Error(`Unknown tool: ${name}`);}
 function respond(obj){process.stdout.write(JSON.stringify(obj)+'\n');}
 const rl=createInterface({input:process.stdin,crlfDelay:Infinity});
 for await(const line of rl){if(!line.trim())continue;let req;try{req=JSON.parse(line);if(req.jsonrpc!=='2.0'||typeof req.method!=='string')throw Error('Invalid JSON-RPC request');

@@ -1,6 +1,14 @@
-# 🤘 Reel → Knowledge · Power Chords
+# 🤘 ReverseReel · Power Chords
 
 Turn a permitted Instagram Reel, YouTube Short, or local short video into **timestamped, searchable, source-attributed Markdown knowledge**. This is a composable workflow using Power Chords' existing transcription, OCR, document understanding and retrieval capabilities, not a 53rd headline capability.
+
+## Compatibility
+
+**Turn short videos into searchable knowledge**
+
+Previously Reel → Knowledge. Existing installs, skill identifier `power-chords-reel-to-knowledge`, paths, `knowledge:*` commands, MCP configurations and storage stay supported. Ask for either name. Update existing installs with `--force`.
+
+From the repository root: `npm run reversereel:install -- --agent codex --project /path/to/project`. Substitute claude, cursor or gemini, or use `--dest /path/to/skills`. Use Node.js 24.x for the full repository.
 
 ## What actually runs
 
@@ -56,11 +64,11 @@ In a client that supports **local stdio MCP servers**, configure the command and
 }
 ```
 
-Tools: `reel_to_knowledge`, `search_reel_knowledge`, `list_reel_knowledge`, and `read_reel_knowledge`. MCP configuration formats differ by client and version; adapt the JSON to your tool's current documentation. This server speaks the JSON-RPC stdio subset used by MCP and does not require a proprietary model API.
+Preferred tools: `reversereel_ingest`, `reversereel_search`, `reversereel_list`, `reversereel_read`. Legacy aliases: `reel_to_knowledge`, `search_reel_knowledge`, `list_reel_knowledge`, and `read_reel_knowledge`. MCP configuration formats differ by client and version; adapt the JSON to your tool's current documentation. This server speaks the JSON-RPC stdio subset used by MCP and does not require a proprietary model API.
 
 ## What to ask an agent
 
-> Use Reel → Knowledge on this authorized local video, extract timestamped highlights, and search my existing notes for related onboarding topics. Keep uncertain claims labeled and tell me where you saved the Markdown note.
+> Use ReverseReel on this authorized local video, extract timestamped highlights, and search my existing notes for related onboarding topics. Keep uncertain claims labeled and tell me where you saved the Markdown note.
 
 ## Security and limitations
 

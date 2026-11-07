@@ -1,14 +1,16 @@
 ---
 name: power-chords-reel-to-knowledge
-description: Turn authorized Instagram Reels, YouTube Shorts, or local short videos into searchable, timestamped Markdown notes using local tools.
+description: ReverseReel — Turn short videos into searchable knowledge. Turn authorized Instagram Reels, YouTube Shorts, or local short videos into searchable, timestamped Markdown notes using local tools.
 ---
 
-# Reel → Knowledge
+# ReverseReel
+
+Turn short videos into searchable knowledge. Also responds to Reel → Knowledge and reel-to-knowledge; the skill identifier stays stable.
 
 When the user wants to convert a video or reel into reusable knowledge:
 
 1. Confirm they own or are permitted to process the media. Use the file they provide or a public, accessible Reel/Short link. Do not bypass access restrictions.
-2. Verify Node.js 22.13+, `ffmpeg`, and `ffprobe`. For uncaptained audio, local Python `faster-whisper` is optional; OCR uses `tesseract`; public URLs use `yt-dlp`.
+2. Verify Node.js 22.13+, `ffmpeg`, and `ffprobe`. For uncaptioned audio, local Python `faster-whisper` is optional; OCR uses `tesseract`; public URLs use `yt-dlp`.
 3. In this skill folder run: `node cli.mjs ingest --source '/absolute/path/to/reel.mp4' --transcript '/path/to/captions.srt'` (omit `--transcript` when auto captions or local STT are available). Always execute, not simulate.
 4. To retrieve notes, use `node cli.mjs search --query 'topic'` and `node cli.mjs note --id NOTE_ID`.
 5. Return extracted insights with source, timestamps, uncertain claims and note location. Never invent transcript or imply that reel claims are verified.
