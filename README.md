@@ -1061,3 +1061,8 @@ See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the original source lic
 **Power Chords · Created and led by [Saurabh Misal](https://github.com/saurabhmisal)**
 
 </div>
+
+
+## Lazo design standard
+
+Follow [the shared design principles](docs/DESIGN_PRINCIPLES.md) for palette, Source Sans 3 typography, responsive layout, character identity and accessible motion. The Lazo website owns the shared style source and exports it with `npm run build:family`.
