@@ -26,7 +26,7 @@ test('landing builds include complete standalone instructions and valid capabili
       const page=await readFile(join(destination,'capabilities',item.slug,'index.html'),'utf8');
       assert(page.includes(item.name.replaceAll('&','&amp;')));
       assert(page.includes('workflow diagram'));
-      assert(page.includes('not a recording of live execution'));
+      assert(page.includes('not a live recording'));
       assert(page.includes('data-demo-toggle'));
       assert(!page.includes('Download GIF'));
       assert(!page.includes('Play workflow GIF'));

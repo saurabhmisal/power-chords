@@ -15,7 +15,7 @@ export async function buildLanding(destination,{hosted=false}={}){
   await mkdir(join(directory,'assets'),{recursive:true});
   await mkdir(join(directory,'downloads'),{recursive:true});
   await mkdir(join(directory,'assets/fonts'),{recursive:true});
-  for(const font of ['source-sans-3.woff2','OFL.txt'])await copyFile(join(root,'assets/fonts',font),join(directory,'assets/fonts',font));
+  for(const font of ['commissioner-cyrillic-ext.woff2', 'commissioner-cyrillic.woff2', 'commissioner-greek.woff2', 'commissioner-vietnamese.woff2', 'commissioner-latin-ext.woff2', 'commissioner-latin.woff2', 'Commissioner-OFL.txt'])await copyFile(join(root,'assets/fonts',font),join(directory,'assets/fonts',font));
   const styles={};
   for(const filename of ['landing.css','capabilities.css']){
     const css=await readFile(join(root,'landing',filename),'utf8');
@@ -24,7 +24,7 @@ export async function buildLanding(destination,{hosted=false}={}){
   }
   function card(item){
     const index=featured.indexOf(item.slug);
-    return `<article class="capability-card" data-family="${escape(item.family)}" data-keywords="${escape(item.function_name+' '+item.inputs.join(' ')+' '+item.outputs.join(' '))}"><span class="pc-icon">${icon(index>=0?featuredIcons[index]:familyIcons[item.family]||'grid')}</span><p class="pc-core">${escape(item.family)}</p><h3>${escape(item.name)}</h3><p>${escape(item.outcome)}.</p><span class="pc-badge ${item.implementation==='adapter_required'?'pc-badge-tool':''}">${statusLabel(item)}</span><div class="pc-card-actions"><a href="capabilities/${item.slug}/index.html" aria-label="Explore ${escape(item.name)}">Explore capability →</a><a href="workspace.html?capability=${escape(item.slug)}" aria-label="Run ${escape(item.name)}">Run with Codex ↗</a><a class="pc-portable-link" href="#pc-setup" data-install="${escape(item.slug)}" aria-label="Install ${escape(item.name)}">Agent setup</a></div></article>`;
+    return `<article class="capability-card" data-family="${escape(item.family)}" data-keywords="${escape(item.function_name+' '+item.inputs.join(' ')+' '+item.outputs.join(' '))}"><span class="pc-icon">${icon(index>=0?featuredIcons[index]:familyIcons[item.family]||'grid')}</span><p class="pc-core">${escape(item.family)}</p><h3>${escape(item.name)}</h3><p>${escape(item.outcome)}.</p><span class="pc-badge ${item.implementation==='adapter_required'?'pc-badge-tool':''}">${statusLabel(item)}</span><div class="pc-card-actions"><a href="capabilities/${item.slug}/index.html" aria-label="Explore ${escape(item.name)}">See workflow →</a><a href="workspace.html?capability=${escape(item.slug)}" aria-label="Run ${escape(item.name)}">Run with Codex ↗</a><a class="pc-portable-link" href="#pc-setup" data-install="${escape(item.slug)}" aria-label="Install ${escape(item.name)}">Agent setup</a></div></article>`;
   }
   const replacements={
     CAPABILITY_CARDS:[...featured.map(slug=>capabilities.find(item=>item.slug===slug)),...capabilities.filter(item=>!featured.includes(item.slug))].map(card).join('\n'),
@@ -68,7 +68,7 @@ export async function buildLanding(destination,{hosted=false}={}){
   await buildCapabilityPages(root,directory,capabilities,styles);
   // Fingerprint consent assets so a cached pre-consent tag can never survive a new page release.
   const familyAssets = {};
-  for (const filename of ['analytics.js', 'brand-theme.css']) {
+  for (const filename of ['analytics.js', 'brand-theme.css', 'brand-type.css']) {
     const content = await readFile(join(root,'landing',filename),'utf8');
     const versioned = filename.replace(/\.(js|css)$/,(_,ext)=>`-${createHash('sha256').update(content).digest('hex').slice(0,12)}.${ext}`);
     familyAssets[filename] = versioned;
