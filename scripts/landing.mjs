@@ -58,7 +58,7 @@ export async function buildLanding(destination,{hosted=false}={}){
   await writeFile(join(directory,verificationName),verificationScript);
   const verification=await readFile(join(root,'landing/verification.html'),'utf8');
   await writeFile(join(directory,'verification.html'),verification.replace('workspace.css',workspaceAssets['workspace.css']).replace('verification.js',verificationName));
-  for(const filename of ['power-chords-cover-clean.jpg','power-chords-loop-pc-icon.png','power-chords-loop-pc-logo.png','power-chords-favicon-32.png','power-chords-favicon-16.png','power-chords-apple-touch-icon.png'])await copyFile(join(root,'assets',filename),join(directory,'assets',filename));
+  for(const filename of ['lazo-mark.svg','power-chords-cover-clean.jpg','power-chords-loop-pc-icon.png','power-chords-loop-pc-logo.png','power-chords-favicon-32.png','power-chords-favicon-16.png','power-chords-apple-touch-icon.png'])await copyFile(join(root,'assets',filename),join(directory,'assets',filename));
   for(const item of capabilities){
     const instructions=await readFile(join(root,'capabilities',item.slug,'SKILL.md'),'utf8');
     const standalone=instructions.replace('[README.md](README.md)',`[complete capability guide](https://powerchords.lazo.tools/capabilities/${item.slug}/)`);
