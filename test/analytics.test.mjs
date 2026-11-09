@@ -16,8 +16,8 @@ test('public counts use fixed anonymous payloads and a quiet footer opt-out',()=
  assert.equal(page.scripts.length,0);assert.equal(page.document.cookie,'');assert.equal(page.window.dataLayer,undefined);assert.equal(page.requests.length,1);
  assert.deepEqual(page.requests[0].body,{page:'https://powerchords.lazo.tools/capabilities/customer-problem-discovery/',event:'page_view'});
  assert.equal(page.requests[0].credentials,'omit');assert.equal(page.requests[0].referrerPolicy,'no-referrer');assert.doesNotMatch(JSON.stringify(page.requests),/secret|private|email=|client_id|session_id/);
- assert.equal(page.button('Allow analytics'),undefined);page.button('Analytics: on · Turn off').handlers.click();assert.equal(page.requests.length,1);assert.match(page.document.cookie,/lazo_analytics_optout=true/);
- page.button('Analytics: off · Turn on').handlers.click();assert.equal(page.requests.length,1);
+ assert(page.button('Allow analytics'));page.button('Decline analytics').handlers.click();assert.equal(page.requests.length,1);assert.match(page.document.cookie,/lazo_analytics_optout=true/);
+ assert(page.button('Allow analytics'));assert.equal(page.requests.length,1);
 });
 test('local, preview, fork and non-HTTPS pages never collect',()=>{
  for(const url of ['http://localhost:3000/','file:///tmp/index.html','https://preview.vercel.app/','https://saurabhmisal.github.io/power-chords/','http://powerchords.lazo.tools/']){
