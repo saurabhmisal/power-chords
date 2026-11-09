@@ -1,6 +1,6 @@
 # Third-party notices and attribution
 
-**Power Chords** is an original platform project created for and led by [Saurabh Misal](https://github.com/saurabhmisal). Its native Workroom, local workflows, orchestration logic, user controls and generated project-owned files use the repository license where applicable.
+**Power Chords** is part of the Lazo family. Its native Workroom, local workflows, orchestration logic, user controls and generated project-owned files use the repository license where applicable.
 
 The following independent projects are **catalogued as possible extensions**. They are not automatically bundled, installed, executed, relicensed or claimed as original Power Chords code. Their authors retain copyright and applicable license rights. **The license identifiers below are repository metadata from October 2026 and must be independently verified before integrating code or redistribution.** 'UNKNOWN' / 'NOASSERTION' requires special review.
 
