@@ -21,6 +21,13 @@ test('landing builds include complete standalone instructions and valid capabili
     assert(!/pinned upstream/i.test(html));
     assert.match(html,/src="landing-[a-f0-9]{12}\.js"/);
     assert.equal((html.match(/class="capability-card"/g)||[]).length,capabilities.length);
+    const nav=html.match(/<nav aria-label="Main navigation">([\s\S]*?)<\/nav>/)?.[1];
+    assert.ok(nav,'Main navigation must exist');
+    assert.deepEqual([...nav.matchAll(/<a\b[^>]*>([^<]+)<\/a>/g)].map(match=>match[1]),['Capabilities','How it works','Get started']);
+    assert(!nav.includes('ReverseReel'),'Individual capability names must never appear in site navigation');
+    for(const item of capabilities)assert(!nav.includes(item.name),`Capability ${item.name} must not appear in navigation`);
+    assert.match(html,/<h2 id="pc-reversereel-title">A workflow in action<\/h2>/);
+    assert(!/<h[1-6][^>]*>ReverseReel<\/h[1-6]>/i.test(html),'Capability-specific names belong in catalog content, not page headings');
     assert(!/52 capabilities|52 repos/i.test(html));
     assert(!html.includes('href="workroom.html"'));
     for(const item of capabilities){
