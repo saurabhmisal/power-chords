@@ -59,8 +59,6 @@ body :is(.hero-detail,.demo-heading p,.demo-caption,.answer>p) { font-size:16px;
 #pc-site :is(.pc-terminal,.pc-prompt) { background:var(--brand-navy); color:var(--brand-ivory); }
 #pc-site :is(pre,.pc-terminal code) { font-size:14px; color:var(--brand-ivory); }
 #pc-site .pc-how-grid p,#pc-site .capability-card>p,#pc-site .pc-library-status { font-size:16px; }
-#pc-site .pc-pause { color:var(--brand-ivory); background:#172b4de8; font-size:14px; }
-#pc-site .pc-cover img { animation-duration:24s; }
 /* Everyday: dark ink, ivory reading surfaces and a mint primary action. */
 html[data-brand="everyday"] .button { background:var(--brand-mint); color:var(--brand-ink); }
 html[data-brand="everyday"] :is(.hero h1 em,.logo svg,.status,.step-heading svg,.connections li>span) { color:var(--brand-mint); }

@@ -15,6 +15,9 @@ test('landing builds include complete standalone instructions and valid capabili
     const html=await readFile(join(destination,'index.html'),'utf8');
     assert(!html.includes('{{'));
     assert(!html.includes('pc-source-card'));
+    assert(!/Pause motion|Resume motion|Pause cover motion|pc-pause/.test(html));
+    assert.match(html,/data-cover-motion/);
+    assert.match(html,/src="cover-motion-[a-f0-9]{12}\.js"/);
     assert(!/pinned upstream/i.test(html));
     assert.match(html,/src="landing-[a-f0-9]{12}\.js"/);
     assert.equal((html.match(/class="capability-card"/g)||[]).length,capabilities.length);

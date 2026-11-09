@@ -39,7 +39,11 @@ export async function buildLanding(destination,{hosted=false}={}){
   const scriptName=`landing-${createHash('sha256').update(browserScript).digest('hex').slice(0,12)}.js`;
   for(const filename of await readdir(directory))if(/^(?:landing|capability)-[a-f0-9]{12}\.js$/.test(filename)&&filename!==scriptName)await rm(join(directory,filename));
   await writeFile(join(directory,scriptName),browserScript);
-  let html=template.replace(/\{\{([A-Z_]+)\}\}/g,(_,key)=>replacements[key]).replace('src="landing.js"',`src="${scriptName}"`);
+  const coverScript=await readFile(join(root,'landing/cover-motion.js'),'utf8');
+  const coverName=`cover-motion-${createHash('sha256').update(coverScript).digest('hex').slice(0,12)}.js`;
+  for(const filename of await readdir(directory))if(/^cover-motion-[a-f0-9]{12}\.js$/.test(filename)&&filename!==coverName)await rm(join(directory,filename));
+  await writeFile(join(directory,coverName),coverScript);
+  let html=template.replace(/\{\{([A-Z_]+)\}\}/g,(_,key)=>replacements[key]).replace('src="landing.js"',`src="${scriptName}"`).replace('src="cover-motion.js"',`src="${coverName}"`);
   for(const [filename,versioned] of Object.entries(styles))html=html.replace(`href="${filename}"`,`href="${versioned}"`);
   await writeFile(join(directory,'index.html'),html);
   for(const filename of ['brand-theme.css','brand-type.css','landing.css','theme.css','capabilities.css','landing.js','analytics.js'])await copyFile(join(root,'landing',filename),join(directory,filename));
