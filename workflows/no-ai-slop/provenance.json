@@ -1,0 +1,23 @@
+{
+  "standard_version": "1.0.0",
+  "standard_sha256": "eeeaa62aba43749c7a21d0640ec8f953f5ab50e3e50fcb8b357b6f969207c08d",
+  "source": {
+    "repository": "https://github.com/petergyang/no-ai-slop",
+    "commit": "000650b156983f5159695b441477f4e63b25dc85",
+    "files": [
+      "skills/no-ai-slop/SKILL.md",
+      "skills/no-ai-slop/eval.md"
+    ],
+    "license": "MIT",
+    "copyright": "Copyright (c) 2026 Peter Yang"
+  },
+  "adaptation": "Selected editorial principles adapted to the approved Pencil scope and style policy. No upstream code executes.",
+  "changes_from_upstream": [
+    "No automatic full-draft rewrite or change summary",
+    "No blanket technical-word blacklist",
+    "Stricter professional-prose punctuation default",
+    "Preserve genuine uncertainty and exact source/code syntax",
+    "No automatic upstream updates or expansion of permissions"
+  ],
+  "update_process": "Review an explicit diff and positive/negative examples. Approve before activation. Bump the version and check both products for drift."
+}
