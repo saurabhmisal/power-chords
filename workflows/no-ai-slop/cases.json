@@ -1,0 +1,95 @@
+[
+  {
+    "id": "leave-good-writing-alone",
+    "operation": "edit",
+    "request": "Review this paragraph. Change it only if needed.",
+    "input": "We shipped the fix on Tuesday. I still dislike the extra step, but it prevents duplicate payments.",
+    "must_preserve": [
+      "Tuesday",
+      "I still dislike",
+      "prevents duplicate payments"
+    ],
+    "expected": "No unnecessary rewrite. Preserve the direct voice and supported trade-off.",
+    "negative_example": "Our team delivered an innovative enhancement to empower seamless payments."
+  },
+  {
+    "id": "audit-only",
+    "operation": "audit",
+    "request": "Identify problems without rewriting.",
+    "input": "This launch marks a pivotal moment, highlighting our commitment to innovation.",
+    "must_preserve": [],
+    "expected": "Quote the promotional wording, name unsupported importance claims and suggest a short fix. Do not rewrite the draft or infer authorship.",
+    "negative_example": "This was written by AI. Here is a full rewrite."
+  },
+  {
+    "id": "preserve-uncertainty",
+    "operation": "edit",
+    "request": "Make this clearer without changing the claim.",
+    "input": "The pilot may improve retention. We have not measured the effect yet.",
+    "must_preserve": [
+      "may",
+      "not measured"
+    ],
+    "expected": "Retain both uncertainty and the lack of measured evidence.",
+    "negative_example": "The pilot improves retention."
+  },
+  {
+    "id": "stable-technical-terms",
+    "operation": "edit",
+    "request": "Check this wording and retain accurate technical terms.",
+    "input": "Pencil is the orchestration harness. The harness selects the model. The harness records the result.",
+    "must_preserve": [
+      "harness"
+    ],
+    "expected": "Do not ban harness or rename it agent, assistant or platform for variety.",
+    "negative_example": "Pencil is the platform. The assistant selects the model. The tool records the result."
+  },
+  {
+    "id": "local-slide-edit",
+    "operation": "edit",
+    "request": "Simplify only the opening line. Preserve the proposal.",
+    "input": "A narrow repair-finance test, not an Uber loan book.",
+    "must_preserve": [
+      "repair"
+    ],
+    "expected": "A direct repair-financing title, without a funding request, new roadmap or defensive slogan.",
+    "negative_example": "Approve discovery. Unlock the future of mobility finance."
+  },
+  {
+    "id": "exact-quotation",
+    "operation": "edit",
+    "request": "Simplify the explanation but preserve the quoted evidence exactly.",
+    "input": "Evidence: \"It may help — we have not measured it; the sample is small.\" This is a very important insight.",
+    "must_preserve": [
+      "\"It may help — we have not measured it; the sample is small.\""
+    ],
+    "expected": "Delete empty emphasis. Do not change punctuation or certainty inside the quotation.",
+    "negative_example": "Evidence: \"It helps. The sample is small.\""
+  },
+  {
+    "id": "protect-metrics-and-ownership",
+    "operation": "edit",
+    "request": "Make this sound more senior without adding claims.",
+    "input": "I proposed the experiment. The team reduced review time from 30 minutes to 8 in a 20-case pilot.",
+    "must_preserve": [
+      "I proposed",
+      "The team",
+      "30",
+      "8",
+      "20-case pilot"
+    ],
+    "expected": "Preserve the pilot qualifier and distinguish proposal ownership from team delivery.",
+    "negative_example": "I scaled a company-wide programme that cut costs by 75%."
+  },
+  {
+    "id": "code-syntax",
+    "operation": "edit",
+    "request": "Remove slop from the prose. Leave the code unchanged.",
+    "input": "This robust solution is a game changer.\n```js\nfor (;;) { break; }\n```",
+    "must_preserve": [
+      "```js\nfor (;;) { break; }\n```"
+    ],
+    "expected": "Remove unsupported promotion without editing code syntax.",
+    "negative_example": "```js\nfor () { break }\n```"
+  }
+]

@@ -10,3 +10,7 @@ The user requires a concrete preview and explicit approval before publication.
 - Exclude sources without a coherent input-to-output delivery path under `data/source-policy.json`. Never infer that a source reference is an installed or tested adapter.
 - Capability GIFs are illustrative walkthroughs unless they are recordings of real verified execution. Respect reduced motion and include a static workflow diagram.
 - Capability GIFs play automatically by default. Keep an optional pause control and a reduced-motion poster; do not show a GIF download link or require a visitor to press Play before normal playback.
+
+## Writing quality
+
+For prose generation, review and editing, load `workflows/no-ai-slop/editorial-policy.md` and apply only the relevant rules. Preserve the requested operation and leave effective writing unchanged. The portable workflow is `workflows/no-ai-slop/SKILL.md`. Existing publication approval requirements still apply.

@@ -1,6 +1,7 @@
 import {spawn} from 'node:child_process';
 import {writeFile,readFile,mkdir} from 'node:fs/promises';
 import {join,resolve} from 'node:path';
+import {withEditorialPolicy} from './editorial-policy.mjs';
 
 export class CodexConnection {
  constructor({binary=process.env.POWER_CHORDS_CODEX_BIN||'codex',timeout=240000}={}){this.binary=binary;this.timeout=timeout;}
@@ -13,6 +14,7 @@ export class CodexConnection {
   });
  }
  async generate({prompt,schema,directory,images=[],research=false,onEvent=()=>{},signal}){
+  prompt=withEditorialPolicy(prompt);
   directory=resolve(directory);await mkdir(directory,{recursive:true});
   const schemaFile=join(directory,'response-schema.json'),outputFile=join(directory,'model-output.json');
   await writeFile(schemaFile,JSON.stringify(schema));
