@@ -123,10 +123,9 @@ Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at t
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations.
 - claude-seo: SEO audit instruction references; live connectors and specialist agents are not automatically enabled.
-- umami: Analytics adapter candidate; collect events only after reviewing consent, retention, and deployment configuration.
+- umami: Before installing external analytics or collecting events, review database, secrets, deployment configuration, consent, data retention and access. Distinguish source events from acquisition and retention measures. This instruction pack does not configure an analytics server or default admin account.
 - geo-seo-claude: AI-search optimization guidance; report observed crawl/citation evidence without guaranteeing rankings.
 - marketingskills: Keep public marketing observations, experiment evidence and judgment calls distinct. Review connector access and planned recurring actions before activation. An available integration guide does not establish a working connection or permission to contact audiences.
 - open-seo: Separate observed public page evidence from paid or authenticated research. Review connector consent, credit limits and public-URL validation before external SEO tools. Preserve the provider and request that produced each finding.
-- umami: Review database, secret and deployment setup before an external analytics installation. Distinguish source events, acquisition and retention measures, and review consent and access separately. No default admin account or analytics server is configured by this refresh.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](../../docs/UPSTREAM_REFRESH.md) for scope and reproduction.

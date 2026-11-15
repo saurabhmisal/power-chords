@@ -53,8 +53,7 @@ Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at t
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations.
 - onetake: Continuous-camera launch film reference; review license and verify continuity/rendering claims.
-- harvey: Sales research and drafting reference; sending outreach or accessing mail requires explicit authorization.
+- harvey: The current original is Sellbird, formerly Harvey, and declares AGPL-3.0. Review configuration and data-home migration and license requirements before reuse. Account research and drafting do not authorize outreach or mailbox access. Sending messages or accessing mail requires explicit authorization.
 - marketingskills: Keep public marketing observations, experiment evidence and judgment calls distinct. Review connector access and planned recurring actions before activation. An available integration guide does not establish a working connection or permission to contact audiences.
-- harvey: The current original is Sellbird, formerly Harvey, and now declares AGPL-3.0. Check configuration/data-home migration and license requirements before reuse. Account research, drafts, sending and mailbox access keep separate permission boundaries.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](https://github.com/saurabhmisal/power-chords/blob/main/docs/UPSTREAM_REFRESH.md) for scope and reproduction.

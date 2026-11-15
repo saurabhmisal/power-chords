@@ -55,13 +55,10 @@ Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at t
 - Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations.
-- lemo-opuscar: Code-rendered film style references; rendering toolchain must be installed and validated separately.
-- OpenMontage: Agentic production reference; AGPL license and external media toolchain require review.
+- lemo-opuscar: Check component-specific notices in LICENSE and LICENSES before reusing code, film styles or media. The source is recorded as NOASSERTION, so the earlier MIT catalog label is not a blanket grant. Install and validate the rendering toolchain separately, and distinguish style references from a verified rendered film.
+- OpenMontage: The canonical source moved to OpenMontageInc/OpenMontage. Preserve earlier attribution and review AGPL requirements, the external media toolchain, service access and asset permissions before production use.
 - hypit: Video variation reference; verify license, consent, likeness rights and source-asset permissions before reuse.
-- harvey: Sales research and drafting reference; sending outreach or accessing mail requires explicit authorization.
+- harvey: The current original is Sellbird, formerly Harvey, and declares AGPL-3.0. Review configuration and data-home migration and license requirements before reuse. Account research and drafting do not authorize outreach or mailbox access. Sending messages or accessing mail requires explicit authorization.
 - marketingskills: Keep public marketing observations, experiment evidence and judgment calls distinct. Review connector access and planned recurring actions before activation. An available integration guide does not establish a working connection or permission to contact audiences.
-- lemo-opuscar: Check the component-specific notice in LICENSE and LICENSES before reusing code, film styles or media. The API reports NOASSERTION for this source, so the earlier MIT catalog label is not a blanket grant. Keep style references separate from a verified rendered film.
-- OpenMontage: The canonical source moved to OpenMontageInc/OpenMontage. Preserve earlier attribution and AGPL review, and inspect external media-service and asset permissions before any production workflow.
-- harvey: The current original is Sellbird, formerly Harvey, and now declares AGPL-3.0. Check configuration/data-home migration and license requirements before reuse. Account research, drafts, sending and mailbox access keep separate permission boundaries.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](https://github.com/saurabhmisal/power-chords/blob/main/docs/UPSTREAM_REFRESH.md) for scope and reproduction.

@@ -240,10 +240,9 @@
       "source_guidance": [
         "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-        "harvey: Sales research and drafting reference; sending outreach or accessing mail requires explicit authorization.",
+        "harvey: The current original is Sellbird, formerly Harvey, and declares AGPL-3.0. Review configuration and data-home migration and license requirements before reuse. Account research and drafting do not authorize outreach or mailbox access. Sending messages or accessing mail requires explicit authorization.",
         "knowledge-work-plugins: Treat newly available role workflows and invoice-follow-up guidance as host-specific references. Review connector and recipient scope before any external action. Loading a specialist procedure does not grant its plugins access.",
-        "hermes-life-os: Separate captured inbox items, projects, waiting-for commitments and review steps. Validate current tool schemas before using an external personal workspace. Financial and calendar operations retain their own access and approval boundaries.",
-        "harvey: The current original is Sellbird, formerly Harvey, and now declares AGPL-3.0. Check configuration/data-home migration and license requirements before reuse. Account research, drafts, sending and mailbox access keep separate permission boundaries."
+        "hermes-life-os: Separate captured inbox items, projects, waiting-for commitments and review steps. Validate current tool schemas before using an external personal workspace. Financial and calendar operations retain their own access and approval boundaries."
       ],
       "upstream_sources": [
         {
@@ -1282,11 +1281,10 @@
         "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source.",
-        "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review.",
+        "compound-engineering-plugin: Select planning, implementation, review and knowledge-capture steps that match the task. Retain evidence and decisions for later work. Add reviewer roles for material risks and report only reviews actually performed. Host plugins require separate installation review.",
         "graphify: Separate local graph extraction from the external cloud product, its connectors and advertised savings or verification claims. Track source coverage and inferred edges, and require actual evidence before describing a relationship or correctness check as verified.",
         "Understand-Anything: Preserve links from code relationships to their original files and distinguish extracted structure from inferred explanations. Verify the host can perform the required parsing or analysis before claiming an interactive graph was built.",
-        "rea: Inspect the supported analysis contracts and environment before using an external reverse-engineering tool. Keep source-map and native/desktop investigation output bounded, and preserve links to the artifacts actually inspected.",
-        "compound-engineering-plugin: Use the planning, review and knowledge-capture steps that match the task. Preserve evidence and decisions where later work can find them, and choose additional reviewer roles for material risk rather than claiming unrun reviews."
+        "rea: Inspect the supported analysis contracts and environment before using an external reverse-engineering tool. Keep source-map and native/desktop investigation output bounded, and preserve links to the artifacts actually inspected."
       ],
       "upstream_sources": [
         {
@@ -1597,10 +1595,9 @@
         "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence.",
-        "superplane: Engineering orchestration candidate; service credentials, production writes and license need review.",
+        "superplane: Review repository/workspace boundaries, service credentials, provider configuration, licensing and failed-connection recovery before external orchestration. A retry or newly available component does not authorize a production write.",
         "gstack: Keep edit, test and review evidence attached to the change that produced it. Review the selected update channel and host permissions before external installation. A source workflow or claimed CI result is not evidence that the current Power Chords output was tested.",
-        "openship: Record configuration-apply failures and verify rebuild and deployment status before treating a release as ready. Preserve the exact approved commit and environment. An external deployment reference does not authorize a production change.",
-        "superplane: Review repository/workspace boundaries, provider configuration and failed-connection recovery before external orchestration. A retry or newly available component is not approval for a production write."
+        "openship: Record configuration-apply failures and verify rebuild and deployment status before treating a release as ready. Preserve the exact approved commit and environment. An external deployment reference does not authorize a production change."
       ],
       "upstream_sources": [
         {
@@ -2581,9 +2578,8 @@
       "source_guidance": [
         "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-        "umami: Analytics adapter candidate; collect events only after reviewing consent, retention, and deployment configuration.",
-        "knowledge-work-plugins: Treat newly available role workflows and invoice-follow-up guidance as host-specific references. Review connector and recipient scope before any external action. Loading a specialist procedure does not grant its plugins access.",
-        "umami: Review database, secret and deployment setup before an external analytics installation. Distinguish source events, acquisition and retention measures, and review consent and access separately. No default admin account or analytics server is configured by this refresh."
+        "umami: Before installing external analytics or collecting events, review database, secrets, deployment configuration, consent, data retention and access. Distinguish source events from acquisition and retention measures. This instruction pack does not configure an analytics server or default admin account.",
+        "knowledge-work-plugins: Treat newly available role workflows and invoice-follow-up guidance as host-specific references. Review connector and recipient scope before any external action. Loading a specialist procedure does not grant its plugins access."
       ],
       "upstream_sources": [
         {
@@ -2661,8 +2657,7 @@
       "source_guidance": [
         "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-        "umami: Analytics adapter candidate; collect events only after reviewing consent, retention, and deployment configuration.",
-        "umami: Review database, secret and deployment setup before an external analytics installation. Distinguish source events, acquisition and retention measures, and review consent and access separately. No default admin account or analytics server is configured by this refresh."
+        "umami: Before installing external analytics or collecting events, review database, secrets, deployment configuration, consent, data retention and access. Distinguish source events from acquisition and retention measures. This instruction pack does not configure an analytics server or default admin account."
       ],
       "upstream_sources": [
         {
@@ -2746,10 +2741,9 @@
       "source_guidance": [
         "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-        "umami: Analytics adapter candidate; collect events only after reviewing consent, retention, and deployment configuration.",
+        "umami: Before installing external analytics or collecting events, review database, secrets, deployment configuration, consent, data retention and access. Distinguish source events from acquisition and retention measures. This instruction pack does not configure an analytics server or default admin account.",
         "marketingskills: Keep public marketing observations, experiment evidence and judgment calls distinct. Review connector access and planned recurring actions before activation. An available integration guide does not establish a working connection or permission to contact audiences.",
-        "knowledge-work-plugins: Treat newly available role workflows and invoice-follow-up guidance as host-specific references. Review connector and recipient scope before any external action. Loading a specialist procedure does not grant its plugins access.",
-        "umami: Review database, secret and deployment setup before an external analytics installation. Distinguish source events, acquisition and retention measures, and review consent and access separately. No default admin account or analytics server is configured by this refresh."
+        "knowledge-work-plugins: Treat newly available role workflows and invoice-follow-up guidance as host-specific references. Review connector and recipient scope before any external action. Loading a specialist procedure does not grant its plugins access."
       ],
       "upstream_sources": [
         {
@@ -3789,9 +3783,8 @@
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations.",
         "onetake: Continuous-camera launch film reference; review license and verify continuity/rendering claims.",
-        "harvey: Sales research and drafting reference; sending outreach or accessing mail requires explicit authorization.",
-        "marketingskills: Keep public marketing observations, experiment evidence and judgment calls distinct. Review connector access and planned recurring actions before activation. An available integration guide does not establish a working connection or permission to contact audiences.",
-        "harvey: The current original is Sellbird, formerly Harvey, and now declares AGPL-3.0. Check configuration/data-home migration and license requirements before reuse. Account research, drafts, sending and mailbox access keep separate permission boundaries."
+        "harvey: The current original is Sellbird, formerly Harvey, and declares AGPL-3.0. Review configuration and data-home migration and license requirements before reuse. Account research and drafting do not authorize outreach or mailbox access. Sending messages or accessing mail requires explicit authorization.",
+        "marketingskills: Keep public marketing observations, experiment evidence and judgment calls distinct. Review connector access and planned recurring actions before activation. An available integration guide does not establish a working connection or permission to contact audiences."
       ],
       "upstream_sources": [
         {
@@ -3871,14 +3864,11 @@
         "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations.",
-        "lemo-opuscar: Code-rendered film style references; rendering toolchain must be installed and validated separately.",
-        "OpenMontage: Agentic production reference; AGPL license and external media toolchain require review.",
+        "lemo-opuscar: Check component-specific notices in LICENSE and LICENSES before reusing code, film styles or media. The source is recorded as NOASSERTION, so the earlier MIT catalog label is not a blanket grant. Install and validate the rendering toolchain separately, and distinguish style references from a verified rendered film.",
+        "OpenMontage: The canonical source moved to OpenMontageInc/OpenMontage. Preserve earlier attribution and review AGPL requirements, the external media toolchain, service access and asset permissions before production use.",
         "hypit: Video variation reference; verify license, consent, likeness rights and source-asset permissions before reuse.",
-        "harvey: Sales research and drafting reference; sending outreach or accessing mail requires explicit authorization.",
-        "marketingskills: Keep public marketing observations, experiment evidence and judgment calls distinct. Review connector access and planned recurring actions before activation. An available integration guide does not establish a working connection or permission to contact audiences.",
-        "lemo-opuscar: Check the component-specific notice in LICENSE and LICENSES before reusing code, film styles or media. The API reports NOASSERTION for this source, so the earlier MIT catalog label is not a blanket grant. Keep style references separate from a verified rendered film.",
-        "OpenMontage: The canonical source moved to OpenMontageInc/OpenMontage. Preserve earlier attribution and AGPL review, and inspect external media-service and asset permissions before any production workflow.",
-        "harvey: The current original is Sellbird, formerly Harvey, and now declares AGPL-3.0. Check configuration/data-home migration and license requirements before reuse. Account research, drafts, sending and mailbox access keep separate permission boundaries."
+        "harvey: The current original is Sellbird, formerly Harvey, and declares AGPL-3.0. Review configuration and data-home migration and license requirements before reuse. Account research and drafting do not authorize outreach or mailbox access. Sending messages or accessing mail requires explicit authorization.",
+        "marketingskills: Keep public marketing observations, experiment evidence and judgment calls distinct. Review connector access and planned recurring actions before activation. An available integration guide does not establish a working connection or permission to contact audiences."
       ],
       "upstream_sources": [
         {
@@ -3995,11 +3985,10 @@
         "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
         "Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations.",
         "claude-seo: SEO audit instruction references; live connectors and specialist agents are not automatically enabled.",
-        "umami: Analytics adapter candidate; collect events only after reviewing consent, retention, and deployment configuration.",
+        "umami: Before installing external analytics or collecting events, review database, secrets, deployment configuration, consent, data retention and access. Distinguish source events from acquisition and retention measures. This instruction pack does not configure an analytics server or default admin account.",
         "geo-seo-claude: AI-search optimization guidance; report observed crawl/citation evidence without guaranteeing rankings.",
         "marketingskills: Keep public marketing observations, experiment evidence and judgment calls distinct. Review connector access and planned recurring actions before activation. An available integration guide does not establish a working connection or permission to contact audiences.",
-        "open-seo: Separate observed public page evidence from paid or authenticated research. Review connector consent, credit limits and public-URL validation before external SEO tools. Preserve the provider and request that produced each finding.",
-        "umami: Review database, secret and deployment setup before an external analytics installation. Distinguish source events, acquisition and retention measures, and review consent and access separately. No default admin account or analytics server is configured by this refresh."
+        "open-seo: Separate observed public page evidence from paid or authenticated research. Review connector consent, credit limits and public-URL validation before external SEO tools. Preserve the provider and request that produced each finding."
       ],
       "upstream_sources": [
         {
