@@ -30,7 +30,7 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
+  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
   "upstream_sources": [
     {
       "repository": "wheresryan22/anatomy",
@@ -45,23 +45,23 @@
     },
     {
       "repository": "Bennettxai/FounderOS",
-      "revision": "a0b5db7eb6dcb52bb148b452557f454a2bc76082",
+      "revision": "b44a3c5b418bb462e677a5f583f7e8e75da26590",
       "fork_repository": "saurabhmisal/FounderOS-DEMO",
       "fork_revision": "ef75fe898702bb803455937fcd145404ef0c8a4d",
       "license": "MIT",
-      "reference_url": "https://github.com/Bennettxai/FounderOS/blob/a0b5db7eb6dcb52bb148b452557f454a2bc76082/README.md",
-      "readme_sha256": "4b53d8b56179bd728eaf5828d9936b5e6a813dce2c531b629f4abc3692281bcc",
+      "reference_url": "https://github.com/Bennettxai/FounderOS/blob/b44a3c5b418bb462e677a5f583f7e8e75da26590/README.md",
+      "readme_sha256": "ce37356d9df094ce3e4a57129e1372463632333f9cbbf5db8494714e02ca9b23",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "umami-software/umami",
-      "revision": "559e3c607c23d2c72d9bd4f6481bda428255323c",
+      "revision": "b18d5144dfe7342edeeca6f61d13ba3baabed9ad",
       "fork_repository": "saurabhmisal/umami",
       "fork_revision": "e92fdab99508a8ed05249f6c5f07e140deab79e1",
       "license": "MIT",
-      "reference_url": "https://github.com/umami-software/umami/blob/559e3c607c23d2c72d9bd4f6481bda428255323c/README.md",
-      "readme_sha256": "b992ed9a3196d612ef962bd2b5fefd3dcffa9aadf2c6accfd1eceeba8d80ac70",
+      "reference_url": "https://github.com/umami-software/umami/blob/b18d5144dfe7342edeeca6f61d13ba3baabed9ad/README.md",
+      "readme_sha256": "03eeb75d1ea982a5dbe0840868077d0367069b7e1a1e18a78f446d5e0c795ae4",
       "scope": "reference_only",
       "runtime_verified": false
     }
@@ -69,6 +69,7 @@
   "source_guidance": [
     "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-    "umami: Analytics adapter candidate; collect events only after reviewing consent, retention, and deployment configuration."
+    "umami: Analytics adapter candidate; collect events only after reviewing consent, retention, and deployment configuration.",
+    "umami: Review database, secret and deployment setup before an external analytics installation. Distinguish source events, acquisition and retention measures, and review consent and access separately. No default admin account or analytics server is configured by this refresh."
   ]
 }

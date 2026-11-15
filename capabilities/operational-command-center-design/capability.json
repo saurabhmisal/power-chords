@@ -30,44 +30,45 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
+  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
   "upstream_sources": [
     {
       "repository": "Bennettxai/FounderOS",
-      "revision": "a0b5db7eb6dcb52bb148b452557f454a2bc76082",
+      "revision": "b44a3c5b418bb462e677a5f583f7e8e75da26590",
       "fork_repository": "saurabhmisal/FounderOS-DEMO",
       "fork_revision": "ef75fe898702bb803455937fcd145404ef0c8a4d",
       "license": "MIT",
-      "reference_url": "https://github.com/Bennettxai/FounderOS/blob/a0b5db7eb6dcb52bb148b452557f454a2bc76082/README.md",
-      "readme_sha256": "4b53d8b56179bd728eaf5828d9936b5e6a813dce2c531b629f4abc3692281bcc",
+      "reference_url": "https://github.com/Bennettxai/FounderOS/blob/b44a3c5b418bb462e677a5f583f7e8e75da26590/README.md",
+      "readme_sha256": "ce37356d9df094ce3e4a57129e1372463632333f9cbbf5db8494714e02ca9b23",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "adewaskar/jarvis",
-      "revision": "1c4016afdf86f7043efc6882ceffef84ad0d8783",
+      "revision": "9ae5ec846b6b20a17b2d264e699d6234c4284b23",
       "fork_repository": "saurabhmisal/jarvis",
       "fork_revision": "1c4016afdf86f7043efc6882ceffef84ad0d8783",
       "license": "MIT",
-      "reference_url": "https://github.com/adewaskar/jarvis/blob/1c4016afdf86f7043efc6882ceffef84ad0d8783/README.md",
-      "readme_sha256": "adb82caba1f6c000b502e08620b6b67a89e866eeab7538303e9847287f86c385",
+      "reference_url": "https://github.com/adewaskar/jarvis/blob/9ae5ec846b6b20a17b2d264e699d6234c4284b23/README.md",
+      "readme_sha256": "10b0988493114525db8ae7b727b1acd6f054723dcf33dbf1ae01f9ab0a23c988",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "spacedriveapp/spacedrive",
-      "revision": "11523b224d1422d98def9a1c0f99e89fafada00d",
+      "revision": "3e41e4a2c562c755580561f36058e62784f4ff06",
       "fork_repository": "saurabhmisal/spacedrive",
       "fork_revision": "4d41a379f612e23ac43a66ffd67df52ca77f57d4",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/spacedriveapp/spacedrive/blob/11523b224d1422d98def9a1c0f99e89fafada00d/README.md",
-      "readme_sha256": "a82f4be1afc06dce8b5173e217aba3c109049bd4b83783b7e53f356864d40901",
+      "reference_url": "https://github.com/spacedriveapp/spacedrive/blob/3e41e4a2c562c755580561f36058e62784f4ff06/README.md",
+      "readme_sha256": "3d16668fe486267af75f1993281e6f6bff177bcd62834c398506adc9b3769af9",
       "scope": "reference_only",
       "runtime_verified": false
     }
   ],
   "source_guidance": [
     "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
-    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+    "jarvis: Inventory the exact local MCP servers and account connectors before an assistant workflow. Keep cloud account connectors out unless the user separately authorizes them. A provider session does not imply access to all configured services."
   ]
 }

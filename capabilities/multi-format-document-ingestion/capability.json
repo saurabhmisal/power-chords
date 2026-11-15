@@ -32,7 +32,7 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
+  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
   "upstream_sources": [
     {
       "repository": "virgiliojr94/book-to-skill",
@@ -47,23 +47,23 @@
     },
     {
       "repository": "DozenTwelve/Papermorph",
-      "revision": "342e272648e06a6163224a6177bccc83517d7fea",
+      "revision": "618aeeaad9852c8857db7bcaccc34f8d64c20b68",
       "fork_repository": "saurabhmisal/Papermorph",
       "fork_revision": "c8d058f1871d7cc8ab0d6f29940b506538f10af5",
       "license": "MIT",
-      "reference_url": "https://github.com/DozenTwelve/Papermorph/blob/342e272648e06a6163224a6177bccc83517d7fea/README.md",
-      "readme_sha256": "fbedcadaf56cfb7ba284ccdc76d906d6b3129b7af8e81584bfebc2bcafb9768e",
+      "reference_url": "https://github.com/DozenTwelve/Papermorph/blob/618aeeaad9852c8857db7bcaccc34f8d64c20b68/README.md",
+      "readme_sha256": "6d55f6040b04c2dc4f216f4dc3cb5006960da4c2a657d37ba001ddbb0be84d63",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "spacedriveapp/spacedrive",
-      "revision": "11523b224d1422d98def9a1c0f99e89fafada00d",
+      "revision": "3e41e4a2c562c755580561f36058e62784f4ff06",
       "fork_repository": "saurabhmisal/spacedrive",
       "fork_revision": "4d41a379f612e23ac43a66ffd67df52ca77f57d4",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/spacedriveapp/spacedrive/blob/11523b224d1422d98def9a1c0f99e89fafada00d/README.md",
-      "readme_sha256": "a82f4be1afc06dce8b5173e217aba3c109049bd4b83783b7e53f356864d40901",
+      "reference_url": "https://github.com/spacedriveapp/spacedrive/blob/3e41e4a2c562c755580561f36058e62784f4ff06/README.md",
+      "readme_sha256": "3d16668fe486267af75f1993281e6f6bff177bcd62834c398506adc9b3769af9",
       "scope": "reference_only",
       "runtime_verified": false
     },

@@ -30,59 +30,59 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
+  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
   "upstream_sources": [
     {
       "repository": "langflow-ai/langflow",
-      "revision": "60999cc9a7350e44dde3ef641baae864e10861f0",
+      "revision": "260cbf347cc5563cc48c79094c175ca31532ea2b",
       "fork_repository": "saurabhmisal/langflow",
       "fork_revision": "504c02fc47e76087b82b0e7cbe4186e9cdd916d4",
       "license": "MIT",
-      "reference_url": "https://github.com/langflow-ai/langflow/blob/60999cc9a7350e44dde3ef641baae864e10861f0/README.md",
+      "reference_url": "https://github.com/langflow-ai/langflow/blob/260cbf347cc5563cc48c79094c175ca31532ea2b/README.md",
       "readme_sha256": "0c91b63e58aeac3846fad7d1e6ec7729fc23975fdb0d59def51e97627fdb5e36",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "cheaper-inference/OmniRoute",
-      "revision": "aef364319c6ad29ec3b143fa5e672a0ad4fe731e",
+      "revision": "e92f3801b37906cc8846c92146efa4377198f2a6",
       "fork_repository": "saurabhmisal/OmniRoute",
       "fork_revision": "ae2ba35852d4e5a55486a1c0e6a779105564fd6d",
       "license": "MIT",
-      "reference_url": "https://github.com/cheaper-inference/OmniRoute/blob/aef364319c6ad29ec3b143fa5e672a0ad4fe731e/README.md",
-      "readme_sha256": "e57152441aa1386b5739eede8fdea6faced84c06e318690e487f298af93a108c",
+      "reference_url": "https://github.com/cheaper-inference/OmniRoute/blob/e92f3801b37906cc8846c92146efa4377198f2a6/README.md",
+      "readme_sha256": "5a76238551b04f3a0be75e9b21e0f4fd79fce9701c61d1ed37306007c1898e95",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "lyogavin/airllm",
-      "revision": "0f824d93bff5df03b80a58563ba24f09f67b409d",
+      "revision": "d7a4fea22ec1738bbc624c3aab822f5b4a27ac25",
       "fork_repository": "saurabhmisal/airllm",
       "fork_revision": "8df7eebe974a2c7cd120b334cd211cd25624cfdc",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/lyogavin/airllm/blob/0f824d93bff5df03b80a58563ba24f09f67b409d/README.md",
+      "reference_url": "https://github.com/lyogavin/airllm/blob/d7a4fea22ec1738bbc624c3aab822f5b4a27ac25/README.md",
       "readme_sha256": "1ee1ea96cfb4301a56f14f410d3383c0c24a469108d23ad03a8a5f24a6b04343",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "EveryInc/compound-engineering-plugin",
-      "revision": "173bd337fa639aac19ce7363d288836a074231a5",
+      "revision": "ee46dde75a40e297bd8eac4055a410a771d3ac1d",
       "fork_repository": "saurabhmisal/compound-engineering-plugin",
       "fork_revision": "738067a599c68f1f0f4a32273fa9d7d2476f0715",
       "license": "MIT",
-      "reference_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/173bd337fa639aac19ce7363d288836a074231a5/README.md",
-      "readme_sha256": "e9bf58531fc2830a22b22393462f9bb778e58a3ba077209d42b5df4de5d83f5b",
+      "reference_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/ee46dde75a40e297bd8eac4055a410a771d3ac1d/README.md",
+      "readme_sha256": "a5683d9834606e8462e6d2f9f09db26fca8b1d6389457ed797c0eae97d93df95",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "superplanehq/superplane",
-      "revision": "37c6198b757bb09bc00b1955da4ae1f238a06e39",
+      "revision": "2ee58506a863edcdba6120168383994e81fc8075",
       "fork_repository": "saurabhmisal/superplane",
       "fork_revision": "8b5e567bf31ca6d449a39e725d5955c09d09c20f",
       "license": "NOASSERTION",
-      "reference_url": "https://github.com/superplanehq/superplane/blob/37c6198b757bb09bc00b1955da4ae1f238a06e39/README.md",
+      "reference_url": "https://github.com/superplanehq/superplane/blob/2ee58506a863edcdba6120168383994e81fc8075/README.md",
       "readme_sha256": "939ff8964b14de9f695c59a8f188a096981e4543c66d2f74a6e46b119efabdba",
       "scope": "reference_only",
       "runtime_verified": false
@@ -93,6 +93,10 @@
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions.",
     "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review.",
-    "superplane: Engineering orchestration candidate; service credentials, production writes and license need review."
+    "superplane: Engineering orchestration candidate; service credentials, production writes and license need review.",
+    "langflow: Treat externally defined flows and code nodes as untrusted until their execution scope is reviewed. Keep provider credentials scoped to the chosen tool and record actual flow outputs rather than reporting a diagram as an executed pipeline.",
+    "OmniRoute: Review the selected release branch, provider endpoints and key-health persistence before an external routing workflow. Current key-cooldown fixes are source evidence, not permission to alter provider credentials or claim a native runtime upgrade.",
+    "compound-engineering-plugin: Use the planning, review and knowledge-capture steps that match the task. Preserve evidence and decisions where later work can find them, and choose additional reviewer roles for material risk rather than claiming unrun reviews.",
+    "superplane: Review repository/workspace boundaries, provider configuration and failed-connection recovery before external orchestration. A retry or newly available component is not approval for a production write."
   ]
 }

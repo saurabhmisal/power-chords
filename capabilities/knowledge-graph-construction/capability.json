@@ -31,27 +31,27 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
+  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
   "upstream_sources": [
     {
       "repository": "Graphify-Labs/graphify",
-      "revision": "16218bfc80d4ca2799734d045039f7ed1a5fa9fb",
+      "revision": "52cb28218eea0c68d80a9f4b2ae102d2fa63e267",
       "fork_repository": "saurabhmisal/graphify",
       "fork_revision": "6478eb71237c86ee5fb6a35c702835e987ca445d",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/Graphify-Labs/graphify/blob/16218bfc80d4ca2799734d045039f7ed1a5fa9fb/README.md",
-      "readme_sha256": "f6d12f50ecd8f0c873af88ea8ef84a989101919ae531dd3cf404273d288d0562",
+      "reference_url": "https://github.com/Graphify-Labs/graphify/blob/52cb28218eea0c68d80a9f4b2ae102d2fa63e267/README.md",
+      "readme_sha256": "d224c14475d2c05146ce60ee3b71677aaf9ec027cd00fa32fc684b25cd0ba1df",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "Egonex-AI/Understand-Anything",
-      "revision": "98d6dca712407b8cbf0bca21b539c197e5a7825c",
+      "revision": "5cc4aad9b8b43596dfedaee00755a7223825fe9b",
       "fork_repository": "saurabhmisal/Understand-Anything",
       "fork_revision": "f2d0164f72fe678805c34245a6df36acededfebd",
       "license": "MIT",
-      "reference_url": "https://github.com/Egonex-AI/Understand-Anything/blob/98d6dca712407b8cbf0bca21b539c197e5a7825c/README.md",
-      "readme_sha256": "9171c186e7ca43f03dad82966edb35227c3960f62bb4091e22f7dbc45af4cda8",
+      "reference_url": "https://github.com/Egonex-AI/Understand-Anything/blob/5cc4aad9b8b43596dfedaee00755a7223825fe9b/README.md",
+      "readme_sha256": "0df07ff4dd191bbc1a50d86daa28f4e190c44aed725ef6d5999634fdfa632952",
       "scope": "reference_only",
       "runtime_verified": false
     }
@@ -59,6 +59,8 @@
   "source_guidance": [
     "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-    "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source."
+    "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source.",
+    "graphify: Separate local graph extraction from the external cloud product, its connectors and advertised savings or verification claims. Track source coverage and inferred edges, and require actual evidence before describing a relationship or correctness check as verified.",
+    "Understand-Anything: Preserve links from code relationships to their original files and distinguish extracted structure from inferred explanations. Verify the host can perform the required parsing or analysis before claiming an interactive graph was built."
   ]
 }

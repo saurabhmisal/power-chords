@@ -36,38 +36,38 @@
       "title": "Customer Discovery → PRD"
     }
   ],
-  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
+  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
   "upstream_sources": [
     {
       "repository": "anthropics/knowledge-work-plugins",
-      "revision": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d",
+      "revision": "e91a134584eb798bac7fb0379358006a2b63b965",
       "fork_repository": "saurabhmisal/knowledge-work-plugins",
       "fork_revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d/README.md",
+      "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/e91a134584eb798bac7fb0379358006a2b63b965/README.md",
       "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "Lethe044/hermes-life-os",
-      "revision": "5a572ba5f24c227b987c22e0b4fe06e2bdba6975",
+      "revision": "4c247650492951d3537ce0264e67d4f5ec3e17fc",
       "fork_repository": "saurabhmisal/hermes-life-os",
       "fork_revision": "1ca98479c787086cb8f6a9d62606ee988b7b8e37",
       "license": "MIT",
-      "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/5a572ba5f24c227b987c22e0b4fe06e2bdba6975/README.md",
-      "readme_sha256": "44fef59bc7d485ffd7ac73a5e3a359720077b3fda095c7a6d2fcb8aa10496d8e",
+      "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/4c247650492951d3537ce0264e67d4f5ec3e17fc/README.md",
+      "readme_sha256": "25c08f12ef62c3652347a2dc3b04e3daec54d57a8e1311d38d29a0a64389e3a9",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
-      "repository": "ethanplusai/harvey",
-      "revision": "6b6a23a789090e165802baef4104ee4618a3e169",
+      "repository": "ethanplusai/sellbird",
+      "revision": "25ec83978b21d16ae20779d09bfea113f37f0ef8",
       "fork_repository": "saurabhmisal/harvey",
       "fork_revision": "55866a1830ea73b7d96127b10dc7ad38b838a663",
-      "license": "MIT",
-      "reference_url": "https://github.com/ethanplusai/harvey/blob/6b6a23a789090e165802baef4104ee4618a3e169/README.md",
-      "readme_sha256": "a1e2301c27613b1b6e72cf61af83fcad685bedabf3cc67185805dd54f84dc0e0",
+      "license": "AGPL-3.0",
+      "reference_url": "https://github.com/ethanplusai/sellbird/blob/25ec83978b21d16ae20779d09bfea113f37f0ef8/README.md",
+      "readme_sha256": "43a330965b62f90e4eef4b854b5595279f5242a7622a7ec44d1a53ced2cd02dc",
       "scope": "reference_only",
       "runtime_verified": false
     }
@@ -75,6 +75,9 @@
   "source_guidance": [
     "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-    "harvey: Sales research and drafting reference; sending outreach or accessing mail requires explicit authorization."
+    "harvey: Sales research and drafting reference; sending outreach or accessing mail requires explicit authorization.",
+    "knowledge-work-plugins: Treat newly available role workflows and invoice-follow-up guidance as host-specific references. Review connector and recipient scope before any external action. Loading a specialist procedure does not grant its plugins access.",
+    "hermes-life-os: Separate captured inbox items, projects, waiting-for commitments and review steps. Validate current tool schemas before using an external personal workspace. Financial and calendar operations retain their own access and approval boundaries.",
+    "harvey: The current original is Sellbird, formerly Harvey, and now declares AGPL-3.0. Check configuration/data-home migration and license requirements before reuse. Account research, drafts, sending and mailbox access keep separate permission boundaries."
   ]
 }

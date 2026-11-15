@@ -36,26 +36,26 @@
       "title": "Product Decision Brief"
     }
   ],
-  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
+  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
   "upstream_sources": [
     {
       "repository": "Bennettxai/FounderOS",
-      "revision": "a0b5db7eb6dcb52bb148b452557f454a2bc76082",
+      "revision": "b44a3c5b418bb462e677a5f583f7e8e75da26590",
       "fork_repository": "saurabhmisal/FounderOS-DEMO",
       "fork_revision": "ef75fe898702bb803455937fcd145404ef0c8a4d",
       "license": "MIT",
-      "reference_url": "https://github.com/Bennettxai/FounderOS/blob/a0b5db7eb6dcb52bb148b452557f454a2bc76082/README.md",
-      "readme_sha256": "4b53d8b56179bd728eaf5828d9936b5e6a813dce2c531b629f4abc3692281bcc",
+      "reference_url": "https://github.com/Bennettxai/FounderOS/blob/b44a3c5b418bb462e677a5f583f7e8e75da26590/README.md",
+      "readme_sha256": "ce37356d9df094ce3e4a57129e1372463632333f9cbbf5db8494714e02ca9b23",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "anthropics/knowledge-work-plugins",
-      "revision": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d",
+      "revision": "e91a134584eb798bac7fb0379358006a2b63b965",
       "fork_repository": "saurabhmisal/knowledge-work-plugins",
       "fork_revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d/README.md",
+      "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/e91a134584eb798bac7fb0379358006a2b63b965/README.md",
       "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
       "scope": "reference_only",
       "runtime_verified": false
@@ -75,6 +75,7 @@
   "source_guidance": [
     "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-    "roast-room: Simulated advisor perspectives are not endorsements, empirical research, or verified decision evidence."
+    "roast-room: Simulated advisor perspectives are not endorsements, empirical research, or verified decision evidence.",
+    "knowledge-work-plugins: Treat newly available role workflows and invoice-follow-up guidance as host-specific references. Review connector and recipient scope before any external action. Loading a specialist procedure does not grant its plugins access."
   ]
 }

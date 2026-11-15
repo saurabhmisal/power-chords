@@ -110,9 +110,9 @@ flowchart TD
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
-- [baidu/Unlimited-OCR at ea42e6d15ff9](https://github.com/baidu/Unlimited-OCR/blob/ea42e6d15ff93fdd0e8041fc0ac70880513453d3/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [baidu/Unlimited-OCR at 64e6f066023b](https://github.com/baidu/Unlimited-OCR/blob/64e6f066023b305ab03860603a9cf358a8b70148/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [datalab-to/indra at ca81e18f7403](https://github.com/datalab-to/indra/blob/ca81e18f7403435a3545c8c8ae9c4a1cecdd32a4/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance

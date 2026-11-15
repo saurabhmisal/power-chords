@@ -28,10 +28,10 @@
       "fork_sha": "c7edf46bcf6e8d1ccd2f58ffb0800a4e8119e805",
       "fork_branch": "main",
       "upstream_repo": "garrytan/gstack",
-      "upstream_sha": "10770954f01c72cb59a1c5aa0dd38ab9a2a77001",
+      "upstream_sha": "4bee369d4a417fb82c6d43c0b79351428305ef10",
       "upstream_branch": "main",
-      "upstream_release": "v1.96.0.0",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "upstream_release": "v1.99.3.0",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/ECC",
@@ -43,10 +43,10 @@
       "fork_sha": "ef648e01899ba3e8dc6371642deaaf64b4477775",
       "fork_branch": "main",
       "upstream_repo": "affaan-m/ECC",
-      "upstream_sha": "b38be6a7f6350964d59328b52f0624e1d1d552d1",
+      "upstream_sha": "d2ef2680594f9a17526a6e1a2e18b3d242c5d17b",
       "upstream_branch": "main",
       "upstream_release": "v2.2.3",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/marketingskills",
@@ -58,10 +58,10 @@
       "fork_sha": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
       "fork_branch": "main",
       "upstream_repo": "coreyhaines31/marketingskills",
-      "upstream_sha": "88c79f6528a9347420e57ceb1fff9a60de651768",
+      "upstream_sha": "1f837447b20bb6f0e72d87b80ece1c221c362c7d",
       "upstream_branch": "main",
-      "upstream_release": "v2.14.0",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "upstream_release": "v2.14.12",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/knowledge-work-plugins",
@@ -73,10 +73,10 @@
       "fork_sha": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
       "fork_branch": "main",
       "upstream_repo": "anthropics/knowledge-work-plugins",
-      "upstream_sha": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d",
+      "upstream_sha": "e91a134584eb798bac7fb0379358006a2b63b965",
       "upstream_branch": "main",
       "upstream_release": null,
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/replica-skill",
@@ -98,15 +98,15 @@
       "source_id": "github:saurabhmisal/archify",
       "group_id": "design-creation",
       "first_discovered": "2026-09-26",
-      "license": "MIT",
+      "license": "Apache-2.0",
       "description": "System architecture and workflow diagram skill",
       "fork_sha": "9e35d2b0b39b155553ba9fcfe0b4f2a5198dd993",
       "fork_branch": "main",
       "upstream_repo": "tt-a1i/archify",
-      "upstream_sha": "a4065941f12be7967436261d9934784e381d423c",
+      "upstream_sha": "e37848822238e3a61b12739185cdadd49843a620",
       "upstream_branch": "main",
       "upstream_release": "v3.2.0",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/anatomy",
@@ -133,10 +133,10 @@
       "fork_sha": "c8d058f1871d7cc8ab0d6f29940b506538f10af5",
       "fork_branch": "main",
       "upstream_repo": "DozenTwelve/Papermorph",
-      "upstream_sha": "342e272648e06a6163224a6177bccc83517d7fea",
+      "upstream_sha": "618aeeaad9852c8857db7bcaccc34f8d64c20b68",
       "upstream_branch": "main",
-      "upstream_release": "engine-v2.9",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "upstream_release": "engine-v2.11",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/ponytail",
@@ -178,10 +178,10 @@
       "fork_sha": "24573128ceaab564f497d7c12f995c41784c9539",
       "fork_branch": "main",
       "upstream_repo": "earthtojake/text-to-cad",
-      "upstream_sha": "4099cac3ddc56a5e696138c53fd7bee685e8ad9d",
+      "upstream_sha": "337ac4e3c820d37b14eff30f337f82fbf75343c6",
       "upstream_branch": "main",
-      "upstream_release": "v0.10.4",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "upstream_release": "v0.11.10",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/jarvis",
@@ -193,10 +193,10 @@
       "fork_sha": "1c4016afdf86f7043efc6882ceffef84ad0d8783",
       "fork_branch": "main",
       "upstream_repo": "adewaskar/jarvis",
-      "upstream_sha": "1c4016afdf86f7043efc6882ceffef84ad0d8783",
+      "upstream_sha": "9ae5ec846b6b20a17b2d264e699d6234c4284b23",
       "upstream_branch": "main",
       "upstream_release": null,
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/hermes-life-os",
@@ -208,10 +208,10 @@
       "fork_sha": "1ca98479c787086cb8f6a9d62606ee988b7b8e37",
       "fork_branch": "main",
       "upstream_repo": "Lethe044/hermes-life-os",
-      "upstream_sha": "5a572ba5f24c227b987c22e0b4fe06e2bdba6975",
+      "upstream_sha": "4c247650492951d3537ce0264e67d4f5ec3e17fc",
       "upstream_branch": "main",
-      "upstream_release": "v1.48.0",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "upstream_release": "v1.52.0",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/ai-job-search",
@@ -223,10 +223,10 @@
       "fork_sha": "895c02191d28c8d88b8381ea68797ff6db599728",
       "fork_branch": "master",
       "upstream_repo": "ai-job-search-dev/ai-job-search",
-      "upstream_sha": "256237903e115f47501e7774fff9004e80c32311",
+      "upstream_sha": "0d0d1a907a21454affa1b694acc4e2c5008a0d21",
       "upstream_branch": "master",
-      "upstream_release": "v1.7.4",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "upstream_release": "v1.7.5",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/career-ops",
@@ -238,10 +238,10 @@
       "fork_sha": "4164109d85218b27719081c5cc8b7254886b90af",
       "fork_branch": "main",
       "upstream_repo": "career-ops-hq/career-ops",
-      "upstream_sha": "5625d811b821a45b2bc0ca85533dff3a19713ce1",
+      "upstream_sha": "4e274c203f5aef274a38ba5c1c3c1ca4fa37212a",
       "upstream_branch": "main",
-      "upstream_release": "career-ops-v1.39.0",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "upstream_release": "career-ops-v1.40.0",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/graphify",
@@ -253,10 +253,10 @@
       "fork_sha": "6478eb71237c86ee5fb6a35c702835e987ca445d",
       "fork_branch": "v8",
       "upstream_repo": "Graphify-Labs/graphify",
-      "upstream_sha": "16218bfc80d4ca2799734d045039f7ed1a5fa9fb",
+      "upstream_sha": "52cb28218eea0c68d80a9f4b2ae102d2fa63e267",
       "upstream_branch": "v8",
-      "upstream_release": "v0.9.103",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "upstream_release": "v0.9.108",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/api-anything",
@@ -268,10 +268,10 @@
       "fork_sha": "0b556c36932b111ee8840c412008261abe717725",
       "fork_branch": "main",
       "upstream_repo": "goodnight000/api-anything",
-      "upstream_sha": "d89f9c6637c16d3c389320f4241ea52082c35267",
+      "upstream_sha": "d40abd44f171c5cc444f1ac6b947afefa8605b78",
       "upstream_branch": "main",
       "upstream_release": null,
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/youtube-automation-agent",
@@ -313,10 +313,10 @@
       "fork_sha": "7163fbc3aadaa3741e357f226f42d4b206a23877",
       "fork_branch": "main",
       "upstream_repo": "danielravina/stemkit",
-      "upstream_sha": "24c2dde8e2e9f4a129d03c83ddf752e20acab34d",
+      "upstream_sha": "f3761e34726f0ddce0cfdc1ac818a2b170f97378",
       "upstream_branch": "main",
-      "upstream_release": "v0.2.0",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "upstream_release": "v0.3.0",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/OmniRoute",
@@ -328,10 +328,10 @@
       "fork_sha": "ae2ba35852d4e5a55486a1c0e6a779105564fd6d",
       "fork_branch": "release/v3.8.51",
       "upstream_repo": "cheaper-inference/OmniRoute",
-      "upstream_sha": "aef364319c6ad29ec3b143fa5e672a0ad4fe731e",
+      "upstream_sha": "e92f3801b37906cc8846c92146efa4377198f2a6",
       "upstream_branch": "release/v3.8.54",
       "upstream_release": "v3.8.53",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/langflow",
@@ -343,10 +343,10 @@
       "fork_sha": "504c02fc47e76087b82b0e7cbe4186e9cdd916d4",
       "fork_branch": "main",
       "upstream_repo": "langflow-ai/langflow",
-      "upstream_sha": "60999cc9a7350e44dde3ef641baae864e10861f0",
+      "upstream_sha": "260cbf347cc5563cc48c79094c175ca31532ea2b",
       "upstream_branch": "main",
-      "upstream_release": "v1.13.1",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "upstream_release": "v1.13.2",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/airllm",
@@ -358,10 +358,10 @@
       "fork_sha": "8df7eebe974a2c7cd120b334cd211cd25624cfdc",
       "fork_branch": "main",
       "upstream_repo": "lyogavin/airllm",
-      "upstream_sha": "0f824d93bff5df03b80a58563ba24f09f67b409d",
+      "upstream_sha": "d7a4fea22ec1738bbc624c3aab822f5b4a27ac25",
       "upstream_branch": "main",
       "upstream_release": "v4.0.0",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/turbovec",
@@ -403,10 +403,10 @@
       "fork_sha": "cce58a5b59303c9bd63d12f23afe6a49a4a80c59",
       "fork_branch": "main",
       "upstream_repo": "OpenBMB/VoxCPM",
-      "upstream_sha": "4b8dd4440d33396b3f429201f8af0529b4d2c601",
+      "upstream_sha": "300e4260b509066151d623dc9c0aa922cf82232b",
       "upstream_branch": "main",
       "upstream_release": "2.0.3",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/VoiceStudio",
@@ -418,10 +418,10 @@
       "fork_sha": "2def2f9560d393ac90946c5b7ce428e99088836d",
       "fork_branch": "main",
       "upstream_repo": "debpalash/VoiceStudio",
-      "upstream_sha": "5e0502d1bbbcab9fe264788233d2c0237fcb440e",
+      "upstream_sha": "dd0f6bdef22755613136c5940682a79bf16d175d",
       "upstream_branch": "main",
-      "upstream_release": "v0.5.7",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "upstream_release": "v0.5.8",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/demucs",
@@ -463,10 +463,10 @@
       "fork_sha": "92ad94b53a51950fea0416aced42331dfb4dd59e",
       "fork_branch": "main",
       "upstream_repo": "baidu/Unlimited-OCR",
-      "upstream_sha": "ea42e6d15ff93fdd0e8041fc0ac70880513453d3",
+      "upstream_sha": "64e6f066023b305ab03860603a9cf358a8b70148",
       "upstream_branch": "main",
       "upstream_release": null,
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/MiroFish",
@@ -493,10 +493,10 @@
       "fork_sha": "70202a217f4843884b0c229ed3c6daae897316da",
       "fork_branch": "main",
       "upstream_repo": "HarnessMD/munder-difflin",
-      "upstream_sha": "8b3cebf06f0b0c084d5ab28d2949a2e6c07d0806",
+      "upstream_sha": "a5c2249cf599cc26e29e549f5d5cdc75373575fc",
       "upstream_branch": "main",
       "upstream_release": "v0.5.5",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/FounderOS-DEMO",
@@ -508,10 +508,10 @@
       "fork_sha": "ef75fe898702bb803455937fcd145404ef0c8a4d",
       "fork_branch": "main",
       "upstream_repo": "Bennettxai/FounderOS",
-      "upstream_sha": "a0b5db7eb6dcb52bb148b452557f454a2bc76082",
+      "upstream_sha": "b44a3c5b418bb462e677a5f583f7e8e75da26590",
       "upstream_branch": "main",
       "upstream_release": null,
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/Understand-Anything",
@@ -523,10 +523,10 @@
       "fork_sha": "f2d0164f72fe678805c34245a6df36acededfebd",
       "fork_branch": "main",
       "upstream_repo": "Egonex-AI/Understand-Anything",
-      "upstream_sha": "98d6dca712407b8cbf0bca21b539c197e5a7825c",
+      "upstream_sha": "5cc4aad9b8b43596dfedaee00755a7223825fe9b",
       "upstream_branch": "main",
       "upstream_release": "v2.9.0",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/open-seo",
@@ -538,25 +538,25 @@
       "fork_sha": "89e5a00717cdf049b7c2b4e29646edb3a7d4995b",
       "fork_branch": "main",
       "upstream_repo": "every-app/open-seo",
-      "upstream_sha": "78c5d850c2729e3fcf7edf33aafb66efe17453e0",
+      "upstream_sha": "2df84ff91461cc55b6c8bb98f3ce0f195d2e463d",
       "upstream_branch": "main",
-      "upstream_release": "v0.1.25",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "upstream_release": "v0.1.27",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/Recordly",
       "source_id": "github:saurabhmisal/Recordly",
       "group_id": "media-production",
       "first_discovered": "2026-10-08",
-      "license": "NOASSERTION",
+      "license": "AGPL-3.0",
       "description": "Product demonstration recording",
       "fork_sha": "535d1cfafa87cc318db6f2b57b70b6c1c1079862",
       "fork_branch": "main",
       "upstream_repo": "webadderallorg/Recordly",
-      "upstream_sha": "109ca3a13c362e969d9add25d1f93406c36dba2a",
+      "upstream_sha": "3bb3dd22377a4f7c3a2a082280bc2784537b2458",
       "upstream_branch": "main",
       "upstream_release": "v1.4.0",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/spacedrive",
@@ -568,10 +568,10 @@
       "fork_sha": "4d41a379f612e23ac43a66ffd67df52ca77f57d4",
       "fork_branch": "main",
       "upstream_repo": "spacedriveapp/spacedrive",
-      "upstream_sha": "11523b224d1422d98def9a1c0f99e89fafada00d",
+      "upstream_sha": "3e41e4a2c562c755580561f36058e62784f4ff06",
       "upstream_branch": "main",
       "upstream_release": "0.4.3",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/openship",
@@ -583,10 +583,10 @@
       "fork_sha": "4e67e3c9a1d7e33e52fb2a611d8df1f361c4b76d",
       "fork_branch": "main",
       "upstream_repo": "oblien/openship",
-      "upstream_sha": "b72c7922b9d0001d73755684c5fc0544c3b3b223",
+      "upstream_sha": "8cddb267521e1198669a5fe17301da48121907af",
       "upstream_branch": "main",
-      "upstream_release": "v0.9.10",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "upstream_release": "v0.9.12",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/midday",
@@ -628,10 +628,10 @@
       "fork_sha": "591f299d11f38a612629a274463196d57ae3862e",
       "fork_branch": "main",
       "upstream_repo": "bilawalsidhu/gods-eye-view",
-      "upstream_sha": "3d6423c6f8ddb5061d80fba23a9c2da4fe5bc6ff",
+      "upstream_sha": "7df581765dadca8d3bf37b94b26897ccec93b9ad",
       "upstream_branch": "main",
       "upstream_release": "v0.3.0",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/rea",
@@ -643,10 +643,10 @@
       "fork_sha": "5a67c7fc540c494371de76dcdf353923656993d3",
       "fork_branch": "main",
       "upstream_repo": "morluto/rea",
-      "upstream_sha": "bacc1e38464ce7eb87ce1fb6fb552c6b1854ac15",
+      "upstream_sha": "5815178a8d581fa81a9422cdfb9f86dd5cb913d7",
       "upstream_branch": "main",
-      "upstream_release": "rea-agents-6.8.0",
-      "updated_at": "2026-11-06T15:12:36.952Z"
+      "upstream_release": "rea-agents-6.9.0",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/security-audit-skill",
@@ -668,15 +668,15 @@
       "source_id": "github:saurabhmisal/lemo-opuscar",
       "group_id": "media-production",
       "first_discovered": "2026-11-04",
-      "license": "MIT",
-      "description": "A toolbox of film styles made in code for Claude Code: 66 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：66 种现成风格，也能做出你自己的",
+      "license": "NOASSERTION",
+      "description": "A toolbox of film styles made in code for Claude Code: 66 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. \u00b7 \u4e00\u5957\u7528\u4ee3\u7801\u505a\u7247\u7684\u98ce\u683c\u5de5\u5177\u7bb1\uff1a66 \u79cd\u73b0\u6210\u98ce\u683c\uff0c\u4e5f\u80fd\u505a\u51fa\u4f60\u81ea\u5df1\u7684",
       "fork_sha": "bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00",
       "fork_branch": "main",
       "upstream_repo": "lemomo-ai/lemo-opuscar",
-      "upstream_sha": "bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00",
+      "upstream_sha": "3a7132b996be0241c1ea0ab180d519f06e6f10b6",
       "upstream_branch": "main",
-      "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "upstream_release": "v2.0.0",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/LYNX-SHARE",
@@ -684,14 +684,14 @@
       "group_id": "voice-audio",
       "first_discovered": "2026-11-02",
       "license": "AGPL-3.0",
-      "description": "LYNX SHARE — lightweight open-source DAW in C++20/JUCE with the FL Studio workflow: Channel Rack, Piano Roll, Playlist, Mixer and .flp import",
+      "description": "LYNX SHARE \u2014 lightweight open-source DAW in C++20/JUCE with the FL Studio workflow: Channel Rack, Piano Roll, Playlist, Mixer and .flp import",
       "fork_sha": "efb8344d2ec6a190346e7b9ec9e97438748689fe",
       "fork_branch": "main",
       "upstream_repo": "Ka1-S/LYNX-SHARE",
-      "upstream_sha": "8056deac12b3834f984af09c5a12d9c2fd478c00",
+      "upstream_sha": "d739ebc050fb7bcc0741d2f32f6adaab67f0bc9f",
       "upstream_branch": "main",
       "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/claude-seo",
@@ -703,10 +703,10 @@
       "fork_sha": "6be93f45064ffbadced572b5d5c95f55fd263af0",
       "fork_branch": "main",
       "upstream_repo": "AgriciDaniel/claude-seo",
-      "upstream_sha": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+      "upstream_sha": "cca7e4a267991aca880efade1fd12e8498caf2ce",
       "upstream_branch": "main",
-      "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "upstream_release": "v2.6.0",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/reelkit",
@@ -718,10 +718,10 @@
       "fork_sha": "0a9829aa4ad2eccaa006573085587b2c33f8afe3",
       "fork_branch": "main",
       "upstream_repo": "KonstantinKai/reelkit",
-      "upstream_sha": "0a9829aa4ad2eccaa006573085587b2c33f8afe3",
+      "upstream_sha": "27fb5d7bea69d63bc5fa572c7f5a0f26127d7be7",
       "upstream_branch": "main",
-      "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "upstream_release": "@reelkit/vue@0.9.1",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/roast-room",
@@ -747,11 +747,11 @@
       "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
       "fork_sha": "c8066452325cb57c8fc1ba8c2a71b6e8842e6b65",
       "fork_branch": "main",
-      "upstream_repo": "calesthio/OpenMontage",
-      "upstream_sha": "d21f5d4eaa08422b09c7091757a05affcbabb35b",
+      "upstream_repo": "OpenMontageInc/OpenMontage",
+      "upstream_sha": "fecb9a1e3cc23ef84de30b272059457a427f16f8",
       "upstream_branch": "main",
       "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/umami",
@@ -763,10 +763,10 @@
       "fork_sha": "e92fdab99508a8ed05249f6c5f07e140deab79e1",
       "fork_branch": "master",
       "upstream_repo": "umami-software/umami",
-      "upstream_sha": "559e3c607c23d2c72d9bd4f6481bda428255323c",
+      "upstream_sha": "b18d5144dfe7342edeeca6f61d13ba3baabed9ad",
       "upstream_branch": "master",
-      "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "upstream_release": "v3.5.0",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/huashu-art-motion",
@@ -774,14 +774,14 @@
       "group_id": "media-production",
       "first_discovered": "2026-10-22",
       "license": "MIT",
-      "description": "艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。",
+      "description": "\u827a\u672f\u52a8\u753bskill\uff1a35\u79cd\u827a\u672f\u98ce\u683c\u30019\u79cd\u89e3\u8bf4\u8bed\u6cd5\uff0c\u7528\u4ee3\u7801\u8ba9\u753b\u52a8\u8d77\u6765\u3002",
       "fork_sha": "8a0d7d72ca65fcce6f8ba82c4a6c8dfe35b8422c",
       "fork_branch": "main",
       "upstream_repo": "alchaincyf/huashu-art-motion",
-      "upstream_sha": "8a0d7d72ca65fcce6f8ba82c4a6c8dfe35b8422c",
+      "upstream_sha": "1468196505a51728686db118d52561aa27a25124",
       "upstream_branch": "main",
-      "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "upstream_release": "v1.3.0",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/onetake",
@@ -795,8 +795,8 @@
       "upstream_repo": "feitangyuan/onetake",
       "upstream_sha": "abb6d17279cdc749e27e99aa534a062d8fd01ced",
       "upstream_branch": "main",
-      "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "upstream_release": "v1.1.0-lite",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/hyperframes",
@@ -808,10 +808,10 @@
       "fork_sha": "4371981b740d92f70e520cfbec34db68a1c93434",
       "fork_branch": "main",
       "upstream_repo": "heygen-com/hyperframes",
-      "upstream_sha": "a874a6324a5e3dec18ebfea426071f87a7f21373",
+      "upstream_sha": "92816ed56bde07affff0f6e0a5bce3dd96a96808",
       "upstream_branch": "main",
-      "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "upstream_release": "v0.9.43",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/geo-seo-claude",
@@ -819,7 +819,7 @@
       "group_id": "marketing-growth",
       "first_discovered": "2026-10-22",
       "license": "MIT",
-      "description": "GEO-first SEO skill for Claude Code. Comprehensive AI search optimization for any website — citability scoring, AI crawler analysis, brand authority, schema markup, platform-specific optimization, and PDF reports.  If you want learn how to sell this to real businesses, check out the skool community",
+      "description": "GEO-first SEO skill for Claude Code. Comprehensive AI search optimization for any website \u2014 citability scoring, AI crawler analysis, brand authority, schema markup, platform-specific optimization, and PDF reports.  If you want learn how to sell this to real businesses, check out the skool community",
       "fork_sha": "989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c",
       "fork_branch": "main",
       "upstream_repo": "zubair-trabzada/geo-seo-claude",
@@ -838,10 +838,10 @@
       "fork_sha": "0d36de9a9d17562fca0e478969b80eb1c16a7693",
       "fork_branch": "main",
       "upstream_repo": "hypit-ai/hypit",
-      "upstream_sha": "2d31e88765e297f0795348b460c77a6067f12261",
+      "upstream_sha": "6bacce093695ccc2bde5aa5d7de230e9682ffa79",
       "upstream_branch": "main",
-      "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "upstream_release": "v0.3.2",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/pentagi",
@@ -855,8 +855,8 @@
       "upstream_repo": "vxcontrol/pentagi",
       "upstream_sha": "cffed9485aa1cca70762cd08a57ac62a80406258",
       "upstream_branch": "main",
-      "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "upstream_release": "v2.2.0",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/Wan2.2",
@@ -878,15 +878,15 @@
       "source_id": "github:saurabhmisal/harvey",
       "group_id": "marketing-growth",
       "first_discovered": "2026-10-22",
-      "license": "MIT",
-      "description": "Autonomous AI sales agent powered by Claude Code or Codex. Finds prospects, writes cold emails, sends campaigns, handles replies, books meetings. No API keys needed — runs on your Claude or Codex subscriptions.",
+      "license": "AGPL-3.0",
+      "description": "Autonomous AI sales agent powered by Claude Code or Codex. Finds prospects, writes cold emails, sends campaigns, handles replies, books meetings. No API keys needed \u2014 runs on your Claude or Codex subscriptions.",
       "fork_sha": "55866a1830ea73b7d96127b10dc7ad38b838a663",
       "fork_branch": "main",
-      "upstream_repo": "ethanplusai/harvey",
-      "upstream_sha": "6b6a23a789090e165802baef4104ee4618a3e169",
+      "upstream_repo": "ethanplusai/sellbird",
+      "upstream_sha": "25ec83978b21d16ae20779d09bfea113f37f0ef8",
       "upstream_branch": "main",
-      "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "upstream_release": "v0.4.0",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/compound-engineering-plugin",
@@ -898,10 +898,10 @@
       "fork_sha": "738067a599c68f1f0f4a32273fa9d7d2476f0715",
       "fork_branch": "main",
       "upstream_repo": "EveryInc/compound-engineering-plugin",
-      "upstream_sha": "173bd337fa639aac19ce7363d288836a074231a5",
+      "upstream_sha": "ee46dde75a40e297bd8eac4055a410a771d3ac1d",
       "upstream_branch": "main",
-      "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "upstream_release": "compound-engineering-v3.38.1",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/moonshine",
@@ -915,8 +915,8 @@
       "upstream_repo": "moonshine-ai/moonshine",
       "upstream_sha": "d8d8fa29d05ca67441a7719e70099f9f48917a93",
       "upstream_branch": "main",
-      "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "upstream_release": "v0.1.6",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/superplane",
@@ -928,10 +928,10 @@
       "fork_sha": "8b5e567bf31ca6d449a39e725d5955c09d09c20f",
       "fork_branch": "main",
       "upstream_repo": "superplanehq/superplane",
-      "upstream_sha": "37c6198b757bb09bc00b1955da4ae1f238a06e39",
+      "upstream_sha": "2ee58506a863edcdba6120168383994e81fc8075",
       "upstream_branch": "main",
-      "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "upstream_release": "fleet-manager/v0.1.7",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/indra",
@@ -945,8 +945,8 @@
       "upstream_repo": "datalab-to/indra",
       "upstream_sha": "ca81e18f7403435a3545c8c8ae9c4a1cecdd32a4",
       "upstream_branch": "main",
-      "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "upstream_release": "v1.1.2",
+      "updated_at": "2026-11-14T02:39:03.121Z"
     },
     {
       "repository": "saurabhmisal/sill",
@@ -958,10 +958,40 @@
       "fork_sha": "5c323e6965b5011809548e5067f9e8e6fa6adf54",
       "fork_branch": "main",
       "upstream_repo": "Saffsanity/sill",
-      "upstream_sha": "41e8cb8801f8e9d387e27a0d498dee193d17e9ec",
+      "upstream_sha": "bf69067fe60348bfcf3d617086a8589fbdf8dbb6",
       "upstream_branch": "main",
-      "upstream_release": null,
-      "updated_at": "2026-11-06T15:38:29.290Z"
+      "upstream_release": "v0.6.1",
+      "updated_at": "2026-11-14T02:39:03.121Z"
+    },
+    {
+      "repository": "saurabhmisal/astryx",
+      "source_id": "github:saurabhmisal/astryx",
+      "group_id": "design-creation",
+      "first_discovered": "2026-11-14",
+      "license": "MIT",
+      "description": "React design system and scoped component/template CLI",
+      "fork_sha": "a0f2a2da8838cbff64eefb7abdace2f9d84544a9",
+      "fork_branch": "main",
+      "upstream_repo": "meta/astryx",
+      "upstream_sha": "7b3154197a9a9fca33d4aab859a6b35989d0e9cc",
+      "upstream_branch": "main",
+      "upstream_release": "v0.7.16",
+      "updated_at": "2026-11-14T02:42:34.829643+00:00"
+    },
+    {
+      "repository": "saurabhmisal/impeccable",
+      "source_id": "github:saurabhmisal/impeccable",
+      "group_id": "design-creation",
+      "first_discovered": "2026-11-14",
+      "license": "Apache-2.0",
+      "description": "Design review, editing and deterministic interface checks",
+      "fork_sha": "b4bff1626c344067788c2679f048a20057c7cc5a",
+      "fork_branch": "main",
+      "upstream_repo": "pbakaus/impeccable",
+      "upstream_sha": "acb4cfe14470b1fdf51e855431af618d936b7db8",
+      "upstream_branch": "main",
+      "upstream_release": "cli-v4.9.1",
+      "updated_at": "2026-11-14T02:42:34.829643+00:00"
     }
   ]
 }

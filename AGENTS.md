@@ -14,3 +14,7 @@ The user requires a concrete preview and explicit approval before publication.
 ## Writing quality
 
 For prose generation, review and editing, load `workflows/no-ai-slop/editorial-policy.md` and apply only the relevant rules. Preserve the requested operation and leave effective writing unchanged. The portable workflow is `workflows/no-ai-slop/SKILL.md`. Existing publication approval requirements still apply.
+
+## Weekly capability notes
+
+Append a dated review to data/capability-updates.json for every stable capability ID. Explain the change from the last published version in one short sentence. Label instruction-only changes and no-change reviews honestly. Preserve earlier dated reviews and do not imply that an unpublished review was deployed. The build must validate dates, known IDs, coverage and note length.

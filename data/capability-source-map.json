@@ -28,7 +28,9 @@
   "16": [
     "agent-skills",
     "reelkit",
-    "compound-engineering-plugin"
+    "compound-engineering-plugin",
+    "astryx",
+    "impeccable"
   ],
   "17": [
     "graphify",
@@ -46,7 +48,8 @@
     "ponytail",
     "security-audit-skill",
     "pentagi",
-    "compound-engineering-plugin"
+    "compound-engineering-plugin",
+    "impeccable"
   ],
   "20": [
     "gstack",
@@ -56,13 +59,17 @@
   "21": [
     "gstack",
     "agent-skills",
-    "reelkit"
+    "reelkit",
+    "astryx",
+    "impeccable"
   ],
   "22": [
     "replica-skill",
     "anatomy",
     "reelkit",
-    "hyperframes"
+    "hyperframes",
+    "astryx",
+    "impeccable"
   ],
   "23": [
     "archify",

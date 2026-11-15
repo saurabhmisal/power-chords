@@ -41,11 +41,11 @@ Read [README.md](README.md) for complete instructions, compatibility and a revie
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
-- [garrytan/gstack at 10770954f01c](https://github.com/garrytan/gstack/blob/10770954f01c72cb59a1c5aa0dd38ab9a2a77001/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [oblien/openship at b72c7922b9d0](https://github.com/oblien/openship/blob/b72c7922b9d0001d73755684c5fc0544c3b3b223/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
-- [superplanehq/superplane at 37c6198b757b](https://github.com/superplanehq/superplane/blob/37c6198b757bb09bc00b1955da4ae1f238a06e39/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
+- [garrytan/gstack at 4bee369d4a41](https://github.com/garrytan/gstack/blob/4bee369d4a417fb82c6d43c0b79351428305ef10/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [oblien/openship at 8cddb267521e](https://github.com/oblien/openship/blob/8cddb267521e1198669a5fe17301da48121907af/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
+- [superplanehq/superplane at 2ee58506a863](https://github.com/superplanehq/superplane/blob/2ee58506a863edcdba6120168383994e81fc8075/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 
@@ -53,5 +53,8 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence.
 - superplane: Engineering orchestration candidate; service credentials, production writes and license need review.
+- gstack: Keep edit, test and review evidence attached to the change that produced it. Review the selected update channel and host permissions before external installation. A source workflow or claimed CI result is not evidence that the current Power Chords output was tested.
+- openship: Record configuration-apply failures and verify rebuild and deployment status before treating a release as ready. Preserve the exact approved commit and environment. An external deployment reference does not authorize a production change.
+- superplane: Review repository/workspace boundaries, provider configuration and failed-connection recovery before external orchestration. A retry or newly available component is not approval for a production write.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](https://github.com/saurabhmisal/power-chords/blob/main/docs/UPSTREAM_REFRESH.md) for scope and reproduction.

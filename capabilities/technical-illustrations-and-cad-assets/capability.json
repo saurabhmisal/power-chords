@@ -31,16 +31,16 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
+  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
   "upstream_sources": [
     {
       "repository": "earthtojake/text-to-cad",
-      "revision": "4099cac3ddc56a5e696138c53fd7bee685e8ad9d",
+      "revision": "337ac4e3c820d37b14eff30f337f82fbf75343c6",
       "fork_repository": "saurabhmisal/text-to-cad",
       "fork_revision": "24573128ceaab564f497d7c12f995c41784c9539",
       "license": "MIT",
-      "reference_url": "https://github.com/earthtojake/text-to-cad/blob/4099cac3ddc56a5e696138c53fd7bee685e8ad9d/README.md",
-      "readme_sha256": "865a4ee737fc3248c38ec106a6056069775984b76a5f7423241926f42b610cc0",
+      "reference_url": "https://github.com/earthtojake/text-to-cad/blob/337ac4e3c820d37b14eff30f337f82fbf75343c6/README.md",
+      "readme_sha256": "ceeb16ce27692eae1b07afe327f8fcc0f218bef0126f10d7f0373b1b96abe485",
       "scope": "reference_only",
       "runtime_verified": false
     },
@@ -57,22 +57,22 @@
     },
     {
       "repository": "lemomo-ai/lemo-opuscar",
-      "revision": "bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00",
+      "revision": "3a7132b996be0241c1ea0ab180d519f06e6f10b6",
       "fork_repository": "saurabhmisal/lemo-opuscar",
       "fork_revision": "bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00",
-      "license": "MIT",
-      "reference_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00/README.md",
-      "readme_sha256": "6515f3802c150122ba97a347503e8e4bee5681bbddb6a18b35371764422b60fb",
+      "license": "NOASSERTION",
+      "reference_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/3a7132b996be0241c1ea0ab180d519f06e6f10b6/README.md",
+      "readme_sha256": "477716296c6e0791a6812e7e822ca0637e07543c932c4d76a09f9dc6815c7d05",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "alchaincyf/huashu-art-motion",
-      "revision": "8a0d7d72ca65fcce6f8ba82c4a6c8dfe35b8422c",
+      "revision": "1468196505a51728686db118d52561aa27a25124",
       "fork_repository": "saurabhmisal/huashu-art-motion",
       "fork_revision": "8a0d7d72ca65fcce6f8ba82c4a6c8dfe35b8422c",
       "license": "MIT",
-      "reference_url": "https://github.com/alchaincyf/huashu-art-motion/blob/8a0d7d72ca65fcce6f8ba82c4a6c8dfe35b8422c/README.md",
+      "reference_url": "https://github.com/alchaincyf/huashu-art-motion/blob/1468196505a51728686db118d52561aa27a25124/README.md",
       "readme_sha256": "c20ffc9dc918f3b565fe1fd22a806b0b75e3a38f366a86a33b3a75f3fe42cd1e",
       "scope": "reference_only",
       "runtime_verified": false
@@ -82,6 +82,8 @@
     "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "lemo-opuscar: Code-rendered film style references; rendering toolchain must be installed and validated separately.",
-    "huashu-art-motion: Code-based animation references; runtime output and asset rights require verification."
+    "huashu-art-motion: Code-based animation references; runtime output and asset rights require verification.",
+    "text-to-cad: Match the requested CAD output format to the actual modeling and export toolchain. Distinguish an illustration, a generated model and manufacturing validation. Printing, CNC or sheet-metal service connections require separate approval.",
+    "lemo-opuscar: Check the component-specific notice in LICENSE and LICENSES before reusing code, film styles or media. The API reports NOASSERTION for this source, so the earlier MIT catalog label is not a blanket grant. Keep style references separate from a verified rendered film."
   ]
 }

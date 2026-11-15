@@ -48,3 +48,21 @@
 #pc-site a:focus-visible,#pc-site button:focus-visible,#pc-site input:focus-visible,#pc-site select:focus-visible{outline:2px solid var(--pc-accent);outline-offset:4px}
 @media(min-width:761px){#pc-site .pc-flow li:not(:last-child)::after{content:'→';left:auto;right:-23px;top:50%;bottom:auto}#pc-site .pc-flow li:nth-child(4){grid-row:2;grid-column:3}#pc-site .pc-flow li:nth-child(5){grid-row:2;grid-column:2}#pc-site .pc-flow li:nth-child(6){grid-row:2;grid-column:1}#pc-site .pc-flow li:nth-child(7){grid-row:3;grid-column:1}#pc-site .pc-flow li:nth-child(8){grid-row:3;grid-column:2}#pc-site .pc-flow li:nth-child(9){grid-row:3;grid-column:3}#pc-site .pc-flow li:nth-child(3)::after,#pc-site .pc-flow li:nth-child(6)::after{content:'↓';top:auto;bottom:-29px;right:50%}#pc-site .pc-flow li:nth-child(4):not(:last-child)::after,#pc-site .pc-flow li:nth-child(5):not(:last-child)::after{content:'←';left:-23px;right:auto}}
 @media(max-width:760px){#pc-site .pc-library-filters{grid-template-columns:1fr}#pc-site .pc-detail-hero,#pc-site .pc-io-grid,#pc-site .pc-how-grid{grid-template-columns:1fr;gap:20px}#pc-site .pc-flow{grid-template-columns:1fr}#pc-site .pc-detail h1{font-size:42px}#pc-site .pc-flow li{min-height:0}#pc-site .pc-breadcrumb{margin-bottom:22px}#pc-site .pc-demo figcaption{padding:12px}#pc-site .pc-detail-hero{margin-bottom:28px}#pc-site .pc-detail .pc-lead{font-size:18px}}
+
+/* Dated review notes. Existing site identity and layout are preserved. */
+#pc-site .pc-weekly-update{display:flex;gap:20px;align-items:flex-start;padding:25px 28px;margin:0 0 38px;border:1px solid var(--pc-line);border-left:4px solid var(--pc-green);border-radius:12px;background:color-mix(in srgb,var(--pc-green) 6%,var(--pc-panel));scroll-margin-top:24px}
+#pc-site .pc-update-icon{flex-shrink:0;display:grid;place-items:center;width:42px;height:42px;border-radius:10px;background:color-mix(in srgb,var(--pc-green) 10%,transparent);color:var(--pc-green)}
+#pc-site .pc-update-copy{min-width:0}
+#pc-site .pc-update-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;color:var(--pc-muted);font-size:12px}
+#pc-site .pc-update-meta .pc-eyebrow{margin:0;font-size:11px}
+#pc-site .pc-update-meta>span{font-size:11px;line-height:1.4;padding:3px 8px;border:1px solid var(--pc-line);border-radius:5px;color:var(--pc-green)}
+#pc-site .pc-weekly-update h2{font-size:22px;line-height:1.25;letter-spacing:-.02em;margin:11px 0 8px}
+#pc-site .pc-update-summary{font-size:16px;line-height:1.55;margin:0;max-width:900px;color:var(--pc-text)}
+#pc-site .pc-update-comparison{font-size:12px;line-height:1.5;margin:10px 0 0;color:var(--pc-muted)}
+#pc-site .pc-weekly-unchanged{border-color:var(--pc-line);background:var(--pc-panel)}
+#pc-site .pc-update-history{margin-top:16px;font-size:13px;color:var(--pc-muted)}
+#pc-site .pc-update-history summary{cursor:pointer;color:var(--pc-text)}
+#pc-site .pc-update-history ol{list-style:none;padding:0;margin:14px 0 0}
+#pc-site .pc-update-history li{padding:12px 0;border-top:1px solid var(--pc-line)}
+#pc-site .pc-update-history p{margin:5px 0}
+@media(max-width:600px){#pc-site .pc-weekly-update{gap:12px;padding:20px 16px;margin-bottom:28px}#pc-site .pc-update-icon{width:32px;height:32px}#pc-site .pc-update-meta{gap:7px 10px}#pc-site .pc-weekly-update h2{font-size:21px}#pc-site .pc-update-summary{font-size:15px}}

@@ -40,14 +40,15 @@ Read [complete capability guide](https://powerchords.lazo.tools/capabilities/com
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
 - [Jakeschincariol/replica-skill at 77c9436fb3d1](https://github.com/Jakeschincariol/replica-skill/blob/77c9436fb3d18c3d58169efb8caf4fe906b0dc51/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [morluto/rea at bacc1e38464c](https://github.com/morluto/rea/blob/bacc1e38464ce7eb87ce1fb6fb552c6b1854ac15/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [morluto/rea at 5815178a8d58](https://github.com/morluto/rea/blob/5815178a8d581fa81a9422cdfb9f86dd5cb913d7/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 
 - Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
+- rea: Inspect the supported analysis contracts and environment before using an external reverse-engineering tool. Keep source-map and native/desktop investigation output bounded, and preserve links to the artifacts actually inspected.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](https://github.com/saurabhmisal/power-chords/blob/main/docs/UPSTREAM_REFRESH.md) for scope and reproduction.

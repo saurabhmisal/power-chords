@@ -42,11 +42,11 @@ Read [complete capability guide](https://powerchords.lazo.tools/capabilities/mul
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
 - [virgiliojr94/book-to-skill at e7bb659d3261](https://github.com/virgiliojr94/book-to-skill/blob/e7bb659d3261491c8b28793dcb9102fa64a46c22/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [DozenTwelve/Papermorph at 342e272648e0](https://github.com/DozenTwelve/Papermorph/blob/342e272648e06a6163224a6177bccc83517d7fea/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [spacedriveapp/spacedrive at 11523b224d14](https://github.com/spacedriveapp/spacedrive/blob/11523b224d1422d98def9a1c0f99e89fafada00d/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
+- [DozenTwelve/Papermorph at 618aeeaad985](https://github.com/DozenTwelve/Papermorph/blob/618aeeaad9852c8857db7bcaccc34f8d64c20b68/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [spacedriveapp/spacedrive at 3e41e4a2c562](https://github.com/spacedriveapp/spacedrive/blob/3e41e4a2c562c755580561f36058e62784f4ff06/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 - [datalab-to/indra at ca81e18f7403](https://github.com/datalab-to/indra/blob/ca81e18f7403435a3545c8c8ae9c4a1cecdd32a4/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance

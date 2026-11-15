@@ -41,12 +41,12 @@ Read [complete capability guide](https://powerchords.lazo.tools/capabilities/tec
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
-- [earthtojake/text-to-cad at 4099cac3ddc5](https://github.com/earthtojake/text-to-cad/blob/4099cac3ddc56a5e696138c53fd7bee685e8ad9d/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [earthtojake/text-to-cad at 337ac4e3c820](https://github.com/earthtojake/text-to-cad/blob/337ac4e3c820d37b14eff30f337f82fbf75343c6/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [wheresryan22/anatomy at 1482e8469b0a](https://github.com/wheresryan22/anatomy/blob/1482e8469b0a9e0d8cc18ea2740a01423d29ae80/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [lemomo-ai/lemo-opuscar at bebbbe1aa92a](https://github.com/lemomo-ai/lemo-opuscar/blob/bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [alchaincyf/huashu-art-motion at 8a0d7d72ca65](https://github.com/alchaincyf/huashu-art-motion/blob/8a0d7d72ca65fcce6f8ba82c4a6c8dfe35b8422c/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [lemomo-ai/lemo-opuscar at 3a7132b996be](https://github.com/lemomo-ai/lemo-opuscar/blob/3a7132b996be0241c1ea0ab180d519f06e6f10b6/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
+- [alchaincyf/huashu-art-motion at 1468196505a5](https://github.com/alchaincyf/huashu-art-motion/blob/1468196505a51728686db118d52561aa27a25124/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 
@@ -54,5 +54,7 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - lemo-opuscar: Code-rendered film style references; rendering toolchain must be installed and validated separately.
 - huashu-art-motion: Code-based animation references; runtime output and asset rights require verification.
+- text-to-cad: Match the requested CAD output format to the actual modeling and export toolchain. Distinguish an illustration, a generated model and manufacturing validation. Printing, CNC or sheet-metal service connections require separate approval.
+- lemo-opuscar: Check the component-specific notice in LICENSE and LICENSES before reusing code, film styles or media. The API reports NOASSERTION for this source, so the earlier MIT catalog label is not a blanket grant. Keep style references separate from a verified rendered film.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](https://github.com/saurabhmisal/power-chords/blob/main/docs/UPSTREAM_REFRESH.md) for scope and reproduction.

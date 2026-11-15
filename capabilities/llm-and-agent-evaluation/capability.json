@@ -31,7 +31,7 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
+  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
   "upstream_sources": [
     {
       "repository": "openai/evals",
@@ -46,11 +46,11 @@
     },
     {
       "repository": "affaan-m/ECC",
-      "revision": "b38be6a7f6350964d59328b52f0624e1d1d552d1",
+      "revision": "d2ef2680594f9a17526a6e1a2e18b3d242c5d17b",
       "fork_repository": "saurabhmisal/ECC",
       "fork_revision": "ef648e01899ba3e8dc6371642deaaf64b4477775",
       "license": "MIT",
-      "reference_url": "https://github.com/affaan-m/ECC/blob/b38be6a7f6350964d59328b52f0624e1d1d552d1/README.md",
+      "reference_url": "https://github.com/affaan-m/ECC/blob/d2ef2680594f9a17526a6e1a2e18b3d242c5d17b/README.md",
       "readme_sha256": "bce393127a2e15211583d0f4998599b9771cc30b1189e7c42a26d86b86386d13",
       "scope": "reference_only",
       "runtime_verified": false

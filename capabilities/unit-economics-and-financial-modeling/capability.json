@@ -36,7 +36,7 @@
       "title": "Product Decision Brief"
     }
   ],
-  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
+  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
   "upstream_sources": [
     {
       "repository": "midday-ai/midday",
@@ -51,12 +51,12 @@
     },
     {
       "repository": "Bennettxai/FounderOS",
-      "revision": "a0b5db7eb6dcb52bb148b452557f454a2bc76082",
+      "revision": "b44a3c5b418bb462e677a5f583f7e8e75da26590",
       "fork_repository": "saurabhmisal/FounderOS-DEMO",
       "fork_revision": "ef75fe898702bb803455937fcd145404ef0c8a4d",
       "license": "MIT",
-      "reference_url": "https://github.com/Bennettxai/FounderOS/blob/a0b5db7eb6dcb52bb148b452557f454a2bc76082/README.md",
-      "readme_sha256": "4b53d8b56179bd728eaf5828d9936b5e6a813dce2c531b629f4abc3692281bcc",
+      "reference_url": "https://github.com/Bennettxai/FounderOS/blob/b44a3c5b418bb462e677a5f583f7e8e75da26590/README.md",
+      "readme_sha256": "ce37356d9df094ce3e4a57129e1372463632333f9cbbf5db8494714e02ca9b23",
       "scope": "reference_only",
       "runtime_verified": false
     }

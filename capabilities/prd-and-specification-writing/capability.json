@@ -36,26 +36,26 @@
       "title": "Customer Discovery → PRD"
     }
   ],
-  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
+  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
   "upstream_sources": [
     {
       "repository": "garrytan/gstack",
-      "revision": "10770954f01c72cb59a1c5aa0dd38ab9a2a77001",
+      "revision": "4bee369d4a417fb82c6d43c0b79351428305ef10",
       "fork_repository": "saurabhmisal/gstack",
       "fork_revision": "c7edf46bcf6e8d1ccd2f58ffb0800a4e8119e805",
       "license": "MIT",
-      "reference_url": "https://github.com/garrytan/gstack/blob/10770954f01c72cb59a1c5aa0dd38ab9a2a77001/README.md",
-      "readme_sha256": "1d811b9a341913cebf59f33e73012594c95c0961114e2d89967779d74a0688c2",
+      "reference_url": "https://github.com/garrytan/gstack/blob/4bee369d4a417fb82c6d43c0b79351428305ef10/README.md",
+      "readme_sha256": "78dbf4c615841ebe990e6b4d12a796b0c5c913014f70dd764f85f9a343af94ff",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "anthropics/knowledge-work-plugins",
-      "revision": "ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d",
+      "revision": "e91a134584eb798bac7fb0379358006a2b63b965",
       "fork_repository": "saurabhmisal/knowledge-work-plugins",
       "fork_revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/ab4cb1cd383b4eb87383be8cf4e70cb5b2a2348d/README.md",
+      "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/e91a134584eb798bac7fb0379358006a2b63b965/README.md",
       "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
       "scope": "reference_only",
       "runtime_verified": false
@@ -63,6 +63,8 @@
   ],
   "source_guidance": [
     "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
-    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested."
+    "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
+    "gstack: Keep edit, test and review evidence attached to the change that produced it. Review the selected update channel and host permissions before external installation. A source workflow or claimed CI result is not evidence that the current Power Chords output was tested.",
+    "knowledge-work-plugins: Treat newly available role workflows and invoice-follow-up guidance as host-specific references. Review connector and recipient scope before any external action. Loading a specialist procedure does not grant its plugins access."
   ]
 }

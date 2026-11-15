@@ -40,37 +40,37 @@
       "title": "Launch Readiness Plan"
     }
   ],
-  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
+  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
   "upstream_sources": [
     {
       "repository": "garrytan/gstack",
-      "revision": "10770954f01c72cb59a1c5aa0dd38ab9a2a77001",
+      "revision": "4bee369d4a417fb82c6d43c0b79351428305ef10",
       "fork_repository": "saurabhmisal/gstack",
       "fork_revision": "c7edf46bcf6e8d1ccd2f58ffb0800a4e8119e805",
       "license": "MIT",
-      "reference_url": "https://github.com/garrytan/gstack/blob/10770954f01c72cb59a1c5aa0dd38ab9a2a77001/README.md",
-      "readme_sha256": "1d811b9a341913cebf59f33e73012594c95c0961114e2d89967779d74a0688c2",
+      "reference_url": "https://github.com/garrytan/gstack/blob/4bee369d4a417fb82c6d43c0b79351428305ef10/README.md",
+      "readme_sha256": "78dbf4c615841ebe990e6b4d12a796b0c5c913014f70dd764f85f9a343af94ff",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "oblien/openship",
-      "revision": "b72c7922b9d0001d73755684c5fc0544c3b3b223",
+      "revision": "8cddb267521e1198669a5fe17301da48121907af",
       "fork_repository": "saurabhmisal/openship",
       "fork_revision": "4e67e3c9a1d7e33e52fb2a611d8df1f361c4b76d",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/oblien/openship/blob/b72c7922b9d0001d73755684c5fc0544c3b3b223/README.md",
-      "readme_sha256": "8d760fd2b660dfd49c713a601ba235ee3b87410293c8f39ca4bdc5045b66e1dc",
+      "reference_url": "https://github.com/oblien/openship/blob/8cddb267521e1198669a5fe17301da48121907af/README.md",
+      "readme_sha256": "f1fce080670450044e6354c0811d463b52fe912d8412e4bfcc8f54d949ed1f70",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "superplanehq/superplane",
-      "revision": "37c6198b757bb09bc00b1955da4ae1f238a06e39",
+      "revision": "2ee58506a863edcdba6120168383994e81fc8075",
       "fork_repository": "saurabhmisal/superplane",
       "fork_revision": "8b5e567bf31ca6d449a39e725d5955c09d09c20f",
       "license": "NOASSERTION",
-      "reference_url": "https://github.com/superplanehq/superplane/blob/37c6198b757bb09bc00b1955da4ae1f238a06e39/README.md",
+      "reference_url": "https://github.com/superplanehq/superplane/blob/2ee58506a863edcdba6120168383994e81fc8075/README.md",
       "readme_sha256": "939ff8964b14de9f695c59a8f188a096981e4543c66d2f74a6e46b119efabdba",
       "scope": "reference_only",
       "runtime_verified": false
@@ -80,6 +80,9 @@
     "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence.",
-    "superplane: Engineering orchestration candidate; service credentials, production writes and license need review."
+    "superplane: Engineering orchestration candidate; service credentials, production writes and license need review.",
+    "gstack: Keep edit, test and review evidence attached to the change that produced it. Review the selected update channel and host permissions before external installation. A source workflow or claimed CI result is not evidence that the current Power Chords output was tested.",
+    "openship: Record configuration-apply failures and verify rebuild and deployment status before treating a release as ready. Preserve the exact approved commit and environment. An external deployment reference does not authorize a production change.",
+    "superplane: Review repository/workspace boundaries, provider configuration and failed-connection recovery before external orchestration. A retry or newly available component is not approval for a production write."
   ]
 }

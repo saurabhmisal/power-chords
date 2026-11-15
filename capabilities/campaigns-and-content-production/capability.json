@@ -31,16 +31,16 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
+  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
   "upstream_sources": [
     {
       "repository": "coreyhaines31/marketingskills",
-      "revision": "88c79f6528a9347420e57ceb1fff9a60de651768",
+      "revision": "1f837447b20bb6f0e72d87b80ece1c221c362c7d",
       "fork_repository": "saurabhmisal/marketingskills",
       "fork_revision": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
       "license": "MIT",
-      "reference_url": "https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/README.md",
-      "readme_sha256": "69c172878d7a66305ef57928d0fbb4056e379cb8a316e23fc1d6f9869519f798",
+      "reference_url": "https://github.com/coreyhaines31/marketingskills/blob/1f837447b20bb6f0e72d87b80ece1c221c362c7d/README.md",
+      "readme_sha256": "f291f87fdd271872c9f543772ed2e0fc4ec3487096be8f7e7a4dbaabb11b784e",
       "scope": "reference_only",
       "runtime_verified": false
     },
@@ -57,45 +57,45 @@
     },
     {
       "repository": "lemomo-ai/lemo-opuscar",
-      "revision": "bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00",
+      "revision": "3a7132b996be0241c1ea0ab180d519f06e6f10b6",
       "fork_repository": "saurabhmisal/lemo-opuscar",
       "fork_revision": "bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00",
-      "license": "MIT",
-      "reference_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00/README.md",
-      "readme_sha256": "6515f3802c150122ba97a347503e8e4bee5681bbddb6a18b35371764422b60fb",
+      "license": "NOASSERTION",
+      "reference_url": "https://github.com/lemomo-ai/lemo-opuscar/blob/3a7132b996be0241c1ea0ab180d519f06e6f10b6/README.md",
+      "readme_sha256": "477716296c6e0791a6812e7e822ca0637e07543c932c4d76a09f9dc6815c7d05",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
-      "repository": "calesthio/OpenMontage",
-      "revision": "d21f5d4eaa08422b09c7091757a05affcbabb35b",
+      "repository": "OpenMontageInc/OpenMontage",
+      "revision": "fecb9a1e3cc23ef84de30b272059457a427f16f8",
       "fork_repository": "saurabhmisal/OpenMontage",
       "fork_revision": "c8066452325cb57c8fc1ba8c2a71b6e8842e6b65",
       "license": "AGPL-3.0",
-      "reference_url": "https://github.com/calesthio/OpenMontage/blob/d21f5d4eaa08422b09c7091757a05affcbabb35b/README.md",
-      "readme_sha256": "99258db9f4dcf23051a06426badcbf3c590b947625a65a8d1e239e270da09b12",
+      "reference_url": "https://github.com/OpenMontageInc/OpenMontage/blob/fecb9a1e3cc23ef84de30b272059457a427f16f8/README.md",
+      "readme_sha256": "f69062655b71ff0291a32c405385ed83664c83b51f07735e833ff6d051785547",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "hypit-ai/hypit",
-      "revision": "2d31e88765e297f0795348b460c77a6067f12261",
+      "revision": "6bacce093695ccc2bde5aa5d7de230e9682ffa79",
       "fork_repository": "saurabhmisal/hypit",
       "fork_revision": "0d36de9a9d17562fca0e478969b80eb1c16a7693",
       "license": "NOASSERTION",
-      "reference_url": "https://github.com/hypit-ai/hypit/blob/2d31e88765e297f0795348b460c77a6067f12261/README.md",
-      "readme_sha256": "4a58c61016561cef90afdb46bcc85a24dae0cd78bf2544d969369952ff956cef",
+      "reference_url": "https://github.com/hypit-ai/hypit/blob/6bacce093695ccc2bde5aa5d7de230e9682ffa79/README.md",
+      "readme_sha256": "5b59df4b0a67486b773235732c9dff0769d794a34ea1fdf8a9d955a25142ccd1",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
-      "repository": "ethanplusai/harvey",
-      "revision": "6b6a23a789090e165802baef4104ee4618a3e169",
+      "repository": "ethanplusai/sellbird",
+      "revision": "25ec83978b21d16ae20779d09bfea113f37f0ef8",
       "fork_repository": "saurabhmisal/harvey",
       "fork_revision": "55866a1830ea73b7d96127b10dc7ad38b838a663",
-      "license": "MIT",
-      "reference_url": "https://github.com/ethanplusai/harvey/blob/6b6a23a789090e165802baef4104ee4618a3e169/README.md",
-      "readme_sha256": "a1e2301c27613b1b6e72cf61af83fcad685bedabf3cc67185805dd54f84dc0e0",
+      "license": "AGPL-3.0",
+      "reference_url": "https://github.com/ethanplusai/sellbird/blob/25ec83978b21d16ae20779d09bfea113f37f0ef8/README.md",
+      "readme_sha256": "43a330965b62f90e4eef4b854b5595279f5242a7622a7ec44d1a53ced2cd02dc",
       "scope": "reference_only",
       "runtime_verified": false
     }
@@ -107,6 +107,10 @@
     "lemo-opuscar: Code-rendered film style references; rendering toolchain must be installed and validated separately.",
     "OpenMontage: Agentic production reference; AGPL license and external media toolchain require review.",
     "hypit: Video variation reference; verify license, consent, likeness rights and source-asset permissions before reuse.",
-    "harvey: Sales research and drafting reference; sending outreach or accessing mail requires explicit authorization."
+    "harvey: Sales research and drafting reference; sending outreach or accessing mail requires explicit authorization.",
+    "marketingskills: Keep public marketing observations, experiment evidence and judgment calls distinct. Review connector access and planned recurring actions before activation. An available integration guide does not establish a working connection or permission to contact audiences.",
+    "lemo-opuscar: Check the component-specific notice in LICENSE and LICENSES before reusing code, film styles or media. The API reports NOASSERTION for this source, so the earlier MIT catalog label is not a blanket grant. Keep style references separate from a verified rendered film.",
+    "OpenMontage: The canonical source moved to OpenMontageInc/OpenMontage. Preserve earlier attribution and AGPL review, and inspect external media-service and asset permissions before any production workflow.",
+    "harvey: The current original is Sellbird, formerly Harvey, and now declares AGPL-3.0. Check configuration/data-home migration and license requirements before reuse. Account research, drafts, sending and mailbox access keep separate permission boundaries."
   ]
 }

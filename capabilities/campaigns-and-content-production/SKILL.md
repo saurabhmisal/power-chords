@@ -41,14 +41,14 @@ Read [README.md](README.md) for complete instructions, compatibility and a revie
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
-- [coreyhaines31/marketingskills at 88c79f6528a9](https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [coreyhaines31/marketingskills at 1f837447b20b](https://github.com/coreyhaines31/marketingskills/blob/1f837447b20bb6f0e72d87b80ece1c221c362c7d/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [raunakpatil/youtube-agentic-ai-studio at 22be5d044138](https://github.com/raunakpatil/youtube-agentic-ai-studio/blob/22be5d044138def44e96f0b26a2f1be66f491452/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [lemomo-ai/lemo-opuscar at bebbbe1aa92a](https://github.com/lemomo-ai/lemo-opuscar/blob/bebbbe1aa92a3cb4bb6f83500e61b23a17d1aa00/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [calesthio/OpenMontage at d21f5d4eaa08](https://github.com/calesthio/OpenMontage/blob/d21f5d4eaa08422b09c7091757a05affcbabb35b/README.md) — catalog license: AGPL-3.0; reference only, adapter execution not verified.
-- [hypit-ai/hypit at 2d31e88765e2](https://github.com/hypit-ai/hypit/blob/2d31e88765e297f0795348b460c77a6067f12261/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
-- [ethanplusai/harvey at 6b6a23a78909](https://github.com/ethanplusai/harvey/blob/6b6a23a789090e165802baef4104ee4618a3e169/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [lemomo-ai/lemo-opuscar at 3a7132b996be](https://github.com/lemomo-ai/lemo-opuscar/blob/3a7132b996be0241c1ea0ab180d519f06e6f10b6/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
+- [OpenMontageInc/OpenMontage at fecb9a1e3cc2](https://github.com/OpenMontageInc/OpenMontage/blob/fecb9a1e3cc23ef84de30b272059457a427f16f8/README.md) — catalog license: AGPL-3.0; reference only, adapter execution not verified.
+- [hypit-ai/hypit at 6bacce093695](https://github.com/hypit-ai/hypit/blob/6bacce093695ccc2bde5aa5d7de230e9682ffa79/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
+- [ethanplusai/sellbird at 25ec83978b21](https://github.com/ethanplusai/sellbird/blob/25ec83978b21d16ae20779d09bfea113f37f0ef8/README.md) — catalog license: AGPL-3.0; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 
@@ -59,5 +59,9 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 - OpenMontage: Agentic production reference; AGPL license and external media toolchain require review.
 - hypit: Video variation reference; verify license, consent, likeness rights and source-asset permissions before reuse.
 - harvey: Sales research and drafting reference; sending outreach or accessing mail requires explicit authorization.
+- marketingskills: Keep public marketing observations, experiment evidence and judgment calls distinct. Review connector access and planned recurring actions before activation. An available integration guide does not establish a working connection or permission to contact audiences.
+- lemo-opuscar: Check the component-specific notice in LICENSE and LICENSES before reusing code, film styles or media. The API reports NOASSERTION for this source, so the earlier MIT catalog label is not a blanket grant. Keep style references separate from a verified rendered film.
+- OpenMontage: The canonical source moved to OpenMontageInc/OpenMontage. Preserve earlier attribution and AGPL review, and inspect external media-service and asset permissions before any production workflow.
+- harvey: The current original is Sellbird, formerly Harvey, and now declares AGPL-3.0. Check configuration/data-home migration and license requirements before reuse. Account research, drafts, sending and mailbox access keep separate permission boundaries.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](https://github.com/saurabhmisal/power-chords/blob/main/docs/UPSTREAM_REFRESH.md) for scope and reproduction.

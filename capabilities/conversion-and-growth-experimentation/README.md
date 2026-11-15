@@ -109,12 +109,12 @@ flowchart TD
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
-- [coreyhaines31/marketingskills at 88c79f6528a9](https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [every-app/open-seo at 78c5d850c272](https://github.com/every-app/open-seo/blob/78c5d850c2729e3fcf7edf33aafb66efe17453e0/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [AgriciDaniel/claude-seo at 6be93f45064f](https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [umami-software/umami at 559e3c607c23](https://github.com/umami-software/umami/blob/559e3c607c23d2c72d9bd4f6481bda428255323c/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [coreyhaines31/marketingskills at 1f837447b20b](https://github.com/coreyhaines31/marketingskills/blob/1f837447b20bb6f0e72d87b80ece1c221c362c7d/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [every-app/open-seo at 2df84ff91461](https://github.com/every-app/open-seo/blob/2df84ff91461cc55b6c8bb98f3ce0f195d2e463d/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [AgriciDaniel/claude-seo at cca7e4a26799](https://github.com/AgriciDaniel/claude-seo/blob/cca7e4a267991aca880efade1fd12e8498caf2ce/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [umami-software/umami at b18d5144dfe7](https://github.com/umami-software/umami/blob/b18d5144dfe7342edeeca6f61d13ba3baabed9ad/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [zubair-trabzada/geo-seo-claude at 989cae01e8eb](https://github.com/zubair-trabzada/geo-seo-claude/blob/989cae01e8ebbc42a9ec798eb9e7cb423f5ec89c/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
@@ -125,5 +125,8 @@ Reviewed: 2026-11-06T15:41:08.721Z. Original source code was pulled at the immut
 - claude-seo: SEO audit instruction references; live connectors and specialist agents are not automatically enabled.
 - umami: Analytics adapter candidate; collect events only after reviewing consent, retention, and deployment configuration.
 - geo-seo-claude: AI-search optimization guidance; report observed crawl/citation evidence without guaranteeing rankings.
+- marketingskills: Keep public marketing observations, experiment evidence and judgment calls distinct. Review connector access and planned recurring actions before activation. An available integration guide does not establish a working connection or permission to contact audiences.
+- open-seo: Separate observed public page evidence from paid or authenticated research. Review connector consent, credit limits and public-URL validation before external SEO tools. Preserve the provider and request that produced each finding.
+- umami: Review database, secret and deployment setup before an external analytics installation. Distinguish source events, acquisition and retention measures, and review consent and access separately. No default admin account or analytics server is configured by this refresh.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](../../docs/UPSTREAM_REFRESH.md) for scope and reproduction.

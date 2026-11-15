@@ -68,7 +68,9 @@ export async function buildLanding(destination,{hosted=false}={}){
     const standalone=instructions.replace('[README.md](README.md)',`[complete capability guide](https://powerchords.lazo.tools/capabilities/${item.slug}/)`);
     await writeFile(join(directory,'downloads',item.slug+'.md'),standalone);
   }
-  await copyFile(join(root,'docs/PORTABLE_AGENT_GUIDE.md'),join(directory,'downloads/power-chords-agent-guide.md'));
+  const agentGuide=await readFile(join(root,'docs/PORTABLE_AGENT_GUIDE.md'),'utf8');
+  const portableGuide=agentGuide.replace(/\]\((\.\.?\/[^)]+)\)/g,(_,target)=>']('+new URL(target,'https://github.com/saurabhmisal/power-chords/blob/main/docs/PORTABLE_AGENT_GUIDE.md').href+')');
+  await writeFile(join(directory,'downloads/power-chords-agent-guide.md'),portableGuide);
   await buildCapabilityPages(root,directory,capabilities,styles);
   // Fingerprint consent assets so a cached pre-consent tag can never survive a new page release.
   const familyAssets = {};

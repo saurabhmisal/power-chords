@@ -1,0 +1,539 @@
+{
+  "schema_version": 1,
+  "weeks": [
+    {
+      "date": "2026-11-07",
+      "comparison": "Compared with the previous published version.",
+      "baseline_commit": "5d636f55acf5968ea8cbb282f5501bfec6620856",
+      "capabilities": [
+        {
+          "id": "01",
+          "kind": "guidance",
+          "summary": "Clarified permission checks for external research tools and how to keep sensitive interview details out of tool logs."
+        },
+        {
+          "id": "02",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No changes to this skill\u2019s instructions or workflow."
+        },
+        {
+          "id": "03",
+          "kind": "guidance",
+          "summary": "Added guidance for checking evidence quality and tool limits when code or desktop analysis supports a competitor comparison."
+        },
+        {
+          "id": "04",
+          "kind": "guidance",
+          "summary": "Clarified how captured leads become reviewed follow-ups, and how account research stays separate from outreach that needs your approval."
+        },
+        {
+          "id": "05",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No changes to this skill\u2019s instructions or workflow."
+        },
+        {
+          "id": "06",
+          "kind": "guidance",
+          "summary": "Added guidance to check document paths and audio length before processing, with clearer recovery steps when supporting media is missing."
+        },
+        {
+          "id": "07",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No changes to this skill\u2019s instructions or workflow."
+        },
+        {
+          "id": "08",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No changes to this skill\u2019s instructions or workflow."
+        },
+        {
+          "id": "09",
+          "kind": "guidance",
+          "summary": "Clarified how captured notes and reviewed planning context can support search, including checks for the tools available in your agent."
+        },
+        {
+          "id": "10",
+          "kind": "guidance",
+          "summary": "Clarified permission checks for external drafting tools and when to rerun checks after editing a specification."
+        },
+        {
+          "id": "11",
+          "kind": "guidance",
+          "summary": "Added guidance to recheck journey documents after edits and keep sensitive details out of external tool logs."
+        },
+        {
+          "id": "12",
+          "kind": "guidance",
+          "summary": "Clarified the permission review for external planning plugins before using them with roadmap evidence."
+        },
+        {
+          "id": "13",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No changes to this skill\u2019s instructions or workflow."
+        },
+        {
+          "id": "14",
+          "kind": "guidance",
+          "summary": "Added guidance for using dated public-market signals as experiment inputs and reviewing recurring marketing work before activation."
+        },
+        {
+          "id": "15",
+          "kind": "guidance",
+          "summary": "Added checks for request scope and input validation when using external API wrappers, with write approval reviewed separately."
+        },
+        {
+          "id": "16",
+          "kind": "guidance",
+          "summary": "Refined guidance for reviewing related code changes together and choosing a review depth that matches the risk."
+        },
+        {
+          "id": "17",
+          "kind": "guidance",
+          "summary": "Added guidance for handling database metadata safely and keeping code-analysis output and background work within clear limits."
+        },
+        {
+          "id": "18",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No changes to this skill\u2019s instructions or workflow."
+        },
+        {
+          "id": "19",
+          "kind": "guidance",
+          "summary": "Clarified when checks need rerunning after edits and when a deeper or independent code review is useful."
+        },
+        {
+          "id": "20",
+          "kind": "guidance",
+          "summary": "Expanded release guidance to cover configuration failures, rebuild verification and connection retries before treating a deployment as ready."
+        },
+        {
+          "id": "21",
+          "kind": "guidance",
+          "summary": "Clarified review of external design-tool setup and checks after edits, including changes made through command-based tools."
+        },
+        {
+          "id": "22",
+          "kind": "guidance",
+          "summary": "Added guidance to check late-loading images, interrupted animations and rendering timeouts when using external prototype renderers."
+        },
+        {
+          "id": "23",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No changes to this skill\u2019s instructions or workflow."
+        },
+        {
+          "id": "24",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No changes to this skill\u2019s instructions or workflow."
+        },
+        {
+          "id": "25",
+          "kind": "guidance",
+          "summary": "Refined guidance for assigning connected work across repositories, handling retries and choosing additional reviews only when useful."
+        },
+        {
+          "id": "26",
+          "kind": "guidance",
+          "summary": "Clarified inbox-to-plan handoffs, reviewed weekly routines and recovery from failed connections before recurring work is activated."
+        },
+        {
+          "id": "27",
+          "kind": "guidance",
+          "summary": "Added guidance to check input-validation rules in external automation tools and approve the exact target before a write."
+        },
+        {
+          "id": "28",
+          "kind": "guidance",
+          "summary": "Added guidance for provider failures, task boundaries and retry handling when chaining work through external routing or orchestration tools."
+        },
+        {
+          "id": "29",
+          "kind": "guidance",
+          "summary": "Clarified the distinction between an allowed API target, a valid input and explicit permission to write or activate recurring work."
+        },
+        {
+          "id": "30",
+          "kind": "guidance",
+          "summary": "Clarified permission and setup checks before using external data plugins alongside your SQL analysis."
+        },
+        {
+          "id": "31",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No changes to this skill\u2019s instructions or workflow."
+        },
+        {
+          "id": "32",
+          "kind": "guidance",
+          "summary": "Added guidance to distinguish dated public-market signals from measured funnel results and review external-plugin permissions."
+        },
+        {
+          "id": "33",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No changes to this skill\u2019s instructions or workflow."
+        },
+        {
+          "id": "34",
+          "kind": "guidance",
+          "summary": "Clarified permission checks before bringing external planning plugins into a forecasting workflow."
+        },
+        {
+          "id": "35",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No changes to this skill\u2019s instructions or workflow."
+        },
+        {
+          "id": "36",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No changes to this skill\u2019s instructions or workflow."
+        },
+        {
+          "id": "37",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No changes to this skill\u2019s instructions or workflow."
+        },
+        {
+          "id": "38",
+          "kind": "guidance",
+          "summary": "Clarified how inbox items become reviewed commitments and how external planning-tool permissions should be checked."
+        },
+        {
+          "id": "39",
+          "kind": "guidance",
+          "summary": "Added guidance to validate audio duration, handle missing media and check device support before selecting an external transcription tool."
+        },
+        {
+          "id": "40",
+          "kind": "guidance",
+          "summary": "Clarified device and operating-system checks before selecting an external voice tool, including how to verify setup-recovery claims."
+        },
+        {
+          "id": "41",
+          "kind": "guidance",
+          "summary": "Added guidance for checking external audio-project import support, device compatibility and plugin behavior before an editing workflow."
+        },
+        {
+          "id": "42",
+          "kind": "guidance",
+          "summary": "Added guidance for checking late-loading images, animation interruptions and timeouts before relying on an external video render."
+        },
+        {
+          "id": "43",
+          "kind": "guidance",
+          "summary": "Expanded guidance for dated competitor research, connector consent and research limits before using external SEO services."
+        },
+        {
+          "id": "44",
+          "kind": "guidance",
+          "summary": "Added guidance for using dated public-market signals in launch planning and keeping research separate from approved outreach."
+        },
+        {
+          "id": "45",
+          "kind": "guidance",
+          "summary": "Refined guidance for dated campaign evidence, recurring marketing reviews and the handoff from drafting to approved sending."
+        },
+        {
+          "id": "46",
+          "kind": "guidance",
+          "summary": "Added guidance to separate public-market signals from measured growth results and review consent before connecting external services."
+        },
+        {
+          "id": "47",
+          "kind": "guidance",
+          "summary": "Clarified company-scan limits and agent setup, with separate approval before changing trust settings or sending applications."
+        },
+        {
+          "id": "48",
+          "kind": "guidance",
+          "summary": "Clarified agent setup and access checks for interview research, while keeping preparation separate from applications and outreach."
+        },
+        {
+          "id": "49",
+          "kind": "guidance",
+          "summary": "Added guidance to show the source, freshness and selected filters behind location findings, and distinguish unavailable feeds from verified data."
+        },
+        {
+          "id": "50",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No changes to this skill\u2019s instructions or workflow."
+        },
+        {
+          "id": "51",
+          "kind": "guidance",
+          "summary": "Added guidance to keep map selections, source freshness and layer/filter state visible when interpreting spatial patterns."
+        },
+        {
+          "id": "52",
+          "kind": "guidance",
+          "summary": "Added guidance to preserve the source and age of field signals and identify where a live data connection is unavailable."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "comparison": "Compared with the last published version. Earlier entries are dated reviews, not deployment records.",
+      "baseline_commit": "cc4cc26b16a164e87827d319163e9e8044353d85",
+      "capabilities": [
+        {
+          "id": "01",
+          "kind": "guidance",
+          "summary": "Refined the checks for external research-tool access and the evidence to retain when reviewing discovery findings."
+        },
+        {
+          "id": "02",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "03",
+          "kind": "guidance",
+          "summary": "Refined guidance for matching an external analysis tool to the evidence available in a competitor review."
+        },
+        {
+          "id": "04",
+          "kind": "guidance",
+          "summary": "Updated follow-up guidance for the Sellbird configuration migration and flagged its current AGPL license before any reuse."
+        },
+        {
+          "id": "05",
+          "kind": "guidance",
+          "summary": "Clarified how to trace graph-backed evidence and separate extracted relationships from inferred opportunity links."
+        },
+        {
+          "id": "06",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "07",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "08",
+          "kind": "guidance",
+          "summary": "Clarified the distinction between a local relationship graph and external cloud connectors or verification claims."
+        },
+        {
+          "id": "09",
+          "kind": "guidance",
+          "summary": "Refined guidance for using graph and personal-workspace context as search evidence without implying shared account access."
+        },
+        {
+          "id": "10",
+          "kind": "guidance",
+          "summary": "Refined the evidence and permission checks to apply when external product or review workflows support a PRD."
+        },
+        {
+          "id": "11",
+          "kind": "guidance",
+          "summary": "Updated architecture-tool compatibility guidance and the license record used when reviewing journey-mapping references."
+        },
+        {
+          "id": "12",
+          "kind": "guidance",
+          "summary": "Clarified how external role-specific planning workflows should be reviewed before bringing them into roadmap work."
+        },
+        {
+          "id": "13",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "14",
+          "kind": "guidance",
+          "summary": "Refined guidance for separating public-market signals, measured test evidence and recurring marketing actions."
+        },
+        {
+          "id": "15",
+          "kind": "guidance",
+          "summary": "Updated guidance for API client compatibility, request validation and architecture-tool host support."
+        },
+        {
+          "id": "16",
+          "kind": "guidance",
+          "summary": "Added reviewed design-system and interface-quality references, with React compatibility and approval-preserving setup checks."
+        },
+        {
+          "id": "17",
+          "kind": "guidance",
+          "summary": "Refined guidance for tracing code relationships, checking analysis contracts and retaining review evidence."
+        },
+        {
+          "id": "18",
+          "kind": "guidance",
+          "summary": "Updated graph and architecture-tool references, including host compatibility and the current source license."
+        },
+        {
+          "id": "19",
+          "kind": "guidance",
+          "summary": "Added a reviewed interface-check reference and clarified that external tools must preserve Codex approval boundaries."
+        },
+        {
+          "id": "20",
+          "kind": "guidance",
+          "summary": "Refined checks for configuration failures, rebuild status and the exact approved deployment target."
+        },
+        {
+          "id": "21",
+          "kind": "guidance",
+          "summary": "Added reviewed component and interface-review references, with checks for accessibility, theming and agent permissions."
+        },
+        {
+          "id": "22",
+          "kind": "guidance",
+          "summary": "Added reviewed design references and clarified how to check framework requirements, optional renderer setup and output states."
+        },
+        {
+          "id": "23",
+          "kind": "guidance",
+          "summary": "Updated architecture-diagram guidance for source traceability, host compatibility and current licensing."
+        },
+        {
+          "id": "24",
+          "kind": "guidance",
+          "summary": "Updated guidance for CAD export formats and component-specific licenses before reusing illustration or film references."
+        },
+        {
+          "id": "25",
+          "kind": "guidance",
+          "summary": "Refined guidance for reviewing external flow execution, provider access and the evidence attached to delegated work."
+        },
+        {
+          "id": "26",
+          "kind": "guidance",
+          "summary": "Clarified how local tool inventories, account connectors and recurring personal-workspace actions should be scoped."
+        },
+        {
+          "id": "27",
+          "kind": "guidance",
+          "summary": "Refined checks for API wrappers, account connectors and local screen/input permissions before external automation."
+        },
+        {
+          "id": "28",
+          "kind": "guidance",
+          "summary": "Updated guidance for routing-release selection, key-health behavior and permission boundaries across connected steps."
+        },
+        {
+          "id": "29",
+          "kind": "guidance",
+          "summary": "Refined the distinction between valid inputs, approved targets and permission to activate or write through external tools."
+        },
+        {
+          "id": "30",
+          "kind": "guidance",
+          "summary": "Refined setup and access guidance for external analytics or specialist data workflows used alongside SQL."
+        },
+        {
+          "id": "31",
+          "kind": "guidance",
+          "summary": "Updated external analytics setup guidance and the distinction between recorded events and interpreted product metrics."
+        },
+        {
+          "id": "32",
+          "kind": "guidance",
+          "summary": "Refined guidance for separating observed funnel measures from public-market signals and external analytics setup."
+        },
+        {
+          "id": "33",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "34",
+          "kind": "guidance",
+          "summary": "Refined access checks before using external planning workflows to support a forecasting decision."
+        },
+        {
+          "id": "35",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "36",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "37",
+          "kind": "guidance",
+          "summary": "Clarified which local servers and account connectors an external operations assistant may actually use."
+        },
+        {
+          "id": "38",
+          "kind": "guidance",
+          "summary": "Refined the handoff from captured work to reviewed commitments, with separate permission checks for planning tools."
+        },
+        {
+          "id": "39",
+          "kind": "guidance",
+          "summary": "Updated guidance for checking the operating system, device and model requirements of external transcription tools."
+        },
+        {
+          "id": "40",
+          "kind": "guidance",
+          "summary": "Refined checks for external voice-model requirements, source-voice permission and device support."
+        },
+        {
+          "id": "41",
+          "kind": "guidance",
+          "summary": "Updated guidance for validating stem/session exports and external audio-device compatibility."
+        },
+        {
+          "id": "42",
+          "kind": "guidance",
+          "summary": "Updated recording and film-reference licensing notes, along with checks for optional renderer setup and output evidence."
+        },
+        {
+          "id": "43",
+          "kind": "guidance",
+          "summary": "Refined guidance for connector consent, research limits and the distinction between observed page evidence and external claims."
+        },
+        {
+          "id": "44",
+          "kind": "guidance",
+          "summary": "Updated launch guidance for current marketing references and the Sellbird license and data-home migration."
+        },
+        {
+          "id": "45",
+          "kind": "guidance",
+          "summary": "Updated campaign guidance for current marketing, film and outreach references, with their separate reuse and sending permissions."
+        },
+        {
+          "id": "46",
+          "kind": "guidance",
+          "summary": "Refined guidance for separating measured growth results from public signals and external analytics configuration."
+        },
+        {
+          "id": "47",
+          "kind": "guidance",
+          "summary": "Updated guidance for private job-search records, host-specific search tools and verifiable experience evidence."
+        },
+        {
+          "id": "48",
+          "kind": "guidance",
+          "summary": "Refined interview-research guidance for story provenance, private records and supported external search tools."
+        },
+        {
+          "id": "49",
+          "kind": "guidance",
+          "summary": "Refined guidance for showing which location sources and layers are current, selected or unavailable."
+        },
+        {
+          "id": "50",
+          "kind": "unchanged",
+          "summary": "Reviewed this week. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "51",
+          "kind": "guidance",
+          "summary": "Refined guidance for retaining source freshness and selected-layer state when interpreting spatial patterns."
+        },
+        {
+          "id": "52",
+          "kind": "guidance",
+          "summary": "Refined guidance for distinguishing verified field signals from unavailable or unconnected live feeds."
+        }
+      ]
+    }
+  ]
+}

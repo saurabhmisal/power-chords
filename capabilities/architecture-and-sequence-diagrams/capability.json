@@ -30,27 +30,27 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-06T15:41:08.721Z",
+  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
   "upstream_sources": [
     {
       "repository": "tt-a1i/archify",
-      "revision": "a4065941f12be7967436261d9934784e381d423c",
+      "revision": "e37848822238e3a61b12739185cdadd49843a620",
       "fork_repository": "saurabhmisal/archify",
       "fork_revision": "9e35d2b0b39b155553ba9fcfe0b4f2a5198dd993",
-      "license": "MIT",
-      "reference_url": "https://github.com/tt-a1i/archify/blob/a4065941f12be7967436261d9934784e381d423c/README.md",
-      "readme_sha256": "f92e849fc17a8b84d0dce093905a44c014ed099df8aee810db38af5c2ccdf978",
+      "license": "Apache-2.0",
+      "reference_url": "https://github.com/tt-a1i/archify/blob/e37848822238e3a61b12739185cdadd49843a620/README.md",
+      "readme_sha256": "b27a2b23201ee9a61a0a0220f9fa9d8f271ddeb1daefb9632a83e30d56010827",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "Graphify-Labs/graphify",
-      "revision": "16218bfc80d4ca2799734d045039f7ed1a5fa9fb",
+      "revision": "52cb28218eea0c68d80a9f4b2ae102d2fa63e267",
       "fork_repository": "saurabhmisal/graphify",
       "fork_revision": "6478eb71237c86ee5fb6a35c702835e987ca445d",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/Graphify-Labs/graphify/blob/16218bfc80d4ca2799734d045039f7ed1a5fa9fb/README.md",
-      "readme_sha256": "f6d12f50ecd8f0c873af88ea8ef84a989101919ae531dd3cf404273d288d0562",
+      "reference_url": "https://github.com/Graphify-Labs/graphify/blob/52cb28218eea0c68d80a9f4b2ae102d2fa63e267/README.md",
+      "readme_sha256": "d224c14475d2c05146ce60ee3b71677aaf9ec027cd00fa32fc684b25cd0ba1df",
       "scope": "reference_only",
       "runtime_verified": false
     }
@@ -58,6 +58,8 @@
   "source_guidance": [
     "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-    "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source."
+    "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source.",
+    "archify: Check host-specific integration support and exact workspace paths before mapping architecture. The current source declares Apache-2.0 rather than the earlier MIT catalog value. Do not copy promotional API or pricing claims into a recommendation.",
+    "graphify: Separate local graph extraction from the external cloud product, its connectors and advertised savings or verification claims. Track source coverage and inferred edges, and require actual evidence before describing a relationship or correctness check as verified."
   ]
 }
