@@ -1,7 +1,7 @@
 import { mkdir,writeFile,readFile } from 'node:fs/promises';
 import { resolve,join } from 'node:path';
 import { GitHubClient, isLicenseReviewed,safeSlug,validatePermissions } from './github.mjs';
-import { GROUPS } from './catalog.mjs';
+import { GROUPS,canonicalRepository } from './catalog.mjs';
 import judgement from '../knowledge/product-judgement/index.cjs';
 
 export class PowersEngine {
@@ -34,7 +34,7 @@ export class PowersEngine {
   async inspect(sourceId){
     const source=this.db.getSource(sourceId);
     if(!source)throw new Error('Unknown source');
-    const info=await this.github.inspect(source.repository);
+    const info=await this.github.inspect(canonicalRepository(source.repository));
     this.db.updateSource(sourceId,{kind:info.kind,status:info.status,license:info.license,head_sha:info.sha,
       default_branch:info.branch,upstream:info.upstream,inspected_at:info.inspected_at,inspection_json:JSON.stringify(info)});
     const paths=info.skillPaths;
@@ -67,8 +67,9 @@ export class PowersEngine {
     if(pkg.state!=='inspectable')throw new Error('Package must be inspected before installation');
     const source=this.db.getSource(pkg.source_id);
     if(source.head_sha!==pkg.pinned_sha)throw new Error('Pinned revision no longer matches inspected source; re-inspect');
-    const content=pkg.kind==='skill-doc'?await this.github.getFile(source.repository,pkg.pinned_sha,pkg.path):
-      await this.github.getTextFile(source.repository,pkg.pinned_sha,pkg.path);
+    const upstream=canonicalRepository(source.repository);
+    const content=pkg.kind==='skill-doc'?await this.github.getFile(upstream,pkg.pinned_sha,pkg.path):
+      await this.github.getTextFile(upstream,pkg.pinned_sha,pkg.path);
     if(pkg.kind==='skill-doc'&&!/^---\s*[\s\S]{0,5000}?---|^#\s+/m.test(content))throw new Error('Skill document missing recognizable structure');
     const rel=join(safeSlug(source.repository),pkg.pinned_sha,safeSlug(pkg.path));
     const root=resolve(this.storageDir,'installed');
