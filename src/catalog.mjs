@@ -3,7 +3,22 @@
  * Classification is advisory until source inspection. Every repo is discovered, NOT installed.
  */
 import additions from '../data/source-additions.json' with {type:'json'};
+import upstreamLock from '../data/upstreams.lock.json' with {type:'json'};
 import {sourceAllowed} from './source-policy.mjs';
+// Historical IDs are stable for existing installations; remote reads use the upstream.
+const upstreamByHistoricalId = new Map(upstreamLock.sources.map(s=>[
+  s.repository.toLowerCase(), s.upstream_repo
+]));
+const originalSource = name => {
+  const historical = `saurabhmisal/${name}`;
+  const upstream = upstreamByHistoricalId.get(historical.toLowerCase());
+  if (!upstream && !sourceAllowed(historical)) return historical;
+  if (typeof upstream !== 'string' || !/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(upstream)) {
+    throw new Error(`No validated upstream for ${name}`);
+  }
+  return upstream;
+};
+export const canonicalRepository = repository => upstreamByHistoricalId.get(repository.toLowerCase()) || repository;
 const raw = [
   // name | fork creation date | capability group | license | summary
   ['agent-skills','2026-10-08','software-engineering','MIT','Engineering skills for coding agents'],
@@ -78,8 +93,9 @@ export const GROUPS = [
 export const FORKS = [...raw,...additions.map(source=>[source.name,source.created_at.slice(0,10),source.group_id,source.license,source.description])].map(([name,created_at,group_id,license,description], index)=>({
   id: `github:saurabhmisal/${name}`,
   name, created_at, group_id, license, description,
-  url: `https://github.com/saurabhmisal/${name}`,
-  repository: `saurabhmisal/${name}`,
+  url: `https://github.com/${originalSource(name)}`,
+  repository: `saurabhmisal/${name}`, // stable historical key; never a fetch target
+  upstream_repository: originalSource(name),
   discovery_index: index + 1,
   origin: 'connected-github-metadata',
   kind: 'unverified',

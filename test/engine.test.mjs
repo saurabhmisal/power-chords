@@ -5,7 +5,7 @@ import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {PowersDB} from '../src/db.mjs';
 import {PowersEngine} from '../src/engine.mjs';
-import {FORKS,GROUPS} from '../src/catalog.mjs';
+import {FORKS,GROUPS,canonicalRepository} from '../src/catalog.mjs';
 import {GitHubClient,isSkillPath,isLicenseReviewed,validatePermissions} from '../src/github.mjs';
 
 const SHA='a'.repeat(40);
@@ -24,7 +24,7 @@ test('curated inventory has distinct source records and 12 power categories',()=
   assert.ok(FORKS.length>=52);
   assert.equal(new Set(FORKS.map(x=>x.repository)).size,FORKS.length);
   assert.equal(GROUPS.filter(g=>g.id!=='unclassified').length,12);
-  for(const f of FORKS){assert.match(f.url,/^https:\/\/github.com\/saurabhmisal\//);assert.match(f.created_at,/^\d{4}-\d{2}-\d{2}$/);assert.ok(Number.isFinite(Date.parse(f.created_at)));}
+  for(const f of FORKS){assert.equal(f.url,`https://github.com/${f.upstream_repository}`);assert.match(f.created_at,/^\d{4}-\d{2}-\d{2}$/);assert.ok(Number.isFinite(Date.parse(f.created_at)));}
 });
 test('all curated sources are imported idempotently and none is enabled by default',t=>{
   const {db,engine}=fixture(t);
@@ -94,4 +94,58 @@ test('GitHub API client restricts repository and file paths',async()=>{
   assert.equal(isSkillPath('skills/unit/SKILL.md'),true);
   assert.equal(isSkillPath('../SKILL.md'),false);
   assert.throws(()=>validatePermissions(['sudo']),/Invalid/);
+});
+
+test('legacy source IDs inspect and install directly from original upstream repositories',async t=>{
+ const {db}=fixture(t);
+ const calls=[];
+ const mock={
+  async inspect(repository){
+   calls.push(['inspect',repository]);
+   return {sha:SHA,branch:'main',license:'MIT',upstream:repository,kind:'skill-bundle',
+     status:'inspected',skillPaths:['skills/sample/SKILL.md'],truncated:false,
+     blockers:[],inspected_at:new Date().toISOString()};
+  },
+  async getFile(repository,sha,path){
+   calls.push(['getFile',repository,sha,path]);
+   return '---\\nname: sample\\ndescription: example\\n---\\n# Sample';
+  }
+ };
+ const engine=new PowersEngine({db,github:mock,userId:'alice',storageDir:join(tmpdir(),'power-chords-upstream-'+process.pid)});
+ const historical='github:saurabhmisal/graphify';
+ await engine.inspect(historical);
+ const pkg=engine.list().packages.find(p=>p.source_id===historical);
+ await engine.install(pkg.id);
+ const expected=canonicalRepository('saurabhmisal/graphify');
+ assert.notEqual(expected,'saurabhmisal/graphify');
+ assert.deepEqual(calls.map(x=>x[1]),[expected,expected]);
+});
+
+test('existing local source URLs upgrade from historical fork links on next database seed',t=>{
+ const {db}=fixture(t);
+ const item=FORKS[0];
+ db.db.prepare('UPDATE sources SET url=? WHERE id=?').run('https://github.com/'+item.repository,item.id);
+ assert.equal(db.getSource(item.id).url,'https://github.com/'+item.repository);
+ db.seed();
+ assert.equal(db.getSource(item.id).url,item.url);
+});
+
+test('GitHub inspector accepts canonical non-fork upstreams while validating identity',async()=>{
+ const requests=[];
+ const fetchImpl=async url=>{
+  requests.push(url);
+  let data;
+  if(url.endsWith('/repos/affaan-m/ECC'))
+    data={full_name:'affaan-m/ECC',fork:false,default_branch:'main',license:{spdx_id:'MIT'},size:5};
+  else if(url.includes('/branches/'))data={commit:{sha:SHA}};
+  else if(url.includes('/git/trees/'))data={tree:[{type:'blob',path:'skills/sample/SKILL.md'}],truncated:false};
+  else throw Error('unexpected path '+url);
+  return {ok:true,status:200,text:async()=>JSON.stringify(data)};
+ };
+ const info=await new GitHubClient({fetchImpl}).inspect('affaan-m/ECC');
+ assert.equal(info.sha,SHA);
+ assert.equal(info.upstream,'affaan-m/ECC');
+ assert.deepEqual(info.skillPaths,['skills/sample/SKILL.md']);
+ assert.equal(requests.length,3);
+ assert(requests.every(url=>url.includes('/repos/affaan-m/ECC')));
 });

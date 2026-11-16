@@ -51,23 +51,23 @@ export class GitHubSourceClient {
     return this.json(`https://api.github.com/repos/${repository}/releases/latest`,{allow404:true});
   }
   async snapshot(source){
-    const fork = await this.repo(source.repository);
-    if(!fork.fork||fork.full_name?.toLowerCase()!==source.repository.toLowerCase()) throw new Error(`Missing fork provenance: ${source.repository}`);
-    const upstreamRepo=fork.parent?.full_name;
-    if(!validRepo(upstreamRepo))throw new Error(`Upstream information unavailable: ${source.repository}`);
+    // Canonical upstream is pinned in the lockfile; no user fork is required.
+    const upstreamRepo=source.upstream_repo;
+    if(!validRepo(upstreamRepo)) throw new Error(`Missing canonical upstream: ${source.repository}`);
     const upstream=await this.repo(upstreamRepo);
-    const forkBranch=fork.default_branch;
+    if(upstream.full_name?.toLowerCase()!==upstreamRepo.toLowerCase()) {
+      throw new Error(`Unexpected upstream identity: ${upstreamRepo}`);
+    }
     const upstreamBranch=upstream.default_branch;
-    if(!validBranch(forkBranch)||!validBranch(upstreamBranch)) throw new Error('Invalid default branch');
-    const [forkCommit,upstreamCommit,release]=await Promise.all([
-      this.commit(source.repository,forkBranch),this.commit(upstreamRepo,upstreamBranch),this.release(upstreamRepo)
+    if(!validBranch(upstreamBranch)) throw new Error(`Invalid upstream branch: ${upstreamRepo}`);
+    const [upstreamCommit,release]=await Promise.all([
+      this.commit(upstreamRepo,upstreamBranch), this.release(upstreamRepo)
     ]);
-    if(!validSHA(forkCommit.sha)||!validSHA(upstreamCommit.sha)) throw new Error('Unpinned commit');
+    if(!validSHA(upstreamCommit.sha)) throw new Error(`Invalid upstream commit: ${upstreamRepo}`);
     return {
       ...source,
-      license:fork.license?.spdx_id||source.license||'UNKNOWN',
-      fork_sha:forkCommit.sha,
-      fork_branch:forkBranch,
+      // fork_sha and fork_branch are retained as historical provenance only.
+      license:upstream.license?.spdx_id||source.license||'UNKNOWN',
       upstream_repo:upstreamRepo,
       upstream_sha:upstreamCommit.sha,
       upstream_branch:upstreamBranch,
@@ -76,10 +76,10 @@ export class GitHubSourceClient {
   }
 }
 
-const snapshotKeys=['fork_sha','fork_branch','upstream_repo','upstream_sha','upstream_branch','upstream_release','license'];
+const snapshotKeys=['upstream_repo','upstream_sha','upstream_branch','upstream_release','license'];
 export function compareSnapshots(previous,next){
   const changes=[];
-  const first=previous.fork_sha===null&&previous.upstream_sha===null;
+  const first=previous.upstream_sha===null;
   for(const key of snapshotKeys){
     if(previous[key]===next[key])continue;
     changes.push({field:key,from:previous[key]??null,to:next[key]??null});
@@ -110,7 +110,7 @@ export function reconcile(oldLock,oldUpdates,snapshots,now=new Date().toISOStrin
   return {lock:{...oldLock,sources}, updates:{schema_version:1,changes:history}, newly};
 }
 
-export async function synchronize({client=new GitHubSourceClient(), concurrency=4, now=new Date().toISOString(),lockFile=LOCK_PATH, updatesFile=UPDATES_PATH, log=console.log}={}){
+export async function synchronize({client=new GitHubSourceClient(), concurrency=4, now=new Date().toISOString(),lockFile=LOCK_PATH, updatesFile=UPDATES_PATH, commit=false, log=console.log}={}){
   const oldLock=JSON.parse(await readFile(lockFile,'utf8'));
   const oldUpdates=JSON.parse(await readFile(updatesFile,'utf8'));
   const sources=oldLock.sources;
@@ -128,14 +128,14 @@ export async function synchronize({client=new GitHubSourceClient(), concurrency=
   }));
   if(errors.length)throw new AggregateError(errors.map(s=>new Error(s)),`Source sync aborted: ${errors.length} failures. Previous catalog preserved.`);
   const changed=reconcile(oldLock,oldUpdates,results,now);
-  if(changed.newly.length){
+  if(changed.newly.length && commit){
     await writeFile(lockFile,JSON.stringify(changed.lock,null,2)+'\n');
     await writeFile(updatesFile,JSON.stringify(changed.updates,null,2)+'\n');
   }
-  log(`Checked ${sources.length} forks; ${changed.newly.length} sources updated.`);
+  log(`Checked ${sources.length} original upstreams; ${changed.newly.length} updates ${commit ? 'applied' : 'proposed (not written)'}.`);
   return changed;
 }
 
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
-  synchronize().catch(e=>{console.error(e.message);if(e instanceof AggregateError) e.errors.forEach(x=>console.error(' - '+x.message));process.exitCode=1;});
+  synchronize({commit:process.argv.includes('--apply')}).catch(e=>{console.error(e.message);if(e instanceof AggregateError) e.errors.forEach(x=>console.error(' - '+x.message));process.exitCode=1;});
 }
