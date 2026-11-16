@@ -48,10 +48,14 @@ export class PowersDB {
     const source = this.db.prepare(`INSERT OR IGNORE INTO sources
       (id,name,repository,url,group_id,created_at,description,license,origin,kind,status)
       VALUES (?,?,?,?,?,?,?,?,?,?,?)`);
+    const refreshSourceUrl = this.db.prepare('UPDATE sources SET url=? WHERE id=? AND url<>?');
     this.db.exec('BEGIN');
     try {
       for (const x of GROUPS) group.run(x.id,x.label);
-      for (const x of FORKS) source.run(x.id,x.name,x.repository,x.url,x.group_id,x.created_at,x.description,x.license,x.origin,x.kind,x.status);
+      for (const x of FORKS) {
+        source.run(x.id,x.name,x.repository,x.url,x.group_id,x.created_at,x.description,x.license,x.origin,x.kind,x.status);
+        refreshSourceUrl.run(x.url,x.id,x.url); // migrate legacy fork links without changing IDs
+      }
       this.db.exec('COMMIT');
     } catch (error) { this.db.exec('ROLLBACK'); throw error; }
   }
