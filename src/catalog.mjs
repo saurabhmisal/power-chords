@@ -18,6 +18,7 @@ const originalSource = name => {
   }
   return upstream;
 };
+export const canonicalRepository = repository => upstreamByHistoricalId.get(repository.toLowerCase()) || repository;
 const raw = [
   // name | fork creation date | capability group | license | summary
   ['agent-skills','2026-10-08','software-engineering','MIT','Engineering skills for coding agents'],
