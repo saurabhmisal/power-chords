@@ -102,4 +102,9 @@ export async function buildLanding(destination,{hosted=false}={}){
     }
   }
   await updatePages(directory);
+  // Retain only the family theme version referenced by this build's pages.
+  const usedTheme=familyAssets['brand-theme.css'];
+  for(const name of await readdir(directory)){
+    if(/^brand-theme-[a-f0-9]{12}\.css$/.test(name)&&name!==usedTheme)await rm(join(directory,name));
+  }
 }
