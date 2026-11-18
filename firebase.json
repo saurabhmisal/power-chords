@@ -1,0 +1,52 @@
+{
+  "functions": [
+    {
+      "source": "firebase/functions",
+      "codebase": "power-chords",
+      "predeploy": [
+        "node scripts/prepare-firebase-functions.mjs"
+      ]
+    }
+  ],
+  "hosting": {
+    "target": "powerchords",
+    "public": "dist",
+    "predeploy": [
+      "node scripts/build-hosted.mjs"
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "**/*.map"
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": "same-origin"
+          },
+          {
+            "key": "Content-Security-Policy",
+            "value": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'none'"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/api/hosted",
+        "function": {
+          "functionId": "powerChordsHosted",
+          "region": "asia-south1"
+        }
+      }
+    ]
+  }
+}

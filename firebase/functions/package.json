@@ -1,0 +1,13 @@
+{
+  "name": "power-chords-firebase-hosted",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "index.mjs",
+  "engines": {
+    "node": "22"
+  },
+  "dependencies": {
+    "firebase-functions": "^7.0.0"
+  }
+}
