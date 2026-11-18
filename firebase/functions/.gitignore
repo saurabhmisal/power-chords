@@ -1,0 +1,7 @@
+api/
+src/
+knowledge/
+node_modules/
+.env
+.env.*
+*.json.key
