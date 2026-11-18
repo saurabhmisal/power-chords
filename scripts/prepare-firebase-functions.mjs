@@ -6,6 +6,7 @@ const destination = join(root, 'firebase', 'functions');
 const targets = [
   ['api/hosted.js', 'api/hosted.js'],
   ['src', 'src'],
+  ['data', 'data'],
   ['knowledge/product-judgement', 'knowledge/product-judgement']
 ];
 for (const [from, to] of targets) {
