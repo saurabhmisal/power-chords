@@ -20,19 +20,23 @@ test('landing builds include complete standalone instructions and valid capabili
     assert.match(html,/src="cover-motion-[a-f0-9]{12}\.js"/);
     assert(!/pinned upstream/i.test(html));
     assert.match(html,/src="landing-[a-f0-9]{12}\.js"/);
-    assert.equal((html.match(/class="capability-card"/g)||[]).length,capabilities.length);
+    assert.equal((html.match(/class="capability-card"/g)||[]).length,6);
+    const library=await readFile(join(destination,'library.html'),'utf8');
+    assert.equal((library.match(/class="capability-card"/g)||[]).length,capabilities.length);
+    assert.match(library,/id="pc-library-search"/);
+    assert.match(html,/href="library.html"/);
     const nav=html.match(/<nav aria-label="Main navigation">([\s\S]*?)<\/nav>/)?.[1];
     assert.ok(nav,'Main navigation must exist');
-    assert.deepEqual([...nav.matchAll(/<a\b[^>]*>([^<]+)<\/a>/g)].map(match=>match[1]),['Capabilities','How it works','Get started']);
+    assert.deepEqual([...nav.matchAll(/<a\b[^>]*>([^<]+)<\/a>/g)].map(match=>match[1]),['Workflows','How it works','Get started']);
     assert(!nav.includes('ReverseReel'),'Individual capability names must never appear in site navigation');
     for(const item of capabilities)assert(!nav.includes(item.name),`Capability ${item.name} must not appear in navigation`);
-    assert.match(html,/<h2 id="pc-reversereel-title">A workflow in action<\/h2>/);
+    assert.match(html,/<h2 id="pc-example-title">Notes into a useful brief<\/h2>/);
     assert(!/<h[1-6][^>]*>ReverseReel<\/h[1-6]>/i.test(html),'Capability-specific names belong in catalog content, not page headings');
     assert(!/52 capabilities|52 repos/i.test(html));
     assert(!html.includes('href="workroom.html"'));
     for(const item of capabilities){
-      assert(html.includes(`data-install="${item.slug}"`));
-      assert(html.includes(`href="capabilities/${item.slug}/index.html"`));
+      assert(library.includes(`data-library-install="${item.slug}"`));
+      assert(library.includes(`href="capabilities/${item.slug}/index.html"`));
       const page=await readFile(join(destination,'capabilities',item.slug,'index.html'),'utf8');
       assert(page.includes(item.name.replaceAll('&','&amp;')));
       assert(page.includes('workflow diagram'));

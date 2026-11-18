@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <script src="analytics.js" defer></script>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="color-scheme" content="dark">
+  <meta name="color-scheme" content="light">
   <meta name="description" content="Reusable instructions for your AI agent. Turn a product brief into work you can review.">
-  <meta property="og:title" content="Power Chords — Your thinking. Into action.">
+  <meta property="og:title" content="Power Chords | Lazo">
   <meta property="og:description" content="Give your AI agent a clear way to work.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://powerchords.lazo.tools/assets/power-chords-cover-clean.jpg">
@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/power-chords-favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/power-chords-favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/power-chords-apple-touch-icon.png">
-  <title>Power Chords — Your thinking. Into action.</title>
+  <title>Power Chords | Lazo</title>
   <link rel="stylesheet" href="landing.css">
   <link rel="stylesheet" href="theme.css">
   <link rel="stylesheet" href="capabilities.css">
@@ -25,51 +25,34 @@
 </head>
 
 <body id="pc-site">
+<a class="pc-skip" href="#main">Skip to content</a>
 <header class="pc-nav pc-wrap">
   <a class="pc-brand" href="#"><img class="pc-brand-icon" src="assets/power-chords-loop-pc-icon.png" width="48" height="48" alt=""><span>Power Chords</span></a>
-  <nav aria-label="Main navigation"><a href="#pc-capabilities">Capabilities</a><a href="#pc-how">How it works</a><a href="#pc-setup" data-open-setup>Get started</a></nav>
+  <nav aria-label="Main navigation"><a href="library.html">Workflows</a><a href="#pc-how">How it works</a><a href="#pc-setup" data-open-setup>Get started</a></nav>
   <a class="pc-github" href="https://github.com/saurabhmisal/power-chords" target="_blank" rel="noopener">GitHub ↗</a>
 </header>
-<main>
+<main id="main">
+  <section class="pc-intro pc-wrap" aria-labelledby="pc-title">
+    <div><p class="pc-eyebrow">POWER CHORDS / BY LAZO</p><h1 id="pc-title">Practical workflows<br>for your AI agent</h1></div>
+    <div><p class="pc-lead">Research a question. Draft a brief. Build a first version.</p><p class="pc-description">Choose a workflow, add your context and work with your agent. You review the result.</p><div class="pc-actions"><a class="pc-button pc-primary" href="#pc-capabilities">Find a workflow ↓</a><a data-analytics-cta="signup" class="pc-text-link" href="https://accounts.lazo.tools/signup?product=power-chords">Get Power Chords ↗</a></div></div>
+  </section>
   <figure class="pc-cover pc-wrap">
-    <img src="assets/power-chords-cover-clean.jpg" width="2095" height="750" alt="A product builder in a green sweater raises a rock-on salute at a sunset-lit workspace.">
+    <img src="assets/power-chords-cover-clean.jpg" width="2095" height="750" alt="A person at a sunset-lit workspace with several screens.">
     <canvas data-cover-motion width="1600" height="572" aria-hidden="true"></canvas>
     <script type="module" src="cover-motion.js"></script>
   </figure>
-  <section class="pc-intro pc-wrap" aria-labelledby="pc-title">
-    <div><p class="pc-eyebrow">OPEN SOURCE. BUILT FOR YOUR IDEAS.</p><h1 id="pc-title">Your thinking.<br><em>Into action.</em></h1></div>
-    <div><p class="pc-lead">Give your AI agent a clear way to work.</p><p class="pc-description">Reusable instructions for research, product plans and useful drafts. Bring the brief. Review what comes back.</p><div class="pc-actions"><a class="pc-button pc-primary" href="#pc-capabilities">Explore capabilities ↓</a><a data-analytics-cta="signup" class="pc-text-link" href="https://accounts.lazo.tools/signup?product=power-chords">Sign up for Power Chords ↗</a></div></div>
-  </section>
   <div class="pc-steps pc-wrap" aria-label="How it works"><p><b>01</b> Pick a capability</p><span aria-hidden="true">→</span><p><b>02</b> Add your context</p><span aria-hidden="true">→</span><p><b>03</b> Review the result</p></div>
   <section class="pc-library pc-wrap" id="pc-capabilities" aria-labelledby="pc-library-title">
-    <div class="pc-section-heading"><div><p class="pc-eyebrow">WHAT YOU CAN DO</p><h2 id="pc-library-title">What do you need to do?</h2></div><p>Pick a workflow. Bring your context.</p></div>
-    <span id="pc-sources" aria-hidden="true"></span>
-
-    <div class="pc-library-filters"><label class="pc-field">Search capabilities<input id="pc-library-search" type="search" placeholder="Try sales research, PRD, OCR, or video…"></label><label class="pc-field">Category<select id="pc-library-family" aria-label="Category"><option value="all">All categories</option>{{FAMILY_OPTIONS}}</select></label><button id="pc-library-reset" class="pc-button" type="button">Reset filters</button></div>
-    <p id="pc-library-results" class="pc-library-status" role="status">Choose a workflow.</p>
-    <div class="pc-grid">{{CAPABILITY_CARDS}}</div>
-    <p id="pc-library-empty" hidden>No capabilities match. Try another search or reset the filters.</p>
+    <div class="pc-section-heading"><div><p class="pc-eyebrow">A FEW PLACES TO START</p><h2 id="pc-library-title">What are you working on?</h2></div><a class="pc-text-link" href="library.html">View all workflows →</a></div>
+    <div class="pc-grid">{{FEATURED_CARDS}}</div>
   </section>
-  <section class="pc-library pc-wrap" id="pc-reversereel" aria-labelledby="pc-reversereel-title">
-    <p class="pc-eyebrow">COMPOSITE WORKFLOW · PART OF THE EXISTING 52-CAPABILITY LIBRARY</p>
-    <h2 id="pc-reversereel-title">A workflow in action</h2>
-    <p class="pc-lead">Turn short videos into searchable knowledge</p>
-    <p>Bring a permitted Reel, Short or local video. Keep timestamped Markdown notes and search them on your computer.</p>
-    <details><summary>Install and use ReverseReel</summary>
-      <pre>git clone https://github.com/saurabhmisal/power-chords.git
-cd power-chords
-npm run reversereel:install -- --agent codex --project ../my-project
-npm run reversereel:ingest -- --source ./reel.mp4 --transcript ./reel.srt
-npm run reversereel:search -- --query onboarding</pre>
-      <p>Use codex, claude, cursor or gemini, or pass --dest /path/to/skills for other agents. Requires Node.js 24.x and ffmpeg/ffprobe. Supply captions or install local faster-whisper. Public URLs also need yt-dlp; optional OCR needs Tesseract.</p>
-      <p>Ask your agent: “Use ReverseReel on this video and find related notes.” Local terminal or stdio MCP access is required; browser-only chats need a connected runtime.</p>
-      <p>Previously Reel → Knowledge. Existing installs, knowledge:* commands and MCP tools continue to work. Your local knowledge base stays in place.</p>
-      <a class="pc-text-link" href="https://github.com/saurabhmisal/power-chords/tree/main/workflows/reel-to-knowledge">Full guide, MCP setup and limitations ↗</a>
-    </details>
+  <section class="pc-example pc-wrap" aria-labelledby="pc-example-title">
+    <div><p class="pc-eyebrow">ONE EXAMPLE</p><h2 id="pc-example-title">Notes into a useful brief</h2></div>
+    <div class="pc-example-flow"><p><strong>You bring</strong>Meeting notes, interview findings and a question.</p><span aria-hidden="true">→</span><p><strong>Your agent drafts</strong>A problem brief with evidence, open questions and next steps.</p><span aria-hidden="true">→</span><p><strong>You decide</strong>Check the sources. Edit the draft. Choose what happens next.</p></div>
   </section>
   <section class="pc-how pc-wrap" id="pc-how" aria-labelledby="pc-how-title">
-    <p class="pc-eyebrow">HOW IT WORKS</p><h2 id="pc-how-title">Your brief. Your agent. Your call.</h2>
-    <div class="pc-how-grid"><div><span class="pc-icon">{{HOW_CONTEXT_ICON}}</span><h3>Start with your context</h3><p>Choose a workflow. Add the inputs it needs.</p></div><div><span class="pc-icon">{{HOW_WORK_ICON}}</span><h3>Work with your agent</h3><p>Use Claude Code, Codex, Cursor or Gemini CLI. Your agent supplies the model and tools.</p></div><div><span class="pc-icon">{{HOW_REVIEW_ICON}}</span><h3>Review before you act</h3><p>Check the evidence and outputs. You approve external actions.</p></div></div>
+    <p class="pc-eyebrow">HOW IT WORKS</p><h2 id="pc-how-title">Use the agent you already have</h2>
+    <div class="pc-how-grid"><div><span class="pc-icon">{{HOW_CONTEXT_ICON}}</span><h3>Start with your context</h3><p>Choose a workflow. Add the inputs it needs.</p></div><div><span class="pc-icon">{{HOW_WORK_ICON}}</span><h3>Work with your agent</h3><p>Works with Claude Code, Codex, Cursor and Gemini CLI. Your agent provides the model and tools.</p></div><div><span class="pc-icon">{{HOW_REVIEW_ICON}}</span><h3>Review before you act</h3><p>Check the evidence and outputs. You approve external actions.</p></div></div>
   </section>
   <details class="pc-setup pc-wrap" id="pc-setup">
     <summary class="cursor-interaction"><span><strong>Use it with your agent.</strong><small>Claude Code · Codex · Cursor · Gemini CLI · Markdown</small></span><span class="pc-sign" aria-hidden="true">+</span></summary>
@@ -82,7 +65,7 @@ cd power-chords
 node scripts/capabilities-cli.mjs install prd-and-specification-writing --agent claude --project ../my-project</pre><a id="pc-download" class="pc-text-link" href="downloads/prd-and-specification-writing.md" download>Download Markdown ↓</a></div>
       </div>
       <p class="pc-note">Prefer a dedicated workspace? <a class="pc-text-link" href="{{WORKROOM_URL}}">{{WORKROOM_LABEL}} ↗</a></p>
-      <p class="pc-note">Requires Node.js 24.x. Replace ../my-project with your project folder. Your agent supplies the model and tools. Specialized execution may need adapters. <a class="pc-text-link" href="https://github.com/saurabhmisal/power-chords/blob/main/docs/AGENT_COMPATIBILITY.md" target="_blank" rel="noopener">Compatibility details ↗</a></p>
+      <p class="pc-note">Free software. Your AI provider may charge separately. Requires Node.js 24.x. Replace ../my-project with your project folder. Your agent supplies the model and tools. Specialized execution may need adapters. <a class="pc-text-link" href="https://github.com/saurabhmisal/power-chords/blob/main/docs/AGENT_COMPATIBILITY.md" target="_blank" rel="noopener">Compatibility details ↗</a></p>
     </div>
   </details>
 </main>

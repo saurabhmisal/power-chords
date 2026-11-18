@@ -6,7 +6,7 @@ import {createHash} from 'node:crypto';
 
 const root=resolve(import.meta.dirname,'..');
 const escape=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-const featured=['customer-problem-discovery','prd-and-specification-writing','opportunity-sizing-and-prioritization','hypothesis-and-experiment-design','api-design-and-integration-planning','launch-and-channel-planning'];
+const featured=['customer-problem-discovery','prd-and-specification-writing','rapid-application-prototyping','sql-and-structured-data-analysis','campaigns-and-content-production','launch-and-channel-planning'];
 const featuredIcons=['search','document','layers','target','plug','rocket'];
 
 export async function buildLanding(destination,{hosted=false}={}){
@@ -27,6 +27,7 @@ export async function buildLanding(destination,{hosted=false}={}){
     return `<article class="capability-card" data-family="${escape(item.family)}" data-keywords="${escape(item.function_name+' '+item.inputs.join(' ')+' '+item.outputs.join(' '))}"><span class="pc-icon">${icon(index>=0?featuredIcons[index]:familyIcons[item.family]||'grid')}</span><p class="pc-core">${escape(item.family)}</p><h3>${escape(item.name)}</h3><p>${escape(item.outcome)}.</p><span class="pc-badge ${item.implementation==='adapter_required'?'pc-badge-tool':''}">${statusLabel(item)}</span><div class="pc-card-actions"><a href="capabilities/${item.slug}/index.html" aria-label="Explore ${escape(item.name)}">See workflow →</a><a href="workspace.html?capability=${escape(item.slug)}" aria-label="Run ${escape(item.name)}">Run with Codex ↗</a><a class="pc-portable-link" href="#pc-setup" data-install="${escape(item.slug)}" aria-label="Install ${escape(item.name)}">Agent setup</a></div></article>`;
   }
   const replacements={
+    FEATURED_CARDS:featured.map(slug=>card(capabilities.find(item=>item.slug===slug))).join('\n'),
     CAPABILITY_CARDS:[...featured.map(slug=>capabilities.find(item=>item.slug===slug)),...capabilities.filter(item=>!featured.includes(item.slug))].map(card).join('\n'),
     FAMILY_OPTIONS:[...new Set(capabilities.map(item=>item.family))].map(family=>`<option value="${escape(family)}">${escape(family)}</option>`).join(''),
     HOW_CONTEXT_ICON:icon('document'),HOW_WORK_ICON:icon('branch'),HOW_REVIEW_ICON:icon('check'),
@@ -46,6 +47,15 @@ export async function buildLanding(destination,{hosted=false}={}){
   let html=template.replace(/\{\{([A-Z_]+)\}\}/g,(_,key)=>replacements[key]).replace('src="landing.js"',`src="${scriptName}"`).replace('src="cover-motion.js"',`src="${coverName}"`);
   for(const [filename,versioned] of Object.entries(styles))html=html.replace(`href="${filename}"`,`href="${versioned}"`);
   await writeFile(join(directory,'index.html'),html);
+  const libraryTemplate=await readFile(join(root,'landing/library.html'),'utf8');
+  let library=html.replace(/<main id="main">[\s\S]*?<\/main>/, '<main id="main">'+libraryTemplate+'<a class="pc-button pc-wrap" href="index.html#pc-setup">Agent setup →</a></main>')
+    .replace('<title>Power Chords | Lazo</title>','<title>Workflows | Power Chords</title>')
+    .replace('rel="canonical" href="https://powerchords.lazo.tools/"','rel="canonical" href="https://powerchords.lazo.tools/library.html"');
+  library=library.replace(/\{\{([A-Z_]+)\}\}/g,(_,key)=>replacements[key]);
+  library=library.replaceAll('href="#pc-setup"','href="index.html#pc-setup"').replaceAll('data-install=','data-library-install=');
+  library=library.replaceAll('href="#pc-how"','href="index.html#pc-how"').replace('class="pc-brand" href="#"','class="pc-brand" href="index.html"');
+  library=library.replace(/href="index.html#pc-setup" data-library-install="([^"]+)"/g,(_,slug)=>`href="index.html?capability=${slug}#pc-setup" data-library-install="${slug}"`);
+  await writeFile(join(directory,'library.html'),library);
   for(const filename of ['brand-theme.css','brand-type.css','landing.css','theme.css','capabilities.css','landing.js','analytics.js'])await copyFile(join(root,'landing',filename),join(directory,filename));
   let workspace=await readFile(join(root,'landing/workspace.html'),'utf8');
   const workspaceAssets={};
