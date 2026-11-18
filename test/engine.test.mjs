@@ -7,6 +7,7 @@ import {PowersDB} from '../src/db.mjs';
 import {PowersEngine} from '../src/engine.mjs';
 import {FORKS,GROUPS} from '../src/catalog.mjs';
 import {GitHubClient,isSkillPath,isLicenseReviewed,validatePermissions} from '../src/github.mjs';
+import {publicOriginalFor} from '../src/upstream-references.mjs';
 
 const SHA='a'.repeat(40);
 function mockGithub({skills=['skills/graph/SKILL.md'],license='Apache-2.0'}={}){
@@ -24,7 +25,7 @@ test('curated inventory has distinct source records and 12 power categories',()=
   assert.ok(FORKS.length>=52);
   assert.equal(new Set(FORKS.map(x=>x.repository)).size,FORKS.length);
   assert.equal(GROUPS.filter(g=>g.id!=='unclassified').length,12);
-  for(const f of FORKS){assert.match(f.url,/^https:\/\/github.com\/saurabhmisal\//);assert.match(f.created_at,/^\d{4}-\d{2}-\d{2}$/);assert.ok(Number.isFinite(Date.parse(f.created_at)));}
+  for(const f of FORKS){assert.equal(f.url,`https://github.com/${publicOriginalFor(f.repository)}`);assert.match(f.created_at,/^\d{4}-\d{2}-\d{2}$/);assert.ok(Number.isFinite(Date.parse(f.created_at)));}
 });
 test('all curated sources are imported idempotently and none is enabled by default',t=>{
   const {db,engine}=fixture(t);

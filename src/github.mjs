@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import { publicOriginalFor, isReviewedOriginal } from './upstream-references.mjs';
 
 const APPROVED_LICENSES = new Set(['MIT','APACHE-2.0','CC0-1.0','BSD-2-CLAUSE','BSD-3-CLAUSE','ISC']);
 const SKILL_PATH = /(^|\/)SKILL\.md$/i;
@@ -23,11 +24,12 @@ export class GitHubClient {
     return JSON.parse(body);
   }
   async inspect(repository){
-    const [owner,repo]=repository.split('/');
+    const publicRepo = publicOriginalFor(repository);
+    const [owner,repo]=publicRepo.split('/');
     if(!owner||!repo||!checkPart(owner)||!checkPart(repo))throw new Error('Invalid repository');
     const base=`/repos/${owner}/${repo}`;
     const metadata=await this.api(base);
-    if(!metadata.fork)throw new Error('Source is not a fork');
+    if(!metadata.fork && !isReviewedOriginal(repository))throw new Error('Source is not a fork');
     const branch=metadata.default_branch||'main';
     const branchInfo=await this.api(`${base}/branches/${encodeURIComponent(branch)}`);
     const sha=branchInfo.commit?.sha;
@@ -38,7 +40,7 @@ export class GitHubClient {
     const license=metadata.license?.spdx_id||'UNKNOWN';
     const kind=skillPaths.length>0?'skill-bundle':paths.some(x=>/(^|\/)Dockerfile$|package\.json$|pyproject\.toml$|Cargo\.toml$/i.test(x))?'requires-adapter':'reference';
     return {
-      sha,branch,license,upstream:metadata.parent?.full_name||null,
+      sha,branch,license,upstream:metadata.parent?.full_name|| (publicRepo !== repository ? publicRepo : null),
       kind, status:tree.truncated?'needs_review':'inspected',
       skillPaths:skillPaths.slice(0,250),
       referencePaths:kind==='reference' ? paths.filter(p=>/^(README|INDEX)\.md$/i.test(p)).slice(0,2) : [],
@@ -55,7 +57,7 @@ export class GitHubClient {
   }
   async getTextFile(repository,sha,path){
     if(!/^[0-9a-f]{40}$/i.test(sha)||!/^[-\w.]+(?:\/[-\w.]+)*\.md$/i.test(path)||path.split('/').some(x=>x==='..'))throw new Error('Unsupported file request');
-    const [owner,repo]=repository.split('/');
+    const [owner,repo]=publicOriginalFor(repository).split('/');
     if(!checkPart(owner)||!checkPart(repo))throw new Error('Invalid repository');
     const encodedPath=path.split('/').map(encodeURIComponent).join('/');
     const data=await this.api(`/repos/${owner}/${repo}/contents/${encodedPath}?ref=${sha}`);

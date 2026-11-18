@@ -45,13 +45,17 @@ export class PowersDB {
   }
   seed() {
     const group = this.db.prepare('INSERT OR IGNORE INTO groups (id,label) VALUES (?,?)');
+    const reviseUrl = this.db.prepare(`UPDATE sources SET url=? WHERE id=? AND url=? AND origin='connected-github-metadata'`);
     const source = this.db.prepare(`INSERT OR IGNORE INTO sources
       (id,name,repository,url,group_id,created_at,description,license,origin,kind,status)
       VALUES (?,?,?,?,?,?,?,?,?,?,?)`);
     this.db.exec('BEGIN');
     try {
       for (const x of GROUPS) group.run(x.id,x.label);
-      for (const x of FORKS) source.run(x.id,x.name,x.repository,x.url,x.group_id,x.created_at,x.description,x.license,x.origin,x.kind,x.status);
+      for (const x of FORKS) {
+        source.run(x.id,x.name,x.repository,x.url,x.group_id,x.created_at,x.description,x.license,x.origin,x.kind,x.status);
+        reviseUrl.run(x.url, x.id, `https://github.com/${x.repository}`);
+      }
       this.db.exec('COMMIT');
     } catch (error) { this.db.exec('ROLLBACK'); throw error; }
   }

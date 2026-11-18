@@ -4,6 +4,7 @@
  */
 import additions from '../data/source-additions.json' with {type:'json'};
 import {sourceAllowed} from './source-policy.mjs';
+import {publicOriginalFor} from './upstream-references.mjs';
 const raw = [
   // name | fork creation date | capability group | license | summary
   ['agent-skills','2026-10-08','software-engineering','MIT','Engineering skills for coding agents'],
@@ -78,7 +79,7 @@ export const GROUPS = [
 export const FORKS = [...raw,...additions.map(source=>[source.name,source.created_at.slice(0,10),source.group_id,source.license,source.description])].map(([name,created_at,group_id,license,description], index)=>({
   id: `github:saurabhmisal/${name}`,
   name, created_at, group_id, license, description,
-  url: `https://github.com/saurabhmisal/${name}`,
+  url: `https://github.com/${publicOriginalFor(`saurabhmisal/${name}`)}`,
   repository: `saurabhmisal/${name}`,
   discovery_index: index + 1,
   origin: 'connected-github-metadata',
