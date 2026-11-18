@@ -50,7 +50,7 @@ test('GitHub inspection and source reads work using public originals', async () 
   assert.equal(result.upstream, 'garrytan/gstack');
   assert.deepEqual(result.skillPaths,['SKILL.md']);
   assert.equal(await client.getFile('saurabhmisal/gstack',commit,'SKILL.md'),'# Test');
-  assert.ok(seen.every(url => url.includes('/repos/garrytan/gstack/')));
+  assert.ok(seen.every(url => url.startsWith('https://api.github.com/repos/garrytan/gstack')));
   assert.ok(seen.every(url => !url.includes('/saurabhmisal/gstack')));
 });
 
