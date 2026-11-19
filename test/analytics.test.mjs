@@ -11,13 +11,12 @@ function browser(url,{navigator={},cookie='',denied=false}={}){
  const flatten=node=>[node,...node.children.flatMap(flatten)];
  return {window,document,scripts,requests,storage,run:()=>runInNewContext(script,{window,document,URL}),button:label=>flatten(document.body).find(n=>n.tag==='button'&&n.textContent===label)};
 }
-test('public counts use fixed anonymous payloads and a quiet footer opt-out',()=>{
+test('public counts use fixed anonymous payloads without an analytics footer',()=>{
  const page=browser('https://powerchords.lazo.tools/capabilities/customer-problem-discovery/?email=secret#private');page.run();
  assert.equal(page.scripts.length,0);assert.equal(page.document.cookie,'');assert.equal(page.window.dataLayer,undefined);assert.equal(page.requests.length,1);
  assert.deepEqual(page.requests[0].body,{page:'https://powerchords.lazo.tools/capabilities/customer-problem-discovery/',event:'page_view'});
  assert.equal(page.requests[0].credentials,'omit');assert.equal(page.requests[0].referrerPolicy,'no-referrer');assert.doesNotMatch(JSON.stringify(page.requests),/secret|private|email=|client_id|session_id/);
- assert(page.button('Allow analytics'));page.button('Decline analytics').handlers.click();assert.equal(page.requests.length,1);assert.match(page.document.cookie,/lazo_analytics_optout=true/);
- assert(page.button('Allow analytics'));assert.equal(page.requests.length,1);
+ assert.equal(page.button('Allow analytics'),undefined);assert.equal(page.button('Decline analytics'),undefined);assert.equal(page.document.body.children.length,0);
 });
 test('local, preview, fork and non-HTTPS pages never collect',()=>{
  for(const url of ['http://localhost:3000/','file:///tmp/index.html','https://preview.vercel.app/','https://saurabhmisal.github.io/power-chords/','http://powerchords.lazo.tools/']){
