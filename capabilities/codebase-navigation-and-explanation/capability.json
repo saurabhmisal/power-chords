@@ -31,49 +31,49 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
+  "source_reviewed_at": "2026-11-21T02:42:03.908069+00:00",
   "upstream_sources": [
     {
       "repository": "Graphify-Labs/graphify",
-      "revision": "52cb28218eea0c68d80a9f4b2ae102d2fa63e267",
+      "revision": "b582ad401aaef4378935ec6620e3b165ae8e03c1",
       "fork_repository": "saurabhmisal/graphify",
       "fork_revision": "6478eb71237c86ee5fb6a35c702835e987ca445d",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/Graphify-Labs/graphify/blob/52cb28218eea0c68d80a9f4b2ae102d2fa63e267/README.md",
-      "readme_sha256": "d224c14475d2c05146ce60ee3b71677aaf9ec027cd00fa32fc684b25cd0ba1df",
+      "reference_url": "https://github.com/Graphify-Labs/graphify/blob/b582ad401aaef4378935ec6620e3b165ae8e03c1/README.md",
+      "readme_sha256": "4b6398089d672018a8b9cadc856a83c28f67b09e5612392e232ef26c3f13d978",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "Egonex-AI/Understand-Anything",
-      "revision": "5cc4aad9b8b43596dfedaee00755a7223825fe9b",
+      "revision": "bb70fdb0489f8839ce55bf99dae0125ea067f712",
       "fork_repository": "saurabhmisal/Understand-Anything",
       "fork_revision": "f2d0164f72fe678805c34245a6df36acededfebd",
       "license": "MIT",
-      "reference_url": "https://github.com/Egonex-AI/Understand-Anything/blob/5cc4aad9b8b43596dfedaee00755a7223825fe9b/README.md",
+      "reference_url": "https://github.com/Egonex-AI/Understand-Anything/blob/bb70fdb0489f8839ce55bf99dae0125ea067f712/README.md",
       "readme_sha256": "0df07ff4dd191bbc1a50d86daa28f4e190c44aed725ef6d5999634fdfa632952",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "morluto/rea",
-      "revision": "5815178a8d581fa81a9422cdfb9f86dd5cb913d7",
+      "revision": "553ea84eb67303fc210041af5047fc94540c8bd9",
       "fork_repository": "saurabhmisal/rea",
       "fork_revision": "5a67c7fc540c494371de76dcdf353923656993d3",
       "license": "MIT",
-      "reference_url": "https://github.com/morluto/rea/blob/5815178a8d581fa81a9422cdfb9f86dd5cb913d7/README.md",
-      "readme_sha256": "c69fd9ddafdd824cc0626cab47edf491018a7b3e175c516abd35e83b045c687a",
+      "reference_url": "https://github.com/morluto/rea/blob/553ea84eb67303fc210041af5047fc94540c8bd9/README.md",
+      "readme_sha256": "c128de7632f81fb19501f420fd25b6755f69247d1351a7b60f26fd5eccfa08aa",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "EveryInc/compound-engineering-plugin",
-      "revision": "ee46dde75a40e297bd8eac4055a410a771d3ac1d",
+      "revision": "58d1a83d9207c96c9fb4934589b8b5967849dfdb",
       "fork_repository": "saurabhmisal/compound-engineering-plugin",
       "fork_revision": "738067a599c68f1f0f4a32273fa9d7d2476f0715",
       "license": "MIT",
-      "reference_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/ee46dde75a40e297bd8eac4055a410a771d3ac1d/README.md",
-      "readme_sha256": "a5683d9834606e8462e6d2f9f09db26fca8b1d6389457ed797c0eae97d93df95",
+      "reference_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/58d1a83d9207c96c9fb4934589b8b5967849dfdb/README.md",
+      "readme_sha256": "b178000a6a17446e7a7a94ce0b76f59db42cd9d602abc379edc3986a8dffdc41",
       "scope": "reference_only",
       "runtime_verified": false
     }
@@ -84,7 +84,7 @@
     "Distinguish extracted relationships from inferred graph edges; graph traversal is not vector similarity. Record the parsing or model-backed ingestion path used for each source.",
     "compound-engineering-plugin: Select planning, implementation, review and knowledge-capture steps that match the task. Retain evidence and decisions for later work. Add reviewer roles for material risks and report only reviews actually performed. Host plugins require separate installation review.",
     "graphify: Separate local graph extraction from the external cloud product, its connectors and advertised savings or verification claims. Track source coverage and inferred edges, and require actual evidence before describing a relationship or correctness check as verified.",
-    "Understand-Anything: Preserve links from code relationships to their original files and distinguish extracted structure from inferred explanations. Verify the host can perform the required parsing or analysis before claiming an interactive graph was built.",
+    "Understand-Anything: Preserve links from code relationships to their original files and distinguish extracted structure from inferred explanations. Verify the host can perform the required parsing or analysis before claiming an interactive graph was built. When comparing code graphs, distinguish same-named functions by their owning container and check overload signatures against the matching owner before calling a function new, changed or removed.",
     "rea: Inspect the supported analysis contracts and environment before using an external reverse-engineering tool. Keep source-map and native/desktop investigation output bounded, and preserve links to the artifacts actually inspected."
   ]
 }

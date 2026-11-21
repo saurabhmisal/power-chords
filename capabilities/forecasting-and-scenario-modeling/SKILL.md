@@ -41,10 +41,10 @@ Read [README.md](README.md) for complete instructions, compatibility and a revie
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-21T02:42:03.908069+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
 - [666ghj/MiroFish at 7657031ac011](https://github.com/666ghj/MiroFish/blob/7657031ac01184afe2cb220f5ee3545573b5e843/README.md) — catalog license: AGPL-3.0; reference only, adapter execution not verified.
-- [anthropics/knowledge-work-plugins at e91a134584eb](https://github.com/anthropics/knowledge-work-plugins/blob/e91a134584eb798bac7fb0379358006a2b63b965/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
+- [anthropics/knowledge-work-plugins at 0e0fcacddcc8](https://github.com/anthropics/knowledge-work-plugins/blob/0e0fcacddcc892eb92a1b7873ff9d68159c47571/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 - [nateherkai/roast-room at e40f40652d56](https://github.com/nateherkai/roast-room/blob/e40f40652d5690c4d9f928c4794c673a99f2cd0e/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance

@@ -30,7 +30,7 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
+  "source_reviewed_at": "2026-11-21T02:42:03.908069+00:00",
   "upstream_sources": [
     {
       "repository": "Bennettxai/FounderOS",
@@ -56,11 +56,11 @@
     },
     {
       "repository": "spacedriveapp/spacedrive",
-      "revision": "3e41e4a2c562c755580561f36058e62784f4ff06",
+      "revision": "a7655f2977807b8de06175bcbb4002e693e2bff9",
       "fork_repository": "saurabhmisal/spacedrive",
       "fork_revision": "4d41a379f612e23ac43a66ffd67df52ca77f57d4",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/spacedriveapp/spacedrive/blob/3e41e4a2c562c755580561f36058e62784f4ff06/README.md",
+      "reference_url": "https://github.com/spacedriveapp/spacedrive/blob/a7655f2977807b8de06175bcbb4002e693e2bff9/README.md",
       "readme_sha256": "3d16668fe486267af75f1993281e6f6bff177bcd62834c398506adc9b3769af9",
       "scope": "reference_only",
       "runtime_verified": false

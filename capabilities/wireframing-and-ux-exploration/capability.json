@@ -30,60 +30,60 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
+  "source_reviewed_at": "2026-11-21T02:42:03.908069+00:00",
   "upstream_sources": [
     {
       "repository": "garrytan/gstack",
-      "revision": "4bee369d4a417fb82c6d43c0b79351428305ef10",
+      "revision": "41729a023ecf4c8c41d95ad69c666f2fd619c8fb",
       "fork_repository": "saurabhmisal/gstack",
       "fork_revision": "c7edf46bcf6e8d1ccd2f58ffb0800a4e8119e805",
       "license": "MIT",
-      "reference_url": "https://github.com/garrytan/gstack/blob/4bee369d4a417fb82c6d43c0b79351428305ef10/README.md",
-      "readme_sha256": "78dbf4c615841ebe990e6b4d12a796b0c5c913014f70dd764f85f9a343af94ff",
+      "reference_url": "https://github.com/garrytan/gstack/blob/41729a023ecf4c8c41d95ad69c666f2fd619c8fb/README.md",
+      "readme_sha256": "45cd1a83a794b59c22da426aef6684e3a9bfecb86ae9f3ad096dbe5df00382ac",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "addyosmani/agent-skills",
-      "revision": "301b02b12bff98e4688e6984af6556802322bbde",
+      "revision": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
       "fork_repository": "saurabhmisal/agent-skills",
       "fork_revision": "1401c8b8030e023baeebb31781a6653fe8e93026",
       "license": "MIT",
-      "reference_url": "https://github.com/addyosmani/agent-skills/blob/301b02b12bff98e4688e6984af6556802322bbde/README.md",
-      "readme_sha256": "b74ab722eeee706ff1c5c3ee55f5f2328368ec28c6368900bc80b857b5bc6b72",
+      "reference_url": "https://github.com/addyosmani/agent-skills/blob/8c99fa36d90068c82d547f7c12a9d67a3e95f4ee/README.md",
+      "readme_sha256": "fc83ae2792770a3236918ee9ce42acf578411b61597b6918f726c901d3147ad0",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "KonstantinKai/reelkit",
-      "revision": "27fb5d7bea69d63bc5fa572c7f5a0f26127d7be7",
+      "revision": "f273e1228e2de985af38939a25b957684503c5e3",
       "fork_repository": "saurabhmisal/reelkit",
       "fork_revision": "0a9829aa4ad2eccaa006573085587b2c33f8afe3",
       "license": "MIT",
-      "reference_url": "https://github.com/KonstantinKai/reelkit/blob/27fb5d7bea69d63bc5fa572c7f5a0f26127d7be7/README.md",
+      "reference_url": "https://github.com/KonstantinKai/reelkit/blob/f273e1228e2de985af38939a25b957684503c5e3/README.md",
       "readme_sha256": "9aee33e462ce4b05170f1888a8b927a5a543368f0d0bebe5ebbae8b2a1cb37f3",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "meta/astryx",
-      "revision": "7b3154197a9a9fca33d4aab859a6b35989d0e9cc",
+      "revision": "51d94100f703b70b46578b6ad6a5778831cc8f96",
       "fork_repository": "saurabhmisal/astryx",
       "fork_revision": "a0f2a2da8838cbff64eefb7abdace2f9d84544a9",
       "license": "MIT",
-      "reference_url": "https://github.com/meta/astryx/blob/7b3154197a9a9fca33d4aab859a6b35989d0e9cc/README.md",
-      "readme_sha256": "a8d4bd74d79a45ff1b87a54e15124e0ee9bb8fc1036244caf44f8138e2faf742",
+      "reference_url": "https://github.com/meta/astryx/blob/51d94100f703b70b46578b6ad6a5778831cc8f96/README.md",
+      "readme_sha256": "95f11eaf63efb1211425b66b23c7c54f35d04665d2b3eea111478fb5c6b84691",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "pbakaus/impeccable",
-      "revision": "acb4cfe14470b1fdf51e855431af618d936b7db8",
+      "revision": "b49177d32788f2dc585c42831d845dacf1ebed2c",
       "fork_repository": "saurabhmisal/impeccable",
       "fork_revision": "b4bff1626c344067788c2679f048a20057c7cc5a",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/pbakaus/impeccable/blob/acb4cfe14470b1fdf51e855431af618d936b7db8/README.md",
-      "readme_sha256": "4a033dceedd19e7edf86b28250fc65c9c52115f18faaea791c327da2681237ab",
+      "reference_url": "https://github.com/pbakaus/impeccable/blob/b49177d32788f2dc585c42831d845dacf1ebed2c/README.md",
+      "readme_sha256": "24ae9abcfbf91338ea6ae6b8ba9e3686e097f7638f99acabb7f7fa803a9c0a04",
       "scope": "reference_only",
       "runtime_verified": false
     }
@@ -91,10 +91,10 @@
   "source_guidance": [
     "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-    "reelkit: Touch-first slider library reference; accessibility and input behavior need integration tests.",
+    "reelkit: Touch-first slider reference. Check core, framework binding and overlay requirements separately. Test keyboard, touch, accessibility, input behavior and responsive states in the rendered target rather than assuming framework parity.",
     "astryx: For a requested React interface, check React 19 compatibility, the scoped @astryxdesign/cli package and component documentation before using components or templates. Verify theming, keyboard interaction, rendered states and template output. The isolated HTML preview does not install React or Astryx.",
     "impeccable: Scope critique, accessibility and deterministic interface checks to a named surface. Verify proposed fixes in the rendered result. Installing hooks or downloading its engine requires separate review. Do not invoke the live-copy fallback that disables approvals. Preserve Codex approval and isolation.",
     "gstack: Keep edit, test and review evidence attached to the change that produced it. Review the selected update channel and host permissions before external installation. A source workflow or claimed CI result is not evidence that the current Power Chords output was tested.",
-    "reelkit: Count core, framework binding and overlay requirements separately before selecting an external UI interaction component. Check keyboard, touch, accessibility and responsive behavior in the rendered target rather than assuming framework parity."
+    "agent-skills: Use the project’s own verification tools for interface work. Pair automated accessibility findings with keyboard, focus, reduced-motion and screen-reader checks, and do not report conformance from an automated scan alone."
   ]
 }

@@ -40,7 +40,7 @@
       "title": "Launch Readiness Plan"
     }
   ],
-  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
+  "source_reviewed_at": "2026-11-21T02:42:03.908069+00:00",
   "upstream_sources": [
     {
       "repository": "adewaskar/jarvis",
@@ -55,33 +55,33 @@
     },
     {
       "repository": "Lethe044/hermes-life-os",
-      "revision": "4c247650492951d3537ce0264e67d4f5ec3e17fc",
+      "revision": "d344941e1af033dbef34da63e92ceab0fc47b7f0",
       "fork_repository": "saurabhmisal/hermes-life-os",
       "fork_revision": "1ca98479c787086cb8f6a9d62606ee988b7b8e37",
       "license": "MIT",
-      "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/4c247650492951d3537ce0264e67d4f5ec3e17fc/README.md",
-      "readme_sha256": "25c08f12ef62c3652347a2dc3b04e3daec54d57a8e1311d38d29a0a64389e3a9",
+      "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/d344941e1af033dbef34da63e92ceab0fc47b7f0/README.md",
+      "readme_sha256": "7fc99fa4a8db8f71bf49488cebe6887e45e9c9da12a558418ec9269cbbee7973",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "langflow-ai/langflow",
-      "revision": "260cbf347cc5563cc48c79094c175ca31532ea2b",
+      "revision": "21381e5b2964fb4c714dc91fcd5187d4cfc2a67f",
       "fork_repository": "saurabhmisal/langflow",
       "fork_revision": "504c02fc47e76087b82b0e7cbe4186e9cdd916d4",
       "license": "MIT",
-      "reference_url": "https://github.com/langflow-ai/langflow/blob/260cbf347cc5563cc48c79094c175ca31532ea2b/README.md",
+      "reference_url": "https://github.com/langflow-ai/langflow/blob/21381e5b2964fb4c714dc91fcd5187d4cfc2a67f/README.md",
       "readme_sha256": "0c91b63e58aeac3846fad7d1e6ec7729fc23975fdb0d59def51e97627fdb5e36",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "superplanehq/superplane",
-      "revision": "2ee58506a863edcdba6120168383994e81fc8075",
+      "revision": "e6deca313523335c4fdc7089a591a918b91c1414",
       "fork_repository": "saurabhmisal/superplane",
       "fork_revision": "8b5e567bf31ca6d449a39e725d5955c09d09c20f",
       "license": "NOASSERTION",
-      "reference_url": "https://github.com/superplanehq/superplane/blob/2ee58506a863edcdba6120168383994e81fc8075/README.md",
+      "reference_url": "https://github.com/superplanehq/superplane/blob/e6deca313523335c4fdc7089a591a918b91c1414/README.md",
       "readme_sha256": "939ff8964b14de9f695c59a8f188a096981e4543c66d2f74a6e46b119efabdba",
       "scope": "reference_only",
       "runtime_verified": false
@@ -91,10 +91,9 @@
     "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions.",
-    "superplane: Engineering orchestration candidate; service credentials, production writes and license need review.",
+    "superplane: Review repository/workspace boundaries, service credentials, provider configuration, licensing and failed-connection recovery before external orchestration. A retry or newly available component does not authorize a production write.",
     "jarvis: Inventory the exact local MCP servers and account connectors before an assistant workflow. Keep cloud account connectors out unless the user separately authorizes them. A provider session does not imply access to all configured services.",
-    "hermes-life-os: Separate captured inbox items, projects, waiting-for commitments and review steps. Validate current tool schemas before using an external personal workspace. Financial and calendar operations retain their own access and approval boundaries.",
-    "langflow: Treat externally defined flows and code nodes as untrusted until their execution scope is reviewed. Keep provider credentials scoped to the chosen tool and record actual flow outputs rather than reporting a diagram as an executed pipeline.",
-    "superplane: Review repository/workspace boundaries, provider configuration and failed-connection recovery before external orchestration. A retry or newly available component is not approval for a production write."
+    "hermes-life-os: Separate captured inbox items, projects, waiting-for commitments and review steps. Validate current tool schemas before using an external personal workspace. Financial and calendar operations retain their own access and approval boundaries. Separate estimated task time from logged actual time when discussing capacity. State the planning window, available time and missing estimates, and treat personal before/after experiments as observations rather than causal proof. External time budgets and alerts need separate configuration approval.",
+    "langflow: Treat externally defined flows and code nodes as untrusted until their execution scope is reviewed. Keep provider credentials scoped to the chosen tool and record actual flow outputs rather than reporting a diagram as an executed pipeline."
   ]
 }

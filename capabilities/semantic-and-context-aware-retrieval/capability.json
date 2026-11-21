@@ -31,16 +31,16 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
+  "source_reviewed_at": "2026-11-21T02:42:03.908069+00:00",
   "upstream_sources": [
     {
       "repository": "Graphify-Labs/graphify",
-      "revision": "52cb28218eea0c68d80a9f4b2ae102d2fa63e267",
+      "revision": "b582ad401aaef4378935ec6620e3b165ae8e03c1",
       "fork_repository": "saurabhmisal/graphify",
       "fork_revision": "6478eb71237c86ee5fb6a35c702835e987ca445d",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/Graphify-Labs/graphify/blob/52cb28218eea0c68d80a9f4b2ae102d2fa63e267/README.md",
-      "readme_sha256": "d224c14475d2c05146ce60ee3b71677aaf9ec027cd00fa32fc684b25cd0ba1df",
+      "reference_url": "https://github.com/Graphify-Labs/graphify/blob/b582ad401aaef4378935ec6620e3b165ae8e03c1/README.md",
+      "readme_sha256": "4b6398089d672018a8b9cadc856a83c28f67b09e5612392e232ef26c3f13d978",
       "scope": "reference_only",
       "runtime_verified": false
     },
@@ -57,12 +57,12 @@
     },
     {
       "repository": "Lethe044/hermes-life-os",
-      "revision": "4c247650492951d3537ce0264e67d4f5ec3e17fc",
+      "revision": "d344941e1af033dbef34da63e92ceab0fc47b7f0",
       "fork_repository": "saurabhmisal/hermes-life-os",
       "fork_revision": "1ca98479c787086cb8f6a9d62606ee988b7b8e37",
       "license": "MIT",
-      "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/4c247650492951d3537ce0264e67d4f5ec3e17fc/README.md",
-      "readme_sha256": "25c08f12ef62c3652347a2dc3b04e3daec54d57a8e1311d38d29a0a64389e3a9",
+      "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/d344941e1af033dbef34da63e92ceab0fc47b7f0/README.md",
+      "readme_sha256": "7fc99fa4a8db8f71bf49488cebe6887e45e9c9da12a558418ec9269cbbee7973",
       "scope": "reference_only",
       "runtime_verified": false
     }

@@ -30,26 +30,26 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
+  "source_reviewed_at": "2026-11-21T02:42:03.908069+00:00",
   "upstream_sources": [
     {
       "repository": "bilawalsidhu/gods-eye-view",
-      "revision": "7df581765dadca8d3bf37b94b26897ccec93b9ad",
+      "revision": "84324ea678cbb0ec947e7b2f6009e597fc2d22b5",
       "fork_repository": "saurabhmisal/gods-eye-view",
       "fork_revision": "591f299d11f38a612629a274463196d57ae3862e",
       "license": "NOASSERTION",
-      "reference_url": "https://github.com/bilawalsidhu/gods-eye-view/blob/7df581765dadca8d3bf37b94b26897ccec93b9ad/README.md",
-      "readme_sha256": "e013556a80f866be3ffa0fdd91604a8c94daadab0011ce180df0af0512f4a4b9",
+      "reference_url": "https://github.com/bilawalsidhu/gods-eye-view/blob/84324ea678cbb0ec947e7b2f6009e597fc2d22b5/README.md",
+      "readme_sha256": "404df3d35eef1401436839d39d2e7a07d912575c099e5a69d7abb30798ae688b",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "anvaka/city-roads",
-      "revision": "35d6497db70debf4508b4d75f17d80c4367d66a6",
+      "revision": "4677b4e146190697c8d96d6ab901c7ac90fc633a",
       "fork_repository": "saurabhmisal/city-roads",
       "fork_revision": "0d89417bb942b34fa87775897cc8cf8437d17b79",
       "license": "MIT",
-      "reference_url": "https://github.com/anvaka/city-roads/blob/35d6497db70debf4508b4d75f17d80c4367d66a6/README.md",
+      "reference_url": "https://github.com/anvaka/city-roads/blob/4677b4e146190697c8d96d6ab901c7ac90fc633a/README.md",
       "readme_sha256": "b4ec5d31f9811e155d1becd373e411197f60ba7b880882bce7e0d34e2da46a50",
       "scope": "reference_only",
       "runtime_verified": false

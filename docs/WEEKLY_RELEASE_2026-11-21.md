@@ -1,0 +1,13 @@
+# Approved weekly release: 21 November 2026
+
+The owner explicitly approved: “Approved. Push the 21 November refresh to GitHub, deploy the updated Power Chords website, and update all 54 installed Codex skills.”
+
+The approved proposal is docs/WEEKLY_REFRESH_2026-11-21.md, SHA-256 `f2d379918f223843ea8013c7129019f2b8398ee9626519fe4e3bfecec55189e8`, together with its local website preview and exact wording comparison. All 275 reviewed repository file hashes and all 54 installed-pack file inventories matched the saved preview before release. Remote main matched baseline `e54b907e9230186211e435c84a2d2e95700be60c`.
+
+This approval covers 46 refreshed source references, 28 refined capability instruction packs, 17 redundant source-note pairs consolidated in 10 skills, dated weekly notes on all 52 capability pages, current technical provenance and licensing notes, portable downloads and the workflow library page-heading correction. Names, IDs, input/output contracts, runtime behavior, provider configuration, the two bundled workflows and existing publication controls remain unchanged. All 14 exclusions remain excluded. No new source repository or executable integration is activated.
+
+The original proposal retains its historical draft wording and exact approved hash. This approval record, the source-policy publication-status field, the reference-review status line and removal of an unpublished label in the attribution review are release bookkeeping only. Regenerating the attribution page for that status correction adds no product or runtime scope. Private receipts, credentials, source caches, execution results and model weights are not published.
+
+Publish only this approved scope. Dispatch the existing guarded Pages workflow for the exact resulting main commit, and verify the matching website before updating personal installations. Then stage the 54 already installed instruction packs from that exact published commit using the skill-installer helper. Back up affected installations, preserve customization and automatic invocation, resolve portable links, verify all file hashes and duplicates, and record the exact published revision. Do not install referenced third-party executables, weights or dependencies.
+
+This one-time approval is consumed by this release. Every later meaningful refresh, cleanup, publication or installed-skill update requires fresh explicit approval of its concrete proposal. The legacy automatic publisher remains disabled and the Saturday 08:00 Asia/Kolkata preparation schedule remains active. Other owner worktrees and synced sources are preserved.

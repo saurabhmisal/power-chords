@@ -30,7 +30,7 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
+  "source_reviewed_at": "2026-11-21T02:42:03.908069+00:00",
   "upstream_sources": [
     {
       "repository": "wheresryan22/anatomy",
@@ -56,11 +56,11 @@
     },
     {
       "repository": "umami-software/umami",
-      "revision": "b18d5144dfe7342edeeca6f61d13ba3baabed9ad",
+      "revision": "aad2c4cedd5c0b3bc4d361843830a0bb47cf79c4",
       "fork_repository": "saurabhmisal/umami",
       "fork_revision": "e92fdab99508a8ed05249f6c5f07e140deab79e1",
       "license": "MIT",
-      "reference_url": "https://github.com/umami-software/umami/blob/b18d5144dfe7342edeeca6f61d13ba3baabed9ad/README.md",
+      "reference_url": "https://github.com/umami-software/umami/blob/aad2c4cedd5c0b3bc4d361843830a0bb47cf79c4/README.md",
       "readme_sha256": "03eeb75d1ea982a5dbe0840868077d0367069b7e1a1e18a78f446d5e0c795ae4",
       "scope": "reference_only",
       "runtime_verified": false

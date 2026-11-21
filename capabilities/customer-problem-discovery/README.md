@@ -111,10 +111,10 @@ flowchart TD
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-21T02:42:03.908069+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
-- [anthropics/knowledge-work-plugins at e91a134584eb](https://github.com/anthropics/knowledge-work-plugins/blob/e91a134584eb798bac7fb0379358006a2b63b965/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
-- [garrytan/gstack at 4bee369d4a41](https://github.com/garrytan/gstack/blob/4bee369d4a417fb82c6d43c0b79351428305ef10/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [anthropics/knowledge-work-plugins at 0e0fcacddcc8](https://github.com/anthropics/knowledge-work-plugins/blob/0e0fcacddcc892eb92a1b7873ff9d68159c47571/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
+- [garrytan/gstack at 41729a023ecf](https://github.com/garrytan/gstack/blob/41729a023ecf4c8c41d95ad69c666f2fd619c8fb/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 

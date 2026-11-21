@@ -36,26 +36,26 @@
       "title": "Customer Discovery → PRD"
     }
   ],
-  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
+  "source_reviewed_at": "2026-11-21T02:42:03.908069+00:00",
   "upstream_sources": [
     {
       "repository": "garrytan/gstack",
-      "revision": "4bee369d4a417fb82c6d43c0b79351428305ef10",
+      "revision": "41729a023ecf4c8c41d95ad69c666f2fd619c8fb",
       "fork_repository": "saurabhmisal/gstack",
       "fork_revision": "c7edf46bcf6e8d1ccd2f58ffb0800a4e8119e805",
       "license": "MIT",
-      "reference_url": "https://github.com/garrytan/gstack/blob/4bee369d4a417fb82c6d43c0b79351428305ef10/README.md",
-      "readme_sha256": "78dbf4c615841ebe990e6b4d12a796b0c5c913014f70dd764f85f9a343af94ff",
+      "reference_url": "https://github.com/garrytan/gstack/blob/41729a023ecf4c8c41d95ad69c666f2fd619c8fb/README.md",
+      "readme_sha256": "45cd1a83a794b59c22da426aef6684e3a9bfecb86ae9f3ad096dbe5df00382ac",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "anthropics/knowledge-work-plugins",
-      "revision": "e91a134584eb798bac7fb0379358006a2b63b965",
+      "revision": "0e0fcacddcc892eb92a1b7873ff9d68159c47571",
       "fork_repository": "saurabhmisal/knowledge-work-plugins",
       "fork_revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/e91a134584eb798bac7fb0379358006a2b63b965/README.md",
+      "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/0e0fcacddcc892eb92a1b7873ff9d68159c47571/README.md",
       "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
       "scope": "reference_only",
       "runtime_verified": false

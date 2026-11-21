@@ -40,38 +40,38 @@
       "title": "Launch Readiness Plan"
     }
   ],
-  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
+  "source_reviewed_at": "2026-11-21T02:42:03.908069+00:00",
   "upstream_sources": [
     {
       "repository": "affaan-m/ECC",
-      "revision": "d2ef2680594f9a17526a6e1a2e18b3d242c5d17b",
+      "revision": "4adeee6732a12d1540f49a4d50a38ce8c97f9a53",
       "fork_repository": "saurabhmisal/ECC",
       "fork_revision": "ef648e01899ba3e8dc6371642deaaf64b4477775",
       "license": "MIT",
-      "reference_url": "https://github.com/affaan-m/ECC/blob/d2ef2680594f9a17526a6e1a2e18b3d242c5d17b/README.md",
-      "readme_sha256": "bce393127a2e15211583d0f4998599b9771cc30b1189e7c42a26d86b86386d13",
+      "reference_url": "https://github.com/affaan-m/ECC/blob/4adeee6732a12d1540f49a4d50a38ce8c97f9a53/README.md",
+      "readme_sha256": "aa8f45525b56829b56491585611806dcfd6aae0c414ae7da36f851260012b5a6",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "goodnight000/api-anything",
-      "revision": "d40abd44f171c5cc444f1ac6b947afefa8605b78",
+      "revision": "cd8d773d6617df07dc473598b67dec4d612276bc",
       "fork_repository": "saurabhmisal/api-anything",
       "fork_revision": "0b556c36932b111ee8840c412008261abe717725",
       "license": "MIT",
-      "reference_url": "https://github.com/goodnight000/api-anything/blob/d40abd44f171c5cc444f1ac6b947afefa8605b78/README.md",
+      "reference_url": "https://github.com/goodnight000/api-anything/blob/cd8d773d6617df07dc473598b67dec4d612276bc/README.md",
       "readme_sha256": "1f6308d896f40c75f8c1f7efc41d5cab84ae280d8312bc396dda8a63f2de3d25",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "Lethe044/hermes-life-os",
-      "revision": "4c247650492951d3537ce0264e67d4f5ec3e17fc",
+      "revision": "d344941e1af033dbef34da63e92ceab0fc47b7f0",
       "fork_repository": "saurabhmisal/hermes-life-os",
       "fork_revision": "1ca98479c787086cb8f6a9d62606ee988b7b8e37",
       "license": "MIT",
-      "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/4c247650492951d3537ce0264e67d4f5ec3e17fc/README.md",
-      "readme_sha256": "25c08f12ef62c3652347a2dc3b04e3daec54d57a8e1311d38d29a0a64389e3a9",
+      "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/d344941e1af033dbef34da63e92ceab0fc47b7f0/README.md",
+      "readme_sha256": "7fc99fa4a8db8f71bf49488cebe6887e45e9c9da12a558418ec9269cbbee7973",
       "scope": "reference_only",
       "runtime_verified": false
     },
@@ -104,7 +104,7 @@
     "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions.",
     "security-audit-skill: Independent finding verification and target-scoped security review; security testing requires explicit authorization.",
     "pentagi: Security orchestration reference only; no scanning or exploitation without explicit authorized scope.",
-    "api-anything: Check current input validation, client compatibility and authorized targets when an external API wrapper is selected. Keep generated request previews and explicit write approval separate from wrapper setup.",
+    "api-anything: Check current input validation, client compatibility and authorized targets when an external API wrapper is selected. Keep generated request previews and explicit write approval separate from wrapper setup. Honor rate limits and Retry-After rather than switching to a browser to evade throttling. Review proxy routing separately. An export scan may warn without blocking, so inspect credential-like fields before sharing a specification and never print their values.",
     "hermes-life-os: Separate captured inbox items, projects, waiting-for commitments and review steps. Validate current tool schemas before using an external personal workspace. Financial and calendar operations retain their own access and approval boundaries."
   ]
 }

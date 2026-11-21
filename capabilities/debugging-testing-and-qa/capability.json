@@ -37,27 +37,27 @@
       "title": "Integration Readiness"
     }
   ],
-  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
+  "source_reviewed_at": "2026-11-21T02:42:03.908069+00:00",
   "upstream_sources": [
     {
       "repository": "garrytan/gstack",
-      "revision": "4bee369d4a417fb82c6d43c0b79351428305ef10",
+      "revision": "41729a023ecf4c8c41d95ad69c666f2fd619c8fb",
       "fork_repository": "saurabhmisal/gstack",
       "fork_revision": "c7edf46bcf6e8d1ccd2f58ffb0800a4e8119e805",
       "license": "MIT",
-      "reference_url": "https://github.com/garrytan/gstack/blob/4bee369d4a417fb82c6d43c0b79351428305ef10/README.md",
-      "readme_sha256": "78dbf4c615841ebe990e6b4d12a796b0c5c913014f70dd764f85f9a343af94ff",
+      "reference_url": "https://github.com/garrytan/gstack/blob/41729a023ecf4c8c41d95ad69c666f2fd619c8fb/README.md",
+      "readme_sha256": "45cd1a83a794b59c22da426aef6684e3a9bfecb86ae9f3ad096dbe5df00382ac",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "affaan-m/ECC",
-      "revision": "d2ef2680594f9a17526a6e1a2e18b3d242c5d17b",
+      "revision": "4adeee6732a12d1540f49a4d50a38ce8c97f9a53",
       "fork_repository": "saurabhmisal/ECC",
       "fork_revision": "ef648e01899ba3e8dc6371642deaaf64b4477775",
       "license": "MIT",
-      "reference_url": "https://github.com/affaan-m/ECC/blob/d2ef2680594f9a17526a6e1a2e18b3d242c5d17b/README.md",
-      "readme_sha256": "bce393127a2e15211583d0f4998599b9771cc30b1189e7c42a26d86b86386d13",
+      "reference_url": "https://github.com/affaan-m/ECC/blob/4adeee6732a12d1540f49a4d50a38ce8c97f9a53/README.md",
+      "readme_sha256": "aa8f45525b56829b56491585611806dcfd6aae0c414ae7da36f851260012b5a6",
       "scope": "reference_only",
       "runtime_verified": false
     },
@@ -96,23 +96,23 @@
     },
     {
       "repository": "EveryInc/compound-engineering-plugin",
-      "revision": "ee46dde75a40e297bd8eac4055a410a771d3ac1d",
+      "revision": "58d1a83d9207c96c9fb4934589b8b5967849dfdb",
       "fork_repository": "saurabhmisal/compound-engineering-plugin",
       "fork_revision": "738067a599c68f1f0f4a32273fa9d7d2476f0715",
       "license": "MIT",
-      "reference_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/ee46dde75a40e297bd8eac4055a410a771d3ac1d/README.md",
-      "readme_sha256": "a5683d9834606e8462e6d2f9f09db26fca8b1d6389457ed797c0eae97d93df95",
+      "reference_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/58d1a83d9207c96c9fb4934589b8b5967849dfdb/README.md",
+      "readme_sha256": "b178000a6a17446e7a7a94ce0b76f59db42cd9d602abc379edc3986a8dffdc41",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "pbakaus/impeccable",
-      "revision": "acb4cfe14470b1fdf51e855431af618d936b7db8",
+      "revision": "b49177d32788f2dc585c42831d845dacf1ebed2c",
       "fork_repository": "saurabhmisal/impeccable",
       "fork_revision": "b4bff1626c344067788c2679f048a20057c7cc5a",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/pbakaus/impeccable/blob/acb4cfe14470b1fdf51e855431af618d936b7db8/README.md",
-      "readme_sha256": "4a033dceedd19e7edf86b28250fc65c9c52115f18faaea791c327da2681237ab",
+      "reference_url": "https://github.com/pbakaus/impeccable/blob/b49177d32788f2dc585c42831d845dacf1ebed2c/README.md",
+      "readme_sha256": "24ae9abcfbf91338ea6ae6b8ba9e3686e097f7638f99acabb7f7fa803a9c0a04",
       "scope": "reference_only",
       "runtime_verified": false
     }
@@ -123,10 +123,8 @@
     "Separate planning, code review, execution tests and staging QA. Report the actual commands or environments used and retain failures rather than treating an instruction pack as test evidence.",
     "security-audit-skill: Independent finding verification and target-scoped security review; security testing requires explicit authorization.",
     "pentagi: Security orchestration reference only; no scanning or exploitation without explicit authorized scope.",
-    "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review.",
-    "impeccable: Use scoped critique, accessibility and design-check guidance without treating its output as a verified fix. Do not install hooks, download its engine or invoke live-copy fallback without separate review. Preserve Codex approvals and isolation.",
-    "gstack: Keep edit, test and review evidence attached to the change that produced it. Review the selected update channel and host permissions before external installation. A source workflow or claimed CI result is not evidence that the current Power Chords output was tested.",
-    "compound-engineering-plugin: Use the planning, review and knowledge-capture steps that match the task. Preserve evidence and decisions where later work can find them, and choose additional reviewer roles for material risk rather than claiming unrun reviews.",
-    "impeccable: Scope a design critique or deterministic interface check to a named surface and verify proposed changes in the rendered result. Do not install hooks, download an engine or invoke the live-copy fallback that disables approvals. Any future integration must preserve Codex approval and isolation."
+    "compound-engineering-plugin: Select planning, implementation, review and knowledge-capture steps that match the task. Retain evidence and decisions for later work. Add reviewer roles for material risks and report only reviews actually performed. Host plugins require separate installation review.",
+    "impeccable: Scope critique, accessibility and deterministic design checks to a named surface, and verify proposed changes in the rendered result. Guidance is not proof of a fix. Do not install hooks, download an engine or invoke the live-copy fallback that disables approvals. Any future integration must preserve Codex approvals and isolation.",
+    "gstack: Keep edit, test and review evidence attached to the change that produced it. Review the selected update channel and host permissions before external installation. A source workflow or claimed CI result is not evidence that the current Power Chords output was tested. Before validation, record the reviewed revision and identify local edits that could change the result. Preserve failed and flaky attempts alongside successful retries rather than reporting only the final pass."
   ]
 }

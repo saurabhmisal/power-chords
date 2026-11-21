@@ -111,10 +111,10 @@ flowchart TD
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-21T02:42:03.908069+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
 - [Bennettxai/FounderOS at b44a3c5b418b](https://github.com/Bennettxai/FounderOS/blob/b44a3c5b418bb462e677a5f583f7e8e75da26590/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [anthropics/knowledge-work-plugins at e91a134584eb](https://github.com/anthropics/knowledge-work-plugins/blob/e91a134584eb798bac7fb0379358006a2b63b965/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
+- [anthropics/knowledge-work-plugins at 0e0fcacddcc8](https://github.com/anthropics/knowledge-work-plugins/blob/0e0fcacddcc892eb92a1b7873ff9d68159c47571/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 - [nateherkai/roast-room at e40f40652d56](https://github.com/nateherkai/roast-room/blob/e40f40652d5690c4d9f928c4794c673a99f2cd0e/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance

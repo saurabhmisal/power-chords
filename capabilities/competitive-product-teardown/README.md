@@ -110,10 +110,10 @@ flowchart TD
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-21T02:42:03.908069+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
 - [Jakeschincariol/replica-skill at 77c9436fb3d1](https://github.com/Jakeschincariol/replica-skill/blob/77c9436fb3d18c3d58169efb8caf4fe906b0dc51/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [morluto/rea at 5815178a8d58](https://github.com/morluto/rea/blob/5815178a8d581fa81a9422cdfb9f86dd5cb913d7/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [morluto/rea at 553ea84eb673](https://github.com/morluto/rea/blob/553ea84eb67303fc210041af5047fc94540c8bd9/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 

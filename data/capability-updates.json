@@ -534,6 +534,273 @@
           "summary": "Refined guidance for distinguishing verified field signals from unavailable or unconnected live feeds."
         }
       ]
+    },
+    {
+      "date": "2026-11-21",
+      "comparison": "Compared with the previous published version.",
+      "baseline_commit": "e54b907e9230186211e435c84a2d2e95700be60c",
+      "capabilities": [
+        {
+          "id": "01",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "02",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "03",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "04",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "05",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "06",
+          "kind": "guidance",
+          "summary": "Instructions now emphasize page and table-paragraph completeness, stale extraction checks and separate approval for remote document access."
+        },
+        {
+          "id": "07",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "08",
+          "kind": "guidance",
+          "summary": "Instructions now distinguish same-named and overloaded functions by their owning container when interpreting code-graph changes."
+        },
+        {
+          "id": "09",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "10",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "11",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "12",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "13",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "14",
+          "kind": "guidance",
+          "summary": "Instructions now require checking decision-relevant vendor claims against primary documentation and separating tool fit from recommendations."
+        },
+        {
+          "id": "15",
+          "kind": "guidance",
+          "summary": "Instructions now cover rate-limit recovery, proxy scope and credential review before sharing generated API specifications."
+        },
+        {
+          "id": "16",
+          "kind": "guidance",
+          "summary": "Consolidated repeated source guidance and clarified project-specific verification plus manual accessibility checks for interfaces."
+        },
+        {
+          "id": "17",
+          "kind": "guidance",
+          "summary": "Instructions now check function ownership and overload matching before describing code relationships as new, changed or removed."
+        },
+        {
+          "id": "18",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "19",
+          "kind": "guidance",
+          "summary": "Consolidated repeated review and design guidance, with clearer revision checks and retention of failed or flaky validation attempts."
+        },
+        {
+          "id": "20",
+          "kind": "guidance",
+          "summary": "Instructions now record the reviewed revision and retain failed or flaky attempts alongside successful release checks."
+        },
+        {
+          "id": "21",
+          "kind": "guidance",
+          "summary": "Consolidated slider guidance and clarified keyboard, focus, reduced-motion and screen-reader checks alongside automated findings."
+        },
+        {
+          "id": "22",
+          "kind": "guidance",
+          "summary": "Consolidated repeated slider and video-renderer guidance while retaining compatibility checks and separate setup approval."
+        },
+        {
+          "id": "23",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "24",
+          "kind": "guidance",
+          "summary": "Consolidated film-reference guidance and clarified CAD setup approval plus separate permissions for code, documentation and media."
+        },
+        {
+          "id": "25",
+          "kind": "guidance",
+          "summary": "Consolidated repeated coordination and orchestration guidance while retaining installation, credential and production-write controls."
+        },
+        {
+          "id": "26",
+          "kind": "guidance",
+          "summary": "Consolidated orchestration guidance and clarified the distinction between estimated task time, logged actual time and observed experiments."
+        },
+        {
+          "id": "27",
+          "kind": "guidance",
+          "summary": "Consolidated remote-desktop guidance and clarified rate-limit recovery, proxy scope and review of exported API specifications."
+        },
+        {
+          "id": "28",
+          "kind": "guidance",
+          "summary": "Consolidated repeated workflow and orchestration guidance while preserving evidence, licensing and production-write requirements."
+        },
+        {
+          "id": "29",
+          "kind": "guidance",
+          "summary": "Instructions now clarify that export-scan warnings may not block credentials, and that throttling does not authorize browser escalation."
+        },
+        {
+          "id": "30",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "31",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "32",
+          "kind": "guidance",
+          "summary": "Instructions now distinguish vendor-guide labels from verified connector access and require primary evidence for decision-relevant claims."
+        },
+        {
+          "id": "33",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "34",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "35",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "36",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "37",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "38",
+          "kind": "guidance",
+          "summary": "Instructions now make planning windows, missing estimates and logged actual time explicit before capacity or workload conclusions."
+        },
+        {
+          "id": "39",
+          "kind": "guidance",
+          "summary": "Instructions now distinguish application licensing from model-weight permissions. This review does not change the transcription engine."
+        },
+        {
+          "id": "40",
+          "kind": "guidance",
+          "summary": "Instructions now distinguish application licensing from model-weight permissions. No voice model or weights are installed by this update."
+        },
+        {
+          "id": "41",
+          "kind": "guidance",
+          "summary": "Instructions now separate application and model-weight licensing. This review does not change audio processing or install weights."
+        },
+        {
+          "id": "42",
+          "kind": "guidance",
+          "summary": "Consolidated repeated production guidance and clarified that film licenses do not cover excluded third-party narration or marks."
+        },
+        {
+          "id": "43",
+          "kind": "guidance",
+          "summary": "Instructions now verify vendor claims and distinguish authorized audit targets from untrusted redirect or canonical destinations."
+        },
+        {
+          "id": "44",
+          "kind": "guidance",
+          "summary": "Instructions now distinguish tool fit from recommendations, disclose relevant commercial relationships and verify connector access."
+        },
+        {
+          "id": "45",
+          "kind": "guidance",
+          "summary": "Instructions now verify vendor claims and connector access, with clearer boundaries for reusing film references and third-party media."
+        },
+        {
+          "id": "46",
+          "kind": "guidance",
+          "summary": "Instructions now distinguish vendor labels from verified evidence and clarify target permissions for external SEO research."
+        },
+        {
+          "id": "47",
+          "kind": "guidance",
+          "summary": "Instructions now account for separately supplied job-board packs and privacy limits when the host agent reads local career files."
+        },
+        {
+          "id": "48",
+          "kind": "guidance",
+          "summary": "Instructions now clarify external job-board setup, local-file privacy and document-evidence checks without changing interview facts."
+        },
+        {
+          "id": "49",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "50",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "51",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        },
+        {
+          "id": "52",
+          "kind": "unchanged",
+          "summary": "Reviewed current source references and duplicate instructions. No change to this skill\u2019s workflow or operating guidance."
+        }
+      ]
     }
   ]
 }

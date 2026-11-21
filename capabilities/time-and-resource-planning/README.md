@@ -111,16 +111,16 @@ flowchart TD
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-21T02:42:03.908069+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
-- [anthropics/knowledge-work-plugins at e91a134584eb](https://github.com/anthropics/knowledge-work-plugins/blob/e91a134584eb798bac7fb0379358006a2b63b965/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
-- [Lethe044/hermes-life-os at 4c2476504929](https://github.com/Lethe044/hermes-life-os/blob/4c247650492951d3537ce0264e67d4f5ec3e17fc/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [anthropics/knowledge-work-plugins at 0e0fcacddcc8](https://github.com/anthropics/knowledge-work-plugins/blob/0e0fcacddcc892eb92a1b7873ff9d68159c47571/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
+- [Lethe044/hermes-life-os at d344941e1af0](https://github.com/Lethe044/hermes-life-os/blob/d344941e1af033dbef34da63e92ceab0fc47b7f0/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 
 - Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - knowledge-work-plugins: Treat newly available role workflows and invoice-follow-up guidance as host-specific references. Review connector and recipient scope before any external action. Loading a specialist procedure does not grant its plugins access.
-- hermes-life-os: Separate captured inbox items, projects, waiting-for commitments and review steps. Validate current tool schemas before using an external personal workspace. Financial and calendar operations retain their own access and approval boundaries.
+- hermes-life-os: Separate captured inbox items, projects, waiting-for commitments and review steps. Validate current tool schemas before using an external personal workspace. Financial and calendar operations retain their own access and approval boundaries. Separate estimated task time from logged actual time when discussing capacity. State the planning window, available time and missing estimates, and treat personal before/after experiments as observations rather than causal proof. External time budgets and alerts need separate configuration approval.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](../../docs/UPSTREAM_REFRESH.md) for scope and reproduction.

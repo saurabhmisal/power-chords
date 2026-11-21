@@ -36,27 +36,27 @@
       "title": "Launch Readiness Plan"
     }
   ],
-  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
+  "source_reviewed_at": "2026-11-21T02:42:03.908069+00:00",
   "upstream_sources": [
     {
       "repository": "anthropics/knowledge-work-plugins",
-      "revision": "e91a134584eb798bac7fb0379358006a2b63b965",
+      "revision": "0e0fcacddcc892eb92a1b7873ff9d68159c47571",
       "fork_repository": "saurabhmisal/knowledge-work-plugins",
       "fork_revision": "95bdacc803aa5cfdb10f35e5b9fb2d4b11100133",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/e91a134584eb798bac7fb0379358006a2b63b965/README.md",
+      "reference_url": "https://github.com/anthropics/knowledge-work-plugins/blob/0e0fcacddcc892eb92a1b7873ff9d68159c47571/README.md",
       "readme_sha256": "6db45ae725346e38fa0b6b921aba4fe8489c4d9735986876d366ba5768010b14",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "Lethe044/hermes-life-os",
-      "revision": "4c247650492951d3537ce0264e67d4f5ec3e17fc",
+      "revision": "d344941e1af033dbef34da63e92ceab0fc47b7f0",
       "fork_repository": "saurabhmisal/hermes-life-os",
       "fork_revision": "1ca98479c787086cb8f6a9d62606ee988b7b8e37",
       "license": "MIT",
-      "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/4c247650492951d3537ce0264e67d4f5ec3e17fc/README.md",
-      "readme_sha256": "25c08f12ef62c3652347a2dc3b04e3daec54d57a8e1311d38d29a0a64389e3a9",
+      "reference_url": "https://github.com/Lethe044/hermes-life-os/blob/d344941e1af033dbef34da63e92ceab0fc47b7f0/README.md",
+      "readme_sha256": "7fc99fa4a8db8f71bf49488cebe6887e45e9c9da12a558418ec9269cbbee7973",
       "scope": "reference_only",
       "runtime_verified": false
     }
@@ -65,6 +65,6 @@
     "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "knowledge-work-plugins: Treat newly available role workflows and invoice-follow-up guidance as host-specific references. Review connector and recipient scope before any external action. Loading a specialist procedure does not grant its plugins access.",
-    "hermes-life-os: Separate captured inbox items, projects, waiting-for commitments and review steps. Validate current tool schemas before using an external personal workspace. Financial and calendar operations retain their own access and approval boundaries."
+    "hermes-life-os: Separate captured inbox items, projects, waiting-for commitments and review steps. Validate current tool schemas before using an external personal workspace. Financial and calendar operations retain their own access and approval boundaries. Separate estimated task time from logged actual time when discussing capacity. State the planning window, available time and missing estimates, and treat personal before/after experiments as observations rather than causal proof. External time budgets and alerts need separate configuration approval."
   ]
 }

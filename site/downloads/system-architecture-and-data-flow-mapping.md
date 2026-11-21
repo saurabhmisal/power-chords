@@ -41,10 +41,10 @@ Read [complete capability guide](https://powerchords.lazo.tools/capabilities/sys
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-21T02:42:03.908069+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
-- [tt-a1i/archify at e37848822238](https://github.com/tt-a1i/archify/blob/e37848822238e3a61b12739185cdadd49843a620/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
-- [Graphify-Labs/graphify at 52cb28218eea](https://github.com/Graphify-Labs/graphify/blob/52cb28218eea0c68d80a9f4b2ae102d2fa63e267/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
+- [tt-a1i/archify at 8509a3d63e76](https://github.com/tt-a1i/archify/blob/8509a3d63e763b4d454ea9aafa1f939545fcb1ea/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
+- [Graphify-Labs/graphify at b582ad401aae](https://github.com/Graphify-Labs/graphify/blob/b582ad401aaef4378935ec6620e3b165ae8e03c1/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 

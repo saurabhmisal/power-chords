@@ -41,11 +41,11 @@ Read [complete capability guide](https://powerchords.lazo.tools/capabilities/sql
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-21T02:42:03.908069+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
-- [anthropics/knowledge-work-plugins at e91a134584eb](https://github.com/anthropics/knowledge-work-plugins/blob/e91a134584eb798bac7fb0379358006a2b63b965/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
+- [anthropics/knowledge-work-plugins at 0e0fcacddcc8](https://github.com/anthropics/knowledge-work-plugins/blob/0e0fcacddcc892eb92a1b7873ff9d68159c47571/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 - [midday-ai/midday at 51587319f26a](https://github.com/midday-ai/midday/blob/51587319f26a0ffaa9dfccab1920373cb65689b7/README.md) — catalog license: AGPL-3.0; reference only, adapter execution not verified.
-- [umami-software/umami at b18d5144dfe7](https://github.com/umami-software/umami/blob/b18d5144dfe7342edeeca6f61d13ba3baabed9ad/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [umami-software/umami at aad2c4cedd5c](https://github.com/umami-software/umami/blob/aad2c4cedd5c0b3bc4d361843830a0bb47cf79c4/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 

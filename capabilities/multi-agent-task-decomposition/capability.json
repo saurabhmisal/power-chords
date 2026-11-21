@@ -37,59 +37,59 @@
       "title": "Launch Readiness Plan"
     }
   ],
-  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
+  "source_reviewed_at": "2026-11-21T02:42:03.908069+00:00",
   "upstream_sources": [
     {
       "repository": "affaan-m/ECC",
-      "revision": "d2ef2680594f9a17526a6e1a2e18b3d242c5d17b",
+      "revision": "4adeee6732a12d1540f49a4d50a38ce8c97f9a53",
       "fork_repository": "saurabhmisal/ECC",
       "fork_revision": "ef648e01899ba3e8dc6371642deaaf64b4477775",
       "license": "MIT",
-      "reference_url": "https://github.com/affaan-m/ECC/blob/d2ef2680594f9a17526a6e1a2e18b3d242c5d17b/README.md",
-      "readme_sha256": "bce393127a2e15211583d0f4998599b9771cc30b1189e7c42a26d86b86386d13",
+      "reference_url": "https://github.com/affaan-m/ECC/blob/4adeee6732a12d1540f49a4d50a38ce8c97f9a53/README.md",
+      "readme_sha256": "aa8f45525b56829b56491585611806dcfd6aae0c414ae7da36f851260012b5a6",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "HarnessMD/munder-difflin",
-      "revision": "a5c2249cf599cc26e29e549f5d5cdc75373575fc",
+      "revision": "87c21f4f13902de1b767b7306dec5288da58ca47",
       "fork_repository": "saurabhmisal/munder-difflin",
       "fork_revision": "70202a217f4843884b0c229ed3c6daae897316da",
       "license": "MIT",
-      "reference_url": "https://github.com/HarnessMD/munder-difflin/blob/a5c2249cf599cc26e29e549f5d5cdc75373575fc/README.md",
-      "readme_sha256": "ba22b71d62a9951b38ef516f32c2cb8a8a2c6674980bc22f33de22c782dcdb74",
+      "reference_url": "https://github.com/HarnessMD/munder-difflin/blob/87c21f4f13902de1b767b7306dec5288da58ca47/README.md",
+      "readme_sha256": "8be26bdfd701d8cfd3b2435b42ab1f8f95ffab60b0893afba40dcacc7ff38a81",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "langflow-ai/langflow",
-      "revision": "260cbf347cc5563cc48c79094c175ca31532ea2b",
+      "revision": "21381e5b2964fb4c714dc91fcd5187d4cfc2a67f",
       "fork_repository": "saurabhmisal/langflow",
       "fork_revision": "504c02fc47e76087b82b0e7cbe4186e9cdd916d4",
       "license": "MIT",
-      "reference_url": "https://github.com/langflow-ai/langflow/blob/260cbf347cc5563cc48c79094c175ca31532ea2b/README.md",
+      "reference_url": "https://github.com/langflow-ai/langflow/blob/21381e5b2964fb4c714dc91fcd5187d4cfc2a67f/README.md",
       "readme_sha256": "0c91b63e58aeac3846fad7d1e6ec7729fc23975fdb0d59def51e97627fdb5e36",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "EveryInc/compound-engineering-plugin",
-      "revision": "ee46dde75a40e297bd8eac4055a410a771d3ac1d",
+      "revision": "58d1a83d9207c96c9fb4934589b8b5967849dfdb",
       "fork_repository": "saurabhmisal/compound-engineering-plugin",
       "fork_revision": "738067a599c68f1f0f4a32273fa9d7d2476f0715",
       "license": "MIT",
-      "reference_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/ee46dde75a40e297bd8eac4055a410a771d3ac1d/README.md",
-      "readme_sha256": "a5683d9834606e8462e6d2f9f09db26fca8b1d6389457ed797c0eae97d93df95",
+      "reference_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/58d1a83d9207c96c9fb4934589b8b5967849dfdb/README.md",
+      "readme_sha256": "b178000a6a17446e7a7a94ce0b76f59db42cd9d602abc379edc3986a8dffdc41",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "superplanehq/superplane",
-      "revision": "2ee58506a863edcdba6120168383994e81fc8075",
+      "revision": "e6deca313523335c4fdc7089a591a918b91c1414",
       "fork_repository": "saurabhmisal/superplane",
       "fork_revision": "8b5e567bf31ca6d449a39e725d5955c09d09c20f",
       "license": "NOASSERTION",
-      "reference_url": "https://github.com/superplanehq/superplane/blob/2ee58506a863edcdba6120168383994e81fc8075/README.md",
+      "reference_url": "https://github.com/superplanehq/superplane/blob/e6deca313523335c4fdc7089a591a918b91c1414/README.md",
       "readme_sha256": "939ff8964b14de9f695c59a8f188a096981e4543c66d2f74a6e46b119efabdba",
       "scope": "reference_only",
       "runtime_verified": false
@@ -99,10 +99,8 @@
     "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
     "Select one reviewed install method per host; inventory existing skills and hooks before adding agent harnesses. Shared workflow context does not imply shared credentials or permissions.",
-    "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review.",
-    "superplane: Engineering orchestration candidate; service credentials, production writes and license need review.",
-    "langflow: Treat externally defined flows and code nodes as untrusted until their execution scope is reviewed. Keep provider credentials scoped to the chosen tool and record actual flow outputs rather than reporting a diagram as an executed pipeline.",
-    "compound-engineering-plugin: Use the planning, review and knowledge-capture steps that match the task. Preserve evidence and decisions where later work can find them, and choose additional reviewer roles for material risk rather than claiming unrun reviews.",
-    "superplane: Review repository/workspace boundaries, provider configuration and failed-connection recovery before external orchestration. A retry or newly available component is not approval for a production write."
+    "compound-engineering-plugin: Select planning, implementation, review and knowledge-capture steps that match the task. Retain evidence and decisions for later work. Add reviewer roles for material risks and report only reviews actually performed. Host plugins require separate installation review.",
+    "superplane: Review repository/workspace boundaries, service credentials, provider configuration, licensing and failed-connection recovery before external orchestration. A retry or newly available component does not authorize a production write.",
+    "langflow: Treat externally defined flows and code nodes as untrusted until their execution scope is reviewed. Keep provider credentials scoped to the chosen tool and record actual flow outputs rather than reporting a diagram as an executed pipeline."
   ]
 }

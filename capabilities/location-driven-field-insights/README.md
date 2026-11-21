@@ -111,10 +111,10 @@ flowchart TD
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-21T02:42:03.908069+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
-- [bilawalsidhu/gods-eye-view at 7df581765dad](https://github.com/bilawalsidhu/gods-eye-view/blob/7df581765dadca8d3bf37b94b26897ccec93b9ad/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
-- [anvaka/city-roads at 35d6497db70d](https://github.com/anvaka/city-roads/blob/35d6497db70debf4508b4d75f17d80c4367d66a6/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [bilawalsidhu/gods-eye-view at 84324ea678cb](https://github.com/bilawalsidhu/gods-eye-view/blob/84324ea678cbb0ec947e7b2f6009e597fc2d22b5/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
+- [anvaka/city-roads at 4677b4e14619](https://github.com/anvaka/city-roads/blob/4677b4e146190697c8d96d6ab901c7ac90fc633a/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 

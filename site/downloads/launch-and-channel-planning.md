@@ -41,11 +41,11 @@ Read [complete capability guide](https://powerchords.lazo.tools/capabilities/lau
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-21T02:42:03.908069+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
-- [coreyhaines31/marketingskills at 1f837447b20b](https://github.com/coreyhaines31/marketingskills/blob/1f837447b20bb6f0e72d87b80ece1c221c362c7d/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [feitangyuan/onetake at abb6d17279cd](https://github.com/feitangyuan/onetake/blob/abb6d17279cdc749e27e99aa534a062d8fd01ced/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
-- [ethanplusai/sellbird at 25ec83978b21](https://github.com/ethanplusai/sellbird/blob/25ec83978b21d16ae20779d09bfea113f37f0ef8/README.md) — catalog license: AGPL-3.0; reference only, adapter execution not verified.
+- [coreyhaines31/marketingskills at 5b2b400eec1e](https://github.com/coreyhaines31/marketingskills/blob/5b2b400eec1e7e1cec76245a715d0b0d4fd2a9c1/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [feitangyuan/onetake at 4e024be4c6c6](https://github.com/feitangyuan/onetake/blob/4e024be4c6c696b260f39a35aee6bd56d303b679/README.md) — catalog license: NOASSERTION; reference only, adapter execution not verified.
+- [ethanplusai/sellbird at b212385259da](https://github.com/ethanplusai/sellbird/blob/b212385259da92246a56311d790d936e75dd70dd/README.md) — catalog license: AGPL-3.0; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 
@@ -54,6 +54,6 @@ Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at t
 - Review the marketing source migration from product-marketing-context to product-marketing and its .agents/product-marketing.md context location. Request authorized product, audience and positioning evidence before channel or conversion recommendations.
 - onetake: Continuous-camera launch film reference; review license and verify continuity/rendering claims.
 - harvey: The current original is Sellbird, formerly Harvey, and declares AGPL-3.0. Review configuration and data-home migration and license requirements before reuse. Account research and drafting do not authorize outreach or mailbox access. Sending messages or accessing mail requires explicit authorization.
-- marketingskills: Keep public marketing observations, experiment evidence and judgment calls distinct. Review connector access and planned recurring actions before activation. An available integration guide does not establish a working connection or permission to contact audiences.
+- marketingskills: Keep public marketing observations, experiment evidence and judgment calls distinct. Review connector access and planned recurring actions before activation. An available integration guide does not establish a working connection or permission to contact audiences. Check vendor-guide claims against the provider’s primary documentation when they affect a decision. Disclose relevant commercial relationships, distinguish tool fit from a recommendation, and verify actual connector access rather than relying on a registry label.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](https://github.com/saurabhmisal/power-chords/blob/main/docs/UPSTREAM_REFRESH.md) for scope and reproduction.

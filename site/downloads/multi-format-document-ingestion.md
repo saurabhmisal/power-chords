@@ -42,11 +42,11 @@ Read [complete capability guide](https://powerchords.lazo.tools/capabilities/mul
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-21T02:42:03.908069+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
-- [virgiliojr94/book-to-skill at e7bb659d3261](https://github.com/virgiliojr94/book-to-skill/blob/e7bb659d3261491c8b28793dcb9102fa64a46c22/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [DozenTwelve/Papermorph at 618aeeaad985](https://github.com/DozenTwelve/Papermorph/blob/618aeeaad9852c8857db7bcaccc34f8d64c20b68/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [spacedriveapp/spacedrive at 3e41e4a2c562](https://github.com/spacedriveapp/spacedrive/blob/3e41e4a2c562c755580561f36058e62784f4ff06/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
+- [virgiliojr94/book-to-skill at 57f3db51ff33](https://github.com/virgiliojr94/book-to-skill/blob/57f3db51ff338edfd940a255b885c60ac90e40fa/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [DozenTwelve/Papermorph at 839a62cad3c7](https://github.com/DozenTwelve/Papermorph/blob/839a62cad3c74446944a167faff07c994f33e5b7/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [spacedriveapp/spacedrive at a7655f297780](https://github.com/spacedriveapp/spacedrive/blob/a7655f2977807b8de06175bcbb4002e693e2bff9/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 - [datalab-to/indra at ca81e18f7403](https://github.com/datalab-to/indra/blob/ca81e18f7403435a3545c8c8ae9c4a1cecdd32a4/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
@@ -54,5 +54,6 @@ Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at t
 - Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
 - indra: Document intelligence adapter candidate; code license does not establish rights to all model weights.
+- book-to-skill: Preserve page evidence and paragraph boundaries inside table cells, and check for stale extraction output or missing chapters before using a document. Remote search/read needs a separately authorized provider and permission to access the selected edition. Do not configure a provider or publish a generated skill from a conversion request alone.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](https://github.com/saurabhmisal/power-chords/blob/main/docs/UPSTREAM_REFRESH.md) for scope and reproduction.

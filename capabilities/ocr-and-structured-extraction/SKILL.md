@@ -41,9 +41,9 @@ Read [README.md](README.md) for complete instructions, compatibility and a revie
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-21T02:42:03.908069+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
-- [baidu/Unlimited-OCR at 64e6f066023b](https://github.com/baidu/Unlimited-OCR/blob/64e6f066023b305ab03860603a9cf358a8b70148/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [baidu/Unlimited-OCR at 37cf64675861](https://github.com/baidu/Unlimited-OCR/blob/37cf646758611a3b81f53863d1e91128a98d58b1/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [datalab-to/indra at ca81e18f7403](https://github.com/datalab-to/indra/blob/ca81e18f7403435a3545c8c8ae9c4a1cecdd32a4/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance

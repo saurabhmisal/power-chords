@@ -111,19 +111,18 @@ flowchart TD
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-21T02:42:03.908069+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
-- [goodnight000/api-anything at d40abd44f171](https://github.com/goodnight000/api-anything/blob/d40abd44f171c5cc444f1ac6b947afefa8605b78/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [goodnight000/api-anything at cd8d773d6617](https://github.com/goodnight000/api-anything/blob/cd8d773d6617df07dc473598b67dec4d612276bc/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [adewaskar/jarvis at 9ae5ec846b6b](https://github.com/adewaskar/jarvis/blob/9ae5ec846b6b20a17b2d264e699d6234c4284b23/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [Saffsanity/sill at bf69067fe603](https://github.com/Saffsanity/sill/blob/bf69067fe60348bfcf3d617086a8589fbdf8dbb6/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
+- [Saffsanity/sill at c33d1057bd88](https://github.com/Saffsanity/sill/blob/c33d1057bd8886fe088741b557dfcaa4a1d194b6/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 
 - Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.
 - Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.
-- sill: Remote desktop reference; screen capture/input permissions and device access require explicit approval.
-- api-anything: Check current input validation, client compatibility and authorized targets when an external API wrapper is selected. Keep generated request previews and explicit write approval separate from wrapper setup.
+- sill: Review platform support, selected display/window scope and local screen-capture, input and device-access permissions before a remote-desktop connection. Obtain explicit approval before enabling remote access. Source documentation alone does not provide authorization.
+- api-anything: Check current input validation, client compatibility and authorized targets when an external API wrapper is selected. Keep generated request previews and explicit write approval separate from wrapper setup. Honor rate limits and Retry-After rather than switching to a browser to evade throttling. Review proxy routing separately. An export scan may warn without blocking, so inspect credential-like fields before sharing a specification and never print their values.
 - jarvis: Inventory the exact local MCP servers and account connectors before an assistant workflow. Keep cloud account connectors out unless the user separately authorizes them. A provider session does not imply access to all configured services.
-- sill: Review local screen-capture and input permissions, selected display/window scope and current platform support before a remote-desktop connection. Do not enable remote access from source documentation alone.
 
 Keep original attribution and license notices. Copyleft, unknown and unclassified licenses require separate review before reuse. Read [refresh details](../../docs/UPSTREAM_REFRESH.md) for scope and reproduction.

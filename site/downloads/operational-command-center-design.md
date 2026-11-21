@@ -41,11 +41,11 @@ Read [complete capability guide](https://powerchords.lazo.tools/capabilities/ope
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-21T02:42:03.908069+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
 - [Bennettxai/FounderOS at b44a3c5b418b](https://github.com/Bennettxai/FounderOS/blob/b44a3c5b418bb462e677a5f583f7e8e75da26590/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [adewaskar/jarvis at 9ae5ec846b6b](https://github.com/adewaskar/jarvis/blob/9ae5ec846b6b20a17b2d264e699d6234c4284b23/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [spacedriveapp/spacedrive at 3e41e4a2c562](https://github.com/spacedriveapp/spacedrive/blob/3e41e4a2c562c755580561f36058e62784f4ff06/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
+- [spacedriveapp/spacedrive at a7655f297780](https://github.com/spacedriveapp/spacedrive/blob/a7655f2977807b8de06175bcbb4002e693e2bff9/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 

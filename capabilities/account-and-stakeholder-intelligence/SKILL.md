@@ -41,11 +41,11 @@ Read [README.md](README.md) for complete instructions, compatibility and a revie
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-21T02:42:03.908069+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
-- [anthropics/knowledge-work-plugins at e91a134584eb](https://github.com/anthropics/knowledge-work-plugins/blob/e91a134584eb798bac7fb0379358006a2b63b965/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
-- [Lethe044/hermes-life-os at 4c2476504929](https://github.com/Lethe044/hermes-life-os/blob/4c247650492951d3537ce0264e67d4f5ec3e17fc/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [ethanplusai/sellbird at 25ec83978b21](https://github.com/ethanplusai/sellbird/blob/25ec83978b21d16ae20779d09bfea113f37f0ef8/README.md) — catalog license: AGPL-3.0; reference only, adapter execution not verified.
+- [anthropics/knowledge-work-plugins at 0e0fcacddcc8](https://github.com/anthropics/knowledge-work-plugins/blob/0e0fcacddcc892eb92a1b7873ff9d68159c47571/README.md) — catalog license: Apache-2.0; reference only, adapter execution not verified.
+- [Lethe044/hermes-life-os at d344941e1af0](https://github.com/Lethe044/hermes-life-os/blob/d344941e1af033dbef34da63e92ceab0fc47b7f0/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [ethanplusai/sellbird at b212385259da](https://github.com/ethanplusai/sellbird/blob/b212385259da92246a56311d790d936e75dd70dd/README.md) — catalog license: AGPL-3.0; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 

@@ -41,11 +41,11 @@ Read [README.md](README.md) for complete instructions, compatibility and a revie
 
 ## Reviewed upstream references
 
-Reviewed: 2026-11-14T02:43:03.870148+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
+Reviewed: 2026-11-21T02:42:03.908069+00:00. Original source code was pulled at the immutable revisions below. These are attributed references, not bundled or enabled integrations.
 
 - [wheresryan22/anatomy at 1482e8469b0a](https://github.com/wheresryan22/anatomy/blob/1482e8469b0a9e0d8cc18ea2740a01423d29ae80/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 - [Bennettxai/FounderOS at b44a3c5b418b](https://github.com/Bennettxai/FounderOS/blob/b44a3c5b418bb462e677a5f583f7e8e75da26590/README.md) — catalog license: MIT; reference only, adapter execution not verified.
-- [umami-software/umami at b18d5144dfe7](https://github.com/umami-software/umami/blob/b18d5144dfe7342edeeca6f61d13ba3baabed9ad/README.md) — catalog license: MIT; reference only, adapter execution not verified.
+- [umami-software/umami at aad2c4cedd5c](https://github.com/umami-software/umami/blob/aad2c4cedd5c0b3bc4d361843830a0bb47cf79c4/README.md) — catalog license: MIT; reference only, adapter execution not verified.
 
 ### Source-aware operating guidance
 

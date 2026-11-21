@@ -31,60 +31,60 @@
     "external_writes": "approval_required"
   },
   "workflows": [],
-  "source_reviewed_at": "2026-11-14T02:43:03.870148+00:00",
+  "source_reviewed_at": "2026-11-21T02:42:03.908069+00:00",
   "upstream_sources": [
     {
       "repository": "addyosmani/agent-skills",
-      "revision": "301b02b12bff98e4688e6984af6556802322bbde",
+      "revision": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
       "fork_repository": "saurabhmisal/agent-skills",
       "fork_revision": "1401c8b8030e023baeebb31781a6653fe8e93026",
       "license": "MIT",
-      "reference_url": "https://github.com/addyosmani/agent-skills/blob/301b02b12bff98e4688e6984af6556802322bbde/README.md",
-      "readme_sha256": "b74ab722eeee706ff1c5c3ee55f5f2328368ec28c6368900bc80b857b5bc6b72",
+      "reference_url": "https://github.com/addyosmani/agent-skills/blob/8c99fa36d90068c82d547f7c12a9d67a3e95f4ee/README.md",
+      "readme_sha256": "fc83ae2792770a3236918ee9ce42acf578411b61597b6918f726c901d3147ad0",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "KonstantinKai/reelkit",
-      "revision": "27fb5d7bea69d63bc5fa572c7f5a0f26127d7be7",
+      "revision": "f273e1228e2de985af38939a25b957684503c5e3",
       "fork_repository": "saurabhmisal/reelkit",
       "fork_revision": "0a9829aa4ad2eccaa006573085587b2c33f8afe3",
       "license": "MIT",
-      "reference_url": "https://github.com/KonstantinKai/reelkit/blob/27fb5d7bea69d63bc5fa572c7f5a0f26127d7be7/README.md",
+      "reference_url": "https://github.com/KonstantinKai/reelkit/blob/f273e1228e2de985af38939a25b957684503c5e3/README.md",
       "readme_sha256": "9aee33e462ce4b05170f1888a8b927a5a543368f0d0bebe5ebbae8b2a1cb37f3",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "EveryInc/compound-engineering-plugin",
-      "revision": "ee46dde75a40e297bd8eac4055a410a771d3ac1d",
+      "revision": "58d1a83d9207c96c9fb4934589b8b5967849dfdb",
       "fork_repository": "saurabhmisal/compound-engineering-plugin",
       "fork_revision": "738067a599c68f1f0f4a32273fa9d7d2476f0715",
       "license": "MIT",
-      "reference_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/ee46dde75a40e297bd8eac4055a410a771d3ac1d/README.md",
-      "readme_sha256": "a5683d9834606e8462e6d2f9f09db26fca8b1d6389457ed797c0eae97d93df95",
+      "reference_url": "https://github.com/EveryInc/compound-engineering-plugin/blob/58d1a83d9207c96c9fb4934589b8b5967849dfdb/README.md",
+      "readme_sha256": "b178000a6a17446e7a7a94ce0b76f59db42cd9d602abc379edc3986a8dffdc41",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "meta/astryx",
-      "revision": "7b3154197a9a9fca33d4aab859a6b35989d0e9cc",
+      "revision": "51d94100f703b70b46578b6ad6a5778831cc8f96",
       "fork_repository": "saurabhmisal/astryx",
       "fork_revision": "a0f2a2da8838cbff64eefb7abdace2f9d84544a9",
       "license": "MIT",
-      "reference_url": "https://github.com/meta/astryx/blob/7b3154197a9a9fca33d4aab859a6b35989d0e9cc/README.md",
-      "readme_sha256": "a8d4bd74d79a45ff1b87a54e15124e0ee9bb8fc1036244caf44f8138e2faf742",
+      "reference_url": "https://github.com/meta/astryx/blob/51d94100f703b70b46578b6ad6a5778831cc8f96/README.md",
+      "readme_sha256": "95f11eaf63efb1211425b66b23c7c54f35d04665d2b3eea111478fb5c6b84691",
       "scope": "reference_only",
       "runtime_verified": false
     },
     {
       "repository": "pbakaus/impeccable",
-      "revision": "acb4cfe14470b1fdf51e855431af618d936b7db8",
+      "revision": "b49177d32788f2dc585c42831d845dacf1ebed2c",
       "fork_repository": "saurabhmisal/impeccable",
       "fork_revision": "b4bff1626c344067788c2679f048a20057c7cc5a",
       "license": "Apache-2.0",
-      "reference_url": "https://github.com/pbakaus/impeccable/blob/acb4cfe14470b1fdf51e855431af618d936b7db8/README.md",
-      "readme_sha256": "4a033dceedd19e7edf86b28250fc65c9c52115f18faaea791c327da2681237ab",
+      "reference_url": "https://github.com/pbakaus/impeccable/blob/b49177d32788f2dc585c42831d845dacf1ebed2c/README.md",
+      "readme_sha256": "24ae9abcfbf91338ea6ae6b8ba9e3686e097f7638f99acabb7f7fa803a9c0a04",
       "scope": "reference_only",
       "runtime_verified": false
     }
@@ -92,11 +92,10 @@
   "source_guidance": [
     "Check the reviewed technical documentation, required runtime and supported host before proposing installation. Do not assume parity across Claude, Codex or other agents.",
     "Keep external source instructions separate from operator permissions; report adapters and dependencies that are not installed or tested.",
-    "reelkit: Touch-first slider library reference; accessibility and input behavior need integration tests.",
-    "compound-engineering-plugin: Planning, implementation, review and knowledge-capture guidance; host plugins require separate installation review.",
+    "reelkit: Touch-first slider reference. Check core, framework binding and overlay requirements separately. Test keyboard, touch, accessibility, input behavior and responsive states in the rendered target rather than assuming framework parity.",
+    "compound-engineering-plugin: Select planning, implementation, review and knowledge-capture steps that match the task. Retain evidence and decisions for later work. Add reviewer roles for material risks and report only reviews actually performed. Host plugins require separate installation review.",
     "astryx: For a requested React interface, check React 19 compatibility, the scoped @astryxdesign/cli package and component documentation before using components or templates. Verify theming, keyboard interaction, rendered states and template output. The isolated HTML preview does not install React or Astryx.",
     "impeccable: Scope critique, accessibility and deterministic interface checks to a named surface. Verify proposed fixes in the rendered result. Installing hooks or downloading its engine requires separate review. Do not invoke the live-copy fallback that disables approvals. Preserve Codex approval and isolation.",
-    "reelkit: Count core, framework binding and overlay requirements separately before selecting an external UI interaction component. Check keyboard, touch, accessibility and responsive behavior in the rendered target rather than assuming framework parity.",
-    "compound-engineering-plugin: Use the planning, review and knowledge-capture steps that match the task. Preserve evidence and decisions where later work can find them, and choose additional reviewer roles for material risk rather than claiming unrun reviews."
+    "agent-skills: Use the project’s own verification tools for interface work. Pair automated accessibility findings with keyboard, focus, reduced-motion and screen-reader checks, and do not report conformance from an automated scan alone."
   ]
 }
