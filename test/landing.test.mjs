@@ -23,6 +23,8 @@ test('landing builds include complete standalone instructions and valid capabili
     assert.equal((html.match(/class="capability-card"/g)||[]).length,6);
     const library=await readFile(join(destination,'library.html'),'utf8');
     assert.equal((library.match(/class="capability-card"/g)||[]).length,capabilities.length);
+    assert(!/href="workspace\.html/.test(html));
+    assert(!/href="workspace\.html/.test(library));
     assert.match(library,/id="pc-library-search"/);
     assert.match(html,/href="library.html"/);
     const nav=html.match(/<nav aria-label="Main navigation">([\s\S]*?)<\/nav>/)?.[1];
@@ -37,7 +39,14 @@ test('landing builds include complete standalone instructions and valid capabili
     for(const item of capabilities){
       assert(library.includes(`data-library-install="${item.slug}"`));
       assert(library.includes(`href="capabilities/${item.slug}/index.html"`));
+      assert(library.includes(`href="index.html?capability=${item.slug}#pc-setup"`));
       const page=await readFile(join(destination,'capabilities',item.slug,'index.html'),'utf8');
+      assert(page.includes(`href="../../index.html?capability=${item.slug}#pc-setup">Set up workflow`));
+      assert(!page.includes('href="../../workspace.html'));
+      assert(page.includes('href="../../library.html">Workflows'));
+      assert(page.includes('href="../../library.html">All workflows'));
+      assert(page.includes('data-brand="power-chords"'));
+      assert(page.includes('name="color-scheme" content="light"'));
       assert(page.includes(item.name.replaceAll('&','&amp;')));
       assert(page.includes('workflow diagram'));
       assert(page.includes('not a live recording'));

@@ -1,4 +1,12 @@
 (()=>{
+// Public static links open setup; local runtime execution keeps its existing route.
+if(location.hostname==='powerchords.lazo.tools'||location.hostname.endsWith('.github.io')){
+ const target=new URL('index.html',location.href),params=new URLSearchParams(location.search);
+ const selected=params.get('capability');
+ if(selected&&/^[a-z0-9-]{1,100}$/.test(selected))target.searchParams.set('capability',selected);
+ for(const key of ['analytics','utm_source','utm_medium','utm_campaign','utm_term','utm_content','utm_id'])if(params.has(key))target.searchParams.set(key,params.get(key));
+ target.hash='pc-setup';location.replace(target.href);return;
+}
 const $=s=>document.querySelector(s);const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let catalog=[],current=null,exampleFiles=[],timer=null,runs=[],scheduleId=null;
 async function api(path,body,method=body?'POST':'GET'){const response=await fetch('/api/runtime/'+path,{method,headers:body?{'Content-Type':'application/json'}:{},body:body?JSON.stringify(body):undefined});let value;try{value=await response.json();}catch{throw Error('Open the private runtime preview to execute capabilities. The static library does not run the local engine.');}if(!response.ok)throw Error(value.error||'Request failed.');return value;}
