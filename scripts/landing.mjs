@@ -3,13 +3,15 @@ import {join,resolve} from 'node:path';
 import {icon,familyIcons} from './icons.mjs';
 import {buildCapabilityPages,statusLabel} from './capability-pages.mjs';
 import {createHash} from 'node:crypto';
+import {accountOrigin as checkedAccountOrigin} from './workflow-experience.mjs';
 
 const root=resolve(import.meta.dirname,'..');
 const escape=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const featured=['customer-problem-discovery','prd-and-specification-writing','rapid-application-prototyping','sql-and-structured-data-analysis','campaigns-and-content-production','launch-and-channel-planning'];
 const featuredIcons=['search','document','layers','target','plug','rocket'];
 
-export async function buildLanding(destination,{hosted=false}={}){
+export async function buildLanding(destination,{hosted=false,accountOrigin}={}){
+  accountOrigin=checkedAccountOrigin(accountOrigin);
   const {capabilities}=JSON.parse(await readFile(join(root,'data/capability-guides.json'),'utf8'));
   const directory=resolve(destination);
   await mkdir(join(directory,'assets'),{recursive:true});
@@ -17,11 +19,12 @@ export async function buildLanding(destination,{hosted=false}={}){
   await mkdir(join(directory,'assets/fonts'),{recursive:true});
   for(const font of ['commissioner-cyrillic-ext.woff2', 'commissioner-cyrillic.woff2', 'commissioner-greek.woff2', 'commissioner-vietnamese.woff2', 'commissioner-latin-ext.woff2', 'commissioner-latin.woff2', 'Commissioner-OFL.txt'])await copyFile(join(root,'assets/fonts',font),join(directory,'assets/fonts',font));
   const styles={};
-  for(const filename of ['landing.css','capabilities.css']){
+  for(const filename of ['landing.css','capabilities.css','workflow.css','workflow-icons.css']){
     const css=await readFile(join(root,'landing',filename),'utf8');
     styles[filename]=filename.replace('.css',`-${createHash('sha256').update(css).digest('hex').slice(0,12)}.css`);
     await writeFile(join(directory,styles[filename]),css);
   }
+  for(const filename of await readdir(directory))if(/^(?:landing|capabilities|workflow|workflow-icons)-[a-f0-9]{12}\.css$/.test(filename)&&!Object.values(styles).includes(filename))await rm(join(directory,filename));
   function card(item){
     const index=featured.indexOf(item.slug);
     return `<article class="capability-card" data-family="${escape(item.family)}" data-keywords="${escape(item.function_name+' '+item.inputs.join(' ')+' '+item.outputs.join(' '))}"><span class="pc-icon">${icon(index>=0?featuredIcons[index]:familyIcons[item.family]||'grid')}</span><p class="pc-core">${escape(item.family)}</p><h3>${escape(item.name)}</h3><p>${escape(item.outcome)}.</p><span class="pc-badge ${item.implementation==='adapter_required'?'pc-badge-tool':''}">${statusLabel(item)}</span><div class="pc-card-actions"><a href="capabilities/${item.slug}/index.html" aria-label="Explore ${escape(item.name)}">See workflow →</a><a href="#pc-setup" data-install="${escape(item.slug)}" aria-label="Set up ${escape(item.name)}">Set up workflow ↗</a></div></article>`;
@@ -31,6 +34,7 @@ export async function buildLanding(destination,{hosted=false}={}){
     CAPABILITY_CARDS:[...featured.map(slug=>capabilities.find(item=>item.slug===slug)),...capabilities.filter(item=>!featured.includes(item.slug))].map(card).join('\n'),
     FAMILY_OPTIONS:[...new Set(capabilities.map(item=>item.family))].map(family=>`<option value="${escape(family)}">${escape(family)}</option>`).join(''),
     HOW_CONTEXT_ICON:icon('document'),HOW_WORK_ICON:icon('branch'),HOW_REVIEW_ICON:icon('check'),
+    ACCOUNT_ORIGIN:accountOrigin,
     INSTALL_OPTIONS:capabilities.map(item=>`<option value="${escape(item.slug)}"${item.slug==='prd-and-specification-writing'?' selected':''}>${escape(item.name)}</option>`).join(''),
     WORKROOM_URL:hosted?'workroom.html':'https://github.com/saurabhmisal/power-chords#readme',
     WORKROOM_LABEL:hosted?'Open the Workroom':'Read about the Workroom'
@@ -73,15 +77,13 @@ export async function buildLanding(destination,{hosted=false}={}){
   const verification=await readFile(join(root,'landing/verification.html'),'utf8');
   await writeFile(join(directory,'verification.html'),verification.replace('workspace.css',workspaceAssets['workspace.css']).replace('verification.js',verificationName));
   for(const filename of ['lazo-mark.svg','power-chords-cover-clean.jpg','power-chords-loop-pc-icon.png','power-chords-loop-pc-logo.png','power-chords-favicon-32.png','power-chords-favicon-16.png','power-chords-apple-touch-icon.png'])await copyFile(join(root,'assets',filename),join(directory,'assets',filename));
-  for(const item of capabilities){
-    const instructions=await readFile(join(root,'capabilities',item.slug,'SKILL.md'),'utf8');
-    const standalone=instructions.replace('[README.md](README.md)',`[complete capability guide](https://powerchords.lazo.tools/capabilities/${item.slug}/)`);
-    await writeFile(join(directory,'downloads',item.slug+'.md'),standalone);
-  }
+  for(const filename of await readdir(join(directory,'downloads')))if(filename.endsWith('.md')&&filename!=='power-chords-agent-guide.md')await rm(join(directory,'downloads',filename));
   const agentGuide=await readFile(join(root,'docs/PORTABLE_AGENT_GUIDE.md'),'utf8');
   const portableGuide=agentGuide.replace(/\]\((\.\.?\/[^)]+)\)/g,(_,target)=>']('+new URL(target,'https://github.com/saurabhmisal/power-chords/blob/main/docs/PORTABLE_AGENT_GUIDE.md').href+')');
   await writeFile(join(directory,'downloads/power-chords-agent-guide.md'),portableGuide);
-  await buildCapabilityPages(root,directory,capabilities,styles);
+  await mkdir(join(directory,'assets/workflow-icons'),{recursive:true});
+  for(const filename of await readdir(join(root,'assets/workflow-icons')))await copyFile(join(root,'assets/workflow-icons',filename),join(directory,'assets/workflow-icons',filename));
+  await buildCapabilityPages(root,directory,capabilities,styles,{accountOrigin});
   // Fingerprint consent assets so a cached pre-consent tag can never survive a new page release.
   const familyAssets = {};
   for (const filename of ['analytics.js', 'brand-theme.css', 'brand-type.css']) {
@@ -101,6 +103,10 @@ export async function buildLanding(destination,{hosted=false}={}){
       }
     }
   }
+  const legacyScript=`(()=>{const known=${JSON.stringify(capabilities.map(c=>c.slug))},match=location.pathname.match(/\\/downloads\\/([a-z0-9-]+)[.]md$/);if(!match||!known.includes(match[1]))return;const target=new URL('/signup',${JSON.stringify(accountOrigin)});target.searchParams.set('product','power-chords');target.searchParams.set('workflow',match[1]);const analytics=new URLSearchParams(location.search).get('analytics');if(analytics)target.searchParams.set('analytics',analytics);location.replace(target.href);})();`;
+  const legacyName='legacy-download-'+createHash('sha256').update(legacyScript).digest('hex').slice(0,12)+'.js';
+  await writeFile(join(directory,legacyName),legacyScript);
+  await writeFile(join(directory,'404.html'),`<!doctype html><html data-brand="power-chords" lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Get your Power Chords workflows with your Lazo account."><title>Find your workflow · Power Chords</title><link rel="stylesheet" href="/${styles['landing.css']}"><link rel="stylesheet" href="/brand-type.css"><link rel="stylesheet" href="/brand-theme.css"><script src="/${legacyName}" defer></script></head><body id="pc-site"><main class="pc-wrap pc-detail"><h1>Find your workflow.</h1><p>Use your Lazo account to download Power Chords workflows.</p><a class="pc-button pc-primary" href="${accountOrigin}/download?product=power-chords">Your Lazo downloads</a><p><a href="/library.html">Browse all workflows</a></p></main></body></html>`);
   await updatePages(directory);
   // Retain only the family theme version referenced by this build's pages.
   const usedTheme=familyAssets['brand-theme.css'];

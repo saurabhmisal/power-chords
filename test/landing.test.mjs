@@ -41,15 +41,15 @@ test('landing builds include complete standalone instructions and valid capabili
       assert(library.includes(`href="capabilities/${item.slug}/index.html"`));
       assert(library.includes(`href="index.html?capability=${item.slug}#pc-setup"`));
       const page=await readFile(join(destination,'capabilities',item.slug,'index.html'),'utf8');
-      assert(page.includes(`href="../../index.html?capability=${item.slug}#pc-setup">Set up workflow`));
+      assert(page.includes(`https://accounts.lazo.tools/signup?product=power-chords&amp;workflow=${item.slug}`));
       assert(!page.includes('href="../../workspace.html'));
       assert(page.includes('href="../../library.html">Workflows'));
       assert(page.includes('href="../../library.html">All workflows'));
       assert(page.includes('data-brand="power-chords"'));
       assert(page.includes('name="color-scheme" content="light"'));
       assert(page.includes(item.name.replaceAll('&','&amp;')));
-      assert(page.includes('workflow diagram'));
-      assert(page.includes('not a live recording'));
+      assert(page.includes('id="workflow"'));
+      assert(page.includes('Illustrated workflow'));
       assert(page.includes('data-demo-toggle'));
       assert(!page.includes('Download GIF'));
       assert(!page.includes('Play workflow GIF'));
@@ -58,23 +58,24 @@ test('landing builds include complete standalone instructions and valid capabili
       assert.match(page, /src="\.\.\/\.\.\/analytics-[a-f0-9]{12}\.js"/);
       assert.match(page, /href="\.\.\/\.\.\/brand-theme-[a-f0-9]{12}\.css"/);
       assert(!/pinned upstream|Your fork/.test(page));
-      assert(page.includes('Codex workspace'));
+      assert(page.includes('data-workflow-agent'));
+      assert(page.includes('What to bring'));
+      assert(page.includes('What you’ll get'));
+      const masks=await readFile(join(root,'landing/workflow-icons.css'),'utf8');
+      for(const match of page.matchAll(/wf-icon-([a-z0-9-]+)/g)){assert(masks.includes('.wf-icon-'+match[1]+'{mask-image:'),`Missing icon ${match[1]}`);await stat(join(destination,'assets/workflow-icons',match[1]+'.svg'));}
       for(const ext of ['gif','png'])assert((await stat(join(destination,'assets/capability-demos',item.slug+'.'+ext))).size>1000);
       const gif=await readFile(join(destination,'assets/capability-demos',item.slug+'.gif'));
       assert.equal(gif.toString('ascii',0,6),'GIF89a');
       for(const match of page.matchAll(/(?:href|src|data-gif|data-poster)="([^"#]+)"/g)){
         if(!match[1].startsWith('https://'))await stat(resolve(destination,'capabilities',item.slug,match[1].split(/[?#]/)[0]));
       }
-      const instructions=await readFile(join(root,'capabilities',item.slug,'SKILL.md'),'utf8');
-      const download=await readFile(join(destination,'downloads',item.slug+'.md'),'utf8');
-      assert.equal(download,instructions.replace('[README.md](README.md)',`[complete capability guide](https://powerchords.lazo.tools/capabilities/${item.slug}/)`));
-      assert(!download.includes('](README.md)'));
+      await assert.rejects(stat(join(destination,'downloads',item.slug+'.md')),error=>error.code==='ENOENT','Workflow files must be served by the verified account service.');
     }
     for(const match of html.matchAll(/(?:href|src)="([^"#]+)"/g)){
       if(!match[1].startsWith('https://'))await stat(join(destination,match[1].split(/[?#]/)[0]));
     }
     await buildLanding(destination,{hosted:true});
-    assert((await readFile(join(destination,'index.html'),'utf8')).includes('href="workroom.html"'));
+    assert(!(await readFile(join(destination,'index.html'),'utf8')).includes('href="workspace.html'));
   }finally{await rm(destination,{recursive:true,force:true});}
 });
 test('the same portable capability installs into each advertised agent and a custom destination',async()=>{

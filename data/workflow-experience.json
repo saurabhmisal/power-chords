@@ -1,0 +1,470 @@
+{
+  "version": 1,
+  "workflows": {
+    "customer-problem-discovery": {
+      "icon": "compass",
+      "sources": [
+        "Interview or customer-call notes",
+        "Your process doc or a quick step-by-step description",
+        "Support tickets, reviews or feedback messages",
+        "Examples, screenshots or incidents that show the issue"
+      ]
+    },
+    "market-landscape-analysis": {
+      "icon": "globe",
+      "sources": [
+        "Your customer profile or business brief",
+        "Countries or regions you want to cover",
+        "Competitor sites or your existing shortlist",
+        "Your pricing sheet or assumptions to test"
+      ]
+    },
+    "competitive-product-teardown": {
+      "icon": "scan-search",
+      "sources": [
+        "Product websites, screenshots or a comparison sheet",
+        "The task your customer needs to complete",
+        "Your research notes or requirements list"
+      ]
+    },
+    "account-and-stakeholder-intelligence": {
+      "icon": "contact-round",
+      "sources": [
+        "Account history or sales notes",
+        "CRM contacts or a list of people involved",
+        "An export you are authorised to use",
+        "Notes or transcripts from account meetings"
+      ]
+    },
+    "evidence-triangulation-and-opportunity-mapping": {
+      "icon": "puzzle",
+      "sources": [
+        "Interview and research documents",
+        "Your dashboard or analytics export",
+        "Help-desk exports or ticket summaries",
+        "Examples from using the product"
+      ]
+    },
+    "multi-format-document-ingestion": {
+      "icon": "files",
+      "sources": [
+        "Documents you are authorised to share",
+        "Workbook files or spreadsheet exports",
+        "Notes or exported documents",
+        "Agreements you are allowed to review",
+        "Files or links your agent can open"
+      ]
+    },
+    "ocr-and-structured-extraction": {
+      "icon": "scan-text",
+      "sources": [
+        "Scanned documents or photos of pages",
+        "Photos, screenshots or image exports",
+        "A list of fields you want captured",
+        "An example table or JSON structure"
+      ]
+    },
+    "knowledge-graph-construction": {
+      "icon": "network",
+      "sources": [
+        "The documents to connect",
+        "People, products or concepts to include",
+        "Record IDs or other consistent labels",
+        "A short description of how the items relate"
+      ]
+    },
+    "semantic-and-context-aware-retrieval": {
+      "icon": "search",
+      "sources": [
+        "Documents your agent is allowed to search",
+        "The question you want answered",
+        "Sharing restrictions or permission notes",
+        "Dates or a freshness limit for sources"
+      ]
+    },
+    "prd-and-specification-writing": {
+      "icon": "file-text",
+      "sources": [
+        "Interview, feedback or meeting notes",
+        "Scope, deadlines and technical limits",
+        "The change you want users to experience",
+        "Current dashboard numbers or a baseline"
+      ]
+    },
+    "end-to-end-journey-and-workflow-mapping": {
+      "icon": "route",
+      "sources": [
+        "Customer profiles or research notes",
+        "Steps observed in calls or process documents",
+        "Status definitions from your product or service",
+        "Support roles and handoff points"
+      ]
+    },
+    "outcome-oriented-roadmapping": {
+      "icon": "map",
+      "sources": [
+        "Your main success measure and its definition",
+        "Your strategy or planning notes",
+        "The work you are considering",
+        "Team availability and delivery limits"
+      ]
+    },
+    "opportunity-sizing-and-prioritization": {
+      "icon": "list-ordered",
+      "sources": [
+        "Your backlog or opportunity notes",
+        "Research, support feedback or usage evidence",
+        "Engineering estimates or rough effort ranges"
+      ]
+    },
+    "hypothesis-and-experiment-design": {
+      "icon": "flask-conical",
+      "sources": [
+        "The assumption you want to test",
+        "Who can take part and how they are selected",
+        "Current results from your dashboard",
+        "Exactly how success will be measured",
+        "Limits that protect users and the business"
+      ]
+    },
+    "api-design-and-integration-planning": {
+      "icon": "plug",
+      "sources": [
+        "A short description of the systems involved",
+        "API reference pages your agent can access",
+        "Example requests and responses with secrets removed",
+        "Your security and access requirements"
+      ]
+    },
+    "rapid-application-prototyping": {
+      "icon": "blocks",
+      "sources": [
+        "The problem or idea you want to explore",
+        "A description of the people using it",
+        "Your preferred tools or existing project",
+        "The smallest set of features to build"
+      ]
+    },
+    "codebase-navigation-and-explanation": {
+      "icon": "code",
+      "sources": [
+        "The repository or project folder",
+        "Files, routes or commands that start the app",
+        "What you want to understand or change",
+        "Languages, frameworks and runtime versions"
+      ]
+    },
+    "system-architecture-and-data-flow-mapping": {
+      "icon": "waypoints",
+      "sources": [
+        "Your requirements or specification",
+        "Expected traffic, volume or workload",
+        "Security, budget and technical limits",
+        "Current diagrams or a list of services"
+      ]
+    },
+    "debugging-testing-and-qa": {
+      "icon": "bug",
+      "sources": [
+        "What failed and who it affects",
+        "Relevant logs with secrets removed",
+        "The steps that trigger the issue",
+        "The affected repository or code files",
+        "What should have happened instead"
+      ]
+    },
+    "deployment-and-release-readiness": {
+      "icon": "rocket",
+      "sources": [
+        "What is included in the release",
+        "Your change notes or commit list",
+        "Test results and known issues",
+        "The deployment process and access you allow"
+      ]
+    },
+    "wireframing-and-ux-exploration": {
+      "icon": "panels-top-left",
+      "sources": [
+        "A user profile or research summary",
+        "The job the user needs to complete",
+        "Relevant accessibility needs",
+        "Screenshots or notes about the existing flow"
+      ]
+    },
+    "interactive-prototype-construction": {
+      "icon": "mouse-pointer-2",
+      "sources": [
+        "The interactions or states to support",
+        "Screenshots, mockups or Figma frames",
+        "Your existing components or design system",
+        "The project and tools available to your agent"
+      ]
+    },
+    "architecture-and-sequence-diagrams": {
+      "icon": "git-branch",
+      "sources": [
+        "A list of services or components",
+        "People or systems taking part",
+        "A sample request or sequence of events",
+        "What is inside and outside the system"
+      ]
+    },
+    "technical-illustrations-and-cad-assets": {
+      "icon": "box",
+      "sources": [
+        "A photo, sketch or object description",
+        "Measurements and units",
+        "Shape, material or manufacturing limits",
+        "The file type you need to use afterwards"
+      ]
+    },
+    "multi-agent-task-decomposition": {
+      "icon": "users",
+      "sources": [
+        "What you want to achieve",
+        "The final output you need",
+        "The tools each agent can use",
+        "What each agent may read or change",
+        "Dates or time limits"
+      ]
+    },
+    "task-and-routine-orchestration": {
+      "icon": "calendar-clock",
+      "sources": [
+        "When the routine should run",
+        "The apps or services you authorise",
+        "What a successful run should produce",
+        "Who reviews or owns the routine"
+      ]
+    },
+    "browser-and-api-task-automation": {
+      "icon": "bot",
+      "sources": [
+        "The site or API you authorise",
+        "The exact steps to complete",
+        "An example of the input and output fields",
+        "Sign-in and approval requirements"
+      ]
+    },
+    "composable-tool-and-workflow-chains": {
+      "icon": "workflow",
+      "sources": [
+        "The final result you want",
+        "Skills and tools available to your agent",
+        "Examples of what each step receives and returns"
+      ]
+    },
+    "permission-scoped-execution-and-controls": {
+      "icon": "shield-check",
+      "sources": [
+        "The people, roles or agents involved",
+        "The files, services and resources in scope",
+        "Sensitivity labels from your data policy",
+        "Which actions need review or approval"
+      ]
+    },
+    "sql-and-structured-data-analysis": {
+      "icon": "database",
+      "sources": [
+        "Table definitions or a data dictionary",
+        "A CSV file or authorised database connection",
+        "The business questions you want answered",
+        "Your metric definitions and counting rules"
+      ]
+    },
+    "dashboards-and-visual-reporting": {
+      "icon": "chart-no-axes-combined",
+      "sources": [
+        "A dataset you are allowed to analyse",
+        "Success measures and how they are calculated",
+        "Who will use the dashboard and why",
+        "How often the numbers need to update"
+      ]
+    },
+    "funnel-retention-and-operational-diagnostics": {
+      "icon": "filter",
+      "sources": [
+        "Your events and property definitions",
+        "Who saw or entered the experience",
+        "The dates you want to compare",
+        "Your user groups or cohort definitions"
+      ]
+    },
+    "llm-and-agent-evaluation": {
+      "icon": "clipboard-check",
+      "sources": [
+        "Actual answers or artifacts from your agent",
+        "Representative tasks and expected outcomes",
+        "Your scoring criteria",
+        "Model versions and generation settings"
+      ]
+    },
+    "forecasting-and-scenario-modeling": {
+      "icon": "chart-spline",
+      "sources": [
+        "Historical figures from your data source",
+        "Assumptions you want to vary",
+        "Revenue and cost inputs",
+        "The period you want to model"
+      ]
+    },
+    "billing-and-invoicing-workflows": {
+      "icon": "receipt",
+      "sources": [
+        "Your product plans and prices",
+        "The events that create or change a bill",
+        "Applicable rules supplied by your finance adviser",
+        "Your payment provider\u2019s reference documents"
+      ]
+    },
+    "unit-economics-and-financial-modeling": {
+      "icon": "calculator",
+      "sources": [
+        "Sales or revenue data",
+        "Costs directly linked to delivery",
+        "Your acquisition assumptions or campaign costs",
+        "Usage, repeat purchase or retention data"
+      ]
+    },
+    "operational-command-center-design": {
+      "icon": "gauge",
+      "sources": [
+        "The outcomes your team is responsible for",
+        "Status updates or operational notes",
+        "Incident reports or service issues",
+        "Numbers from your service dashboard"
+      ]
+    },
+    "time-and-resource-planning": {
+      "icon": "calendar-range",
+      "sources": [
+        "Your delivery dates and key checkpoints",
+        "Roles, availability and team size",
+        "Skills needed and gaps to account for",
+        "Work that depends on other work"
+      ]
+    },
+    "speech-transcription-and-meeting-notes": {
+      "icon": "mic",
+      "sources": [
+        "A recording you have permission to use",
+        "The languages used in the recording",
+        "Whether you need speakers identified"
+      ]
+    },
+    "text-to-speech-and-voice-interfaces": {
+      "icon": "speech",
+      "sources": [
+        "The final text you have permission to use",
+        "Your preferred available voice",
+        "The spoken language and pronunciation needs",
+        "The audio file type you need"
+      ]
+    },
+    "audio-separation-and-editing": {
+      "icon": "audio-lines",
+      "sources": [
+        "An audio file you are allowed to process",
+        "The voices or instruments you want separated",
+        "Your quality target and rights to use the result"
+      ]
+    },
+    "video-demos-and-educational-content": {
+      "icon": "clapperboard",
+      "sources": [
+        "Your script or key points",
+        "Access to the product you want to show",
+        "Approved screenshots, brand files or recordings",
+        "Where the video will be used"
+      ]
+    },
+    "seo-and-discoverability-research": {
+      "icon": "radar",
+      "sources": [
+        "Your site URL or exported pages",
+        "The people you want to reach",
+        "Search terms or topic areas to investigate",
+        "Search Console, analytics or ranking exports"
+      ]
+    },
+    "launch-and-channel-planning": {
+      "icon": "megaphone",
+      "sources": [
+        "The people the launch should reach",
+        "What the product offers them",
+        "Dates, scope, budget and other limits",
+        "The places you can reach your audience"
+      ]
+    },
+    "campaigns-and-content-production": {
+      "icon": "send",
+      "sources": [
+        "Your offer and its value",
+        "Brand voice, examples and style guidance",
+        "Research, quotes or proof you can use",
+        "The people you are writing for"
+      ]
+    },
+    "conversion-and-growth-experimentation": {
+      "icon": "trending-up",
+      "sources": [
+        "Your channel and conversion reports",
+        "A breakdown of the users entering the flow",
+        "Measures that must stay healthy during tests"
+      ]
+    },
+    "career-and-opportunity-research": {
+      "icon": "briefcase-business",
+      "sources": [
+        "Your CV or a short professional profile",
+        "Roles or job listings to consider",
+        "Location, remote-work and travel preferences",
+        "Company information you want assessed"
+      ]
+    },
+    "interview-preparation-and-learning-plans": {
+      "icon": "messages-square",
+      "sources": [
+        "The job description",
+        "Company and product research",
+        "Your projects, results and career examples",
+        "The stage and format of your interview"
+      ]
+    },
+    "location-and-map-based-research": {
+      "icon": "map-pin",
+      "sources": [
+        "The area you want to investigate",
+        "What you already know about the area",
+        "Budget, travel, access or planning limits",
+        "Maps or geographic datasets you may use"
+      ]
+    },
+    "road-and-network-visualization": {
+      "icon": "route",
+      "sources": [
+        "An authorised road or route dataset",
+        "The area to cover",
+        "Vehicle dimensions, access limits or route rules"
+      ]
+    },
+    "geospatial-data-visualization": {
+      "icon": "map-pinned",
+      "sources": [
+        "Coordinates or location-tagged records",
+        "Area boundaries or geographic files",
+        "The differences or patterns to compare",
+        "Coordinate reference information from your dataset"
+      ]
+    },
+    "location-driven-field-insights": {
+      "icon": "notebook-tabs",
+      "sources": [
+        "Notes or reports from visits",
+        "Your written observations",
+        "Location records collected with permission",
+        "Operational or outcome measures for those sites"
+      ]
+    }
+  }
+}

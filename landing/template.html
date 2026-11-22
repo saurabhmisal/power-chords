@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="landing.css">
   <link rel="stylesheet" href="theme.css">
   <link rel="stylesheet" href="capabilities.css">
+  <link rel="stylesheet" href="workflow.css">
+  <link rel="stylesheet" href="workflow-icons.css">
   <script src="landing.js" defer></script>
 <link rel="stylesheet" href="brand-type.css?v=commissioner-20261107">
 <link rel="stylesheet" href="brand-theme.css?v=commissioner-20261107">
@@ -55,17 +57,14 @@
     <div class="pc-how-grid"><div><span class="pc-icon">{{HOW_CONTEXT_ICON}}</span><h3>Start with your context</h3><p>Choose a workflow. Add the inputs it needs.</p></div><div><span class="pc-icon">{{HOW_WORK_ICON}}</span><h3>Work with your agent</h3><p>Works with Claude Code, Codex, Cursor and Gemini CLI. Your agent provides the model and tools.</p></div><div><span class="pc-icon">{{HOW_REVIEW_ICON}}</span><h3>Review before you act</h3><p>Check the evidence and outputs. You approve external actions.</p></div></div>
   </section>
   <details class="pc-setup pc-wrap" id="pc-setup">
-    <summary class="cursor-interaction"><span><strong>Use it with your agent.</strong><small>Claude Code · Codex · Cursor · Gemini CLI · Markdown</small></span><span class="pc-sign" aria-hidden="true">+</span></summary>
-    <div class="pc-setup-body">
-      <p>Install a workflow in your project, or use its Markdown instructions.</p>
+    <summary><span><strong>Get a workflow. Make it yours.</strong><small>One Lazo account. Use the agent you already have.</small></span><span class="pc-sign" aria-hidden="true">+</span></summary>
+    <div class="pc-setup-body" data-account-origin="{{ACCOUNT_ORIGIN}}">
+      <p>Choose a workflow, download it and add it to your AI agent.</p>
       <div class="pc-setup-grid">
-        <div><label class="pc-field">Your platform<select id="pc-platform" aria-label="Your platform" class="cursor-interaction"><option value="claude">Claude Code</option><option value="codex">Codex</option><option value="cursor">Cursor</option><option value="gemini">Gemini CLI</option><option value="other">Other / chat tools</option></select></label><label class="pc-field">Your capability<select id="pc-capability" aria-label="Your capability" class="cursor-interaction">{{INSTALL_OPTIONS}}</select></label></div>
-        <div class="pc-terminal"><p>INSTALL</p><pre id="pc-command">git clone https://github.com/saurabhmisal/power-chords.git
-cd power-chords
-node scripts/capabilities-cli.mjs install prd-and-specification-writing --agent claude --project ../my-project</pre><a id="pc-download" class="pc-text-link" href="downloads/prd-and-specification-writing.md" download>Download Markdown ↓</a></div>
+       <div><label class="pc-field">Choose a workflow<select id="pc-capability" aria-label="Choose a workflow">{{INSTALL_OPTIONS}}</select></label><label class="pc-field">Your AI agent<select id="pc-platform" aria-label="Your AI agent"><option value="other">ChatGPT or Claude chat</option><option value="codex">Codex</option><option value="claude">Claude Code</option><option value="cursor">Cursor</option><option value="gemini">Gemini CLI</option></select></label><p class="wf-setup-note" id="pc-setup-guide">Attach your downloaded file to a new chat. Add your notes and ask your agent to use the workflow.</p></div>
+       <div class="wf-setup-download"><h3>One account. Every workflow.</h3><p>Use the same Lazo account you use for Pencil and Power Chords. New users verify their email before downloading.</p><a id="pc-download" class="pc-button pc-primary" data-analytics-cta="download" href="{{ACCOUNT_ORIGIN}}/signup?product=power-chords&amp;workflow=prd-and-specification-writing"><span class="wf-symbol wf-icon-download" aria-hidden="true"></span>Download workflow</a><p>Your notes and files go in your AI agent. Your AI provider may charge separately.</p></div>
       </div>
-      <p class="pc-note">Prefer a dedicated workspace? <a class="pc-text-link" href="{{WORKROOM_URL}}">{{WORKROOM_LABEL}} ↗</a></p>
-      <p class="pc-note">Free software. Your AI provider may charge separately. Requires Node.js 24.x. Replace ../my-project with your project folder. Your agent supplies the model and tools. Specialized execution may need adapters. <a class="pc-text-link" href="https://github.com/saurabhmisal/power-chords/blob/main/docs/AGENT_COMPATIBILITY.md" target="_blank" rel="noopener">Compatibility details ↗</a></p>
+      <details class="wf-advanced"><summary>Advanced: install in a project</summary><p>For developer tools. Requires Node.js 24.x and Git.</p><pre class="pc-terminal" id="pc-command">Choose your workflow and agent above.</pre><p>Replace <code>../my-project</code> with your project folder.</p></details>
     </div>
   </details>
 </main>

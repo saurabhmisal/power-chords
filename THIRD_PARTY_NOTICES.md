@@ -126,3 +126,8 @@ Current original-repository declarations supersede the historical inventory labe
 ## 21 November 2026 review
 
 Existing attribution and license notices are retained. No repository SPDX classification changed in this review. VoiceStudio’s current README distinguishes its application license from model weights and identifies its default OmniVoice weights as non-commercial. A commercial application license does not grant model-weight rights. Lemo Opuscar’s current LICENSE distinguishes its documentation, code and media grants and excludes specified third-party narration, characters and trademarks even when they remain inside complete films. No corresponding code, model weights, film material or third-party marks are copied by this refresh. Consult the current source-specific notice before reuse. Exact references and coverage are recorded in data/source-review.json and UPSTREAM_REFRESH.md.
+
+
+## Workflow interface icons
+
+The workflow pages use selected Lucide static icons, version 1.77.0, under the ISC license. Original project: https://lucide.dev/ and https://github.com/lucide-icons/lucide. Original icon files and the complete license are retained in `assets/workflow-icons/`. Icons are used as CSS masks without modifying their geometry.
