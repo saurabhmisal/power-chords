@@ -2,12 +2,12 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {mountCover,displacement,scenePose,drawCover} from '../landing/cover-motion.js';
 
-function scene(reduced=false){
+function scene(reduced=false,displayWidth=3000){
  const callbacks=new Map(),listeners={},media={matches:reduced,addEventListener:(name,cb)=>listeners.motion=cb,removeEventListener(){}};
  let id=0,observe;
  const win={devicePixelRatio:3,matchMedia:()=>media,requestAnimationFrame:cb=>{callbacks.set(++id,cb);return id;},cancelAnimationFrame:id=>callbacks.delete(id),IntersectionObserver:class{constructor(cb){observe=cb;}observe(){}disconnect(){}}};
  const doc={hidden:false,addEventListener:(name,cb)=>listeners[name]=cb,removeEventListener(){}};
- const canvas={width:1600,height:572,dataset:{},getContext:()=>({}),getBoundingClientRect:()=>({width:3000})};
+ const canvas={width:1600,height:572,dataset:{},getContext:()=>({}),getBoundingClientRect:()=>({width:displayWidth})};
  const img={complete:true,naturalWidth:2095};
  const dispose=mountCover(canvas,img,win,doc);
  return{canvas,callbacks,listeners,media,doc,dispose,observe:visible=>observe([{isIntersecting:visible}])};
@@ -49,4 +49,14 @@ test('screens progress from typed code to a completed build inside clipped displ
  const img={naturalWidth:2095,naturalHeight:750};
  drawCover(ctx,img,1280,458,.5);assert(texts.includes('Building your idea…'));assert(!texts.includes('✓ Build complete'));
  texts.length=0;drawCover(ctx,img,1280,458,5.8);assert(texts.includes('publish(draft)'));assert(texts.includes('✓ Build complete'));assert(texts.includes('LIVE WORKSPACE'));assert(clips.length>0);
+});
+
+// A responsive canvas must retain the whole source frame at every layout size.
+test('responsive cover preserves the complete artwork ratio and bounded backing resolution',()=>{
+ for(const width of [280,350,704,1200,1856]){
+  const s=scene(false,width);
+  assert(s.canvas.width<=1600);
+  assert(Math.abs(s.canvas.height-s.canvas.width*(572/1600))<=.5);
+  s.dispose();
+ }
 });

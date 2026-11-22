@@ -8,7 +8,7 @@ Approved direction — 7 November 2026. Apply this standard to every Lazo landin
 | --- | --- |
 | Lazo | Navy wordmark and navigation, generous ivory/neutral space, restrained green primary actions. |
 | Pencil | Ivory writing canvas, navy reading text, green actions. Keep notes, sources and writing prominent. |
-| Everyday | Deep ink/charcoal surfaces, ivory text, light green actions. Character illustrations provide warmth. |
+| Retired URLs | Redirect immediately to Pencil; publish no retirement landing pages. |
 | Power Chords | Prominent existing PC loop mark, navy and ivory interface, green selected and interactive details. Keep identity in typography and composition. |
 | Shared account pages | Calm ivory and navy, readable forms and the same green actions. |
 
@@ -17,7 +17,7 @@ Approved direction — 7 November 2026. Apply this standard to every Lazo landin
 - Navy `#172b4d`: words, navigation and structured content on light surfaces.
 - Ivory `#f7f5ee`: quiet canvas; panel white `#fffef9`.
 - Green `#267057`: primary actions on light surfaces; hover `#1c5844`.
-- Deep ink `#17201f`: Everyday shell; dark panels `#202d2a`.
+- Deep ink `#17201f`: dark utility surfaces; dark panels `#202d2a`.
 - Mint `#9bd7b5`: actions on dark surfaces, paired with deep ink text.
 - Supporting text `#526171` on light surfaces, `#bdc9c2` on dark surfaces.
 - Decorative icon colours may vary inside illustrations. Status and meaning must also be conveyed in words/icons, not colour alone.
@@ -26,7 +26,7 @@ Use semantic variables in `brand-theme.css` / `family-theme.css`. Never recolour
 
 ## Typography
 
-Use self-hosted Commissioner throughout the interface: regular 400 body, semibold 600 headings and controls. Avoid synthetic styles and decorative heading italics. Self-hosted Kalam is restricted to illustration annotations; code retains a system monospace face. Both font licenses are retained.
+Use self-hosted Commissioner throughout the interface: regular 400 body, medium 500–550 headings and semibold 600 controls. Avoid synthetic styles and decorative heading italics. Self-hosted Kalam is restricted to illustration annotations; code retains a system monospace face. Both font licenses are retained.
 
 Body text 16–18px, line height 1.6–1.7; secondary descriptions 14–16px. Form fields at least 16px to avoid mobile input zoom. Main reading columns usually 60–72 characters. Headings use fluid sizes and natural wrapping. Never shrink essential instructions to make a composition fit.
 
@@ -52,4 +52,26 @@ Review shared page templates and representative detailed pages, dialogs, forms, 
 
 ## Shared source and reuse
 
-The Lazo website repository owns `src/brand-type.css` and `src/family-theme.css`. Run `npm run build:family` to export the shared styles, reading font/license, analytics consent script and this guide. All product sites use these same exported files, with `data-brand="everyday"` selecting the ink theme. Do not independently invent another palette or font in a product site.
+The Lazo website repository owns `src/brand-type.css` and `src/family-theme.css`. Run `npm run build:family` to export the shared styles, reading font/license, aggregate analytics script and this guide. All product sites use these same exported files. Retired product routes may redirect to a maintained product without retaining their own branding. Do not independently invent another palette or font in a product site.
+
+## Lazo identity and legal links
+
+Use the former Pencil loop mark, preserved exactly in `brand/lazo.svg`, for Lazo navigation, the account service and supporting pages. Pencil uses the distinct pencil symbol in `brand/pencil.svg`. Both marks use a white symbol on a charcoal rounded square. Generate all Lazo favicons and both shared logo files with `build:brand`; use the Pencil mark for Pencil favicons. Preserve the existing Power Chords PC loop mark. Public footers link to the canonical Terms & Conditions and Privacy pages. Website analytics uses shared, consent-based GA4 tagging for canonical page views, UI/CTA clicks and safe campaign labels; owner/test exclusions remain. The separate anonymous daily counter is supplementary.
+
+## Homepage and product stories
+
+Keep “You, but amplified!” as the only Lazo tagline. Explain each tool through its job: Pencil keeps notes, sources and work connected; Power Chords gives an AI agent practical ways to research, draft and build. Address people with ideas and work to carry forward, across roles.
+
+The homepage has three main sections and fewer than 250 main-page words. Put product choice early, use one concrete example, and explain shared access once. Show each tool’s role and the user-directed handoff. Product screenshots must identify the release or browser edition they show. Keep unreleased features separate from downloadable release claims.
+
+Use the existing character artwork. Outcome labels stay readable during animation; motion supports comprehension. Product pages share the same font and colour tokens, with page-specific layout rules kept outside those tokens.
+
+## Website composition refinement · 22 November 2026
+
+Prepared for review. Retain Commissioner and the approved palette. Use medium headings, regular body text and generous line spacing. Align family header marks at 36px and keep a 1200px reading frame on wide screens.
+
+Give the Lazo character a full 800×600 display on desktop. Reflow input and output labels below it on narrow screens. Preserve the complete 4:3 scene, stable geometry and the existing motion safeguards. Product links should be easy to find without oversized cards competing with the lead message.
+
+The Power Chords cover uses a 1600×572 frame for the poster, canvas and responsive layout. Use contain and no height cap. Workflow diagrams span the content width, with a full-size diagram link for small screens. Keep their illustrated-workflow label.
+
+Lead Pencil with its actual workspace. Preserve screenshots and demo behaviour. Keep unsigned-preview notices visible near download actions and place the detailed installation steps in a labelled disclosure.

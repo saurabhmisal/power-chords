@@ -58,7 +58,7 @@
 html { text-size-adjust:100%; -webkit-text-size-adjust:100%; }
 html body, #pc-site, .simple-site, button, input, select, textarea { font-family:var(--brand-font); font-synthesis:none; }
 html body { font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased; }
-h1,h2,h3,h4,.simple-site h1,.simple-site h2,.simple-site h3,.simple-site .hero .hero-subtitle,.simple-site .hero .hero-subtitle em,.tool-placeholder h1,#pc-site h1,#pc-site h2,#pc-site h3 { font-family:var(--brand-font); font-weight:600; font-style:normal; letter-spacing:-.025em; line-height:1.15; text-wrap:balance; }
+h1,h2,h3,h4,.simple-site h1,.simple-site h2,.simple-site h3,.simple-site .hero .hero-subtitle,.simple-site .hero .hero-subtitle em,.tool-placeholder h1,#pc-site h1,#pc-site h2,#pc-site h3 { font-family:var(--brand-font); font-weight:550; font-style:normal; letter-spacing:-.03em; line-height:1.15; text-wrap:balance; }
 h1 em,h1>span,h2 em,h2>em,.hero-subtitle em,body h1>span { font-family:inherit; font-style:normal; font-weight:inherit; letter-spacing:inherit; }
 body p { line-height:1.65; }
 .nav-brand,.brand,.footer-brand { font-family:var(--brand-font); letter-spacing:-.015em; }
@@ -70,3 +70,9 @@ body :is(pre,code,kbd) { font-family:var(--brand-mono); }
 @media(max-width:700px) { h1>span { white-space:normal; } html body { font-size:16px; } }
 
 #pc-site h1 em { font-family:inherit; font-style:normal; font-weight:600; letter-spacing:inherit; }
+
+/* Reading rhythm shared by marketing, legal and account pages. */
+html { scroll-padding-top:28px; }
+body :is(p,li) { text-wrap:pretty; }
+body :is(h1,h2,h3) { font-optical-sizing:auto; }
+body :is(button,.button,.pc-button,.header-cta) { font-weight:550; }

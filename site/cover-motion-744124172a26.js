@@ -129,7 +129,7 @@ export function mountCover(canvas,img,win=window,doc=document){
  const ctx=canvas.getContext('2d',{alpha:false});if(!ctx)return;
  const reduce=win.matchMedia('(prefers-reduced-motion: reduce)');let visible=true,ready=false,raf=0,last=-Infinity,elapsed=0,previous=null;
  const running=()=>ready&&visible&&!doc.hidden&&!reduce.matches;
- function size(){const w=Math.max(1,Math.min(1600,Math.round(canvas.getBoundingClientRect().width*Math.min(win.devicePixelRatio||1,1.5))));if(canvas.width!==w){canvas.width=w;canvas.height=Math.max(1,Math.round(w*750/2095));}}
+ function size(){const w=Math.max(1,Math.min(1600,Math.round(canvas.getBoundingClientRect().width*Math.min(win.devicePixelRatio||1,1.5)))),h=Math.max(1,Math.round(w*572/1600));if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;}}
  function tick(stamp){
   raf=0;if(!running()){previous=null;return;}
   if(previous!==null)elapsed+=Math.min(100,stamp-previous);previous=stamp;

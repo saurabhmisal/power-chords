@@ -100,3 +100,24 @@
 @media(max-width:680px){#pc-site .wf-page{padding-top:18px}#pc-site .wf-hero,#pc-site .wf-preparation,#pc-site .wf-example{grid-template-columns:1fr;gap:26px}#pc-site .wf-page .pc-breadcrumb{margin-bottom:28px;font-size:12px}#pc-site .wf-page h1{font-size:clamp(34px,9.2vw,44px);max-width:17ch}#pc-site .wf-outcome{font-size:18px}#pc-site .wf-hero{padding-bottom:30px}#pc-site .wf-family-mark{width:44px;height:44px;margin-bottom:16px}#pc-site .wf-download-card h2{font-size:24px}#pc-site .wf-start{grid-template-columns:1fr;padding-block:23px;gap:21px}#pc-site .wf-start p{max-width:45ch;font-size:14px}#pc-site .wf-start h2{font-size:16px}#pc-site .wf-step-number{min-width:19px}#pc-site .wf-preparation{padding-block:36px}#pc-site .wf-results{padding:24px}#pc-site .wf-use{padding:22px;margin-bottom:36px}#pc-site .wf-section-heading{align-items:start;gap:12px}#pc-site .wf-use .wf-section-heading{display:block}#pc-site .wf-section-heading>p{max-width:none;margin-top:0}#pc-site select[data-workflow-agent]{max-width:none}#pc-site .wf-page h2{font-size:27px}#pc-site .wf-related>div:last-child{grid-template-columns:1fr}#pc-site .wf-related .wf-section-heading{align-items:center}#pc-site .wf-related .wf-section-heading>a{white-space:nowrap;font-size:12px}#pc-site .wf-example .pc-demo{max-width:100%}}
 @media(prefers-reduced-motion:no-preference){#pc-site .wf-related>div:last-child>a,#pc-site .wf-download{transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}}
 @media(max-width:700px){body#pc-site .pc-nav{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px;row-gap:8px;padding-block:16px}body#pc-site .pc-nav nav{grid-column:1/-1;order:initial;justify-content:flex-start;gap:24px;align-items:center}body#pc-site .pc-nav nav a:last-child{display:inline-flex}body#pc-site .pc-brand{font-size:clamp(16px,4.7vw,20px);gap:8px}body#pc-site .pc-brand img{width:36px;height:36px}body#pc-site .pc-github{font-size:12px;padding:8px;min-height:40px}}
+
+/* Walkthrough artwork spans the reading area, with prompt controls above it. */
+#pc-site .wf-page h1 { font-weight:550; }
+#pc-site .wf-example { grid-template-columns:1fr; gap:28px; }
+#pc-site .wf-example>div:first-child { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); column-gap:48px; align-items:start; }
+#pc-site .wf-example>div:first-child>* { grid-column:1; }
+#pc-site .wf-example>div:first-child>.wf-starter { grid-column:2; grid-row:1/7; margin-top:0; font-size:15px; padding:24px; }
+#pc-site .wf-example .pc-button { width:fit-content; }
+#pc-site .wf-example .pc-demo { width:100%; max-width:none; overflow:hidden; }
+#pc-site .wf-example .pc-demo img { display:block; width:100%; height:auto; aspect-ratio:800/450; object-fit:contain; }
+#pc-site .wf-example .pc-demo figcaption { font-size:14px; padding:12px 20px; }
+#pc-site .wf-motion { font-size:14px; }
+#pc-site .wf-page .pc-eyebrow { font-size:13px; }
+#pc-site .wf-start p,#pc-site .wf-inputs p,#pc-site .wf-results>p:last-of-type { font-size:15px; }
+#pc-site .wf-download-meta,#pc-site .wf-download-card .wf-account-note,#pc-site .wf-agent-note,#pc-site .wf-privacy-note { font-size:14px; }
+@media(max-width:680px) {
+ #pc-site .wf-example>div:first-child { display:block; }
+ #pc-site .wf-example .wf-starter { margin-top:18px; }
+ #pc-site .wf-example .pc-demo figcaption { font-size:13px; padding:8px 12px; }
+ #pc-site .wf-motion { font-size:13px; }
+}
